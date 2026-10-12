@@ -1,0 +1,68 @@
+---
+import type { Brand, Line, Model } from '../lib/catalog';
+
+interface Props {
+  brand: Brand;
+  line?: Line;
+  model?: Model;
+}
+
+const { brand, line, model } = Astro.props;
+// Each crumb names its level, since a line and a model can share a name (Submariner / Submariner).
+const crumbs = [
+  { level: 'Brand', entry: brand },
+  { level: 'Line', entry: line },
+  { level: 'Model', entry: model },
+].flatMap(({ level, entry }) => (entry ? [{ level, name: entry.data.name, href: `/brands/${entry.id}/` }] : []));
+---
+
+<nav class="crumbs" aria-label="Breadcrumb">
+  <ol>
+    {
+      crumbs.map((crumb) => (
+        <li>
+          <span class="level">{crumb.level}</span>
+          <a href={crumb.href}>{crumb.name}</a>
+        </li>
+      ))
+    }
+  </ol>
+</nav>
+
+<style>
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 12px;
+    padding: 0;
+    list-style: none;
+    font-size: 0.875rem;
+  }
+
+  li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li + li {
+    padding-left: 16px;
+  }
+
+  /* The separator lines up with the link, leaving the level label above it. */
+  li + li::before {
+    content: '/';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: var(--muted);
+  }
+
+  .level {
+    color: var(--muted);
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+</style>

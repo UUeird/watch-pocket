@@ -1,0 +1,59 @@
+name: Submariner Date
+line: rolex/submariner
+references:
+  - ref: "16610"
+    periods: [{ from: 1988, to: 2010 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: aluminum, colors: [black], style: dive }
+    movement: "3135"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: 116610LN
+    periods: [{ from: 2010, to: 2020 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: dive }
+    movement: "3135"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: 116610LV
+    periods: [{ from: 2010, to: 2020 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: ceramic, colors: [green], style: dive }
+    movement: "3135"
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: 126610LN
+    periods: [{ from: 2020 }]
+    caseSize: 41
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: dive }
+    movement: "3235"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: 126610LV
+    periods: [{ from: 2020 }]
+    caseSize: 41
+    metals: [steel]
+    bezel: { material: ceramic, colors: [green], style: dive }
+    movement: "3235"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: 126613LB
+    periods: [{ from: 2020 }]
+    caseSize: 41
+    metals: [steel, yellow-gold]
+    bezel: { material: ceramic, colors: [blue], style: dive }
+    movement: "3235"
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: 126618LN
+    periods: [{ from: 2020 }]
+    caseSize: 41
+    metals: [yellow-gold]
+    bezel: { material: ceramic, colors: [black], style: dive }
+    movement: "3235"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]

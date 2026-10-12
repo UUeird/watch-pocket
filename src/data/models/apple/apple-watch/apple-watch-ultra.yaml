@@ -1,0 +1,38 @@
+name: Apple Watch Ultra
+line: apple/apple-watch
+sources:
+  - https://support.apple.com/en-us/108056
+references:
+  - ref: "Ultra, 49 mm"
+    periods: [{ from: 2022, to: 2023 }]
+    caseSize: 49
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }]
+    modelNumbers:
+      - { number: A2622, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2684, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A2859, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Ultra 2, 49 mm"
+    periods: [{ from: 2023, to: 2025 }]
+    caseSize: 49
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }, { color: black }]
+    modelNumbers:
+      - { number: A2986, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A2987, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Ultra 3, 49 mm"
+    periods: [{ from: 2025, to: 2026 }]
+    caseSize: 49
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }, { color: black }]
+    modelNumbers:
+      - { number: A3281, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3282, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Ultra 4, 49 mm"
+    periods: [{ from: 2026 }]
+    caseSize: 49
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }, { color: black }]
+    modelNumbers:
+      - { number: A3579, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3580, connectivity: gps-cellular, regions: "CN" }

@@ -1,0 +1,7 @@
+name: Tudor
+origin: Switzerland
+periods: [{ from: 1926 }]
+segment: luxury
+ownership:
+  - owner: rolex-sa
+    from: 1926

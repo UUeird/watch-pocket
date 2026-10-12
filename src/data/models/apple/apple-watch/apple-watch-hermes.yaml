@@ -1,0 +1,222 @@
+name: Apple Watch Hermès
+line: apple/apple-watch
+collaborators: [hermes]
+sources:
+  - https://support.apple.com/en-us/108056
+references:
+  - ref: "Hermès 1st generation, 38 mm"
+    periods: [{ from: 2015, to: 2016 }]
+    caseSize: 38
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1553 }
+  - ref: "Hermès 1st generation, 42 mm"
+    periods: [{ from: 2015, to: 2016 }]
+    caseSize: 42
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1554 }
+  - ref: "Hermès Series 2, 38 mm"
+    periods: [{ from: 2016, to: 2017 }]
+    caseSize: 38
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1757 }
+  - ref: "Hermès Series 2, 42 mm"
+    periods: [{ from: 2016, to: 2017 }]
+    caseSize: 42
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1758 }
+  - ref: "Hermès Series 3, 38 mm"
+    periods: [{ from: 2017, to: 2018 }]
+    caseSize: 38
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1860, connectivity: gps-cellular, regions: "Americas" }
+      - { number: A1889, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A1890, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Series 3, 42 mm"
+    periods: [{ from: 2017, to: 2018 }]
+    caseSize: 42
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1861, connectivity: gps-cellular, regions: "Americas" }
+      - { number: A1891, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A1892, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Series 4, 40 mm"
+    periods: [{ from: 2018, to: 2019 }]
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1975, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2007, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Hermès Series 4, 44 mm"
+    periods: [{ from: 2018, to: 2019 }]
+    caseSize: 44
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1976, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2008, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Hermès Series 5, 40 mm"
+    periods: [{ from: 2019, to: 2020 }]
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2094, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2156, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Hermès Series 5, 44 mm"
+    periods: [{ from: 2019, to: 2020 }]
+    caseSize: 44
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2095, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2157, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Hermès Series 6, 40 mm"
+    periods: [{ from: 2020, to: 2021 }]
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2293, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2375, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Hermès Series 6, 44 mm"
+    periods: [{ from: 2020, to: 2021 }]
+    caseSize: 44
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2294, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2376, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Hermès Series 7, 41 mm"
+    periods: [{ from: 2021, to: 2022 }]
+    caseSize: 41
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2475, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2476, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Hermès Series 7, 45 mm"
+    periods: [{ from: 2021, to: 2022 }]
+    caseSize: 45
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2477, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2478, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Hermès Series 8, 41 mm"
+    periods: [{ from: 2022, to: 2023 }]
+    caseSize: 41
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2772, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2773, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A2857, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Series 8, 45 mm"
+    periods: [{ from: 2022, to: 2023 }]
+    caseSize: 45
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2774, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2775, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A2858, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Series 9, 41 mm"
+    periods: [{ from: 2023, to: 2024 }]
+    caseSize: 41
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2982, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A2983, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Series 9, 45 mm"
+    periods: [{ from: 2023, to: 2024 }]
+    caseSize: 45
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2984, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A2985, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Series 10, 42 mm"
+    periods: [{ from: 2024, to: 2025 }]
+    caseSize: 42
+    metals: [titanium]
+    caseColors: [{ color: silver }]
+    modelNumbers:
+      - { number: A3001, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3002, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Series 10, 46 mm"
+    periods: [{ from: 2024, to: 2025 }]
+    caseSize: 46
+    metals: [titanium]
+    caseColors: [{ color: silver }]
+    modelNumbers:
+      - { number: A3003, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3206, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Series 11, 42 mm"
+    periods: [{ from: 2025, to: 2026 }]
+    caseSize: 42
+    metals: [titanium]
+    caseColors: [{ color: silver }]
+    modelNumbers:
+      - { number: A3335, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3452, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Series 11, 46 mm"
+    periods: [{ from: 2025, to: 2026 }]
+    caseSize: 46
+    metals: [titanium]
+    caseColors: [{ color: silver }]
+    modelNumbers:
+      - { number: A3337, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3453, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Series 12, 42 mm"
+    periods: [{ from: 2026 }]
+    caseSize: 42
+    metals: [titanium]
+    caseColors: [{ color: gold, name: "Radiant Gold" }, { color: silver }]
+    modelNumbers:
+      - { number: A3582, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3586, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Series 12, 46 mm"
+    periods: [{ from: 2026 }]
+    caseSize: 46
+    metals: [titanium]
+    caseColors: [{ color: gold, name: "Radiant Gold" }, { color: silver }]
+    modelNumbers:
+      - { number: A3587, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3588, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Ultra 2, 49 mm"
+    periods: [{ from: 2024, to: 2025 }]
+    caseSize: 49
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }]
+    modelNumbers:
+      - { number: A2986, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A2987, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Ultra 3, 49 mm"
+    periods: [{ from: 2025, to: 2026 }]
+    caseSize: 49
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }]
+    modelNumbers:
+      - { number: A3281, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3282, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Hermès Ultra 4, 49 mm"
+    periods: [{ from: 2026 }]
+    caseSize: 49
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }]
+    modelNumbers:
+      - { number: A3579, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3580, connectivity: gps-cellular, regions: "CN" }

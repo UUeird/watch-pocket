@@ -1,0 +1,7 @@
+name: Zenith
+origin: Switzerland
+periods: [{ from: 1865 }]
+segment: luxury
+ownership:
+  - owner: lvmh
+    from: 1999

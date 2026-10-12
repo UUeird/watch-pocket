@@ -1,0 +1,7 @@
+name: Omega
+origin: Switzerland
+periods: [{ from: 1848 }]
+segment: luxury
+ownership:
+  - owner: swatch-group
+    from: 1983

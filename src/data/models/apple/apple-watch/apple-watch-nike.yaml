@@ -1,0 +1,130 @@
+name: Apple Watch Nike
+line: apple/apple-watch
+collaborators: [nike]
+sources:
+  - https://support.apple.com/en-us/108056
+references:
+  - ref: "Nike Series 2, 38 mm"
+    periods: [{ from: 2016, to: 2017 }]
+    caseSize: 38
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }]
+    modelNumbers:
+      - { number: A1757 }
+  - ref: "Nike Series 2, 42 mm"
+    periods: [{ from: 2016, to: 2017 }]
+    caseSize: 42
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }]
+    modelNumbers:
+      - { number: A1758 }
+  - ref: "Nike Series 3, 38 mm"
+    periods: [{ from: 2017, to: 2018 }]
+    caseSize: 38
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }]
+    modelNumbers:
+      - { number: A1858, connectivity: gps }
+      - { number: A1860, connectivity: gps-cellular, regions: "Americas" }
+      - { number: A1889, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A1890, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Nike Series 3, 42 mm"
+    periods: [{ from: 2017, to: 2018 }]
+    caseSize: 42
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }]
+    modelNumbers:
+      - { number: A1859, connectivity: gps }
+      - { number: A1861, connectivity: gps-cellular, regions: "Americas" }
+      - { number: A1891, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A1892, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Nike Series 4, 40 mm"
+    periods: [{ from: 2018, to: 2019 }]
+    caseSize: 40
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }]
+    modelNumbers:
+      - { number: A1977, connectivity: gps }
+      - { number: A1975, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2007, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Nike Series 4, 44 mm"
+    periods: [{ from: 2018, to: 2019 }]
+    caseSize: 44
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }]
+    modelNumbers:
+      - { number: A1978, connectivity: gps }
+      - { number: A1976, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2008, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Nike Series 5, 40 mm"
+    periods: [{ from: 2019, to: 2020 }]
+    caseSize: 40
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }]
+    modelNumbers:
+      - { number: A2092, connectivity: gps }
+      - { number: A2094, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2156, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Nike Series 5, 44 mm"
+    periods: [{ from: 2019, to: 2020 }]
+    caseSize: 44
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }]
+    modelNumbers:
+      - { number: A2093, connectivity: gps }
+      - { number: A2095, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2157, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Nike Series 6, 40 mm"
+    periods: [{ from: 2020, to: 2021 }]
+    caseSize: 40
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }]
+    modelNumbers:
+      - { number: A2291, connectivity: gps }
+      - { number: A2293, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2375, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Nike Series 6, 44 mm"
+    periods: [{ from: 2020, to: 2021 }]
+    caseSize: 44
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }]
+    modelNumbers:
+      - { number: A2292, connectivity: gps }
+      - { number: A2294, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2376, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Nike SE, 40 mm"
+    periods: [{ from: 2020, to: 2022 }]
+    caseSize: 40
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }]
+    modelNumbers:
+      - { number: A2351, connectivity: gps }
+      - { number: A2353, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2355, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Nike SE, 44 mm"
+    periods: [{ from: 2020, to: 2022 }]
+    caseSize: 44
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }]
+    modelNumbers:
+      - { number: A2352, connectivity: gps }
+      - { number: A2354, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2356, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Nike Series 7, 41 mm"
+    periods: [{ from: 2021, to: 2022 }]
+    caseSize: 41
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Midnight" }, { color: champagne, name: "Starlight" }]
+    modelNumbers:
+      - { number: A2473, connectivity: gps }
+      - { number: A2475, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2476, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Nike Series 7, 45 mm"
+    periods: [{ from: 2021, to: 2022 }]
+    caseSize: 45
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Midnight" }, { color: champagne, name: "Starlight" }]
+    modelNumbers:
+      - { number: A2474, connectivity: gps }
+      - { number: A2477, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2478, connectivity: gps-cellular, regions: "EU/APAC/CN" }

@@ -1,0 +1,129 @@
+name: Apple Watch Edition
+line: apple/apple-watch
+sources:
+  - https://support.apple.com/en-us/108056
+references:
+  - ref: "Edition 1st generation, 38 mm, yellow gold"
+    periods: [{ from: 2015, to: 2016 }]
+    caseSize: 38
+    metals: [yellow-gold]
+    caseColors: [{ color: gold, name: "Yellow Gold" }]
+    modelNumbers:
+      - { number: A1553 }
+  - ref: "Edition 1st generation, 38 mm, rose gold"
+    periods: [{ from: 2015, to: 2016 }]
+    caseSize: 38
+    metals: [rose-gold]
+    caseColors: [{ color: rose-gold }]
+    modelNumbers:
+      - { number: A1553 }
+  - ref: "Edition 1st generation, 42 mm, yellow gold"
+    periods: [{ from: 2015, to: 2016 }]
+    caseSize: 42
+    metals: [yellow-gold]
+    caseColors: [{ color: gold, name: "Yellow Gold" }]
+    modelNumbers:
+      - { number: A1554 }
+  - ref: "Edition 1st generation, 42 mm, rose gold"
+    periods: [{ from: 2015, to: 2016 }]
+    caseSize: 42
+    metals: [rose-gold]
+    caseColors: [{ color: rose-gold }]
+    modelNumbers:
+      - { number: A1554 }
+  - ref: "Edition Series 2, 38 mm, ceramic"
+    periods: [{ from: 2016, to: 2017 }]
+    caseSize: 38
+    metals: [ceramic]
+    caseColors: [{ color: white }]
+    modelNumbers:
+      - { number: A1816 }
+  - ref: "Edition Series 2, 42 mm, ceramic"
+    periods: [{ from: 2016, to: 2017 }]
+    caseSize: 42
+    metals: [ceramic]
+    caseColors: [{ color: white }]
+    modelNumbers:
+      - { number: A1817 }
+  - ref: "Edition Series 3, 38 mm, ceramic"
+    periods: [{ from: 2017, to: 2018 }]
+    caseSize: 38
+    metals: [ceramic]
+    caseColors: [{ color: white }, { color: gray, name: "Gray" }]
+    modelNumbers:
+      - { number: A1860, connectivity: gps-cellular, regions: "Americas" }
+      - { number: A1889, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A1890, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Edition Series 3, 42 mm, ceramic"
+    periods: [{ from: 2017, to: 2018 }]
+    caseSize: 42
+    metals: [ceramic]
+    caseColors: [{ color: white }, { color: gray, name: "Gray" }]
+    modelNumbers:
+      - { number: A1861, connectivity: gps-cellular, regions: "Americas" }
+      - { number: A1891, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A1892, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Edition Series 5, 40 mm, titanium"
+    periods: [{ from: 2019, to: 2020 }]
+    caseSize: 40
+    metals: [titanium]
+    caseColors: [{ color: black, name: "Dark" }, { color: silver, name: "Light" }]
+    modelNumbers:
+      - { number: A2094, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2156, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Edition Series 5, 40 mm, ceramic"
+    periods: [{ from: 2019, to: 2020 }]
+    caseSize: 40
+    metals: [ceramic]
+    caseColors: [{ color: white }]
+    modelNumbers:
+      - { number: A2094, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2156, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Edition Series 5, 44 mm, titanium"
+    periods: [{ from: 2019, to: 2020 }]
+    caseSize: 44
+    metals: [titanium]
+    caseColors: [{ color: black, name: "Dark" }, { color: silver, name: "Light" }]
+    modelNumbers:
+      - { number: A2095, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2157, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Edition Series 5, 44 mm, ceramic"
+    periods: [{ from: 2019, to: 2020 }]
+    caseSize: 44
+    metals: [ceramic]
+    caseColors: [{ color: white }]
+    modelNumbers:
+      - { number: A2095, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2157, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Edition Series 6, 40 mm, titanium"
+    periods: [{ from: 2020, to: 2021 }]
+    caseSize: 40
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Titanium" }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2293, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2375, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Edition Series 6, 44 mm, titanium"
+    periods: [{ from: 2020, to: 2021 }]
+    caseSize: 44
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Titanium" }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2294, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2376, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Edition Series 7, 41 mm, titanium"
+    periods: [{ from: 2021, to: 2022 }]
+    caseSize: 41
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2475, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2476, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Edition Series 7, 45 mm, titanium"
+    periods: [{ from: 2021, to: 2022 }]
+    caseSize: 45
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }, { color: black, name: "Space Black" }]
+    modelNumbers:
+      - { number: A2477, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2478, connectivity: gps-cellular, regions: "EU/APAC/CN" }

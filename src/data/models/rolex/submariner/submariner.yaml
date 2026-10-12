@@ -1,0 +1,19 @@
+name: Submariner
+line: rolex/submariner
+references:
+  - ref: "114060"
+    periods: [{ from: 2012, to: 2020 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: dive }
+    movement: "3130"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "124060"
+    periods: [{ from: 2020 }]
+    caseSize: 41
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: dive }
+    movement: "3230"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]

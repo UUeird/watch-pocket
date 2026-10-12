@@ -1,0 +1,128 @@
+---
+import Base from '../../layouts/Base.astro';
+import { label, loadCatalog, type Group } from '../../lib/catalog';
+
+export async function getStaticPaths() {
+  const { groups } = await loadCatalog();
+  return groups.map((group) => ({ params: { id: group.id }, props: { group } }));
+}
+
+interface Props {
+  group: Group;
+}
+
+const { group } = Astro.props;
+const { brands, groups, groupsById } = await loadCatalog();
+const subsidiaries = groups.filter((other) => other.data.parent?.id === group.id);
+const { name, country, type, founded, website, parent } = group.data;
+const holdings = brands
+  .flatMap((brand) =>
+    brand.data.ownership
+      .filter((record) => record.owner.id === group.id)
+      .map((record) => ({ brand, ...record })),
+  )
+  .sort((a, b) => Number(a.to !== undefined) - Number(b.to !== undefined));
+const licenses = brands.filter((brand) =>
+  brand.data.licensees.some((record) => record.licensee.id === group.id && record.to === undefined),
+);
+---
+
+<Base title={name}>
+  <h1>{name}</h1>
+  <p class="lede cap">{label(type)}</p>
+
+  <dl class="facts">
+    <dt>Country</dt>
+    <dd>{country}</dd>
+    {
+      founded && (
+        <>
+          <dt>Founded</dt>
+          <dd>{founded}</dd>
+        </>
+      )
+    }
+    {
+      parent && (
+        <>
+          <dt>Parent</dt>
+          <dd>
+            <a href={`/ownership-groups/${parent.id}/`}>{groupsById.get(parent.id)?.data.name}</a>
+          </dd>
+        </>
+      )
+    }
+    {
+      website && (
+        <>
+          <dt>Website</dt>
+          <dd>
+            <a href={website}>{website}</a>
+          </dd>
+        </>
+      )
+    }
+  </dl>
+
+  {
+    subsidiaries.length > 0 && (
+      <>
+        <h2>Companies owned</h2>
+        <ul>
+          {subsidiaries.map((subsidiary) => (
+            <li>
+              <a href={`/ownership-groups/${subsidiary.id}/`}>{subsidiary.data.name}</a>
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
+
+  <h2>Brands</h2>
+  {
+    holdings.length === 0 ? (
+      <p>No brands on record.</p>
+    ) : (
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Brand</th>
+              <th>Country</th>
+              <th>Held from</th>
+              <th>To</th>
+            </tr>
+          </thead>
+          <tbody>
+            {holdings.map(({ brand, from, to }) => (
+              <tr>
+                <td>
+                  <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
+                </td>
+                <td>{brand.data.country}</td>
+                <td class="num">{from ?? 'Unknown'}</td>
+                <td class="num">{to ?? 'Present'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )
+  }
+
+  {
+    licenses.length > 0 && (
+      <>
+        <h2>Brands made under license</h2>
+        <ul>
+          {licenses.map((brand) => (
+            <li>
+              <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
+</Base>

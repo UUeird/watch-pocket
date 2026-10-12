@@ -1,0 +1,7 @@
+name: Breguet
+origin: Switzerland
+periods: [{ from: 1775 }]
+segment: haute
+ownership:
+  - owner: swatch-group
+    from: 1999

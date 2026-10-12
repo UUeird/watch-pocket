@@ -1,0 +1,7 @@
+name: Bulgari
+origin: Italy
+periods: [{ from: 1884 }]
+segment: luxury
+ownership:
+  - owner: lvmh
+    from: 2011

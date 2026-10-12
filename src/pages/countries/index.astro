@@ -1,0 +1,57 @@
+---
+import Base from '../../layouts/Base.astro';
+import { countryHref, loadCatalog } from '../../lib/catalog';
+import { countries as countryInfo } from '../../lib/countries';
+
+const { brands } = await loadCatalog();
+const counts = new Map<keyof typeof countryInfo, number>();
+for (const brand of brands) {
+  if (brand.data.origin) counts.set(brand.data.origin, (counts.get(brand.data.origin) ?? 0) + 1);
+}
+const countries = [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+const unrecorded = brands.filter((brand) => !brand.data.origin);
+---
+
+<Base title="Countries">
+  <h1>Countries</h1>
+  <p class="lede">Brands by country of origin: where each was founded, whoever owns it or makes it today.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Country of origin</th>
+          <th>Brands</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          countries.map(([country, count]) => (
+            <tr>
+              <td>
+                <span class="flag">{countryInfo[country].flag}</span>
+                <a href={countryHref(country)}>{country}</a>
+              </td>
+              <td class="num">{count}</td>
+            </tr>
+          ))
+        }
+        <tr>
+          <td>
+            <span class="flag" />
+            Not recorded
+          </td>
+          <td class="num">{unrecorded.length}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</Base>
+
+<style>
+  /* Fixed width keeps the names aligned on rows with no flag. */
+  .flag {
+    display: inline-block;
+    width: 1.75em;
+  }
+</style>

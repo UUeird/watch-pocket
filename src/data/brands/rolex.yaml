@@ -1,0 +1,7 @@
+name: Rolex
+origin: Switzerland
+periods: [{ from: 1905 }]
+segment: luxury
+ownership:
+  - owner: rolex-sa
+    from: 1905

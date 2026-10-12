@@ -1,0 +1,7 @@
+name: Jaeger-LeCoultre
+origin: Switzerland
+periods: [{ from: 1833 }]
+segment: luxury
+ownership:
+  - owner: richemont
+    from: 2000

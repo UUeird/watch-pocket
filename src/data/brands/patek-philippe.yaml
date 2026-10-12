@@ -1,0 +1,5 @@
+name: Patek Philippe
+origin: Switzerland
+periods: [{ from: 1839 }]
+segment: haute
+independent: true

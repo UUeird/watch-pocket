@@ -1,0 +1,9 @@
+name: Cartier
+origin: France
+headquarters: France
+manufacturing: [Switzerland]
+periods: [{ from: 1847 }]
+segment: luxury
+ownership:
+  - owner: richemont
+    from: 1988

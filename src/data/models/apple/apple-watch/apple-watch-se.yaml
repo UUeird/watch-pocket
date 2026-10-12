@@ -1,0 +1,63 @@
+name: Apple Watch SE
+line: apple/apple-watch
+sources:
+  - https://support.apple.com/en-us/108056
+references:
+  - ref: "SE (1st generation), 40 mm"
+    periods: [{ from: 2020, to: 2022 }]
+    caseSize: 40
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: silver }]
+    modelNumbers:
+      - { number: A2351, connectivity: gps }
+      - { number: A2353, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2355, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "SE (1st generation), 44 mm"
+    periods: [{ from: 2020, to: 2022 }]
+    caseSize: 44
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: silver }]
+    modelNumbers:
+      - { number: A2352, connectivity: gps }
+      - { number: A2354, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2356, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "SE 2, 40 mm"
+    periods: [{ from: 2022, to: 2025 }]
+    caseSize: 40
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Midnight" }, { color: champagne, name: "Starlight" }, { color: silver }]
+    modelNumbers:
+      - { number: A2722, connectivity: gps }
+      - { number: A2726, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2725, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A2855, connectivity: gps-cellular, regions: "CN" }
+  - ref: "SE 2, 44 mm"
+    periods: [{ from: 2022, to: 2025 }]
+    caseSize: 44
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Midnight" }, { color: champagne, name: "Starlight" }, { color: silver }]
+    modelNumbers:
+      - { number: A2723, connectivity: gps }
+      - { number: A2727, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2724, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A2856, connectivity: gps-cellular, regions: "CN" }
+  - ref: "SE 3, 40 mm"
+    periods: [{ from: 2025 }]
+    caseSize: 40
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Midnight" }, { color: champagne, name: "Starlight" }]
+    modelNumbers:
+      - { number: A3324, connectivity: gps, regions: "NA/EU/APAC" }
+      - { number: A3391, connectivity: gps, regions: "CN" }
+      - { number: A3326, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3327, connectivity: gps-cellular, regions: "CN" }
+  - ref: "SE 3, 44 mm"
+    periods: [{ from: 2025 }]
+    caseSize: 44
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Midnight" }, { color: champagne, name: "Starlight" }]
+    modelNumbers:
+      - { number: A3325, connectivity: gps, regions: "NA/EU/APAC" }
+      - { number: A3392, connectivity: gps, regions: "CN" }
+      - { number: A3328, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3329, connectivity: gps-cellular, regions: "CN" }

@@ -1,0 +1,80 @@
+---
+import Filters from '../../components/Filters.astro';
+import Base from '../../layouts/Base.astro';
+import { describeBezel, formatPeriods, label, loadCatalog, refHref } from '../../lib/catalog';
+
+const { references } = await loadCatalog();
+const distinct = (values: (string | undefined)[]) =>
+  [...new Set(values.filter((value) => value !== undefined))].sort();
+const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));
+const filters = [
+  { name: 'brand', label: 'Brand', options: options(distinct(references.map(({ brand }) => brand.data.name))) },
+  { name: 'metal', label: 'Metal', options: options(distinct(references.flatMap(({ reference }) => reference.metals))) },
+  {
+    name: 'case',
+    label: 'Case color',
+    options: options(distinct(references.flatMap(({ reference }) => reference.caseColors.map((finish) => finish.color)))),
+  },
+  {
+    name: 'dial',
+    label: 'Dial color',
+    options: options(distinct(references.flatMap(({ reference }) => reference.dials.map((dial) => dial.color)))),
+  },
+  {
+    name: 'bracelet',
+    label: 'Bracelet or strap',
+    options: options(distinct(references.flatMap(({ reference }) => reference.bracelets.map((bracelet) => bracelet.type)))),
+  },
+  { name: 'crystal', label: 'Crystal', options: options(distinct(references.map(({ reference }) => reference.crystal))) },
+];
+---
+
+<Base title="References">
+  <h1>References</h1>
+  <p class="lede">Every reference number on record, across all brands.</p>
+
+  <Filters target="references" noun="references" placeholder="Search reference and model numbers" filters={filters} />
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Reference</th>
+          <th>Brand</th>
+          <th>Model</th>
+          <th>On sale</th>
+          <th>Case</th>
+          <th>Metals</th>
+          <th>Bezel</th>
+        </tr>
+      </thead>
+      <tbody id="references">
+        {
+          references.map(({ reference, model, brand }) => (
+            <tr
+              data-q={[reference.ref, ...reference.modelNumbers.map(({ number }) => number)].join(' ').toLowerCase()}
+              data-brand={brand.data.name}
+              data-metal={reference.metals.join('|')}
+              data-case={reference.caseColors.map((finish) => finish.color).join('|')}
+              data-dial={reference.dials.map((dial) => dial.color).join('|')}
+              data-bracelet={reference.bracelets.map((bracelet) => bracelet.type).join('|')}
+              data-crystal={reference.crystal}
+            >
+              <td class="num">
+                <a href={refHref(model, reference)}>{reference.ref}</a>
+              </td>
+              <td>{brand.data.name}</td>
+              <td>
+                <a href={`/brands/${model.id}/`}>{model.data.name}</a>
+              </td>
+              <td class="num">{formatPeriods(reference.periods)}</td>
+              <td class="num">{reference.caseSize && `${reference.caseSize} mm`}</td>
+              <td class="cap">{reference.metals.map(label).join(', ')}</td>
+              <td class="cap">{describeBezel(reference.bezel)}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</Base>

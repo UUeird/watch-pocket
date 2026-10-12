@@ -1,0 +1,7 @@
+name: TAG Heuer
+origin: Switzerland
+periods: [{ from: 1860 }]
+segment: luxury
+ownership:
+  - owner: lvmh
+    from: 1999

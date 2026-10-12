@@ -1,0 +1,7 @@
+name: IWC Schaffhausen
+origin: Switzerland
+periods: [{ from: 1868 }]
+segment: luxury
+ownership:
+  - owner: richemont
+    from: 2000

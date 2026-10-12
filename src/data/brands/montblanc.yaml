@@ -1,0 +1,8 @@
+name: Montblanc
+origin: Germany
+headquarters: Germany
+manufacturing: [Switzerland]
+status: active
+segment: luxury
+ownership:
+  - owner: richemont
