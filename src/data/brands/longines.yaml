@@ -1,0 +1,7 @@
+name: Longines
+origin: Switzerland
+periods: [{ from: 1832 }]
+segment: mid-range
+ownership:
+  - owner: swatch-group
+    from: 1983

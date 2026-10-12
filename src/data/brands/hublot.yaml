@@ -1,0 +1,7 @@
+name: Hublot
+origin: Switzerland
+periods: [{ from: 1980 }]
+segment: luxury
+ownership:
+  - owner: lvmh
+    from: 2008

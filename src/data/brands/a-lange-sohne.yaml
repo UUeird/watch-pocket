@@ -1,0 +1,7 @@
+name: A. Lange & Söhne
+origin: Germany
+periods: [{ from: 1845 }]
+segment: haute
+ownership:
+  - owner: richemont
+    from: 2000

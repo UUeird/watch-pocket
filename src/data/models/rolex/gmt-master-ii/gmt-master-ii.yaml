@@ -1,0 +1,19 @@
+name: GMT-Master II
+line: rolex/gmt-master-ii
+references:
+  - ref: 126710BLRO
+    periods: [{ from: 2018 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: ceramic, colors: [red, blue], style: gmt }
+    movement: "3285"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]
+  - ref: 126710BLNR
+    periods: [{ from: 2019 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: ceramic, colors: [blue, black], style: gmt }
+    movement: "3285"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]

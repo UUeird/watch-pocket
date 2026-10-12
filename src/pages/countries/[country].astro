@@ -1,0 +1,95 @@
+---
+import Base from '../../layouts/Base.astro';
+import { countries, type CountryName } from '../../lib/countries';
+import { brandStatus, countryHref, loadCatalog, ownerKey, ownerlessLabel, type Brand } from '../../lib/catalog';
+
+export async function getStaticPaths() {
+  const { brands } = await loadCatalog();
+  const countries = new Set(
+    brands.flatMap(({ data }) => [data.origin, data.headquarters, ...data.manufacturing].filter((name) => name !== undefined)),
+  );
+  return [...countries].map((country) => ({
+    params: { country: countryHref(country).split('/')[2] },
+    props: { country },
+  }));
+}
+
+interface Props {
+  country: CountryName;
+}
+
+const { country } = Astro.props;
+const { flag } = countries[country];
+const { brands, groupsById } = await loadCatalog();
+const founded = brands.filter((brand) => brand.data.origin === country);
+// Brands from elsewhere that are run from, or made in, this country.
+const elsewhere = (brand: Brand) => brand.data.origin !== country;
+const headquartered = brands.filter((brand) => elsewhere(brand) && brand.data.headquarters === country);
+const made = brands.filter((brand) => elsewhere(brand) && brand.data.manufacturing.includes(country));
+const others = [
+  { heading: 'Headquartered here, founded elsewhere', brands: headquartered },
+  { heading: 'Made here, founded elsewhere', brands: made },
+].filter((section) => section.brands.length > 0);
+---
+
+<Base title={country}>
+  <h1>
+    {flag && <span aria-hidden="true">{flag} </span>}
+    {country}
+  </h1>
+  <p class="lede">{founded.length} brands founded here</p>
+
+  {
+    founded.length > 0 && (
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Brand</th>
+              <th>Owner</th>
+              <th>Founded</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {founded.map((brand) => {
+              const key = ownerKey(brand);
+              const owner = groupsById.get(key);
+              return (
+                <tr>
+                  <td>
+                    <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
+                  </td>
+                  <td>
+                    {owner ? (
+                      <a href={`/ownership-groups/${owner.id}/`}>{owner.data.name}</a>
+                    ) : (
+                      ownerlessLabel[key as keyof typeof ownerlessLabel]
+                    )}
+                  </td>
+                  <td class="num">{brand.data.periods[0]?.from}</td>
+                  <td class="cap">{brandStatus(brand)}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    )
+  }
+
+  {
+    others.map((section) => (
+      <>
+        <h2>{section.heading}</h2>
+        <ul>
+          {section.brands.map((brand) => (
+            <li>
+              <a href={`/brands/${brand.id}/`}>{brand.data.name}</a> (from {brand.data.origin ?? 'origin not recorded'})
+            </li>
+          ))}
+        </ul>
+      </>
+    ))
+  }
+</Base>

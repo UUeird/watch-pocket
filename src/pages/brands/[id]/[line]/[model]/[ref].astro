@@ -1,0 +1,67 @@
+---
+import Breadcrumb from '../../../../../components/Breadcrumb.astro';
+import Base from '../../../../../layouts/Base.astro';
+import {
+  describeBezel,
+  describeBracelet,
+  describeDial,
+  describeModelNumber,
+  formatPeriods,
+  label,
+  loadCatalog,
+  refSlug,
+} from '../../../../../lib/catalog';
+
+export async function getStaticPaths() {
+  const { references } = await loadCatalog();
+  return references.map((entry) => {
+    const [id, line, model] = entry.model.id.split('/');
+    return { params: { id, line, model, ref: refSlug(entry.reference.ref) }, props: entry };
+  });
+}
+
+const { reference, model, line, brand } = Astro.props;
+const { ref, periods, caseSize, metals, caseColors, modelNumbers, bezel, crystal, movement, dials, bracelets } = reference;
+const discontinued = periods.at(-1)?.to !== undefined;
+const facts = [
+  ['On sale', formatPeriods(periods) || 'Not recorded'],
+  ['Case size', caseSize && `${caseSize} mm`],
+  ['Metals', metals.map(label).join(', ')],
+  ['Case colors', caseColors.map(describeDial).join(', ')],
+  ['Bezel', describeBezel(bezel)],
+  ['Crystal', crystal],
+  ['Movement', movement],
+  ['Dials', dials.map(describeDial).join(', ')],
+  ['Bracelets', bracelets.map(describeBracelet).join(', ')],
+].filter(([, value]) => value);
+---
+
+<Base title={`${brand.data.name} ${ref}`}>
+  <Breadcrumb brand={brand} line={line} model={model} />
+  <h1>{ref}</h1>
+  <p class="lede">Reference{periods.length > 0 && (discontinued ? ' · discontinued' : ' · current')}</p>
+
+  <dl class="facts">
+    {
+      facts.map(([term, value]) => (
+        <>
+          <dt>{term}</dt>
+          <dd class="cap">{value}</dd>
+        </>
+      ))
+    }
+  </dl>
+
+  {
+    modelNumbers.length > 0 && (
+      <>
+        <h2>Model numbers</h2>
+        <ul>
+          {modelNumbers.map((modelNumber) => (
+            <li>{describeModelNumber(modelNumber)}</li>
+          ))}
+        </ul>
+      </>
+    )
+  }
+</Base>

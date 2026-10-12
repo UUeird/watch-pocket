@@ -1,0 +1,196 @@
+---
+import Base from '../../layouts/Base.astro';
+import { brandStatus, countryHref, formatPeriods, label, lineHref, loadCatalog, type Brand } from '../../lib/catalog';
+
+export async function getStaticPaths() {
+  const { brands } = await loadCatalog();
+  return brands.map((brand) => ({ params: { id: brand.id }, props: { brand } }));
+}
+
+interface Props {
+  brand: Brand;
+}
+
+const { brand } = Astro.props;
+const { brands, groupsById, linesOf, collaborationsOf } = await loadCatalog();
+const collaborations = collaborationsOf(brand.id);
+const brandName = (modelId: string) => brands.find((other) => other.id === modelId.split('/')[0])?.data.name;
+const lines = linesOf(brand.id);
+const { name, origin, headquarters, manufacturing, periods, category, segment, tags, production, copycat, website, ownership, licensees, independent } =
+  brand.data;
+const descriptors = [category === 'movement-maker' && category, segment, ...tags, copycat && 'copycat', brandStatus(brand)];
+---
+
+<Base title={name}>
+  <h1>{name}</h1>
+  <p class="lede cap">{descriptors.filter((value) => !!value).map(label).join(' · ')}</p>
+
+  <dl class="facts">
+    {
+      origin && (
+        <>
+          <dt>Origin</dt>
+          <dd>
+            <a href={countryHref(origin)}>{origin}</a>
+          </dd>
+        </>
+      )
+    }
+    {
+      headquarters && (
+        <>
+          <dt>Headquarters</dt>
+          <dd>
+            <a href={countryHref(headquarters)}>{headquarters}</a>
+          </dd>
+        </>
+      )
+    }
+    {
+      manufacturing.length > 0 && (
+        <>
+          <dt>Made in</dt>
+          <dd>
+            {manufacturing.map((country, index) => (
+              <>
+                {index > 0 && ', '}
+                <a href={countryHref(country)}>{country}</a>
+              </>
+            ))}
+          </dd>
+        </>
+      )
+    }
+    {
+      periods.length > 0 && (
+        <>
+          <dt>Active</dt>
+          <dd>{formatPeriods(periods)}</dd>
+        </>
+      )
+    }
+    {
+      production && (
+        <>
+          <dt>Production</dt>
+          <dd>
+            {production.units.toLocaleString('en')} watches a year ({production.year})
+          </dd>
+        </>
+      )
+    }
+    {
+      website && (
+        <>
+          <dt>Website</dt>
+          <dd>
+            <a href={website}>{website}</a>
+          </dd>
+        </>
+      )
+    }
+  </dl>
+
+  {
+    lines.length > 0 && (
+      <>
+        <h2>Product lines</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Line</th>
+                <th>On sale</th>
+              </tr>
+            </thead>
+            <tbody>
+              {lines.map((line) => (
+                <tr>
+                  <td>
+                    <a href={lineHref(line)}>{line.data.name}</a>
+                  </td>
+                  <td class="num">{formatPeriods(line.data.periods) || 'Not recorded'}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </>
+    )
+  }
+
+  {
+    collaborations.length > 0 && (
+      <>
+        <h2>Collaborations</h2>
+        <ul>
+          {collaborations.map((model) => (
+            <li>
+              <a href={`/brands/${model.id}/`}>{model.data.name}</a> (with {brandName(model.id)})
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
+
+  <h2>Ownership</h2>
+  {
+    ownership.length === 0 ? (
+      <p>{independent ? 'Independent. No parent group.' : 'Ownership not yet recorded.'}</p>
+    ) : (
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Owner</th>
+              <th>From</th>
+              <th>To</th>
+            </tr>
+          </thead>
+          <tbody>
+            {ownership.map((record) => (
+              <tr>
+                <td>
+                  <a href={`/ownership-groups/${record.owner.id}/`}>{groupsById.get(record.owner.id)?.data.name}</a>
+                </td>
+                <td class="num">{record.from ?? 'Unknown'}</td>
+                <td class="num">{record.to ?? 'Present'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )
+  }
+
+  {
+    licensees.length > 0 && (
+      <>
+        <h2>Watches made under license by</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Licensee</th>
+                <th>From</th>
+                <th>To</th>
+              </tr>
+            </thead>
+            <tbody>
+              {licensees.map((record) => (
+                <tr>
+                  <td>
+                    <a href={`/ownership-groups/${record.licensee.id}/`}>{groupsById.get(record.licensee.id)?.data.name}</a>
+                  </td>
+                  <td class="num">{record.from ?? 'Unknown'}</td>
+                  <td class="num">{record.to ?? 'Present'}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </>
+    )
+  }
+</Base>

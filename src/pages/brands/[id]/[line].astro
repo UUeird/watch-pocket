@@ -1,0 +1,53 @@
+---
+import Breadcrumb from '../../../components/Breadcrumb.astro';
+import Base from '../../../layouts/Base.astro';
+import { formatPeriods, loadCatalog, type Brand, type Line, type Model } from '../../../lib/catalog';
+
+export async function getStaticPaths() {
+  const { brands, lines, modelsOf } = await loadCatalog();
+  return lines.map((line) => {
+    const brand = brands.find((candidate) => candidate.id === line.data.brand.id)!;
+    return { params: { id: brand.id, line: line.id.split('/')[1] }, props: { line, brand, models: modelsOf(line.id) } };
+  });
+}
+
+interface Props {
+  line: Line;
+  brand: Brand;
+  models: Model[];
+}
+
+const { line, brand, models } = Astro.props;
+const { name, periods } = line.data;
+const discontinued = periods.at(-1)?.to !== undefined;
+---
+
+<Base title={`${brand.data.name} ${name}`}>
+  <Breadcrumb brand={brand} />
+  <h1>{name}</h1>
+  <p class="lede">Product line{periods.length > 0 && (discontinued ? ' · discontinued' : ' · current')}</p>
+
+  <dl class="facts">
+    <dt>Brand</dt>
+    <dd>
+      <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
+    </dd>
+    <dt>On sale</dt>
+    <dd>{formatPeriods(periods) || 'Not recorded'}</dd>
+  </dl>
+
+  <h2>Models</h2>
+  {
+    models.length === 0 ? (
+      <p>No models recorded yet.</p>
+    ) : (
+      <ul>
+        {models.map((model) => (
+          <li>
+            <a href={`/brands/${model.id}/`}>{model.data.name}</a> ({model.data.references.length} references)
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</Base>

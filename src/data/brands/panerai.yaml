@@ -1,0 +1,9 @@
+name: Panerai
+origin: Italy
+headquarters: Switzerland
+manufacturing: [Switzerland]
+periods: [{ from: 1860 }]
+segment: luxury
+ownership:
+  - owner: richemont
+    from: 1997

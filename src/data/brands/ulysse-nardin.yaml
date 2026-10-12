@@ -1,0 +1,10 @@
+name: Ulysse Nardin
+origin: Switzerland
+status: active
+segment: luxury
+ownership:
+  - owner: kering
+    from: 2014
+    to: 2022
+  - owner: sowind-group
+    from: 2022

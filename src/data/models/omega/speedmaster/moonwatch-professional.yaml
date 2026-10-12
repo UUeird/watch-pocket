@@ -1,0 +1,48 @@
+name: Moonwatch Professional
+line: omega/speedmaster
+references:
+  - ref: 311.30.42.30.01.005
+    periods: [{ from: 2014, to: 2021 }]
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: aluminum, colors: [black], style: tachymeter }
+    movement: "1861"
+    crystal: acrylic
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: 310.30.42.50.01.001
+    periods: [{ from: 2021 }]
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: aluminum, colors: [black], style: tachymeter }
+    movement: "3861"
+    crystal: acrylic
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: 310.30.42.50.01.002
+    periods: [{ from: 2021 }]
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: aluminum, colors: [black], style: tachymeter }
+    movement: "3861"
+    crystal: sapphire
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: 310.32.42.50.01.001
+    periods: [{ from: 2021 }]
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: aluminum, colors: [black], style: tachymeter }
+    movement: "3861"
+    crystal: acrylic
+    dials: [{ color: black }]
+    bracelets: [{ type: fabric-strap }]
+  - ref: 310.32.42.50.01.002
+    periods: [{ from: 2021 }]
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: aluminum, colors: [black], style: tachymeter }
+    movement: "3861"
+    crystal: sapphire
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]

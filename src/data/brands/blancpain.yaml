@@ -1,0 +1,7 @@
+name: Blancpain
+origin: Switzerland
+periods: [{ from: 1735 }]
+segment: haute
+ownership:
+  - owner: swatch-group
+    from: 1992

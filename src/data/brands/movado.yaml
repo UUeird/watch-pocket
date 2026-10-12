@@ -1,0 +1,8 @@
+name: Movado
+origin: Switzerland
+headquarters: United States
+manufacturing: [Switzerland]
+status: active
+segment: mid-range
+ownership:
+  - owner: movado-group

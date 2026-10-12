@@ -1,0 +1,445 @@
+name: Apple Watch Series
+line: apple/apple-watch
+sources:
+  - https://support.apple.com/en-us/108056
+references:
+  - ref: "1st generation, 38 mm, aluminum"
+    periods: [{ from: 2015, to: 2016 }]
+    caseSize: 38
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: rose-gold }, { color: silver }]
+    modelNumbers:
+      - { number: A1553 }
+  - ref: "1st generation, 38 mm, steel"
+    periods: [{ from: 2015, to: 2016 }]
+    caseSize: 38
+    metals: [steel]
+    caseColors: [{ color: black, name: "Space Black" }, { color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1553 }
+  - ref: "1st generation, 42 mm, aluminum"
+    periods: [{ from: 2015, to: 2016 }]
+    caseSize: 42
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: rose-gold }, { color: silver }]
+    modelNumbers:
+      - { number: A1554 }
+  - ref: "1st generation, 42 mm, steel"
+    periods: [{ from: 2015, to: 2016 }]
+    caseSize: 42
+    metals: [steel]
+    caseColors: [{ color: black, name: "Space Black" }, { color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1554 }
+  - ref: "Series 1, 38 mm, aluminum"
+    periods: [{ from: 2016, to: 2018 }]
+    caseSize: 38
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: rose-gold }, { color: silver }]
+    modelNumbers:
+      - { number: A1802 }
+  - ref: "Series 1, 42 mm, aluminum"
+    periods: [{ from: 2016, to: 2018 }]
+    caseSize: 42
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: rose-gold }, { color: silver }]
+    modelNumbers:
+      - { number: A1803 }
+  - ref: "Series 2, 38 mm, aluminum"
+    periods: [{ from: 2016, to: 2017 }]
+    caseSize: 38
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: rose-gold }, { color: silver }]
+    modelNumbers:
+      - { number: A1757 }
+  - ref: "Series 2, 38 mm, steel"
+    periods: [{ from: 2016, to: 2017 }]
+    caseSize: 38
+    metals: [steel]
+    caseColors: [{ color: black, name: "Space Black" }, { color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1757 }
+  - ref: "Series 2, 42 mm, aluminum"
+    periods: [{ from: 2016, to: 2017 }]
+    caseSize: 42
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: rose-gold }, { color: silver }]
+    modelNumbers:
+      - { number: A1758 }
+  - ref: "Series 2, 42 mm, steel"
+    periods: [{ from: 2016, to: 2017 }]
+    caseSize: 42
+    metals: [steel]
+    caseColors: [{ color: black, name: "Space Black" }, { color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1758 }
+  - ref: "Series 3, 38 mm, aluminum"
+    periods: [{ from: 2017, to: 2022 }]
+    caseSize: 38
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: silver }]
+    modelNumbers:
+      - { number: A1858, connectivity: gps }
+      - { number: A1860, connectivity: gps-cellular, regions: "Americas" }
+      - { number: A1889, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A1890, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 3, 42 mm, aluminum"
+    periods: [{ from: 2017, to: 2022 }]
+    caseSize: 42
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: silver }]
+    modelNumbers:
+      - { number: A1859, connectivity: gps }
+      - { number: A1861, connectivity: gps-cellular, regions: "Americas" }
+      - { number: A1891, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A1892, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 3, 38 mm, steel"
+    periods: [{ from: 2017, to: 2018 }]
+    caseSize: 38
+    metals: [steel]
+    caseColors: [{ color: black, name: "Space Black" }, { color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1860, connectivity: gps-cellular, regions: "Americas" }
+      - { number: A1889, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A1890, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 3, 42 mm, steel"
+    periods: [{ from: 2017, to: 2018 }]
+    caseSize: 42
+    metals: [steel]
+    caseColors: [{ color: black, name: "Space Black" }, { color: silver, name: "Stainless Steel" }]
+    modelNumbers:
+      - { number: A1861, connectivity: gps-cellular, regions: "Americas" }
+      - { number: A1891, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A1892, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 4, 40 mm, aluminum"
+    periods: [{ from: 2018, to: 2019 }]
+    caseSize: 40
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: silver }]
+    modelNumbers:
+      - { number: A1977, connectivity: gps }
+      - { number: A1975, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2007, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 4, 40 mm, steel"
+    periods: [{ from: 2018, to: 2019 }]
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }, { color: black, name: "Space Black" }, { color: gold }]
+    modelNumbers:
+      - { number: A1975, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2007, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 4, 44 mm, aluminum"
+    periods: [{ from: 2018, to: 2019 }]
+    caseSize: 44
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: silver }]
+    modelNumbers:
+      - { number: A1978, connectivity: gps }
+      - { number: A1976, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2008, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 4, 44 mm, steel"
+    periods: [{ from: 2018, to: 2019 }]
+    caseSize: 44
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }, { color: black, name: "Space Black" }, { color: gold }]
+    modelNumbers:
+      - { number: A1976, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2008, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 5, 40 mm, aluminum"
+    periods: [{ from: 2019, to: 2020 }]
+    caseSize: 40
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: silver }]
+    modelNumbers:
+      - { number: A2092, connectivity: gps }
+      - { number: A2094, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2156, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 5, 40 mm, steel"
+    periods: [{ from: 2019, to: 2020 }]
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }, { color: black, name: "Space Black" }, { color: gold }]
+    modelNumbers:
+      - { number: A2094, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2156, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 5, 44 mm, aluminum"
+    periods: [{ from: 2019, to: 2020 }]
+    caseSize: 44
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: silver }]
+    modelNumbers:
+      - { number: A2093, connectivity: gps }
+      - { number: A2095, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2157, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 5, 44 mm, steel"
+    periods: [{ from: 2019, to: 2020 }]
+    caseSize: 44
+    metals: [steel]
+    caseColors: [{ color: silver, name: "Stainless Steel" }, { color: black, name: "Space Black" }, { color: gold }]
+    modelNumbers:
+      - { number: A2095, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2157, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 6, 40 mm, aluminum"
+    periods: [{ from: 2020, to: 2021 }]
+    caseSize: 40
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: silver }, { color: red }, { color: blue }]
+    modelNumbers:
+      - { number: A2291, connectivity: gps }
+      - { number: A2293, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2375, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 6, 40 mm, steel"
+    periods: [{ from: 2020, to: 2021 }]
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: gray, name: "Graphite" }, { color: gold }]
+    modelNumbers:
+      - { number: A2293, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2375, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 6, 44 mm, aluminum"
+    periods: [{ from: 2020, to: 2021 }]
+    caseSize: 44
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: gold }, { color: silver }, { color: red }, { color: blue }]
+    modelNumbers:
+      - { number: A2292, connectivity: gps }
+      - { number: A2294, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2376, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 6, 44 mm, steel"
+    periods: [{ from: 2020, to: 2021 }]
+    caseSize: 44
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: gray, name: "Graphite" }, { color: gold }]
+    modelNumbers:
+      - { number: A2294, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2376, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 7, 41 mm, aluminum"
+    periods: [{ from: 2021, to: 2022 }]
+    caseSize: 41
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Midnight" }, { color: champagne, name: "Starlight" }, { color: green }, { color: blue }, { color: red, name: "(PRODUCT)RED" }]
+    modelNumbers:
+      - { number: A2473, connectivity: gps }
+      - { number: A2475, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2476, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 7, 41 mm, steel"
+    periods: [{ from: 2021, to: 2022 }]
+    caseSize: 41
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: gray, name: "Graphite" }, { color: gold }]
+    modelNumbers:
+      - { number: A2475, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2476, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 7, 45 mm, aluminum"
+    periods: [{ from: 2021, to: 2022 }]
+    caseSize: 45
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Midnight" }, { color: champagne, name: "Starlight" }, { color: green }, { color: blue }, { color: red, name: "(PRODUCT)RED" }]
+    modelNumbers:
+      - { number: A2474, connectivity: gps }
+      - { number: A2477, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2478, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 7, 45 mm, steel"
+    periods: [{ from: 2021, to: 2022 }]
+    caseSize: 45
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: gray, name: "Graphite" }, { color: gold }]
+    modelNumbers:
+      - { number: A2477, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2478, connectivity: gps-cellular, regions: "EU/APAC/CN" }
+  - ref: "Series 8, 41 mm, aluminum"
+    periods: [{ from: 2022, to: 2023 }]
+    caseSize: 41
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Midnight" }, { color: champagne, name: "Starlight" }, { color: silver }, { color: red, name: "(PRODUCT)RED" }]
+    modelNumbers:
+      - { number: A2770, connectivity: gps }
+      - { number: A2772, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2773, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A2857, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 8, 41 mm, steel"
+    periods: [{ from: 2022, to: 2023 }]
+    caseSize: 41
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: gray, name: "Graphite" }, { color: gold }]
+    modelNumbers:
+      - { number: A2772, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2773, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A2857, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 8, 45 mm, aluminum"
+    periods: [{ from: 2022, to: 2023 }]
+    caseSize: 45
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Midnight" }, { color: champagne, name: "Starlight" }, { color: silver }, { color: red, name: "(PRODUCT)RED" }]
+    modelNumbers:
+      - { number: A2771, connectivity: gps }
+      - { number: A2774, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2775, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A2858, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 8, 45 mm, steel"
+    periods: [{ from: 2022, to: 2023 }]
+    caseSize: 45
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: gray, name: "Graphite" }, { color: gold }]
+    modelNumbers:
+      - { number: A2774, connectivity: gps-cellular, regions: "NA" }
+      - { number: A2775, connectivity: gps-cellular, regions: "EU/APAC" }
+      - { number: A2858, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 9, 41 mm, aluminum"
+    periods: [{ from: 2023, to: 2024 }]
+    caseSize: 41
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Midnight" }, { color: champagne, name: "Starlight" }, { color: silver }, { color: pink }, { color: red, name: "(PRODUCT)RED" }]
+    modelNumbers:
+      - { number: A2978, connectivity: gps }
+      - { number: A2982, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A2983, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 9, 41 mm, steel"
+    periods: [{ from: 2023, to: 2024 }]
+    caseSize: 41
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: gray, name: "Graphite" }, { color: gold }]
+    modelNumbers:
+      - { number: A2982, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A2983, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 9, 45 mm, aluminum"
+    periods: [{ from: 2023, to: 2024 }]
+    caseSize: 45
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Midnight" }, { color: champagne, name: "Starlight" }, { color: silver }, { color: pink }, { color: red, name: "(PRODUCT)RED" }]
+    modelNumbers:
+      - { number: A2980, connectivity: gps }
+      - { number: A2984, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A2985, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 9, 45 mm, steel"
+    periods: [{ from: 2023, to: 2024 }]
+    caseSize: 45
+    metals: [steel]
+    caseColors: [{ color: silver }, { color: gray, name: "Graphite" }, { color: gold }]
+    modelNumbers:
+      - { number: A2984, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A2985, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 10, 42 mm, aluminum"
+    periods: [{ from: 2024, to: 2025 }]
+    caseSize: 42
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Jet Black" }, { color: rose-gold }, { color: silver }]
+    modelNumbers:
+      - { number: A2997, connectivity: gps, regions: "NA/EU/APAC" }
+      - { number: A2998, connectivity: gps, regions: "CN, Indonesia" }
+      - { number: A3001, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3002, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 10, 42 mm, titanium"
+    periods: [{ from: 2024, to: 2025 }]
+    caseSize: 42
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }, { color: gray, name: "Slate" }, { color: gold }]
+    modelNumbers:
+      - { number: A3001, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3002, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 10, 46 mm, aluminum"
+    periods: [{ from: 2024, to: 2025 }]
+    caseSize: 46
+    metals: [aluminum]
+    caseColors: [{ color: black, name: "Jet Black" }, { color: rose-gold }, { color: silver }]
+    modelNumbers:
+      - { number: A2999, connectivity: gps, regions: "NA/EU/APAC" }
+      - { number: A3000, connectivity: gps, regions: "CN, Indonesia" }
+      - { number: A3003, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3206, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 10, 46 mm, titanium"
+    periods: [{ from: 2024, to: 2025 }]
+    caseSize: 46
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }, { color: gray, name: "Slate" }, { color: gold }]
+    modelNumbers:
+      - { number: A3003, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3206, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 11, 42 mm, aluminum"
+    periods: [{ from: 2025, to: 2026 }]
+    caseSize: 42
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }, { color: rose-gold }, { color: black, name: "Jet Black" }]
+    modelNumbers:
+      - { number: A3331, connectivity: gps, regions: "NA/EU/APAC" }
+      - { number: A3450, connectivity: gps, regions: "CN" }
+      - { number: A3335, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3452, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 11, 42 mm, titanium"
+    periods: [{ from: 2025, to: 2026 }]
+    caseSize: 42
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }, { color: gold }, { color: gray, name: "Slate" }]
+    modelNumbers:
+      - { number: A3335, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3452, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 11, 46 mm, aluminum"
+    periods: [{ from: 2025, to: 2026 }]
+    caseSize: 46
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: silver }, { color: rose-gold }, { color: black, name: "Jet Black" }]
+    modelNumbers:
+      - { number: A3333, connectivity: gps, regions: "NA/EU/APAC" }
+      - { number: A3451, connectivity: gps, regions: "CN" }
+      - { number: A3337, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3453, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 11, 46 mm, titanium"
+    periods: [{ from: 2025, to: 2026 }]
+    caseSize: 46
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }, { color: gold }, { color: gray, name: "Slate" }]
+    modelNumbers:
+      - { number: A3337, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3453, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 12, 42 mm, aluminum"
+    periods: [{ from: 2026 }]
+    caseSize: 42
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: black }, { color: gold, name: "Light Gold" }, { color: brown, name: "Dark Bronze" }]
+    modelNumbers:
+      - { number: A3581, connectivity: gps, regions: "NA/EU/APAC" }
+      - { number: A3583, connectivity: gps, regions: "CN" }
+      - { number: A3582, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3586, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 12, 42 mm, titanium"
+    periods: [{ from: 2026 }]
+    caseSize: 42
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }, { color: gold, name: "Radiant Gold" }]
+    modelNumbers:
+      - { number: A3582, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3586, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 12, 42 mm, ceramic"
+    periods: [{ from: 2026 }]
+    caseSize: 42
+    metals: [ceramic]
+    caseColors: [{ color: white, name: "Pearl White" }, { color: blue, name: "Night Blue" }]
+    modelNumbers:
+      - { number: A3582, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3586, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 12, 46 mm, aluminum"
+    periods: [{ from: 2026 }]
+    caseSize: 46
+    metals: [aluminum]
+    caseColors: [{ color: gray, name: "Space Gray" }, { color: black }, { color: gold, name: "Light Gold" }, { color: brown, name: "Dark Bronze" }]
+    modelNumbers:
+      - { number: A3584, connectivity: gps, regions: "NA/EU/APAC" }
+      - { number: A3585, connectivity: gps, regions: "CN" }
+      - { number: A3587, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3588, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 12, 46 mm, titanium"
+    periods: [{ from: 2026 }]
+    caseSize: 46
+    metals: [titanium]
+    caseColors: [{ color: silver, name: "Natural" }, { color: gold, name: "Radiant Gold" }]
+    modelNumbers:
+      - { number: A3587, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3588, connectivity: gps-cellular, regions: "CN" }
+  - ref: "Series 12, 46 mm, ceramic"
+    periods: [{ from: 2026 }]
+    caseSize: 46
+    metals: [ceramic]
+    caseColors: [{ color: white, name: "Pearl White" }, { color: blue, name: "Night Blue" }]
+    modelNumbers:
+      - { number: A3587, connectivity: gps-cellular, regions: "NA/EU/APAC" }
+      - { number: A3588, connectivity: gps-cellular, regions: "CN" }

@@ -1,0 +1,99 @@
+---
+import Filters from '../components/Filters.astro';
+import Base from '../layouts/Base.astro';
+import { brandStatus, countryHref, label, loadCatalog, ownerKey, ownerlessLabel } from '../lib/catalog';
+
+const { brands, groups, groupsById, linesOf } = await loadCatalog();
+const distinct = (values: (string | undefined)[]) =>
+  [...new Set(values.filter((value) => value !== undefined))].sort();
+const segments = distinct(brands.map((brand) => brand.data.segment));
+const origins = distinct(brands.map((brand) => brand.data.origin));
+const tags = distinct(brands.flatMap((brand) => brand.data.tags));
+const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));
+---
+
+<Base>
+  <h1>Watch brands</h1>
+  <p class="lede">The names and corporations behind the world's timepieces.</p>
+
+  <Filters
+    target="brands"
+    noun="brands"
+    placeholder="Search brands and product lines"
+    filters={[
+      {
+        name: 'owner',
+        label: 'Owner',
+        options: [
+          ...groups.map((group) => ({ value: group.id, label: group.data.name })),
+          { value: 'independent', label: ownerlessLabel.independent },
+          { value: 'unrecorded', label: ownerlessLabel.unrecorded },
+        ],
+      },
+      { name: 'origin', label: 'Origin', options: options(origins) },
+      { name: 'segment', label: 'Segment', options: options(segments) },
+      {
+        name: 'category',
+        label: 'Category',
+        options: [
+          { value: 'watch-brand', label: 'Watch brands' },
+          { value: 'movement-maker', label: 'Movement makers' },
+        ],
+      },
+      { name: 'tags', label: 'Type', options: options(tags) },
+    ]}
+  />
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Brand</th>
+          <th>Owner</th>
+          <th>Origin</th>
+          <th>Founded</th>
+          <th>Segment</th>
+          <th>Type</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="brands">
+        {
+          brands.map((brand) => {
+            const { category, tags } = brand.data;
+            const lineNames = linesOf(brand.id).map((line) => line.data.name);
+            const types = category === 'movement-maker' ? [category, ...tags] : tags;
+            const key = ownerKey(brand);
+            const owner = groupsById.get(key);
+            return (
+              <tr
+                data-q={[brand.data.name, ...lineNames].join(' ').toLowerCase()}
+                data-owner={key}
+                data-segment={brand.data.segment}
+                data-origin={brand.data.origin}
+                data-category={category}
+                data-tags={tags.join('|')}
+              >
+                <td>
+                  <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
+                </td>
+                <td>
+                  {owner ? (
+                    <a href={`/ownership-groups/${owner.id}/`}>{owner.data.name}</a>
+                  ) : (
+                    ownerlessLabel[key as keyof typeof ownerlessLabel]
+                  )}
+                </td>
+                <td>{brand.data.origin && <a href={countryHref(brand.data.origin)}>{brand.data.origin}</a>}</td>
+                <td class="num">{brand.data.periods[0]?.from}</td>
+                <td class="cap">{brand.data.segment && label(brand.data.segment)}</td>
+                <td class="cap">{types.map(label).join(', ')}</td>
+                <td class="cap">{brandStatus(brand)}</td>
+              </tr>
+            );
+          })
+        }
+      </tbody>
+    </table>
+  </div>
+</Base>

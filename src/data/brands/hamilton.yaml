@@ -1,0 +1,9 @@
+name: Hamilton
+origin: United States
+headquarters: Switzerland
+manufacturing: [Switzerland]
+status: active
+segment: mid-range
+ownership:
+  - owner: swatch-group
+    from: 1983

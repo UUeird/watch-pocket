@@ -1,0 +1,88 @@
+---
+import Base from '../../layouts/Base.astro';
+import { label, loadCatalog, ownerKey, ownerlessLabel } from '../../lib/catalog';
+
+const { brands, groups, brandsOf } = await loadCatalog();
+const held = groups
+  .map((group) => ({ group, brands: brandsOf(group.id) }))
+  .sort((a, b) => b.brands.length - a.brands.length);
+const ownerless = (['independent', 'unrecorded'] as const).map((key) => ({
+  key,
+  brands: brands.filter((brand) => ownerKey(brand) === key),
+}));
+---
+
+<Base title="Ownership Groups">
+  <h1>Ownership groups</h1>
+  <p class="lede">Groups and corporations, with the brands each currently holds.</p>
+
+  <div class="cards">
+    {
+      held.map(({ group, brands }) => (
+        <section class="card">
+          <h2>
+            <a href={`/ownership-groups/${group.id}/`}>{group.data.name}</a>
+          </h2>
+          <p class="meta cap">
+            {label(group.data.type)} · {group.data.country} · {brands.length} brands
+          </p>
+          <ul>
+            {brands.map((brand) => (
+              <li>
+                <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+    {
+      ownerless.map(({ key, brands }) => (
+        <section class="card">
+          <h2>{ownerlessLabel[key]}</h2>
+          <p class="meta">
+            {key === 'independent' ? 'No parent group' : 'Ownership not yet researched'} · {brands.length} brands
+          </p>
+          <ul>
+            {brands.map((brand) => (
+              <li>
+                <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</Base>
+
+<style>
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+
+  .card {
+    padding: 16px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+  }
+
+  .card h2 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .meta {
+    margin: 4px 0 12px;
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+
+  .card ul {
+    margin: 0;
+    padding-left: 18px;
+  }
+</style>

@@ -1,0 +1,10 @@
+name: Datejust 36
+line: rolex/datejust
+references:
+  - ref: "126234"
+    caseSize: 36
+    metals: [steel, white-gold]
+    bezel: { material: white-gold, style: fluted }
+    movement: "3235"
+    dials: [{ color: blue }, { color: black }, { color: silver }, { color: white }, { color: gray, name: Slate }, { color: green, name: Mint green }]
+    bracelets: [{ type: bracelet, name: Oyster }, { type: bracelet, name: Jubilee }]

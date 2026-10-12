@@ -1,0 +1,108 @@
+---
+import Breadcrumb from '../../../../components/Breadcrumb.astro';
+import Base from '../../../../layouts/Base.astro';
+import {
+  describeBezel,
+  describeBracelet,
+  describeDial,
+  formatPeriods,
+  label,
+  loadCatalog,
+  refHref,
+  type Brand,
+  type Line,
+  type Model,
+} from '../../../../lib/catalog';
+
+export async function getStaticPaths() {
+  const { brands, lines, models } = await loadCatalog();
+  const byId = new Map(brands.map((brand) => [brand.id, brand]));
+  return models.map((model) => {
+    const [id, lineSlug, modelSlug] = model.id.split('/');
+    const brand = brands.find((candidate) => candidate.id === id)!;
+    const line = lines.find((candidate) => candidate.id === model.data.line.id)!;
+    return { params: { id, line: lineSlug, model: modelSlug }, props: { model, line, brand, collaborators: model.data.collaborators.map(({ id }) => byId.get(id)!) } };
+  });
+}
+
+interface Props {
+  model: Model;
+  line: Line;
+  brand: Brand;
+  collaborators: Brand[];
+}
+
+const { model, line, brand, collaborators } = Astro.props;
+const { name, references, sources } = model.data;
+---
+
+<Base title={`${brand.data.name} ${name}`}>
+  <Breadcrumb brand={brand} line={line} />
+  <h1>{name}</h1>
+  <p class="lede">
+    Model · {references.length} references
+    {
+      collaborators.map((collaborator) => (
+        <>
+          {' · with '}
+          <a href={`/brands/${collaborator.id}/`}>{collaborator.data.name}</a>
+        </>
+      ))
+    }
+  </p>
+
+  <h2>References</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Reference</th>
+          <th>On sale</th>
+          <th>Case</th>
+          <th>Metals</th>
+          <th>Case colors</th>
+          <th>Bezel</th>
+          <th>Crystal</th>
+          <th>Movement</th>
+          <th>Dials</th>
+          <th>Bracelets</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          references.map((reference) => (
+            <tr>
+              <td class="num">
+                <a href={refHref(model, reference)}>{reference.ref}</a>
+              </td>
+              <td class="num">{formatPeriods(reference.periods)}</td>
+              <td class="num">{reference.caseSize && `${reference.caseSize} mm`}</td>
+              <td class="cap">{reference.metals.map(label).join(', ')}</td>
+              <td class="cap">{reference.caseColors.map(describeDial).join(', ')}</td>
+              <td class="cap">{describeBezel(reference.bezel)}</td>
+              <td class="cap">{reference.crystal}</td>
+              <td class="num">{reference.movement}</td>
+              <td class="cap">{reference.dials.map(describeDial).join(', ')}</td>
+              <td class="cap">{reference.bracelets.map(describeBracelet).join(', ')}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  {
+    sources.length > 0 && (
+      <>
+        <h2>Sources</h2>
+        <ul>
+          {sources.map((source) => (
+            <li>
+              <a href={source}>{source}</a>
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
+</Base>
