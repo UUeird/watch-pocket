@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 # Checks that each data rule really fails the build: breaks one data file at a time, builds, then restores it.
-# Run from the repo root with `npm run test:rules`. Needs a clean build to start from.
+# Run from the repo root with `npm run test:rules`, with the dev server stopped.
 set -u
+
+# The dev server shares Astro's content cache with these builds and can be left serving a broken file's error.
+if npx astro dev status 2>/dev/null | grep -q 'running at'; then
+  echo "Stop the dev server first: npx astro dev stop" >&2
+  exit 1
+fi
 D=src/data
 failures=0
 
