@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { label, loadCatalog, type Group } from '../../lib/catalog';
+import { countryHref, label, loadCatalog, type Group } from '../../lib/catalog';
 
 export async function getStaticPaths() {
   const { groups } = await loadCatalog();
@@ -89,7 +89,7 @@ const licenses = brands.filter((brand) =>
           <thead>
             <tr>
               <th>Brand</th>
-              <th>Country</th>
+              <th>Origin</th>
               <th>Held from</th>
               <th>To</th>
             </tr>
@@ -100,7 +100,7 @@ const licenses = brands.filter((brand) =>
                 <td>
                   <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
                 </td>
-                <td>{brand.data.country}</td>
+                <td>{brand.data.origin && <a href={countryHref(brand.data.origin)}>{brand.data.origin}</a>}</td>
                 <td class="num">{from ?? 'Unknown'}</td>
                 <td class="num">{to ?? 'Present'}</td>
               </tr>

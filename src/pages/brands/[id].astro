@@ -23,7 +23,7 @@ const descriptors = [category === 'movement-maker' && category, segment, ...tags
 
 <Base title={name}>
   <h1>{name}</h1>
-  <p class="lede cap">{descriptors.filter((value) => !!value).map(label).join(' · ')}</p>
+  <p class="lede cap">{descriptors.filter((value) => typeof value === 'string').map(label).join(' · ')}</p>
 
   <dl class="facts">
     {

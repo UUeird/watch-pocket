@@ -33,7 +33,7 @@ const periods = z
       .object({ from: z.number().int(), to: z.number().int().optional() })
       .refine(endsAfterStart, { message: 'A period cannot end before it starts.' }),
   )
-  .refine((list) => list.every((entry, index) => index === 0 || list[index - 1].to !== undefined), {
+  .refine((list) => list.every((_, index) => index === 0 || list[index - 1].to !== undefined), {
     message: 'Only the last period may be open-ended; earlier ones need a `to` year.',
   })
   .refine((list) => list.every((entry, index) => index === 0 || entry.from >= (list[index - 1].to ?? entry.from)), {
@@ -42,18 +42,9 @@ const periods = z
   .default([]);
 
 // One holder's tenure (an owner or a licensee). The record with no `to` is the current one, so there can be only one.
-const tenures = <Key extends string>(key: Key, target: 'groups') =>
-  z
-    .array(
-      z
-        .object({ from: z.number().int().optional(), to: z.number().int().optional() })
-        .extend({ [key]: reference(target) } as Record<Key, ReturnType<typeof reference>>)
-        .refine(endsAfterStart, { message: 'A record cannot end before it starts.' }),
-    )
-    .refine((list) => list.filter((record) => record.to === undefined).length <= 1, {
-      message: `Only one ${key} can be current; give the earlier records a \`to\` year.`,
-    })
-    .default([]);
+const tenure = { from: z.number().int().optional(), to: z.number().int().optional() };
+const tenureEnds = { message: 'A record cannot end before it starts.' };
+const onlyOneCurrent = (list: { to?: number }[]) => list.filter((record) => record.to === undefined).length <= 1;
 
 const brands = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/data/brands' }),
@@ -73,10 +64,20 @@ const brands = defineCollection({
       category: z.enum(['watch-brand', 'movement-maker']).default('watch-brand'),
       // What kind of business it is, where that is not simply a watch brand. A brand can carry several.
       tags: z.array(z.enum(['fashion', 'direct-to-consumer', 'smartwatch', 'early-digital'])).default([]),
+      copycat: z.boolean().default(false),
+      // Watches made per year, with the year the figure refers to.
+      production: z.object({ units: z.number().int(), year: z.number().int() }).optional(),
+      website: z.url().optional(),
       // Ownership is dated because brands change hands; the record with no `to` is the current owner.
-      ownership: tenures('owner', 'groups'),
+      ownership: z
+        .array(z.object({ owner: reference('groups'), ...tenure }).refine(endsAfterStart, tenureEnds))
+        .refine(onlyOneCurrent, { message: 'Only one owner can be current; give the earlier records a `to` year.' })
+        .default([]),
       // Companies that make and sell the brand's watches under license without owning the brand. Dated like ownership.
-      licensees: tenures('licensee', 'groups'),
+      licensees: z
+        .array(z.object({ licensee: reference('groups'), ...tenure }).refine(endsAfterStart, tenureEnds))
+        .refine(onlyOneCurrent, { message: 'Only one licensee can be current; give the earlier records a `to` year.' })
+        .default([]),
       // Confirmed to have no parent group. With no ownership records and this unset, the owner is not yet recorded.
       independent: z.boolean().default(false),
     })
