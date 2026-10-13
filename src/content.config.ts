@@ -54,6 +54,13 @@ const onlyOneCurrent = (list: { to?: number }[]) => list.filter((record) => reco
 // The percentage of the brand an owner holds, or `unknown` for a part-owner whose share is not public.
 // Leaving it out means the owner holds the whole brand.
 const stake = z.union([z.number().gt(0).max(100), z.literal('unknown')]).optional();
+// An owner is a group or another brand. A bare id means a group; `{ brand: tudor }` names a brand,
+// since the two collections share ids (Chanel is both). Either way it resolves to a reference.
+const owner = z.union([
+  reference('groups'),
+  z.object({ group: reference('groups') }).transform(({ group }) => group),
+  z.object({ brand: reference('brands') }).transform(({ brand }) => brand),
+]);
 // How firmly an ownership claim is established: stated by the company, stated by the press, or circulating unconfirmed.
 // It covers the whole record, so a disputed owner can be marked as well as a disputed stake.
 const basis = z.enum(['disclosed', 'reported', 'rumored']).optional();
@@ -93,7 +100,7 @@ const brands = defineCollection({
       ownership: z
         .array(
           z
-            .object({ owner: reference('groups'), stake, basis, ...tenure })
+            .object({ owner, stake, basis, ...tenure })
             .refine(endsAfterStart, tenureEnds)
             .refine((record) => record.basis === undefined || record.sources.length > 0, {
               message: 'A record with a `basis` needs at least one source to show where the claim comes from.',

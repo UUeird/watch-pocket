@@ -15,11 +15,16 @@ export const label = (value: string) => value.replace(/-/g, ' ');
 // The site a source link points to, used as its link text where the full URL would not fit.
 export const sourceHost = (source: string) => new URL(source).hostname.replace(/^www\./, '');
 
-// Usually one, but part-owners holding stakes at the same time are all current.
-export const currentOwnerIds = (brand: Brand) =>
-  brand.data.ownership.filter((record) => record.to === undefined).map((record) => record.owner.id);
-
 type Ownership = Brand['data']['ownership'][number];
+// A group or another brand.
+export type Owner = Ownership['owner'];
+
+// Usually one, but part-owners holding stakes at the same time are all current.
+export const currentOwners = (brand: Brand) =>
+  brand.data.ownership.filter((record) => record.to === undefined).map((record) => record.owner);
+
+export const ownerHref = ({ collection, id }: Owner) =>
+  collection === 'brands' ? `/brands/${id}/` : `/ownership-groups/${id}/`;
 
 // Blank for an owner of the whole brand, which is the usual case.
 export const formatStake = (stake: Ownership['stake']) =>
@@ -62,7 +67,26 @@ async function buildCatalog() {
   const brands = (await getCollection('brands')).sort(byName);
   const groups = (await getCollection('groups')).sort(byName);
   const groupsById = new Map(groups.map((group) => [group.id, group]));
-  const brandsOf = (groupId: string) => brands.filter((brand) => currentOwnerIds(brand).includes(groupId));
+  const brandsById = new Map(brands.map((brand) => [brand.id, brand]));
+  const ownerName = ({ collection, id }: Owner) => (collection === 'brands' ? brandsById : groupsById).get(id)?.data.name;
+  const owns = (owner: Owner, other: Owner) => owner.collection === other.collection && owner.id === other.id;
+  // Every ownership record naming this owner, current ones first.
+  const holdingsOf = (owner: Owner) =>
+    brands
+      .flatMap((brand) => brand.data.ownership.filter((record) => owns(record.owner, owner)).map((record) => ({ brand, ...record })))
+      .sort((a, b) => Number(a.to !== undefined) - Number(b.to !== undefined));
+  const brandsOf = (groupId: string) =>
+    brands.filter((brand) => currentOwners(brand).some((owner) => owns(owner, { collection: 'groups', id: groupId })));
+  for (const brand of brands) {
+    for (const { owner } of brand.data.ownership) {
+      if (ownerName(owner) === undefined) {
+        throw new Error(`Brand "${brand.id}" names an owner that does not exist: "${owner.id}" in ${owner.collection}.`);
+      }
+      if (owns(owner, { collection: 'brands', id: brand.id })) {
+        throw new Error(`Brand "${brand.id}" is listed as its own owner.`);
+      }
+    }
+  }
   const lines = await getCollection('lines');
   const discontinued = (line: Line) => line.data.periods.at(-1)?.to !== undefined;
   // Current lines first, then oldest first.
@@ -94,5 +118,5 @@ async function buildCatalog() {
     const brand = brands.find((candidate) => candidate.id === line.data.brand.id)!;
     return model.data.references.map((reference) => ({ reference, model, line, brand }));
   });
-  return { brands, groups, groupsById, brandsOf, lines, linesOf, models, modelsOf, collaborationsOf, references };
+  return { brands, groups, groupsById, ownerName, holdingsOf, brandsOf, lines, linesOf, models, modelsOf, collaborationsOf, references };
 }

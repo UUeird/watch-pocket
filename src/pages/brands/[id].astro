@@ -1,8 +1,9 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Holdings from '../../components/Holdings.astro';
 import SourceLinks from '../../components/SourceLinks.astro';
 import Sources from '../../components/Sources.astro';
-import { brandStatus, countryHref, formatPeriods, formatStake, label, lineHref, loadCatalog, type Brand } from '../../lib/catalog';
+import { brandStatus, countryHref, formatPeriods, formatStake, label, lineHref, loadCatalog, ownerHref, type Brand } from '../../lib/catalog';
 
 export async function getStaticPaths() {
   const { brands } = await loadCatalog();
@@ -14,7 +15,9 @@ interface Props {
 }
 
 const { brand } = Astro.props;
-const { brands, groupsById, linesOf, collaborationsOf } = await loadCatalog();
+const { brands, groupsById, ownerName, holdingsOf, linesOf, collaborationsOf } = await loadCatalog();
+const self = { collection: 'brands' as const, id: brand.id };
+const holdings = holdingsOf(self);
 const collaborations = collaborationsOf(brand.id);
 const brandName = (modelId: string) => brands.find((other) => other.id === modelId.split('/')[0])?.data.name;
 const lines = linesOf(brand.id);
@@ -161,7 +164,7 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
             {ownership.map((record) => (
               <tr>
                 <td>
-                  <a href={`/ownership-groups/${record.owner.id}/`}>{groupsById.get(record.owner.id)?.data.name}</a>
+                  <a href={ownerHref(record.owner)}>{ownerName(record.owner)}</a>
                 </td>
                 {showStake && <td class="num">{formatStake(record.stake)}</td>}
                 <td class="num">{record.from ?? 'Unknown'}</td>
@@ -177,6 +180,15 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
           </tbody>
         </table>
       </div>
+    )
+  }
+
+  {
+    holdings.length > 0 && (
+      <>
+        <h2>Stakes held</h2>
+        <Holdings owner={self} />
+      </>
     )
   }
 

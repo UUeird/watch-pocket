@@ -2,7 +2,7 @@
 import Filters from '../components/Filters.astro';
 import Owners from '../components/Owners.astro';
 import Base from '../layouts/Base.astro';
-import { brandStatus, countryHref, currentOwnerIds, label, loadCatalog } from '../lib/catalog';
+import { brandStatus, countryHref, currentOwners, label, loadCatalog } from '../lib/catalog';
 
 const { brands, groups, linesOf } = await loadCatalog();
 const distinct = (values: (string | undefined)[]) =>
@@ -10,6 +10,11 @@ const distinct = (values: (string | undefined)[]) =>
 const segments = distinct(brands.map((brand) => brand.data.segment));
 const origins = distinct(brands.map((brand) => brand.data.origin));
 const tags = distinct(brands.flatMap((brand) => brand.data.tags));
+// The Owner filter lists groups, so a brand held by another brand matches none of its options.
+const groupOwnerIds = (brand: (typeof brands)[number]) =>
+  currentOwners(brand)
+    .filter((owner) => owner.collection === 'groups')
+    .map((owner) => owner.id);
 const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));
 ---
 
@@ -64,7 +69,7 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
             return (
               <tr
                 data-q={[brand.data.name, ...lineNames].join(' ').toLowerCase()}
-                data-owner={currentOwnerIds(brand).join('|')}
+                data-owner={groupOwnerIds(brand).join('|')}
                 data-segment={brand.data.segment}
                 data-origin={brand.data.origin}
                 data-category={category}

@@ -1,8 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
-import SourceLinks from '../../components/SourceLinks.astro';
+import Holdings from '../../components/Holdings.astro';
 import Sources from '../../components/Sources.astro';
-import { countryHref, formatStake, label, loadCatalog, type Group } from '../../lib/catalog';
+import { label, loadCatalog, type Group } from '../../lib/catalog';
 
 export async function getStaticPaths() {
   const { groups } = await loadCatalog();
@@ -14,19 +14,11 @@ interface Props {
 }
 
 const { group } = Astro.props;
-const { brands, groups, groupsById } = await loadCatalog();
+const { brands, groups, groupsById, holdingsOf } = await loadCatalog();
 const subsidiaries = groups.filter((other) => other.data.parent?.id === group.id);
 const { name, country, type, founded, website, parent, sources } = group.data;
-const holdings = brands
-  .flatMap((brand) =>
-    brand.data.ownership
-      .filter((record) => record.owner.id === group.id)
-      .map((record) => ({ brand, ...record })),
-  )
-  .sort((a, b) => Number(a.to !== undefined) - Number(b.to !== undefined));
-const showStake = holdings.some((record) => record.stake !== undefined);
-const showBasis = holdings.some((record) => record.basis !== undefined);
-const showHoldingSources = holdings.some((record) => record.sources.length > 0);
+const owner = { collection: 'groups' as const, id: group.id };
+const holdings = holdingsOf(owner);
 const licenses = brands.filter((brand) =>
   brand.data.licensees.some((record) => record.licensee.id === group.id && record.to === undefined),
 );
@@ -85,46 +77,7 @@ const licenses = brands.filter((brand) =>
   }
 
   <h2>Brands</h2>
-  {
-    holdings.length === 0 ? (
-      <p>No brands on record.</p>
-    ) : (
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Brand</th>
-              <th>Origin</th>
-              {showStake && <th>Stake</th>}
-              <th>Held from</th>
-              <th>To</th>
-              {showBasis && <th>Basis</th>}
-              {showHoldingSources && <th>Source</th>}
-            </tr>
-          </thead>
-          <tbody>
-            {holdings.map(({ brand, stake, basis, from, to, sources }) => (
-              <tr>
-                <td>
-                  <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
-                </td>
-                <td>{brand.data.origin && <a href={countryHref(brand.data.origin)}>{brand.data.origin}</a>}</td>
-                {showStake && <td class="num">{formatStake(stake)}</td>}
-                <td class="num">{from ?? 'Unknown'}</td>
-                <td class="num">{to ?? 'Present'}</td>
-                {showBasis && <td class="cap">{basis}</td>}
-                {showHoldingSources && (
-                  <td>
-                    <SourceLinks sources={sources} />
-                  </td>
-                )}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    )
-  }
+  {holdings.length === 0 ? <p>No brands on record.</p> : <Holdings owner={owner} />}
 
   {
     licenses.length > 0 && (
