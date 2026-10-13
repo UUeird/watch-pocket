@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   check:
-    name: Type check, build, links and data rules
+    name: Checks and tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -30,5 +30,9 @@ jobs:
         run: npm run build
       - name: Check internal links
         run: npm run test:links
+      - name: Install the test browser
+        run: npx playwright install --with-deps chromium
+      - name: Browser tests for the filters
+        run: npm run test:browser
       - name: Confirm each data rule still fails the build
         run: npm run test:rules

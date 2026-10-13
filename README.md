@@ -12,6 +12,7 @@ npm run build    # static build into dist/
 npm run preview  # serve the built site
 npm run check    # type check
 npm run test:links  # check internal links in the built site (run after a build)
+npm run test:browser  # browser tests for the filters (run after a build)
 ```
 
 ## Data
@@ -25,6 +26,8 @@ The site is built with [Astro](https://astro.build) from data files in the repo:
 
 The schemas live in `src/content.config.ts` and are checked at build time, so bad data fails the build with a message. `npm run test:rules` confirms each rule still fires; stop the dev server first, since it breaks data files temporarily.
 
-Every pull request runs the type check, the build, the link check and the rule tests in GitHub Actions.
+The browser tests need a one-time `npx playwright install chromium`.
+
+Every pull request runs the type check, the build, the link check, the browser tests and the rule tests in GitHub Actions.
 
 Much of the data was entered from memory and is not yet verified.
