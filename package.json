@@ -8,6 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
+    "test:links": "node scripts/check-links.mjs",
+    "test:browser": "playwright test",
     "test:rules": "scripts/test-data-rules.sh"
   },
   "dependencies": {
@@ -15,6 +17,8 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5",
     "typescript": "^6.0.3"
   }
 }

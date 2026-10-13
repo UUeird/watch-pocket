@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   check:
-    name: Type check, build and data rules
+    name: Checks and tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -28,5 +28,11 @@ jobs:
       # The build is also what validates every data file against the schema.
       - name: Build
         run: npm run build
+      - name: Check internal links
+        run: npm run test:links
+      - name: Install the test browser
+        run: npx playwright install --with-deps chromium
+      - name: Browser tests for the filters
+        run: npm run test:browser
       - name: Confirm each data rule still fails the build
         run: npm run test:rules
