@@ -30,4 +30,4 @@ The browser tests need a one-time `npx playwright install chromium`.
 
 Every pull request runs the type check, the build, the link check, the browser tests and the rule tests in GitHub Actions.
 
-Much of the data was entered from memory and is not yet verified.
+Much of the data was entered from memory and is not yet verified. A fact that has been checked carries `sources`, a list of links: on each ownership and licensee record for that claim, and on the brand, group or model file for everything else.

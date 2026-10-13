@@ -2,4 +2,11 @@ name: MB&F
 origin: Switzerland
 status: active
 segment: haute
-independent: true
+ownership:
+  - owner: chanel
+    stake: 25
+    basis: disclosed
+    from: 2024
+    sources:
+      - https://www.watchtime.com/featured/chanel-takes-a-25-stake-in-mbf/
+      - https://theimpression.com/chanel-expands-luxury-portfolio-with-25-stake-in-mbf/

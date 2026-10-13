@@ -2,4 +2,3 @@ name: Audemars Piguet
 origin: Switzerland
 periods: [{ from: 1875 }]
 segment: haute
-independent: true

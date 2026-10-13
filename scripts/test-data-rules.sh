@@ -26,13 +26,21 @@ try() { # description, file, sed expression that breaks it
 try "period ends before it starts" $D/brands/omega.yaml 's/{ from: 1848 }/{ from: 1848, to: 1800 }/'
 try "earlier period left open-ended" $D/lines/rolex/milgauss.yaml 's/{ from: 1956, to: 1988 }/{ from: 1956 }/'
 try "overlapping periods" $D/lines/rolex/milgauss.yaml 's/{ from: 2007, to: 2023 }/{ from: 1980, to: 2023 }/'
-try "independent brand with a current owner" $D/brands/omega.yaml 's/^segment: /independent: true\
-segment: /'
 try "two current owners" $D/brands/girard-perregaux.yaml '/to: 2022/d'
 try "two references with the same URL" $D/models/rolex/submariner/submariner.yaml 's/ref: "124060"/ref: "114060"/'
 try "line filed under the wrong brand" $D/lines/rolex/milgauss.yaml 's/^brand: rolex$/brand: omega/'
 try "model filed under the wrong line" $D/models/rolex/submariner/submariner.yaml 's#^line: rolex/submariner$#line: rolex/datejust#'
 try "status set alongside periods" $D/brands/omega.yaml 's/^segment: /status: active\
 segment: /'
+try "current stakes over 100 percent in total" $D/brands/girard-perregaux.yaml '/to: 2022/d;s/^  - owner: .*/&\
+    stake: 60/'
+try "part-owner alongside an owner with no stake" $D/brands/girard-perregaux.yaml '/to: 2022/d;s/^  - owner: sowind-group$/&\
+    stake: unknown/'
+try "basis with no source" $D/brands/girard-perregaux.yaml 's/^  - owner: sowind-group$/&\
+    basis: reported/'
+try "stake over 100 percent" $D/brands/girard-perregaux.yaml 's/^  - owner: sowind-group$/  - owner: sowind-group\
+    stake: 120/'
+try "source that is not a link" $D/brands/girard-perregaux.yaml 's/^  - owner: sowind-group$/  - owner: sowind-group\
+    sources: [kering press release]/'
 
 exit $failures

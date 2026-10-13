@@ -1,6 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { brandStatus, countryHref, formatPeriods, label, lineHref, loadCatalog, type Brand } from '../../lib/catalog';
+import SourceLinks from '../../components/SourceLinks.astro';
+import Sources from '../../components/Sources.astro';
+import { brandStatus, countryHref, formatPeriods, formatStake, label, lineHref, loadCatalog, type Brand } from '../../lib/catalog';
 
 export async function getStaticPaths() {
   const { brands } = await loadCatalog();
@@ -16,9 +18,13 @@ const { brands, groupsById, linesOf, collaborationsOf } = await loadCatalog();
 const collaborations = collaborationsOf(brand.id);
 const brandName = (modelId: string) => brands.find((other) => other.id === modelId.split('/')[0])?.data.name;
 const lines = linesOf(brand.id);
-const { name, origin, headquarters, manufacturing, periods, category, segment, tags, production, copycat, website, ownership, licensees, independent } =
+const { name, origin, headquarters, manufacturing, periods, category, segment, tags, production, copycat, website, ownership, licensees, sources } =
   brand.data;
-const descriptors = [category === 'movement-maker' && category, segment, ...tags, copycat && 'copycat', brandStatus(brand)];
+const showStake = ownership.some((record) => record.stake !== undefined);
+const showBasis = ownership.some((record) => record.basis !== undefined);
+const showOwnerSources = ownership.some((record) => record.sources.length > 0);
+const showLicenseeSources = licensees.some((record) => record.sources.length > 0);
+const descriptors = [category !== 'watch-brand' && category, segment, ...tags, copycat && 'copycat', brandStatus(brand)];
 ---
 
 <Base title={name}>
@@ -137,15 +143,18 @@ const descriptors = [category === 'movement-maker' && category, segment, ...tags
   <h2>Ownership</h2>
   {
     ownership.length === 0 ? (
-      <p>{independent ? 'Independent. No parent group.' : 'Ownership not yet recorded.'}</p>
+      <p>No owner on record.</p>
     ) : (
       <div class="table-wrap">
         <table>
           <thead>
             <tr>
               <th>Owner</th>
+              {showStake && <th>Stake</th>}
               <th>From</th>
               <th>To</th>
+              {showBasis && <th>Basis</th>}
+              {showOwnerSources && <th>Source</th>}
             </tr>
           </thead>
           <tbody>
@@ -154,8 +163,15 @@ const descriptors = [category === 'movement-maker' && category, segment, ...tags
                 <td>
                   <a href={`/ownership-groups/${record.owner.id}/`}>{groupsById.get(record.owner.id)?.data.name}</a>
                 </td>
+                {showStake && <td class="num">{formatStake(record.stake)}</td>}
                 <td class="num">{record.from ?? 'Unknown'}</td>
                 <td class="num">{record.to ?? 'Present'}</td>
+                {showBasis && <td class="cap">{record.basis}</td>}
+                {showOwnerSources && (
+                  <td>
+                    <SourceLinks sources={record.sources} />
+                  </td>
+                )}
               </tr>
             ))}
           </tbody>
@@ -175,6 +191,7 @@ const descriptors = [category === 'movement-maker' && category, segment, ...tags
                 <th>Licensee</th>
                 <th>From</th>
                 <th>To</th>
+                {showLicenseeSources && <th>Source</th>}
               </tr>
             </thead>
             <tbody>
@@ -185,6 +202,11 @@ const descriptors = [category === 'movement-maker' && category, segment, ...tags
                   </td>
                   <td class="num">{record.from ?? 'Unknown'}</td>
                   <td class="num">{record.to ?? 'Present'}</td>
+                  {showLicenseeSources && (
+                    <td>
+                      <SourceLinks sources={record.sources} />
+                    </td>
+                  )}
                 </tr>
               ))}
             </tbody>
@@ -193,4 +215,6 @@ const descriptors = [category === 'movement-maker' && category, segment, ...tags
       </>
     )
   }
+
+  <Sources sources={sources} />
 </Base>

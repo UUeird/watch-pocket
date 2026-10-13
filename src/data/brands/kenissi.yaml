@@ -1,0 +1,21 @@
+name: Kenissi
+origin: Switzerland
+periods: [{ from: 2016 }]
+category: movement-maker
+ownership:
+  - owner: rolex-sa
+    stake: unknown
+    basis: reported
+    from: 2016
+    sources:
+      - https://www.the1916company.com/blog/watches-wonders-2025-a-visit-to-the-tudor-manufacture-in-le-locle.html
+      - https://reference.grail-watch.com/2020/11/16/a-survey-of-the-kenissi-movements-for-tudor-chanel-breitling-and-norqain/
+  - owner: chanel
+    stake: 20
+    basis: disclosed
+    from: 2018
+    sources:
+      - https://watchesbysjx.com/2019/01/chanel-kenissi-tudor-rolex.html
+      - https://fashionunited.nz/news/business/chanel-acquires-minority-stake-in-watchmaker-kenissi/201901086987
+sources:
+  - https://reference.grail-watch.com/2020/11/16/a-survey-of-the-kenissi-movements-for-tudor-chanel-breitling-and-norqain/

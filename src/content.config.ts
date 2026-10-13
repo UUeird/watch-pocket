@@ -4,6 +4,9 @@ import { z } from 'astro/zod';
 import { countryNames } from './lib/countries';
 import { refSlug } from './lib/slug';
 
+// Where a fact was taken from, as links a reader can check. Empty means it is unsourced.
+const sources = z.array(z.url()).default([]);
+
 const groups = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/data/groups' }),
   schema: z.object({
@@ -13,6 +16,8 @@ const groups = defineCollection({
     founded: z.number().int().optional(),
     website: z.url().optional(),
     parent: reference('groups').optional(),
+    // For the group's own facts; a brand it owns cites the ownership on the brand's record.
+    sources,
   }),
 });
 
@@ -41,10 +46,26 @@ const periods = z
   })
   .default([]);
 
-// One holder's tenure (an owner or a licensee). The record with no `to` is the current one, so there can be only one.
-const tenure = { from: z.number().int().optional(), to: z.number().int().optional() };
+// One holder's tenure (an owner or a licensee). The record with no `to` is the current one.
+// Each record cites its own sources, since these are the dated claims most often disputed.
+const tenure = { from: z.number().int().optional(), to: z.number().int().optional(), sources };
 const tenureEnds = { message: 'A record cannot end before it starts.' };
 const onlyOneCurrent = (list: { to?: number }[]) => list.filter((record) => record.to === undefined).length <= 1;
+// The percentage of the brand an owner holds, or `unknown` for a part-owner whose share is not public.
+// Leaving it out means the owner holds the whole brand.
+const stake = z.union([z.number().gt(0).max(100), z.literal('unknown')]).optional();
+// How firmly an ownership claim is established: stated by the company, stated by the press, or circulating unconfirmed.
+// It covers the whole record, so a disputed owner can be marked as well as a disputed stake.
+const basis = z.enum(['disclosed', 'reported', 'rumored']).optional();
+// Several owners can be current only as part-owners: each states its stake and the known ones total no more than the whole.
+const currentStakesFit = (list: { to?: number; stake?: number | 'unknown' }[]) => {
+  const current = list.filter((record) => record.to === undefined);
+  const known = current.map((record) => record.stake).filter((share) => typeof share === 'number');
+  return (
+    current.length <= 1 ||
+    (current.every((record) => record.stake !== undefined) && known.reduce((total, share) => total + share, 0) <= 100)
+  );
+};
 
 const brands = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/data/brands' }),
@@ -61,31 +82,38 @@ const brands = defineCollection({
       status: z.enum(['active', 'dormant', 'defunct', 'revived']).optional(),
       // Market positioning. `broad` is for brands whose range spans several tiers.
       segment: z.enum(['haute', 'luxury', 'mid-range', 'budget', 'broad']).optional(),
-      category: z.enum(['watch-brand', 'movement-maker']).default('watch-brand'),
+      category: z.enum(['watch-brand', 'movement-maker', 'case-maker']).default('watch-brand'),
       // What kind of business it is, where that is not simply a watch brand. A brand can carry several.
       tags: z.array(z.enum(['fashion', 'direct-to-consumer', 'smartwatch', 'early-digital'])).default([]),
       copycat: z.boolean().default(false),
       // Watches made per year, with the year the figure refers to.
       production: z.object({ units: z.number().int(), year: z.number().int() }).optional(),
       website: z.url().optional(),
-      // Ownership is dated because brands change hands; the record with no `to` is the current owner.
+      // Ownership is dated because brands change hands; a record with no `to` is a current owner.
       ownership: z
-        .array(z.object({ owner: reference('groups'), ...tenure }).refine(endsAfterStart, tenureEnds))
-        .refine(onlyOneCurrent, { message: 'Only one owner can be current; give the earlier records a `to` year.' })
+        .array(
+          z
+            .object({ owner: reference('groups'), stake, basis, ...tenure })
+            .refine(endsAfterStart, tenureEnds)
+            .refine((record) => record.basis === undefined || record.sources.length > 0, {
+              message: 'A record with a `basis` needs at least one source to show where the claim comes from.',
+            }),
+        )
+        .refine(currentStakesFit, {
+          message:
+            'Several owners can be current only if each has a `stake` (a percentage or `unknown`) and the percentages total 100 or less; otherwise give the earlier records a `to` year.',
+        })
         .default([]),
       // Companies that make and sell the brand's watches under license without owning the brand. Dated like ownership.
       licensees: z
         .array(z.object({ licensee: reference('groups'), ...tenure }).refine(endsAfterStart, tenureEnds))
         .refine(onlyOneCurrent, { message: 'Only one licensee can be current; give the earlier records a `to` year.' })
         .default([]),
-      // Confirmed to have no parent group. With no ownership records and this unset, the owner is not yet recorded.
-      independent: z.boolean().default(false),
+      // For facts on this brand other than ownership and licensing, which cite their own.
+      sources,
     })
     .refine((brand) => brand.periods.length === 0 || brand.status === undefined, {
       message: 'Set either `periods` or `status`, not both: status is derived from periods.',
-    })
-    .refine((brand) => !brand.independent || brand.ownership.every((record) => record.to !== undefined), {
-      message: 'A brand cannot be `independent` and have a current owner.',
     }),
 });
 
@@ -112,7 +140,7 @@ const models = defineCollection({
     // Other brands a special edition is made with, e.g. Hermès for Apple Watch Hermès.
     collaborators: z.array(reference('brands')).default([]),
     // Where this model's facts were taken from.
-    sources: z.array(z.url()).default([]),
+    sources,
     references: z
       .array(
         z.object({

@@ -1,3 +1,11 @@
 name: Bell & Ross
 origin: France
 status: active
+ownership:
+  - owner: chanel
+    stake: 49
+    basis: rumored
+    from: 1998
+    sources:
+      - https://www.luxurybazaar.com/grey-market/chanel-watch-brands/
+      - https://therake.com/au/stories/chanel-and-MB&F-haute-horologerie
