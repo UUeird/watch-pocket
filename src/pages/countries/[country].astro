@@ -1,7 +1,8 @@
 ---
+import Owners from '../../components/Owners.astro';
 import Base from '../../layouts/Base.astro';
 import { countries, type CountryName } from '../../lib/countries';
-import { brandStatus, countryHref, loadCatalog, ownerKey, ownerlessLabel, type Brand } from '../../lib/catalog';
+import { brandStatus, countryHref, loadCatalog, type Brand } from '../../lib/catalog';
 
 export async function getStaticPaths() {
   const { brands } = await loadCatalog();
@@ -20,7 +21,7 @@ interface Props {
 
 const { country } = Astro.props;
 const { flag } = countries[country];
-const { brands, groupsById } = await loadCatalog();
+const { brands } = await loadCatalog();
 const founded = brands.filter((brand) => brand.data.origin === country);
 // Brands from elsewhere that are run from, or made in, this country.
 const elsewhere = (brand: Brand) => brand.data.origin !== country;
@@ -52,26 +53,18 @@ const others = [
             </tr>
           </thead>
           <tbody>
-            {founded.map((brand) => {
-              const key = ownerKey(brand);
-              const owner = groupsById.get(key);
-              return (
-                <tr>
-                  <td>
-                    <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
-                  </td>
-                  <td>
-                    {owner ? (
-                      <a href={`/ownership-groups/${owner.id}/`}>{owner.data.name}</a>
-                    ) : (
-                      ownerlessLabel[key as keyof typeof ownerlessLabel]
-                    )}
-                  </td>
-                  <td class="num">{brand.data.periods[0]?.from}</td>
-                  <td class="cap">{brandStatus(brand)}</td>
-                </tr>
-              );
-            })}
+            {founded.map((brand) => (
+              <tr>
+                <td>
+                  <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
+                </td>
+                <td>
+                  <Owners brand={brand} />
+                </td>
+                <td class="num">{brand.data.periods[0]?.from}</td>
+                <td class="cap">{brandStatus(brand)}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

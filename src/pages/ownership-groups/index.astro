@@ -1,15 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { label, loadCatalog, ownerKey, ownerlessLabel } from '../../lib/catalog';
+import { label, loadCatalog } from '../../lib/catalog';
 
-const { brands, groups, brandsOf } = await loadCatalog();
+const { groups, brandsOf } = await loadCatalog();
 const held = groups
   .map((group) => ({ group, brands: brandsOf(group.id) }))
   .sort((a, b) => b.brands.length - a.brands.length);
-const ownerless = (['independent', 'unrecorded'] as const).map((key) => ({
-  key,
-  brands: brands.filter((brand) => ownerKey(brand) === key),
-}));
 ---
 
 <Base title="Ownership Groups">
@@ -25,23 +21,6 @@ const ownerless = (['independent', 'unrecorded'] as const).map((key) => ({
           </h2>
           <p class="meta cap">
             {label(group.data.type)} · {group.data.country} · {brands.length} brands
-          </p>
-          <ul>
-            {brands.map((brand) => (
-              <li>
-                <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))
-    }
-    {
-      ownerless.map(({ key, brands }) => (
-        <section class="card">
-          <h2>{ownerlessLabel[key]}</h2>
-          <p class="meta">
-            {key === 'independent' ? 'No parent group' : 'Ownership not yet researched'} · {brands.length} brands
           </p>
           <ul>
             {brands.map((brand) => (

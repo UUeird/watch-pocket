@@ -2,4 +2,3 @@ name: HYT
 origin: Switzerland
 periods: [{ from: 2012, to: 2021 }, { from: 2022 }]
 segment: haute
-independent: true

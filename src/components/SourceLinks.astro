@@ -1,0 +1,18 @@
+---
+import { sourceHost } from '../lib/catalog';
+
+interface Props {
+  sources: string[];
+}
+
+const { sources } = Astro.props;
+---
+
+{
+  sources.map((source, index) => (
+    <>
+      {index > 0 && ', '}
+      <a href={source}>{sourceHost(source)}</a>
+    </>
+  ))
+}

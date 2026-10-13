@@ -1,4 +1,5 @@
 name: Chanel
 origin: France
 status: active
-independent: true
+ownership:
+  - owner: chanel

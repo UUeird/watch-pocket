@@ -12,8 +12,18 @@ export const countryHref = (country: string) => `/countries/${country.toLowerCas
 
 export const label = (value: string) => value.replace(/-/g, ' ');
 
-export const currentOwnerId = (brand: Brand) =>
-  brand.data.ownership.find((record) => record.to === undefined)?.owner.id;
+// The site a source link points to, used as its link text where the full URL would not fit.
+export const sourceHost = (source: string) => new URL(source).hostname.replace(/^www\./, '');
+
+// Usually one, but part-owners holding stakes at the same time are all current.
+export const currentOwnerIds = (brand: Brand) =>
+  brand.data.ownership.filter((record) => record.to === undefined).map((record) => record.owner.id);
+
+type Ownership = Brand['data']['ownership'][number];
+
+// Blank for an owner of the whole brand, which is the usual case.
+export const formatStake = (stake: Ownership['stake']) =>
+  stake === undefined ? '' : stake === 'unknown' ? 'Unknown' : `${stake}%`;
 
 type Period = { from: number; to?: number };
 
@@ -28,12 +38,6 @@ export const brandStatus = ({ data }: Brand) => {
   if (data.periods.at(-1)!.to !== undefined) return 'defunct';
   return data.periods.length > 1 ? 'revived' : 'active';
 };
-
-// 'independent' and 'unrecorded' are the two ownerless cases; anything else is a group id.
-export const ownerKey = (brand: Brand) =>
-  currentOwnerId(brand) ?? (brand.data.independent ? 'independent' : 'unrecorded');
-
-export const ownerlessLabel = { independent: 'Independent', unrecorded: 'Not recorded' };
 
 export type Reference = Model['data']['references'][number];
 
@@ -58,7 +62,7 @@ async function buildCatalog() {
   const brands = (await getCollection('brands')).sort(byName);
   const groups = (await getCollection('groups')).sort(byName);
   const groupsById = new Map(groups.map((group) => [group.id, group]));
-  const brandsOf = (groupId: string) => brands.filter((brand) => currentOwnerId(brand) === groupId);
+  const brandsOf = (groupId: string) => brands.filter((brand) => currentOwnerIds(brand).includes(groupId));
   const lines = await getCollection('lines');
   const discontinued = (line: Line) => line.data.periods.at(-1)?.to !== undefined;
   // Current lines first, then oldest first.
