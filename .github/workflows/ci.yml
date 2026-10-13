@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   check:
-    name: Type check, build and data rules
+    name: Type check, build, links and data rules
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -28,5 +28,7 @@ jobs:
       # The build is also what validates every data file against the schema.
       - name: Build
         run: npm run build
+      - name: Check internal links
+        run: npm run test:links
       - name: Confirm each data rule still fails the build
         run: npm run test:rules

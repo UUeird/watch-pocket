@@ -11,6 +11,7 @@ npm run dev      # dev server at http://localhost:4321
 npm run build    # static build into dist/
 npm run preview  # serve the built site
 npm run check    # type check
+npm run test:links  # check internal links in the built site (run after a build)
 ```
 
 ## Data
@@ -24,6 +25,6 @@ The site is built with [Astro](https://astro.build) from data files in the repo:
 
 The schemas live in `src/content.config.ts` and are checked at build time, so bad data fails the build with a message. `npm run test:rules` confirms each rule still fires; stop the dev server first, since it breaks data files temporarily.
 
-Every pull request runs the type check, the build and the rule tests in GitHub Actions.
+Every pull request runs the type check, the build, the link check and the rule tests in GitHub Actions.
 
 Much of the data was entered from memory and is not yet verified.
