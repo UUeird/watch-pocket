@@ -1,0 +1,51 @@
+---
+import SourceLinks from './SourceLinks.astro';
+import { countryHref, formatStake, loadCatalog, type Owner } from '../lib/catalog';
+
+interface Props {
+  owner: Owner;
+}
+
+const { holdingsOf } = await loadCatalog();
+const holdings = holdingsOf(Astro.props.owner);
+const showStake = holdings.some((record) => record.stake !== undefined);
+const showBasis = holdings.some((record) => record.basis !== undefined);
+const showSources = holdings.some((record) => record.sources.length > 0);
+---
+
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Brand</th>
+        <th>Origin</th>
+        {showStake && <th>Stake</th>}
+        <th>Held from</th>
+        <th>To</th>
+        {showBasis && <th>Basis</th>}
+        {showSources && <th>Source</th>}
+      </tr>
+    </thead>
+    <tbody>
+      {
+        holdings.map(({ brand, stake, basis, from, to, sources }) => (
+          <tr>
+            <td>
+              <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
+            </td>
+            <td>{brand.data.origin && <a href={countryHref(brand.data.origin)}>{brand.data.origin}</a>}</td>
+            {showStake && <td class="num">{formatStake(stake)}</td>}
+            <td class="num">{from ?? 'Unknown'}</td>
+            <td class="num">{to ?? 'Present'}</td>
+            {showBasis && <td class="cap">{basis}</td>}
+            {showSources && (
+              <td>
+                <SourceLinks sources={sources} />
+              </td>
+            )}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

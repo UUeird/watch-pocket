@@ -1,19 +1,19 @@
 ---
-import { currentOwnerIds, loadCatalog, type Brand } from '../lib/catalog';
+import { currentOwners, loadCatalog, ownerHref, type Brand } from '../lib/catalog';
 
 interface Props {
   brand: Brand;
 }
 
-const { groupsById } = await loadCatalog();
-const owners = currentOwnerIds(Astro.props.brand);
+const { ownerName } = await loadCatalog();
+const owners = currentOwners(Astro.props.brand);
 ---
 
 {
-  owners.map((id, index) => (
+  owners.map((owner, index) => (
     <>
       {index > 0 && ', '}
-      <a href={`/ownership-groups/${id}/`}>{groupsById.get(id)?.data.name}</a>
+      <a href={ownerHref(owner)}>{ownerName(owner)}</a>
     </>
   ))
 }

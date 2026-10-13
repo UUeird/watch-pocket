@@ -36,6 +36,8 @@ try "current stakes over 100 percent in total" $D/brands/girard-perregaux.yaml '
     stake: 60/'
 try "part-owner alongside an owner with no stake" $D/brands/girard-perregaux.yaml '/to: 2022/d;s/^  - owner: sowind-group$/&\
     stake: unknown/'
+try "brand listed as its own owner" $D/brands/kenissi.yaml 's/{ brand: tudor }/{ brand: kenissi }/'
+try "owner that does not exist" $D/brands/kenissi.yaml 's/{ brand: tudor }/{ brand: no-such-brand }/'
 try "basis with no source" $D/brands/girard-perregaux.yaml 's/^  - owner: sowind-group$/&\
     basis: reported/'
 try "stake over 100 percent" $D/brands/girard-perregaux.yaml 's/^  - owner: sowind-group$/  - owner: sowind-group\

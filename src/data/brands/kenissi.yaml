@@ -3,7 +3,7 @@ origin: Switzerland
 periods: [{ from: 2016 }]
 category: movement-maker
 ownership:
-  - owner: rolex-sa
+  - owner: { brand: tudor }
     stake: unknown
     basis: reported
     from: 2016
