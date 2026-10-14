@@ -1,4 +1,8 @@
 name: Apple
+logo: ../logos/apple.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg
+  license: Public domain
 origin: United States
 headquarters: United States
 manufacturing: [China]

@@ -1,4 +1,8 @@
 name: Steve Madden
+logo: ../logos/steve-madden.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Steve_Madden_logo.svg
+  license: Public domain
 origin: United States
 status: active
 tags:

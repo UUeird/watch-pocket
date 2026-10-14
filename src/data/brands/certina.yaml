@@ -1,4 +1,8 @@
 name: Certina
+logo: ../logos/certina.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Certina_Logo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: mid-range

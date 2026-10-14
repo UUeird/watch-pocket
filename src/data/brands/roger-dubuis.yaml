@@ -1,4 +1,8 @@
 name: Roger Dubuis
+logo: ../logos/roger-dubuis.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Roger_Dubuis_Logo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: haute

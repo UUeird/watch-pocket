@@ -1,4 +1,8 @@
 name: Swatch
+logo: ../logos/swatch.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Swatch_Logo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: budget

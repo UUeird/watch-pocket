@@ -1,4 +1,8 @@
 name: Bulova
+logo: ../logos/bulova.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Bulova_logo.svg
+  license: Public domain
 origin: United States
 status: active
 ownership:

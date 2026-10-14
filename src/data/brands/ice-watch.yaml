@@ -1,4 +1,10 @@
 name: Ice-Watch
+logo: ../logos/ice-watch.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:ICE-WATCH-logo.svg
+  license: CC BY 3.0
+  licenseUrl: https://creativecommons.org/licenses/by/3.0
+  author: Ice-Watch
 origin: Belgium
 status: active
 tags:

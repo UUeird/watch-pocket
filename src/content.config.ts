@@ -76,52 +76,62 @@ const currentStakesFit = (list: { to?: number; stake?: number | 'unknown' }[]) =
 
 const brands = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/data/brands' }),
-  schema: z
-    .object({
-      name: z.string(),
-      // Three separate facts: where the brand was founded, where it is run from today, and where its watches are made.
-      origin: country.optional(),
-      headquarters: country.optional(),
-      manufacturing: z.array(country).default([]),
-      // The periods the brand traded, so a revived brand has several. A last period with no `to` is still running.
-      periods,
-      // Only for brands with no periods recorded; otherwise status is derived from them.
-      status: z.enum(['active', 'dormant', 'defunct', 'revived']).optional(),
-      // Market positioning. `broad` is for brands whose range spans several tiers.
-      segment: z.enum(['haute', 'luxury', 'mid-range', 'budget', 'broad']).optional(),
-      category: z.enum(['watch-brand', 'movement-maker', 'case-maker']).default('watch-brand'),
-      // What kind of business it is, where that is not simply a watch brand. A brand can carry several.
-      tags: z.array(z.enum(['fashion', 'direct-to-consumer', 'smartwatch', 'early-digital'])).default([]),
-      copycat: z.boolean().default(false),
-      // Watches made per year, with the year the figure refers to.
-      production: z.object({ units: z.number().int(), year: z.number().int() }).optional(),
-      website: z.url().optional(),
-      // Ownership is dated because brands change hands; a record with no `to` is a current owner.
-      ownership: z
-        .array(
-          z
-            .object({ owner, stake, basis, ...tenure })
-            .refine(endsAfterStart, tenureEnds)
-            .refine((record) => record.basis === undefined || record.sources.length > 0, {
-              message: 'A record with a `basis` needs at least one source to show where the claim comes from.',
-            }),
-        )
-        .refine(currentStakesFit, {
-          message:
-            'Several owners can be current only if each has a `stake` (a percentage or `unknown`) and the percentages total 100 or less; otherwise give the earlier records a `to` year.',
-        })
-        .default([]),
-      // Companies that make and sell the brand's watches under license without owning the brand. Dated like ownership.
-      licensees: z
-        .array(z.object({ licensee: reference('groups'), ...tenure }).refine(endsAfterStart, tenureEnds))
-        .refine(onlyOneCurrent, { message: 'Only one licensee can be current; give the earlier records a `to` year.' })
-        .default([]),
-      // For facts on this brand other than ownership and licensing, which cite their own.
-      sources,
-    })
-    .refine((brand) => brand.periods.length === 0 || brand.status === undefined, {
-      message: 'Set either `periods` or `status`, not both: status is derived from periods.',
-    }),
+  schema: ({ image }) =>
+    z
+      .object({
+        name: z.string(),
+        // An image file, given as a path from the brand's own file, e.g. `../logos/rolex.svg`. A missing file fails the build.
+        logo: image().optional(),
+        // Where the logo file came from and on what terms. `author` and `licenseUrl` are for licenses that require a credit.
+        logoCredit: z
+          .object({ source: z.url(), license: z.string(), licenseUrl: z.url().optional(), author: z.string().optional() })
+          .optional(),
+        // Three separate facts: where the brand was founded, where it is run from today, and where its watches are made.
+        origin: country.optional(),
+        headquarters: country.optional(),
+        manufacturing: z.array(country).default([]),
+        // The periods the brand traded, so a revived brand has several. A last period with no `to` is still running.
+        periods,
+        // Only for brands with no periods recorded; otherwise status is derived from them.
+        status: z.enum(['active', 'dormant', 'defunct', 'revived']).optional(),
+        // Market positioning. `broad` is for brands whose range spans several tiers.
+        segment: z.enum(['haute', 'luxury', 'mid-range', 'budget', 'broad']).optional(),
+        category: z.enum(['watch-brand', 'movement-maker', 'case-maker']).default('watch-brand'),
+        // What kind of business it is, where that is not simply a watch brand. A brand can carry several.
+        tags: z.array(z.enum(['fashion', 'direct-to-consumer', 'smartwatch', 'early-digital'])).default([]),
+        copycat: z.boolean().default(false),
+        // Watches made per year, with the year the figure refers to.
+        production: z.object({ units: z.number().int(), year: z.number().int() }).optional(),
+        website: z.url().optional(),
+        // Ownership is dated because brands change hands; a record with no `to` is a current owner.
+        ownership: z
+          .array(
+            z
+              .object({ owner, stake, basis, ...tenure })
+              .refine(endsAfterStart, tenureEnds)
+              .refine((record) => record.basis === undefined || record.sources.length > 0, {
+                message: 'A record with a `basis` needs at least one source to show where the claim comes from.',
+              }),
+          )
+          .refine(currentStakesFit, {
+            message:
+              'Several owners can be current only if each has a `stake` (a percentage or `unknown`) and the percentages total 100 or less; otherwise give the earlier records a `to` year.',
+          })
+          .default([]),
+        // Companies that make and sell the brand's watches under license without owning the brand. Dated like ownership.
+        licensees: z
+          .array(z.object({ licensee: reference('groups'), ...tenure }).refine(endsAfterStart, tenureEnds))
+          .refine(onlyOneCurrent, { message: 'Only one licensee can be current; give the earlier records a `to` year.' })
+          .default([]),
+        // For facts on this brand other than ownership and licensing, which cite their own.
+        sources,
+      })
+      .refine((brand) => brand.periods.length === 0 || brand.status === undefined, {
+        message: 'Set either `periods` or `status`, not both: status is derived from periods.',
+      })
+      .refine((brand) => brand.logoCredit === undefined || brand.logo !== undefined, {
+        message: 'A `logoCredit` needs a `logo` to credit.',
+      }),
 });
 
 // A product line (collection) sold under a brand's name, e.g. Rolex Submariner. Files live at lines/<brand>/<line>.yaml.

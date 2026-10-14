@@ -1,4 +1,8 @@
 name: Blancpain
+logo: ../logos/blancpain.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Blancpain_logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1735 }]
 segment: haute

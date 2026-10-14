@@ -1,4 +1,8 @@
 name: Ebel
+logo: ../logos/ebel.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Ebel_(Uhrenmarke)_logo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: mid-range

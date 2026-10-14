@@ -1,4 +1,8 @@
 name: Emporio Armani
+logo: ../logos/emporio-armani.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Emporio_Armani_logo.svg
+  license: Public domain
 origin: Italy
 status: active
 tags:

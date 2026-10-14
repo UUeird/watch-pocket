@@ -1,4 +1,8 @@
 name: Diesel
+logo: ../logos/diesel.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Diesel_logo.svg
+  license: Public domain
 origin: Italy
 status: active
 tags:

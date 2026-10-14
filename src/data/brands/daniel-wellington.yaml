@@ -1,4 +1,8 @@
 name: Daniel Wellington
+logo: ../logos/daniel-wellington.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Daniel_Wellington_logo.svg
+  license: Public domain
 origin: Sweden
 status: active
 tags:

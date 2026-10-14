@@ -1,4 +1,8 @@
 name: Edox
+logo: ../logos/edox.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Edox_logo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: mid-range

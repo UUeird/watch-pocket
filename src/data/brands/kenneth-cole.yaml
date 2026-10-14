@@ -1,4 +1,8 @@
 name: Kenneth Cole
+logo: ../logos/kenneth-cole.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Kenneth_Cole_2015_logo.svg
+  license: Public domain
 origin: United States
 status: active
 tags:

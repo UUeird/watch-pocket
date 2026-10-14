@@ -1,4 +1,8 @@
 name: Van Cleef & Arpels
+logo: ../logos/van-cleef-arpels.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Van_Cleef_Arpels_logo.svg
+  license: Public domain
 origin: France
 status: active
 ownership:

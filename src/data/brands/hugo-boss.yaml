@@ -1,4 +1,8 @@
 name: Hugo Boss
+logo: ../logos/hugo-boss.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Hugo_Boss_logo_2021.svg
+  license: Public domain
 origin: Germany
 status: active
 tags:

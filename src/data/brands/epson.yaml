@@ -1,4 +1,8 @@
 name: Epson
+logo: ../logos/epson.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Epson_logo.svg
+  license: Public domain
 origin: Japan
 status: active
 ownership:

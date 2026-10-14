@@ -1,4 +1,8 @@
 name: Bulgari
+logo: ../logos/bulgari.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Bulgari_logo.svg
+  license: Public domain
 origin: Italy
 periods: [{ from: 1884 }]
 segment: luxury

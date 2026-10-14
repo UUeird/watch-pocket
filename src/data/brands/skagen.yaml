@@ -1,4 +1,8 @@
 name: Skagen
+logo: ../logos/skagen.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Skagen_logo.svg
+  license: Public domain
 status: active
 tags:
   - fashion

@@ -1,4 +1,8 @@
 name: Chanel
+logo: ../logos/chanel.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Chanel_logo.svg
+  license: Public domain
 origin: France
 status: active
 ownership:

@@ -1,4 +1,8 @@
 name: Bell & Ross
+logo: ../logos/bell-ross.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Bellross_logo.svg
+  license: Public domain
 origin: France
 status: active
 ownership:

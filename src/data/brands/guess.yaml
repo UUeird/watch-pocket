@@ -1,4 +1,8 @@
 name: Guess
+logo: ../logos/guess.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Guess_logo.svg
+  license: Public domain
 origin: United States
 status: active
 tags:

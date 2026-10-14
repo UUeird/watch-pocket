@@ -1,4 +1,8 @@
 name: Longines
+logo: ../logos/longines.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Longines_wordmark_logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1832 }]
 segment: mid-range

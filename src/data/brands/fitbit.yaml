@@ -1,4 +1,8 @@
 name: Fitbit
+logo: ../logos/fitbit.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Fitbit_logo.svg
+  license: Public domain
 origin: United States
 status: active
 tags:

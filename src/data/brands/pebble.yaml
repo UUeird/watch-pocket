@@ -1,4 +1,8 @@
 name: Pebble
+logo: ../logos/pebble.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Pebble_logo.svg
+  license: Public domain
 origin: United States
 status: active
 tags:

@@ -1,4 +1,8 @@
 name: Sekonda
+logo: ../logos/sekonda.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Sekonda_Logo.svg
+  license: Public domain
 origin: United Kingdom
 status: active
 ownership:

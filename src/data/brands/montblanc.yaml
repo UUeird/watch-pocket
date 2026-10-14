@@ -1,4 +1,8 @@
 name: Montblanc
+logo: ../logos/montblanc.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Montblanc_logo.svg
+  license: Public domain
 origin: Germany
 headquarters: Germany
 manufacturing: [Switzerland]

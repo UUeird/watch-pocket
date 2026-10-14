@@ -1,4 +1,8 @@
 name: Polar
+logo: ../logos/polar.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Polar_Electro_Logo.svg
+  license: Public domain
 origin: Finland
 status: active
 tags:

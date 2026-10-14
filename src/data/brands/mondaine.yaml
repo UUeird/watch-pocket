@@ -1,4 +1,8 @@
 name: Mondaine
+logo: ../logos/mondaine.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Mondaine_logo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: mid-range

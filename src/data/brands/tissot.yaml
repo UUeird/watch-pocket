@@ -1,4 +1,8 @@
 name: Tissot
+logo: ../logos/tissot.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Tissot_Logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1853 }]
 segment: mid-range

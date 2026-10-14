@@ -1,4 +1,8 @@
 name: Hublot
+logo: ../logos/hublot.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Hublot_logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1980 }]
 segment: luxury

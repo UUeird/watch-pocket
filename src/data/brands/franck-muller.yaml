@@ -1,4 +1,8 @@
 name: Franck Muller
+logo: ../logos/franck-muller.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Fmlogo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: luxury

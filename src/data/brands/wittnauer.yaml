@@ -1,4 +1,8 @@
 name: Wittnauer
+logo: ../logos/wittnauer.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Wittnauer_logo.svg
+  license: Public domain
 origin: United States
 status: active
 ownership:

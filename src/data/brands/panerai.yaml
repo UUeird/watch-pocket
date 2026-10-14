@@ -1,4 +1,8 @@
 name: Panerai
+logo: ../logos/panerai.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Panerai_logo.svg
+  license: Public domain
 origin: Italy
 headquarters: Switzerland
 manufacturing: [Switzerland]

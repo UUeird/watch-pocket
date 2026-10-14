@@ -1,4 +1,8 @@
 name: Tudor
+logo: ../logos/tudor.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Tudor_(Uhrenmarke)_logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1926 }]
 segment: luxury

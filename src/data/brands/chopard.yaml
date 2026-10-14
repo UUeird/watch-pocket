@@ -1,4 +1,8 @@
 name: Chopard
+logo: ../logos/chopard.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Chopard.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: luxury
