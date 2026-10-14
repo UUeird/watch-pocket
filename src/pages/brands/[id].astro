@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Holdings from '../../components/Holdings.astro';
 import SourceLinks from '../../components/SourceLinks.astro';
 import Sources from '../../components/Sources.astro';
-import { brandStatus, countryHref, formatPeriods, formatStake, label, lineHref, loadCatalog, ownerHref, type Brand } from '../../lib/catalog';
+import { brandStatus, countryHref, formatPeriods, formatStake, href, label, lineHref, loadCatalog, ownerHref, type Brand } from '../../lib/catalog';
 
 export async function getStaticPaths() {
   const { brands } = await loadCatalog();
@@ -135,7 +135,7 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
         <ul>
           {collaborations.map((model) => (
             <li>
-              <a href={`/brands/${model.id}/`}>{model.data.name}</a> (with {brandName(model.id)})
+              <a href={href(`/brands/${model.id}/`)}>{model.data.name}</a> (with {brandName(model.id)})
             </li>
           ))}
         </ul>
@@ -210,7 +210,7 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
               {licensees.map((record) => (
                 <tr>
                   <td>
-                    <a href={`/ownership-groups/${record.licensee.id}/`}>{groupsById.get(record.licensee.id)?.data.name}</a>
+                    <a href={href(`/ownership-groups/${record.licensee.id}/`)}>{groupsById.get(record.licensee.id)?.data.name}</a>
                   </td>
                   <td class="num">{record.from ?? 'Unknown'}</td>
                   <td class="num">{record.to ?? 'Present'}</td>

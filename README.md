@@ -7,7 +7,7 @@ Requires Node 24 (see `.nvmrc`).
 
 ```sh
 npm install
-npm run dev      # dev server at http://localhost:4321
+npm run dev      # dev server at http://localhost:4321/watch-pocket/
 npm run build    # static build into dist/
 npm run preview  # serve the built site
 npm run check    # type check
@@ -29,5 +29,11 @@ The schemas live in `src/content.config.ts` and are checked at build time, so ba
 The browser tests need a one-time `npx playwright install chromium`.
 
 Every pull request runs the type check, the build, the link check, the browser tests and the rule tests in GitHub Actions.
+
+## Deployment
+
+The site is published to GitHub Pages at https://uueird.github.io/watch-pocket/. Once CI passes on `main`, the Deploy workflow (`.github/workflows/deploy.yml`) builds that commit and publishes it; it can also be run by hand from the Actions tab.
+
+Because the site lives under `/watch-pocket/`, that base path is set in `astro.config.mjs`, and every internal link is built with `href()` from `src/lib/catalog.ts`. A link written as a bare `/brands/...` path fails the link check.
 
 Much of the data was entered from memory and is not yet verified. A fact that has been checked carries `sources`, a list of links: on each ownership and licensee record for that claim, and on the brand, group or model file for everything else.

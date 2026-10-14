@@ -1,4 +1,6 @@
 ---
+import { href } from '../lib/catalog';
+
 interface Props {
   title?: string;
 }
@@ -17,12 +19,12 @@ const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
   </head>
   <body>
     <header>
-      <a class="wordmark" href="/">WatchPocket</a>
+      <a class="wordmark" href={href('/')}>WatchPocket</a>
       <nav>
-        <a href="/">Brands</a>
-        <a href="/ownership-groups/">Ownership Groups</a>
-        <a href="/countries/">Countries</a>
-        <a href="/references/">References</a>
+        <a href={href('/')}>Brands</a>
+        <a href={href('/ownership-groups/')}>Ownership Groups</a>
+        <a href={href('/countries/')}>Countries</a>
+        <a href={href('/references/')}>References</a>
       </nav>
     </header>
     <main>

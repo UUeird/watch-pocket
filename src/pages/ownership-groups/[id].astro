@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Holdings from '../../components/Holdings.astro';
 import Sources from '../../components/Sources.astro';
-import { label, loadCatalog, type Group } from '../../lib/catalog';
+import { href, label, loadCatalog, type Group } from '../../lib/catalog';
 
 export async function getStaticPaths() {
   const { groups } = await loadCatalog();
@@ -44,7 +44,7 @@ const licenses = brands.filter((brand) =>
         <>
           <dt>Parent</dt>
           <dd>
-            <a href={`/ownership-groups/${parent.id}/`}>{groupsById.get(parent.id)?.data.name}</a>
+            <a href={href(`/ownership-groups/${parent.id}/`)}>{groupsById.get(parent.id)?.data.name}</a>
           </dd>
         </>
       )
@@ -68,7 +68,7 @@ const licenses = brands.filter((brand) =>
         <ul>
           {subsidiaries.map((subsidiary) => (
             <li>
-              <a href={`/ownership-groups/${subsidiary.id}/`}>{subsidiary.data.name}</a>
+              <a href={href(`/ownership-groups/${subsidiary.id}/`)}>{subsidiary.data.name}</a>
             </li>
           ))}
         </ul>
@@ -86,7 +86,7 @@ const licenses = brands.filter((brand) =>
         <ul>
           {licenses.map((brand) => (
             <li>
-              <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
+              <a href={href(`/brands/${brand.id}/`)}>{brand.data.name}</a>
             </li>
           ))}
         </ul>

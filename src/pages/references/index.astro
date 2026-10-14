@@ -1,7 +1,7 @@
 ---
 import Filters from '../../components/Filters.astro';
 import Base from '../../layouts/Base.astro';
-import { describeBezel, formatPeriods, label, loadCatalog, refHref } from '../../lib/catalog';
+import { describeBezel, formatPeriods, href, label, loadCatalog, refHref } from '../../lib/catalog';
 
 const { references } = await loadCatalog();
 const distinct = (values: (string | undefined)[]) =>
@@ -65,7 +65,7 @@ const filters = [
               </td>
               <td>{brand.data.name}</td>
               <td>
-                <a href={`/brands/${model.id}/`}>{model.data.name}</a>
+                <a href={href(`/brands/${model.id}/`)}>{model.data.name}</a>
               </td>
               <td class="num">{formatPeriods(reference.periods)}</td>
               <td class="num">{reference.caseSize && `${reference.caseSize} mm`}</td>
