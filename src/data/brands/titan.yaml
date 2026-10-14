@@ -1,4 +1,8 @@
 name: Titan
+logo: ../logos/titan.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Titan_Logo_2009.jpg
+  license: Public domain
 origin: India
 status: active
 ownership:

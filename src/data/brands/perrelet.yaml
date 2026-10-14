@@ -1,4 +1,8 @@
 name: Perrelet
+logo: ../logos/perrelet.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_de_Perrelet.png
+  license: Public domain
 origin: Switzerland
 status: active
 segment: luxury

@@ -1,4 +1,8 @@
 name: IWC Schaffhausen
+logo: ../logos/iwc.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:International_Watch_Company_logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1868 }]
 segment: luxury
