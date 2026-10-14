@@ -1,6 +1,6 @@
 ---
 import SourceLinks from './SourceLinks.astro';
-import { countryHref, formatStake, loadCatalog, type Owner } from '../lib/catalog';
+import { countryHref, formatStake, href, loadCatalog, type Owner } from '../lib/catalog';
 
 interface Props {
   owner: Owner;
@@ -31,7 +31,7 @@ const showSources = holdings.some((record) => record.sources.length > 0);
         holdings.map(({ brand, stake, basis, from, to, sources }) => (
           <tr>
             <td>
-              <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
+              <a href={href(`/brands/${brand.id}/`)}>{brand.data.name}</a>
             </td>
             <td>{brand.data.origin && <a href={countryHref(brand.data.origin)}>{brand.data.origin}</a>}</td>
             {showStake && <td class="num">{formatStake(stake)}</td>}

@@ -7,6 +7,7 @@ import {
   describeBracelet,
   describeDial,
   formatPeriods,
+  href,
   label,
   loadCatalog,
   refHref,
@@ -46,7 +47,7 @@ const { name, references, sources } = model.data;
       collaborators.map((collaborator) => (
         <>
           {' · with '}
-          <a href={`/brands/${collaborator.id}/`}>{collaborator.data.name}</a>
+          <a href={href(`/brands/${collaborator.id}/`)}>{collaborator.data.name}</a>
         </>
       ))
     }

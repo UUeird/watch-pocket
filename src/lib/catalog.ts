@@ -8,7 +8,12 @@ export type Group = CollectionEntry<'groups'>;
 export type Line = CollectionEntry<'lines'>;
 export type Model = CollectionEntry<'models'>;
 
-export const countryHref = (country: string) => `/countries/${country.toLowerCase().replace(/[^a-z]+/g, '-')}/`;
+// A site path such as `/brands/rolex/`, prefixed with the base the site is served under.
+export const href = (path: string) => `${import.meta.env.BASE_URL.replace(/\/$/, '')}${path}`;
+
+export const countrySlug = (country: string) => country.toLowerCase().replace(/[^a-z]+/g, '-');
+
+export const countryHref = (country: string) => href(`/countries/${countrySlug(country)}/`);
 
 export const label = (value: string) => value.replace(/-/g, ' ');
 
@@ -24,7 +29,7 @@ export const currentOwners = (brand: Brand) =>
   brand.data.ownership.filter((record) => record.to === undefined).map((record) => record.owner);
 
 export const ownerHref = ({ collection, id }: Owner) =>
-  collection === 'brands' ? `/brands/${id}/` : `/ownership-groups/${id}/`;
+  href(collection === 'brands' ? `/brands/${id}/` : `/ownership-groups/${id}/`);
 
 // Blank for an owner of the whole brand, which is the usual case.
 export const formatStake = (stake: Ownership['stake']) =>
@@ -36,7 +41,7 @@ export const formatPeriods = (periods: Period[]) =>
   periods.map(({ from, to }) => `${from}–${to ?? 'present'}`).join(', ');
 
 // Line ids are `<brand>/<line>`, which is also the path under /brands/.
-export const lineHref = (line: Line) => `/brands/${line.id}/`;
+export const lineHref = (line: Line) => href(`/brands/${line.id}/`);
 
 export const brandStatus = ({ data }: Brand) => {
   if (data.periods.length === 0) return data.status ?? 'active';
@@ -46,7 +51,7 @@ export const brandStatus = ({ data }: Brand) => {
 
 export type Reference = Model['data']['references'][number];
 
-export const refHref = (model: Model, reference: Reference) => `/brands/${model.id}/${refSlug(reference.ref)}/`;
+export const refHref = (model: Model, reference: Reference) => href(`/brands/${model.id}/${refSlug(reference.ref)}/`);
 
 export const describeBezel = (bezel: Reference['bezel']) =>
   bezel ? [bezel.colors.join(' and '), bezel.material, bezel.style].filter(Boolean).map((part) => label(part!)).join(', ') : '';

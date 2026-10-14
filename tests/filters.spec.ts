@@ -12,7 +12,7 @@ const column = async (rows: Locator, index: number) =>
 
 test.describe('Brands filters', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('/');
+    await page.goto('./');
   });
 
   test('starts unfiltered', async ({ page }) => {
@@ -84,7 +84,7 @@ test.describe('Brands filters', () => {
 
 test.describe('References filters', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('/references/');
+    await page.goto('references/');
   });
 
   test('search matches a model number', async ({ page }) => {

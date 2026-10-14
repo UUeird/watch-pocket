@@ -2,7 +2,7 @@
 import Filters from '../components/Filters.astro';
 import Owners from '../components/Owners.astro';
 import Base from '../layouts/Base.astro';
-import { brandStatus, countryHref, currentOwners, label, loadCatalog } from '../lib/catalog';
+import { brandStatus, countryHref, currentOwners, href, label, loadCatalog } from '../lib/catalog';
 
 const { brands, groups, linesOf } = await loadCatalog();
 const distinct = (values: (string | undefined)[]) =>
@@ -76,7 +76,7 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
                 data-tags={tags.join('|')}
               >
                 <td>
-                  <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
+                  <a href={href(`/brands/${brand.id}/`)}>{brand.data.name}</a>
                 </td>
                 <td>
                   <Owners brand={brand} />

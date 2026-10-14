@@ -8,11 +8,12 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   reporter: process.env.CI ? 'github' : 'list',
-  use: { baseURL: `http://localhost:${port}` },
+  // Trailing slash matters: tests navigate to paths relative to the site's base, e.g. `references/`.
+  use: { baseURL: `http://localhost:${port}/watch-pocket/` },
   projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
   webServer: {
     command: `node scripts/serve-dist.mjs ${port}`,
-    url: `http://localhost:${port}`,
+    url: `http://localhost:${port}/watch-pocket/`,
     reuseExistingServer: false,
   },
 });

@@ -4,6 +4,9 @@ import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const dist = 'dist';
+// Pages are served under the base path (see astro.config.mjs), so a link outside it is broken.
+const { default: config } = await import('../astro.config.mjs');
+const base = (config.base ?? '/').replace(/\/$/, '');
 if (!existsSync(dist)) {
   console.error('No dist/ folder. Run `npm run build` first.');
   process.exit(1);
@@ -16,9 +19,10 @@ const htmlFiles = (dir) =>
     return name.endsWith('.html') ? [path] : [];
   });
 
-// A link to /brands/rolex/ is served from dist/brands/rolex/index.html; a link to a file is served as is.
+// A link to <base>/brands/rolex/ is served from dist/brands/rolex/index.html; a link to a file is served as is.
 const resolves = (url) => {
-  const path = join(dist, decodeURIComponent(url));
+  if (!url.startsWith(`${base}/`)) return false;
+  const path = join(dist, decodeURIComponent(url.slice(base.length)));
   if (!existsSync(path)) return false;
   return statSync(path).isDirectory() ? existsSync(join(path, 'index.html')) : true;
 };

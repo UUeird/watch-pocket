@@ -1,6 +1,6 @@
 ---
 name: release
-description: "Ship open work: commit, push, open/merge the PR, clean up the branch, restart the dev server, move the board ticket. Use when the user says 'release', 'ship it', 'land this'. The PR check is the 'Checks and tests' CI job; there is no production deploy yet, so the gate for moving the board ticket to done is the merge plus a green CI run on main."
+description: "Ship open work: commit, push, open/merge the PR, clean up the branch, restart the dev server, confirm the GitHub Pages deploy, move the board ticket. Use when the user says 'release', 'ship it', 'land this'. The PR check is the 'Checks and tests' CI job; the gate for moving the board ticket to done is the merge, a green CI run on main, and the Deploy run publishing that commit."
 ---
 
 Take one piece of open work from branch to merged and cleaned up. The
@@ -48,7 +48,7 @@ server is left answering 404 or 500 afterward. Restart it and confirm it serves:
 npx astro dev stop
 rm -rf .astro node_modules/.astro
 npm run dev          # detaches into the background
-curl -s -o /dev/null -w '%{http_code}\n' http://localhost:4321/
+curl -s -o /dev/null -w '%{http_code}\n' http://localhost:4321/watch-pocket/
 ```
 
 Check a couple of other pages too (`/references/`, a brand page). Don't report
@@ -64,14 +64,23 @@ gh run list --branch main --limit 1
 
 If it fails, stop and report — don't move the board ticket.
 
-There is **no production deploy yet**. Once the GitHub Pages deploy exists
-(board story `watch-pocket-3`), this step should also wait for that deploy and
-check the live site is serving the merged commit, and that becomes the real
-"done" signal.
+### 6. Confirm the deploy
 
-### 6. Move the board ticket
+A green CI run on `main` starts the Deploy workflow, which publishes that commit
+to GitHub Pages. Wait for it, then check the live site:
 
-Only after step 5 passes: if the released work corresponds to a story/subtask
+```
+gh run list --workflow Deploy --limit 1
+curl -s -o /dev/null -w '%{http_code}\n' https://uueird.github.io/watch-pocket/
+```
+
+The run's `headSha` (`gh run view <id> --json headSha`) should be the merge
+commit. If the deploy fails or the site doesn't return 200, stop and report.
+This, not the merge, is the real "done" signal.
+
+### 7. Move the board ticket
+
+Only after step 6 passes: if the released work corresponds to a story/subtask
 on the tada board, move it to `done`: `mcp__tada__set_status` for the whole
 story, or `mcp__tada__set_subtask_status` for just the subtask.
 
@@ -79,6 +88,6 @@ story, or `mcp__tada__set_subtask_status` for just the subtask.
 
 ## After the release
 
-Report what shipped: PR number, merged, CI on main, branch cleaned up, dev
-server restarted. Don't claim a branch is done unless it's actually merged and
-gone, and don't move the board ticket until step 5's check passes.
+Report what shipped: PR number, merged, CI on main, deployed, branch cleaned
+up, dev server restarted. Don't claim a branch is done unless it's actually
+merged and gone, and don't move the board ticket until step 6's check passes.

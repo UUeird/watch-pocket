@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { label, loadCatalog } from '../../lib/catalog';
+import { href, label, loadCatalog } from '../../lib/catalog';
 
 const { groups, brandsOf } = await loadCatalog();
 const held = groups
@@ -17,7 +17,7 @@ const held = groups
       held.map(({ group, brands }) => (
         <section class="card">
           <h2>
-            <a href={`/ownership-groups/${group.id}/`}>{group.data.name}</a>
+            <a href={href(`/ownership-groups/${group.id}/`)}>{group.data.name}</a>
           </h2>
           <p class="meta cap">
             {label(group.data.type)} · {group.data.country} · {brands.length} brands
@@ -25,7 +25,7 @@ const held = groups
           <ul>
             {brands.map((brand) => (
               <li>
-                <a href={`/brands/${brand.id}/`}>{brand.data.name}</a>
+                <a href={href(`/brands/${brand.id}/`)}>{brand.data.name}</a>
               </li>
             ))}
           </ul>

@@ -1,5 +1,5 @@
 ---
-import type { Brand, Line, Model } from '../lib/catalog';
+import { href, type Brand, type Line, type Model } from '../lib/catalog';
 
 interface Props {
   brand: Brand;
@@ -13,7 +13,7 @@ const crumbs = [
   { level: 'Brand', entry: brand },
   { level: 'Line', entry: line },
   { level: 'Model', entry: model },
-].flatMap(({ level, entry }) => (entry ? [{ level, name: entry.data.name, href: `/brands/${entry.id}/` }] : []));
+].flatMap(({ level, entry }) => (entry ? [{ level, name: entry.data.name, href: href(`/brands/${entry.id}/`) }] : []));
 ---
 
 <nav class="crumbs" aria-label="Breadcrumb">
