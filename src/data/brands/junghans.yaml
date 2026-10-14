@@ -4,4 +4,6 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Junghans_logo_2010.svg
   license: Public domain
 origin: Germany
-status: active
+periods: [{ from: 1861 }]
+sources:
+  - https://www.wikidata.org/wiki/Q560976

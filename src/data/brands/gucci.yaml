@@ -4,7 +4,9 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Gucci_logo.svg
   license: Public domain
 origin: Italy
-status: active
+periods: [{ from: 1921 }]
 ownership:
   - owner: kering
     from: 1999
+sources:
+  - https://www.wikidata.org/wiki/Q178516

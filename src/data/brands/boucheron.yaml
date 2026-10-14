@@ -4,7 +4,9 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Logo_of_Boucheron.svg
   license: Public domain
 origin: France
-status: active
+periods: [{ from: 1858 }]
 ownership:
   - owner: kering
     from: 2000
+sources:
+  - https://www.wikidata.org/wiki/Q848553

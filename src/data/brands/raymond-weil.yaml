@@ -4,5 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Raymond_Weil_logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1976 }]
 segment: mid-range
+sources:
+  - https://www.wikidata.org/wiki/Q676990

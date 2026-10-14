@@ -4,5 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Parmigiani_Fleurier_logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1975 }]
 segment: haute
+sources:
+  - https://www.wikidata.org/wiki/Q3365612

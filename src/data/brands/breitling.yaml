@@ -6,7 +6,9 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: Breitling SA
 origin: Switzerland
-status: active
+periods: [{ from: 1884 }]
 segment: luxury
 ownership:
   - owner: breitling-sa
+sources:
+  - https://www.wikidata.org/wiki/Q665740

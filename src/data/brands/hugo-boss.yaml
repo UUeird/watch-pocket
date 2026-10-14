@@ -4,8 +4,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Hugo_Boss_logo_2021.svg
   license: Public domain
 origin: Germany
-status: active
+periods: [{ from: 1924 }]
 tags:
   - fashion
 licensees:
   - licensee: movado-group
+sources:
+  - https://www.wikidata.org/wiki/Q491627

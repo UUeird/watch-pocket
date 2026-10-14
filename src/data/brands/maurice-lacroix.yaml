@@ -4,5 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Maurice_Lacroix.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1975 }]
 segment: mid-range
+sources:
+  - https://www.wikidata.org/wiki/Q177591

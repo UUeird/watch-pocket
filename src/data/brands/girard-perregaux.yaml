@@ -4,7 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Girard-Perregaux_logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1791 }]
 segment: luxury
 ownership:
   - owner: kering
@@ -12,3 +12,5 @@ ownership:
     to: 2022
   - owner: sowind-group
     from: 2022
+sources:
+  - https://www.wikidata.org/wiki/Q676416

@@ -1,5 +1,7 @@
 name: Chaumet
 origin: France
-status: active
+periods: [{ from: 1780 }]
 ownership:
   - owner: lvmh
+sources:
+  - https://www.wikidata.org/wiki/Q2961620

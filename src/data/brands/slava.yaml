@@ -1,3 +1,5 @@
 name: Slava
 origin: Russia
-status: active
+periods: [{ from: 1924 }]
+sources:
+  - https://www.wikidata.org/wiki/Q1651954

@@ -5,7 +5,9 @@ logoCredit:
   license: Public domain
 origin: Switzerland
 headquarters: United States
-status: active
+periods: [{ from: 1837 }]
 segment: budget
 ownership:
   - owner: invicta-watch-group
+sources:
+  - https://www.wikidata.org/wiki/Q6060981

@@ -4,7 +4,9 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Balmain_logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1945 }]
 segment: mid-range
 licensees:
   - licensee: swatch-group
+sources:
+  - https://www.wikidata.org/wiki/Q1385309

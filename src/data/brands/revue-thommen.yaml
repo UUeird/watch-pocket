@@ -1,4 +1,6 @@
 name: Revue Thommen
 origin: Switzerland
-status: active
+periods: [{ from: 1853 }]
 segment: mid-range
+sources:
+  - https://www.wikidata.org/wiki/Q663923

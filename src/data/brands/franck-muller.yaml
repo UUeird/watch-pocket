@@ -4,5 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Fmlogo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1991 }]
 segment: luxury
+sources:
+  - https://www.wikidata.org/wiki/Q21820020

@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Suunto-logo.svg
   license: Public domain
 origin: Finland
-status: active
+periods: [{ from: 1936 }]
 tags:
   - smartwatch
+sources:
+  - https://www.wikidata.org/wiki/Q740115

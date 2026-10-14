@@ -1,4 +1,6 @@
 name: Greubel Forsey
 origin: Switzerland
-status: active
+periods: [{ from: 2004 }]
 segment: haute
+sources:
+  - https://www.wikidata.org/wiki/Q3116546

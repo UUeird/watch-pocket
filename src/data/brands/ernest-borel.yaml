@@ -1,4 +1,6 @@
 name: Ernest Borel
 origin: Switzerland
-status: active
+periods: [{ from: 1856 }]
 segment: mid-range
+sources:
+  - https://www.wikidata.org/wiki/Q1028719

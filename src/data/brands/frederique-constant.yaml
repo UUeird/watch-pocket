@@ -1,7 +1,9 @@
 name: Frédérique Constant
 origin: Switzerland
-status: active
+periods: [{ from: 1988 }]
 segment: mid-range
 ownership:
   - owner: citizen
     from: 2016
+sources:
+  - https://www.wikidata.org/wiki/Q4039046

@@ -4,7 +4,9 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Candino_logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1945 }]
 segment: mid-range
 ownership:
   - owner: festina-group
+sources:
+  - https://www.wikidata.org/wiki/Q3564131

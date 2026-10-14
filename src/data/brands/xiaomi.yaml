@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Xiaomi_logo_(2021-).svg
   license: Public domain
 origin: China
-status: active
+periods: [{ from: 2010 }]
 tags:
   - smartwatch
+sources:
+  - https://www.wikidata.org/wiki/Q1636958

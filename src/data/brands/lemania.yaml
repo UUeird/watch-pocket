@@ -1,7 +1,9 @@
 name: Lemania
 origin: Switzerland
-status: active
+periods: [{ from: 1884 }]
 category: movement-maker
 ownership:
   - owner: swatch-group
     from: 1999
+sources:
+  - https://www.wikidata.org/wiki/Q688410

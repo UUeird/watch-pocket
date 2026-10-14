@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Van_Cleef_Arpels_logo.svg
   license: Public domain
 origin: France
-status: active
+periods: [{ from: 1896 }]
 ownership:
   - owner: richemont
+sources:
+  - https://www.wikidata.org/wiki/Q2708181

@@ -4,8 +4,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Roger_Dubuis_Logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1995 }]
 segment: haute
 ownership:
   - owner: richemont
     from: 2008
+sources:
+  - https://www.wikidata.org/wiki/Q670160

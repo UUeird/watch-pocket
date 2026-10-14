@@ -1,6 +1,8 @@
 name: Carl F. Bucherer
 origin: Switzerland
-status: active
+periods: [{ from: 1888 }]
 segment: mid-range
 ownership:
   - owner: rolex-sa
+sources:
+  - https://www.wikidata.org/wiki/Q1037713

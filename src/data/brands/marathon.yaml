@@ -1,3 +1,5 @@
 name: Marathon
 origin: Canada
-status: active
+periods: [{ from: 1939 }]
+sources:
+  - https://www.wikidata.org/wiki/Q107563969
