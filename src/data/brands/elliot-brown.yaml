@@ -1,3 +1,5 @@
 name: Elliot Brown
 origin: United Kingdom
-status: active
+periods: [{ from: 2013 }]
+sources:
+  - https://en.wikipedia.org/wiki/Elliot_Brown_Watches

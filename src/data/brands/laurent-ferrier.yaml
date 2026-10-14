@@ -1,4 +1,6 @@
 name: Laurent Ferrier
 origin: Switzerland
-status: active
+periods: [{ from: 2009 }]
 segment: haute
+sources:
+  - https://en.wikipedia.org/wiki/Laurent_Ferrier

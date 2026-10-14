@@ -1,3 +1,5 @@
 name: Smiths
 origin: United Kingdom
-status: active
+periods: [{ from: 1851 }]
+sources:
+  - https://en.wikipedia.org/wiki/Smiths_Group

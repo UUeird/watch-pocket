@@ -1,3 +1,5 @@
 name: Waltham
 origin: United States
-status: active
+periods: [{ from: 1850 }]
+sources:
+  - https://en.wikipedia.org/wiki/Waltham_Watch_Company

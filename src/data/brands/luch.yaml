@@ -1,3 +1,5 @@
 name: Luch
 origin: Belarus
-status: active
+periods: [{ from: 1953 }]
+sources:
+  - https://en.wikipedia.org/wiki/Luch_(watchmaker)

@@ -1,4 +1,6 @@
 name: Ronda
 origin: Switzerland
-status: active
+periods: [{ from: 1946 }]
 category: movement-maker
+sources:
+  - https://en.wikipedia.org/wiki/Ronda_(watchmaker)

@@ -6,7 +6,9 @@ logoCredit:
 origin: Germany
 headquarters: Germany
 manufacturing: [Switzerland]
-status: active
+periods: [{ from: 1906 }]
 segment: luxury
 ownership:
   - owner: richemont
+sources:
+  - https://en.wikipedia.org/wiki/Montblanc_(company)

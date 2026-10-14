@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Garmin_logo_2006.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 1989 }]
 tags:
   - smartwatch
+sources:
+  - https://en.wikipedia.org/wiki/Garmin

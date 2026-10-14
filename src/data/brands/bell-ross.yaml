@@ -4,7 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Bellross_logo.svg
   license: Public domain
 origin: France
-status: active
+periods: [{ from: 1992 }]
 ownership:
   - owner: chanel
     stake: 49
@@ -13,3 +13,5 @@ ownership:
     sources:
       - https://www.luxurybazaar.com/grey-market/chanel-watch-brands/
       - https://therake.com/au/stories/chanel-and-MB&F-haute-horologerie
+sources:
+  - https://en.wikipedia.org/wiki/Bell_&_Ross

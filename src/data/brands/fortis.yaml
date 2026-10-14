@@ -1,4 +1,6 @@
 name: Fortis
 origin: Switzerland
-status: active
+periods: [{ from: 1912 }]
 segment: mid-range
+sources:
+  - https://en.wikipedia.org/wiki/Fortis_Watches

@@ -1,3 +1,5 @@
 name: Pobeda
 origin: Russia
-status: active
+periods: [{ from: 1945 }]
+sources:
+  - https://en.wikipedia.org/wiki/Pobeda_(watch)

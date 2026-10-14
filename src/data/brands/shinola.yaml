@@ -4,4 +4,6 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Shinola_logo_2026.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 2011 }]
+sources:
+  - https://en.wikipedia.org/wiki/Shinola_(retail_company)

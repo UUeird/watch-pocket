@@ -4,8 +4,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Ebel_(Uhrenmarke)_logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1911 }]
 segment: mid-range
 ownership:
   - owner: movado-group
     from: 2004
+sources:
+  - https://en.wikipedia.org/wiki/Ebel

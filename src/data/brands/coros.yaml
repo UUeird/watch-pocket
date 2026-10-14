@@ -1,4 +1,6 @@
 name: Coros
-status: active
+periods: [{ from: 2014 }]
 tags:
   - smartwatch
+sources:
+  - https://en.wikipedia.org/wiki/COROS_Wearables_Inc

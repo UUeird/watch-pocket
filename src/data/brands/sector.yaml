@@ -1,6 +1,8 @@
 name: Sector
 origin: Italy
-status: active
+periods: [{ from: 1973 }]
 ownership:
   - owner: morellato-group
     from: 2006
+sources:
+  - https://en.wikipedia.org/wiki/Sector_No_Limits

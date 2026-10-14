@@ -3,9 +3,11 @@ logo: ../logos/skagen.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Skagen_logo.svg
   license: Public domain
-status: active
+periods: [{ from: 1989 }]
 tags:
   - fashion
 ownership:
   - owner: fossil-group
     from: 2012
+sources:
+  - https://en.wikipedia.org/wiki/Skagen_Denmark

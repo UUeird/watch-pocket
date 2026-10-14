@@ -1,8 +1,10 @@
 name: Rotary
 origin: Switzerland
 headquarters: United Kingdom
-status: active
+periods: [{ from: 1895 }]
 segment: mid-range
 ownership:
   - owner: citychamp
     from: 2014
+sources:
+  - https://en.wikipedia.org/wiki/Rotary_Watches

@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Citizen_logo.svg
   license: Public domain
 origin: Japan
-status: active
+periods: [{ from: 1918 }]
 ownership:
   - owner: citizen
+sources:
+  - https://en.wikipedia.org/wiki/Citizen_Watch

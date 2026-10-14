@@ -1,4 +1,6 @@
 name: Jacob & Co.
 origin: United States
-status: active
+periods: [{ from: 1986 }]
 segment: luxury
+sources:
+  - https://en.wikipedia.org/wiki/Jacob_&_Co

@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Titan_Logo_2009.jpg
   license: Public domain
 origin: India
-status: active
+periods: [{ from: 1984 }]
 ownership:
   - owner: titan-company
+sources:
+  - https://en.wikipedia.org/wiki/Titan_Company

@@ -1,3 +1,5 @@
 name: Beijing
 origin: China
-status: active
+periods: [{ from: 1958 }]
+sources:
+  - https://en.wikipedia.org/wiki/Beijing_Watch_Factory
