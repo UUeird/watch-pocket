@@ -1,3 +1,7 @@
 name: Victorinox
+logo: ../logos/victorinox.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Victorinox_Logo.svg
+  license: Public domain
 country: Switzerland
 type: independent-company

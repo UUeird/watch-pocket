@@ -1,8 +1,9 @@
 ---
+import CountryLink from '../components/CountryLink.astro';
 import Filters from '../components/Filters.astro';
 import Owners from '../components/Owners.astro';
 import Base from '../layouts/Base.astro';
-import { brandStatus, countryHref, currentOwners, href, label, loadCatalog } from '../lib/catalog';
+import { brandStatus, currentOwners, href, label, loadCatalog } from '../lib/catalog';
 
 const { brands, groups, linesOf } = await loadCatalog();
 const distinct = (values: (string | undefined)[]) =>
@@ -86,7 +87,7 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
                 <td>
                   <Owners brand={brand} />
                 </td>
-                <td>{brand.data.origin && <a href={countryHref(brand.data.origin)}>{brand.data.origin}</a>}</td>
+                <td>{brand.data.origin && <CountryLink country={brand.data.origin} />}</td>
                 <td class="num">{brand.data.periods[0]?.from}</td>
                 <td class="cap">{brand.data.segment && label(brand.data.segment)}</td>
                 <td class="cap">{types.map(label).join(', ')}</td>

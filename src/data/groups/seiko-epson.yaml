@@ -1,3 +1,7 @@
 name: Seiko Epson
+logo: ../logos/seiko-epson.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:EPSON-Logo.svg
+  license: Public domain
 country: Japan
 type: independent-company

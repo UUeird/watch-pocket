@@ -47,5 +47,15 @@ try "source that is not a link" $D/brands/girard-perregaux.yaml 's/^  - owner: s
 try "logo file that does not exist" $D/brands/rolex.yaml 's#logos/rolex.svg#logos/missing.svg#'
 try "logo credit with no logo" $D/brands/rolex.yaml '/^logo: /d'
 try "logo credit with no source" $D/brands/rolex.yaml '/^  source: /d'
+try "group logo file that does not exist" $D/groups/kering.yaml 's#logos/kering.svg#logos/missing.svg#'
+try "group logo credit with no logo" $D/groups/kering.yaml '/^logo: /d'
+try "revenue with no source" $D/brands/rolex.yaml 's/^name: Rolex$/name: Rolex\
+revenue: [{ year: 2024, amount: 1, currency: CHF, basis: estimate }]/'
+try "two revenue figures for one year" $D/groups/kering.yaml 's/^name: Kering$/name: Kering\
+revenue:\
+  - { year: 2024, amount: 1, currency: EUR, basis: reported, sources: [https:\/\/example.com] }\
+  - { year: 2024, amount: 2, currency: EUR, basis: reported, sources: [https:\/\/example.com] }/'
+try "revenue in an unknown currency" $D/brands/rolex.yaml 's/^name: Rolex$/name: Rolex\
+revenue: [{ year: 2024, amount: 1, currency: XYZ, basis: estimate, sources: [https:\/\/example.com] }]/'
 
 exit $failures

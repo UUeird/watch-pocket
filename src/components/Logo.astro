@@ -1,0 +1,21 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  name: string;
+  logo: CollectionEntry<'brands' | 'groups'>['data']['logo'];
+  credit: CollectionEntry<'brands' | 'groups'>['data']['logoCredit'];
+}
+
+const { name, logo, credit } = Astro.props;
+---
+
+{logo && <img class="logo" src={logo.src} width={logo.width} height={logo.height} alt={`${name} logo`} />}
+{
+  logo && credit && (
+    <p class="logo-credit">
+      Logo{credit.author && ` by ${credit.author}`} · {credit.licenseUrl ? <a href={credit.licenseUrl}>{credit.license}</a> : credit.license} ·{' '}
+      <a href={credit.source}>Source</a>
+    </p>
+  )
+}

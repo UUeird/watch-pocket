@@ -17,6 +17,9 @@ export const countryHref = (country: string) => href(`/countries/${countrySlug(c
 
 export const label = (value: string) => value.replace(/-/g, ' ');
 
+// A count with its noun, e.g. `1 brand` or `3 brands`.
+export const plural = (count: number, noun: string) => `${count} ${noun}${count === 1 ? '' : 's'}`;
+
 // The site a source link points to, used as its link text where the full URL would not fit.
 export const sourceHost = (source: string) => new URL(source).hostname.replace(/^www\./, '');
 
@@ -82,6 +85,9 @@ async function buildCatalog() {
       .sort((a, b) => Number(a.to !== undefined) - Number(b.to !== undefined));
   const brandsOf = (groupId: string) =>
     brands.filter((brand) => currentOwners(brand).some((owner) => owns(owner, { collection: 'groups', id: groupId })));
+  // Brands a group currently makes and sells under license, without owning them.
+  const licensesOf = (groupId: string) =>
+    brands.filter((brand) => brand.data.licensees.some((record) => record.licensee.id === groupId && record.to === undefined));
   for (const brand of brands) {
     for (const { owner } of brand.data.ownership) {
       if (ownerName(owner) === undefined) {
@@ -123,5 +129,5 @@ async function buildCatalog() {
     const brand = brands.find((candidate) => candidate.id === line.data.brand.id)!;
     return model.data.references.map((reference) => ({ reference, model, line, brand }));
   });
-  return { brands, groups, groupsById, ownerName, holdingsOf, brandsOf, lines, linesOf, models, modelsOf, collaborationsOf, references };
+  return { brands, groups, groupsById, ownerName, holdingsOf, brandsOf, licensesOf, lines, linesOf, models, modelsOf, collaborationsOf, references };
 }

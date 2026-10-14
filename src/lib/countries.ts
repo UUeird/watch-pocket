@@ -21,6 +21,7 @@ export const countries = {
   Russia: { flag: '🇷🇺' },
   Singapore: { flag: '🇸🇬' },
   'South Korea': { flag: '🇰🇷' },
+  Spain: { flag: '🇪🇸' },
   Sweden: { flag: '🇸🇪' },
   Switzerland: { flag: '🇨🇭' },
   'United Kingdom': { flag: '🇬🇧' },

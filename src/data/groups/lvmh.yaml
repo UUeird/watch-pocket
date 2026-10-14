@@ -1,4 +1,8 @@
 name: LVMH
+logo: ../logos/lvmh.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:LVMH_logo.svg
+  license: Public domain
 country: France
 type: luxury-group
 founded: 1987

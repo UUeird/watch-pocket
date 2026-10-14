@@ -1,4 +1,8 @@
 name: Rolex SA
+logo: ../logos/rolex.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Rolex_wordmark_logo.svg
+  license: Public domain
 country: Switzerland
 type: independent-company
 founded: 1905

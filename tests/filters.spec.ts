@@ -50,7 +50,7 @@ test.describe('Brands filters', () => {
     await filter(page, 'segment').selectOption('haute');
     const rows = visibleRows(page, 'brands');
     expect(await rows.count()).toBeGreaterThan(0);
-    expect(new Set(await column(rows, 3))).toEqual(new Set(['Switzerland']));
+    expect(new Set(await column(rows, 3))).toEqual(new Set(['🇨🇭 Switzerland']));
     expect(new Set(await column(rows, 5))).toEqual(new Set(['haute']));
   });
 

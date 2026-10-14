@@ -1,3 +1,7 @@
 name: Kering
+logo: ../logos/kering.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Kering-logo.svg
+  license: Public domain
 country: France
 type: luxury-group

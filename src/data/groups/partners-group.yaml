@@ -1,3 +1,7 @@
 name: Partners Group
+logo: ../logos/partners-group.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Partners_Group_Logo_2024.svg
+  license: Public domain
 country: Switzerland
 type: private-equity

@@ -1,4 +1,4 @@
-import { defineCollection, reference } from 'astro:content';
+import { defineCollection, reference, type SchemaContext } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 import { countryNames } from './lib/countries';
@@ -7,26 +7,64 @@ import { refSlug } from './lib/slug';
 // Where a fact was taken from, as links a reader can check. Empty means it is unsourced.
 const sources = z.array(z.url()).default([]);
 
+const country = z.enum(countryNames);
+
+const currency = z.enum(['USD', 'CHF', 'EUR', 'GBP', 'JPY', 'HKD', 'INR', 'CNY']);
+
+// Revenue for one financial year, as published in accounts (`reported`) or estimated by analysts (`estimate`).
+// Most watch brands are private or part of a group that does not split out its brands, so estimates are common.
+const revenue = z
+  .array(
+    z.object({
+      year: z.number().int(),
+      amount: z.number().positive(),
+      currency,
+      basis: z.enum(['reported', 'estimate']),
+      sources: sources.refine((list) => list.length > 0, { message: 'A revenue figure needs at least one source.' }),
+    }),
+  )
+  .refine((list) => new Set(list.map(({ year }) => year)).size === list.length, {
+    message: 'Give each year one revenue figure.',
+  })
+  .default([]);
+
+// A brand's or group's logo, with where the file came from and on what terms.
+const logoFields = (image: SchemaContext['image']) => ({
+  // An image file, given as a path from the record's own file, e.g. `../logos/rolex.svg`. A missing file fails the build.
+  logo: image().optional(),
+  // `author` and `licenseUrl` are for licenses that require a credit.
+  logoCredit: z
+    .object({ source: z.url(), license: z.string(), licenseUrl: z.url().optional(), author: z.string().optional() })
+    .optional(),
+});
+const creditHasLogo = (record: { logo?: unknown; logoCredit?: unknown }) =>
+  record.logoCredit === undefined || record.logo !== undefined;
+const creditNeedsLogo = { message: 'A `logoCredit` needs a `logo` to credit.' };
+
 const groups = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/data/groups' }),
-  schema: z.object({
-    name: z.string(),
-    country: z.string(),
-    type: z.enum(['luxury-group', 'holding-company', 'independent-company', 'private-equity']),
-    founded: z.number().int().optional(),
-    website: z.url().optional(),
-    parent: reference('groups').optional(),
-    // For the group's own facts; a brand it owns cites the ownership on the brand's record.
-    sources,
-  }),
+  schema: ({ image }) =>
+    z
+      .object({
+        name: z.string(),
+        ...logoFields(image),
+        country,
+        type: z.enum(['luxury-group', 'holding-company', 'independent-company', 'private-equity']),
+        founded: z.number().int().optional(),
+        website: z.url().optional(),
+        parent: reference('groups').optional(),
+        // The whole company's revenue, including any business beyond its watch brands.
+        revenue,
+        // For the group's own facts; a brand it owns cites the ownership on the brand's record.
+        sources,
+      })
+      .refine(creditHasLogo, creditNeedsLogo),
 });
 
 const color = z.enum([
   'black', 'white', 'silver', 'gray', 'blue', 'green', 'red', 'yellow', 'orange', 'brown', 'pink', 'purple', 'gold', 'rose-gold', 'champagne',
 ]);
 const metal = z.enum(['steel', 'aluminum', 'yellow-gold', 'white-gold', 'rose-gold', 'platinum', 'titanium', 'ceramic', 'bronze']);
-
-const country = z.enum(countryNames);
 
 const endsAfterStart = ({ from, to }: { from?: number; to?: number }) =>
   from === undefined || to === undefined || to >= from;
@@ -80,12 +118,7 @@ const brands = defineCollection({
     z
       .object({
         name: z.string(),
-        // An image file, given as a path from the brand's own file, e.g. `../logos/rolex.svg`. A missing file fails the build.
-        logo: image().optional(),
-        // Where the logo file came from and on what terms. `author` and `licenseUrl` are for licenses that require a credit.
-        logoCredit: z
-          .object({ source: z.url(), license: z.string(), licenseUrl: z.url().optional(), author: z.string().optional() })
-          .optional(),
+        ...logoFields(image),
         // Three separate facts: where the brand was founded, where it is run from today, and where its watches are made.
         origin: country.optional(),
         headquarters: country.optional(),
@@ -102,6 +135,8 @@ const brands = defineCollection({
         copycat: z.boolean().default(false),
         // Watches made per year, with the year the figure refers to.
         production: z.object({ units: z.number().int(), year: z.number().int() }).optional(),
+        // Revenue from this brand alone.
+        revenue,
         website: z.url().optional(),
         // Ownership is dated because brands change hands; a record with no `to` is a current owner.
         ownership: z
@@ -129,9 +164,7 @@ const brands = defineCollection({
       .refine((brand) => brand.periods.length === 0 || brand.status === undefined, {
         message: 'Set either `periods` or `status`, not both: status is derived from periods.',
       })
-      .refine((brand) => brand.logoCredit === undefined || brand.logo !== undefined, {
-        message: 'A `logoCredit` needs a `logo` to credit.',
-      }),
+      .refine(creditHasLogo, creditNeedsLogo),
 });
 
 // A product line (collection) sold under a brand's name, e.g. Rolex Submariner. Files live at lines/<brand>/<line>.yaml.
@@ -162,7 +195,10 @@ const models = defineCollection({
       .array(
         z.object({
           ref: z.string(),
+          // The first period's `from` is the year the reference was released.
           periods,
+          // The maker's list price in a given year, in its home currency where it publishes one.
+          price: z.object({ amount: z.number().positive(), currency, year: z.number().int() }).optional(),
           caseSize: z.number().optional(),
           // The fields below use fixed vocabularies so references can be filtered and compared across brands.
           // Where a brand has its own name for an option (Jubilee, Slate), it goes in `name` for display only.
