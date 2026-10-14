@@ -7,7 +7,7 @@ Requires Node 24 (see `.nvmrc`).
 
 ```sh
 npm install
-npm run dev      # dev server at http://localhost:4321/watch-pocket/
+npm run dev      # dev server at http://localhost:4321
 npm run build    # static build into dist/
 npm run preview  # serve the built site
 npm run check    # type check
@@ -32,8 +32,10 @@ Every pull request runs the type check, the build, the link check, the browser t
 
 ## Deployment
 
-The site is published to GitHub Pages at https://uueird.github.io/watch-pocket/. Once CI passes on `main`, the Deploy workflow (`.github/workflows/deploy.yml`) builds that commit and publishes it; it can also be run by hand from the Actions tab.
+The site is published to GitHub Pages at https://www.watchpocket.app/ (the bare watchpocket.app redirects there). Once CI passes on `main`, the Deploy workflow (`.github/workflows/deploy.yml`) builds that commit and publishes it; it can also be run by hand from the Actions tab.
 
-Because the site lives under `/watch-pocket/`, that base path is set in `astro.config.mjs`, and every internal link is built with `href()` from `src/lib/catalog.ts`. A link written as a bare `/brands/...` path fails the link check.
+The custom domain is set in the repo's Pages settings, and DNS for watchpocket.app is at Porkbun: a `www` CNAME to `uueird.github.io`, and A/AAAA records on the apex pointing to GitHub's Pages addresses. `site` in `astro.config.mjs` holds the same address.
+
+Every internal link is built with `href()` from `src/lib/catalog.ts`, which adds the `base` path from `astro.config.mjs` if one is set. There is none on the custom domain, but keeping links on `href()` means moving the site under a path again only needs the config changed.
 
 Much of the data was entered from memory and is not yet verified. A fact that has been checked carries `sources`, a list of links: on each ownership and licensee record for that claim, and on the brand, group or model file for everything else.

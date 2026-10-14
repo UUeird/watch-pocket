@@ -1,8 +1,7 @@
 import { defineConfig } from 'astro/config';
 
-// Served by GitHub Pages at https://uueird.github.io/watch-pocket/, so every page lives under /watch-pocket/.
-// Internal links go through `href()` in src/lib/catalog.ts, which adds this base.
+// Served by GitHub Pages on the custom domain www.watchpocket.app, so the site sits at the root.
+// Internal links still go through `href()` in src/lib/catalog.ts, which adds `base` if one is ever set again.
 export default defineConfig({
-  site: 'https://uueird.github.io',
-  base: '/watch-pocket',
+  site: 'https://www.watchpocket.app',
 });
