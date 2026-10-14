@@ -1,4 +1,8 @@
 name: Boucheron
+logo: ../logos/boucheron.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_of_Boucheron.svg
+  license: Public domain
 origin: France
 status: active
 ownership:

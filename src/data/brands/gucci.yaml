@@ -1,4 +1,8 @@
 name: Gucci
+logo: ../logos/gucci.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Gucci_logo.svg
+  license: Public domain
 origin: Italy
 status: active
 ownership:

@@ -1,4 +1,8 @@
 name: Casio
+logo: ../logos/casio.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Casio_logo.svg
+  license: Public domain
 origin: Japan
 status: active
 ownership:

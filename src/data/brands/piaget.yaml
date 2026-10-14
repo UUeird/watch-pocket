@@ -1,4 +1,8 @@
 name: Piaget
+logo: ../logos/piaget.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Piaget_logo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: luxury

@@ -1,4 +1,8 @@
 name: Richard Mille
+logo: ../logos/richard-mille.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Richard_Mille_Logo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: haute

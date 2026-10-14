@@ -1,4 +1,8 @@
 name: Zenith
+logo: ../logos/zenith.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Zenith_logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1865 }]
 segment: luxury

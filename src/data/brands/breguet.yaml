@@ -1,4 +1,8 @@
 name: Breguet
+logo: ../logos/breguet.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Breguet_2025_logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1775 }]
 segment: haute

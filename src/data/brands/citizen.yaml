@@ -1,4 +1,8 @@
 name: Citizen
+logo: ../logos/citizen.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Citizen_logo.svg
+  license: Public domain
 origin: Japan
 status: active
 ownership:

@@ -1,4 +1,10 @@
 name: Samsung
+logo: ../logos/samsung.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Samsung_logo.svg
+  license: CC BY 4.0
+  licenseUrl: https://creativecommons.org/licenses/by/4.0
+  author: Samsung
 origin: South Korea
 status: active
 tags:

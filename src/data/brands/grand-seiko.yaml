@@ -1,4 +1,8 @@
 name: Grand Seiko
+logo: ../logos/grand-seiko.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Grand_Seiko_Logo.svg
+  license: Public domain
 origin: Japan
 status: active
 ownership:

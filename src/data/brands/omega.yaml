@@ -1,4 +1,8 @@
 name: Omega
+logo: ../logos/omega.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Omega_Logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1848 }]
 segment: luxury

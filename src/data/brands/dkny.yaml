@@ -1,4 +1,8 @@
 name: DKNY
+logo: ../logos/dkny.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:DKNY_logo.svg
+  license: Public domain
 origin: United States
 status: active
 tags:

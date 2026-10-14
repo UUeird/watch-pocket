@@ -1,4 +1,8 @@
 name: Mido
+logo: ../logos/mido.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Mido_logo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: mid-range

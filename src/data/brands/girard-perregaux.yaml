@@ -1,4 +1,8 @@
 name: Girard-Perregaux
+logo: ../logos/girard-perregaux.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Girard-Perregaux_logo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: luxury

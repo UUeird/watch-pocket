@@ -1,4 +1,8 @@
 name: Movado
+logo: ../logos/movado.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Movado_2023_logo.svg
+  license: Public domain
 origin: Switzerland
 headquarters: United States
 manufacturing: [Switzerland]

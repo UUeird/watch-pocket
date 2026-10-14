@@ -1,4 +1,8 @@
 name: A. Lange & Söhne
+logo: ../logos/a-lange-sohne.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Alange_soehne_logo.svg
+  license: Public domain
 origin: Germany
 periods: [{ from: 1845 }]
 segment: haute

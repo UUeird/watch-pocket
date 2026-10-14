@@ -1,4 +1,8 @@
 name: Audemars Piguet
+logo: ../logos/audemars-piguet.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Audemars_Piguet.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1875 }]
 segment: haute

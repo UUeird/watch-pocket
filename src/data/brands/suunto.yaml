@@ -1,4 +1,8 @@
 name: Suunto
+logo: ../logos/suunto.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Suunto-logo.svg
+  license: Public domain
 origin: Finland
 status: active
 tags:

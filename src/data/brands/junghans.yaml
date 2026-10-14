@@ -1,3 +1,7 @@
 name: Junghans
+logo: ../logos/junghans.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Junghans_logo_2010.svg
+  license: Public domain
 origin: Germany
 status: active

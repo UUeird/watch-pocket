@@ -1,4 +1,8 @@
 name: Calvin Klein
+logo: ../logos/calvin-klein.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Calvin_Klein_logo.svg
+  license: Public domain
 origin: United States
 status: active
 tags:

@@ -1,4 +1,8 @@
 name: Fossil
+logo: ../logos/fossil.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Fossil_Group_logo.svg
+  license: Public domain
 origin: United States
 status: active
 tags:

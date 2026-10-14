@@ -1,3 +1,7 @@
 name: Mühle-Glashütte
+logo: ../logos/muhle-glashutte.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Nautische_Instrumente_M%C3%BChle_Glash%C3%BCtte_logo.svg
+  license: Public domain
 origin: Germany
 status: active

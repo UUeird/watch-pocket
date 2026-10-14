@@ -1,4 +1,8 @@
 name: Dior
+logo: ../logos/dior.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Dior_Logo.svg
+  license: Public domain
 origin: France
 status: active
 ownership:

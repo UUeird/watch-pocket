@@ -1,4 +1,8 @@
 name: Maurice Lacroix
+logo: ../logos/maurice-lacroix.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Maurice_Lacroix.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: mid-range

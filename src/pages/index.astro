@@ -63,7 +63,7 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
       <tbody id="brands">
         {
           brands.map((brand) => {
-            const { category, tags } = brand.data;
+            const { category, tags, logo } = brand.data;
             const lineNames = linesOf(brand.id).map((line) => line.data.name);
             const types = category === 'watch-brand' ? tags : [category, ...tags];
             return (
@@ -76,7 +76,12 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
                 data-tags={tags.join('|')}
               >
                 <td>
-                  <a href={href(`/brands/${brand.id}/`)}>{brand.data.name}</a>
+                  <div class="brand">
+                    <span class="brand-logo">
+                      {logo && <img src={logo.src} width={logo.width} height={logo.height} alt="" loading="lazy" />}
+                    </span>
+                    <a href={href(`/brands/${brand.id}/`)}>{brand.data.name}</a>
+                  </div>
                 </td>
                 <td>
                   <Owners brand={brand} />
@@ -94,3 +99,31 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
     </table>
   </div>
 </Base>
+
+<style>
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* A fixed slot, empty for a brand with no logo, so the names line up. */
+  .brand-logo {
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 28px;
+  }
+
+  /* Logos are drawn for a light page, so each sits on a white plate in both color schemes. */
+  .brand-logo img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 3px;
+    background: #ffffff;
+  }
+</style>

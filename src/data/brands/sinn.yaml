@@ -1,3 +1,7 @@
 name: Sinn
+logo: ../logos/sinn.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Sinn_(Uhrenhersteller)_logo.svg
+  license: Public domain
 origin: Germany
 status: active

@@ -1,4 +1,8 @@
 name: Rado
+logo: ../logos/rado.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Rado_(Uhrenmarke)_logo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: mid-range

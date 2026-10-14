@@ -44,5 +44,8 @@ try "stake over 100 percent" $D/brands/girard-perregaux.yaml 's/^  - owner: sowi
     stake: 120/'
 try "source that is not a link" $D/brands/girard-perregaux.yaml 's/^  - owner: sowind-group$/  - owner: sowind-group\
     sources: [kering press release]/'
+try "logo file that does not exist" $D/brands/rolex.yaml 's#logos/rolex.svg#logos/missing.svg#'
+try "logo credit with no logo" $D/brands/rolex.yaml '/^logo: /d'
+try "logo credit with no source" $D/brands/rolex.yaml '/^  source: /d'
 
 exit $failures

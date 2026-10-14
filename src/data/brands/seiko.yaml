@@ -1,4 +1,8 @@
 name: Seiko
+logo: ../logos/seiko.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Seiko_logo.svg
+  license: Public domain
 origin: Japan
 status: active
 ownership:

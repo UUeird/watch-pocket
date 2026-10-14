@@ -1,4 +1,8 @@
 name: Cartier
+logo: ../logos/cartier.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Cartier_logo.svg
+  license: Public domain
 origin: France
 headquarters: France
 manufacturing: [Switzerland]

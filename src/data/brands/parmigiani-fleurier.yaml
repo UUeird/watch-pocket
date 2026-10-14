@@ -1,4 +1,8 @@
 name: Parmigiani Fleurier
+logo: ../logos/parmigiani-fleurier.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Parmigiani_Fleurier_logo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 segment: haute
