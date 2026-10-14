@@ -48,7 +48,7 @@ server is left answering 404 or 500 afterward. Restart it and confirm it serves:
 npx astro dev stop
 rm -rf .astro node_modules/.astro
 npm run dev          # detaches into the background
-curl -s -o /dev/null -w '%{http_code}\n' http://localhost:4321/watch-pocket/
+curl -s -o /dev/null -w '%{http_code}\n' http://localhost:4321/
 ```
 
 Check a couple of other pages too (`/references/`, a brand page). Don't report
@@ -71,7 +71,7 @@ to GitHub Pages. Wait for it, then check the live site:
 
 ```
 gh run list --workflow Deploy --limit 1
-curl -s -o /dev/null -w '%{http_code}\n' https://uueird.github.io/watch-pocket/
+curl -s -o /dev/null -w '%{http_code}\n' https://www.watchpocket.app/
 ```
 
 The run's `headSha` (`gh run view <id> --json headSha`) should be the merge
