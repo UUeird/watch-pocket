@@ -4,4 +4,6 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Sinn_(Uhrenhersteller)_logo.svg
   license: Public domain
 origin: Germany
-status: active
+periods: [{ from: 1961 }]
+sources:
+  - https://en.wikipedia.org/wiki/Sinn_(watchmaker)

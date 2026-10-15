@@ -1,5 +1,11 @@
 name: Glashütte Original
 origin: Germany
-status: active
+periods: [{ from: 1994 }]
+heritage:
+  from: 1845
+  sources:
+    - https://www.wikidata.org/wiki/Q651928
 ownership:
   - owner: swatch-group
+sources:
+  - https://en.wikipedia.org/wiki/Glash%C3%BCtte_Original

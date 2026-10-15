@@ -1,3 +1,7 @@
 name: Movado Group
+logo: ../logos/movado.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Movado_2023_logo.svg
+  license: Public domain
 country: United States
 type: holding-company

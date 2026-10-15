@@ -2,4 +2,6 @@ name: Ball
 origin: United States
 headquarters: Switzerland
 manufacturing: [Switzerland]
-status: active
+periods: [{ from: 1891 }]
+sources:
+  - https://www.wikidata.org/wiki/Q19865519

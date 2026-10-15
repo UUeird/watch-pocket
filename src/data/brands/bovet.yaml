@@ -1,4 +1,6 @@
 name: Bovet
 origin: Switzerland
-status: active
+periods: [{ from: 1822 }]
 segment: haute
+sources:
+  - https://www.wikidata.org/wiki/Q4950531

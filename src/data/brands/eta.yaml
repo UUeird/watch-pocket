@@ -1,7 +1,9 @@
 name: ETA
 origin: Switzerland
-status: active
+periods: [{ from: 1856 }]
 category: movement-maker
 ownership:
   - owner: swatch-group
     from: 1983
+sources:
+  - https://en.wikipedia.org/wiki/ETA_SA

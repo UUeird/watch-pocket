@@ -1,3 +1,5 @@
 name: Damasko
 origin: Germany
-status: active
+periods: [{ from: 1994 }]
+sources:
+  - https://www.wikidata.org/wiki/Q22101765

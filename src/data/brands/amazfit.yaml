@@ -1,5 +1,7 @@
 name: Amazfit
 origin: China
-status: active
+periods: [{ from: 2013 }]
 tags:
   - smartwatch
+sources:
+  - https://www.wikidata.org/wiki/Q105273852

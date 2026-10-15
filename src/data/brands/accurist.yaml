@@ -1,6 +1,8 @@
 name: Accurist
 origin: United Kingdom
-status: active
+periods: [{ from: 1946 }]
 ownership:
   - owner: time-products
     from: 2014
+sources:
+  - https://www.wikidata.org/wiki/Q4672919

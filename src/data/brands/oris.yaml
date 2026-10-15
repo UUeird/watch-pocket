@@ -4,5 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Oris_logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1904 }]
 segment: mid-range
+sources:
+  - https://en.wikipedia.org/wiki/Oris

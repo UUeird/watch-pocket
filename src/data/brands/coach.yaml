@@ -4,8 +4,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Coach_New_Logo.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 1941 }]
 tags:
   - fashion
 licensees:
   - licensee: movado-group
+sources:
+  - https://www.wikidata.org/wiki/Q727697

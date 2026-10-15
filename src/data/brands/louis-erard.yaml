@@ -1,4 +1,6 @@
 name: Louis Erard
 origin: Switzerland
-status: active
+periods: [{ from: 1929 }]
 segment: mid-range
+sources:
+  - https://www.wikidata.org/wiki/Q17461916

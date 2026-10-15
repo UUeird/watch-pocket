@@ -1,3 +1,9 @@
 name: Festina Group
+logo: ../logos/festina-group.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_festina_group_Mesa_de_trabajo_1.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Jrey1977
 country: Spain
 type: holding-company

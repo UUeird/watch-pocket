@@ -1,6 +1,6 @@
 name: MB&F
 origin: Switzerland
-status: active
+periods: [{ from: 2005 }]
 segment: haute
 ownership:
   - owner: chanel
@@ -10,3 +10,5 @@ ownership:
     sources:
       - https://www.watchtime.com/featured/chanel-takes-a-25-stake-in-mbf/
       - https://theimpression.com/chanel-expands-luxury-portfolio-with-25-stake-in-mbf/
+sources:
+  - https://www.wikidata.org/wiki/Q6714650

@@ -4,7 +4,9 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Victorinox_Logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1884 }]
 segment: mid-range
 ownership:
   - owner: victorinox
+sources:
+  - https://www.wikidata.org/wiki/Q503405

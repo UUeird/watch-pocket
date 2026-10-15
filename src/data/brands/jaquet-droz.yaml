@@ -1,7 +1,9 @@
 name: Jaquet Droz
 origin: Switzerland
-status: active
+periods: [{ from: 1738 }]
 segment: luxury
 ownership:
   - owner: swatch-group
     from: 2000
+sources:
+  - https://www.wikidata.org/wiki/Q3162263

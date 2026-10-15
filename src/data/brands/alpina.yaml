@@ -1,7 +1,9 @@
 name: Alpina
 origin: Switzerland
-status: active
+periods: [{ from: 1883 }]
 segment: mid-range
 ownership:
   - owner: citizen
     from: 2016
+sources:
+  - https://archive.horlogerie-suisse.com/marques/alpina.html

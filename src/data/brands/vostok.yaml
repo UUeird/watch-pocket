@@ -1,3 +1,5 @@
 name: Vostok
 origin: Russia
-status: active
+periods: [{ from: 1942 }]
+sources:
+  - https://en.wikipedia.org/wiki/Vostok_(watches)

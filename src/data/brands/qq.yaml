@@ -1,5 +1,7 @@
 name: Q&Q
 origin: Japan
-status: active
+periods: [{ from: 1976 }]
 ownership:
   - owner: citizen
+sources:
+  - https://qq-watch.jp/eng/about

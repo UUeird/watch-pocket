@@ -1,6 +1,6 @@
 name: Romain Gauthier
 origin: Switzerland
-status: active
+periods: [{ from: 2002 }]
 segment: haute
 ownership:
   - owner: chanel
@@ -9,3 +9,5 @@ ownership:
     from: 2011
     sources:
       - https://www.luxurybazaar.com/grey-market/chanel-watch-brands/
+sources:
+  - https://en.wikipedia.org/wiki/Romain_Gauthier

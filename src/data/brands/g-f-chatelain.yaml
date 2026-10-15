@@ -1,6 +1,6 @@
 name: G&F Châtelain
 origin: Switzerland
-status: active
+periods: [{ from: 1947 }]
 category: case-maker
 ownership:
   - owner: chanel
@@ -8,3 +8,5 @@ ownership:
     from: 1993
     sources:
       - https://www.luxurybazaar.com/grey-market/chanel-watch-brands/
+sources:
+  - https://en.worldtempus.com/article/watches/trends-and-style/chanel-35-years-of-chanel-watchmaking-and-12-little-known-stories-31708.html

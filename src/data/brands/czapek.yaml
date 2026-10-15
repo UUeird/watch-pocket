@@ -1,4 +1,10 @@
 name: Czapek
 origin: Switzerland
-status: active
+periods: [{ from: 2015 }]
+heritage:
+  from: 1845
+  sources:
+    - https://en.worldtempus.com/article/industry-news/business/new-brand-czapek-is-back-20449.html
 segment: haute
+sources:
+  - https://www.fhs.swiss/eng/2015_11_30_02_Czapek.html

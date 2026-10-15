@@ -1,4 +1,6 @@
 name: Sellita
 origin: Switzerland
-status: active
+periods: [{ from: 1950 }]
 category: movement-maker
+sources:
+  - https://www.wikidata.org/wiki/Q20077598

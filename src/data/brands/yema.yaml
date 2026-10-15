@@ -1,3 +1,5 @@
 name: Yema
 origin: France
-status: active
+periods: [{ from: 1948 }]
+sources:
+  - https://www.wikidata.org/wiki/Q3572153

@@ -1,5 +1,7 @@
 name: Withings
 origin: France
-status: active
+periods: [{ from: 2008 }]
 tags:
   - smartwatch
+sources:
+  - https://www.wikidata.org/wiki/Q3569499

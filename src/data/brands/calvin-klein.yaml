@@ -4,8 +4,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Calvin_Klein_logo.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 1968 }]
 tags:
   - fashion
 licensees:
   - licensee: movado-group
+sources:
+  - https://www.wikidata.org/wiki/Q1068628

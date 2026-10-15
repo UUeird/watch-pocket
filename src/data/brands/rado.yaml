@@ -4,8 +4,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Rado_(Uhrenmarke)_logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1917 }]
 segment: mid-range
 ownership:
   - owner: swatch-group
     from: 1983
+sources:
+  - https://www.wikidata.org/wiki/Q180014

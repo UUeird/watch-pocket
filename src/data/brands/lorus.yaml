@@ -1,5 +1,7 @@
 name: Lorus
 origin: Japan
-status: active
+periods: [{ from: 1982 }]
 ownership:
   - owner: seiko-group
+sources:
+  - https://www.wikidata.org/wiki/Q139570165

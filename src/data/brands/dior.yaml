@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Dior_Logo.svg
   license: Public domain
 origin: France
-status: active
+periods: [{ from: 1946 }]
 ownership:
   - owner: lvmh
+sources:
+  - https://en.wikipedia.org/wiki/Dior

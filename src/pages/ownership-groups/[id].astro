@@ -1,8 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Holdings from '../../components/Holdings.astro';
+import Logo from '../../components/Logo.astro';
 import Sources from '../../components/Sources.astro';
 import { href, label, loadCatalog, type Group } from '../../lib/catalog';
+import { countries } from '../../lib/countries';
 
 export async function getStaticPaths() {
   const { groups } = await loadCatalog();
@@ -14,23 +16,23 @@ interface Props {
 }
 
 const { group } = Astro.props;
-const { brands, groups, groupsById, holdingsOf } = await loadCatalog();
+const { groups, groupsById, holdingsOf, licensesOf } = await loadCatalog();
 const subsidiaries = groups.filter((other) => other.data.parent?.id === group.id);
-const { name, country, type, founded, website, parent, sources } = group.data;
+const { name, logo, logoCredit, country, type, founded, website, parent, sources } = group.data;
+const { flag } = countries[country];
 const owner = { collection: 'groups' as const, id: group.id };
 const holdings = holdingsOf(owner);
-const licenses = brands.filter((brand) =>
-  brand.data.licensees.some((record) => record.licensee.id === group.id && record.to === undefined),
-);
+const licenses = licensesOf(group.id);
 ---
 
 <Base title={name}>
+  <Logo name={name} logo={logo} credit={logoCredit} />
   <h1>{name}</h1>
   <p class="lede cap">{label(type)}</p>
 
   <dl class="facts">
     <dt>Country</dt>
-    <dd>{country}</dd>
+    <dd>{flag && <span aria-hidden="true">{flag} </span>}{country}</dd>
     {
       founded && (
         <>

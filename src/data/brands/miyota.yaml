@@ -1,6 +1,8 @@
 name: Miyota
 origin: Japan
-status: active
+periods: [{ from: 1959 }]
 category: movement-maker
 ownership:
   - owner: citizen
+sources:
+  - https://www.wikidata.org/wiki/Q6716544

@@ -4,7 +4,9 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Bulova_logo.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 1875 }]
 ownership:
   - owner: citizen
     from: 2008
+sources:
+  - https://www.wikidata.org/wiki/Q663300

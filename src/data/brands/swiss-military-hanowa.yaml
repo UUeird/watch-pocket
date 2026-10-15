@@ -1,4 +1,6 @@
 name: Swiss Military Hanowa
 origin: Switzerland
-status: active
+periods: [{ from: 1963 }]
 segment: budget
+sources:
+  - https://www.wikidata.org/wiki/Q16937375

@@ -1,6 +1,8 @@
 name: Peseux
 origin: Switzerland
-status: active
+periods: [{ from: 1923 }]
 category: movement-maker
 ownership:
   - owner: swatch-group
+sources:
+  - https://wiki.grail-watch.com/index.php/Fabrique_d%27Ebauches_de_Peseux

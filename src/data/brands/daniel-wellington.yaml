@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Daniel_Wellington_logo.svg
   license: Public domain
 origin: Sweden
-status: active
+periods: [{ from: 2011 }]
 tags:
   - direct-to-consumer
+sources:
+  - https://www.wikidata.org/wiki/Q22104639

@@ -1,3 +1,9 @@
 name: Moritz Grossmann
 origin: Germany
-status: active
+periods: [{ from: 2008 }]
+heritage:
+  from: 1854
+  sources:
+    - https://en.grossmann-uhren.com/history/
+sources:
+  - https://www.wikidata.org/wiki/Q25303194

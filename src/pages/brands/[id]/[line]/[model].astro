@@ -10,6 +10,7 @@ import {
   href,
   label,
   loadCatalog,
+  plural,
   refHref,
   type Brand,
   type Line,
@@ -42,7 +43,7 @@ const { name, references, sources } = model.data;
   <Breadcrumb brand={brand} line={line} />
   <h1>{name}</h1>
   <p class="lede">
-    Model · {references.length} references
+    Model · {plural(references.length, 'reference')}
     {
       collaborators.map((collaborator) => (
         <>

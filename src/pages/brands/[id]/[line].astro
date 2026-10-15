@@ -1,7 +1,7 @@
 ---
 import Breadcrumb from '../../../components/Breadcrumb.astro';
 import Base from '../../../layouts/Base.astro';
-import { formatPeriods, href, loadCatalog, type Brand, type Line, type Model } from '../../../lib/catalog';
+import { formatPeriods, href, loadCatalog, plural, type Brand, type Line, type Model } from '../../../lib/catalog';
 
 export async function getStaticPaths() {
   const { brands, lines, modelsOf } = await loadCatalog();
@@ -44,7 +44,7 @@ const discontinued = periods.at(-1)?.to !== undefined;
       <ul>
         {models.map((model) => (
           <li>
-            <a href={href(`/brands/${model.id}/`)}>{model.data.name}</a> ({model.data.references.length} references)
+            <a href={href(`/brands/${model.id}/`)}>{model.data.name}</a> ({plural(model.data.references.length, 'reference')})
           </li>
         ))}
       </ul>

@@ -1,34 +1,126 @@
 ---
+import FlagBadge from '../../components/FlagBadge.astro';
+import Treemap from '../../components/Treemap.astro';
 import Base from '../../layouts/Base.astro';
-import { href, label, loadCatalog } from '../../lib/catalog';
+import { formatStake, href, label, loadCatalog, plural, type Brand } from '../../lib/catalog';
+import { metrics } from '../../lib/metrics';
+import { layoutTreemap } from '../../lib/treemap';
 
-const { groups, brandsOf } = await loadCatalog();
+const { groups, brandsOf, licensesOf, references } = await loadCatalog();
+
+// The treemap sizes each brand by a measure. Licensed brands count only for measures of what a group makes.
+const referencesOf = Map.groupBy(references, ({ brand }) => brand.id);
+const factsOf = (brand: Brand) => ({ brand, references: (referencesOf.get(brand.id) ?? []).map(({ reference }) => reference) });
+const owners = groups.map((group) => ({ group, brands: brandsOf(group.id), licensed: licensesOf(group.id) }));
+const layouts = metrics.map((metric) => layoutTreemap(owners, metric, factsOf));
+
+// A brand as it sits in a group: owned outright, owned in part (with the stake), or made under license.
+type Tile = { brand: Brand; stake?: number | 'unknown'; licensed?: boolean };
+
 const held = groups
-  .map((group) => ({ group, brands: brandsOf(group.id) }))
-  .sort((a, b) => b.brands.length - a.brands.length);
+  .map((group) => {
+    const owned: Tile[] = brandsOf(group.id).map((brand) => ({
+      brand,
+      stake: brand.data.ownership.find((record) => record.to === undefined && record.owner.id === group.id)?.stake,
+    }));
+    const licensed: Tile[] = licensesOf(group.id).map((brand) => ({ brand, licensed: true }));
+    return { group, owned, licensed, tiles: [...owned, ...licensed] };
+  })
+  .sort((a, b) => b.owned.length - a.owned.length || b.licensed.length - a.licensed.length);
+
+// Sizes a logo to cover roughly `area` square pixels, within a height range, so a square mark
+// is not dwarfed by a long wordmark. Returns the display height in pixels.
+const logoHeight = ({ width, height }: { width: number; height: number }, area: number, max: number) =>
+  Math.round(Math.min(max, Math.max(10, Math.sqrt(area / (width / height)))));
+
+// Up to two initials, standing in for a brand with no logo file, e.g. `Harry Winston` → `HW`.
+const initials = (name: string) =>
+  name
+    .split(/[\s-]+/)
+    .map((word) => word.match(/\p{L}/u)?.[0] ?? '')
+    .join('')
+    .slice(0, 2)
+    .toUpperCase();
+
+const stakeNote = (stake: Tile['stake']) =>
+  stake === 'unknown' ? 'Part-owned, stake unknown' : `${formatStake(stake)} stake`;
 ---
 
 <Base title="Ownership Groups">
   <h1>Ownership groups</h1>
   <p class="lede">Groups and corporations, with the brands each currently holds.</p>
 
+  <Treemap layouts={layouts} />
+
+  <h2 class="section-heading">All groups</h2>
+  <ul class="legend" aria-label="Key">
+    <li><span class="key-tile" /> Owned outright</li>
+    <li><span class="key-tile"><span class="stake">49%</span></span> Part-owned, with the group's stake</li>
+    <li><span class="key-tile licensed" /> Made under license, not owned</li>
+  </ul>
+
   <div class="cards">
     {
-      held.map(({ group, brands }) => (
+      held.map(({ group, owned, licensed, tiles }) => (
         <section class="card">
-          <h2>
-            <a href={href(`/ownership-groups/${group.id}/`)}>{group.data.name}</a>
-          </h2>
-          <p class="meta cap">
-            {label(group.data.type)} · {group.data.country} · {brands.length} brands
+          {group.data.logo && (
+            <div class="card-logo">
+              <img
+                src={group.data.logo.src}
+                width={group.data.logo.width}
+                height={group.data.logo.height}
+                style={{ height: `${logoHeight(group.data.logo, 3600, 44)}px` }}
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          )}
+          <div class="card-head">
+            <h2>
+              <a href={href(`/ownership-groups/${group.id}/`)}>{group.data.name}</a>
+            </h2>
+            <FlagBadge country={group.data.country} />
+          </div>
+          <p class="meta">
+            <span class="cap">{label(group.data.type)}</span> · {plural(owned.length, 'brand')}
+            {licensed.length > 0 && ` · ${licensed.length} licensed`}
           </p>
-          <ul>
-            {brands.map((brand) => (
-              <li>
-                <a href={href(`/brands/${brand.id}/`)}>{brand.data.name}</a>
-              </li>
-            ))}
-          </ul>
+          {tiles.length > 0 && (
+            <ul class="tiles">
+              {tiles.map(({ brand: { id, data: { name, logo } }, stake, licensed }) => (
+                <li>
+                  <a class:list={['tile', { licensed }]} href={href(`/brands/${id}/`)}>
+                    <span class="plate">
+                      {logo ? (
+                        <img
+                          src={logo.src}
+                          width={logo.width}
+                          height={logo.height}
+                          style={{ height: `${logoHeight(logo, 1500, 40)}px` }}
+                          alt=""
+                          loading="lazy"
+                        />
+                      ) : (
+                        <span class="monogram" aria-hidden="true">
+                          {initials(name)}
+                        </span>
+                      )}
+                      {stake !== undefined && (
+                        <span class="stake" title={stakeNote(stake)} aria-hidden="true">
+                          {stake === 'unknown' ? 'Part' : `${stake}%`}
+                        </span>
+                      )}
+                    </span>
+                    <span class="tile-name">
+                      {name}
+                      {stake !== undefined && <span class="visually-hidden">, {stakeNote(stake)}</span>}
+                      {licensed && <span class="visually-hidden">, made under license</span>}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
       ))
     }
@@ -36,9 +128,46 @@ const held = groups
 </Base>
 
 <style>
+  .section-heading {
+    margin: 0 0 12px;
+    font-size: 1.25rem;
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    margin: 0 0 20px;
+    padding: 0;
+    color: var(--muted);
+    font-size: 0.8125rem;
+    list-style: none;
+  }
+
+  .legend li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .key-tile {
+    position: relative;
+    width: 34px;
+    height: 24px;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+  }
+
+  .key-tile .stake {
+    top: -7px;
+    right: -9px;
+  }
+
   .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    align-items: start;
     gap: 16px;
   }
 
@@ -47,6 +176,30 @@ const held = groups
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 6px;
+  }
+
+  /* Logos are drawn for a light page, so each sits on a white plate in both color schemes. */
+  .card-logo {
+    display: inline-flex;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    background: #ffffff;
+    border-radius: 3px;
+  }
+
+  /* Each logo's height is set inline; a very long wordmark is capped by width instead. */
+  .card-logo img {
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    object-position: left;
+  }
+
+  .card-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
   }
 
   .card h2 {
@@ -60,8 +213,102 @@ const held = groups
     font-size: 0.875rem;
   }
 
-  .card ul {
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+    gap: 8px;
     margin: 0;
-    padding-left: 18px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .tile {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    color: var(--text);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    transition: border-color 0.15s;
+  }
+
+  /* A dashed edge marks a brand the group makes under license rather than owns. */
+  .licensed {
+    border: 1.5px dashed var(--muted);
+  }
+
+  .tile:hover,
+  .tile:focus-visible {
+    border-color: var(--accent);
+  }
+
+  .plate {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    padding: 6px 8px;
+    background: #ffffff;
+  }
+
+  .plate img {
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  /* A brand with no logo file shows its initials in place of one. */
+  .monogram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    font-family: Georgia, serif;
+    font-size: 0.9375rem;
+    letter-spacing: 0.04em;
+    color: #6b6860;
+    border: 1px solid #d4d0c6;
+    border-radius: 50%;
+  }
+
+  .stake {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: 1px 5px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    line-height: 1.4;
+    /* The page background reads against the accent in both color schemes. */
+    color: var(--bg);
+    background: var(--accent);
+    border-radius: 999px;
+  }
+
+  .tile-name {
+    padding: 4px 6px 5px;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-align: center;
+    border-top: 1px solid var(--line);
+  }
+
+  .tile:hover .tile-name,
+  .tile:focus-visible .tile-name {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
 </style>

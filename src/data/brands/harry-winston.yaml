@@ -1,7 +1,9 @@
 name: Harry Winston
 origin: United States
-status: active
+periods: [{ from: 1932 }]
 segment: luxury
 ownership:
   - owner: swatch-group
     from: 2013
+sources:
+  - https://www.wikidata.org/wiki/Q3127942

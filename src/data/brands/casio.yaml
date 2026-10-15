@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Casio_logo.svg
   license: Public domain
 origin: Japan
-status: active
+periods: [{ from: 1946 }]
 ownership:
   - owner: casio
+sources:
+  - https://en.wikipedia.org/wiki/Casio

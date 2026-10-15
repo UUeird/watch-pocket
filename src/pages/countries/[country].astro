@@ -2,7 +2,7 @@
 import Owners from '../../components/Owners.astro';
 import Base from '../../layouts/Base.astro';
 import { countries, type CountryName } from '../../lib/countries';
-import { brandStatus, countryHref, countrySlug, href, loadCatalog, type Brand } from '../../lib/catalog';
+import { brandStatus, countryHref, countrySlug, href, loadCatalog, plural, type Brand } from '../../lib/catalog';
 
 export async function getStaticPaths() {
   const { brands } = await loadCatalog();
@@ -38,7 +38,7 @@ const others = [
     {flag && <span aria-hidden="true">{flag} </span>}
     {country}
   </h1>
-  <p class="lede">{founded.length} brands founded here</p>
+  <p class="lede">{plural(founded.length, 'brand')} founded here</p>
 
   {
     founded.length > 0 && (

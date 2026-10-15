@@ -1,4 +1,8 @@
 name: Swatch Group
+logo: ../logos/swatch-group.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Swatch-group.svg
+  license: Public domain
 country: Switzerland
 type: luxury-group
 founded: 1983

@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Huawei_wordmark_2019.svg
   license: Public domain
 origin: China
-status: active
+periods: [{ from: 1987 }]
 tags:
   - smartwatch
+sources:
+  - https://www.wikidata.org/wiki/Q160120

@@ -4,5 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Richard_Mille_Logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 2001 }]
 segment: haute
+sources:
+  - https://www.wikidata.org/wiki/Q3431044

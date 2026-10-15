@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Chanel_logo.svg
   license: Public domain
 origin: France
-status: active
+periods: [{ from: 1910 }]
 ownership:
   - owner: chanel
+sources:
+  - https://en.wikipedia.org/wiki/Chanel

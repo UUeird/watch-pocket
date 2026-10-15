@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Sekonda_Logo.svg
   license: Public domain
 origin: United Kingdom
-status: active
+periods: [{ from: 1966 }]
 ownership:
   - owner: time-products
+sources:
+  - https://www.wikidata.org/wiki/Q7447317

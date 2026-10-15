@@ -1,6 +1,8 @@
 name: Unitas
 origin: Switzerland
-status: active
+periods: [{ from: 1918 }]
 category: movement-maker
 ownership:
   - owner: swatch-group
+sources:
+  - https://archives.cejare.ch/index.php/Unitas-Watch-Co

@@ -1,9 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro';
+import CountryLink from '../../components/CountryLink.astro';
 import Holdings from '../../components/Holdings.astro';
+import Logo from '../../components/Logo.astro';
 import SourceLinks from '../../components/SourceLinks.astro';
 import Sources from '../../components/Sources.astro';
-import { brandStatus, countryHref, formatPeriods, formatStake, href, label, lineHref, loadCatalog, ownerHref, type Brand } from '../../lib/catalog';
+import { brandStatus, formatPeriods, formatStake, href, label, lineHref, loadCatalog, ownerHref, type Brand } from '../../lib/catalog';
 
 export async function getStaticPaths() {
   const { brands } = await loadCatalog();
@@ -21,7 +23,7 @@ const holdings = holdingsOf(self);
 const collaborations = collaborationsOf(brand.id);
 const brandName = (modelId: string) => brands.find((other) => other.id === modelId.split('/')[0])?.data.name;
 const lines = linesOf(brand.id);
-const { name, logo, logoCredit, origin, headquarters, manufacturing, periods, category, segment, tags, production, copycat, website, ownership, licensees, sources } =
+const { name, logo, logoCredit, origin, headquarters, manufacturing, periods, heritage, category, segment, tags, production, copycat, website, ownership, licensees, sources } =
   brand.data;
 const showStake = ownership.some((record) => record.stake !== undefined);
 const showBasis = ownership.some((record) => record.basis !== undefined);
@@ -31,16 +33,7 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
 ---
 
 <Base title={name}>
-  {logo && <img class="logo" src={logo.src} width={logo.width} height={logo.height} alt={`${name} logo`} />}
-  {
-    logo && logoCredit && (
-      <p class="logo-credit">
-        Logo{logoCredit.author && ` by ${logoCredit.author}`} ·{' '}
-        {logoCredit.licenseUrl ? <a href={logoCredit.licenseUrl}>{logoCredit.license}</a> : logoCredit.license} ·{' '}
-        <a href={logoCredit.source}>Source</a>
-      </p>
-    )
-  }
+  <Logo name={name} logo={logo} credit={logoCredit} />
   <h1>{name}</h1>
   <p class="lede cap">{descriptors.filter((value) => typeof value === 'string').map(label).join(' · ')}</p>
 
@@ -50,7 +43,7 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
         <>
           <dt>Origin</dt>
           <dd>
-            <a href={countryHref(origin)}>{origin}</a>
+            <CountryLink country={origin} />
           </dd>
         </>
       )
@@ -60,7 +53,7 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
         <>
           <dt>Headquarters</dt>
           <dd>
-            <a href={countryHref(headquarters)}>{headquarters}</a>
+            <CountryLink country={headquarters} />
           </dd>
         </>
       )
@@ -73,7 +66,7 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
             {manufacturing.map((country, index) => (
               <>
                 {index > 0 && ', '}
-                <a href={countryHref(country)}>{country}</a>
+                <CountryLink country={country} />
               </>
             ))}
           </dd>
@@ -85,6 +78,16 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
         <>
           <dt>Active</dt>
           <dd>{formatPeriods(periods)}</dd>
+        </>
+      )
+    }
+    {
+      heritage && (
+        <>
+          <dt>Heritage</dt>
+          <dd>
+            {heritage.from}, as claimed (<SourceLinks sources={heritage.sources} />)
+          </dd>
         </>
       )
     }

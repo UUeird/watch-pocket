@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Timex_logo.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 1854 }]
 ownership:
   - owner: timex-group
+sources:
+  - https://www.wikidata.org/wiki/Q1644618

@@ -1,3 +1,5 @@
 name: Howard
 origin: United States
-status: active
+periods: [{ from: 1858 }]
+sources:
+  - https://en.wikipedia.org/wiki/E._Howard_&_Co.

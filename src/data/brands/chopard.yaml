@@ -4,5 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Logo_Chopard.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1860 }]
 segment: luxury
+sources:
+  - https://www.wikidata.org/wiki/Q670112

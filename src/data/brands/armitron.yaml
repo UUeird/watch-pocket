@@ -1,5 +1,7 @@
 name: Armitron
 origin: United States
-status: active
+periods: [{ from: 1956 }]
 tags:
   - fashion
+sources:
+  - https://www.wikidata.org/wiki/Q19600234

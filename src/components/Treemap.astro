@@ -1,0 +1,287 @@
+---
+import { href, plural } from '../lib/catalog';
+import { box, type Cell, type Layout } from '../lib/treemap';
+
+interface Props {
+  layouts: Layout[];
+}
+
+const { layouts } = Astro.props;
+// Open on the measure that covers the most brands.
+const coverage = (layout: Layout) => layout.cells.filter((cell) => cell.kind === 'brand').length;
+const initial = layouts.reduce((best, layout) => (coverage(layout) > coverage(best) ? layout : best));
+
+const pct = (value: number, of: number) => `${((value / of) * 100).toFixed(3)}%`;
+const position = ({ x, y, width, height }: Cell) => ({
+  left: pct(x, box.width),
+  top: pct(y, box.height),
+  width: pct(width, box.width),
+  height: pct(height, box.height),
+});
+
+// What fits in a cell, judged in layout units (about a pixel each at full width).
+const showsLogo = ({ width, height }: Cell) => width >= 70 && height >= 40;
+const showsName = ({ width, height }: Cell) => width >= 46 && height >= 16;
+// A caption needs a line of its own below the logo or name.
+const showsCaption = (cell: Cell) => cell.caption !== undefined && cell.width >= 46 && cell.height >= (showsLogo(cell) ? 56 : 32);
+const describe = (cell: Cell, format: (value: number) => string) =>
+  [cell.brand!.data.name + (cell.licensed ? ', made under license' : ''), cell.caption, format(cell.value)].filter(Boolean).join(', ');
+---
+
+<section class="treemap" aria-labelledby="treemap-heading">
+  <div class="treemap-head">
+    <h2 id="treemap-heading">Size by</h2>
+    <select class="size-by" aria-labelledby="treemap-heading">
+      {
+        layouts.map((layout) => (
+          <option value={layout.metric.id} selected={layout === initial} disabled={coverage(layout) === 0}>
+            {layout.metric.label}
+            {coverage(layout) === 0 ? ' (no data yet)' : ''}
+          </option>
+        ))
+      }
+    </select>
+  </div>
+
+  {
+    layouts.map((layout) => {
+      const { metric, cells, missing, hiddenLicensed } = layout;
+      const brandCount = coverage(layout);
+      return (
+        <div class="layout" data-metric={metric.id} hidden={layout !== initial}>
+          {metric.includesLicensed ? (
+            <p class="licensing shown">
+              <span class="licensing-key" aria-hidden="true" />
+              <span>
+                <strong>Licensed brands shown.</strong> Brands a group makes under license count toward that group here, drawn
+                with a dashed edge.
+              </span>
+            </p>
+          ) : (
+            <p class="licensing">
+              <span class="licensing-key" aria-hidden="true" />
+              <span>
+                <strong>Licensed brands hidden.</strong> This measure counts only brands a group owns
+                {hiddenLicensed.length > 0 && `, so ${plural(hiddenLicensed.length, 'licensed brand')} ${hiddenLicensed.length === 1 ? 'is' : 'are'} left out`}.
+              </span>
+            </p>
+          )}
+          {brandCount === 0 ? (
+            <p class="empty">No brand has a figure for this yet.</p>
+          ) : (
+            <div class="scroll">
+              <div class="canvas" role="list" aria-label={`Ownership groups sized by ${metric.label.toLowerCase()}`}>
+                {cells.map((cell) =>
+                  cell.kind === 'group' ? (
+                    <div class="group" style={position(cell)} role="listitem">
+                      {showsName(cell) && (
+                        <a class="group-name" href={href(`/ownership-groups/${cell.group.id}/`)}>
+                          {cell.group.data.name}
+                        </a>
+                      )}
+                    </div>
+                  ) : cell.kind === 'other' ? (
+                    <div class="other" style={position(cell)} title={`${cell.group.data.name}: other business, ${metric.format(cell.value)}`}>
+                      {showsName(cell) && <span>Other business</span>}
+                    </div>
+                  ) : (
+                    <a
+                      class:list={['brand', { licensed: cell.licensed }]}
+                      style={position(cell)}
+                      href={href(`/brands/${cell.brand!.id}/`)}
+                      title={describe(cell, metric.format)}
+                      aria-label={describe(cell, metric.format)}
+                    >
+                      {showsLogo(cell) && cell.brand!.data.logo ? (
+                        <img src={cell.brand!.data.logo.src} alt="" loading="lazy" />
+                      ) : (
+                        showsName(cell) && <span>{cell.brand!.data.name}</span>
+                      )}
+                      {showsCaption(cell) && <span class="caption">{cell.caption}</span>}
+                    </a>
+                  ),
+                )}
+              </div>
+            </div>
+          )}
+          {brandCount > 0 && (
+            <p class="note">
+              {plural(brandCount, 'brand')} sized by {metric.label.toLowerCase()}.
+              {missing.length > 0 && ` ${missing.length} more in these groups have no figure yet and are left out.`}
+              {metric.groupValue && ' A hatched block is the part of a group’s own figure that its watch brands don’t account for.'}
+            </p>
+          )}
+        </div>
+      );
+    })
+  }
+</section>
+
+<style>
+  .treemap {
+    margin: 0 0 32px;
+  }
+
+  .treemap-head {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .treemap-head h2 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .size-by {
+    padding: 4px 8px;
+    font: inherit;
+    font-size: 0.9375rem;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  /* Below this width the cells get too small to read, so the map scrolls sideways instead. */
+  .scroll {
+    overflow-x: auto;
+  }
+
+  .canvas {
+    position: relative;
+    min-width: 640px;
+    aspect-ratio: 1000 / 600;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+  }
+
+  .group,
+  .other,
+  .brand {
+    position: absolute;
+    box-sizing: border-box;
+  }
+
+  .group {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  .group-name {
+    display: block;
+    overflow: hidden;
+    padding: 2px 6px 0;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 4px;
+    color: #1c1b19;
+    font-size: 0.6875rem;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    /* Logos are drawn for a light page, so cells stay white in both color schemes. */
+    background: #ffffff;
+    border: 1px solid #d4d0c6;
+    border-radius: 2px;
+  }
+
+  /* Made under license by the group, not owned by it. */
+  .brand.licensed {
+    border: 1.5px dashed #6b6860;
+  }
+
+  .brand:hover,
+  .brand:focus-visible {
+    z-index: 1;
+    border-color: var(--accent);
+    outline: 1px solid var(--accent);
+  }
+
+  .caption {
+    margin-top: 2px;
+    color: #6b6860;
+    font-size: 0.625rem;
+    letter-spacing: 0.02em;
+  }
+
+  .brand img {
+    max-width: 80%;
+    max-height: 60%;
+    object-fit: contain;
+  }
+
+  .other {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--muted);
+    font-size: 0.6875rem;
+    background: repeating-linear-gradient(135deg, transparent 0 6px, var(--line) 6px 7px);
+    border: 1px dashed var(--line);
+    border-radius: 2px;
+  }
+
+  .licensing {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 10px;
+    padding: 8px 12px;
+    font-size: 0.8125rem;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--muted);
+    border-radius: 4px;
+  }
+
+  .licensing.shown {
+    border-left-color: var(--accent);
+  }
+
+  /* A miniature of how a licensed cell is drawn, struck through where they are hidden. */
+  .licensing-key {
+    flex: none;
+    width: 26px;
+    height: 18px;
+    background: linear-gradient(to top right, transparent calc(50% - 1px), var(--muted) 50%, transparent calc(50% + 1px)) #ffffff;
+    border: 1.5px dashed #6b6860;
+    border-radius: 2px;
+  }
+
+  .shown .licensing-key {
+    background: #ffffff;
+  }
+
+  .note,
+  .empty {
+    margin: 8px 0 0;
+    color: var(--muted);
+    font-size: 0.8125rem;
+  }
+</style>
+
+<script>
+  for (const treemap of document.querySelectorAll<HTMLElement>('.treemap')) {
+    const select = treemap.querySelector<HTMLSelectElement>('.size-by')!;
+    select.addEventListener('change', () => {
+      for (const layout of treemap.querySelectorAll<HTMLElement>('.layout')) {
+        layout.hidden = layout.dataset.metric !== select.value;
+      }
+    });
+  }
+</script>

@@ -4,8 +4,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Guess_logo.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 1981 }]
 tags:
   - fashion
 licensees:
   - licensee: timex-group
+sources:
+  - https://www.wikidata.org/wiki/Q2470307

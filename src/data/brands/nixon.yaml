@@ -1,3 +1,5 @@
 name: Nixon
 origin: United States
-status: active
+periods: [{ from: 1997 }]
+sources:
+  - https://www.wikidata.org/wiki/Q1660409

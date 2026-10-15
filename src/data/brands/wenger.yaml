@@ -4,8 +4,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Wenger_logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1893 }]
 segment: budget
 ownership:
   - owner: victorinox
     from: 2005
+sources:
+  - https://www.wikidata.org/wiki/Q665648

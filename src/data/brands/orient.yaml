@@ -1,5 +1,7 @@
 name: Orient
 origin: Japan
-status: active
+periods: [{ from: 1950 }]
 ownership:
   - owner: seiko-epson
+sources:
+  - https://www.wikidata.org/wiki/Q1771114

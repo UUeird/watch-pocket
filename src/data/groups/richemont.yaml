@@ -1,4 +1,8 @@
 name: Richemont
+logo: ../logos/richemont.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Richemont_Logo.svg
+  license: Public domain
 country: Switzerland
 type: luxury-group
 founded: 1988

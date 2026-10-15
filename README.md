@@ -20,7 +20,7 @@ npm run test:browser  # browser tests for the filters (run after a build)
 The site is built with [Astro](https://astro.build) from data files in the repo:
 
 - `src/data/brands/` holds one YAML file per brand. Its optional `logo` is a path to an image file, relative to the brand's file (e.g. `../logos/rolex.svg`). `logoCredit` records where the file came from (`source`) and its `license`, plus `licenseUrl` and `author` where the license requires a credit; it is shown under the logo on the brand's page.
-- `src/data/groups/` holds one YAML file per ownership group or corporation.
+- `src/data/groups/` holds one YAML file per ownership group or corporation. It takes the same optional `logo` and `logoCredit` as a brand.
 - `src/data/lines/<brand>/` holds one file per product line.
 - `src/data/models/<brand>/<line>/` holds one file per model, listing its references.
 

@@ -6,8 +6,10 @@ logoCredit:
 origin: United States
 headquarters: Switzerland
 manufacturing: [Switzerland]
-status: active
+periods: [{ from: 1892 }]
 segment: mid-range
 ownership:
   - owner: swatch-group
     from: 1983
+sources:
+  - https://en.wikipedia.org/wiki/Hamilton_Watch_Company

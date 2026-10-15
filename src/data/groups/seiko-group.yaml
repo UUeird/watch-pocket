@@ -1,3 +1,7 @@
 name: Seiko Group
+logo: ../logos/seiko.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Seiko_logo.svg
+  license: Public domain
 country: Japan
 type: holding-company

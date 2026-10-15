@@ -1,6 +1,8 @@
 name: Olivia Burton
 origin: United Kingdom
-status: active
+periods: [{ from: 2012 }]
 ownership:
   - owner: movado-group
     from: 2017
+sources:
+  - https://www.watchpro.com/?p=3216

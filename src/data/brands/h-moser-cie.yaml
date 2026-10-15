@@ -1,4 +1,6 @@
 name: H. Moser & Cie
 origin: Switzerland
-status: active
+periods: [{ from: 1828 }]
 segment: haute
+sources:
+  - https://en.wikipedia.org/wiki/H._Moser_&_Cie.

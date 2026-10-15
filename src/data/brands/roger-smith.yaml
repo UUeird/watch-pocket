@@ -1,3 +1,5 @@
 name: Roger Smith
 origin: United Kingdom
-status: active
+periods: [{ from: 2001 }]
+sources:
+  - https://en.wikipedia.org/wiki/Roger_W._Smith

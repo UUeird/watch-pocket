@@ -1,4 +1,10 @@
 name: Breitling SA
+logo: ../logos/breitling.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Breitling_Full_Logo.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Breitling SA
 country: Switzerland
 type: independent-company
 parent: partners-group

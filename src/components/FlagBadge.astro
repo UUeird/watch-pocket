@@ -1,0 +1,67 @@
+---
+import { countries, type CountryName } from '../lib/countries';
+
+interface Props {
+  country: CountryName;
+}
+
+const { country } = Astro.props;
+// A country with no flag emoji shows its name instead.
+const { flag } = countries[country];
+---
+
+<button type="button" class="flag-badge" aria-label={country} data-label={country}>
+  <span aria-hidden="true">{flag ?? country}</span>
+</button>
+
+<style>
+  .flag-badge {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--muted);
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    cursor: default;
+  }
+
+  /* The name shows on hover, keyboard focus, or a tap (which sets data-open). */
+  .flag-badge::after {
+    content: attr(data-label);
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    z-index: 1;
+    padding: 4px 8px;
+    font-size: 0.8125rem;
+    white-space: nowrap;
+    color: var(--surface);
+    background: var(--text);
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s;
+  }
+
+  .flag-badge:hover::after,
+  .flag-badge:focus-visible::after,
+  .flag-badge[data-open]::after {
+    opacity: 1;
+  }
+</style>
+
+<script>
+  // Touch screens have no hover, so a tap toggles the name and a tap elsewhere hides it.
+  document.addEventListener('click', (event) => {
+    const target = event.target instanceof Element ? event.target.closest('.flag-badge') : null;
+    for (const badge of document.querySelectorAll('.flag-badge[data-open]')) {
+      if (badge !== target) badge.removeAttribute('data-open');
+    }
+    target?.toggleAttribute('data-open');
+  });
+</script>

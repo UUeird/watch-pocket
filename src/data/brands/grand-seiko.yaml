@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Grand_Seiko_Logo.svg
   license: Public domain
 origin: Japan
-status: active
+periods: [{ from: 1960 }]
 ownership:
   - owner: seiko-group
+sources:
+  - https://www.wikidata.org/wiki/Q11300325

@@ -1,4 +1,6 @@
 name: Doxa
 origin: Switzerland
-status: active
+periods: [{ from: 1889 }]
 segment: mid-range
+sources:
+  - https://www.wikidata.org/wiki/Q2744515

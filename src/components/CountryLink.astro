@@ -1,0 +1,19 @@
+---
+import { countryHref } from '../lib/catalog';
+import { countries, type CountryName } from '../lib/countries';
+
+interface Props {
+  country: CountryName;
+}
+
+const { country } = Astro.props;
+const { flag } = countries[country];
+---
+
+<span class="country">{flag && <span aria-hidden="true">{flag} </span>}<a href={countryHref(country)}>{country}</a></span>
+
+<style>
+  .country {
+    white-space: nowrap;
+  }
+</style>

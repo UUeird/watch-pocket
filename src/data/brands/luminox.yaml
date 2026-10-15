@@ -1,3 +1,5 @@
 name: Luminox
 origin: United States
-status: active
+periods: [{ from: 1989 }]
+sources:
+  - https://www.wikidata.org/wiki/Q17109402

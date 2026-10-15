@@ -1,8 +1,10 @@
 name: MVMT
 origin: United States
-status: active
+periods: [{ from: 2013 }]
 tags:
   - direct-to-consumer
 ownership:
   - owner: movado-group
     from: 2018
+sources:
+  - https://www.wikidata.org/wiki/Q63992364

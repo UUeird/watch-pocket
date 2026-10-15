@@ -1,4 +1,6 @@
 name: Titoni
 origin: Switzerland
-status: active
+periods: [{ from: 1919 }]
 segment: mid-range
+sources:
+  - https://www.wikidata.org/wiki/Q685001

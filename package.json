@@ -13,11 +13,13 @@
     "test:rules": "scripts/test-data-rules.sh"
   },
   "dependencies": {
-    "astro": "^7.3.8"
+    "astro": "^7.3.8",
+    "d3-hierarchy": "^3.1.2"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@playwright/test": "^1.64.0",
+    "@types/d3-hierarchy": "^3.1.7",
     "@types/node": "^26.6.5",
     "typescript": "^6.0.3"
   }

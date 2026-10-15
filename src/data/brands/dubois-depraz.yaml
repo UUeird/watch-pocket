@@ -1,4 +1,6 @@
 name: Dubois-Dépraz
 origin: Switzerland
-status: active
+periods: [{ from: 1901 }]
 category: movement-maker
+sources:
+  - https://www.wikidata.org/wiki/Q3040558

@@ -1,6 +1,8 @@
 name: Philip Watch
 origin: Italy
-status: active
+periods: [{ from: 1858 }]
 ownership:
   - owner: morellato-group
     from: 2006
+sources:
+  - https://morellatogroup.com/en/philip-watch

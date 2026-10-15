@@ -1,7 +1,9 @@
 name: Zodiac
 origin: Switzerland
-status: active
+periods: [{ from: 1882 }]
 segment: mid-range
 ownership:
   - owner: fossil-group
     from: 2001
+sources:
+  - https://www.wikidata.org/wiki/Q8073235

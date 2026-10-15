@@ -1,3 +1,7 @@
 name: Invicta Watch Group
+logo: ../logos/invicta.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Invicta_logo.png
+  license: Public domain
 country: United States
 type: holding-company

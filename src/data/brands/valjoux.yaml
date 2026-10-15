@@ -1,6 +1,8 @@
 name: Valjoux
 origin: Switzerland
-status: active
+periods: [{ from: 1901 }]
 category: movement-maker
 ownership:
   - owner: swatch-group
+sources:
+  - https://www.wikidata.org/wiki/Q1605676

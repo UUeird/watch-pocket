@@ -1,7 +1,18 @@
 name: Invicta
+logo: ../logos/invicta.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Invicta_logo.png
+  license: Public domain
 origin: Switzerland
 headquarters: United States
-status: active
+periods: [{ from: 1991 }]
+heritage:
+  from: 1837
+  sources:
+    - https://en.wikipedia.org/wiki/Invicta_Watch_Group
+    - https://jamaisvulgaire.com/montres-invicta/
 segment: budget
 ownership:
   - owner: invicta-watch-group
+sources:
+  - https://en.wikipedia.org/wiki/Invicta_Watch_Group

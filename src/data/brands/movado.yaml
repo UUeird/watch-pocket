@@ -6,7 +6,9 @@ logoCredit:
 origin: Switzerland
 headquarters: United States
 manufacturing: [Switzerland]
-status: active
+periods: [{ from: 1881 }]
 segment: mid-range
 ownership:
   - owner: movado-group
+sources:
+  - https://www.wikidata.org/wiki/Q939816

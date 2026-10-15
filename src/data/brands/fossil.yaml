@@ -4,8 +4,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Fossil_Group_logo.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 1984 }]
 tags:
   - fashion
 ownership:
   - owner: fossil-group
+sources:
+  - https://en.wikipedia.org/wiki/Fossil_Group

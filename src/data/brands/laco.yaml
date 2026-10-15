@@ -1,3 +1,5 @@
 name: Laco
 origin: Germany
-status: active
+periods: [{ from: 1925 }]
+sources:
+  - https://en.wikipedia.org/wiki/Laco_Uhrenmanufaktur

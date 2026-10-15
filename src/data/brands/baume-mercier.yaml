@@ -4,8 +4,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Baume_%26_Mercier_logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1830 }]
 segment: luxury
 ownership:
   - owner: richemont
     from: 1988
+sources:
+  - https://www.wikidata.org/wiki/Q138109

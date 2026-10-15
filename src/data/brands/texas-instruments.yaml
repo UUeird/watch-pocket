@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Texas_Instruments_logo_2024.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 1930 }]
 tags:
   - early-digital
+sources:
+  - https://www.wikidata.org/wiki/Q193412

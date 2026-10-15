@@ -1,4 +1,6 @@
 name: Roamer
 origin: Switzerland
-status: active
+periods: [{ from: 1888 }]
 segment: mid-range
+sources:
+  - https://www.wikidata.org/wiki/Q7339732

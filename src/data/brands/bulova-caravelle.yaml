@@ -1,8 +1,10 @@
 name: Bulova Caravelle
 origin: United States
-status: active
+periods: [{ from: 1962 }]
 tags:
   - fashion
 ownership:
   - owner: citizen
     from: 2008
+sources:
+  - https://www.watchgecko.com/blogs/magazine/the-caravelle-sea-hunter-devil-diver

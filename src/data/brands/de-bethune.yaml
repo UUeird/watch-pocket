@@ -1,4 +1,6 @@
 name: De Bethune
 origin: Switzerland
-status: active
+periods: [{ from: 2002 }]
 segment: haute
+sources:
+  - https://www.wikidata.org/wiki/Q20731634

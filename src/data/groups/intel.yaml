@@ -1,3 +1,7 @@
 name: Intel
+logo: ../logos/intel.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Intel_logo_2023.svg
+  license: Public domain
 country: United States
 type: holding-company

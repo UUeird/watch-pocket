@@ -1,6 +1,6 @@
 name: F.P. Journe
 origin: Switzerland
-status: active
+periods: [{ from: 1999 }]
 segment: haute
 ownership:
   - owner: chanel
@@ -10,3 +10,5 @@ ownership:
     sources:
       - https://watchesbysjx.com/2018/09/business-news-chanel-buys-20-of-f-p-journe.html
       - https://www.timeandwatches.com/2018/09/chanel-acquires-20-stake-in-fpjourne.html
+sources:
+  - https://www.wikidata.org/wiki/Q21820596

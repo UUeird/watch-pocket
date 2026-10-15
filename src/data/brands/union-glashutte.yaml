@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Union_Glash%C3%BCtte_logo.svg
   license: Public domain
 origin: Germany
-status: active
+periods: [{ from: 1893 }]
 ownership:
   - owner: swatch-group
+sources:
+  - https://www.union-glashuette.com/en/history-tradition-innovation
