@@ -1,5 +1,7 @@
 name: Spinnaker
 origin: Hong Kong
-status: active
+periods: [{ from: 2013 }]
 ownership:
   - owner: solar-time
+sources:
+  - https://www.solartimeltd.com/collections/spinnaker

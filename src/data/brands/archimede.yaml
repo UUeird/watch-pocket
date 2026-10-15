@@ -1,3 +1,5 @@
 name: Archimede
 origin: Germany
-status: active
+periods: [{ from: 2003 }]
+sources:
+  - https://timetransformed.com/2016/03/11/archimede/

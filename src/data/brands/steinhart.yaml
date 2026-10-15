@@ -1,3 +1,5 @@
 name: Steinhart
 origin: Germany
-status: active
+periods: [{ from: 2001 }]
+sources:
+  - https://timetransformed.com/2015/08/23/steinhart/

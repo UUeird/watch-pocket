@@ -4,5 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Edox_logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1884 }]
 segment: mid-range
+sources:
+  - https://www.edox.ch/edox-history/

@@ -4,7 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Logo_de_Perrelet.png
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1995 }]
 heritage:
   from: 1777
   sources:
@@ -13,3 +13,5 @@ segment: luxury
 ownership:
   - owner: festina-group
     from: 2004
+sources:
+  - https://en.wikipedia.org/wiki/Abraham-Louis_Perrelet

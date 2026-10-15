@@ -1,3 +1,5 @@
 name: Michel Herbelin
 origin: France
-status: active
+periods: [{ from: 1947 }]
+sources:
+  - https://herbelin.com/about/?lang=en

@@ -1,4 +1,6 @@
 name: Kari Voutilainen
 origin: Switzerland
-status: active
+periods: [{ from: 2002 }]
 segment: haute
+sources:
+  - https://www.acollectedman.com/blogs/journal/watchmaking-journey-kari-voutilainen

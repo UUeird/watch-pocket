@@ -1,3 +1,5 @@
 name: Vaer
 origin: United States
-status: active
+periods: [{ from: 2016 }]
+sources:
+  - https://www.vaerwatches.com/blogs/faq/when-was-vaer-founded

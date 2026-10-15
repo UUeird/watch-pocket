@@ -1,3 +1,5 @@
 name: Farer
 origin: United Kingdom
-status: active
+periods: [{ from: 2015 }]
+sources:
+  - https://farer.com/pages/our-story
