@@ -1,3 +1,5 @@
 name: Croton
 origin: United States
-status: active
+periods: [{ from: 1878 }]
+sources:
+  - https://riverjournalonline.com/business/a-tale-of-two-villages-croton-watch-company/23762/

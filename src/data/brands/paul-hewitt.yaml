@@ -1,5 +1,7 @@
 name: Paul Hewitt
 origin: Germany
-status: active
+periods: [{ from: 2009 }]
 tags:
   - direct-to-consumer
+sources:
+  - https://thejewellershop.com/en/section/encyclopedia/paul-hewitt

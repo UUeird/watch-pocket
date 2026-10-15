@@ -1,3 +1,5 @@
 name: Larsson & Jennings
 origin: United Kingdom
-status: active
+periods: [{ from: 2012 }]
+sources:
+  - https://larssonjennings.com/pages/who-we-are

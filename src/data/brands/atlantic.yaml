@@ -1,4 +1,6 @@
 name: Atlantic
 origin: Switzerland
-status: active
+periods: [{ from: 1888 }]
 segment: mid-range
+sources:
+  - https://tickingtales.com/the-history-of-atlantic-watches-a-treasure-for-the-east-non-existent-for-the-west/

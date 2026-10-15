@@ -1,5 +1,7 @@
 name: Bering
 origin: Denmark
-status: active
+periods: [{ from: 2010 }]
 tags:
   - direct-to-consumer
+sources:
+  - https://builtin.com/company/bering-time

@@ -1,5 +1,7 @@
 name: CLUSE
 origin: Netherlands
-status: active
+periods: [{ from: 2013 }]
 tags:
   - direct-to-consumer
+sources:
+  - https://craft.co/cluse

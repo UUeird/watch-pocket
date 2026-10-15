@@ -1,3 +1,5 @@
 name: Weiss
 origin: United States
-status: active
+periods: [{ from: 2013 }]
+sources:
+  - https://www.mrporter.com/en-at/journal/watches/why-your-next-watch-should-be-made-in-la-367920

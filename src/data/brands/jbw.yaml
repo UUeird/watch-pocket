@@ -1,4 +1,6 @@
 name: JBW
 origin: United States
-status: active
+periods: [{ from: 2008 }]
 segment: budget
+sources:
+  - https://www.fashionbeans.com/article/jbw-watches-review
