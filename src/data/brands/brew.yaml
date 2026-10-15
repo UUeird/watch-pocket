@@ -1,5 +1,7 @@
 name: Brew
 origin: United States
-status: active
+periods: [{ from: 2015 }]
 tags:
   - direct-to-consumer
+sources:
+  - https://www.europastar.com/1004113568.html

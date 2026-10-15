@@ -1,4 +1,6 @@
 name: Philippe Dufour
 origin: Switzerland
-status: active
+periods: [{ from: 1978 }]
 segment: haute
+sources:
+  - https://www.ahci.ch/members/philippe-dufour

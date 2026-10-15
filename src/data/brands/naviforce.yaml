@@ -1,3 +1,5 @@
 name: Naviforce
 origin: China
-status: active
+periods: [{ from: 2012 }]
+sources:
+  - https://www.rankred.com/chinese-watch-brands/

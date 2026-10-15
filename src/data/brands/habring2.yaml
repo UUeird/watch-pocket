@@ -1,4 +1,6 @@
 name: Habring²
 origin: Austria
-status: active
+periods: [{ from: 2004 }]
 segment: luxury
+sources:
+  - https://www.exquisitetimepieces.com/blog/habring²-the-complete-brand-breakdown/

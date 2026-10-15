@@ -1,3 +1,5 @@
 name: Konstantin Chaykin
 origin: Russia
-status: active
+periods: [{ from: 2003 }]
+sources:
+  - https://konstantinchaykin.com/blog/20_years/

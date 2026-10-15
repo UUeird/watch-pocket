@@ -4,6 +4,8 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Polar_Electro_Logo.svg
   license: Public domain
 origin: Finland
-status: active
+periods: [{ from: 1977 }]
 tags:
   - smartwatch
+sources:
+  - https://en.wikipedia.org/wiki/Polar_Electro

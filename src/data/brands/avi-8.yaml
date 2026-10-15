@@ -1,5 +1,7 @@
 name: AVI-8
 origin: Hong Kong
-status: active
+periods: [{ from: 2012 }]
 ownership:
   - owner: solar-time
+sources:
+  - https://www.avi-8.co.uk/pages/our-story

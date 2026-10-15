@@ -1,5 +1,7 @@
 name: Nordgreen
 origin: Denmark
-status: active
+periods: [{ from: 2017 }]
 tags:
   - direct-to-consumer
+sources:
+  - https://nordgreen.com/about

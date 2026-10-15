@@ -1,4 +1,6 @@
 name: Traser
 origin: Switzerland
-status: active
+periods: [{ from: 1989 }]
 segment: mid-range
+sources:
+  - https://www.ablogtowatch.com/traser-p65-tactical-mission-the-watch-that-started-it-all-is-back/

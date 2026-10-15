@@ -1,3 +1,5 @@
 name: Helbros
 origin: United States
-status: active
+periods: [{ from: 1913 }]
+sources:
+  - https://electric-watches.co.uk/makers/helbros/

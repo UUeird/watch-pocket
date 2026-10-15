@@ -1,3 +1,5 @@
 name: Jacques Lemans
 origin: Austria
-status: active
+periods: [{ from: 1975 }]
+sources:
+  - https://www.jacques-lemans.com/downloads/01_company_presentation.pdf

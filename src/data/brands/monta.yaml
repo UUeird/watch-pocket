@@ -1,5 +1,7 @@
 name: Monta
 origin: United States
-status: active
+periods: [{ from: 2016 }]
 tags:
   - direct-to-consumer
+sources:
+  - https://gearpatrol.com/2019/08/06/5-questions-with-monta-watches/

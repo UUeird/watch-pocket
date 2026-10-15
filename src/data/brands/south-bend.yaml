@@ -1,3 +1,5 @@
 name: South Bend
 origin: United States
-status: defunct
+periods: [{ from: 1903, to: 1929 }]
+sources:
+  - https://en.wikipedia.org/wiki/South_Bend_Watch_Company

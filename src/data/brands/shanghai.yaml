@@ -1,3 +1,5 @@
 name: Shanghai
 origin: China
-status: active
+periods: [{ from: 1955 }]
+sources:
+  - https://www.goldthread2.com/culture/chinas-first-mechanical-watch-still-total-steal/article/2153716

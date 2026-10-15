@@ -1,5 +1,7 @@
 name: Zelos
 origin: Singapore
-status: active
+periods: [{ from: 2014 }]
 tags:
   - direct-to-consumer
+sources:
+  - https://www.coveted.com/watches/brands/zelos

@@ -1,4 +1,6 @@
 name: Armin Strom
 origin: Switzerland
-status: active
+periods: [{ from: 1967 }]
 segment: haute
+sources:
+  - https://monochrome-watches.com/brands/armin-strom/

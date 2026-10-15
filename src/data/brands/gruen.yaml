@@ -1,3 +1,5 @@
 name: Gruen
 origin: United States
-status: defunct
+periods: [{ from: 1894, to: 1958 }]
+sources:
+  - https://en.wikipedia.org/wiki/Gruen_Watch_Company

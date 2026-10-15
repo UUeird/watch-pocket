@@ -1,3 +1,5 @@
 name: Vortic
 origin: United States
-status: active
+periods: [{ from: 2013 }]
+sources:
+  - https://wornandwound.com/how-watches-are-made-vortic-watch-co-fort-collins-colorado/
