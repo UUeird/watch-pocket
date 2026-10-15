@@ -60,6 +60,21 @@ export const metrics: Metric[] = [
     caption: ({ brand }) => (brand.data.periods[0] ? `Est. ${brand.data.periods[0].from}` : undefined),
   },
   {
+    id: 'age-heritage',
+    label: 'Age, including claimed heritage',
+    format: (years) => `${years} years`,
+    value: ({ brand }) => {
+      const since = brand.data.heritage?.from ?? brand.data.periods[0]?.from;
+      return since === undefined ? undefined : Math.max(1, thisYear - since);
+    },
+    caption: ({ brand }) => {
+      const founded = brand.data.periods[0]?.from;
+      const heritage = brand.data.heritage?.from;
+      if (heritage === undefined) return founded === undefined ? undefined : `Est. ${founded}`;
+      return founded === undefined ? `Heritage ${heritage}` : `Heritage ${heritage} · est. ${founded}`;
+    },
+  },
+  {
     id: 'annual-revenue',
     label: 'Annual revenue',
     format: usd,

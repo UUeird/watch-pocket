@@ -57,5 +57,7 @@ revenue:\
   - { year: 2024, amount: 2, currency: EUR, basis: reported, sources: [https:\/\/example.com] }/'
 try "revenue in an unknown currency" $D/brands/rolex.yaml 's/^name: Rolex$/name: Rolex\
 revenue: [{ year: 2024, amount: 1, currency: XYZ, basis: estimate, sources: [https:\/\/example.com] }]/'
+try "heritage after the brand's own founding" $D/brands/arnold-son.yaml 's/^  from: 1764$/  from: 2000/'
+try "heritage with no source" $D/brands/arnold-son.yaml '/^    - https:\/\/www.thehourmarkers.com/d; s/^  sources:$/  sources: []/'
 
 exit $failures

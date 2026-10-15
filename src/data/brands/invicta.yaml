@@ -5,9 +5,14 @@ logoCredit:
   license: Public domain
 origin: Switzerland
 headquarters: United States
-periods: [{ from: 1837 }]
+periods: [{ from: 1991 }]
+heritage:
+  from: 1837
+  sources:
+    - https://en.wikipedia.org/wiki/Invicta_Watch_Group
+    - https://jamaisvulgaire.com/montres-invicta/
 segment: budget
 ownership:
   - owner: invicta-watch-group
 sources:
-  - https://www.wikidata.org/wiki/Q6060981
+  - https://en.wikipedia.org/wiki/Invicta_Watch_Group

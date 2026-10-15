@@ -125,6 +125,15 @@ const brands = defineCollection({
         manufacturing: z.array(country).default([]),
         // The periods the brand traded, so a revived brand has several. A last period with no `to` is still running.
         periods,
+        // An older business the brand claims descent from without having traded continuously since, e.g. a
+        // modern company named after an 18th-century watchmaker. Kept apart from `periods`, which are the
+        // brand's own trading years, and cited separately since such claims are often disputed.
+        heritage: z
+          .object({
+            from: z.number().int(),
+            sources: sources.refine((list) => list.length > 0, { message: 'A heritage claim needs at least one source.' }),
+          })
+          .optional(),
         // Only for brands with no periods recorded; otherwise status is derived from them.
         status: z.enum(['active', 'dormant', 'defunct', 'revived']).optional(),
         // Market positioning. `broad` is for brands whose range spans several tiers.
@@ -164,7 +173,10 @@ const brands = defineCollection({
       .refine((brand) => brand.periods.length === 0 || brand.status === undefined, {
         message: 'Set either `periods` or `status`, not both: status is derived from periods.',
       })
-      .refine(creditHasLogo, creditNeedsLogo),
+      .refine(creditHasLogo, creditNeedsLogo)
+      .refine((brand) => !brand.heritage || !brand.periods[0] || brand.heritage.from < brand.periods[0].from, {
+        message: 'A `heritage` year comes before the brand’s own first period; otherwise it belongs in `periods`.',
+      }),
 });
 
 // A product line (collection) sold under a brand's name, e.g. Rolex Submariner. Files live at lines/<brand>/<line>.yaml.

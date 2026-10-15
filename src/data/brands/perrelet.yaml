@@ -5,6 +5,10 @@ logoCredit:
   license: Public domain
 origin: Switzerland
 status: active
+heritage:
+  from: 1777
+  sources:
+    - https://perrelet.com/en-GB/our-history
 segment: luxury
 ownership:
   - owner: festina-group

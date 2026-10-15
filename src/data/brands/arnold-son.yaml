@@ -1,6 +1,10 @@
 name: Arnold & Son
 origin: Switzerland
 periods: [{ from: 1995 }]
+heritage:
+  from: 1764
+  sources:
+    - https://www.thehourmarkers.com/brands/history-of-arnold-and-son
 segment: luxury
 ownership:
   - owner: citizen

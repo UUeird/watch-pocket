@@ -23,7 +23,7 @@ const holdings = holdingsOf(self);
 const collaborations = collaborationsOf(brand.id);
 const brandName = (modelId: string) => brands.find((other) => other.id === modelId.split('/')[0])?.data.name;
 const lines = linesOf(brand.id);
-const { name, logo, logoCredit, origin, headquarters, manufacturing, periods, category, segment, tags, production, copycat, website, ownership, licensees, sources } =
+const { name, logo, logoCredit, origin, headquarters, manufacturing, periods, heritage, category, segment, tags, production, copycat, website, ownership, licensees, sources } =
   brand.data;
 const showStake = ownership.some((record) => record.stake !== undefined);
 const showBasis = ownership.some((record) => record.basis !== undefined);
@@ -78,6 +78,16 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
         <>
           <dt>Active</dt>
           <dd>{formatPeriods(periods)}</dd>
+        </>
+      )
+    }
+    {
+      heritage && (
+        <>
+          <dt>Heritage</dt>
+          <dd>
+            {heritage.from}, as claimed (<SourceLinks sources={heritage.sources} />)
+          </dd>
         </>
       )
     }
