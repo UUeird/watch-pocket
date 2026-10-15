@@ -1,5 +1,7 @@
 name: Alba
 origin: Japan
-status: active
+periods: [{ from: 1979 }]
 ownership:
   - owner: seiko-group
+sources:
+  - https://www.watcharama.com/?p=2348

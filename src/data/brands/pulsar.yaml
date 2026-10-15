@@ -1,7 +1,9 @@
 name: Pulsar
 origin: Japan
-status: active
+periods: [{ from: 1970 }]
 tags:
   - early-digital
 ownership:
   - owner: seiko-group
+sources:
+  - https://en.wikipedia.org/wiki/Pulsar_(watch)

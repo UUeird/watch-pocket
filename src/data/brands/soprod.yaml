@@ -1,6 +1,8 @@
 name: Soprod
 origin: Switzerland
-status: active
+periods: [{ from: 1966 }]
 category: movement-maker
 ownership:
   - owner: festina-group
+sources:
+  - https://wiki.grail-watch.com/index.php/Soprod

@@ -1,7 +1,9 @@
 name: Relic
 origin: United States
-status: active
+periods: [{ from: 1990 }]
 tags:
   - fashion
 ownership:
   - owner: fossil-group
+sources:
+  - https://en.wikipedia.org/wiki/Fossil_Group

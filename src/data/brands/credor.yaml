@@ -1,5 +1,7 @@
 name: Credor
 origin: Japan
-status: active
+periods: [{ from: 1974 }]
 ownership:
   - owner: seiko-group
+sources:
+  - https://timeandtidewatches.com/credor-history-in-depth/

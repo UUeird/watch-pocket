@@ -1,7 +1,9 @@
 name: Flik Flak
 origin: Switzerland
-status: active
+periods: [{ from: 1987 }]
 segment: budget
 ownership:
   - owner: swatch-group
     from: 1987
+sources:
+  - https://www.flikflak.com/flikflak-aboutus.html
