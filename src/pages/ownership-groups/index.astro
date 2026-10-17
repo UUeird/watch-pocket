@@ -12,7 +12,12 @@ const { groups, brandsOf, licensesOf, references } = await loadCatalog();
 const referencesOf = Map.groupBy(references, ({ brand }) => brand.id);
 const factsOf = (brand: Brand) => ({ brand, references: (referencesOf.get(brand.id) ?? []).map(({ reference }) => reference) });
 const owners = groups.map((group) => ({ group, brands: brandsOf(group.id), licensed: licensesOf(group.id) }));
-const layouts = metrics.map((metric) => layoutTreemap(owners, metric, factsOf));
+// A measure with a group-level figure is laid out twice: with the group's other business, and with its brands alone.
+const layouts = metrics.flatMap((metric) =>
+  metric.groupValue
+    ? [true, false].map((otherBusiness) => layoutTreemap(owners, metric, factsOf, { otherBusiness }))
+    : [layoutTreemap(owners, metric, factsOf)],
+);
 
 // A brand as it sits in a group: owned outright, owned in part (with the stake), or made under license.
 type Tile = { brand: Brand; stake?: number | 'unknown'; licensed?: boolean };
