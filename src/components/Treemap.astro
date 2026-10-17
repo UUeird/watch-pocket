@@ -306,10 +306,33 @@ const describe = (cell: Cell, format: (value: number) => string) =>
 </style>
 
 <script>
+  // The chosen measure and the other-business box are remembered per browser. Storage can be
+  // missing or blocked, in which case the page keeps its defaults.
+  const keys = { sizeBy: 'treemap.sizeBy', includeOther: 'treemap.includeOther' };
+  const recall = (key: string) => {
+    try {
+      return localStorage.getItem(key);
+    } catch {
+      return null;
+    }
+  };
+  const remember = (key: string, value: string) => {
+    try {
+      localStorage.setItem(key, value);
+    } catch {
+      // Not remembered this time.
+    }
+  };
+
   for (const treemap of document.querySelectorAll<HTMLElement>('.treemap')) {
     const select = treemap.querySelector<HTMLSelectElement>('.size-by')!;
     const toggle = treemap.querySelector<HTMLElement>('.other-toggle')!;
     const includeOther = treemap.querySelector<HTMLInputElement>('.include-other')!;
+    // A remembered measure is used only if it is still offered and has data.
+    const savedMeasure = [...select.options].find((option) => option.value === recall(keys.sizeBy) && !option.disabled);
+    if (savedMeasure) select.value = savedMeasure.value;
+    const savedOther = recall(keys.includeOther);
+    if (savedOther === 'true' || savedOther === 'false') includeOther.checked = savedOther === 'true';
     const show = () => {
       // The toggle applies only to measures a group has its own figure for.
       toggle.hidden = !select.selectedOptions[0]?.hasAttribute('data-other-business');
@@ -319,9 +342,14 @@ const describe = (cell: Cell, format: (value: number) => string) =>
         layout.hidden = metric !== select.value || (otherBusiness !== undefined && otherBusiness !== other);
       }
     };
-    select.addEventListener('change', show);
-    includeOther.addEventListener('change', show);
-    // The browser may restore either control when the page is revisited.
+    select.addEventListener('change', () => {
+      remember(keys.sizeBy, select.value);
+      show();
+    });
+    includeOther.addEventListener('change', () => {
+      remember(keys.includeOther, String(includeOther.checked));
+      show();
+    });
     show();
   }
 </script>
