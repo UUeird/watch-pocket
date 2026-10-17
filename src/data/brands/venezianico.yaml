@@ -1,0 +1,8 @@
+name: Venezianico
+origin: Italy
+periods: [{ from: 2017 }]
+website: https://www.venezianico.com
+sources:
+  - https://www.dialicious.com/en/venezianico
+  - https://www.wikidata.org/wiki/Q133189962
+  - https://www.venezianico.com/

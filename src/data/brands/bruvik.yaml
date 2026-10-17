@@ -1,0 +1,7 @@
+name: Bruvik
+origin: Norway
+periods: [{ from: 2009 }]
+website: https://bruviktime.com
+sources:
+  - https://www.dialicious.com/en/bruvik
+  - https://bruviktime.com/

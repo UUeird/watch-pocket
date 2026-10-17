@@ -1,0 +1,6 @@
+name: Lorenz
+periods: [{ from: 1934 }]
+website: https://lorenz.it
+sources:
+  - https://www.dialicious.com/en/lorenz
+  - https://lorenz.it/

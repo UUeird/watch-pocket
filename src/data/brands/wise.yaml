@@ -1,0 +1,7 @@
+name: Wise
+origin: Thailand
+periods: [{ from: 2008 }]
+website: https://wisetimepiece.com
+sources:
+  - https://www.dialicious.com/en/wise
+  - https://wisetimepiece.com/

@@ -1,0 +1,7 @@
+name: Cattin
+origin: Switzerland
+periods: [{ from: 1858 }]
+website: http://cattin.swiss
+sources:
+  - https://www.dialicious.com/en/cattin
+  - http://cattin.swiss/

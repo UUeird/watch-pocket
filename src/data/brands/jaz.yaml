@@ -1,0 +1,6 @@
+name: JAZ
+periods: [{ from: 1919 }]
+website: http://jaz.fr
+sources:
+  - https://www.dialicious.com/en/jaz
+  - http://jaz.fr/

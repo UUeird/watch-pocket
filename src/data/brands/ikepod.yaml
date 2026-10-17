@@ -1,0 +1,8 @@
+name: Ikepod
+origin: Switzerland
+periods: [{ from: 1994 }]
+website: https://ikepod.com
+sources:
+  - https://www.dialicious.com/en/ikepod
+  - https://www.wikidata.org/wiki/Q5995843
+  - https://ikepod.com/

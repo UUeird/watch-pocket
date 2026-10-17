@@ -1,0 +1,7 @@
+name: Vario
+origin: Singapore
+periods: [{ from: 2016 }]
+website: https://vario.sg
+sources:
+  - https://www.dialicious.com/en/vario
+  - https://vario.sg/

@@ -1,0 +1,8 @@
+name: Anonimo
+origin: Italy
+periods: [{ from: 1997 }]
+website: https://anonimo.com
+sources:
+  - https://www.dialicious.com/en/anonimo
+  - https://www.wikidata.org/wiki/Q4770013
+  - https://anonimo.com/

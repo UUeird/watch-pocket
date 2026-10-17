@@ -1,0 +1,6 @@
+name: Arly
+periods: [{ from: 1947 }]
+website: https://www.arlywatch.de
+sources:
+  - https://www.dialicious.com/en/arly
+  - https://www.arlywatch.de/

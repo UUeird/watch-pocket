@@ -1,0 +1,6 @@
+name: Tellus
+periods: [{ from: 1926 }]
+website: https://www.maison-tellus.com
+sources:
+  - https://www.dialicious.com/en/tellus
+  - https://www.maison-tellus.com/

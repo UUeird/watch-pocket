@@ -1,0 +1,7 @@
+name: Vulcain
+periods: [{ from: 1858 }]
+website: https://vulcain.ch
+sources:
+  - https://www.dialicious.com/en/vulcain
+  - https://www.wikidata.org/wiki/Q3563809
+  - https://vulcain.ch/

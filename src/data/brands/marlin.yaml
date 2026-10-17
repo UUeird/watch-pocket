@@ -1,0 +1,7 @@
+name: Marlin
+origin: United Kingdom
+periods: [{ from: 2020 }]
+website: https://www.marlinwatch.co.uk
+sources:
+  - https://www.dialicious.com/en/marlin
+  - https://www.marlinwatch.co.uk/

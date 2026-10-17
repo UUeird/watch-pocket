@@ -1,0 +1,7 @@
+name: MATWATCHES
+origin: France
+periods: [{ from: 2005 }]
+website: https://www.merairterre.com
+sources:
+  - https://www.dialicious.com/en/matwatches
+  - https://www.merairterre.com/

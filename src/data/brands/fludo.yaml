@@ -1,0 +1,6 @@
+name: Fludo
+periods: [{ from: 1934 }]
+website: https://fludowatch.com
+sources:
+  - https://www.dialicious.com/en/fludo
+  - https://fludowatch.com/

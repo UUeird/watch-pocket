@@ -1,0 +1,7 @@
+name: TID
+origin: Sweden
+periods: [{ from: 2012 }]
+website: https://tidwatches.com
+sources:
+  - https://www.dialicious.com/en/tid
+  - https://tidwatches.com/

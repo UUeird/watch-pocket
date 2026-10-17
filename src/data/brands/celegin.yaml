@@ -1,0 +1,7 @@
+name: Celegin
+origin: Sweden
+periods: [{ from: 2021 }]
+website: http://www.celegin.se
+sources:
+  - https://www.dialicious.com/en/celegin
+  - http://www.celegin.se/

@@ -1,0 +1,7 @@
+name: Triton
+origin: France
+periods: [{ from: 1963 }]
+website: https://tritonwatch.ch
+sources:
+  - https://www.dialicious.com/en/triton
+  - https://tritonwatch.ch/

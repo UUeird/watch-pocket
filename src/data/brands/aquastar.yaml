@@ -1,0 +1,8 @@
+name: Aquastar
+origin: Switzerland
+periods: [{ from: 1962 }]
+website: https://aquastar.ch
+sources:
+  - https://www.dialicious.com/en/aquastar
+  - https://www.wikidata.org/wiki/Q96372277
+  - https://aquastar.ch/

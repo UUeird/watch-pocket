@@ -1,0 +1,7 @@
+name: WeWood
+periods: [{ from: 2009 }]
+website: https://wewoodswiss.ch
+sources:
+  - https://www.dialicious.com/en/wewood
+  - https://www.wikidata.org/wiki/Q17153839
+  - https://wewoodswiss.ch/

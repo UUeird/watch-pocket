@@ -1,0 +1,6 @@
+name: Doplr
+periods: [{ from: 2016 }]
+website: https://doplr-watch.fr
+sources:
+  - https://www.dialicious.com/en/doplr
+  - https://doplr-watch.fr/
