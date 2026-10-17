@@ -1,0 +1,8 @@
+name: Berny
+origin: China
+periods: [{ from: 1995 }]
+segment: budget
+website: https://www.bernywatch.com
+sources:
+  - https://www.bernywatch.com/
+  - https://www.dialicious.com/en/berny

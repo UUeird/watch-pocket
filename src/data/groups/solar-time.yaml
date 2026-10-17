@@ -1,3 +1,6 @@
 name: Solar Time
 country: Hong Kong
-type: holding-company
+control: private
+sources:
+  - https://printandpromomarketing.com/article/cross-announces-partnership-solar-time-ltd/
+  - https://solartimeltd.com/pages/about-us

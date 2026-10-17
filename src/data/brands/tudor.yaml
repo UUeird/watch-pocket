@@ -9,3 +9,10 @@ segment: luxury
 ownership:
   - owner: rolex-sa
     from: 1926
+revenue:
+  - year: 2025
+    amount: 460000000
+    currency: CHF
+    basis: estimate
+    sources:
+      - https://www.thehourmarkers.com/articles/morgan-stanley-luxeconsult-ninth-annual-swiss-watcher-2025

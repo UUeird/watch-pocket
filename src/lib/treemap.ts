@@ -34,6 +34,9 @@ export type Layout = {
   missing: Brand[];
   // Brands these groups make under license, left out because this measure counts only what a group owns.
   hiddenLicensed: Brand[];
+  // For a measure a group has its own figure for: whether that figure's surplus over its brands is shown.
+  // Unset for measures with no group figure.
+  otherBusiness?: boolean;
 };
 
 // A brand made under license by one of these groups. Where a measure counts licensed brands, it sits
@@ -44,6 +47,7 @@ export function layoutTreemap(
   held: { group: Group; brands: Brand[]; licensed: Brand[] }[],
   metric: Metric,
   factsOf: (brand: Brand) => BrandFacts,
+  { otherBusiness = true }: { otherBusiness?: boolean } = {},
 ): Layout {
   const missing: Brand[] = [];
   const hiddenLicensed: Brand[] = [];
@@ -61,7 +65,7 @@ export function layoutTreemap(
     }
     // Whatever the group's own figure has beyond its brands' is shown as a block of its own.
     const brandTotal = children.reduce((total, child) => total + (child.kind === 'brand' ? child.value : 0), 0);
-    const groupTotal = metric.groupValue?.(group);
+    const groupTotal = otherBusiness ? metric.groupValue?.(group) : undefined;
     if (groupTotal !== undefined && groupTotal > brandTotal) children.push({ kind: 'other', group, value: groupTotal - brandTotal });
     if (children.length > 0) groups.push({ kind: 'group', group, children });
   }
@@ -88,5 +92,5 @@ export function layoutTreemap(
     return [{ kind: d.kind, ...shape, group: d.group }];
   });
 
-  return { metric, cells, missing, hiddenLicensed };
+  return { metric, cells, missing, hiddenLicensed, otherBusiness: metric.groupValue ? otherBusiness : undefined };
 }

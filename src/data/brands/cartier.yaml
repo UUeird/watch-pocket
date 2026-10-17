@@ -11,3 +11,11 @@ segment: luxury
 ownership:
   - owner: richemont
     from: 1988
+revenue:
+  - year: 2025
+    amount: 3488000000
+    currency: CHF
+    basis: estimate
+    sources:
+      - https://revolutionwatch.com/what-we-can-learn-from-morgan-stanleys-ninth-annual-swiss-watch-report/
+      - https://www.loupe.watch/watch-guides/morgan-stanley-watch-report-2025

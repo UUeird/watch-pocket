@@ -2,3 +2,11 @@ name: Patek Philippe
 origin: Switzerland
 periods: [{ from: 1839 }]
 segment: haute
+revenue:
+  - year: 2025
+    amount: 2500000000
+    currency: CHF
+    basis: estimate
+    sources:
+      - https://revolutionwatch.com/what-we-can-learn-from-morgan-stanleys-ninth-annual-swiss-watch-report/
+      - https://www.loupe.watch/watch-guides/morgan-stanley-watch-report-2025

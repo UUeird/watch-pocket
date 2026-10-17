@@ -7,9 +7,11 @@ interface Props {
 }
 
 const { layouts } = Astro.props;
+// A measure with a group figure has a second layout without the groups' other business; the selector lists each measure once.
+const choices = layouts.filter((layout) => layout.otherBusiness !== false);
 // Open on the measure that covers the most brands.
 const coverage = (layout: Layout) => layout.cells.filter((cell) => cell.kind === 'brand').length;
-const initial = layouts.reduce((best, layout) => (coverage(layout) > coverage(best) ? layout : best));
+const initial = choices.reduce((best, layout) => (coverage(layout) > coverage(best) ? layout : best));
 
 const pct = (value: number, of: number) => `${((value / of) * 100).toFixed(3)}%`;
 const position = ({ x, y, width, height }: Cell) => ({
@@ -33,14 +35,23 @@ const describe = (cell: Cell, format: (value: number) => string) =>
     <h2 id="treemap-heading">Size by</h2>
     <select class="size-by" aria-labelledby="treemap-heading">
       {
-        layouts.map((layout) => (
-          <option value={layout.metric.id} selected={layout === initial} disabled={coverage(layout) === 0}>
+        choices.map((layout) => (
+          <option
+            value={layout.metric.id}
+            selected={layout === initial}
+            disabled={coverage(layout) === 0}
+            data-other-business={layout.otherBusiness !== undefined ? '' : undefined}
+          >
             {layout.metric.label}
             {coverage(layout) === 0 ? ' (no data yet)' : ''}
           </option>
         ))
       }
     </select>
+    <label class="other-toggle" hidden={initial.otherBusiness === undefined}>
+      <input type="checkbox" class="include-other" checked />
+      Include groups’ other business
+    </label>
   </div>
 
   {
@@ -48,7 +59,12 @@ const describe = (cell: Cell, format: (value: number) => string) =>
       const { metric, cells, missing, hiddenLicensed } = layout;
       const brandCount = coverage(layout);
       return (
-        <div class="layout" data-metric={metric.id} hidden={layout !== initial}>
+        <div
+          class="layout"
+          data-metric={metric.id}
+          data-other-business={layout.otherBusiness === undefined ? undefined : String(layout.otherBusiness)}
+          hidden={layout !== initial}
+        >
           {metric.includesLicensed ? (
             <p class="licensing shown">
               <span class="licensing-key" aria-hidden="true" />
@@ -108,7 +124,8 @@ const describe = (cell: Cell, format: (value: number) => string) =>
             <p class="note">
               {plural(brandCount, 'brand')} sized by {metric.label.toLowerCase()}.
               {missing.length > 0 && ` ${missing.length} more in these groups have no figure yet and are left out.`}
-              {metric.groupValue && ' A hatched block is the part of a group’s own figure that its watch brands don’t account for.'}
+              {layout.otherBusiness && ' A hatched block is the part of a group’s own figure that its watch brands don’t account for.'}
+              {layout.otherBusiness === false && ' Groups are sized by these brands alone, leaving out their other business.'}
             </p>
           )}
         </div>
@@ -124,6 +141,7 @@ const describe = (cell: Cell, format: (value: number) => string) =>
 
   .treemap-head {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     gap: 12px;
     margin-bottom: 12px;
@@ -132,6 +150,18 @@ const describe = (cell: Cell, format: (value: number) => string) =>
   .treemap-head h2 {
     margin: 0;
     font-size: 1rem;
+  }
+
+  .other-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+
+  .other-toggle[hidden] {
+    display: none;
   }
 
   .size-by {
@@ -276,12 +306,50 @@ const describe = (cell: Cell, format: (value: number) => string) =>
 </style>
 
 <script>
+  // The chosen measure and the other-business box are remembered per browser. Storage can be
+  // missing or blocked, in which case the page keeps its defaults.
+  const keys = { sizeBy: 'treemap.sizeBy', includeOther: 'treemap.includeOther' };
+  const recall = (key: string) => {
+    try {
+      return localStorage.getItem(key);
+    } catch {
+      return null;
+    }
+  };
+  const remember = (key: string, value: string) => {
+    try {
+      localStorage.setItem(key, value);
+    } catch {
+      // Not remembered this time.
+    }
+  };
+
   for (const treemap of document.querySelectorAll<HTMLElement>('.treemap')) {
     const select = treemap.querySelector<HTMLSelectElement>('.size-by')!;
-    select.addEventListener('change', () => {
+    const toggle = treemap.querySelector<HTMLElement>('.other-toggle')!;
+    const includeOther = treemap.querySelector<HTMLInputElement>('.include-other')!;
+    // A remembered measure is used only if it is still offered and has data.
+    const savedMeasure = [...select.options].find((option) => option.value === recall(keys.sizeBy) && !option.disabled);
+    if (savedMeasure) select.value = savedMeasure.value;
+    const savedOther = recall(keys.includeOther);
+    if (savedOther === 'true' || savedOther === 'false') includeOther.checked = savedOther === 'true';
+    const show = () => {
+      // The toggle applies only to measures a group has its own figure for.
+      toggle.hidden = !select.selectedOptions[0]?.hasAttribute('data-other-business');
+      const other = String(includeOther.checked);
       for (const layout of treemap.querySelectorAll<HTMLElement>('.layout')) {
-        layout.hidden = layout.dataset.metric !== select.value;
+        const { metric, otherBusiness } = layout.dataset;
+        layout.hidden = metric !== select.value || (otherBusiness !== undefined && otherBusiness !== other);
       }
+    };
+    select.addEventListener('change', () => {
+      remember(keys.sizeBy, select.value);
+      show();
     });
+    includeOther.addEventListener('change', () => {
+      remember(keys.includeOther, String(includeOther.checked));
+      show();
+    });
+    show();
   }
 </script>

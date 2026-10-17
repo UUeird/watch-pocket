@@ -6,4 +6,6 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: Jrey1977
 country: Spain
-type: holding-company
+control: private
+sources:
+  - https://en.wikipedia.org/wiki/Festina

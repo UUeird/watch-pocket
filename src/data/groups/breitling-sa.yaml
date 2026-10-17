@@ -6,5 +6,6 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: Breitling SA
 country: Switzerland
-type: independent-company
 parent: partners-group
+sources:
+  - https://www.wikidata.org/wiki/Q665740
