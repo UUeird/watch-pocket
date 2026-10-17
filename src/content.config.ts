@@ -13,6 +13,7 @@ const currency = z.enum(['USD', 'CHF', 'EUR', 'GBP', 'JPY', 'HKD', 'INR', 'CNY']
 
 // Revenue for one financial year, as published in accounts (`reported`) or estimated by analysts (`estimate`).
 // Most watch brands are private or part of a group that does not split out its brands, so estimates are common.
+// `year` is the calendar year most of the financial year falls in: Richemont's year to March 2026 is 2025.
 const revenue = z
   .array(
     z.object({

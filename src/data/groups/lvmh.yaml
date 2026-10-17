@@ -6,3 +6,10 @@ logoCredit:
 country: France
 type: luxury-group
 founded: 1987
+revenue:
+  - year: 2025
+    amount: 80807000000
+    currency: EUR
+    basis: reported
+    sources:
+      - https://www.lvmh.com/en/publications/solid-performance-in-a-disrupted-global-economic-and-geopolitical-environment

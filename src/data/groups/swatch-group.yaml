@@ -6,3 +6,10 @@ logoCredit:
 country: Switzerland
 type: luxury-group
 founded: 1983
+revenue:
+  - year: 2025
+    amount: 6280000000
+    currency: CHF
+    basis: reported
+    sources:
+      - https://www.timeandwatches.com/2026/01/the-swatch-group-2025-results-2026-outlook.html

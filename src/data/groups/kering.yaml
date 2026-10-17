@@ -5,3 +5,10 @@ logoCredit:
   license: Public domain
 country: France
 type: luxury-group
+revenue:
+  - year: 2025
+    amount: 14675000000
+    currency: EUR
+    basis: reported
+    sources:
+      - https://www.nasdaq.com/press-release/kering-2025-results-sequential-improvement-unlocking-next-phase-sustainable

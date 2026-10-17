@@ -8,3 +8,11 @@ periods: [{ from: 2001 }]
 segment: haute
 sources:
   - https://www.wikidata.org/wiki/Q3431044
+revenue:
+  - year: 2025
+    amount: 1750000000
+    currency: CHF
+    basis: estimate
+    sources:
+      - https://www.loupe.watch/watch-guides/morgan-stanley-watch-report-2025
+      - https://www.thehourmarkers.com/articles/morgan-stanley-luxeconsult-ninth-annual-swiss-watcher-2025

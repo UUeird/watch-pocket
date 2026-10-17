@@ -5,3 +5,10 @@ logoCredit:
   license: Public domain
 country: Japan
 type: holding-company
+revenue:
+  - year: 2025
+    amount: 335700000000
+    currency: JPY
+    basis: reported
+    sources:
+      - https://www.seiko.co.jp/en/ir/2026/05/13/aa7d25c84c9906e7cf7a804f7be40fd13b047680.pdf

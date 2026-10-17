@@ -6,3 +6,10 @@ logoCredit:
 country: Switzerland
 type: luxury-group
 founded: 1988
+revenue:
+  - year: 2025
+    amount: 22420000000
+    currency: EUR
+    basis: reported
+    sources:
+      - https://www.richemont.com/news-media/press-releases-news/richemont-delivers-strong-sales-growth-and-solid-results-for-the-year-ended-31-march-2026/

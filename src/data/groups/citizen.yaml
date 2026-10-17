@@ -5,3 +5,10 @@ logoCredit:
   license: Public domain
 country: Japan
 type: independent-company
+revenue:
+  - year: 2025
+    amount: 346800000000
+    currency: JPY
+    basis: reported
+    sources:
+      - https://envalith.com/en/companies/7762/overview

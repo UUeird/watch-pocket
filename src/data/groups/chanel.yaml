@@ -7,3 +7,11 @@ country: United Kingdom
 type: independent-company
 founded: 1910
 website: https://www.chanel.com
+revenue:
+  - year: 2025
+    amount: 19300000000
+    currency: USD
+    basis: reported
+    sources:
+      - https://www.cosmeticsbusiness.com/chanel-sales-hit-19-billion-in-2025
+      - https://www.luxurytribune.com/en/chanel-returns-to-growth-in-2025
