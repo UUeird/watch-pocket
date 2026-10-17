@@ -1,4 +1,8 @@
 name: Bremont
+logo: ../logos/bremont.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Bremont_Logo.svg
+  license: Public domain
 origin: United Kingdom
 periods: [{ from: 2002 }]
 sources:
