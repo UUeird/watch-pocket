@@ -1,5 +1,12 @@
 name: Tourneau
 origin: United States
 periods: [{ from: 1900 }]
+ownership:
+  - owner: bucherer
+    from: 2018
+    basis: disclosed
+    sources:
+      - https://www.leonardgreen.com/bucherer-announces-acquisition-of-tourneau-llc/
+      - https://www.nationaljeweler.com/majors/market-developments/6275-tourneau-acquired-by-european-watch-retailer
 sources:
   - https://www.wikidata.org/wiki/Q7829333
