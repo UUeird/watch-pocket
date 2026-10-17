@@ -4,7 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Seiko_logo.svg
   license: Public domain
 country: Japan
-type: holding-company
+control: public
 revenue:
   - year: 2025
     amount: 335700000000
@@ -12,3 +12,6 @@ revenue:
     basis: reported
     sources:
       - https://www.seiko.co.jp/en/ir/2026/05/13/aa7d25c84c9906e7cf7a804f7be40fd13b047680.pdf
+sources:
+  - https://en.wikipedia.org/wiki/Seiko
+  - https://www.seiko.co.jp/en/ir/

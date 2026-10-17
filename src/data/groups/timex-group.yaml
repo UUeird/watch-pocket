@@ -4,4 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Timex-Group-Logo.svg
   license: Public domain
 country: United States
-type: holding-company
+control: private
+sources:
+  - https://en.wikipedia.org/wiki/Timex_Group
+  - https://www.wikidata.org/wiki/Q10959578

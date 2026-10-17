@@ -4,7 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:LVMH_logo.svg
   license: Public domain
 country: France
-type: luxury-group
+control: public
 founded: 1987
 revenue:
   - year: 2025
@@ -13,3 +13,5 @@ revenue:
     basis: reported
     sources:
       - https://www.lvmh.com/en/publications/solid-performance-in-a-disrupted-global-economic-and-geopolitical-environment
+sources:
+  - https://www.wikidata.org/wiki/Q504998

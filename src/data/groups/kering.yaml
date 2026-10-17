@@ -4,7 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Kering-logo.svg
   license: Public domain
 country: France
-type: luxury-group
+control: public
 revenue:
   - year: 2025
     amount: 14675000000
@@ -12,3 +12,5 @@ revenue:
     basis: reported
     sources:
       - https://www.nasdaq.com/press-release/kering-2025-results-sequential-improvement-unlocking-next-phase-sustainable
+sources:
+  - https://www.wikidata.org/wiki/Q931207

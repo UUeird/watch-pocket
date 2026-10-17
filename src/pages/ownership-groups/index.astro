@@ -2,7 +2,7 @@
 import FlagBadge from '../../components/FlagBadge.astro';
 import Treemap from '../../components/Treemap.astro';
 import Base from '../../layouts/Base.astro';
-import { formatStake, href, label, loadCatalog, plural, type Brand } from '../../lib/catalog';
+import { describeControl, formatStake, href, loadCatalog, plural, type Brand } from '../../lib/catalog';
 import { metrics } from '../../lib/metrics';
 import { layoutTreemap } from '../../lib/treemap';
 
@@ -87,7 +87,7 @@ const stakeNote = (stake: Tile['stake']) =>
             <FlagBadge country={group.data.country} />
           </div>
           <p class="meta">
-            <span class="cap">{label(group.data.type)}</span> · {plural(owned.length, 'brand')}
+            {describeControl(group)} · {plural(owned.length, 'brand')}
             {licensed.length > 0 && ` · ${licensed.length} licensed`}
           </p>
           {tiles.length > 0 && (

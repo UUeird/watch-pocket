@@ -4,7 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Chanel_logo.svg
   license: Public domain
 country: United Kingdom
-type: independent-company
+control: private
 founded: 1910
 website: https://www.chanel.com
 revenue:
@@ -15,3 +15,5 @@ revenue:
     sources:
       - https://www.cosmeticsbusiness.com/chanel-sales-hit-19-billion-in-2025
       - https://www.luxurytribune.com/en/chanel-returns-to-growth-in-2025
+sources:
+  - https://en.wikipedia.org/wiki/Chanel

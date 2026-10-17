@@ -4,7 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Swatch-group.svg
   license: Public domain
 country: Switzerland
-type: luxury-group
+control: public
 founded: 1983
 revenue:
   - year: 2025
@@ -13,3 +13,5 @@ revenue:
     basis: reported
     sources:
       - https://www.timeandwatches.com/2026/01/the-swatch-group-2025-results-2026-outlook.html
+sources:
+  - https://www.wikidata.org/wiki/Q694107

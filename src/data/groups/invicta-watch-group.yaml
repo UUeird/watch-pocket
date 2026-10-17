@@ -4,4 +4,6 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Invicta_logo.png
   license: Public domain
 country: United States
-type: holding-company
+control: private
+sources:
+  - https://en.wikipedia.org/wiki/Invicta_Watch_Group

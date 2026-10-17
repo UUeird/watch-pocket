@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Holdings from '../../components/Holdings.astro';
 import Logo from '../../components/Logo.astro';
 import Sources from '../../components/Sources.astro';
-import { href, label, loadCatalog, type Group } from '../../lib/catalog';
+import { describeControl, href, loadCatalog, type Group } from '../../lib/catalog';
 import { countries } from '../../lib/countries';
 
 export async function getStaticPaths() {
@@ -18,7 +18,7 @@ interface Props {
 const { group } = Astro.props;
 const { groups, groupsById, holdingsOf, licensesOf } = await loadCatalog();
 const subsidiaries = groups.filter((other) => other.data.parent?.id === group.id);
-const { name, logo, logoCredit, country, type, founded, website, parent, sources } = group.data;
+const { name, logo, logoCredit, country, founded, website, parent, sources } = group.data;
 const { flag } = countries[country];
 const owner = { collection: 'groups' as const, id: group.id };
 const holdings = holdingsOf(owner);
@@ -28,7 +28,7 @@ const licenses = licensesOf(group.id);
 <Base title={name}>
   <Logo name={name} logo={logo} credit={logoCredit} />
   <h1>{name}</h1>
-  <p class="lede cap">{label(type)}</p>
+  <p class="lede">{describeControl(group)}</p>
 
   <dl class="facts">
     <dt>Country</dt>

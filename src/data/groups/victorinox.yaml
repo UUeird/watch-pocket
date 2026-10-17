@@ -4,4 +4,6 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Victorinox_Logo.svg
   license: Public domain
 country: Switzerland
-type: independent-company
+control: foundation
+sources:
+  - https://www.victorinox.com/global/en/Victorinox/Company/House-of-Victorinox/History/cms/history

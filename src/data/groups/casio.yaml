@@ -4,7 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Casio_logo.svg
   license: Public domain
 country: Japan
-type: independent-company
+control: public
 revenue:
   - year: 2025
     amount: 276300000000
@@ -12,3 +12,5 @@ revenue:
     basis: reported
     sources:
       - https://stockanalysis.com/quote/tyo/6952/financials/income-statement/
+sources:
+  - https://www.wikidata.org/wiki/Q217338

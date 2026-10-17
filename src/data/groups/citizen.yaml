@@ -4,7 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Citizen_logo.svg
   license: Public domain
 country: Japan
-type: independent-company
+control: public
 revenue:
   - year: 2025
     amount: 346800000000
@@ -12,3 +12,5 @@ revenue:
     basis: reported
     sources:
       - https://envalith.com/en/companies/7762/overview
+sources:
+  - https://www.wikidata.org/wiki/Q1368019
