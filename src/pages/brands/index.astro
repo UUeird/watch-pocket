@@ -5,7 +5,7 @@ import FoundingChart from '../../components/FoundingChart.astro';
 import Owners from '../../components/Owners.astro';
 import Treemap from '../../components/Treemap.astro';
 import Base from '../../layouts/Base.astro';
-import { brandStatus, currentOwners, href, label, loadCatalog } from '../../lib/catalog';
+import { brandYears, currentOwners, href, label, loadCatalog } from '../../lib/catalog';
 import { chartData, measuresOf } from '../../lib/chart-data';
 import { metrics } from '../../lib/metrics';
 
@@ -74,9 +74,8 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
           <th>Brand</th>
           <th>Owner</th>
           <th>Nation of origin</th>
-          <th>Founded</th>
+          <th>Years active</th>
           <th>Segment</th>
-          <th>Status</th>
           <th class="measure-head">
             <span class="measure-controls">
               <select class="measure-select" aria-label="Figure shown in this column">
@@ -116,9 +115,8 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
                   <Owners brand={brand} />
                 </td>
                 <td>{brand.data.origin && <CountryLink country={brand.data.origin} />}</td>
-                <td class="num">{brand.data.periods[0]?.from}</td>
+                <td class="num">{brandYears(brand)}</td>
                 <td class="cap">{brand.data.segment && label(brand.data.segment)}</td>
-                <td class="cap">{brandStatus(brand)}</td>
                 <td class="measure">
                   {(() => {
                     const value = measures.get(brand.id)!.values[column.id];

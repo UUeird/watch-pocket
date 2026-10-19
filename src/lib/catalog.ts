@@ -56,6 +56,12 @@ export const brandStatus = ({ data }: Brand) => {
   return data.periods.length > 1 ? 'revived' : 'active';
 };
 
+// The years a brand traded, up to the present while it still does. Without recorded years, its status unless that is plain active.
+export const brandYears = (brand: Brand) => {
+  const status = brandStatus(brand);
+  return formatPeriods(brand.data.periods) || (status === 'active' ? '' : status[0].toUpperCase() + status.slice(1));
+};
+
 export type Reference = Model['data']['references'][number];
 
 export const refHref = (model: Model, reference: Reference) => href(`/brands/${model.id}/${refSlug(reference.ref)}/`);

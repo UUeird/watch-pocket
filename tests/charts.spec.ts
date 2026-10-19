@@ -73,8 +73,8 @@ test.describe('Brands measure column', () => {
     await page.goto('brands/');
     await page.locator('.measure-select').selectOption('age');
     await page.getByRole('button', { name: 'Sort' }).click();
-    const firstYear = Number(await page.locator('#brands tr').first().locator('td:nth-child(4)').textContent());
-    const secondYear = Number(await page.locator('#brands tr').nth(1).locator('td:nth-child(4)').textContent());
+    const firstYear = parseInt(await page.locator('#brands tr').first().locator('td:nth-child(4)').textContent() ?? '');
+    const secondYear = parseInt(await page.locator('#brands tr').nth(1).locator('td:nth-child(4)').textContent() ?? '');
     expect(firstYear).toBeLessThanOrEqual(secondYear);
     await expect(page.locator('#brands tr').first().locator('.measure .bar')).toBeVisible();
   });
