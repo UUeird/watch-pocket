@@ -185,7 +185,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 4px;
-    cursor: zoom-out;
+    cursor: pointer;
   }
 
   .crumb-page {
@@ -266,7 +266,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     text-underline-offset: 2px;
     background: none;
     border: 0;
-    cursor: zoom-in;
+    cursor: pointer;
   }
 
   /* A whole bucket, shaded by its median and zooming into its brands. */
@@ -282,7 +282,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     font: inherit;
     color: #1c1b19;
     text-align: left;
-    cursor: zoom-in;
+    cursor: pointer;
     background: var(--shade, var(--bg));
     border: 1px solid color-mix(in srgb, #1c1b19 14%, transparent);
     border-radius: 4px;
