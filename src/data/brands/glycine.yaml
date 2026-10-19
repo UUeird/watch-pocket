@@ -1,4 +1,8 @@
 name: Glycine
+logo: ../logos/glycine.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Glycine_Watches_logo.png
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1914 }]
 segment: mid-range

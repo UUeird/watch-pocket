@@ -1,0 +1,246 @@
+---
+interface Props {
+  // Each brand with its founding year, where known.
+  brands: { id: string; name: string; founded?: number }[];
+  // The id of a filtered table whose rows carry `data-id`, which the chart follows.
+  follow?: string;
+}
+
+const { brands, follow } = Astro.props;
+const dated = brands.filter((brand) => brand.founded !== undefined) as { id: string; name: string; founded: number }[];
+const decadeOf = (year: number) => Math.floor(year / 10) * 10;
+const first = Math.min(...dated.map((brand) => decadeOf(brand.founded)));
+const last = decadeOf(new Date().getFullYear());
+const decades = Array.from({ length: (last - first) / 10 + 1 }, (_, index) => first + index * 10);
+// Brands founded in each decade, oldest first within it.
+const byDecade = Object.fromEntries(
+  decades.map((decade) => [
+    decade,
+    dated
+      .filter((brand) => decadeOf(brand.founded) === decade)
+      .sort((a, b) => a.founded - b.founded)
+      .map(({ id, name }) => [id, name]),
+  ]),
+);
+const max = Math.max(...decades.map((decade) => byDecade[decade].length));
+// The quartz crisis, roughly 1969 to 1983: the years cheap quartz watches emptied the Swiss trade.
+const quartz = { from: 1969, to: 1983 };
+const at = (year: number) => `${(((year - first) / (last + 10 - first)) * 100).toFixed(2)}%`;
+---
+
+<section class="founding" data-founding data-follow={follow} aria-labelledby="founding-heading">
+  <h2 id="founding-heading">Brands founded by decade</h2>
+  <div class="frame">
+    <div class="scroll">
+      <div class="plot">
+        <div class="area">
+        {
+          quartz.from >= first && (
+            <span class="band" style={{ left: at(quartz.from), width: `calc(${at(quartz.to)} - ${at(quartz.from)})` }}>
+              <span>Quartz crisis</span>
+            </span>
+          )
+        }
+        <ol class="bars">
+          {
+            decades.map((decade) => (
+              <li data-decade={decade}>
+                <span class="bar" style={{ height: `${(byDecade[decade].length / max) * 100}%` }} />
+              </li>
+            ))
+          }
+        </ol>
+        </div>
+        <div class="labels" aria-hidden="true">
+          {decades.map((decade) => <span>{decade % 50 === 0 ? decade : ''}</span>)}
+        </div>
+      </div>
+    </div>
+    <div class="tip" role="presentation" hidden></div>
+  </div>
+  <p class="note" aria-live="polite"></p>
+  <script is:inline type="application/json" set:html={JSON.stringify(byDecade).replace(/</g, '\\u003c')} />
+</section>
+
+<style>
+  .founding {
+    --mark: #2a78d6;
+    margin: 0 0 32px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .founding {
+      --mark: #5598e7;
+    }
+  }
+
+  h2 {
+    margin: 0 0 12px;
+    font-size: 1rem;
+  }
+
+  .frame {
+    position: relative;
+  }
+
+  .scroll {
+    overflow-x: auto;
+  }
+
+  .plot {
+    position: relative;
+    min-width: 560px;
+    padding: 26px 12px 4px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+  }
+
+  .area {
+    position: relative;
+  }
+
+  .band {
+    position: absolute;
+    top: -8px;
+    bottom: 0;
+    background: color-mix(in srgb, var(--muted) 10%, transparent);
+    border-inline: 1px dashed var(--line);
+  }
+
+  /* The label sits above the bars, so a tall bar never covers it. */
+  .band span {
+    position: absolute;
+    top: -16px;
+    left: 0;
+    color: var(--muted);
+    font-size: 0.6875rem;
+    white-space: nowrap;
+  }
+
+  .bars,
+  .labels {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    gap: 2px;
+  }
+
+  .bars {
+    position: relative;
+    height: 140px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .bars li {
+    display: flex;
+    align-items: flex-end;
+    cursor: default;
+  }
+
+  .bar {
+    width: 100%;
+    min-height: 0;
+    background: var(--mark);
+    border-radius: 3px 3px 0 0;
+  }
+
+  .bars li:hover .bar {
+    outline: 2px solid var(--accent);
+  }
+
+  .labels {
+    height: 18px;
+    color: var(--muted);
+    font-size: 0.6875rem;
+  }
+
+  .labels span {
+    overflow: visible;
+    white-space: nowrap;
+  }
+
+  .tip {
+    position: absolute;
+    z-index: 2;
+    max-width: 280px;
+    padding: 6px 9px;
+    color: var(--text);
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    pointer-events: none;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.12);
+  }
+
+  .tip :global(strong) {
+    display: block;
+  }
+
+  .note {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.8125rem;
+  }
+</style>
+
+<script>
+  for (const section of document.querySelectorAll<HTMLElement>('[data-founding]')) {
+    const byDecade: Record<string, [string, string][]> = JSON.parse(section.querySelector('script[type="application/json"]')!.textContent!);
+    const items = [...section.querySelectorAll<HTMLElement>('li[data-decade]')];
+    const note = section.querySelector<HTMLElement>('.note')!;
+    const tip = section.querySelector<HTMLElement>('.tip')!;
+    const frame = section.querySelector<HTMLElement>('.frame')!;
+    const followed = section.dataset.follow;
+    let shown: Record<string, string[]> = {};
+
+    const draw = () => {
+      const rows = followed ? [...document.querySelectorAll<HTMLElement>(`#${followed} tr[data-id]`)] : [];
+      const visible = new Set(rows.filter((row) => !row.hidden).map((row) => row.dataset.id!));
+      const all = rows.length === 0 || visible.size === rows.length;
+      shown = Object.fromEntries(
+        Object.entries(byDecade).map(([decade, brands]) => [decade, brands.filter(([id]) => all || visible.has(id)).map(([, name]) => name)]),
+      );
+      const counts = Object.values(shown).map((names) => names.length);
+      const max = Math.max(1, ...counts);
+      for (const item of items) {
+        const names = shown[item.dataset.decade!];
+        item.querySelector<HTMLElement>('.bar')!.style.height = `${(names.length / max) * 100}%`;
+        item.setAttribute('aria-label', `${item.dataset.decade}s: ${names.length} brand${names.length === 1 ? '' : 's'}`);
+      }
+      const total = counts.reduce((sum, count) => sum + count, 0);
+      const outOf = all ? rows.length || total : visible.size;
+      note.textContent = `${total} of ${outOf} ${all ? '' : 'matching '}brands have a founding year on record.`;
+    };
+
+    for (const item of items) {
+      item.addEventListener('pointerenter', () => {
+        const names = shown[item.dataset.decade!] ?? [];
+        const heading = document.createElement('strong');
+        heading.textContent = `${item.dataset.decade}s: ${names.length} brand${names.length === 1 ? '' : 's'}`;
+        const list = names.length > 8 ? `${names.slice(0, 8).join(', ')} and ${names.length - 8} more` : names.join(', ');
+        tip.replaceChildren(heading, list);
+        tip.hidden = false;
+        const bounds = frame.getBoundingClientRect();
+        const rect = item.getBoundingClientRect();
+        tip.style.left = `${Math.max(4, Math.min(rect.left - bounds.left, bounds.width - tip.offsetWidth - 4))}px`;
+        tip.style.top = `${Math.max(4, rect.top - bounds.top - tip.offsetHeight + 40)}px`;
+      });
+      item.addEventListener('pointerleave', () => (tip.hidden = true));
+    }
+
+    let pending = 0;
+    if (followed)
+      document.addEventListener('filters:applied', (event) => {
+        if ((event as CustomEvent).detail?.target !== followed) return;
+        cancelAnimationFrame(pending);
+        pending = requestAnimationFrame(draw);
+      });
+    draw();
+  }
+</script>

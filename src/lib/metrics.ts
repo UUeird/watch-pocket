@@ -41,6 +41,11 @@ export type Metric = {
   includesLicensed?: boolean;
   // The part of a group's own figure not explained by its brands, e.g. revenue from other businesses.
   groupValue?: (group: Group) => number | undefined;
+  // Whether brands' figures add up to something meaningful for a group. Revenue and counts do, so they
+  // can size a whole treemap; ages and average prices do not, so they size brands only within one bucket.
+  additive: boolean;
+  // The same for every brand, so it says something about buckets and nothing about the brands in them.
+  uniform?: boolean;
 };
 
 const usd = (value: number) =>
@@ -50,19 +55,28 @@ const releaseYear = (reference: Reference) => reference.periods[0]?.from;
 
 export const metrics: Metric[] = [
   {
+    id: 'brands',
+    label: 'Number of brands',
+    format: (count) => `${count} brand${count === 1 ? '' : 's'}`,
+    value: () => 1,
+    additive: true,
+    uniform: true,
+  },
+  {
     id: 'age',
     label: 'Age',
-    format: (years) => `${years} years`,
+    format: (years) => `${Math.round(years)} years`,
     value: ({ brand }) => {
       const founded = brand.data.periods[0]?.from;
       return founded === undefined ? undefined : Math.max(1, thisYear - founded);
     },
     caption: ({ brand }) => (brand.data.periods[0] ? `Est. ${brand.data.periods[0].from}` : undefined),
+    additive: false,
   },
   {
     id: 'age-heritage',
     label: 'Age, including claimed heritage',
-    format: (years) => `${years} years`,
+    format: (years) => `${Math.round(years)} years`,
     value: ({ brand }) => {
       const since = brand.data.heritage?.from ?? brand.data.periods[0]?.from;
       return since === undefined ? undefined : Math.max(1, thisYear - since);
@@ -73,6 +87,7 @@ export const metrics: Metric[] = [
       if (heritage === undefined) return founded === undefined ? undefined : `Est. ${founded}`;
       return founded === undefined ? `Heritage ${heritage}` : `Heritage ${heritage} · est. ${founded}`;
     },
+    additive: false,
   },
   {
     id: 'annual-revenue',
@@ -86,6 +101,7 @@ export const metrics: Metric[] = [
       const figure = latest(group.data.revenue);
       return figure && toUsd(figure.amount, figure.currency);
     },
+    additive: true,
   },
   {
     id: 'lifetime-revenue',
@@ -95,6 +111,7 @@ export const metrics: Metric[] = [
       brand.data.revenue.length === 0 ? undefined : sum(brand.data.revenue.map((r) => toUsd(r.amount, r.currency))),
     groupValue: (group) =>
       group.data.revenue.length === 0 ? undefined : sum(group.data.revenue.map((r) => toUsd(r.amount, r.currency))),
+    additive: true,
   },
   {
     id: 'production',
@@ -102,6 +119,7 @@ export const metrics: Metric[] = [
     format: (units) => `${units.toLocaleString('en-US')} watches a year`,
     value: ({ brand }) => brand.data.production?.units,
     includesLicensed: true,
+    additive: true,
   },
   {
     id: 'annual-releases',
@@ -111,17 +129,20 @@ export const metrics: Metric[] = [
       const recent = references.filter((reference) => (releaseYear(reference) ?? 0) > thisYear - releaseWindow);
       return recent.length === 0 ? undefined : recent.length / releaseWindow;
     },
+    additive: true,
   },
   {
     id: 'total-releases',
     label: 'References on record',
     format: (count) => `${count} references`,
     value: ({ references }) => (references.length === 0 ? undefined : references.length),
+    additive: true,
   },
   {
     id: 'average-price',
     label: 'Average list price',
     format: usd,
     value: ({ references }) => mean(references.flatMap(({ price }) => (price ? [toUsd(price.amount, price.currency)] : []))),
+    additive: false,
   },
 ];
