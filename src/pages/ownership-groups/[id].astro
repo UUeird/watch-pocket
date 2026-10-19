@@ -18,7 +18,7 @@ interface Props {
 const { group } = Astro.props;
 const { groups, groupsById, holdingsOf, licensesOf } = await loadCatalog();
 const subsidiaries = groups.filter((other) => other.data.parent?.id === group.id);
-const { name, logo, logoCredit, country, founded, website, parent, sources } = group.data;
+const { name, country, founded, website, parent, sources } = group.data;
 const { flag } = countries[country];
 const owner = { collection: 'groups' as const, id: group.id };
 const holdings = holdingsOf(owner);
@@ -26,7 +26,7 @@ const licenses = licensesOf(group.id);
 ---
 
 <Base title={name}>
-  <Logo name={name} logo={logo} credit={logoCredit} />
+  <Logo name={name} data={group.data} />
   <h1>{name}</h1>
   <p class="lede">{describeControl(group)}</p>
 

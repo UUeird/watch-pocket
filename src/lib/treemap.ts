@@ -9,12 +9,16 @@ export const box = { width: 1000, height: 600 };
 // Room at the top of each bucket for its name, given only where the bucket is big enough to spare it.
 const header = 20;
 
+// One version of a brand's logo: its file and its drawn size, for its shape.
+export type LogoFile = { src: string; width: number; height: number };
+
 // A brand as the chart sees it.
 export type Point = {
   id: string;
   name: string;
   href: string;
-  logo?: string;
+  // Its logo, and the logo's name and symbol alone, of those it has. Parts are cropped at the logo's own scale.
+  logos: { whole?: LogoFile; wordmark?: LogoFile; logomark?: LogoFile };
   // The bucket it sits in under each grouping, by grouping id. Several for a brand with part-owners.
   buckets: Record<string, string[]>;
   // The group making it under license. For a measure that counts licensed brands, it sits there instead of with its owner.
@@ -238,7 +242,7 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
       // Brands with logos lead the preview, then the rest; within each, the highest on the color measure, or else the alphabet.
       const rank = (point: Point) => (color ? (point.values[color.id] ?? -1) : 0);
       const preview = [...d.points].sort(
-        (a, b) => Number(Boolean(b.logo)) - Number(Boolean(a.logo)) || rank(b) - rank(a) || a.name.localeCompare(b.name),
+        (a, b) => Number(Boolean(b.logos.whole)) - Number(Boolean(a.logos.whole)) || rank(b) - rank(a) || a.name.localeCompare(b.name),
       );
       return [{ kind: 'tile', ...shape, bucket: d.bucket, median: middle, preview, shade: color ? (middle === undefined ? -1 : shadeOf(middle, breaks)) : undefined }];
     }
@@ -290,6 +294,25 @@ const position = ({ x, y, width, height }: Cell) =>
 
 // What fits in a cell, judged in layout units (about a pixel each at full width).
 const showsLogo = ({ width, height }: Cell) => width >= 70 && height >= 40;
+
+// The height in pixels a logo's name must be drawn at to read. Where a logo has no wordmark to say how tall its
+// name is within it, the whole logo must be drawn at `readableWhole` instead, which allows for a name a tenth of it.
+const readable = 12;
+const readableWhole = 100;
+
+// The version of a logo to show in a `width` by `height` pixel space: the whole logo where its name is drawn
+// large enough to read, and otherwise its logomark, unless its wordmark would be drawn at twice the area there, as a
+// wide space suits the name and a symbol reads smaller than a name. An image is shrunk to fit but never grown past its own size.
+function pickLogo({ whole, wordmark, logomark }: Point['logos'], width: number, height: number) {
+  if (!whole) return undefined;
+  const scale = (logo: LogoFile) => Math.min(1, width / logo.width, height / logo.height);
+  // A wordmark cropped at the logo's scale is as tall as the name is within the logo.
+  const name = wordmark ? wordmark.height * scale(whole) : (whole.height * scale(whole) * readable) / readableWhole;
+  if ((!wordmark && !logomark) || name >= readable) return whole;
+  const area = (logo: LogoFile) => logo.width * logo.height * scale(logo) ** 2;
+  if (!wordmark || !logomark) return wordmark ?? logomark;
+  return area(wordmark) >= 2 * area(logomark) ? wordmark : logomark;
+}
 const showsName = ({ width, height }: Cell) => width >= 46 && height >= 16;
 
 // The lines of a brand's tooltip: name, then where it sits, then its figures.
@@ -372,7 +395,11 @@ function plateGrid(width: number, height: number, count: number) {
 // A bucket drawn whole: its name, its count, a few of its brands' logos, and its median as a shade.
 function renderTile(cell: Cell, layout: Layout, scale: number) {
   const { bucket, value, median, preview = [] } = cell;
+  // Its brands are counted in a badge by its name, so the tooltip gives the sizing figure, and the count too where
+  // the size is not the count.
+  const count = preview.length;
   const lines = [bucket.name, layout.size.format(value)];
+  if (layout.size.id !== 'brands') lines.splice(1, 0, `${count} brand${count === 1 ? '' : 's'}`);
   if (layout.color) lines.push(`Median ${layout.color.label.toLowerCase()}: ${median === undefined ? 'no figures yet' : layout.color.format(median)}`);
   lines.push('Click to see its brands');
   const shaded = cell.shade !== undefined && cell.shade >= 0;
@@ -384,24 +411,24 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
   // The plates grow to fill the tile when it has few brands, and shrink no smaller than 50 by 26px (room for a
   // name on two lines) when it has many, where the last plate says how many more there are. Plates are sized
   // in pixels, so this is worked out at the size the chart is drawn: the tile's padding and border take 18px
-  // across, and with its name and count and their spacing about 62px down.
-  const grid = plateGrid(cell.width * scale - 18, cell.height * scale - 62, preview.length);
+  // across, and with its name and its spacing about 46px down.
+  const grid = plateGrid(cell.width * scale - 18, cell.height * scale - 46, preview.length);
   const room = grid.columns * grid.rows;
   const shown = preview.length > room ? preview.slice(0, Math.max(0, room - 1)) : preview;
   const more = preview.length - shown.length;
-  const plates = shown.map((point) =>
-    point.logo
-      ? `<span class="plate"><img src="${escape(point.logo)}" alt="" loading="lazy"></span>`
-      : `<span class="plate named">${fittedName(point.name, grid.width - 8, grid.height - 4, Math.min(18, grid.height * 0.45))}</span>`,
-  );
+  // A plate's logo is drawn inside its padding: 8% of its width each side and 6% of its height top and bottom.
+  const plates = shown.map((point) => {
+    const logo = pickLogo(point.logos, grid.width * 0.84, grid.height * 0.88);
+    return logo
+      ? `<span class="plate"><img src="${escape(logo.src)}" alt="" loading="lazy"></span>`
+      : `<span class="plate named">${fittedName(point.name, grid.width - 8, grid.height - 4, Math.min(18, grid.height * 0.45))}</span>`;
+  });
   if (room > 0 && more > 0) plates.push(`<span class="plate more">+${more} more</span>`);
   const gridStyle = `grid-template-columns:repeat(${grid.columns},${grid.width.toFixed(1)}px);grid-auto-rows:${grid.height.toFixed(1)}px;--plate-font:${Math.min(16, Math.max(10, grid.height * 0.38)).toFixed(1)}px`;
   const roomForName = cell.width >= 40 && cell.height >= 22;
-  const roomForCount = cell.width >= 40 && cell.height >= 38;
   return (
     `<button type="button" class="${classes}" style="${style}" data-zoom="${escape(bucket.key)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">` +
-    (roomForName ? `<span class="tile-name">${escape(bucket.name)}</span>` : '') +
-    (roomForCount ? `<span class="tile-count">${escape(layout.size.format(value))}</span>` : '') +
+    (roomForName ? `<span class="tile-head"><span class="tile-badge">${count}</span><span class="tile-name">${escape(bucket.name)}</span></span>` : '') +
     (plates.length > 0 ? `<span class="tile-logos" style="${gridStyle}">${plates.join('')}</span>` : '') +
     `</button>`
   );
@@ -437,10 +464,11 @@ export function renderCells(layout: Layout, scale = 1) {
       const point = cell.point!;
       const lines = tipLines(cell, layout);
       const shade = cell.shade !== undefined && cell.shade >= 0 ? `;--shade:${steps[cell.shade]}` : '';
-      const content =
-        showsLogo(cell) && point.logo
-          ? `<img src="${escape(point.logo)}" alt="" loading="lazy">`
-          : brandName(point.name, cell.width * scale - 6, cell.height * scale - 6);
+      // A cell's logo is drawn in at most 80% of its width and 60% of its height.
+      const logo = showsLogo(cell) ? pickLogo(point.logos, cell.width * scale * 0.8, cell.height * scale * 0.6) : undefined;
+      const content = logo
+        ? `<img src="${escape(logo.src)}" alt="" loading="lazy">`
+        : brandName(point.name, cell.width * scale - 6, cell.height * scale - 6);
       // A shaded cell is filled with its shade. A logo gets a white halo so a dark mark stays legible; a name
       // turns white on the darker steps instead.
       const classes = ['brand', cell.licensed && 'licensed', cell.shade !== undefined && 'shaded', cell.shade === -1 && 'unshaded', (cell.shade ?? -1) >= darkFrom && 'on-dark']

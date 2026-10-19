@@ -7,7 +7,7 @@ test.describe('Brands treemap', () => {
   const tiles = `${treemap} .canvas .tile`;
   // The brands counted across all the tiles of the overview.
   const tileTotal = async (page: Page) =>
-    (await page.locator(`${tiles} .tile-count`).allTextContents()).reduce((total, text) => total + Number(text.split(' ')[0]), 0);
+    (await page.locator(`${tiles} .tile-badge`).allTextContents()).reduce((total, text) => total + Number(text), 0);
 
   test.beforeEach(async ({ page }) => {
     await page.goto('./');

@@ -1,6 +1,6 @@
 import { countryHref, currentOwners, href, label, type Brand, type Group, type Reference } from './catalog';
 import { metrics } from './metrics';
-import type { Bucket, ChartData, Grouping, Point } from './treemap';
+import type { Bucket, ChartData, Grouping, LogoFile, Point } from './treemap';
 
 type Catalog = {
   brands: Brand[];
@@ -36,6 +36,9 @@ export function measuresOf({ brands, references }: Catalog) {
   );
 }
 
+// An image's file and drawn size, as the chart needs it.
+const logoFile = (image?: LogoFile): LogoFile | undefined => image && { src: image.src, width: image.width, height: image.height };
+
 // The ways the brands page can group its treemap. Category and status are left out: nearly every brand is an
 // active watch brand, so either would draw one huge box and a few specks. `owners` alone is what the ownership groups page uses.
 export function chartData(catalog: Catalog, { groupsOnly = false } = {}): ChartData {
@@ -47,7 +50,11 @@ export function chartData(catalog: Catalog, { groupsOnly = false } = {}): ChartD
     id: brand.id,
     name: brand.data.name,
     href: href(`/brands/${brand.id}/`),
-    logo: brand.data.logo?.src,
+    logos: {
+      whole: logoFile(brand.data.logo),
+      wordmark: logoFile(brand.data.wordmark),
+      logomark: logoFile(brand.data.logomark),
+    },
     buckets: {
       owner: ownerKeys(brand),
       origin: [brand.data.origin ?? 'unrecorded'],
