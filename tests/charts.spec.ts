@@ -13,14 +13,19 @@ test.describe('Brands treemap', () => {
     await page.goto('./');
   });
 
-  test('starts with one box per origin, counting every brand', async ({ page }) => {
+  test('starts with one box per nation, counting every brand', async ({ page }) => {
     const rows = await page.locator('#brands tr').count();
     await expect(page.locator(`${tiles}[data-zoom="Switzerland"]`)).toBeVisible();
     await expect(page.locator(brandCells)).toHaveCount(0);
-    // Tiny tiles have no room for their count, so the shown counts can fall short of the whole but never exceed it.
+    // Brands with no nation recorded are listed under the chart, not drawn as a box.
+    await expect(page.locator(`${tiles}[data-zoom="unrecorded"]`)).toHaveCount(0);
+    const footnote = page.locator(`${treemap} .unsized summary`, { hasText: 'no nation of origin recorded' });
+    const unrecorded = Number((await footnote.textContent())!.split(' ')[0]);
+    expect(unrecorded).toBeGreaterThan(0);
+    // Tiny tiles have no room for their count, so the shown counts can fall short of the rest but never exceed them.
     const counted = await tileTotal(page);
-    expect(counted).toBeGreaterThan(rows * 0.9);
-    expect(counted).toBeLessThanOrEqual(rows);
+    expect(counted).toBeGreaterThan((rows - unrecorded) * 0.9);
+    expect(counted).toBeLessThanOrEqual(rows - unrecorded);
   });
 
   test('zooms into a box and back out', async ({ page }) => {
@@ -30,7 +35,7 @@ test.describe('Brands treemap', () => {
     // Inside a box, brands can be sized by a figure that does not add up across boxes.
     await expect(page.locator(`${treemap} select[name="size"]`)).toHaveValue('age');
     await expect(page.locator(`${treemap} .unsized summary`)).toContainText('no figure for age');
-    await page.getByRole('button', { name: /All by origin/ }).click();
+    await page.getByRole('button', { name: /All by nation of origin/ }).click();
     await expect(page.locator(`${tiles}[data-zoom="Switzerland"]`)).toBeFocused();
   });
 
@@ -38,7 +43,9 @@ test.describe('Brands treemap', () => {
     await page.locator('select[name="owner"]').selectOption('richemont');
     const rows = await page.locator('#brands tr:not([hidden])').count();
     await expect(page.locator(`${treemap} .note`)).toContainText('matching the filters');
-    expect(await tileTotal(page)).toBe(rows);
+    const unrecorded = page.locator(`${treemap} .unsized summary`, { hasText: 'no nation of origin recorded' });
+    const unrecordedCount = (await unrecorded.count()) > 0 ? Number((await unrecorded.textContent())!.split(' ')[0]) : 0;
+    expect((await tileTotal(page)) + unrecordedCount).toBe(rows);
   });
 
   test('regroups by owner', async ({ page }) => {

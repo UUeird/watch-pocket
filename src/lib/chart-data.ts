@@ -77,7 +77,7 @@ export function chartData(catalog: Catalog, { groupsOnly = false } = {}): ChartD
       return { key, name: brand.data.name, href: href(`/brands/${brand.id}/`) };
     },
   );
-  const notRecorded = (what: string): Bucket => ({ key: 'unrecorded', name: `${what} not recorded` });
+  const notRecorded = (what: string): Bucket => ({ key: 'unrecorded', name: `${what} not recorded`, unrecorded: true });
   const distinct = (values: (string | undefined)[]) => [...new Set(values.filter((value) => value !== undefined))].sort();
   const named = (values: string[]) =>
     values.map((value): Bucket => ({ key: value, name: label(value).replace(/^./, (first) => first.toUpperCase()) }));
@@ -87,10 +87,10 @@ export function chartData(catalog: Catalog, { groupsOnly = false } = {}): ChartD
       { ...owner, buckets: [...groupBuckets, ...brandOwners, independent] },
       {
         id: 'origin',
-        label: 'Origin',
+        label: 'Nation of origin',
         buckets: [
           ...distinct(brands.map((brand) => brand.data.origin)).map((country): Bucket => ({ key: country, name: country, href: countryHref(country) })),
-          notRecorded('Origin'),
+          notRecorded('Nation of origin'),
         ],
       },
       { id: 'segment', label: 'Segment', buckets: [...named(['haute', 'luxury', 'mid-range', 'budget', 'broad']), notRecorded('Segment')] },

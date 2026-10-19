@@ -31,6 +31,9 @@ export type Bucket = {
   href?: string;
   // The bucket's own figure by measure id, where it has one beyond its brands', e.g. a group's whole revenue.
   values?: Record<string, number>;
+  // Brands with no value recorded for the grouping. They are listed under the chart rather than drawn as a box,
+  // since a gap in the data is not a category.
+  unrecorded?: boolean;
 };
 
 export type Grouping = {
@@ -97,6 +100,8 @@ export type Layout = {
   missing: number;
   // When zoomed, the brands with no figure for the size measure, so they can still be listed.
   unsized: Point[];
+  // Brands with nothing recorded for the grouping, listed under the chart.
+  unrecorded: Point[];
   // Brands made under license that a measure of what a group owns does not count toward the maker.
   hiddenLicensed: number;
   // The color measure's step boundaries, lowest first: steps.length + 1 values.
@@ -155,8 +160,10 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
   const mode: Mode = zoomed ? 'zoomed' : size.uniform ? 'buckets' : 'nested';
   const color = options.color ? metricById(options.color) : undefined;
   const moveLicensed = Boolean(grouping.licensing && size.includesLicensed);
-  const buckets = zoomed ? [zoomed] : grouping.buckets;
+  const buckets = zoomed ? [zoomed] : grouping.buckets.filter((bucket) => !bucket.unrecorded);
   const bucketKeys = new Set(buckets.map((bucket) => bucket.key));
+  const unrecordedKeys = new Set(zoomed ? [] : grouping.buckets.filter((bucket) => bucket.unrecorded).map((bucket) => bucket.key));
+  const unrecorded: Point[] = [];
 
   const members = new Map<string, { point: Point; licensed: boolean }[]>();
   let hiddenLicensed = 0;
@@ -164,6 +171,7 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
     if (options.visible && !options.visible.has(point.id)) continue;
     const licensed = moveLicensed && point.licensee !== undefined;
     const keys = licensed ? [point.licensee!] : (point.buckets[grouping.id] ?? []);
+    if (keys.some((key) => unrecordedKeys.has(key))) unrecorded.push(point);
     if (grouping.licensing && !size.includesLicensed && point.licensee && bucketKeys.has(point.licensee)) hiddenLicensed++;
     for (const key of keys) {
       if (!bucketKeys.has(key)) continue;
@@ -263,6 +271,7 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
     shown: drawn.size,
     missing: missing.size,
     unsized: mode === 'zoomed' ? [...missing.values()].sort((a, b) => a.name.localeCompare(b.name)) : [],
+    unrecorded: unrecorded.sort((a, b) => a.name.localeCompare(b.name)),
     hiddenLicensed,
     breaks,
     totals,
@@ -410,6 +419,10 @@ export function renderNote(layout: Layout, filtered = false) {
     parts.push(`${plural(shown, 'brand')}${matching}${where}, sized by ${size.label.toLowerCase()}.`);
     if (missing > 0) parts.push(`${missing} more ${missing === 1 ? 'has' : 'have'} no figure for it yet${mode === 'zoomed' ? ' and ' + (missing === 1 ? 'is' : 'are') + ' listed below' : ' and ' + (missing === 1 ? 'is' : 'are') + ' left out'}.`);
   }
+  if (layout.unrecorded.length > 0) {
+    const count = layout.unrecorded.length;
+    parts.push(`${count} more ${count === 1 ? 'has' : 'have'} no ${grouping.label.toLowerCase()} recorded and ${count === 1 ? 'is' : 'are'} listed below.`);
+  }
   if (hiddenLicensed > 0) parts.push(`${plural(hiddenLicensed, 'brand')} made under license ${hiddenLicensed === 1 ? 'counts toward its owner' : 'count toward their owners'}, not the group that makes ${hiddenLicensed === 1 ? 'it' : 'them'}.`);
   if (size.includesLicensed && layout.cells.some((cell) => cell.licensed)) parts.push('A dashed edge marks a brand made under license, counted toward the group that makes it.');
   if (options.otherBusiness && layout.cells.some((cell) => cell.kind === 'other')) parts.push('A hatched block is the part of a group’s own figure that its watch brands don’t account for.');
@@ -417,8 +430,14 @@ export function renderNote(layout: Layout, filtered = false) {
 }
 
 // When zoomed, the bucket's brands with no figure for the size measure, as links.
+// Also, brands with nothing recorded for the grouping.
 export function renderUnsized(layout: Layout) {
-  if (layout.unsized.length === 0) return '';
-  const links = layout.unsized.map((point) => `<li><a href="${escape(point.href)}">${escape(point.name)}</a></li>`).join('');
-  return `<details><summary>${plural(layout.unsized.length, 'brand')} with no figure for ${escape(layout.size.label.toLowerCase())}</summary><ul>${links}</ul></details>`;
+  const list = (points: Point[], summary: string) =>
+    points.length === 0
+      ? ''
+      : `<details><summary>${escape(summary)}</summary><ul>${points.map((point) => `<li><a href="${escape(point.href)}">${escape(point.name)}</a></li>`).join('')}</ul></details>`;
+  return (
+    list(layout.unsized, `${plural(layout.unsized.length, 'brand')} with no figure for ${layout.size.label.toLowerCase()}`) +
+    list(layout.unrecorded, `${plural(layout.unrecorded.length, 'brand')} with no ${layout.grouping.label.toLowerCase()} recorded`)
+  );
 }

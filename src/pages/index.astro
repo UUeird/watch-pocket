@@ -46,7 +46,7 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
         label: 'Owner',
         options: groups.map((group) => ({ value: group.id, label: group.data.name })),
       },
-      { name: 'origin', label: 'Origin', options: options(origins) },
+      { name: 'origin', label: 'Nation of origin', options: options(origins) },
       { name: 'segment', label: 'Segment', options: options(segments) },
       {
         name: 'category',
@@ -73,7 +73,7 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
         <tr>
           <th>Brand</th>
           <th>Owner</th>
-          <th>Origin</th>
+          <th>Nation of origin</th>
           <th>Founded</th>
           <th>Segment</th>
           <th>Type</th>
