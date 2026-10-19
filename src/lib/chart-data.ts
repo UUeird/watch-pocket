@@ -1,4 +1,4 @@
-import { brandStatus, countryHref, currentOwners, href, label, type Brand, type Group, type Reference } from './catalog';
+import { countryHref, currentOwners, href, label, type Brand, type Group, type Reference } from './catalog';
 import { metrics } from './metrics';
 import type { Bucket, ChartData, Grouping, Point } from './treemap';
 
@@ -36,7 +36,8 @@ export function measuresOf({ brands, references }: Catalog) {
   );
 }
 
-// The ways the brands page can group its treemap. `owners` alone is what the ownership groups page uses.
+// The ways the brands page can group its treemap. Category and status are left out: nearly every brand is an
+// active watch brand, so either would draw one huge box and a few specks. `owners` alone is what the ownership groups page uses.
 export function chartData(catalog: Catalog, { groupsOnly = false } = {}): ChartData {
   const { brands, groups } = catalog;
   const measures = measuresOf(catalog);
@@ -51,8 +52,6 @@ export function chartData(catalog: Catalog, { groupsOnly = false } = {}): ChartD
       owner: ownerKeys(brand),
       origin: [brand.data.origin ?? 'unrecorded'],
       segment: [brand.data.segment ?? 'unrecorded'],
-      category: [brand.data.category],
-      status: [brandStatus(brand)],
       none: ['all'],
     },
     licensee: brand.data.licensees.find((record) => record.to === undefined)?.licensee.id,
@@ -94,8 +93,6 @@ export function chartData(catalog: Catalog, { groupsOnly = false } = {}): ChartD
         ],
       },
       { id: 'segment', label: 'Segment', buckets: [...named(['haute', 'luxury', 'mid-range', 'budget', 'broad']), notRecorded('Segment')] },
-      { id: 'category', label: 'Category', buckets: named(['watch-brand', 'movement-maker', 'case-maker']) },
-      { id: 'status', label: 'Status', buckets: named(['active', 'revived', 'dormant', 'defunct']) },
       { id: 'none', label: 'Nothing', buckets: [{ key: 'all', name: '' }] },
     ],
   };
