@@ -17,8 +17,8 @@ export type Point = {
   id: string;
   name: string;
   href: string;
-  // The whole logo first, then its wordmark and logomark, of those it has. Empty with no logo.
-  logos: LogoFile[];
+  // Its logo, and the logo's name and symbol alone, of those it has. Parts are cropped at the logo's own scale.
+  logos: { whole?: LogoFile; wordmark?: LogoFile; logomark?: LogoFile };
   // The bucket it sits in under each grouping, by grouping id. Several for a brand with part-owners.
   buckets: Record<string, string[]>;
   // The group making it under license. For a measure that counts licensed brands, it sits there instead of with its owner.
@@ -242,7 +242,7 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
       // Brands with logos lead the preview, then the rest; within each, the highest on the color measure, or else the alphabet.
       const rank = (point: Point) => (color ? (point.values[color.id] ?? -1) : 0);
       const preview = [...d.points].sort(
-        (a, b) => Number(b.logos.length > 0) - Number(a.logos.length > 0) || rank(b) - rank(a) || a.name.localeCompare(b.name),
+        (a, b) => Number(Boolean(b.logos.whole)) - Number(Boolean(a.logos.whole)) || rank(b) - rank(a) || a.name.localeCompare(b.name),
       );
       return [{ kind: 'tile', ...shape, bucket: d.bucket, median: middle, preview, shade: color ? (middle === undefined ? -1 : shadeOf(middle, breaks)) : undefined }];
     }
@@ -295,20 +295,23 @@ const position = ({ x, y, width, height }: Cell) =>
 // What fits in a cell, judged in layout units (about a pixel each at full width).
 const showsLogo = ({ width, height }: Cell) => width >= 70 && height >= 40;
 
-// The height in pixels below which a whole logo is taken to be too small to read, where it has a part to show
-// instead. It is generous because a stacked logo's name can be a tenth of its height, as Louis Vuitton's is.
-const readable = 100;
+// The height in pixels a logo's name must be drawn at to read. Where a logo has no wordmark to say how tall its
+// name is within it, the whole logo must be drawn at `readableWhole` instead, which allows for a name a tenth of it.
+const readable = 12;
+const readableWhole = 100;
 
-// The version of a logo to show in a `width` by `height` pixel space: the whole logo where it is drawn at a
-// readable height, and otherwise whichever of its wordmark and logomark is drawn largest there, as a wide space
-// suits the name and a square one the symbol. An image is shrunk to fit but never grown past its own size.
-function pickLogo(logos: LogoFile[], width: number, height: number) {
-  const [whole, ...parts] = logos;
+// The version of a logo to show in a `width` by `height` pixel space: the whole logo where its name is drawn
+// large enough to read, and otherwise its logomark, unless its wordmark would be drawn at twice the area there, as a
+// wide space suits the name and a symbol reads smaller than a name. An image is shrunk to fit but never grown past its own size.
+function pickLogo({ whole, wordmark, logomark }: Point['logos'], width: number, height: number) {
   if (!whole) return undefined;
   const scale = (logo: LogoFile) => Math.min(1, width / logo.width, height / logo.height);
-  if (parts.length === 0 || whole.height * scale(whole) >= readable) return whole;
+  // A wordmark cropped at the logo's scale is as tall as the name is within the logo.
+  const name = wordmark ? wordmark.height * scale(whole) : (whole.height * scale(whole) * readable) / readableWhole;
+  if ((!wordmark && !logomark) || name >= readable) return whole;
   const area = (logo: LogoFile) => logo.width * logo.height * scale(logo) ** 2;
-  return parts.reduce((best, logo) => (area(logo) > area(best) ? logo : best));
+  if (!wordmark || !logomark) return wordmark ?? logomark;
+  return area(wordmark) >= 2 * area(logomark) ? wordmark : logomark;
 }
 const showsName = ({ width, height }: Cell) => width >= 46 && height >= 16;
 
