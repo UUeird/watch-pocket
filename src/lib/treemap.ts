@@ -395,7 +395,11 @@ function plateGrid(width: number, height: number, count: number) {
 // A bucket drawn whole: its name, its count, a few of its brands' logos, and its median as a shade.
 function renderTile(cell: Cell, layout: Layout, scale: number) {
   const { bucket, value, median, preview = [] } = cell;
+  // Its brands are counted in a badge by its name, so the tooltip gives the sizing figure, and the count too where
+  // the size is not the count.
+  const count = preview.length;
   const lines = [bucket.name, layout.size.format(value)];
+  if (layout.size.id !== 'brands') lines.splice(1, 0, `${count} brand${count === 1 ? '' : 's'}`);
   if (layout.color) lines.push(`Median ${layout.color.label.toLowerCase()}: ${median === undefined ? 'no figures yet' : layout.color.format(median)}`);
   lines.push('Click to see its brands');
   const shaded = cell.shade !== undefined && cell.shade >= 0;
@@ -407,8 +411,8 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
   // The plates grow to fill the tile when it has few brands, and shrink no smaller than 50 by 26px (room for a
   // name on two lines) when it has many, where the last plate says how many more there are. Plates are sized
   // in pixels, so this is worked out at the size the chart is drawn: the tile's padding and border take 18px
-  // across, and with its name and count and their spacing about 62px down.
-  const grid = plateGrid(cell.width * scale - 18, cell.height * scale - 62, preview.length);
+  // across, and with its name and its spacing about 46px down.
+  const grid = plateGrid(cell.width * scale - 18, cell.height * scale - 46, preview.length);
   const room = grid.columns * grid.rows;
   const shown = preview.length > room ? preview.slice(0, Math.max(0, room - 1)) : preview;
   const more = preview.length - shown.length;
@@ -422,11 +426,9 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
   if (room > 0 && more > 0) plates.push(`<span class="plate more">+${more} more</span>`);
   const gridStyle = `grid-template-columns:repeat(${grid.columns},${grid.width.toFixed(1)}px);grid-auto-rows:${grid.height.toFixed(1)}px;--plate-font:${Math.min(16, Math.max(10, grid.height * 0.38)).toFixed(1)}px`;
   const roomForName = cell.width >= 40 && cell.height >= 22;
-  const roomForCount = cell.width >= 40 && cell.height >= 38;
   return (
     `<button type="button" class="${classes}" style="${style}" data-zoom="${escape(bucket.key)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">` +
-    (roomForName ? `<span class="tile-name">${escape(bucket.name)}</span>` : '') +
-    (roomForCount ? `<span class="tile-count">${escape(layout.size.format(value))}</span>` : '') +
+    (roomForName ? `<span class="tile-head"><span class="tile-badge">${count}</span><span class="tile-name">${escape(bucket.name)}</span></span>` : '') +
     (plates.length > 0 ? `<span class="tile-logos" style="${gridStyle}">${plates.join('')}</span>` : '') +
     `</button>`
   );
