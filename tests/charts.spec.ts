@@ -51,7 +51,9 @@ test.describe('Brands treemap', () => {
   test('regroups by owner', async ({ page }) => {
     await page.locator(`${treemap} select[name="grouping"]`).selectOption('owner');
     await expect(page.locator(`${tiles}[data-zoom="swatch-group"]`)).toBeVisible();
-    await expect(page.locator(`${tiles}[data-zoom="independent"]`)).toBeVisible();
+    // Brands with no owning group are listed under the chart, not drawn as a box.
+    await expect(page.locator(`${tiles}[data-zoom="independent"]`)).toHaveCount(0);
+    await expect(page.locator(`${treemap} .unsized summary`)).toContainText('with no owning group on record');
   });
 
   test('shading by nothing drops the key', async ({ page }) => {

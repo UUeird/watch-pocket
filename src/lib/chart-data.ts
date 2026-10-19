@@ -9,7 +9,7 @@ type Catalog = {
 };
 
 // Where a brand with no group owner sits when grouped by owner.
-const independent: Bucket = { key: 'independent', name: 'Independent' };
+const independent: Bucket = { key: 'independent', name: 'Independent', aside: 'with no owning group on record' };
 
 // A brand's current owners as owner-grouping keys: a group's id, or `brand:<id>` for a brand held by another brand.
 const ownerKeys = (brand: Brand) => {
@@ -77,7 +77,7 @@ export function chartData(catalog: Catalog, { groupsOnly = false } = {}): ChartD
       return { key, name: brand.data.name, href: href(`/brands/${brand.id}/`) };
     },
   );
-  const notRecorded = (what: string): Bucket => ({ key: 'unrecorded', name: `${what} not recorded`, unrecorded: true });
+  const notRecorded = (what: string): Bucket => ({ key: 'unrecorded', name: `${what} not recorded`, aside: `with no ${what.toLowerCase()} recorded` });
   const distinct = (values: (string | undefined)[]) => [...new Set(values.filter((value) => value !== undefined))].sort();
   const named = (values: string[]) =>
     values.map((value): Bucket => ({ key: value, name: label(value).replace(/^./, (first) => first.toUpperCase()) }));
