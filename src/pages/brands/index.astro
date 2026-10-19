@@ -114,7 +114,16 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
                   <Owners brand={brand} />
                 </td>
                 <td>{brand.data.origin && <CountryLink country={brand.data.origin} />}</td>
-                <td class="num">{brandYears(brand)}</td>
+                <td>
+                  {brandYears(brand)
+                    .split(', ')
+                    .map((span, index) => (
+                      <>
+                        {index > 0 && ', '}
+                        <span class="nowrap">{span}</span>
+                      </>
+                    ))}
+                </td>
                 <td class="cap">{brand.data.segment && label(brand.data.segment)}</td>
                 <td class="measure">
                   {(() => {
