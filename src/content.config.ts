@@ -184,6 +184,11 @@ const brands = defineCollection({
               'Several owners can be current only if each has a `stake` (a percentage or `unknown`) and the percentages total 100 or less; otherwise give the earlier records a `to` year.',
           })
           .default([]),
+        // Set only where sources confirm no group or other company owns the brand today; it then shows as
+        // "Independent" in place of an owner. Earlier owners stay in `ownership` with a `to` year.
+        independent: z
+          .object({ sources: sources.refine((list) => list.length > 0, { message: 'Independence needs at least one source.' }) })
+          .optional(),
         // Companies that make and sell the brand's watches under license without owning the brand. Dated like ownership.
         licensees: z
           .array(z.object({ licensee: reference('groups'), ...tenure }).refine(endsAfterStart, tenureEnds))
@@ -194,6 +199,9 @@ const brands = defineCollection({
       })
       .refine((brand) => brand.periods.length === 0 || brand.status === undefined, {
         message: 'Set either `periods` or `status`, not both: status is derived from periods.',
+      })
+      .refine((brand) => !brand.independent || brand.ownership.every((record) => record.to !== undefined), {
+        message: 'An `independent` brand cannot have a current owner; give its ownership records a `to` year.',
       })
       .refine(creditHasLogo, creditNeedsLogo)
       .refine(partsNeedLogo, partsNeedLogoMessage)

@@ -23,7 +23,7 @@ const holdings = holdingsOf(self);
 const collaborations = collaborationsOf(brand.id);
 const brandName = (modelId: string) => brands.find((other) => other.id === modelId.split('/')[0])?.data.name;
 const lines = linesOf(brand.id);
-const { name, origin, headquarters, manufacturing, periods, heritage, makes, segment, tags, production, copycat, website, ownership, licensees, sources } =
+const { name, origin, headquarters, manufacturing, periods, heritage, makes, segment, tags, production, copycat, website, ownership, independent, licensees, sources } =
   brand.data;
 const showStake = ownership.some((record) => record.stake !== undefined);
 const showBasis = ownership.some((record) => record.basis !== undefined);
@@ -166,8 +166,15 @@ const descriptors = [segment, ...tags, copycat && 'copycat', brandStatus(brand)]
 
   <h2>Ownership</h2>
   {
+    independent && (
+      <p>
+        Independent today: no group or other company owns it. Source: <SourceLinks sources={independent.sources} />
+      </p>
+    )
+  }
+  {
     ownership.length === 0 ? (
-      <p>No owner on record.</p>
+      !independent && <p>No owner on record.</p>
     ) : (
       <div class="table-wrap">
         <table>
