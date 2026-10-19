@@ -1,4 +1,9 @@
 name: Jacques Lemans
+logo: ../logos/jacques-lemans.png
+logomark: ../logos/jacques-lemans-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Jacques_Lemans_GmbH_Logo.png
+  license: Public domain
 origin: Austria
 periods: [{ from: 1975 }]
 sources:

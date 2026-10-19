@@ -1,4 +1,11 @@
 name: Stowa
+logo: ../logos/stowa.jpg
+logomark: ../logos/stowa-logomark.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Stowa_Logo.jpg
+  license: CC BY-SA 3.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+  author: Kharante
 origin: Germany
 periods: [{ from: 1927 }]
 sources:

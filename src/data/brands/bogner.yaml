@@ -1,4 +1,9 @@
 name: Bogner
+logo: ../logos/bogner.svg
+logomark: ../logos/bogner-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Bogner-Logo.svg
+  license: Public domain
 status: active
 website: https://www.bogner.com
 sources:

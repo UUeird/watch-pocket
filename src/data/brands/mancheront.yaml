@@ -1,4 +1,10 @@
 name: Mancheront
+logo: ../logos/mancheront.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Mancheront_Logo.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Mancheront
 status: active
 website: https://www.mancheront.com
 sources:

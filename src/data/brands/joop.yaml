@@ -1,4 +1,8 @@
 name: Joop
+logo: ../logos/joop.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Joop!_logo.svg
+  license: Public domain
 status: active
 website: https://joop.com
 sources:

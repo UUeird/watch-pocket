@@ -1,4 +1,9 @@
 name: Revue Thommen
+logo: ../logos/revue-thommen.jpg
+logomark: ../logos/revue-thommen-logomark.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Revue_Thommen.jpg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1853 }]
 segment: mid-range

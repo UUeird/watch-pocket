@@ -1,4 +1,11 @@
 name: Greubel Forsey
+logo: ../logos/greubel-forsey.jpg
+logomark: ../logos/greubel-forsey-logomark.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Greubel_Forsey_Logo_08.jpg
+  license: CC BY 3.0
+  licenseUrl: https://creativecommons.org/licenses/by/3.0
+  author: Greubel Forsey
 origin: Switzerland
 periods: [{ from: 2004 }]
 segment: haute

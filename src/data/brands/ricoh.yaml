@@ -1,4 +1,8 @@
 name: Ricoh
+logo: ../logos/ricoh.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Ricoh_logo_2005.svg
+  license: Public domain
 origin: Japan
 sources:
   - https://www.dialicious.com/en/ricoh

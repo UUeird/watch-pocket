@@ -1,4 +1,9 @@
 name: Alpina
+logo: ../logos/alpina.png
+logomark: ../logos/alpina-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Alpina_Watches_logo.png
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1883 }]
 segment: mid-range

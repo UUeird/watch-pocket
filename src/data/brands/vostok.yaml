@@ -1,4 +1,11 @@
 name: Vostok
+logo: ../logos/vostok.png
+logomark: ../logos/vostok-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Vostok_Logo.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: ЧИСТОПОЛЬСКИЙ ЧАСОВОЙ ЗАВОД «ВОСТОК»
 origin: Russia
 periods: [{ from: 1942 }]
 sources:

@@ -1,4 +1,8 @@
 name: Dunhill
+logo: ../logos/dunhill.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Dunhill_logo.svg
+  license: Public domain
 periods: [{ from: 1893 }]
 website: https://www.dunhill.com
 sources:

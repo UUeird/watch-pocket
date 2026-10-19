@@ -1,4 +1,8 @@
 name: Eska
+logo: ../logos/eska.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Eska_logo.svg
+  license: Public domain
 origin: France
 periods: [{ from: 1918 }]
 website: https://www.eskawatches.com

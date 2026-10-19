@@ -1,4 +1,9 @@
 name: Technos
+logo: ../logos/technos.png
+logomark: ../logos/technos-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Technos_logo.png
+  license: Public domain
 origin: Brazil
 periods: [{ from: 1924 }]
 sources:
