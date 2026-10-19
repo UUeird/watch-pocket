@@ -62,6 +62,17 @@ test.describe('Brands treemap', () => {
     await expect(page.locator(`${treemap} .legend .swatch`)).toHaveCount(0);
   });
 
+  test('draws as circles, zooms in, and remembers the choice', async ({ page }) => {
+    const shape = page.locator(`${treemap} select[name="shape"]`);
+    await shape.selectOption('circles');
+    await expect(page.locator(`${tiles}.round[data-zoom="Switzerland"]`)).toBeVisible();
+    await page.locator(`${tiles}[data-zoom="Switzerland"]`).click();
+    expect(await page.locator(`${brandCells}.round`).count()).toBeGreaterThan(20);
+    await page.reload();
+    await expect(shape).toHaveValue('circles');
+    await expect(page.locator(`${tiles}.round`).first()).toBeVisible();
+  });
+
   test('sizes the overview only by measures that add up', async ({ page }) => {
     await expect(page.locator(`${treemap} select[name="size"] option[value="age"]`)).toHaveJSProperty('disabled', true);
     await expect(page.locator(`${treemap} select[name="size"] option[value="brands"]`)).toHaveJSProperty('disabled', false);

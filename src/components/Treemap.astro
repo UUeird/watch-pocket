@@ -26,7 +26,7 @@ const perBrand = metrics.filter((metric) => !metric.additive);
 const colors = metrics.filter((metric) => !metric.additive);
 // Measures with a group-level figure, for which a group's other business can be shown.
 const withOwn = metrics.filter((metric) => data.groupings.some((grouping) => grouping.buckets.some((bucket) => bucket.values?.[metric.id] !== undefined)));
-const options: Options = { grouping: data.groupings[0].id, size: 'brands', color: 'age', otherBusiness: true, ...initial };
+const options: Options = { grouping: data.groupings[0].id, size: 'brands', color: 'age', otherBusiness: true, shape: 'rects', ...initial };
 const layout = layoutTreemap(data, options);
 const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (${coverage[id]})`);
 ---
@@ -88,6 +88,13 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
             </option>
           ))
         }
+      </select>
+    </label>
+    <label class="control">
+      <span>Draw as</span>
+      <select name="shape">
+        <option value="rects" selected={options.shape === 'rects'}>Rectangles</option>
+        <option value="circles" selected={options.shape === 'circles'}>Circles</option>
       </select>
     </label>
     <label class="toggle" data-own={withOwn.map((metric) => metric.id).join(' ')} hidden={!withOwn.some((metric) => metric.id === options.size)}>
@@ -472,6 +479,31 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     object-fit: contain;
   }
 
+  /* Drawn as circles: a tile's badge and name sit centered in it. */
+  .canvas :global(.tile.round) {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+  }
+
+  .canvas :global(.tile.round .fit) {
+    font-weight: 600;
+  }
+
+  /* A bucket circle's name sits across its top, over the brands inside it. */
+  .canvas :global(.bucket.round .bucket-name) {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    z-index: 1;
+    max-width: 60%;
+    padding: 1px 8px;
+    background: var(--surface);
+    border-radius: 999px;
+    translate: -50% 0;
+  }
+
   .canvas :global(.other) {
     display: flex;
     align-items: center;
@@ -482,6 +514,11 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     background: repeating-linear-gradient(135deg, transparent 0 6px, var(--line) 6px 7px);
     border: 1px dashed var(--line);
     border-radius: 2px;
+  }
+
+  /* Drawn as circles, each cell is round in its square. After every cell's own corners, so it wins. */
+  .canvas :global(.round) {
+    border-radius: 50%;
   }
 
   .tip {
@@ -550,7 +587,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
 
 <script>
   import { setLogos } from '../lib/logo-contrast';
-  import { layoutTreemap, renderCells, renderLegend, renderNote, renderUnsized, zoomedBucket, type ChartData, type Options } from '../lib/treemap';
+  import { layoutTreemap, renderCells, renderLegend, renderNote, renderUnsized, zoomedBucket, type ChartData, type Options, type Shape } from '../lib/treemap';
 
   // Choices are remembered per page in this browser. Storage can be missing or blocked, in which case the page keeps its defaults.
   const recall = (key: string) => {
@@ -579,6 +616,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
       grouping: section.querySelector<HTMLSelectElement>('select[name="grouping"]')!,
       size: section.querySelector<HTMLSelectElement>('select[name="size"]')!,
       color: section.querySelector<HTMLSelectElement>('select[name="color"]')!,
+      shape: section.querySelector<HTMLSelectElement>('select[name="shape"]')!,
     };
     const other = section.querySelector<HTMLInputElement>('input[name="otherBusiness"]')!;
     const toggle = other.closest<HTMLElement>('.toggle')!;
@@ -591,7 +629,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     const crumbCurrent = crumbs.querySelector<HTMLElement>('.crumb-current')!;
     const crumbPage = crumbs.querySelector<HTMLAnchorElement>('.crumb-page')!;
 
-    for (const name of ['grouping', 'color'] as const) {
+    for (const name of ['grouping', 'color', 'shape'] as const) {
       const saved = recall(key(name));
       const select = selects[name];
       if (saved !== null && [...select.options].some((option) => option.value === saved && !option.disabled)) select.value = saved;
@@ -630,6 +668,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
         otherBusiness: other.checked,
         visible: rows && rows.ids.size < rows.all ? rows.ids : undefined,
         zoom,
+        shape: selects.shape.value as Shape,
       };
       const layout = layoutTreemap(data, options);
       selects.size.value = layout.size.id;
@@ -671,10 +710,12 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
       zoom = undefined;
       draw();
     });
-    selects.color.addEventListener('change', () => {
-      remember(key('color'), selects.color.value);
-      draw();
-    });
+    for (const name of ['color', 'shape'] as const) {
+      selects[name].addEventListener('change', () => {
+        remember(key(name), selects[name].value);
+        draw();
+      });
+    }
     selects.size.addEventListener('change', () => {
       const zoomed = zoomedNow();
       sizeChoice[zoomed ? 'zoomed' : 'overview'] = selects.size.value;
