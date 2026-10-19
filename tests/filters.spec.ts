@@ -45,6 +45,14 @@ test.describe('Brands filters', () => {
     await expect(visibleRows(page, 'brands')).toHaveCount(total);
   });
 
+  test('independent brands have their own owner option, shown as plain text', async ({ page }) => {
+    await filter(page, 'owner').selectOption('independent');
+    const rows = visibleRows(page, 'brands');
+    await expect(rows).toContainText(['Audemars Piguet', 'Patek Philippe']);
+    expect(new Set(await column(rows, 2))).toEqual(new Set(['Independent']));
+    await expect(rows.locator('td:nth-child(2) a')).toHaveCount(0);
+  });
+
   test('filters combine', async ({ page }) => {
     await filter(page, 'origin').selectOption('Switzerland');
     await filter(page, 'segment').selectOption('haute');

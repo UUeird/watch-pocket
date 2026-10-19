@@ -26,10 +26,13 @@ const origins = distinct(brands.map((brand) => brand.data.origin));
 const makes = distinct(brands.flatMap((brand) => brand.data.makes));
 const tags = distinct(brands.flatMap((brand) => brand.data.tags));
 // The Owner filter lists groups, so a brand held by another brand matches none of its options.
+// An independent brand matches the Independent option instead.
 const groupOwnerIds = (brand: (typeof brands)[number]) =>
-  currentOwners(brand)
-    .filter((owner) => owner.collection === 'groups')
-    .map((owner) => owner.id);
+  brand.data.independent
+    ? ['independent']
+    : currentOwners(brand)
+        .filter((owner) => owner.collection === 'groups')
+        .map((owner) => owner.id);
 const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));
 ---
 
@@ -45,7 +48,10 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
       {
         name: 'owner',
         label: 'Owner',
-        options: groups.map((group) => ({ value: group.id, label: group.data.name })),
+        options: [
+          { value: 'independent', label: 'Independent' },
+          ...groups.map((group) => ({ value: group.id, label: group.data.name })),
+        ],
       },
       { name: 'origin', label: 'Nation of origin', options: options(origins) },
       { name: 'segment', label: 'Segment', options: options(segments) },

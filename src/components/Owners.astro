@@ -9,6 +9,7 @@ const { ownerName } = await loadCatalog();
 const owners = currentOwners(Astro.props.brand);
 ---
 
+{Astro.props.brand.data.independent && 'Independent'}
 {
   owners.map((owner, index) => (
     <>
