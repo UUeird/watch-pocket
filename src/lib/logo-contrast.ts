@@ -2,8 +2,8 @@
 // page, so on a shade one of three things happens:
 // - nothing, where the logo already stands out from the shade;
 // - a thin white halo along its edges, which lifts a dark logo off a dark shade;
-// - a white plate behind it, for a mid-toned logo (gold, orange, mid-gray) that a halo cannot rescue,
-//   since its strokes are no darker than the halo is light. On a plate it looks as it was drawn to.
+// - a thin dark halo, for a mid-toned or light logo (gold, orange, mid-gray) that a white halo cannot rescue,
+//   since its strokes are no darker than the halo is light. Its edges stand out from the shade without a box behind it.
 // A badge, a logo that fills most of its own frame (TAG Heuer's shield), carries its own ground and is set plain.
 
 type Rgb = [number, number, number];
@@ -68,7 +68,7 @@ function toneOf(src: string) {
   return tones.get(src)!;
 }
 
-// Sets each logo in these cells with a halo, a plate, or neither, for the shade in its cell's `--shade`.
+// Sets each logo in these cells with a white halo, a dark halo, or neither, for the shade in its cell's `--shade`.
 export function setLogos(root: HTMLElement) {
   for (const image of root.querySelectorAll<HTMLImageElement>('.brand.shaded img')) {
     const shade = image.parentElement!.style.getPropertyValue('--shade').trim();
@@ -78,7 +78,7 @@ export function setLogos(root: HTMLElement) {
       const { tone, cover } = measure;
       const ground = luminance(fromHex(shade));
       const treatment =
-        cover >= badge || contrast(tone, ground) >= enough ? 'plain' : contrast(tone, 1) >= enough ? 'halo' : 'plate';
+        cover >= badge || contrast(tone, ground) >= enough ? 'plain' : contrast(tone, 1) >= enough ? 'halo' : 'dark-halo';
       image.dataset.set = treatment;
     });
   }
