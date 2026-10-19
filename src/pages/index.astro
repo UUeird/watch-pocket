@@ -3,33 +3,33 @@ import Base from '../layouts/Base.astro';
 import { href, loadCatalog } from '../lib/catalog';
 
 const { brands, groups, references } = await loadCatalog();
-// Counts with thousands separators, and each noun's own plural.
-const count = (n: number, one: string, many: string) => `${n.toLocaleString('en-US')} ${n === 1 ? one : many}`;
+// Counts with thousands separators.
+const count = (n: number) => n.toLocaleString('en-US');
 const countries = new Set(brands.map((brand) => brand.data.origin).filter(Boolean));
 // The site's sections, each with what it holds and how big it is.
 const sections = [
   {
     title: 'Brands',
     path: '/brands/',
-    count: count(brands.length, 'brand', 'brands'),
+    count: count(brands.length),
     text: 'Every brand with its owner, origin and founding, sized and sorted on a treemap.',
   },
   {
     title: 'Ownership Groups',
     path: '/ownership-groups/',
-    count: count(groups.length, 'group', 'groups'),
+    count: count(groups.length),
     text: 'The corporations and families that hold the brands, and how much each holds.',
   },
   {
     title: 'Countries',
     path: '/countries/',
-    count: count(countries.size, 'country', 'countries'),
+    count: count(countries.size),
     text: 'Brands by the country they were founded in, whoever owns them today.',
   },
   {
     title: 'References',
     path: '/references/',
-    count: count(references.length, 'reference', 'references'),
+    count: count(references.length),
     text: 'Individual watches by reference number, with their metals, dials and bezels.',
   },
 ];
@@ -44,8 +44,10 @@ const sections = [
       sections.map((section) => (
         <li>
           <a href={href(section.path)}>
-            <h2>{section.title}</h2>
-            <span class="count">{section.count}</span>
+            <div class="head">
+              <span class="count">{section.count}</span>
+              <h2>{section.title}</h2>
+            </div>
             <p>{section.text}</p>
           </a>
         </li>
@@ -94,9 +96,21 @@ const sections = [
     color: var(--accent);
   }
 
+  .head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* The count, in the accent color, before the section's name. */
   .count {
-    color: var(--muted);
+    flex: none;
+    padding: 2px 10px;
+    color: var(--bg);
+    background: var(--accent);
+    border-radius: 999px;
     font-size: 0.875rem;
+    font-weight: 600;
     font-variant-numeric: tabular-nums;
   }
 
