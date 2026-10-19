@@ -346,19 +346,21 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 24px;
-    padding: 2px 4px;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 6% 8%;
     background: #ffffff;
     border-radius: 2px;
   }
 
+  /* A name is set on one line, centered in the plate at a size that grows with it. */
   .canvas :global(.tile .plate.named) {
     display: block;
     overflow: hidden;
-    padding: 5px 4px 0;
+    padding: 0 6px;
     color: #1c1b19;
-    font-size: 0.625rem;
-    line-height: 1.2;
+    font-size: var(--plate-font, 0.625rem);
+    line-height: var(--plate-line, 24px);
     text-align: center;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -366,7 +368,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
 
   .canvas :global(.tile .plate.more) {
     color: inherit;
-    font-size: 0.625rem;
+    font-size: var(--plate-font, 0.625rem);
     font-weight: 600;
     white-space: nowrap;
     background: transparent;

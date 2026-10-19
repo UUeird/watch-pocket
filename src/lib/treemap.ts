@@ -307,6 +307,36 @@ const tipLines = (cell: Cell, layout: Layout) => {
   return lines;
 };
 
+// The grid of plates for `count` brands in a space `width` by `height` pixels: the largest plates, kept near the
+// shape of a wordmark, that fit them all; or where even the smallest do not, as many of the smallest as fit.
+const plate = { minWidth: 50, minHeight: 24, maxHeight: 72, gap: 4, aspect: 2.4 };
+function plateGrid(width: number, height: number, count: number) {
+  const none = { columns: 0, rows: 0, width: 0, height: 0 };
+  if (count === 0 || width < plate.minWidth || height < plate.minHeight) return none;
+  let best = none;
+  for (let columns = 1; columns <= count; columns++) {
+    const rows = Math.ceil(count / columns);
+    const cellWidth = (width - (columns - 1) * plate.gap) / columns;
+    const cellHeight = (height - (rows - 1) * plate.gap) / rows;
+    // Plates keep near a wordmark's shape, so the smaller of the two sides decides their size.
+    const plateHeight = Math.min(cellHeight, cellWidth / plate.aspect, plate.maxHeight);
+    if (plateHeight < plate.minHeight || cellWidth < plate.minWidth) continue;
+    if (plateHeight > best.height) best = { columns, rows, width: Math.min(cellWidth, plateHeight * plate.aspect * 1.6), height: plateHeight };
+  }
+  // The plates then take up the height they were chosen for, a little taller than their shape asks where that
+  // leaves room, so the grid fills the space rather than stopping short of it.
+  if (best.columns > 0) {
+    const cellHeight = (height - (best.rows - 1) * plate.gap) / best.rows;
+    return { ...best, height: Math.min(cellHeight, best.height * 1.6) };
+  }
+  // Too many to show at the smallest size: fill the space with the smallest plates, and say how many are left.
+  const columns = Math.floor((width + plate.gap) / (plate.minWidth + plate.gap));
+  const rows = Math.floor((height + plate.gap) / (plate.minHeight + plate.gap));
+  // Too few plates to show any brands beside the "more" plate is not worth drawing.
+  if (columns * rows < 3) return none;
+  return { columns, rows, width: (width - (columns - 1) * plate.gap) / columns, height: plate.minHeight };
+}
+
 // A bucket drawn whole: its name, its count, a few of its brands' logos, and its median as a shade.
 function renderTile(cell: Cell, layout: Layout, scale: number) {
   const { bucket, value, median, preview = [] } = cell;
@@ -318,15 +348,13 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
   const tight = cell.width < 30 || cell.height < 30;
   const classes = ['tile', cell.shade === -1 && 'unshaded', shaded && cell.shade! >= darkFrom && 'on-dark', tight && 'tight'].filter(Boolean).join(' ');
   const style = position(cell) + (shaded ? `;--shade:${steps[cell.shade!]}` : '');
-  // Its brands sit in a grid of small plates below the name, a logo where there is one and the name where not,
-  // as many as fit. When some do not, the last plate says how many more there are.
-  // Plates are sized in pixels, so this is worked out at the size the chart is drawn. A plate is at least
-  // 50px wide and 24px tall with 4px between; the tile's padding and border take 18px across, and its
-  // name and count with their spacing about 56px down.
-  const columns = Math.floor((cell.width * scale - 18 + 4) / 54);
-  const rows = Math.floor((cell.height * scale - 56 + 4) / 28);
-  // Too few plates to show any brands beside the "more" plate is not worth drawing.
-  const room = columns * rows >= 3 ? columns * rows : 0;
+  // Its brands sit in a grid of plates below the name, a logo where there is one and the name where not.
+  // The plates grow to fill the tile when it has few brands, and shrink no smaller than 50 by 24px when it has
+  // many, where the last plate says how many more there are. Plates are sized in pixels, so this is worked out
+  // at the size the chart is drawn: the tile's padding and border take 18px across, and with its name and count
+  // and their spacing about 62px down.
+  const grid = plateGrid(cell.width * scale - 18, cell.height * scale - 62, preview.length);
+  const room = grid.columns * grid.rows;
   const shown = preview.length > room ? preview.slice(0, Math.max(0, room - 1)) : preview;
   const more = preview.length - shown.length;
   const plates = shown.map((point) =>
@@ -335,13 +363,14 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
       : `<span class="plate named">${escape(point.name)}</span>`,
   );
   if (room > 0 && more > 0) plates.push(`<span class="plate more">+${more} more</span>`);
+  const gridStyle = `grid-template-columns:repeat(${grid.columns},${grid.width.toFixed(1)}px);grid-auto-rows:${grid.height.toFixed(1)}px;--plate-font:${Math.min(16, Math.max(10, grid.height * 0.38)).toFixed(1)}px;--plate-line:${grid.height.toFixed(1)}px`;
   const roomForName = cell.width >= 40 && cell.height >= 22;
   const roomForCount = cell.width >= 40 && cell.height >= 38;
   return (
     `<button type="button" class="${classes}" style="${style}" data-zoom="${escape(bucket.key)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">` +
     (roomForName ? `<span class="tile-name">${escape(bucket.name)}</span>` : '') +
     (roomForCount ? `<span class="tile-count">${escape(layout.size.format(value))}</span>` : '') +
-    (plates.length > 0 ? `<span class="tile-logos" style="grid-template-columns:repeat(${columns},1fr)">${plates.join('')}</span>` : '') +
+    (plates.length > 0 ? `<span class="tile-logos" style="${gridStyle}">${plates.join('')}</span>` : '') +
     `</button>`
   );
 }
