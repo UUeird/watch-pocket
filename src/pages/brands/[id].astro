@@ -23,13 +23,13 @@ const holdings = holdingsOf(self);
 const collaborations = collaborationsOf(brand.id);
 const brandName = (modelId: string) => brands.find((other) => other.id === modelId.split('/')[0])?.data.name;
 const lines = linesOf(brand.id);
-const { name, origin, headquarters, manufacturing, periods, heritage, category, segment, tags, production, copycat, website, ownership, licensees, sources } =
+const { name, origin, headquarters, manufacturing, periods, heritage, makes, segment, tags, production, copycat, website, ownership, licensees, sources } =
   brand.data;
 const showStake = ownership.some((record) => record.stake !== undefined);
 const showBasis = ownership.some((record) => record.basis !== undefined);
 const showOwnerSources = ownership.some((record) => record.sources.length > 0);
 const showLicenseeSources = licensees.some((record) => record.sources.length > 0);
-const descriptors = [category !== 'watch-brand' && category, segment, ...tags, copycat && 'copycat', brandStatus(brand)];
+const descriptors = [segment, ...tags, copycat && 'copycat', brandStatus(brand)];
 ---
 
 <Base title={name}>
@@ -38,6 +38,14 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
   <p class="lede cap">{descriptors.filter((value) => typeof value === 'string').map(label).join(' · ')}</p>
 
   <dl class="facts">
+    {
+      makes.length > 0 && (
+        <>
+          <dt>Makes</dt>
+          <dd>{makes.map(label).join(', ').replace(/^./, (first) => first.toUpperCase())}</dd>
+        </>
+      )
+    }
     {
       origin && (
         <>

@@ -5,7 +5,7 @@ logoCredit:
   license: Public domain
 origin: Japan
 periods: [{ from: 1942 }]
-category: movement-maker
+makes: [movements]
 ownership:
   - owner: seiko-epson
 sources:

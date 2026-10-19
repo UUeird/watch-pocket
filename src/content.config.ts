@@ -159,9 +159,10 @@ const brands = defineCollection({
         status: z.enum(['active', 'dormant', 'defunct', 'revived']).optional(),
         // Market positioning. `broad` is for brands whose range spans several tiers.
         segment: z.enum(['haute', 'luxury', 'mid-range', 'budget', 'broad']).optional(),
-        category: z.enum(['watch-brand', 'movement-maker', 'case-maker']).default('watch-brand'),
+        // What the brand makes. A brand can make several; brands not yet looked into have none.
+        makes: z.array(z.enum(['mechanical-watches', 'quartz-watches', 'smartwatches', 'movements', 'cases'])).default([]),
         // What kind of business it is, where that is not simply a watch brand. A brand can carry several.
-        tags: z.array(z.enum(['fashion', 'direct-to-consumer', 'smartwatch', 'early-digital'])).default([]),
+        tags: z.array(z.enum(['fashion', 'direct-to-consumer', 'early-digital'])).default([]),
         copycat: z.boolean().default(false),
         // Watches made per year, with the year the figure refers to.
         production: z.object({ units: z.number().int(), year: z.number().int() }).optional(),

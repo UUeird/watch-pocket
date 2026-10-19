@@ -1,7 +1,7 @@
 name: Soprod
 origin: Switzerland
 periods: [{ from: 1966 }]
-category: movement-maker
+makes: [movements]
 ownership:
   - owner: festina-group
 sources:

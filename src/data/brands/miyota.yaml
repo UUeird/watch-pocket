@@ -1,7 +1,7 @@
 name: Miyota
 origin: Japan
 periods: [{ from: 1959 }]
-category: movement-maker
+makes: [movements]
 ownership:
   - owner: citizen
 sources:
