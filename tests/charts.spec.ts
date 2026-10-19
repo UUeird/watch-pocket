@@ -62,6 +62,12 @@ test.describe('Brands treemap', () => {
     await expect(page.locator(`${treemap} .legend .swatch`)).toHaveCount(0);
   });
 
+  test('shades by any measure that differs by brand, the size measure included', async ({ page }) => {
+    const color = page.locator(`${treemap} select[name="color"]`);
+    await expect(color.locator('option[value="annual-revenue"]')).toHaveCount(1);
+    await expect(color.locator('option[value="brands"]')).toHaveCount(0);
+  });
+
   test('sizes the overview only by measures that add up', async ({ page }) => {
     await expect(page.locator(`${treemap} select[name="size"] option[value="age"]`)).toHaveJSProperty('disabled', true);
     await expect(page.locator(`${treemap} select[name="size"] option[value="brands"]`)).toHaveJSProperty('disabled', false);

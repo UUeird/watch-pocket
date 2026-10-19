@@ -23,7 +23,8 @@ const coverage = Object.fromEntries(metrics.map((metric) => [metric.id, placeabl
 // Measures that add up can size the whole chart; the rest size brands only within one box.
 const totals = metrics.filter((metric) => metric.additive);
 const perBrand = metrics.filter((metric) => !metric.additive);
-const colors = metrics.filter((metric) => !metric.additive);
+// Any measure that differs by brand can shade it, the size measure included; a count of brands is 1 for each, so it cannot.
+const colors = metrics.filter((metric) => !metric.uniform);
 // Measures with a group-level figure, for which a group's other business can be shown.
 const withOwn = metrics.filter((metric) => data.groupings.some((grouping) => grouping.buckets.some((bucket) => bucket.values?.[metric.id] !== undefined)));
 const options: Options = { grouping: data.groupings[0].id, size: 'brands', color: 'age', otherBusiness: true, ...initial };
