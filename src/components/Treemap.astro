@@ -397,22 +397,41 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     border-radius: 2px;
   }
 
-  /* A shade along the foot of the cell, or filling it where the cell is too small for a bar. */
-  .canvas :global(.brand.barred) {
-    border-bottom: 5px solid var(--shade, #ffffff);
-  }
-
-  .canvas :global(.brand.filled) {
+  /* A brand shaded by a measure is filled with its step. */
+  .canvas :global(.brand.shaded) {
     background: var(--shade, #ffffff);
+    border-color: color-mix(in srgb, #1c1b19 18%, transparent);
   }
 
   /* No figure for the shading measure: a faint hatch, so it never reads as the lightest step. */
-  .canvas :global(.brand.unshaded.barred) {
-    border-bottom: 5px solid #e8e5dd;
+  .canvas :global(.brand.unshaded) {
+    background: repeating-linear-gradient(135deg, #ffffff 0 3px, #e2dfd7 3px 4px);
   }
 
-  .canvas :global(.brand.unshaded.filled) {
-    background: repeating-linear-gradient(135deg, #ffffff 0 3px, #e2dfd7 3px 4px);
+  /* A soft white glow hugging the logo or name, so a dark mark stays legible on a dark shade.
+     Sizes inside it are taken from the cell, which is a size container for that reason. */
+  .canvas :global(.brand.shaded) {
+    container-type: size;
+  }
+
+  .canvas :global(.glow) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    /* The solid center reaches past the mark's ends, so only the padding fades into the shade. */
+    padding: min(10px, 10cqh) min(24px, 10cqw);
+    background: radial-gradient(closest-side, rgb(255 255 255 / 0.97) 72%, rgb(255 255 255 / 0.5) 88%, rgb(255 255 255 / 0) 100%);
+  }
+
+  .canvas :global(.brand .glow img) {
+    max-width: 72cqw;
+    max-height: 52cqh;
+  }
+
+  .canvas :global(.brand .glow span) {
+    max-width: 80cqw;
   }
 
   /* Made under license by the group, not owned by it. */

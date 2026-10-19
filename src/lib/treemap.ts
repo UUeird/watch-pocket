@@ -291,8 +291,6 @@ const position = ({ x, y, width, height }: Cell) =>
 // What fits in a cell, judged in layout units (about a pixel each at full width).
 const showsLogo = ({ width, height }: Cell) => width >= 70 && height >= 40;
 const showsName = ({ width, height }: Cell) => width >= 46 && height >= 16;
-// A brand too small for a shade bar along its foot is filled with the shade instead.
-const tiny = ({ width, height }: Cell) => width < 18 || height < 18;
 
 // The lines of a brand's tooltip: name, then where it sits, then its figures.
 const tipLines = (cell: Cell, layout: Layout) => {
@@ -367,9 +365,6 @@ export function renderCells(layout: Layout, scale = 1) {
       }
       const point = cell.point!;
       const lines = tipLines(cell, layout);
-      const classes = ['brand', cell.licensed && 'licensed', cell.shade !== undefined && (tiny(cell) ? 'filled' : 'barred'), cell.shade === -1 && 'unshaded']
-        .filter(Boolean)
-        .join(' ');
       const shade = cell.shade !== undefined && cell.shade >= 0 ? `;--shade:${steps[cell.shade]}` : '';
       const content =
         showsLogo(cell) && point.logo
@@ -382,7 +377,12 @@ export function renderCells(layout: Layout, scale = 1) {
               : cell.width >= 30 && cell.height >= 14
                 ? `<span class="small">${escape(point.name)}</span>`
                 : '';
-      return `<a class="${classes}" style="${position(cell)}${shade}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
+      // A shaded cell is filled with its shade, and whatever it shows sits on a white glow so a dark logo stays legible.
+      const classes = ['brand', cell.licensed && 'licensed', cell.shade !== undefined && 'shaded', cell.shade === -1 && 'unshaded']
+        .filter(Boolean)
+        .join(' ');
+      const mark = content && cell.shade !== undefined ? `<span class="glow">${content}</span>` : content;
+      return `<a class="${classes}" style="${position(cell)}${shade}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${mark}</a>`;
     })
     .join('');
 }
