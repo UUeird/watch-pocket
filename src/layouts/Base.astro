@@ -43,6 +43,44 @@ const current = (path: string) => {
   </body>
 </html>
 
+<script>
+  // Column labels stick just under the site header, so they need its height, which changes as the nav wraps.
+  const header = document.querySelector('header')!;
+  new ResizeObserver(() => {
+    document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
+  }).observe(header);
+
+  // A scrolling wrapper holds the labels inside it, so a table that fits drops the scrollbar and its labels stick to the page.
+  // One that still has to scroll sideways has its labels slid down to sit under the header as the page scrolls past it.
+  // The slide is a scroll-driven animation, which keeps pace with the scroll; this only measures where it starts and how far it goes.
+  // Browsers without those animations get the slide from a scroll listener, a frame behind.
+  const driven = CSS.supports('animation-timeline: scroll()');
+  const wraps = [...document.querySelectorAll<HTMLElement>('.table-wrap')];
+  const measure = () => {
+    for (const wrap of wraps) {
+      if (wrap.classList.contains('fits')) continue;
+      const table = wrap.querySelector('table')!;
+      const start = table.getBoundingClientRect().top + scrollY - header.offsetHeight;
+      const room = table.offsetHeight - table.tHead!.offsetHeight;
+      wrap.style.setProperty('--lift-start', `${start}px`);
+      wrap.style.setProperty('--lift-end', `${start + room}px`);
+      wrap.style.setProperty('--lift-room', `${room}px`);
+      if (!driven) wrap.style.setProperty('--lift', `${Math.min(Math.max(scrollY - start, 0), room)}px`);
+    }
+  };
+  for (const wrap of wraps) {
+    const table = wrap.querySelector('table')!;
+    new ResizeObserver(() => {
+      wrap.classList.remove('fits');
+      wrap.classList.toggle('fits', table.offsetWidth <= wrap.clientWidth);
+      measure();
+    }).observe(wrap);
+  }
+  // Anything above a table that grows or shrinks moves where its slide starts.
+  new ResizeObserver(measure).observe(document.body);
+  if (!driven) addEventListener('scroll', measure, { passive: true });
+</script>
+
 <style is:global>
   :root {
     --bg: #faf9f6;
@@ -179,6 +217,34 @@ const current = (path: string) => {
     overflow-x: auto;
   }
 
+  .table-wrap.fits {
+    overflow-x: visible;
+  }
+
+  /* A table too wide for the window scrolls sideways, so its labels are slid down by script rather than stuck. */
+  .table-wrap:not(.fits) thead th {
+    position: relative;
+    top: 0;
+    translate: 0 var(--lift, 0);
+  }
+
+  @supports (animation-timeline: scroll()) {
+    .table-wrap:not(.fits) thead th {
+      animation: lift linear both;
+      animation-timeline: scroll(root block);
+      animation-range: var(--lift-start, 0) var(--lift-end, 0);
+    }
+  }
+
+  @keyframes lift {
+    from {
+      translate: 0 0;
+    }
+    to {
+      translate: 0 var(--lift-room, 0);
+    }
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -200,6 +266,16 @@ const current = (path: string) => {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+  }
+
+  /* The column labels stay in view under the site header; their rule is a shadow, since collapsed borders don't travel with them. */
+  thead th {
+    position: sticky;
+    top: var(--header-height, 0);
+    z-index: 1;
+    background: var(--surface);
+    border-bottom: none;
+    box-shadow: inset 0 -1px 0 var(--line);
   }
 
   td.num {
