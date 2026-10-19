@@ -1,4 +1,10 @@
 name: Squale
+logo: ../logos/squale.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Squalelogoblue.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Dng25
 origin: Switzerland
 periods: [{ from: 1959 }]
 segment: mid-range

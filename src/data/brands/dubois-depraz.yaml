@@ -1,4 +1,10 @@
 name: Dubois-Dépraz
+logo: ../logos/dubois-depraz.gif
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:DD-Sigle-RVB.gif
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Christian Golay
 origin: Switzerland
 periods: [{ from: 1901 }]
 category: movement-maker

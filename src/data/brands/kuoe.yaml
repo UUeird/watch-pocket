@@ -1,4 +1,8 @@
 name: Kuoe
+logo: ../logos/kuoe.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:KUOE_logo.png
+  license: Public domain
 origin: Japan
 status: active
 website: https://www.kuoe-en.com

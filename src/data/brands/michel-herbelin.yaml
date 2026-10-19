@@ -1,4 +1,10 @@
 name: Michel Herbelin
+logo: ../logos/michel-herbelin.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Michel_Herbelin_logo.jpg
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Michel Herbelin
 origin: France
 periods: [{ from: 1947 }]
 sources:

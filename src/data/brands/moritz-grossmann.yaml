@@ -1,4 +1,8 @@
 name: Moritz Grossmann
+logo: ../logos/moritz-grossmann.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Moritz_Grossmann_Logo.svg
+  license: Public domain
 origin: Germany
 periods: [{ from: 2008 }]
 heritage:

@@ -1,4 +1,8 @@
 name: Nine West
+logo: ../logos/nine-west.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Nine_West_logo.png
+  license: Public domain
 origin: United States
 status: active
 tags:

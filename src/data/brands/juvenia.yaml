@@ -1,4 +1,11 @@
 name: Juvenia
+logo: ../logos/juvenia.png
+logomark: ../logos/juvenia-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo-juvenia.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Asia Commercial Holdings Ltd.
 origin: Switzerland
 status: active
 website: https://www.juvenia.ch

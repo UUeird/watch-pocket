@@ -1,4 +1,8 @@
 name: Wempe
+logo: ../logos/wempe.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Wempe_Chronometerwerke_logo.svg
+  license: Public domain
 origin: Germany
 periods: [{ from: 1878 }]
 sources:

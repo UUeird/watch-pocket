@@ -1,4 +1,10 @@
 name: Cortebert
+logo: ../logos/cortebert.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Cortébert_logo.jpg
+  license: CC BY-SA 3.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+  author: Wallstonekraft
 periods: [{ from: 1790 }]
 website: https://cortebert1790.com
 sources:

@@ -1,4 +1,8 @@
 name: Cerruti
+logo: ../logos/cerruti.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Cerruti_logo.svg
+  license: Public domain
 origin: Italy
 status: active
 website: https://www.cerruti.com

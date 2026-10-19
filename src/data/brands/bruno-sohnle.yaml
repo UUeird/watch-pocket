@@ -1,4 +1,8 @@
 name: Bruno Söhnle
+logo: ../logos/bruno-sohnle.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Bruno_Söhnle_Logo.png
+  license: Public domain
 origin: Germany
 periods: [{ from: 2000 }]
 sources:

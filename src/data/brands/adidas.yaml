@@ -1,4 +1,8 @@
 name: Adidas
+logo: ../logos/adidas.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Adidas_2022_logo.svg
+  license: Public domain
 origin: Germany
 tags: [fashion]
 licensees:

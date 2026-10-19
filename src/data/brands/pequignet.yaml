@@ -1,4 +1,9 @@
 name: Pequignet
+logo: ../logos/pequignet.svg
+logomark: ../logos/pequignet-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Pequignet_logo.svg
+  license: Public domain
 origin: France
 periods: [{ from: 1973 }]
 sources:

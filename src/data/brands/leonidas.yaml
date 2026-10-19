@@ -1,4 +1,10 @@
 name: Leonidas
+logo: ../logos/leonidas.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Leonidas.jpg
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: EMore98
 origin: Switzerland
 status: active
 website: https://www.leonidaswatch.com

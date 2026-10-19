@@ -1,4 +1,11 @@
 name: Fortis
+logo: ../logos/fortis.png
+logomark: ../logos/fortis-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Fortis_Logo_Subline_RGB_Black.png
+  license: CC0
+  licenseUrl: https://creativecommons.org/publicdomain/zero/1.0
+  author: Fortis Watches AG
 origin: Switzerland
 periods: [{ from: 1912 }]
 segment: mid-range

@@ -1,4 +1,9 @@
 name: Seagull
+logo: ../logos/seagull.png
+logomark: ../logos/seagull-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Sea-Gull_logo.png
+  license: Public domain
 origin: China
 periods: [{ from: 1955 }]
 sources:

@@ -1,4 +1,8 @@
 name: Fastrack
+logo: ../logos/fastrack.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Fastrack_logo.png
+  license: Public domain
 origin: India
 periods: [{ from: 1998 }]
 ownership:

@@ -1,4 +1,9 @@
 name: Valentino
+logo: ../logos/valentino.svg
+logomark: ../logos/valentino-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Valentino_logo.svg
+  license: Public domain
 origin: Italy
 status: active
 website: https://www.valentino.com

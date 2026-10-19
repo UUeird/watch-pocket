@@ -1,4 +1,9 @@
 name: Grovana
+logo: ../logos/grovana.svg
+logomark: ../logos/grovana-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Grovana_logo.svg
+  license: Public domain
 origin: Switzerland
 status: active
 website: https://www.grovana.ch

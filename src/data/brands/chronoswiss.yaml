@@ -1,4 +1,10 @@
 name: Chronoswiss
+logo: ../logos/chronoswiss.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Chronoswiss.png
+  license: CC BY-SA 3.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+  author: Chronoswiss
 origin: Germany
 periods: [{ from: 1983 }]
 website: https://chronoswiss.com

@@ -1,4 +1,8 @@
 name: Laurent Ferrier
+logo: ../logos/laurent-ferrier.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Laurent_Ferrier_Logo.png
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 2009 }]
 segment: haute

@@ -1,4 +1,8 @@
 name: Puma
+logo: ../logos/puma.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Puma-logo-(text).svg
+  license: Public domain
 status: active
 website: https://us.puma.com
 sources:

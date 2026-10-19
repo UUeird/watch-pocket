@@ -1,4 +1,8 @@
 name: Roamer
+logo: ../logos/roamer.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Roamer_Logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1888 }]
 segment: mid-range

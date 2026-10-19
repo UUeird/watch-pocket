@@ -1,3 +1,7 @@
 name: Aristo
+logo: ../logos/aristo.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Aristo_300.jpg
+  license: Public domain
 origin: Germany
 status: active

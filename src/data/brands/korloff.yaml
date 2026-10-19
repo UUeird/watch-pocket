@@ -1,4 +1,11 @@
 name: Korloff
+logo: ../logos/korloff.png
+logomark: ../logos/korloff-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Korloff.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Korloff
 origin: France
 status: active
 website: https://korloff.com

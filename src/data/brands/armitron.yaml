@@ -1,4 +1,8 @@
 name: Armitron
+logo: ../logos/armitron.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Armitron_Logo.svg
+  license: Public domain
 origin: United States
 periods: [{ from: 1956 }]
 tags:

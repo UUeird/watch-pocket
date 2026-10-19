@@ -1,4 +1,10 @@
 name: Meistersinger
+logo: ../logos/meistersinger.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:MeisterSinger_TransparentLogo.png
+  license: CC BY-SA 3.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+  author: MeisterSinger GmbH & Co. KG
 origin: Germany
 status: active
 website: https://meistersinger.com

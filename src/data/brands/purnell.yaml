@@ -1,4 +1,8 @@
 name: Purnell
+logo: ../logos/purnell.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Purnell_(company)_Logo.svg
+  license: Public domain
 sources:
   - https://www.dialicious.com/en/purnell
   - https://www.wikidata.org/wiki/Q116814656

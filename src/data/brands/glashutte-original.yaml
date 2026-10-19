@@ -1,4 +1,8 @@
 name: Glashütte Original
+logo: ../logos/glashutte-original.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Glashütter_Uhrenbetrieb_logo.svg
+  license: Public domain
 origin: Germany
 periods: [{ from: 1994 }]
 heritage:

@@ -1,4 +1,11 @@
 name: Valbray
+logo: ../logos/valbray.jpg
+logomark: ../logos/valbray-logomark.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Valbray-logo.jpg
+  license: CC BY 4.0
+  licenseUrl: https://creativecommons.org/licenses/by/4.0
+  author: Valbray
 origin: Switzerland
 sources:
   - https://www.dialicious.com/en/valbray

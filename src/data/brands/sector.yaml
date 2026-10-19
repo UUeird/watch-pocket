@@ -1,4 +1,8 @@
 name: Sector
+logo: ../logos/sector.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Sector_-_logo_(Italy,_1991).svg
+  license: Public domain
 origin: Italy
 periods: [{ from: 1973 }]
 ownership:

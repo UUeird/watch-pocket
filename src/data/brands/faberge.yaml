@@ -1,4 +1,10 @@
 name: Fabergé
+logo: ../logos/faberge.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Fabergé_2026_Logo.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Raisedbygeeks
 status: active
 website: https://www.faberge.com
 sources:

@@ -1,4 +1,8 @@
 name: Bodet
+logo: ../logos/bodet.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Bodet_Logo.svg
+  license: Public domain
 origin: France
 periods: [{ from: 1868 }]
 website: https://www.bodet-1868.com

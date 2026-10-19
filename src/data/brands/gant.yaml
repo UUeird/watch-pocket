@@ -1,4 +1,10 @@
 name: Gant
+logo: ../logos/gant.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:GANT_Logo_2024.png
+  license: CC0
+  licenseUrl: https://creativecommons.org/publicdomain/zero/1.0
+  author: GANT
 origin: United States
 status: active
 website: https://gant.com

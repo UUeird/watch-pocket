@@ -1,4 +1,8 @@
 name: Lotus
+logo: ../logos/lotus.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Lotus_Watches_logo.svg
+  license: Public domain
 origin: Spain
 periods: [{ from: 1980 }]
 sources:

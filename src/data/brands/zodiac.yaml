@@ -1,4 +1,11 @@
 name: Zodiac
+logo: ../logos/zodiac.jpg
+logomark: ../logos/zodiac-logomark.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:ZO_parentlogo_SQUARE.jpg
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: BlackBear51
 origin: Switzerland
 periods: [{ from: 1882 }]
 segment: mid-range

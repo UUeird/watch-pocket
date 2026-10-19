@@ -1,4 +1,10 @@
 name: Boegli
+logo: ../logos/boegli.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Boegli_logotype.svg
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Jelkulv90
 origin: Switzerland
 status: active
 website: https://boegli.com

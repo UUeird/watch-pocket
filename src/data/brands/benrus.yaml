@@ -1,3 +1,7 @@
 name: Benrus
+logo: ../logos/benrus.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Benrus_Logo.png
+  license: Public domain
 origin: United States
 status: revived

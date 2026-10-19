@@ -1,4 +1,8 @@
 name: Hanhart
+logo: ../logos/hanhart.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Hanhart_(Unternehmen)_logo.svg
+  license: Public domain
 origin: Germany
 periods: [{ from: 1882 }]
 sources:

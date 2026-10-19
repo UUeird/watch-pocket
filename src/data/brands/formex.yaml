@@ -1,4 +1,8 @@
 name: Formex
+logo: ../logos/formex.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Formex_Logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1999 }]
 website: https://formexwatch.com

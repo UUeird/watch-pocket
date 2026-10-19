@@ -1,4 +1,9 @@
 name: HMT
+logo: ../logos/hmt.svg
+logomark: ../logos/hmt-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:HMT.svg
+  license: Public domain
 origin: India
 periods: [{ from: 1953 }]
 sources:

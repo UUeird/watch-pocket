@@ -1,4 +1,10 @@
 name: Milus
+logo: ../logos/milus.webp
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Milus.webp
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Deriajer
 origin: Switzerland
 periods: [{ from: 1919 }]
 website: https://milus.com
