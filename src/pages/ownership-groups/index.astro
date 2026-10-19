@@ -11,6 +11,9 @@ const { groups, brandsOf, licensesOf, holdingsOf } = catalog;
 const data = chartData(catalog, { groupsOnly: true });
 const holdings = groups.map((group) => ({ group, records: holdingsOf({ collection: 'groups', id: group.id }) }));
 
+// The image a brand's tile shows: its full logo, or else the symbol alone.
+const logoOf = (brand: Brand) => brand.data.logo ?? brand.data.logomark;
+
 // A brand as it sits in a group: owned outright, owned in part (with the stake), or made under license.
 type Tile = { brand: Brand; stake?: number | 'unknown'; licensed?: boolean };
 
@@ -87,7 +90,7 @@ const stakeNote = (stake: Tile['stake']) =>
           </p>
           {tiles.length > 0 && (
             <ul class="tiles">
-              {tiles.map(({ brand: { id, data: { name, logo } }, stake, licensed }) => (
+              {tiles.map(({ brand, stake, licensed }) => ({ id: brand.id, name: brand.data.name, logo: logoOf(brand), stake, licensed })).map(({ id, name, logo, stake, licensed }) => (
                 <li>
                   <a class:list={['tile', { licensed }]} href={href(`/brands/${id}/`)}>
                     <span class="plate">

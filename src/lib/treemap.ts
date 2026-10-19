@@ -15,6 +15,10 @@ export type Point = {
   name: string;
   href: string;
   logo?: string;
+  // The full logo's width over its height, to judge how large it would draw in a given space.
+  logoAspect?: number;
+  // The symbol alone, used where the full logo would draw too small to read.
+  logomark?: string;
   // The bucket it sits in under each grouping, by grouping id. Several for a brand with part-owners.
   buckets: Record<string, string[]>;
   // The group making it under license. For a measure that counts licensed brands, it sits there instead of with its owner.
@@ -238,7 +242,7 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
       // Brands with logos lead the preview, then the rest; within each, the highest on the color measure, or else the alphabet.
       const rank = (point: Point) => (color ? (point.values[color.id] ?? -1) : 0);
       const preview = [...d.points].sort(
-        (a, b) => Number(Boolean(b.logo)) - Number(Boolean(a.logo)) || rank(b) - rank(a) || a.name.localeCompare(b.name),
+        (a, b) => Number(Boolean(b.logo || b.logomark)) - Number(Boolean(a.logo || a.logomark)) || rank(b) - rank(a) || a.name.localeCompare(b.name),
       );
       return [{ kind: 'tile', ...shape, bucket: d.bucket, median: middle, preview, shade: color ? (middle === undefined ? -1 : shadeOf(middle, breaks)) : undefined }];
     }
@@ -289,7 +293,6 @@ const position = ({ x, y, width, height }: Cell) =>
   `left:${pct(x, box.width)};top:${pct(y, box.height)};width:${pct(width, box.width)};height:${pct(height, box.height)}`;
 
 // What fits in a cell, judged in layout units (about a pixel each at full width).
-const showsLogo = ({ width, height }: Cell) => width >= 70 && height >= 40;
 const showsName = ({ width, height }: Cell) => width >= 46 && height >= 16;
 
 // The lines of a brand's tooltip: name, then where it sits, then its figures.
@@ -369,6 +372,16 @@ function plateGrid(width: number, height: number, count: number) {
   return { columns, rows, width: (width - (columns - 1) * plate.gap) / columns, height: plate.minHeight };
 }
 
+// Which image to show for a brand in a space `width` by `height` pixels: the full logo where it draws at least
+// 14px tall, enough to read a wordmark; else the logomark, where the brand has one and the space is at least
+// 14px each way. None means the space shows the brand's name instead, which reads better than a tiny logo.
+const readable = 14;
+function logoFor(point: Point, width: number, height: number) {
+  if (point.logo && Math.min(height, width / (point.logoAspect ?? 3)) >= readable) return point.logo;
+  if (point.logomark && Math.min(width, height) >= readable) return point.logomark;
+  return undefined;
+}
+
 // A bucket drawn whole: its name, its count, a few of its brands' logos, and its median as a shade.
 function renderTile(cell: Cell, layout: Layout, scale: number) {
   const { bucket, value, median, preview = [] } = cell;
@@ -389,11 +402,12 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
   const room = grid.columns * grid.rows;
   const shown = preview.length > room ? preview.slice(0, Math.max(0, room - 1)) : preview;
   const more = preview.length - shown.length;
-  const plates = shown.map((point) =>
-    point.logo
-      ? `<span class="plate"><img src="${escape(point.logo)}" alt="" loading="lazy"></span>`
-      : `<span class="plate named">${fittedName(point.name, grid.width - 8, grid.height - 4, Math.min(18, grid.height * 0.45))}</span>`,
-  );
+  const plates = shown.map((point) => {
+    const image = logoFor(point, grid.width - 8, grid.height - 4);
+    return image
+      ? `<span class="plate"><img src="${escape(image)}" alt="" loading="lazy"></span>`
+      : `<span class="plate named">${fittedName(point.name, grid.width - 8, grid.height - 4, Math.min(18, grid.height * 0.45))}</span>`;
+  });
   if (room > 0 && more > 0) plates.push(`<span class="plate more">+${more} more</span>`);
   const gridStyle = `grid-template-columns:repeat(${grid.columns},${grid.width.toFixed(1)}px);grid-auto-rows:${grid.height.toFixed(1)}px;--plate-font:${Math.min(16, Math.max(10, grid.height * 0.38)).toFixed(1)}px`;
   const roomForName = cell.width >= 40 && cell.height >= 22;
@@ -437,9 +451,9 @@ export function renderCells(layout: Layout, scale = 1) {
       const point = cell.point!;
       const lines = tipLines(cell, layout);
       const shade = cell.shade !== undefined && cell.shade >= 0 ? `;--shade:${steps[cell.shade]}` : '';
-      const content =
-        showsLogo(cell) && point.logo
-          ? `<img src="${escape(point.logo)}" alt="" loading="lazy">`
+      const image = cell.width >= 16 && cell.height >= 16 ? logoFor(point, cell.width * scale * 0.8, cell.height * scale * 0.6) : undefined;
+      const content = image
+          ? `<img src="${escape(image)}" alt="" loading="lazy">`
           : brandName(point.name, cell.width * scale - 6, cell.height * scale - 6);
       // A shaded cell is filled with its shade. A logo gets a white halo so a dark mark stays legible; a name
       // turns white on the darker steps instead.

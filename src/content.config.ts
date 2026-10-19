@@ -29,18 +29,25 @@ const revenue = z
   })
   .default([]);
 
-// A brand's or group's logo, with where the file came from and on what terms.
+// Where a logo file came from and on what terms. `author` and `licenseUrl` are for licenses that require a credit.
+const credit = z
+  .object({ source: z.url(), license: z.string(), licenseUrl: z.url().optional(), author: z.string().optional() })
+  .optional();
+
+// A brand's or group's logo, with where the file came from and on what terms. Image files are given as a path from
+// the record's own file, e.g. `../logos/rolex.svg`; a missing file fails the build.
 const logoFields = (image: SchemaContext['image']) => ({
-  // An image file, given as a path from the record's own file, e.g. `../logos/rolex.svg`. A missing file fails the build.
+  // The full logo, as the brand shows it: a wordmark, or a symbol and wordmark together.
   logo: image().optional(),
-  // `author` and `licenseUrl` are for licenses that require a credit.
-  logoCredit: z
-    .object({ source: z.url(), license: z.string(), licenseUrl: z.url().optional(), author: z.string().optional() })
-    .optional(),
+  logoCredit: credit,
+  // The symbol alone, without the wordmark (Omega's Ω, TAG Heuer's shield), for spaces too small or too square
+  // for the full logo. It may be its own file or cropped from the full logo; it is never redrawn.
+  logomark: image().optional(),
+  logomarkCredit: credit,
 });
-const creditHasLogo = (record: { logo?: unknown; logoCredit?: unknown }) =>
-  record.logoCredit === undefined || record.logo !== undefined;
-const creditNeedsLogo = { message: 'A `logoCredit` needs a `logo` to credit.' };
+const creditHasLogo = (record: { logo?: unknown; logoCredit?: unknown; logomark?: unknown; logomarkCredit?: unknown }) =>
+  (record.logoCredit === undefined || record.logo !== undefined) && (record.logomarkCredit === undefined || record.logomark !== undefined);
+const creditNeedsLogo = { message: 'A `logoCredit` needs a `logo` to credit, and a `logomarkCredit` a `logomark`.' };
 
 const groups = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/data/groups' }),
