@@ -1,6 +1,7 @@
 name: Soprod
 origin: Switzerland
 periods: [{ from: 1966 }]
+segment: mid-range
 makes: [movements]
 ownership:
   - owner: festina-group

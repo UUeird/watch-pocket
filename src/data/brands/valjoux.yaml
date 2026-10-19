@@ -1,6 +1,7 @@
 name: Valjoux
 origin: Switzerland
 periods: [{ from: 1901 }]
+segment: mid-range
 makes: [movements]
 ownership:
   - owner: swatch-group

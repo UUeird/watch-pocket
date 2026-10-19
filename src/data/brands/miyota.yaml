@@ -1,6 +1,7 @@
 name: Miyota
 origin: Japan
 periods: [{ from: 1959 }]
+segment: budget
 makes: [movements]
 ownership:
   - owner: citizen

@@ -1,6 +1,7 @@
 name: Lemania
 origin: Switzerland
 periods: [{ from: 1884 }]
+segment: luxury
 makes: [movements]
 ownership:
   - owner: swatch-group

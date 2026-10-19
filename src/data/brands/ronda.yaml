@@ -6,6 +6,7 @@ logoCredit:
   license: Public domain
 origin: Switzerland
 periods: [{ from: 1946 }]
+segment: budget
 makes: [movements]
 sources:
   - https://en.wikipedia.org/wiki/Ronda_(watchmaker)

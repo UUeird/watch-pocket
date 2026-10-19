@@ -1,6 +1,7 @@
 name: Unitas
 origin: Switzerland
 periods: [{ from: 1918 }]
+segment: mid-range
 makes: [movements]
 ownership:
   - owner: swatch-group
