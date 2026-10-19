@@ -377,12 +377,12 @@ export function renderCells(layout: Layout, scale = 1) {
               : cell.width >= 30 && cell.height >= 14
                 ? `<span class="small">${escape(point.name)}</span>`
                 : '';
-      // A shaded cell is filled with its shade, and whatever it shows sits on a white glow so a dark logo stays legible.
-      const classes = ['brand', cell.licensed && 'licensed', cell.shade !== undefined && 'shaded', cell.shade === -1 && 'unshaded']
+      // A shaded cell is filled with its shade. A logo gets a white halo so a dark mark stays legible; a name
+      // turns white on the darker steps instead.
+      const classes = ['brand', cell.licensed && 'licensed', cell.shade !== undefined && 'shaded', cell.shade === -1 && 'unshaded', (cell.shade ?? -1) >= darkFrom && 'on-dark']
         .filter(Boolean)
         .join(' ');
-      const mark = content && cell.shade !== undefined ? `<span class="glow">${content}</span>` : content;
-      return `<a class="${classes}" style="${position(cell)}${shade}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${mark}</a>`;
+      return `<a class="${classes}" style="${position(cell)}${shade}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
     })
     .join('');
 }

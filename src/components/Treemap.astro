@@ -408,30 +408,15 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     background: repeating-linear-gradient(135deg, #ffffff 0 3px, #e2dfd7 3px 4px);
   }
 
-  /* A soft white glow hugging the logo or name, so a dark mark stays legible on a dark shade.
-     Sizes inside it are taken from the cell, which is a size container for that reason. */
-  .canvas :global(.brand.shaded) {
-    container-type: size;
+  /* A white halo tracing the edges of the logo, so a dark mark stays legible on a dark shade. Stacked shadows give a solid edge that fades out. A logo whose file has a solid background
+     gets its halo around that background. */
+  .canvas :global(.brand.shaded img) {
+    filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 2px #ffffff)
+      drop-shadow(0 0 4px rgb(255 255 255 / 0.85));
   }
 
-  .canvas :global(.glow) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    max-height: 100%;
-    /* The solid center reaches past the mark's ends, so only the padding fades into the shade. */
-    padding: min(10px, 10cqh) min(24px, 10cqw);
-    background: radial-gradient(closest-side, rgb(255 255 255 / 0.97) 72%, rgb(255 255 255 / 0.5) 88%, rgb(255 255 255 / 0) 100%);
-  }
-
-  .canvas :global(.brand .glow img) {
-    max-width: 72cqw;
-    max-height: 52cqh;
-  }
-
-  .canvas :global(.brand .glow span) {
-    max-width: 80cqw;
+  .canvas :global(.brand.on-dark) {
+    color: #ffffff;
   }
 
   /* Made under license by the group, not owned by it. */
