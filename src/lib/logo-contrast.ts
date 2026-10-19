@@ -4,11 +4,15 @@
 // - a thin white halo along its edges, which lifts a dark logo off a dark shade;
 // - a white plate behind it, for a mid-toned logo (gold, orange, mid-gray) that a halo cannot rescue,
 //   since its strokes are no darker than the halo is light. On a plate it looks as it was drawn to.
+// A badge, a logo that fills most of its own frame (TAG Heuer's shield), carries its own ground and is set plain.
 
 type Rgb = [number, number, number];
 
 // Contrast at which a mark is taken to stand out, as for large text.
 const enough = 4.5;
+
+// Share of its frame a logo must ink to count as a badge.
+const badge = 0.75;
 
 const channel = (value: number) => {
   const v = value / 255;
@@ -18,8 +22,8 @@ const luminance = ([r, g, b]: Rgb) => 0.2126 * channel(r) + 0.7152 * channel(g) 
 const contrast = (a: number, b: number) => (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
 const fromHex = (hex: string): Rgb => [1, 3, 5].map((index) => parseInt(hex.slice(index, index + 2), 16)) as Rgb;
 
-// The average color of a logo's inked pixels, by luminance. Worked out once per file.
-const tones = new Map<string, Promise<number | undefined>>();
+// The average color of a logo's inked pixels, by luminance, and the share of its frame they cover. Worked out once per file.
+const tones = new Map<string, Promise<{ tone: number; cover: number } | undefined>>();
 function toneOf(src: string) {
   if (!tones.has(src)) {
     tones.set(
@@ -55,7 +59,9 @@ function toneOf(src: string) {
           sum[1] += pixels[index + 1];
           sum[2] += pixels[index + 2];
         }
-        return count === 0 ? undefined : luminance(sum.map((total) => total / count) as Rgb);
+        return count === 0
+          ? undefined
+          : { tone: luminance(sum.map((total) => total / count) as Rgb), cover: count / (width * height) };
       })(),
     );
   }
@@ -67,10 +73,12 @@ export function setLogos(root: HTMLElement) {
   for (const image of root.querySelectorAll<HTMLImageElement>('.brand.shaded img')) {
     const shade = image.parentElement!.style.getPropertyValue('--shade').trim();
     if (!shade.startsWith('#')) continue;
-    toneOf(image.getAttribute('src')!).then((tone) => {
-      if (tone === undefined || !image.isConnected) return;
+    toneOf(image.getAttribute('src')!).then((measure) => {
+      if (measure === undefined || !image.isConnected) return;
+      const { tone, cover } = measure;
       const ground = luminance(fromHex(shade));
-      const treatment = contrast(tone, ground) >= enough ? 'plain' : contrast(tone, 1) >= enough ? 'halo' : 'plate';
+      const treatment =
+        cover >= badge || contrast(tone, ground) >= enough ? 'plain' : contrast(tone, 1) >= enough ? 'halo' : 'plate';
       image.dataset.set = treatment;
     });
   }
