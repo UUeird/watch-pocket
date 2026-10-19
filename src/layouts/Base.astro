@@ -43,6 +43,38 @@ const current = (path: string) => {
   </body>
 </html>
 
+<script>
+  // Column labels stick just under the site header, so they need its height, which changes as the nav wraps.
+  const header = document.querySelector('header')!;
+  new ResizeObserver(() => {
+    document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
+  }).observe(header);
+
+  // A scrolling wrapper holds the labels inside it, so a table that fits drops the scrollbar and its labels stick to the page.
+  // One that still has to scroll sideways has its labels slid down to sit under the header as the page scrolls past it.
+  const wraps = [...document.querySelectorAll<HTMLElement>('.table-wrap')];
+  const lift = () => {
+    for (const wrap of wraps) {
+      if (wrap.classList.contains('fits')) continue;
+      const table = wrap.querySelector('table')!;
+      const head = table.tHead!;
+      const top = table.getBoundingClientRect().top;
+      const room = table.offsetHeight - head.offsetHeight;
+      const by = Math.min(Math.max(header.offsetHeight - top, 0), room);
+      wrap.style.setProperty('--lift', `${by}px`);
+    }
+  };
+  for (const wrap of wraps) {
+    const table = wrap.querySelector('table')!;
+    new ResizeObserver(() => {
+      wrap.classList.remove('fits');
+      wrap.classList.toggle('fits', table.offsetWidth <= wrap.clientWidth);
+      lift();
+    }).observe(wrap);
+  }
+  addEventListener('scroll', lift, { passive: true });
+</script>
+
 <style is:global>
   :root {
     --bg: #faf9f6;
@@ -179,6 +211,17 @@ const current = (path: string) => {
     overflow-x: auto;
   }
 
+  .table-wrap.fits {
+    overflow-x: visible;
+  }
+
+  /* A table too wide for the window scrolls sideways, so its labels are slid down by script rather than stuck. */
+  .table-wrap:not(.fits) thead th {
+    position: relative;
+    top: 0;
+    transform: translateY(var(--lift, 0));
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -200,6 +243,16 @@ const current = (path: string) => {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+  }
+
+  /* The column labels stay in view under the site header; their rule is a shadow, since collapsed borders don't travel with them. */
+  thead th {
+    position: sticky;
+    top: var(--header-height, 0);
+    z-index: 1;
+    background: var(--surface);
+    border-bottom: none;
+    box-shadow: inset 0 -1px 0 var(--line);
   }
 
   td.num {
