@@ -60,7 +60,16 @@ const others = [
                 <td>
                   <Owners brand={brand} />
                 </td>
-                <td class="num">{brandYears(brand)}</td>
+                <td>
+                  {brandYears(brand)
+                    .split(', ')
+                    .map((span, index) => (
+                      <>
+                        {index > 0 && ', '}
+                        <span class="nowrap">{span}</span>
+                      </>
+                    ))}
+                </td>
               </tr>
             ))}
           </tbody>

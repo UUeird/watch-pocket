@@ -191,6 +191,11 @@ const current = (path: string) => {
     padding: 8px 12px;
     text-align: left;
     border-bottom: 1px solid var(--line);
+  }
+
+  /* Names wrap so a table fits the window; figures, and anything marked to stay whole, don't. */
+  td.num,
+  .nowrap {
     white-space: nowrap;
   }
 
