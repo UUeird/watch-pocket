@@ -7,6 +7,18 @@ interface Props {
 
 const { title } = Astro.props;
 const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
+const sections = [
+  { path: '/brands/', name: 'Brands' },
+  { path: '/ownership-groups/', name: 'Ownership Groups' },
+  { path: '/countries/', name: 'Countries' },
+  { path: '/references/', name: 'References' },
+];
+// The section a page belongs to is marked in the nav: the page itself, or "true" for a page within it.
+const current = (path: string) => {
+  const here = Astro.url.pathname.replace(/\/?$/, '/');
+  const target = href(path);
+  return here === target ? 'page' : here.startsWith(target) ? 'true' : undefined;
+};
 ---
 
 <!doctype html>
@@ -21,10 +33,7 @@ const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
     <header>
       <a class="wordmark" href={href('/')}>WatchPocket</a>
       <nav>
-        <a href={href('/')}>Brands</a>
-        <a href={href('/ownership-groups/')}>Ownership Groups</a>
-        <a href={href('/countries/')}>Countries</a>
-        <a href={href('/references/')}>References</a>
+        {sections.map(({ path, name }) => <a href={href(path)} aria-current={current(path)}>{name}</a>)}
       </nav>
     </header>
     <main>
@@ -106,6 +115,12 @@ const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
 
   nav a {
     white-space: nowrap;
+  }
+
+  nav a[aria-current] {
+    color: var(--text);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
   }
 
   main {

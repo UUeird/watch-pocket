@@ -10,7 +10,7 @@ test.describe('Brands treemap', () => {
     (await page.locator(`${tiles} .tile-badge`).allTextContents()).reduce((total, text) => total + Number(text), 0);
 
   test.beforeEach(async ({ page }) => {
-    await page.goto('./');
+    await page.goto('brands/');
   });
 
   test('starts with one box per nation, counting every brand', async ({ page }) => {
@@ -70,7 +70,7 @@ test.describe('Brands treemap', () => {
 
 test.describe('Brands measure column', () => {
   test('sorts largest first', async ({ page }) => {
-    await page.goto('./');
+    await page.goto('brands/');
     await page.locator('.measure-select').selectOption('age');
     await page.getByRole('button', { name: 'Sort' }).click();
     const firstYear = Number(await page.locator('#brands tr').first().locator('td:nth-child(4)').textContent());
