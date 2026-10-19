@@ -29,11 +29,27 @@ keyed by brand id (the YAML file name). A document holds any of:
 | `rejected` | List of file titles rejected for this brand |
 | `skipped` | `true`: none of the candidates is right |
 | `unsure` | `true`: Claude should research this brand |
+| `askAgain` | `true`: asked again after Claude's first research notes |
 | `choice` | Early format, before logomarks: a file title used as the logo, or `null` for skipped |
 
 Claude reads them with the `ArtifactData` tool (`action: "list"`, `collection: "decisions"`, the URL above).
-Research notes for `unsure` brands are written into the page's data, as a `research` field on the brand in
-`candidates.json`, and shown under the brand's name.
+
+### Researching a brand
+
+For a brand marked `unsure` (or `askAgain`), Claude looks it up on Wikidata (its logo and "small logo or icon"
+properties and its Commons category) and searches Commons, checks each file's license, description and
+categories (which is how files for a namesake, such as a bus company or a dairy, are caught), and looks at
+them. It then writes a `research` note on the brand in `candidates.json` saying which file to use and why, and
+puts its candidates first, marked "Claude research", each with a confidence and reason. A brand with a note
+goes back to "To review" on the page; asking again sets `askAgain`.
+
+### The page's data
+
+The page's working files are not kept in the repo: `candidates.json` and the `thumbs/` folder live on the
+artifact. To change them, read them back with the Artifact tool (`action: "read"`, the URL above, `path:
+"candidates.json"`), edit, and republish with `review.html` as the page and the files under `files`. Brand ids in
+`candidates.json` match the YAML file names; each brand has `kind` (`logo` or `mark`), its Wikidata match, and
+its candidates.
 
 ## Rules for logo files
 
