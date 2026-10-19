@@ -58,7 +58,9 @@ test.describe('Brands filters', () => {
     await filter(page, 'tags').selectOption('smartwatch');
     const rows = visibleRows(page, 'brands');
     expect(await rows.count()).toBeGreaterThan(0);
-    for (const type of await column(rows, 6)) expect(type).toContain('smartwatch');
+    for (const tags of await rows.evaluateAll((trs) => trs.map((tr) => tr.getAttribute('data-tags')))) {
+      expect(tags!.split('|')).toContain('smartwatch');
+    }
   });
 
   test('clear filters resets everything', async ({ page }) => {
