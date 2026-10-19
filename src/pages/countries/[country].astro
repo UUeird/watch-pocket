@@ -2,7 +2,7 @@
 import Owners from '../../components/Owners.astro';
 import Base from '../../layouts/Base.astro';
 import { countries, type CountryName } from '../../lib/countries';
-import { brandStatus, countryHref, countrySlug, href, loadCatalog, plural, type Brand } from '../../lib/catalog';
+import { brandYears, countryHref, countrySlug, href, loadCatalog, plural, type Brand } from '../../lib/catalog';
 
 export async function getStaticPaths() {
   const { brands } = await loadCatalog();
@@ -48,8 +48,7 @@ const others = [
             <tr>
               <th>Brand</th>
               <th>Owner</th>
-              <th>Founded</th>
-              <th>Status</th>
+              <th>Years active</th>
             </tr>
           </thead>
           <tbody>
@@ -61,8 +60,7 @@ const others = [
                 <td>
                   <Owners brand={brand} />
                 </td>
-                <td class="num">{brand.data.periods[0]?.from}</td>
-                <td class="cap">{brandStatus(brand)}</td>
+                <td class="num">{brandYears(brand)}</td>
               </tr>
             ))}
           </tbody>
