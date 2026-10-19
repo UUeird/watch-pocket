@@ -47,7 +47,9 @@ export function chartData(catalog: Catalog, { groupsOnly = false } = {}): ChartD
     id: brand.id,
     name: brand.data.name,
     href: href(`/brands/${brand.id}/`),
-    logo: brand.data.logo?.src,
+    logos: [brand.data.logo, brand.data.wordmark, brand.data.logomark]
+      .filter((logo) => logo !== undefined)
+      .map(({ src, width, height }) => ({ src, width, height })),
     buckets: {
       owner: ownerKeys(brand),
       origin: [brand.data.origin ?? 'unrecorded'],

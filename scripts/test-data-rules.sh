@@ -47,6 +47,10 @@ try "source that is not a link" $D/brands/girard-perregaux.yaml 's/^  - owner: s
 try "logo file that does not exist" $D/brands/rolex.yaml 's#logos/rolex.svg#logos/missing.svg#'
 try "logo credit with no logo" $D/brands/rolex.yaml '/^logo: /d'
 try "logo credit with no source" $D/brands/rolex.yaml '/^  source: /d'
+try "logomark file that does not exist" $D/brands/louis-vuitton.yaml 's#logos/louis-vuitton-logomark.svg#logos/missing.svg#'
+try "logomark with no logo" $D/brands/louis-vuitton.yaml '/^logo: /d;/^logoCredit:/,/^  license: /d'
+try "logomark credit with no logomark" $D/brands/rolex.yaml 's/^logoCredit:$/logomarkCredit: { source: https:\/\/example.com, license: Public domain }\
+logoCredit:/'
 try "group logo file that does not exist" $D/groups/kering.yaml 's#logos/kering.svg#logos/missing.svg#'
 try "group logo credit with no logo" $D/groups/kering.yaml '/^logo: /d'
 try "revenue with no source" $D/brands/breguet.yaml 's/^name: Breguet$/name: Breguet\

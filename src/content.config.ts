@@ -29,18 +29,32 @@ const revenue = z
   })
   .default([]);
 
+// Where an image file came from and on what terms. `author` and `licenseUrl` are for licenses that require a credit.
+const credit = z
+  .object({ source: z.url(), license: z.string(), licenseUrl: z.url().optional(), author: z.string().optional() })
+  .optional();
+
 // A brand's or group's logo, with where the file came from and on what terms.
 const logoFields = (image: SchemaContext['image']) => ({
   // An image file, given as a path from the record's own file, e.g. `../logos/rolex.svg`. A missing file fails the build.
   logo: image().optional(),
-  // `author` and `licenseUrl` are for licenses that require a credit.
-  logoCredit: z
-    .object({ source: z.url(), license: z.string(), licenseUrl: z.url().optional(), author: z.string().optional() })
-    .optional(),
+  logoCredit: credit,
+  // The logo's parts, where it has them: its symbol alone (LV's monogram) and its name alone. Each is shown in its
+  // place where the whole logo would be too small to read. A part cut from the logo's own file is covered by
+  // `logoCredit`; one from another file needs its own credit.
+  logomark: image().optional(),
+  logomarkCredit: credit,
+  wordmark: image().optional(),
+  wordmarkCredit: credit,
 });
-const creditHasLogo = (record: { logo?: unknown; logoCredit?: unknown }) =>
-  record.logoCredit === undefined || record.logo !== undefined;
-const creditNeedsLogo = { message: 'A `logoCredit` needs a `logo` to credit.' };
+type LogoRecord = Partial<Record<'logo' | 'logoCredit' | 'logomark' | 'logomarkCredit' | 'wordmark' | 'wordmarkCredit', unknown>>;
+const creditHasLogo = (record: LogoRecord) =>
+  (record.logoCredit === undefined || record.logo !== undefined) &&
+  (record.logomarkCredit === undefined || record.logomark !== undefined) &&
+  (record.wordmarkCredit === undefined || record.wordmark !== undefined);
+const creditNeedsLogo = { message: 'A `logoCredit`, `logomarkCredit` or `wordmarkCredit` needs its file to credit.' };
+const partsNeedLogo = (record: LogoRecord) => (record.logomark === undefined && record.wordmark === undefined) || record.logo !== undefined;
+const partsNeedLogoMessage = { message: 'A `logomark` or `wordmark` is a part of a `logo`: give the whole `logo` too.' };
 
 const groups = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/data/groups' }),
@@ -62,6 +76,7 @@ const groups = defineCollection({
         sources,
       })
       .refine(creditHasLogo, creditNeedsLogo)
+      .refine(partsNeedLogo, partsNeedLogoMessage)
       .refine((group) => (group.control === undefined) !== (group.parent === undefined), {
         message: 'Give a group either `control` or a `parent`: a subsidiary is controlled by its parent.',
       }),
@@ -180,6 +195,7 @@ const brands = defineCollection({
         message: 'Set either `periods` or `status`, not both: status is derived from periods.',
       })
       .refine(creditHasLogo, creditNeedsLogo)
+      .refine(partsNeedLogo, partsNeedLogoMessage)
       .refine((brand) => !brand.heritage || !brand.periods[0] || brand.heritage.from < brand.periods[0].from, {
         message: 'A `heritage` year comes before the brand’s own first period; otherwise it belongs in `periods`.',
       }),
