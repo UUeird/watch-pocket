@@ -115,11 +115,8 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
 </section>
 
 <style>
-  /* The chart is wider than the page's text column where the window allows, since more width fits more brands in each box. */
   .treemap {
-    --wide: max(100%, min(100vw - 48px, 1440px));
-    width: var(--wide);
-    margin: 0 0 32px calc((100% - var(--wide)) / 2);
+    margin-bottom: 32px;
   }
 
   .controls {

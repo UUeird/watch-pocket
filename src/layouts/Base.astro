@@ -76,12 +76,13 @@ const current = (path: string) => {
     font: 16px/1.5 system-ui, sans-serif;
   }
 
+  /* Everything spans the window up to a wide cap, so the charts have room for more brands in each box. */
   header,
   main,
   footer {
-    max-width: 960px;
+    max-width: 1488px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 24px;
   }
 
   /* The header stays in view while the page scrolls, on the page background so content slides under it. */
