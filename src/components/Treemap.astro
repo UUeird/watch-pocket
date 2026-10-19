@@ -1,137 +1,83 @@
 ---
-import { href, plural } from '../lib/catalog';
-import { box, type Cell, type Layout } from '../lib/treemap';
+import { metrics } from '../lib/metrics';
+import { layoutTreemap, renderCells, renderLegend, renderNote, type ChartData, type Options } from '../lib/treemap';
 
 interface Props {
-  layouts: Layout[];
+  // A name for the chart's state in the browser, so each page remembers its own choices.
+  id: string;
+  data: ChartData;
+  // What is grouped and sized, for screen readers: "Brands", "Ownership groups".
+  title: string;
+  initial?: Partial<Options>;
+  // The id of a filtered table whose rows carry `data-id`, which the chart follows.
+  follow?: string;
 }
 
-const { layouts } = Astro.props;
-// A measure with a group figure has a second layout without the groups' other business; the selector lists each measure once.
-const choices = layouts.filter((layout) => layout.otherBusiness !== false);
-// Open on the measure that covers the most brands.
-const coverage = (layout: Layout) => layout.cells.filter((cell) => cell.kind === 'brand').length;
-const initial = choices.reduce((best, layout) => (coverage(layout) > coverage(best) ? layout : best));
-
-const pct = (value: number, of: number) => `${((value / of) * 100).toFixed(3)}%`;
-const position = ({ x, y, width, height }: Cell) => ({
-  left: pct(x, box.width),
-  top: pct(y, box.height),
-  width: pct(width, box.width),
-  height: pct(height, box.height),
-});
-
-// What fits in a cell, judged in layout units (about a pixel each at full width).
-const showsLogo = ({ width, height }: Cell) => width >= 70 && height >= 40;
-const showsName = ({ width, height }: Cell) => width >= 46 && height >= 16;
-// A caption needs a line of its own below the logo or name.
-const showsCaption = (cell: Cell) => cell.caption !== undefined && cell.width >= 46 && cell.height >= (showsLogo(cell) ? 56 : 32);
-const describe = (cell: Cell, format: (value: number) => string) =>
-  [cell.brand!.data.name + (cell.licensed ? ', made under license' : ''), cell.caption, format(cell.value)].filter(Boolean).join(', ');
+const { id, data, title, initial = {}, follow } = Astro.props;
+// How many brands have a figure for each measure, so a measure with none can be offered as "no data yet".
+// Only brands the chart can place count, so a page showing groups alone does not count independents.
+const placeable = data.points.filter((point) =>
+  data.groupings.some((grouping) => grouping.buckets.some((bucket) => point.buckets[grouping.id]?.includes(bucket.key) || point.licensee === bucket.key)),
+);
+const coverage = Object.fromEntries(metrics.map((metric) => [metric.id, placeable.filter((point) => point.values[metric.id] !== undefined).length]));
+const sizes = metrics.filter((metric) => metric.additive);
+const colors = metrics.filter((metric) => !metric.additive);
+// Measures with a group-level figure, for which a group's other business can be shown.
+const withOwn = metrics.filter((metric) => data.groupings.some((grouping) => grouping.buckets.some((bucket) => bucket.values?.[metric.id] !== undefined)));
+const options: Options = { grouping: data.groupings[0].id, size: 'brands', color: 'age', otherBusiness: true, ...initial };
+const layout = layoutTreemap(data, options);
 ---
 
-<section class="treemap" aria-labelledby="treemap-heading">
-  <div class="treemap-head">
-    <h2 id="treemap-heading">Size by</h2>
-    <select class="size-by" aria-labelledby="treemap-heading">
-      {
-        choices.map((layout) => (
-          <option
-            value={layout.metric.id}
-            selected={layout === initial}
-            disabled={coverage(layout) === 0}
-            data-other-business={layout.otherBusiness !== undefined ? '' : undefined}
-          >
-            {layout.metric.label}
-            {coverage(layout) === 0 ? ' (no data yet)' : ''}
-          </option>
-        ))
-      }
-    </select>
-    <label class="other-toggle" hidden={initial.otherBusiness === undefined}>
-      <input type="checkbox" class="include-other" checked />
+<section class="treemap" data-treemap={id} data-follow={follow} aria-label={`${title} treemap`}>
+  <div class="controls">
+    <label class="control" hidden={data.groupings.length < 2}>
+      <span>Group by</span>
+      <select name="grouping">
+        {data.groupings.map((grouping) => <option value={grouping.id} selected={grouping.id === options.grouping}>{grouping.label}</option>)}
+      </select>
+    </label>
+    <label class="control">
+      <span>Size by</span>
+      <select name="size">
+        {
+          sizes.map((metric) => (
+            <option value={metric.id} selected={metric.id === options.size} disabled={coverage[metric.id] === 0}>
+              {metric.label}
+              {coverage[metric.id] === 0 ? ' (no data yet)' : ` (${coverage[metric.id]})`}
+            </option>
+          ))
+        }
+      </select>
+    </label>
+    <label class="control">
+      <span>Shade by</span>
+      <select name="color">
+        <option value="" selected={!options.color}>Nothing</option>
+        {
+          colors.map((metric) => (
+            <option value={metric.id} selected={metric.id === options.color} disabled={coverage[metric.id] === 0}>
+              {metric.label}
+              {coverage[metric.id] === 0 ? ' (no data yet)' : ` (${coverage[metric.id]})`}
+            </option>
+          ))
+        }
+      </select>
+    </label>
+    <label class="toggle" data-own={withOwn.map((metric) => metric.id).join(' ')} hidden={!withOwn.some((metric) => metric.id === options.size)}>
+      <input type="checkbox" name="otherBusiness" checked={options.otherBusiness} />
       Include groups’ other business
     </label>
   </div>
 
-  {
-    layouts.map((layout) => {
-      const { metric, cells, missing, hiddenLicensed } = layout;
-      const brandCount = coverage(layout);
-      return (
-        <div
-          class="layout"
-          data-metric={metric.id}
-          data-other-business={layout.otherBusiness === undefined ? undefined : String(layout.otherBusiness)}
-          hidden={layout !== initial}
-        >
-          {metric.includesLicensed ? (
-            <p class="licensing shown">
-              <span class="licensing-key" aria-hidden="true" />
-              <span>
-                <strong>Licensed brands shown.</strong> Brands a group makes under license count toward that group here, drawn
-                with a dashed edge.
-              </span>
-            </p>
-          ) : (
-            <p class="licensing">
-              <span class="licensing-key" aria-hidden="true" />
-              <span>
-                <strong>Licensed brands hidden.</strong> This measure counts only brands a group owns
-                {hiddenLicensed.length > 0 && `, so ${plural(hiddenLicensed.length, 'licensed brand')} ${hiddenLicensed.length === 1 ? 'is' : 'are'} left out`}.
-              </span>
-            </p>
-          )}
-          {brandCount === 0 ? (
-            <p class="empty">No brand has a figure for this yet.</p>
-          ) : (
-            <div class="scroll">
-              <div class="canvas" role="list" aria-label={`Ownership groups sized by ${metric.label.toLowerCase()}`}>
-                {cells.map((cell) =>
-                  cell.kind === 'group' ? (
-                    <div class="group" style={position(cell)} role="listitem">
-                      {showsName(cell) && (
-                        <a class="group-name" href={href(`/ownership-groups/${cell.group.id}/`)}>
-                          {cell.group.data.name}
-                        </a>
-                      )}
-                    </div>
-                  ) : cell.kind === 'other' ? (
-                    <div class="other" style={position(cell)} title={`${cell.group.data.name}: other business, ${metric.format(cell.value)}`}>
-                      {showsName(cell) && <span>Other business</span>}
-                    </div>
-                  ) : (
-                    <a
-                      class:list={['brand', { licensed: cell.licensed }]}
-                      style={position(cell)}
-                      href={href(`/brands/${cell.brand!.id}/`)}
-                      title={describe(cell, metric.format)}
-                      aria-label={describe(cell, metric.format)}
-                    >
-                      {showsLogo(cell) && cell.brand!.data.logo ? (
-                        <img src={cell.brand!.data.logo.src} alt="" loading="lazy" />
-                      ) : (
-                        showsName(cell) && <span>{cell.brand!.data.name}</span>
-                      )}
-                      {showsCaption(cell) && <span class="caption">{cell.caption}</span>}
-                    </a>
-                  ),
-                )}
-              </div>
-            </div>
-          )}
-          {brandCount > 0 && (
-            <p class="note">
-              {plural(brandCount, 'brand')} sized by {metric.label.toLowerCase()}.
-              {missing.length > 0 && ` ${missing.length} more in these groups have no figure yet and are left out.`}
-              {layout.otherBusiness && ' A hatched block is the part of a group’s own figure that its watch brands don’t account for.'}
-              {layout.otherBusiness === false && ' Groups are sized by these brands alone, leaving out their other business.'}
-            </p>
-          )}
-        </div>
-      );
-    })
-  }
+  <div class="frame">
+    <div class="scroll">
+      <div class="canvas" aria-label={`${title}, grouped and sized`} set:html={renderCells(layout)} />
+    </div>
+    <div class="tip" role="presentation" hidden></div>
+  </div>
+  <p class="legend" set:html={renderLegend(layout)} />
+  <p class="note" aria-live="polite" set:html={renderNote(layout)} />
+  <script is:inline type="application/json" set:html={JSON.stringify(data).replace(/</g, '\\u003c')} />
 </section>
 
 <style>
@@ -139,32 +85,30 @@ const describe = (cell: Cell, format: (value: number) => string) =>
     margin: 0 0 32px;
   }
 
-  .treemap-head {
+  .controls {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
-    gap: 12px;
+    align-items: end;
+    gap: 12px 16px;
     margin-bottom: 12px;
   }
 
-  .treemap-head h2 {
-    margin: 0;
-    font-size: 1rem;
-  }
-
-  .other-toggle {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.875rem;
+  .control span {
+    display: block;
+    margin-bottom: 4px;
     color: var(--muted);
+    font-size: 0.6875rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 
-  .other-toggle[hidden] {
+  .control[hidden],
+  .toggle[hidden] {
     display: none;
   }
 
-  .size-by {
+  select {
+    max-width: 100%;
     padding: 4px 8px;
     font: inherit;
     font-size: 0.9375rem;
@@ -172,6 +116,19 @@ const describe = (cell: Cell, format: (value: number) => string) =>
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 4px;
+  }
+
+  .toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-bottom: 4px;
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+
+  .frame {
+    position: relative;
   }
 
   /* Below this width the cells get too small to read, so the map scrolls sideways instead. */
@@ -188,35 +145,40 @@ const describe = (cell: Cell, format: (value: number) => string) =>
     border-radius: 6px;
   }
 
-  .group,
-  .other,
-  .brand {
+  .canvas :global(.bucket),
+  .canvas :global(.other),
+  .canvas :global(.brand) {
     position: absolute;
     box-sizing: border-box;
   }
 
-  .group {
+  .canvas :global(.bucket) {
     background: var(--bg);
     border: 1px solid var(--line);
     border-radius: 4px;
   }
 
-  .group-name {
+  .canvas :global(.bucket-name) {
     display: block;
     overflow: hidden;
     padding: 2px 6px 0;
+    color: var(--text);
     font-size: 0.75rem;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
 
-  .brand {
+  .canvas :global(a.bucket-name) {
+    color: var(--accent);
+  }
+
+  .canvas :global(.brand) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    padding: 4px;
+    padding: 2px;
     color: #1c1b19;
     font-size: 0.6875rem;
     line-height: 1.2;
@@ -228,32 +190,62 @@ const describe = (cell: Cell, format: (value: number) => string) =>
     border-radius: 2px;
   }
 
+  /* A shade along the foot of the cell, or filling it where the cell is too small for a bar. */
+  .canvas :global(.brand.barred) {
+    border-bottom: 5px solid var(--shade, #ffffff);
+  }
+
+  .canvas :global(.brand.filled) {
+    background: var(--shade, #ffffff);
+  }
+
+  /* No figure for the shading measure: a faint hatch, so it never reads as the lightest step. */
+  .canvas :global(.brand.unshaded.barred) {
+    border-bottom: 5px solid #e8e5dd;
+  }
+
+  .canvas :global(.brand.unshaded.filled) {
+    background: repeating-linear-gradient(135deg, #ffffff 0 3px, #e2dfd7 3px 4px);
+  }
+
   /* Made under license by the group, not owned by it. */
-  .brand.licensed {
-    border: 1.5px dashed #6b6860;
+  .canvas :global(.brand.licensed) {
+    border-style: dashed;
+    border-color: #6b6860;
   }
 
-  .brand:hover,
-  .brand:focus-visible {
+  .canvas :global(.brand:hover),
+  .canvas :global(.brand:focus-visible) {
     z-index: 1;
-    border-color: var(--accent);
-    outline: 1px solid var(--accent);
+    outline: 2px solid var(--accent);
   }
 
-  .caption {
-    margin-top: 2px;
-    color: #6b6860;
+  .canvas :global(.brand span) {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .canvas :global(.brand .small) {
+    font-size: 0.5625rem;
+    white-space: nowrap;
+  }
+
+  .canvas :global(.brand .vertical) {
+    max-height: 100%;
     font-size: 0.625rem;
-    letter-spacing: 0.02em;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
   }
 
-  .brand img {
+  .canvas :global(.brand img) {
     max-width: 80%;
     max-height: 60%;
     object-fit: contain;
   }
 
-  .other {
+  .canvas :global(.other) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -265,50 +257,74 @@ const describe = (cell: Cell, format: (value: number) => string) =>
     border-radius: 2px;
   }
 
-  .licensing {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0 0 10px;
-    padding: 8px 12px;
-    font-size: 0.8125rem;
+  .tip {
+    position: absolute;
+    z-index: 2;
+    max-width: 260px;
+    padding: 6px 9px;
     color: var(--text);
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    white-space: pre-line;
+    pointer-events: none;
     background: var(--surface);
     border: 1px solid var(--line);
-    border-left: 3px solid var(--muted);
     border-radius: 4px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.12);
   }
 
-  .licensing.shown {
-    border-left-color: var(--accent);
+  .tip::first-line {
+    font-weight: 600;
   }
 
-  /* A miniature of how a licensed cell is drawn, struck through where they are hidden. */
-  .licensing-key {
-    flex: none;
-    width: 26px;
-    height: 18px;
-    background: linear-gradient(to top right, transparent calc(50% - 1px), var(--muted) 50%, transparent calc(50% + 1px)) #ffffff;
-    border: 1.5px dashed #6b6860;
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin: 8px 0 0;
+    color: var(--muted);
+    font-size: 0.8125rem;
+  }
+
+  .legend:empty {
+    display: none;
+  }
+
+  .legend :global(.legend-label) {
+    margin-right: 4px;
+    color: var(--text);
+  }
+
+  .legend :global(.swatches) {
+    display: inline-flex;
+    gap: 2px;
+  }
+
+  .legend :global(.swatch) {
+    display: inline-block;
+    width: 22px;
+    height: 10px;
     border-radius: 2px;
   }
 
-  .shown .licensing-key {
-    background: #ffffff;
+  .legend :global(.swatch.none) {
+    margin-left: 12px;
+    background: repeating-linear-gradient(135deg, #ffffff 0 3px, #c9c5bb 3px 4px);
+    border: 1px solid var(--line);
   }
 
-  .note,
-  .empty {
-    margin: 8px 0 0;
+  .note {
+    margin: 6px 0 0;
     color: var(--muted);
     font-size: 0.8125rem;
   }
 </style>
 
 <script>
-  // The chosen measure and the other-business box are remembered per browser. Storage can be
-  // missing or blocked, in which case the page keeps its defaults.
-  const keys = { sizeBy: 'treemap.sizeBy', includeOther: 'treemap.includeOther' };
+  import { layoutTreemap, renderCells, renderLegend, renderNote, type ChartData, type Options } from '../lib/treemap';
+
+  // Choices are remembered per page in this browser. Storage can be missing or blocked, in which case the page keeps its defaults.
   const recall = (key: string) => {
     try {
       return localStorage.getItem(key);
@@ -324,32 +340,104 @@ const describe = (cell: Cell, format: (value: number) => string) =>
     }
   };
 
-  for (const treemap of document.querySelectorAll<HTMLElement>('.treemap')) {
-    const select = treemap.querySelector<HTMLSelectElement>('.size-by')!;
-    const toggle = treemap.querySelector<HTMLElement>('.other-toggle')!;
-    const includeOther = treemap.querySelector<HTMLInputElement>('.include-other')!;
-    // A remembered measure is used only if it is still offered and has data.
-    const savedMeasure = [...select.options].find((option) => option.value === recall(keys.sizeBy) && !option.disabled);
-    if (savedMeasure) select.value = savedMeasure.value;
-    const savedOther = recall(keys.includeOther);
-    if (savedOther === 'true' || savedOther === 'false') includeOther.checked = savedOther === 'true';
-    const show = () => {
-      // The toggle applies only to measures a group has its own figure for.
-      toggle.hidden = !select.selectedOptions[0]?.hasAttribute('data-other-business');
-      const other = String(includeOther.checked);
-      for (const layout of treemap.querySelectorAll<HTMLElement>('.layout')) {
-        const { metric, otherBusiness } = layout.dataset;
-        layout.hidden = metric !== select.value || (otherBusiness !== undefined && otherBusiness !== other);
-      }
+  for (const section of document.querySelectorAll<HTMLElement>('[data-treemap]')) {
+    const data: ChartData = JSON.parse(section.querySelector('script[type="application/json"]')!.textContent!);
+    const canvas = section.querySelector<HTMLElement>('.canvas')!;
+    const legend = section.querySelector<HTMLElement>('.legend')!;
+    const note = section.querySelector<HTMLElement>('.note')!;
+    const tip = section.querySelector<HTMLElement>('.tip')!;
+    const frame = section.querySelector<HTMLElement>('.frame')!;
+    const selects = {
+      grouping: section.querySelector<HTMLSelectElement>('select[name="grouping"]')!,
+      size: section.querySelector<HTMLSelectElement>('select[name="size"]')!,
+      color: section.querySelector<HTMLSelectElement>('select[name="color"]')!,
     };
-    select.addEventListener('change', () => {
-      remember(keys.sizeBy, select.value);
-      show();
+    const other = section.querySelector<HTMLInputElement>('input[name="otherBusiness"]')!;
+    const toggle = other.closest<HTMLElement>('.toggle')!;
+    const ownMeasures = toggle.dataset.own!.split(' ');
+    const key = (name: string) => `treemap.${section.dataset.treemap}.${name}`;
+
+    for (const [name, select] of Object.entries(selects)) {
+      const saved = recall(key(name));
+      if (saved !== null && [...select.options].some((option) => option.value === saved && !option.disabled)) select.value = saved;
+    }
+    const savedOther = recall(key('otherBusiness'));
+    if (savedOther !== null) other.checked = savedOther === 'true';
+
+    // The rows the page's filters leave showing, when the chart follows a table.
+    const followed = section.dataset.follow;
+    const visibleRows = () => {
+      if (!followed) return undefined;
+      const rows = [...document.querySelectorAll<HTMLElement>(`#${followed} tr[data-id]`)];
+      return { ids: new Set(rows.filter((row) => !row.hidden).map((row) => row.dataset.id!)), all: rows.length };
+    };
+
+    const draw = () => {
+      const rows = visibleRows();
+      const options: Options = {
+        grouping: selects.grouping.value,
+        size: selects.size.value,
+        color: selects.color.value || undefined,
+        otherBusiness: other.checked,
+        visible: rows && rows.ids.size < rows.all ? rows.ids : undefined,
+      };
+      toggle.hidden = !ownMeasures.includes(options.size);
+      const layout = layoutTreemap(data, options);
+      canvas.innerHTML = renderCells(layout);
+      legend.innerHTML = renderLegend(layout);
+      note.innerHTML = renderNote(layout, options.visible?.size);
+      // Kept on the element as well, for a listener that starts after the first draw.
+      section.dataset.size = layout.size.id;
+      section.dataset.totals = JSON.stringify(layout.totals);
+      section.dispatchEvent(new CustomEvent('treemap:layout', { bubbles: true }));
+    };
+
+    for (const [name, select] of Object.entries(selects)) {
+      select.addEventListener('change', () => {
+        remember(key(name), select.value);
+        draw();
+      });
+    }
+    other.addEventListener('change', () => {
+      remember(key('otherBusiness'), String(other.checked));
+      draw();
     });
-    includeOther.addEventListener('change', () => {
-      remember(keys.includeOther, String(includeOther.checked));
-      show();
+    // Typing in the search box filters on every keystroke; the chart redraws at most once a frame.
+    let pending = 0;
+    const redraw = () => {
+      cancelAnimationFrame(pending);
+      pending = requestAnimationFrame(draw);
+    };
+    if (followed) document.addEventListener('filters:applied', (event) => (event as CustomEvent).detail?.target === followed && redraw());
+
+    // One tooltip for the whole chart, placed beside the pointer or the focused cell and kept inside the frame.
+    const place = (x: number, y: number) => {
+      const bounds = frame.getBoundingClientRect();
+      const left = Math.min(x - bounds.left + 14, bounds.width - tip.offsetWidth - 4);
+      const top = y - bounds.top + 14 + tip.offsetHeight > bounds.height ? y - bounds.top - tip.offsetHeight - 10 : y - bounds.top + 14;
+      tip.style.left = `${Math.max(4, left)}px`;
+      tip.style.top = `${top}px`;
+    };
+    const show = (target: HTMLElement) => {
+      tip.textContent = target.dataset.tip!;
+      tip.hidden = false;
+    };
+    canvas.addEventListener('pointermove', (event) => {
+      const target = (event.target as HTMLElement).closest<HTMLElement>('[data-tip]');
+      if (!target) return void (tip.hidden = true);
+      show(target);
+      place(event.clientX, event.clientY);
     });
-    show();
+    canvas.addEventListener('pointerleave', () => (tip.hidden = true));
+    canvas.addEventListener('focusin', (event) => {
+      const target = (event.target as HTMLElement).closest<HTMLElement>('[data-tip]');
+      if (!target) return;
+      show(target);
+      const rect = target.getBoundingClientRect();
+      place(rect.left + rect.width / 2, rect.bottom - 10);
+    });
+    canvas.addEventListener('focusout', () => (tip.hidden = true));
+
+    draw();
   }
 </script>

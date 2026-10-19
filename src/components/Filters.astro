@@ -204,6 +204,8 @@ const { target, noun, placeholder, filters } = Astro.props;
         : `${rows.length} ${form.dataset.noun}`;
       clear.hidden = !filtering;
       empty.hidden = shown > 0;
+      // Anything else drawn from the same rows, such as a chart, redraws from what is left showing.
+      document.dispatchEvent(new CustomEvent('filters:applied', { detail: { target } }));
     };
 
     // A dropdown keeps focus after a mouse pick, and its focus ring then looks like a filter still in use.
