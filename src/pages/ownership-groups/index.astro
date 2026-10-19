@@ -1,13 +1,15 @@
 ---
 import FlagBadge from '../../components/FlagBadge.astro';
+import OwnershipTimeline from '../../components/OwnershipTimeline.astro';
 import Treemap from '../../components/Treemap.astro';
 import Base from '../../layouts/Base.astro';
 import { describeControl, formatStake, href, loadCatalog, plural, type Brand } from '../../lib/catalog';
 import { chartData } from '../../lib/chart-data';
 
 const catalog = await loadCatalog();
-const { groups, brandsOf, licensesOf } = catalog;
+const { groups, brandsOf, licensesOf, holdingsOf } = catalog;
 const data = chartData(catalog, { groupsOnly: true });
+const holdings = groups.map((group) => ({ group, records: holdingsOf({ collection: 'groups', id: group.id }) }));
 
 // A brand as it sits in a group: owned outright, owned in part (with the stake), or made under license.
 type Tile = { brand: Brand; stake?: number | 'unknown'; licensed?: boolean };
@@ -46,6 +48,7 @@ const stakeNote = (stake: Tile['stake']) =>
   <p class="lede">Groups and corporations, with the brands each currently holds.</p>
 
   <Treemap id="groups" title="Ownership groups" data={data} />
+  <OwnershipTimeline holdings={holdings} />
 
   <h2 class="section-heading">All groups</h2>
   <ul class="legend" aria-label="Key">
