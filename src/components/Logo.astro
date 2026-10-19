@@ -1,21 +1,52 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 
+type Data = CollectionEntry<'brands' | 'groups'>['data'];
+
 interface Props {
   name: string;
-  logo: CollectionEntry<'brands' | 'groups'>['data']['logo'];
-  credit: CollectionEntry<'brands' | 'groups'>['data']['logoCredit'];
+  logo: Data['logo'];
+  credit: Data['logoCredit'];
+  logomark?: Data['logomark'];
+  logomarkCredit?: Data['logomarkCredit'];
 }
 
-const { name, logo, credit } = Astro.props;
+const { name, logo, credit, logomark, logomarkCredit } = Astro.props;
+// Each file carries its own credit, since the two can come from different sources on different terms.
+const credits = [
+  { label: 'Logo', file: logo, credit },
+  { label: 'Logomark', file: logomark, credit: logomarkCredit },
+].filter((entry) => entry.file && entry.credit);
 ---
 
-{logo && <img class="logo" src={logo.src} width={logo.width} height={logo.height} alt={`${name} logo`} />}
 {
-  logo && credit && (
-    <p class="logo-credit">
-      Logo{credit.author && ` by ${credit.author}`} · {credit.licenseUrl ? <a href={credit.licenseUrl}>{credit.license}</a> : credit.license} ·{' '}
-      <a href={credit.source}>Source</a>
-    </p>
+  (logo || logomark) && (
+    <div class="logos">
+      {logo && <img class="logo" src={logo.src} width={logo.width} height={logo.height} alt={`${name} logo`} />}
+      {logomark && <img class="logo logomark" src={logomark.src} width={logomark.width} height={logomark.height} alt={`${name} logomark`} />}
+    </div>
   )
 }
+{
+  credits.map(({ label, credit }) => (
+    <p class="logo-credit">
+      {label}
+      {credit!.author && ` by ${credit!.author}`} · {credit!.licenseUrl ? <a href={credit!.licenseUrl}>{credit!.license}</a> : credit!.license} ·{' '}
+      <a href={credit!.source}>Source</a>
+    </p>
+  ))
+}
+
+<style>
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* The symbol sits beside the full logo on the same white plate, a little shorter. */
+  .logomark {
+    max-height: 72px;
+  }
+</style>

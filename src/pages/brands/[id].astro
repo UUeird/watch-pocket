@@ -23,7 +23,7 @@ const holdings = holdingsOf(self);
 const collaborations = collaborationsOf(brand.id);
 const brandName = (modelId: string) => brands.find((other) => other.id === modelId.split('/')[0])?.data.name;
 const lines = linesOf(brand.id);
-const { name, logo, logoCredit, origin, headquarters, manufacturing, periods, heritage, category, segment, tags, production, copycat, website, ownership, licensees, sources } =
+const { name, logo, logoCredit, logomark, logomarkCredit, origin, headquarters, manufacturing, periods, heritage, category, segment, tags, production, copycat, website, ownership, licensees, sources } =
   brand.data;
 const showStake = ownership.some((record) => record.stake !== undefined);
 const showBasis = ownership.some((record) => record.basis !== undefined);
@@ -33,7 +33,7 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
 ---
 
 <Base title={name}>
-  <Logo name={name} logo={logo} credit={logoCredit} />
+  <Logo name={name} logo={logo} credit={logoCredit} logomark={logomark} logomarkCredit={logomarkCredit} />
   <h1>{name}</h1>
   <p class="lede cap">{descriptors.filter((value) => typeof value === 'string').map(label).join(' · ')}</p>
 

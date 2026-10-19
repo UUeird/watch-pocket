@@ -93,7 +93,9 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
       <tbody id="brands">
         {
           brands.map((brand) => {
-            const { category, tags, logo } = brand.data;
+            const { category, tags } = brand.data;
+            // The full logo where there is one, else the symbol alone.
+            const logo = brand.data.logo ?? brand.data.logomark;
             const lineNames = linesOf(brand.id).map((line) => line.data.name);
             const types = category === 'watch-brand' ? tags : [category, ...tags];
             return (
