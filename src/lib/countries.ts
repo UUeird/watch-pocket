@@ -31,6 +31,7 @@ export const countries = {
   Philippines: { flag: '🇵🇭' },
   Poland: { flag: '🇵🇱' },
   Portugal: { flag: '🇵🇹' },
+  Qatar: { flag: '🇶🇦' },
   Russia: { flag: '🇷🇺' },
   Singapore: { flag: '🇸🇬' },
   'South Korea': { flag: '🇰🇷' },

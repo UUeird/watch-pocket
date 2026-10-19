@@ -1,0 +1,13 @@
+name: Fred
+origin: France
+periods: [{ from: 1936 }]
+website: https://www.fred.com
+ownership:
+  - owner: lvmh
+    sources:
+      - https://hancockslondon.com/makers/fred
+      - https://theswisscollector.com/en/brands/fred
+sources:
+  - https://www.dialicious.com/en/fred
+  - https://hancockslondon.com/makers/fred
+  - https://theswisscollector.com/en/brands/fred
