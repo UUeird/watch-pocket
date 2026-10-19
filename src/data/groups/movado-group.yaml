@@ -4,4 +4,13 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Movado_2023_logo.svg
   license: Public domain
 country: United States
-type: holding-company
+control: public
+revenue:
+  - year: 2025
+    amount: 671310000
+    currency: USD
+    basis: reported
+    sources:
+      - https://www.sec.gov/Archives/edgar/data/72573/000119312526115298/mov-20260131.htm
+sources:
+  - https://en.wikipedia.org/wiki/Movado

@@ -4,4 +4,6 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Intel_logo_2023.svg
   license: Public domain
 country: United States
-type: holding-company
+control: public
+sources:
+  - https://www.wikidata.org/wiki/Q248

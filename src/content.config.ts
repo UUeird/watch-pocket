@@ -13,6 +13,7 @@ const currency = z.enum(['USD', 'CHF', 'EUR', 'GBP', 'JPY', 'HKD', 'INR', 'CNY']
 
 // Revenue for one financial year, as published in accounts (`reported`) or estimated by analysts (`estimate`).
 // Most watch brands are private or part of a group that does not split out its brands, so estimates are common.
+// `year` is the calendar year most of the financial year falls in: Richemont's year to March 2026 is 2025.
 const revenue = z
   .array(
     z.object({
@@ -49,7 +50,9 @@ const groups = defineCollection({
         name: z.string(),
         ...logoFields(image),
         country,
-        type: z.enum(['luxury-group', 'holding-company', 'independent-company', 'private-equity']),
+        // Who controls the company: listed on a stock exchange, held privately (a family, founder or partners),
+        // or owned by a foundation. A group with a `parent` is a subsidiary and leaves this out.
+        control: z.enum(['public', 'private', 'foundation']).optional(),
         founded: z.number().int().optional(),
         website: z.url().optional(),
         parent: reference('groups').optional(),
@@ -58,7 +61,10 @@ const groups = defineCollection({
         // For the group's own facts; a brand it owns cites the ownership on the brand's record.
         sources,
       })
-      .refine(creditHasLogo, creditNeedsLogo),
+      .refine(creditHasLogo, creditNeedsLogo)
+      .refine((group) => (group.control === undefined) !== (group.parent === undefined), {
+        message: 'Give a group either `control` or a `parent`: a subsidiary is controlled by its parent.',
+      }),
 });
 
 const color = z.enum([

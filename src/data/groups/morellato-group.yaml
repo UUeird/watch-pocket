@@ -4,4 +4,6 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Morellato_Group_Logo.svg
   license: Public domain
 country: Italy
-type: holding-company
+control: private
+sources:
+  - https://morellatogroup.com/media_file/MORELLATO%20GROUP_COMPANY%20PROFILE_2025_EN.pdf

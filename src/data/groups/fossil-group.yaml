@@ -4,4 +4,13 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Fossil_Group_logo.svg
   license: Public domain
 country: United States
-type: holding-company
+control: public
+revenue:
+  - year: 2025
+    amount: 1004400000
+    currency: USD
+    basis: reported
+    sources:
+      - https://www.sec.gov/Archives/edgar/data/883569/000088356926000013/q42025ex991.htm
+sources:
+  - https://www.wikidata.org/wiki/Q356212

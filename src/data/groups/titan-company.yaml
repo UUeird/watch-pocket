@@ -6,4 +6,13 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: The Titan Company
 country: India
-type: holding-company
+control: public
+revenue:
+  - year: 2025
+    amount: 760780000000
+    currency: INR
+    basis: reported
+    sources:
+      - https://titancompany.in/news/titan-FY26-results
+sources:
+  - https://en.wikipedia.org/wiki/Titan_Company

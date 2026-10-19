@@ -9,3 +9,11 @@ segment: haute
 ownership:
   - owner: richemont
     from: 1996
+revenue:
+  - year: 2025
+    amount: 914000000
+    currency: CHF
+    basis: estimate
+    sources:
+      - https://www.loupe.watch/watch-guides/morgan-stanley-watch-report-2025
+      - https://www.thehourmarkers.com/articles/morgan-stanley-luxeconsult-ninth-annual-swiss-watcher-2025

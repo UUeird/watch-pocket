@@ -75,7 +75,12 @@ const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
     padding: 0 16px;
   }
 
+  /* The header stays in view while the page scrolls, on the page background so content slides under it. */
   header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg);
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;

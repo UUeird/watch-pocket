@@ -4,3 +4,10 @@ periods: [{ from: 1986 }]
 segment: luxury
 sources:
   - https://en.wikipedia.org/wiki/Jacob_&_Co
+revenue:
+  - year: 2025
+    amount: 180000000
+    currency: CHF
+    basis: estimate
+    sources:
+      - https://revolutionwatch.com/what-we-can-learn-from-morgan-stanleys-ninth-annual-swiss-watch-report/

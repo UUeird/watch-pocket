@@ -49,14 +49,18 @@ try "logo credit with no logo" $D/brands/rolex.yaml '/^logo: /d'
 try "logo credit with no source" $D/brands/rolex.yaml '/^  source: /d'
 try "group logo file that does not exist" $D/groups/kering.yaml 's#logos/kering.svg#logos/missing.svg#'
 try "group logo credit with no logo" $D/groups/kering.yaml '/^logo: /d'
-try "revenue with no source" $D/brands/rolex.yaml 's/^name: Rolex$/name: Rolex\
+try "revenue with no source" $D/brands/breguet.yaml 's/^name: Breguet$/name: Breguet\
 revenue: [{ year: 2024, amount: 1, currency: CHF, basis: estimate }]/'
-try "two revenue figures for one year" $D/groups/kering.yaml 's/^name: Kering$/name: Kering\
+try "two revenue figures for one year" $D/groups/intel.yaml 's/^name: Intel$/name: Intel\
 revenue:\
   - { year: 2024, amount: 1, currency: EUR, basis: reported, sources: [https:\/\/example.com] }\
   - { year: 2024, amount: 2, currency: EUR, basis: reported, sources: [https:\/\/example.com] }/'
-try "revenue in an unknown currency" $D/brands/rolex.yaml 's/^name: Rolex$/name: Rolex\
+try "revenue in an unknown currency" $D/brands/breguet.yaml 's/^name: Breguet$/name: Breguet\
 revenue: [{ year: 2024, amount: 1, currency: XYZ, basis: estimate, sources: [https:\/\/example.com] }]/'
+try "group with neither control nor a parent" $D/groups/kering.yaml '/^control: /d'
+try "group with both control and a parent" $D/groups/breitling-sa.yaml 's/^parent: partners-group$/&\
+control: private/'
+try "group control outside the list" $D/groups/kering.yaml 's/^control: public$/control: luxury-group/'
 try "heritage after the brand's own founding" $D/brands/arnold-son.yaml 's/^  from: 1764$/  from: 2000/'
 try "heritage with no source" $D/brands/arnold-son.yaml '/^    - https:\/\/www.thehourmarkers.com/d; s/^  sources:$/  sources: []/'
 
