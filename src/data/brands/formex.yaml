@@ -1,0 +1,7 @@
+name: Formex
+origin: Switzerland
+periods: [{ from: 1999 }]
+website: https://formexwatch.com
+sources:
+  - https://www.dialicious.com/en/formex
+  - https://formexwatch.com/

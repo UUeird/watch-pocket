@@ -1,0 +1,7 @@
+name: MAS
+origin: Australia
+periods: [{ from: 2019 }]
+website: https://www.maswatch.com
+sources:
+  - https://www.dialicious.com/en/mas
+  - https://www.maswatch.com/

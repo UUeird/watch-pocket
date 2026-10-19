@@ -1,0 +1,8 @@
+name: Rodania
+origin: Switzerland
+periods: [{ from: 1930 }]
+website: https://www.rodania.com
+sources:
+  - https://www.dialicious.com/en/rodania
+  - https://www.wikidata.org/wiki/Q7356446
+  - https://www.rodania.com/

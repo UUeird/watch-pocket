@@ -1,0 +1,7 @@
+name: Dwiss
+origin: Switzerland
+periods: [{ from: 2011 }]
+website: https://www.dwiss.com
+sources:
+  - https://www.dialicious.com/en/dwiss
+  - https://www.dwiss.com/

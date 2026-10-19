@@ -1,0 +1,6 @@
+name: Blacklist
+periods: [{ from: 2013 }]
+website: https://www.blacklistwatches.com
+sources:
+  - https://www.dialicious.com/en/blacklist
+  - https://www.blacklistwatches.com/

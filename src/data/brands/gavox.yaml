@@ -1,0 +1,7 @@
+name: Gavox
+origin: Belgium
+periods: [{ from: 2011 }]
+website: https://www.gavox.com
+sources:
+  - https://www.dialicious.com/en/gavox
+  - https://www.gavox.com/

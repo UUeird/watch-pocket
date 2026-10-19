@@ -1,0 +1,7 @@
+name: Detroit
+origin: United States
+periods: [{ from: 2013 }]
+website: https://detroitwatchco.com
+sources:
+  - https://www.dialicious.com/en/detroit
+  - https://detroitwatchco.com/

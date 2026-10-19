@@ -1,0 +1,7 @@
+name: Tockr
+origin: United States
+periods: [{ from: 2017 }]
+website: https://tockr.com
+sources:
+  - https://www.dialicious.com/en/tockr
+  - https://tockr.com/

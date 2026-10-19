@@ -1,0 +1,8 @@
+name: Cimier
+origin: Switzerland
+periods: [{ from: 1924 }]
+website: https://www.cimier.com
+sources:
+  - https://www.dialicious.com/en/cimier
+  - https://www.wikidata.org/wiki/Q1092114
+  - https://www.cimier.com/

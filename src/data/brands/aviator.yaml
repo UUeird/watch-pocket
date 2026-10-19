@@ -1,0 +1,7 @@
+name: Aviator
+origin: Switzerland
+periods: [{ from: 2000 }]
+website: https://aviatorwatch.swiss
+sources:
+  - https://www.dialicious.com/en/aviator
+  - https://aviatorwatch.swiss/

@@ -1,0 +1,7 @@
+name: WoodWatch
+origin: Netherlands
+periods: [{ from: 2013 }]
+website: https://www.woodwatch.com
+sources:
+  - https://www.dialicious.com/en/woodwatch
+  - https://www.woodwatch.com/

@@ -1,0 +1,6 @@
+name: VDB
+periods: [{ from: 2008 }]
+website: https://vintage-vdb.com
+sources:
+  - https://www.dialicious.com/en/vdb
+  - https://vintage-vdb.com/

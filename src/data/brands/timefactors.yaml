@@ -1,0 +1,7 @@
+name: Timefactors
+origin: United Kingdom
+periods: [{ from: 1996 }]
+website: https://www.timefactors.com
+sources:
+  - https://www.dialicious.com/en/timefactors
+  - https://www.timefactors.com/

@@ -1,0 +1,6 @@
+name: Lotus
+origin: Spain
+periods: [{ from: 1980 }]
+sources:
+  - https://www.dialicious.com/en/lotus
+  - https://www.wikidata.org/wiki/Q16593585

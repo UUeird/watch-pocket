@@ -1,0 +1,7 @@
+name: Venus
+origin: Switzerland
+periods: [{ from: 1902 }]
+website: http://www.montresvenus.com
+sources:
+  - https://www.dialicious.com/en/venus
+  - http://www.montresvenus.com/

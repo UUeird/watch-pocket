@@ -1,0 +1,6 @@
+name: Schaumburg
+periods: [{ from: 1998 }]
+website: https://www.schaumburgwatch.com
+sources:
+  - https://www.dialicious.com/en/schaumburg
+  - https://www.schaumburgwatch.com/

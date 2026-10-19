@@ -1,0 +1,7 @@
+name: Vandaag
+origin: Germany
+status: active
+website: http://www.vandaag.de
+sources:
+  - https://www.dialicious.com/en/vandaag
+  - http://www.vandaag.de/

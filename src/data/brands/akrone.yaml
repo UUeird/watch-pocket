@@ -1,0 +1,7 @@
+name: Akrone
+origin: France
+periods: [{ from: 2015 }]
+website: https://akrone.fr
+sources:
+  - https://www.dialicious.com/en/akrone
+  - https://akrone.fr/

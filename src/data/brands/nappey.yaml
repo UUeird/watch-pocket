@@ -1,0 +1,8 @@
+name: Nappey
+origin: France
+periods: [{ from: 1946 }]
+website: https://nappey.co
+sources:
+  - https://www.dialicious.com/en/nappey
+  - https://www.wikidata.org/wiki/Q108571677
+  - https://nappey.co/

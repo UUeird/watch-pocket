@@ -1,0 +1,7 @@
+name: Mercury
+origin: Switzerland
+periods: [{ from: 2003 }]
+website: https://mercurytime.ch
+sources:
+  - https://www.dialicious.com/en/mercury
+  - https://mercurytime.ch/

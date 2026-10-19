@@ -1,0 +1,8 @@
+name: Milus
+origin: Switzerland
+periods: [{ from: 1919 }]
+website: https://milus.com
+sources:
+  - https://www.dialicious.com/en/milus
+  - https://www.wikidata.org/wiki/Q16040718
+  - https://milus.com/

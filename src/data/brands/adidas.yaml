@@ -1,0 +1,11 @@
+name: Adidas
+origin: Germany
+tags: [fashion]
+licensees:
+  - licensee: timex-group
+    from: 2021
+    sources:
+      - https://ca.fashionnetwork.com/news/Timex-group-and-adidas-strike-global-licensing-deal,1300575.html
+sources:
+  - https://www.dialicious.com/en/adidas
+  - https://ca.fashionnetwork.com/news/Timex-group-and-adidas-strike-global-licensing-deal,1300575.html

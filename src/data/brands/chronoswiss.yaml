@@ -1,0 +1,7 @@
+name: Chronoswiss
+origin: Germany
+periods: [{ from: 1983 }]
+website: https://chronoswiss.com
+sources:
+  - https://www.dialicious.com/en/chronoswiss
+  - https://chronoswiss.com/

@@ -1,0 +1,8 @@
+name: Charriol
+origin: Switzerland
+periods: [{ from: 1983 }]
+website: https://www.charriol.com
+sources:
+  - https://www.dialicious.com/en/charriol
+  - https://www.wikidata.org/wiki/Q5086660
+  - https://www.charriol.com/

@@ -1,0 +1,7 @@
+name: Tusenö
+origin: Sweden
+periods: [{ from: 2015 }]
+website: https://tuseno.com
+sources:
+  - https://www.dialicious.com/en/tuseno
+  - https://tuseno.com/
