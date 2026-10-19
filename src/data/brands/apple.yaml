@@ -8,5 +8,4 @@ headquarters: United States
 manufacturing: [China]
 periods: [{ from: 1976 }]
 segment: broad
-tags:
-  - smartwatch
+makes: [smartwatches]

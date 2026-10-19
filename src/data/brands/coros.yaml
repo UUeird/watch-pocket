@@ -6,7 +6,6 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: COROS2020
 periods: [{ from: 2014 }]
-tags:
-  - smartwatch
+makes: [smartwatches]
 sources:
   - https://en.wikipedia.org/wiki/COROS_Wearables_Inc

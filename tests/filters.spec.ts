@@ -55,11 +55,11 @@ test.describe('Brands filters', () => {
   });
 
   test('a multi-value field matches any of its values', async ({ page }) => {
-    await filter(page, 'tags').selectOption('smartwatch');
+    await filter(page, 'makes').selectOption('smartwatches');
     const rows = visibleRows(page, 'brands');
     expect(await rows.count()).toBeGreaterThan(0);
-    for (const tags of await rows.evaluateAll((trs) => trs.map((tr) => tr.getAttribute('data-tags')))) {
-      expect(tags!.split('|')).toContain('smartwatch');
+    for (const makes of await rows.evaluateAll((trs) => trs.map((tr) => tr.getAttribute('data-makes')))) {
+      expect(makes!.split('|')).toContain('smartwatches');
     }
   });
 

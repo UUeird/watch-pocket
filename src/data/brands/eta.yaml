@@ -5,7 +5,7 @@ logoCredit:
   license: Public domain
 origin: Switzerland
 periods: [{ from: 1856 }]
-category: movement-maker
+makes: [movements]
 ownership:
   - owner: swatch-group
     from: 1983

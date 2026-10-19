@@ -5,7 +5,6 @@ logoCredit:
   license: Public domain
 origin: China
 periods: [{ from: 1987 }]
-tags:
-  - smartwatch
+makes: [smartwatches]
 sources:
   - https://www.wikidata.org/wiki/Q160120

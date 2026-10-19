@@ -23,6 +23,7 @@ const distinct = (values: (string | undefined)[]) =>
   [...new Set(values.filter((value) => value !== undefined))].sort();
 const segments = distinct(brands.map((brand) => brand.data.segment));
 const origins = distinct(brands.map((brand) => brand.data.origin));
+const makes = distinct(brands.flatMap((brand) => brand.data.makes));
 const tags = distinct(brands.flatMap((brand) => brand.data.tags));
 // The Owner filter lists groups, so a brand held by another brand matches none of its options.
 const groupOwnerIds = (brand: (typeof brands)[number]) =>
@@ -48,15 +49,7 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
       },
       { name: 'origin', label: 'Nation of origin', options: options(origins) },
       { name: 'segment', label: 'Segment', options: options(segments) },
-      {
-        name: 'category',
-        label: 'Category',
-        options: [
-          { value: 'watch-brand', label: 'Watch brands' },
-          { value: 'movement-maker', label: 'Movement makers' },
-          { value: 'case-maker', label: 'Case makers' },
-        ],
-      },
+      { name: 'makes', label: 'Makes', options: options(makes) },
       { name: 'tags', label: 'Type', options: options(tags) },
     ]}
   />
@@ -91,7 +84,7 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
       <tbody id="brands">
         {
           brands.map((brand) => {
-            const { category, tags, logo } = brand.data;
+            const { makes, tags, logo } = brand.data;
             const lineNames = linesOf(brand.id).map((line) => line.data.name);
             return (
               <tr
@@ -100,7 +93,7 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
                 data-owner={groupOwnerIds(brand).join('|')}
                 data-segment={brand.data.segment}
                 data-origin={brand.data.origin}
-                data-category={category}
+                data-makes={makes.join('|')}
                 data-tags={tags.join('|')}
               >
                 <td>
