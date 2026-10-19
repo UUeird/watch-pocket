@@ -1,4 +1,8 @@
 name: Rodania
+logo: ../logos/rodania.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Rodania_logo.png
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1930 }]
 website: https://www.rodania.com

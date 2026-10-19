@@ -1,3 +1,7 @@
 name: Ted Baker
+logo: ../logos/ted-baker.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:TedBaker.svg
+  license: Public domain
 origin: United Kingdom
 status: active

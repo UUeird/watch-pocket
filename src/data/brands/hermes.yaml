@@ -1,4 +1,8 @@
 name: Hermès
+logo: ../logos/hermes.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Hermes_wordmark.svg
+  license: Public domain
 origin: France
 periods: [{ from: 1837 }]
 sources:

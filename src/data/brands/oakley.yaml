@@ -1,4 +1,8 @@
 name: Oakley
+logo: ../logos/oakley.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Oakley_logo.svg
+  license: Public domain
 origin: United States
 sources:
   - https://www.dialicious.com/en/oakley

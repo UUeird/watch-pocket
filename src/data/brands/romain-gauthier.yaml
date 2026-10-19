@@ -1,4 +1,8 @@
 name: Romain Gauthier
+logo: ../logos/romain-gauthier.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Romain_Gauthier_logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 2002 }]
 segment: haute

@@ -1,4 +1,8 @@
 name: Vulcain
+logo: ../logos/vulcain.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Vulcain_Watches.jpg
+  license: Public domain
 periods: [{ from: 1858 }]
 website: https://vulcain.ch
 sources:

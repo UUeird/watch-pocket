@@ -1,4 +1,8 @@
 name: Slava
+logo: ../logos/slava.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Slava_logo.png
+  license: Public domain
 origin: Russia
 periods: [{ from: 1924 }]
 sources:

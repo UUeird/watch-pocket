@@ -1,4 +1,10 @@
 name: Pulsar
+logo: ../logos/pulsar.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Pulsar_logo.jpg
+  license: CC BY 3.0
+  licenseUrl: https://creativecommons.org/licenses/by/3.0
+  author: SeikoFrance
 origin: Japan
 periods: [{ from: 1970 }]
 tags:

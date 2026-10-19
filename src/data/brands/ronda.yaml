@@ -1,4 +1,8 @@
 name: Ronda
+logo: ../logos/ronda.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Ronda_logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1946 }]
 category: movement-maker

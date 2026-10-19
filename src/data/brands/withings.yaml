@@ -1,4 +1,8 @@
 name: Withings
+logo: ../logos/withings.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_withings_black.png
+  license: Public domain
 origin: France
 periods: [{ from: 2008 }]
 tags:

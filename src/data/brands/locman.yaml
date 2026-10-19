@@ -1,4 +1,8 @@
 name: Locman
+logo: ../logos/locman.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Locman_logo.svg
+  license: Public domain
 origin: Italy
 periods: [{ from: 1985 }]
 sources:

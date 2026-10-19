@@ -1,4 +1,8 @@
 name: Raketa
+logo: ../logos/raketa.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Raketa_logo.svg
+  license: Public domain
 origin: Russia
 periods: [{ from: 1961 }]
 sources:

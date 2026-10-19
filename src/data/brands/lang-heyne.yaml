@@ -1,4 +1,8 @@
 name: Lang & Heyne
+logo: ../logos/lang-heyne.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Lang_Heyne_Logo_DE.jpg
+  license: Public domain
 origin: Germany
 periods: [{ from: 2001 }]
 sources:

@@ -1,4 +1,8 @@
 name: ETA
+logo: ../logos/eta.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:ETA_SA_Logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1856 }]
 category: movement-maker

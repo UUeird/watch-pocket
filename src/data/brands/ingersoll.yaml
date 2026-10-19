@@ -1,4 +1,8 @@
 name: Ingersoll
+logo: ../logos/ingersoll.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Ingersoll_Watch_Company.jpg
+  license: Public domain
 origin: United Kingdom
 periods: [{ from: 1892 }]
 sources:

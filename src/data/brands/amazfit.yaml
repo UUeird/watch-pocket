@@ -1,4 +1,8 @@
 name: Amazfit
+logo: ../logos/amazfit.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Amazfit_logo.png
+  license: Public domain
 origin: China
 periods: [{ from: 2013 }]
 tags:

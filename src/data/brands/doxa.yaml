@@ -1,4 +1,10 @@
 name: Doxa
+logo: ../logos/doxa.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Doxa-logo.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: DOXA Watches
 origin: Switzerland
 periods: [{ from: 1889 }]
 segment: mid-range

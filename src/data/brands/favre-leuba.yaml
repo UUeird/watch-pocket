@@ -1,3 +1,9 @@
 name: Favre-Leuba
+logo: ../logos/favre-leuba.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Favre-Leuba-logo-old.jpg
+  license: CC0
+  licenseUrl: https://creativecommons.org/publicdomain/zero/1.0
+  author: Nordloyd
 origin: Switzerland
 status: revived

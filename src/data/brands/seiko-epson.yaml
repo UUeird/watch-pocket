@@ -1,4 +1,8 @@
 name: Seiko Epson
+logo: ../logos/seiko-epson.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Epson_logo.svg
+  license: Public domain
 origin: Japan
 periods: [{ from: 1942 }]
 category: movement-maker
