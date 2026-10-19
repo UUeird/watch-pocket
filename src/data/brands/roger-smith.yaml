@@ -1,5 +1,6 @@
 name: Roger Smith
 origin: United Kingdom
 periods: [{ from: 2001 }]
+segment: haute
 sources:
   - https://en.wikipedia.org/wiki/Roger_W._Smith

@@ -8,5 +8,6 @@ logoCredit:
   author: Anibalmru
 origin: France
 periods: [{ from: 1948 }]
+segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q3572153

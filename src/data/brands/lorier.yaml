@@ -1,5 +1,6 @@
 name: Lorier
 origin: United States
 periods: [{ from: 2017 }]
+segment: mid-range
 sources:
   - https://www.lorierwatches.com/pages/about-us

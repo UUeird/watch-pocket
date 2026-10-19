@@ -1,5 +1,6 @@
 name: Nixon
 origin: United States
 periods: [{ from: 1997 }]
+segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q1660409

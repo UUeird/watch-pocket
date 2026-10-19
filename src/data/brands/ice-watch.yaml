@@ -7,6 +7,7 @@ logoCredit:
   author: Ice-Watch
 origin: Belgium
 periods: [{ from: 2007 }]
+segment: budget
 tags:
   - direct-to-consumer
 sources:

@@ -1,6 +1,7 @@
 name: Q&Q
 origin: Japan
 periods: [{ from: 1976 }]
+segment: budget
 ownership:
   - owner: citizen
 sources:

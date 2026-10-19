@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: France
 periods: [{ from: 1896 }]
+segment: luxury
 ownership:
   - owner: richemont
 sources:

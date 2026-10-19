@@ -1,5 +1,6 @@
 name: Vaer
 origin: United States
 periods: [{ from: 2016 }]
+segment: mid-range
 sources:
   - https://www.vaerwatches.com/blogs/faq/when-was-vaer-founded

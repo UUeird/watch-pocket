@@ -1,6 +1,7 @@
 name: Mathey-Tissot
 origin: Switzerland
 periods: [{ from: 1886 }]
+segment: mid-range
 website: https://matheytissot.com
 sources:
   - https://www.dialicious.com/en/mathey-tissot

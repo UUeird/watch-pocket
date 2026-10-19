@@ -1,6 +1,7 @@
 name: Grönefeld
 origin: Netherlands
 status: active
+segment: haute
 website: https://www.gronefeld.com
 sources:
   - https://www.dialicious.com/en/gronefeld

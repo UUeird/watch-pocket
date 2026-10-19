@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: France
 periods: [{ from: 1946 }]
+segment: luxury
 ownership:
   - owner: lvmh
 sources:

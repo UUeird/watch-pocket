@@ -1,6 +1,7 @@
 name: Accurist
 origin: United Kingdom
 periods: [{ from: 1946 }]
+segment: budget
 ownership:
   - owner: time-products
     from: 2014

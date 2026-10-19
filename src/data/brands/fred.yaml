@@ -1,6 +1,7 @@
 name: Fred
 origin: France
 periods: [{ from: 1936 }]
+segment: luxury
 website: https://www.fred.com
 ownership:
   - owner: lvmh

@@ -1,6 +1,7 @@
 name: BWC-Swiss
 origin: Switzerland
 periods: [{ from: 1924 }]
+segment: mid-range
 website: http://bwc-swiss.de
 sources:
   - https://www.dialicious.com/en/bwc-swiss

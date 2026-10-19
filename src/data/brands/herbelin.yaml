@@ -1,6 +1,7 @@
 name: Herbelin
 origin: France
 periods: [{ from: 1947 }]
+segment: mid-range
 website: https://herbelin.com
 sources:
   - https://www.dialicious.com/en/herbelin

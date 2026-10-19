@@ -1,6 +1,7 @@
 name: Credor
 origin: Japan
 periods: [{ from: 1974 }]
+segment: luxury
 ownership:
   - owner: seiko-group
 sources:

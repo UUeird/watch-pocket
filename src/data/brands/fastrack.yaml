@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: India
 periods: [{ from: 1998 }]
+segment: budget
 ownership:
   - owner: titan-company
 sources:

@@ -1,6 +1,7 @@
 name: Celadon
 origin: China
 periods: [{ from: 2012 }]
+segment: mid-range
 website: https://celadonhh.com
 sources:
   - https://www.dialicious.com/en/celadon

@@ -1,5 +1,6 @@
 name: Tutima
 origin: Germany
 periods: [{ from: 1927 }]
+segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q7856943

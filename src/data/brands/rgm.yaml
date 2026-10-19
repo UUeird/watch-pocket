@@ -1,5 +1,6 @@
 name: RGM
 periods: [{ from: 1992 }]
+segment: luxury
 website: https://www.rgmwatches.com
 sources:
   - https://www.dialicious.com/en/rgm

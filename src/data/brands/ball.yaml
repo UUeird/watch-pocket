@@ -9,5 +9,6 @@ origin: United States
 headquarters: Switzerland
 manufacturing: [Switzerland]
 periods: [{ from: 1891 }]
+segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q19865519

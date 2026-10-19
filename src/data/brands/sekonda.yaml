@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: United Kingdom
 periods: [{ from: 1966 }]
+segment: budget
 ownership:
   - owner: time-products
 sources:

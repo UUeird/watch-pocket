@@ -1,6 +1,7 @@
 name: Olivia Burton
 origin: United Kingdom
 periods: [{ from: 2012 }]
+segment: budget
 ownership:
   - owner: movado-group
     from: 2017

@@ -7,5 +7,6 @@ logoCredit:
   author: Michel Herbelin
 origin: France
 periods: [{ from: 1947 }]
+segment: mid-range
 sources:
   - https://herbelin.com/about/?lang=en

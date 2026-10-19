@@ -1,5 +1,6 @@
 name: Laco
 origin: Germany
 periods: [{ from: 1925 }]
+segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Laco_Uhrenmanufaktur

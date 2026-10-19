@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: Japan
 periods: [{ from: 1881 }]
+segment: broad
 ownership:
   - owner: seiko-group
 sources:

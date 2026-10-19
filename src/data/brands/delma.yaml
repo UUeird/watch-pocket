@@ -1,6 +1,7 @@
 name: Delma
 origin: Switzerland
 periods: [{ from: 1924 }]
+segment: mid-range
 website: https://www.delmawatches.com
 sources:
   - https://www.dialicious.com/en/delma

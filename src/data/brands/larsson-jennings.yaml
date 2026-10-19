@@ -1,5 +1,6 @@
 name: Larsson & Jennings
 origin: United Kingdom
 periods: [{ from: 2012 }]
+segment: budget
 sources:
   - https://larssonjennings.com/pages/who-we-are

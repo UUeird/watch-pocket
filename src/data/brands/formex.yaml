@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: Switzerland
 periods: [{ from: 1999 }]
+segment: mid-range
 website: https://formexwatch.com
 sources:
   - https://www.dialicious.com/en/formex

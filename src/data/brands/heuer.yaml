@@ -1,3 +1,4 @@
 name: Heuer
 origin: Switzerland
 periods: [{ from: 1860, to: 1985 }]
+segment: luxury

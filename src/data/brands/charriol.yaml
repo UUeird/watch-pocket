@@ -1,6 +1,7 @@
 name: Charriol
 origin: Switzerland
 periods: [{ from: 1983 }]
+segment: mid-range
 website: https://www.charriol.com
 sources:
   - https://www.dialicious.com/en/charriol

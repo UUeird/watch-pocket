@@ -1,6 +1,7 @@
 name: Haldimann
 origin: Switzerland
 status: active
+segment: haute
 website: https://www.haldimann.swiss
 sources:
   - https://www.dialicious.com/en/haldimann

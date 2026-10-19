@@ -6,5 +6,6 @@ logoCredit:
   license: Public domain
 origin: Austria
 periods: [{ from: 1975 }]
+segment: budget
 sources:
   - https://www.jacques-lemans.com/downloads/01_company_presentation.pdf

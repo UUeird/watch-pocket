@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: Finland
 periods: [{ from: 1977 }]
+segment: mid-range
 makes: [smartwatches]
 sources:
   - https://en.wikipedia.org/wiki/Polar_Electro

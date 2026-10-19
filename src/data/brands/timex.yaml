@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: United States
 periods: [{ from: 1854 }]
+segment: budget
 ownership:
   - owner: timex-group
 sources:

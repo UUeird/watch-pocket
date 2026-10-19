@@ -7,6 +7,7 @@ logoCredit:
   author: RMarei
 origin: Switzerland
 periods: [{ from: 1962 }]
+segment: mid-range
 website: https://aquastar.ch
 sources:
   - https://www.dialicious.com/en/aquastar
