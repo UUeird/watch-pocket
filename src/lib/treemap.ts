@@ -307,9 +307,41 @@ const tipLines = (cell: Cell, layout: Layout) => {
   return lines;
 };
 
+// A name's width in ems, estimated per character for the page's sans-serif, since the build cannot measure text.
+const charWidth = (char: string) =>
+  /[iljtf.,'’!|:;]/.test(char) ? 0.3 : /[r ()-]/.test(char) ? 0.36 : /[mwMW@]/.test(char) ? 0.86 : /[A-Z&]/.test(char) ? 0.68 : /[0-9]/.test(char) ? 0.56 : 0.54;
+const textWidth = (text: string) => [...text].reduce((total, char) => total + charWidth(char), 0);
+const lineHeight = 1.15;
+
+// The largest type, between `min` and `max` pixels, that sets a name in a `width` by `height` pixel space: on one
+// line, or broken at a space onto two where that allows type noticeably larger. None if it cannot fit at `min`.
+export function fitName(name: string, width: number, height: number, max: number, min = 9) {
+  // A margin for error in the width estimate.
+  const room = width * 0.92;
+  let best: { size: number; lines: string[] } | undefined;
+  const single = Math.min(max, room / textWidth(name), height / lineHeight);
+  if (single >= min) best = { size: single, lines: [name] };
+  const words = name.split(' ');
+  for (let index = 1; index < words.length; index++) {
+    const lines = [words.slice(0, index).join(' '), words.slice(index).join(' ')];
+    const size = Math.min(max, room / Math.max(...lines.map(textWidth)), height / (2 * lineHeight));
+    if (size >= min && (!best || size > best.size * 1.15)) best = { size, lines };
+  }
+  return best && { size: Math.floor(best.size * 10) / 10, lines: best.lines };
+}
+
+// A name set to fit its space, or cut short with an ellipsis at the smallest size where it cannot.
+const fittedName = (name: string, width: number, height: number, max: number, extraClass = '') => {
+  const fit = fitName(name, width, height, max);
+  const classes = ['fit', extraClass].filter(Boolean).join(' ');
+  return fit
+    ? `<span class="${classes}" style="font-size:${fit.size}px">${fit.lines.map(escape).join('<br>')}</span>`
+    : `<span class="${classes} cut" style="font-size:9px">${escape(name)}</span>`;
+};
+
 // The grid of plates for `count` brands in a space `width` by `height` pixels: the largest plates, kept near the
 // shape of a wordmark, that fit them all; or where even the smallest do not, as many of the smallest as fit.
-const plate = { minWidth: 50, minHeight: 24, maxHeight: 72, gap: 4, aspect: 2.4 };
+const plate = { minWidth: 50, minHeight: 26, maxHeight: 72, gap: 4, aspect: 2.4 };
 function plateGrid(width: number, height: number, count: number) {
   const none = { columns: 0, rows: 0, width: 0, height: 0 };
   if (count === 0 || width < plate.minWidth || height < plate.minHeight) return none;
@@ -349,10 +381,10 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
   const classes = ['tile', cell.shade === -1 && 'unshaded', shaded && cell.shade! >= darkFrom && 'on-dark', tight && 'tight'].filter(Boolean).join(' ');
   const style = position(cell) + (shaded ? `;--shade:${steps[cell.shade!]}` : '');
   // Its brands sit in a grid of plates below the name, a logo where there is one and the name where not.
-  // The plates grow to fill the tile when it has few brands, and shrink no smaller than 50 by 24px when it has
-  // many, where the last plate says how many more there are. Plates are sized in pixels, so this is worked out
-  // at the size the chart is drawn: the tile's padding and border take 18px across, and with its name and count
-  // and their spacing about 62px down.
+  // The plates grow to fill the tile when it has few brands, and shrink no smaller than 50 by 26px (room for a
+  // name on two lines) when it has many, where the last plate says how many more there are. Plates are sized
+  // in pixels, so this is worked out at the size the chart is drawn: the tile's padding and border take 18px
+  // across, and with its name and count and their spacing about 62px down.
   const grid = plateGrid(cell.width * scale - 18, cell.height * scale - 62, preview.length);
   const room = grid.columns * grid.rows;
   const shown = preview.length > room ? preview.slice(0, Math.max(0, room - 1)) : preview;
@@ -360,10 +392,10 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
   const plates = shown.map((point) =>
     point.logo
       ? `<span class="plate"><img src="${escape(point.logo)}" alt="" loading="lazy"></span>`
-      : `<span class="plate named">${escape(point.name)}</span>`,
+      : `<span class="plate named">${fittedName(point.name, grid.width - 8, grid.height - 4, Math.min(18, grid.height * 0.45))}</span>`,
   );
   if (room > 0 && more > 0) plates.push(`<span class="plate more">+${more} more</span>`);
-  const gridStyle = `grid-template-columns:repeat(${grid.columns},${grid.width.toFixed(1)}px);grid-auto-rows:${grid.height.toFixed(1)}px;--plate-font:${Math.min(16, Math.max(10, grid.height * 0.38)).toFixed(1)}px;--plate-line:${grid.height.toFixed(1)}px`;
+  const gridStyle = `grid-template-columns:repeat(${grid.columns},${grid.width.toFixed(1)}px);grid-auto-rows:${grid.height.toFixed(1)}px;--plate-font:${Math.min(16, Math.max(10, grid.height * 0.38)).toFixed(1)}px`;
   const roomForName = cell.width >= 40 && cell.height >= 22;
   const roomForCount = cell.width >= 40 && cell.height >= 38;
   return (
@@ -373,6 +405,16 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
     (plates.length > 0 ? `<span class="tile-logos" style="${gridStyle}">${plates.join('')}</span>` : '') +
     `</button>`
   );
+}
+
+// A brand's name set in its cell at the largest type that fits, up to 15px: across, or up the side of a narrow,
+// tall cell where that fits it larger. Nothing where neither fits even small.
+function brandName(name: string, width: number, height: number) {
+  if (width < 12 || height < 10) return '';
+  const across = fitName(name, width, height, 15);
+  const up = height > width * 1.4 ? fitName(name, height, width, 15) : undefined;
+  if (up && (!across || up.size > across.size * 1.15)) return fittedName(name, height, width, 15, 'vertical');
+  return across ? fittedName(name, width, height, 15) : width >= 30 && height >= 12 ? fittedName(name, width, height, 15) : '';
 }
 
 // The cells as HTML, so the build and the browser draw them the same way. `scale` is pixels per layout
@@ -398,14 +440,7 @@ export function renderCells(layout: Layout, scale = 1) {
       const content =
         showsLogo(cell) && point.logo
           ? `<img src="${escape(point.logo)}" alt="" loading="lazy">`
-          : showsName(cell)
-            ? `<span>${escape(point.name)}</span>`
-            : // A narrow, tall cell runs its name up the side; a small one uses smaller type.
-              cell.height >= 50 && cell.width >= 14 && cell.height >= cell.width * 1.6
-              ? `<span class="vertical">${escape(point.name)}</span>`
-              : cell.width >= 30 && cell.height >= 14
-                ? `<span class="small">${escape(point.name)}</span>`
-                : '';
+          : brandName(point.name, cell.width * scale - 6, cell.height * scale - 6);
       // A shaded cell is filled with its shade. A logo gets a white halo so a dark mark stays legible; a name
       // turns white on the darker steps instead.
       const classes = ['brand', cell.licensed && 'licensed', cell.shade !== undefined && 'shaded', cell.shade === -1 && 'unshaded', (cell.shade ?? -1) >= darkFrom && 'on-dark']

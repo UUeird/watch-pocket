@@ -353,16 +353,24 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     border-radius: 2px;
   }
 
-  /* A name is set on one line, centered in the plate at a size that grows with it. */
   .canvas :global(.tile .plate.named) {
-    display: block;
     overflow: hidden;
-    padding: 0 6px;
+    padding: 0 4px;
     color: #1c1b19;
-    font-size: var(--plate-font, 0.625rem);
-    line-height: var(--plate-line, 24px);
+  }
+
+  /* A name set at the size that fits its space, on one line or two (see fitName in src/lib/treemap.ts). One that
+     cannot fit even at the smallest size is cut short. */
+  .canvas :global(.fit) {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    line-height: 1.15;
     text-align: center;
     white-space: nowrap;
+  }
+
+  .canvas :global(.fit.cut) {
     text-overflow: ellipsis;
   }
 
@@ -438,21 +446,9 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     outline: 2px solid var(--accent);
   }
 
-  .canvas :global(.brand span) {
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .canvas :global(.brand .small) {
-    font-size: 0.5625rem;
-    white-space: nowrap;
-  }
-
-  .canvas :global(.brand .vertical) {
+  .canvas :global(.brand .fit.vertical) {
+    max-width: none;
     max-height: 100%;
-    font-size: 0.625rem;
-    white-space: nowrap;
     writing-mode: vertical-rl;
     rotate: 180deg;
   }
