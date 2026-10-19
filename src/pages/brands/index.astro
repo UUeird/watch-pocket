@@ -76,7 +76,6 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
           <th>Nation of origin</th>
           <th>Founded</th>
           <th>Segment</th>
-          <th>Type</th>
           <th>Status</th>
           <th class="measure-head">
             <span class="measure-controls">
@@ -95,7 +94,6 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
           brands.map((brand) => {
             const { category, tags, logo } = brand.data;
             const lineNames = linesOf(brand.id).map((line) => line.data.name);
-            const types = category === 'watch-brand' ? tags : [category, ...tags];
             return (
               <tr
                 data-id={brand.id}
@@ -120,7 +118,6 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
                 <td>{brand.data.origin && <CountryLink country={brand.data.origin} />}</td>
                 <td class="num">{brand.data.periods[0]?.from}</td>
                 <td class="cap">{brand.data.segment && label(brand.data.segment)}</td>
-                <td class="cap">{types.map(label).join(', ')}</td>
                 <td class="cap">{brandStatus(brand)}</td>
                 <td class="measure">
                   {(() => {
