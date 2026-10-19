@@ -225,11 +225,11 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
     if (d.kind === 'tile') {
       totals[d.bucket.key] = d.value;
       const middle = color ? median(d.points.flatMap((point) => (point.values[color.id] === undefined ? [] : [point.values[color.id]]))) : undefined;
-      // The brands most marked on the color measure lead the preview, or else the alphabet does.
-      const preview = d.points
-        .filter((point) => point.logo)
-        .sort((a, b) => (color ? (b.values[color.id] ?? -1) - (a.values[color.id] ?? -1) : a.name.localeCompare(b.name)))
-        .slice(0, 12);
+      // Brands with logos lead the preview, then the rest; within each, the highest on the color measure, or else the alphabet.
+      const rank = (point: Point) => (color ? (point.values[color.id] ?? -1) : 0);
+      const preview = [...d.points].sort(
+        (a, b) => Number(Boolean(b.logo)) - Number(Boolean(a.logo)) || rank(b) - rank(a) || a.name.localeCompare(b.name),
+      );
       return [{ kind: 'tile', ...shape, bucket: d.bucket, median: middle, preview, shade: color ? (middle === undefined ? -1 : shadeOf(middle, breaks)) : undefined }];
     }
     if (d.kind === 'bucket') {
@@ -298,36 +298,50 @@ const tipLines = (cell: Cell, layout: Layout) => {
 };
 
 // A bucket drawn whole: its name, its count, a few of its brands' logos, and its median as a shade.
-function renderTile(cell: Cell, layout: Layout) {
+function renderTile(cell: Cell, layout: Layout, scale: number) {
   const { bucket, value, median, preview = [] } = cell;
   const lines = [bucket.name, layout.size.format(value)];
   if (layout.color) lines.push(`Median ${layout.color.label.toLowerCase()}: ${median === undefined ? 'no figures yet' : layout.color.format(median)}`);
   lines.push('Click to see its brands');
   const shaded = cell.shade !== undefined && cell.shade >= 0;
-  const classes = ['tile', cell.shade === -1 && 'unshaded', shaded && cell.shade! >= darkFrom && 'on-dark'].filter(Boolean).join(' ');
+  // A tile narrower or shorter than its padding would be widened by it, past the edge of the chart.
+  const tight = cell.width < 30 || cell.height < 30;
+  const classes = ['tile', cell.shade === -1 && 'unshaded', shaded && cell.shade! >= darkFrom && 'on-dark', tight && 'tight'].filter(Boolean).join(' ');
   const style = position(cell) + (shaded ? `;--shade:${steps[cell.shade!]}` : '');
-  // Logos sit in a grid of small plates below the name, as many as fit.
-  const columns = Math.floor((cell.width - 10) / 54);
-  const rows = Math.floor((cell.height - 46) / 28);
-  const logos = columns > 0 && rows > 0 ? preview.slice(0, columns * rows) : [];
+  // Its brands sit in a grid of small plates below the name, a logo where there is one and the name where not,
+  // as many as fit. When some do not, the last plate says how many more there are.
+  // Plates are sized in pixels, so this is worked out at the size the chart is drawn. A plate is at least
+  // 50px wide and 24px tall with 4px between; the tile's padding and border take 18px across, and its
+  // name and count with their spacing about 56px down.
+  const columns = Math.floor((cell.width * scale - 18 + 4) / 54);
+  const rows = Math.floor((cell.height * scale - 56 + 4) / 28);
+  // Too few plates to show any brands beside the "more" plate is not worth drawing.
+  const room = columns * rows >= 3 ? columns * rows : 0;
+  const shown = preview.length > room ? preview.slice(0, Math.max(0, room - 1)) : preview;
+  const more = preview.length - shown.length;
+  const plates = shown.map((point) =>
+    point.logo
+      ? `<span class="plate"><img src="${escape(point.logo)}" alt="" loading="lazy"></span>`
+      : `<span class="plate named">${escape(point.name)}</span>`,
+  );
+  if (room > 0 && more > 0) plates.push(`<span class="plate more">+${more} more</span>`);
   const roomForName = cell.width >= 40 && cell.height >= 22;
   const roomForCount = cell.width >= 40 && cell.height >= 38;
   return (
     `<button type="button" class="${classes}" style="${style}" data-zoom="${escape(bucket.key)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">` +
     (roomForName ? `<span class="tile-name">${escape(bucket.name)}</span>` : '') +
     (roomForCount ? `<span class="tile-count">${escape(layout.size.format(value))}</span>` : '') +
-    (logos.length > 0
-      ? `<span class="tile-logos" style="grid-template-columns:repeat(${columns},1fr)">${logos.map((point) => `<span class="plate"><img src="${escape(point.logo!)}" alt="" loading="lazy"></span>`).join('')}</span>`
-      : '') +
+    (plates.length > 0 ? `<span class="tile-logos" style="grid-template-columns:repeat(${columns},1fr)">${plates.join('')}</span>` : '') +
     `</button>`
   );
 }
 
-// The cells as HTML, so the build and the browser draw them the same way.
-export function renderCells(layout: Layout) {
+// The cells as HTML, so the build and the browser draw them the same way. `scale` is pixels per layout
+// unit, which sets how many brands fit in a tile.
+export function renderCells(layout: Layout, scale = 1) {
   return layout.cells
     .map((cell) => {
-      if (cell.kind === 'tile') return renderTile(cell, layout);
+      if (cell.kind === 'tile') return renderTile(cell, layout, scale);
       if (cell.kind === 'bucket') {
         const tip = `${cell.bucket.name}: ${layout.size.format(cell.value)}\nClick the name to see these brands alone`;
         const name = cell.named

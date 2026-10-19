@@ -115,8 +115,11 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
 </section>
 
 <style>
+  /* The chart is wider than the page's text column where the window allows, since more width fits more brands in each box. */
   .treemap {
-    margin: 0 0 32px;
+    --wide: max(100%, min(100vw - 48px, 1440px));
+    width: var(--wide);
+    margin: 0 0 32px calc((100% - var(--wide)) / 2);
   }
 
   .controls {
@@ -285,6 +288,10 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     border-radius: 4px;
   }
 
+  .canvas :global(.tile.tight) {
+    padding: 0;
+  }
+
   .canvas :global(.tile.on-dark) {
     color: #ffffff;
   }
@@ -343,6 +350,27 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     padding: 2px 4px;
     background: #ffffff;
     border-radius: 2px;
+  }
+
+  .canvas :global(.tile .plate.named) {
+    display: block;
+    overflow: hidden;
+    padding: 5px 4px 0;
+    color: #1c1b19;
+    font-size: 0.625rem;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .canvas :global(.tile .plate.more) {
+    color: inherit;
+    font-size: 0.625rem;
+    font-weight: 600;
+    white-space: nowrap;
+    background: transparent;
+    border: 1px dashed currentColor;
   }
 
   .canvas :global(.tile .plate img) {
@@ -585,7 +613,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
       const layout = layoutTreemap(data, options);
       selects.size.value = layout.size.id;
       toggle.hidden = layout.mode === 'buckets' || !ownMeasures.includes(layout.size.id);
-      canvas.innerHTML = renderCells(layout);
+      canvas.innerHTML = renderCells(layout, canvas.clientWidth / 1000);
       legend.innerHTML = renderLegend(layout);
       note.innerHTML = renderNote(layout, options.visible !== undefined);
       unsized.innerHTML = renderUnsized(layout);
@@ -652,6 +680,13 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
       pending = requestAnimationFrame(draw);
     };
     if (followed) document.addEventListener('filters:applied', (event) => (event as CustomEvent).detail?.target === followed && redraw());
+    // How many brands fit in a tile depends on the drawn width, so a wider or narrower window redraws.
+    let width = canvas.clientWidth;
+    new ResizeObserver(() => {
+      if (canvas.clientWidth === width) return;
+      width = canvas.clientWidth;
+      redraw();
+    }).observe(canvas);
 
     // One tooltip for the whole chart, placed beside the pointer or the focused cell and kept inside the frame.
     const place = (x: number, y: number) => {
