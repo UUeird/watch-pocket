@@ -42,8 +42,10 @@ export type Metric = {
   // The part of a group's own figure not explained by its brands, e.g. revenue from other businesses.
   groupValue?: (group: Group) => number | undefined;
   // Whether brands' figures add up to something meaningful for a group. Revenue and counts do, so they
-  // can size a treemap; ages and average prices do not, so they color one instead.
+  // can size a whole treemap; ages and average prices do not, so they size brands only within one bucket.
   additive: boolean;
+  // The same for every brand, so it says something about buckets and nothing about the brands in them.
+  uniform?: boolean;
 };
 
 const usd = (value: number) =>
@@ -58,11 +60,12 @@ export const metrics: Metric[] = [
     format: (count) => `${count} brand${count === 1 ? '' : 's'}`,
     value: () => 1,
     additive: true,
+    uniform: true,
   },
   {
     id: 'age',
     label: 'Age',
-    format: (years) => `${years} years`,
+    format: (years) => `${Math.round(years)} years`,
     value: ({ brand }) => {
       const founded = brand.data.periods[0]?.from;
       return founded === undefined ? undefined : Math.max(1, thisYear - founded);
@@ -73,7 +76,7 @@ export const metrics: Metric[] = [
   {
     id: 'age-heritage',
     label: 'Age, including claimed heritage',
-    format: (years) => `${years} years`,
+    format: (years) => `${Math.round(years)} years`,
     value: ({ brand }) => {
       const since = brand.data.heritage?.from ?? brand.data.periods[0]?.from;
       return since === undefined ? undefined : Math.max(1, thisYear - since);
