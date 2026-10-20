@@ -10,7 +10,8 @@
     "check": "astro check",
     "test:links": "node scripts/check-links.mjs",
     "test:browser": "playwright test --project=chromium",
-    "docs:media": "npm run build && playwright test --project=docs-media",
+    "docs:media": "DOCS=1 npm run build && playwright test --project=docs-media",
+    "test:docs": "DOCS=1 npm run build && playwright test --project=chromium tests/docs.spec.ts",
     "test:rules": "scripts/test-data-rules.sh"
   },
   "dependencies": {

@@ -1,8 +1,12 @@
+import { existsSync } from 'node:fs';
 import { expect, test } from '@playwright/test';
 
 // The Docs pages and the captures they show. A missing file is caught by `npm run test:links`; this checks each one
 // actually decodes, and that each recording can be played and scrubbed.
 const pages = ['docs/', 'docs/charts/', 'docs/logos/'];
+
+// The Docs are left out of an ordinary build (see astro.config.mjs), so these run after `npm run test:docs`, which builds them.
+test.skip(!existsSync('dist/docs'), 'The Docs are only built with DOCS=1; run `npm run test:docs`.');
 
 test('the site nav links to the Docs', async ({ page }) => {
   await page.goto('brands/');
