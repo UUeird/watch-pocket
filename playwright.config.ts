@@ -6,14 +6,18 @@ const port = 4322;
 const siteUrl = `http://localhost:${port}${(astroConfig.base ?? '').replace(/\/$/, '')}/`;
 
 // The tests run against the built site, so run `npm run build` first.
+// Two projects: `chromium` is the test suite; `docs-media` drives the site to capture the screenshots and
+// recordings the Docs pages show, into public/docs/media/ (`npm run docs:media`). Neither runs the other's files.
 export default defineConfig({
-  testDir: 'tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   reporter: process.env.CI ? 'github' : 'list',
   // Trailing slash matters: tests navigate to paths relative to the site's base, e.g. `references/`.
   use: { baseURL: siteUrl },
-  projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
+  projects: [
+    { name: 'chromium', testDir: 'tests', use: { ...devices['Desktop Chrome'] } },
+    { name: 'docs-media', testDir: 'docs-media', use: { ...devices['Desktop Chrome'] } },
+  ],
   webServer: {
     command: `node scripts/serve-dist.mjs ${port}`,
     url: siteUrl,

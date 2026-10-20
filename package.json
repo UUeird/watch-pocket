@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "check": "astro check",
     "test:links": "node scripts/check-links.mjs",
-    "test:browser": "playwright test",
+    "test:browser": "playwright test --project=chromium",
+    "docs:media": "npm run build && playwright test --project=docs-media",
     "test:rules": "scripts/test-data-rules.sh"
   },
   "dependencies": {
@@ -21,6 +22,7 @@
     "@playwright/test": "^1.64.0",
     "@types/d3-hierarchy": "^3.1.7",
     "@types/node": "^26.6.5",
+    "ffmpeg-static": "^5.3.0",
     "typescript": "^6.0.3"
   }
 }

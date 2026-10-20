@@ -1,0 +1,189 @@
+---
+import Base from './Base.astro';
+import { href } from '../lib/catalog';
+
+interface Props {
+  title: string;
+  lede?: string;
+}
+
+const { title, lede } = Astro.props;
+// The Docs pages, in reading order. Each page lists them all, so a reader can move between them.
+const pages = [
+  { path: '/docs/', name: 'Overview' },
+  { path: '/docs/charts/', name: 'Reading the charts' },
+  { path: '/docs/logos/', name: 'How logos are shown' },
+];
+const here = Astro.url.pathname.replace(/\/?$/, '/');
+---
+
+<Base title={`${title} · Docs`}>
+  <div class="docs">
+    <nav class="docs-nav" aria-label="Docs">
+      <p class="docs-eyebrow">Docs</p>
+      <ul>
+        {
+          pages.map(({ path, name }) => (
+            <li>
+              <a href={href(path)} aria-current={here === href(path) ? 'page' : undefined}>
+                {name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <article class="doc">
+      <h1>{title}</h1>
+      {lede && <p class="lede">{lede}</p>}
+      <slot />
+    </article>
+  </div>
+</Base>
+
+<script>
+  // Recordings play on their own, in a loop, unless the reader has asked for less motion; then they wait for a press of play.
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    for (const video of document.querySelectorAll<HTMLVideoElement>('.doc video[autoplay]')) {
+      video.removeAttribute('autoplay');
+      video.pause();
+    }
+  }
+</script>
+
+<style>
+  .docs {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 40px;
+    align-items: start;
+  }
+
+  .docs-nav {
+    position: sticky;
+    top: calc(var(--header-height, 64px) + 16px);
+  }
+
+  .docs-eyebrow {
+    margin: 0 0 8px;
+    color: var(--muted);
+    font-size: 0.6875rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .docs-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .docs-nav a {
+    display: block;
+    padding: 4px 0;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .docs-nav a:hover {
+    color: var(--accent);
+  }
+
+  .docs-nav a[aria-current] {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* Text keeps to a readable measure; figures may run wider. */
+  .doc {
+    max-width: 960px;
+  }
+
+  .doc :global(:is(p, ul, ol, table, pre, .callout)) {
+    max-width: 68ch;
+  }
+
+  .doc :global(h2) {
+    margin-top: 48px;
+  }
+
+  .doc :global(h3) {
+    margin: 28px 0 8px;
+    font-size: 1.0625rem;
+  }
+
+  .doc :global(li + li) {
+    margin-top: 4px;
+  }
+
+  .doc :global(code) {
+    padding: 1px 5px;
+    font-size: 0.875em;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  .doc :global(pre) {
+    overflow-x: auto;
+    padding: 12px 14px;
+    font-size: 0.875rem;
+    line-height: 1.45;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+  }
+
+  .doc :global(pre code) {
+    padding: 0;
+    background: none;
+    border: 0;
+  }
+
+  .doc :global(.callout) {
+    padding: 12px 16px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+  }
+
+  .doc :global(.callout > :first-child) {
+    margin-top: 0;
+  }
+
+  .doc :global(.callout > :last-child) {
+    margin-bottom: 0;
+  }
+
+  .doc :global(.status) {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 8px;
+    color: var(--accent);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+  }
+
+  @media (max-width: 760px) {
+    .docs {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+    }
+
+    .docs-nav {
+      position: static;
+    }
+
+    .docs-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 16px;
+    }
+  }
+</style>
