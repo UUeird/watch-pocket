@@ -544,12 +544,13 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     // The box zoomed into. A fresh visit starts on the overview.
     let zoom: string | undefined;
 
-    // The rows the page's filters leave showing, when the chart follows a table.
+    // The brands the page's filters leave showing, when the chart follows a filtered table or set of cards. A brand
+    // can appear more than once there, so they're counted by id.
     const followed = section.dataset.follow;
     const visibleRows = () => {
       if (!followed) return undefined;
-      const rows = [...document.querySelectorAll<HTMLElement>(`#${followed} tr[data-id]`)];
-      return { ids: new Set(rows.filter((row) => !row.hidden).map((row) => row.dataset.id!)), all: rows.length };
+      const rows = [...document.querySelectorAll<HTMLElement>(`#${followed} [data-id]`)];
+      return { ids: new Set(rows.filter((row) => !row.hidden).map((row) => row.dataset.id!)), all: new Set(rows.map((row) => row.dataset.id!)).size };
     };
     const zoomedNow = () => {
       const grouping = data.groupings.find((candidate) => candidate.id === selects.grouping.value) ?? data.groupings[0];
