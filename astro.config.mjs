@@ -10,7 +10,12 @@ const showDocs = process.argv.includes('dev') || process.env.DOCS === '1';
 // Internal links still go through `href()` in src/lib/catalog.ts, which adds `base` if one is ever set again.
 export default defineConfig({
   site: 'https://www.watchpocket.app',
-  vite: { define: { 'import.meta.env.SHOW_DOCS': JSON.stringify(showDocs) } },
+  vite: {
+    define: { 'import.meta.env.SHOW_DOCS': JSON.stringify(showDocs) },
+    // The charts' layout library, bundled when the dev server starts. Found later, on a page's first visit, it's
+    // bundled again under a new version, and the page's request for the old one fails until a restart.
+    optimizeDeps: { include: ['d3-hierarchy'] },
+  },
   integrations: [
     {
       name: 'leave-out-docs',

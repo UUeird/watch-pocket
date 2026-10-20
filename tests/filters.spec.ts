@@ -120,3 +120,32 @@ test.describe('References filters', () => {
     expect(metals).toContain('steel, yellow gold');
   });
 });
+
+test.describe('Ownership groups filters', () => {
+  const cards = (page: Page) => page.locator('#group-cards .card:not([hidden])');
+  const note = (page: Page) => page.locator('[data-treemap] .note');
+
+  test.beforeEach(async ({ page }) => {
+    await page.goto('ownership-groups/');
+  });
+
+  test('narrows the cards, their brands and the chart', async ({ page }) => {
+    const allCards = await cards(page).count();
+    await filter(page, 'segment').selectOption('haute');
+    // Each card left showing holds only matching brands, and the chart draws just those.
+    expect(await cards(page).count()).toBeLessThan(allCards);
+    const shown = await page.locator('#group-cards [data-q]:not([hidden])').evaluateAll((tiles) => tiles.map((tile) => (tile as HTMLElement).dataset.segment));
+    expect(new Set(shown)).toEqual(new Set(['haute']));
+    await expect(count(page)).toContainText(' of ');
+    await expect(note(page)).toContainText('matching the filters');
+    await clear(page).click();
+    await expect(cards(page)).toHaveCount(allCards);
+    await expect(note(page)).not.toContainText('matching the filters');
+  });
+
+  test('searches by group name as well as brand name', async ({ page }) => {
+    await page.getByPlaceholder('Search groups and brands').fill('swatch group');
+    await expect(cards(page)).toHaveCount(1);
+    await expect(cards(page).first()).toHaveAttribute('data-group', 'swatch-group');
+  });
+});
