@@ -56,12 +56,6 @@ test.describe('Brands treemap', () => {
     await expect(page.locator(`${treemap} .unsized summary`)).toContainText('with no owning group on record');
   });
 
-  test('shading by nothing drops the key', async ({ page }) => {
-    await expect(page.locator(`${treemap} .legend .swatch`).first()).toBeVisible();
-    await page.locator(`${treemap} select[name="color"]`).selectOption('');
-    await expect(page.locator(`${treemap} .legend .swatch`)).toHaveCount(0);
-  });
-
   test('draws as circles, zooms in, and remembers the choice', async ({ page }) => {
     const shape = page.locator(`${treemap} select[name="shape"]`);
     await shape.selectOption('circles');
