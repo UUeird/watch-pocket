@@ -1,8 +1,8 @@
-import { hierarchy, treemap, treemapSquarify, type HierarchyRectangularNode } from 'd3-hierarchy';
+import { hierarchy, pack, treemap, treemapSquarify, type HierarchyNode, type HierarchyRectangularNode } from 'd3-hierarchy';
 import { metrics, type Metric } from './metrics';
 
 // Everything here works on plain data, with no content collections, so the page can run the same layout
-// again in the browser when a reader regroups, recolors or filters the chart.
+// again in the browser when a reader regroups, resizes or filters the chart.
 
 // The layout is worked out in this box and drawn in percentages, so it scales with the page.
 export const box = { width: 1000, height: 600 };
@@ -55,15 +55,17 @@ export type ChartData = { points: Point[]; groupings: Grouping[] };
 export type Options = {
   grouping: string;
   size: string;
-  // A measure shown as a shade on each brand, or on each bucket as its median, or none.
-  color?: string;
   // Whether a bucket's own figure beyond its brands' is drawn as a block of its own.
   otherBusiness?: boolean;
   // Brands left in by the page's filters; all of them when unset.
   visible?: Set<string>;
   // The bucket zoomed into, showing its brands alone.
   zoom?: string;
+  // Drawn as nested rectangles (a treemap), or as nested circles packed together.
+  shape?: Shape;
 };
+
+export type Shape = 'rects' | 'circles';
 
 // What the chart shows:
 // - `buckets`: one box per bucket, for a measure that is the same for every brand (a count), which says
@@ -74,6 +76,7 @@ export type Mode = 'buckets' | 'nested' | 'zoomed';
 
 export type Cell = {
   kind: 'bucket' | 'tile' | 'brand' | 'other';
+  // Its box, or for a circle the square it is drawn in.
   x: number;
   y: number;
   width: number;
@@ -84,21 +87,18 @@ export type Cell = {
   licensed?: boolean;
   // Room was left for the bucket's name.
   named?: boolean;
-  // Index into the color steps, or -1 for no figure for the color measure.
-  shade?: number;
-  // A tile's median for the color measure, and a few of its brands with logos to show inside it.
-  median?: number;
+  // A tile's brands, those with logos first, to show inside it.
   preview?: Point[];
 };
 
 export type Layout = {
   options: Options;
   mode: Mode;
+  shape: Shape;
   grouping: Grouping;
   // The bucket zoomed into, unless the grouping has only one.
   zoomed?: Bucket;
   size: Metric;
-  color?: Metric;
   cells: Cell[];
   // Brands drawn, and brands in these buckets with no figure for the size measure.
   shown: number;
@@ -110,15 +110,9 @@ export type Layout = {
   aside?: string;
   // Brands made under license that a measure of what a group owns does not count toward the maker.
   hiddenLicensed: number;
-  // The color measure's step boundaries, lowest first: steps.length + 1 values.
-  breaks: number[];
   // Each bucket's total for the size measure, including its own figure where shown.
   totals: Record<string, number>;
 };
-
-// Sequential steps, light to dark, for a measure shown as color. Text on the last three is light.
-export const steps = ['#cde2fb', '#9ec5f4', '#6da7ec', '#3987e5', '#256abf', '#184f95', '#0d366b'];
-const darkFrom = 4;
 
 export const metricById = (id: string) => metrics.find((metric) => metric.id === id) ?? metrics[0];
 
@@ -137,26 +131,6 @@ type Datum =
   | { kind: 'brand'; point: Point; value: number; licensed: boolean }
   | { kind: 'other'; bucket: Bucket; value: number };
 
-// Splits the color measure's figures into equal-count steps, so a few very old or very dear brands
-// do not wash every other brand out to the lightest shade.
-function quantileBreaks(values: number[]) {
-  if (values.length === 0) return [];
-  const sorted = [...values].sort((a, b) => a - b);
-  const at = (q: number) => sorted[Math.min(sorted.length - 1, Math.floor(q * sorted.length))];
-  const inner = steps.slice(1).map((_, index) => at((index + 1) / steps.length));
-  return [sorted[0], ...inner, sorted.at(-1)!];
-}
-const shadeOf = (value: number, breaks: number[]) => {
-  for (let index = 1; index < breaks.length - 1; index++) if (value < breaks[index]) return index - 1;
-  return steps.length - 1;
-};
-const median = (values: number[]) => {
-  if (values.length === 0) return undefined;
-  const sorted = [...values].sort((a, b) => a - b);
-  const middle = Math.floor(sorted.length / 2);
-  return sorted.length % 2 ? sorted[middle] : (sorted[middle - 1] + sorted[middle]) / 2;
-};
-
 export function layoutTreemap(data: ChartData, options: Options): Layout {
   const grouping = data.groupings.find((candidate) => candidate.id === options.grouping) ?? data.groupings[0];
   const zoomed = zoomedBucket(grouping, options.zoom);
@@ -164,7 +138,6 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
   const allowed = sizesFor(Boolean(zoomed));
   const size = allowed.find((metric) => metric.id === options.size) ?? allowed.find((metric) => metric.id === 'age') ?? allowed[0];
   const mode: Mode = zoomed ? 'zoomed' : size.uniform ? 'buckets' : 'nested';
-  const color = options.color ? metricById(options.color) : undefined;
   const moveLicensed = Boolean(grouping.licensing && size.includesLicensed);
   const buckets = zoomed ? [zoomed] : grouping.buckets.filter((bucket) => !bucket.aside);
   const bucketKeys = new Set(buckets.map((bucket) => bucket.key));
@@ -189,7 +162,6 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
   // Counted once each, though a brand with part-owners sits in several buckets.
   const drawn = new Set<string>();
   const missing = new Map<string, Point>();
-  const colorValues: number[] = [];
   const children: Datum[] = [];
   for (const bucket of buckets) {
     const brands: Datum[] = [];
@@ -200,15 +172,11 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
         continue;
       }
       brands.push({ kind: 'brand', point, value, licensed });
-      if (drawn.has(point.id)) continue;
       drawn.add(point.id);
-      if (mode !== 'buckets' && color && point.values[color.id] !== undefined) colorValues.push(point.values[color.id]);
     }
     if (brands.length === 0) continue;
     if (mode === 'buckets') {
       const points = brands.map((brand) => (brand as Extract<Datum, { kind: 'brand' }>).point);
-      const middle = color ? median(points.flatMap((point) => (point.values[color.id] === undefined ? [] : [point.values[color.id]]))) : undefined;
-      if (middle !== undefined) colorValues.push(middle);
       children.push({ kind: 'tile', bucket, value: brands.length, points });
       continue;
     }
@@ -217,62 +185,64 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
     if (own !== undefined && own > brandTotal) brands.push({ kind: 'other', bucket, value: own - brandTotal });
     children.push({ kind: 'bucket', bucket, children: brands });
   }
-  const breaks = quantileBreaks(colorValues);
 
   const root = hierarchy<Datum>({ kind: 'root', children }, (d) => ('children' in d ? d.children : undefined))
     .sum((d) => ('value' in d ? d.value : 0))
     .sort((a, b) => (b.value ?? 0) - (a.value ?? 0));
 
-  const roomy = (node: HierarchyRectangularNode<Datum>) => mode === 'nested' && node.y1 - node.y0 > 48 && node.x1 - node.x0 > 56;
-  const laidOut = treemap<Datum>()
-    .tile(treemapSquarify)
-    .size([box.width, box.height])
-    .paddingOuter(mode === 'zoomed' ? 0 : 3)
-    .paddingInner(2)
-    .paddingTop((node) => (node.depth === 1 && roomy(node) ? header : mode === 'zoomed' ? 0 : 3))(root);
+  const shape = options.shape ?? 'rects';
+  // Each node's box: as laid out by the treemap, or the square around its circle, packed into one circle as tall as the chart.
+  let placed: { node: HierarchyNode<Datum>; x: number; y: number; width: number; height: number }[];
+  let roomy: (box: { width: number; height: number }) => boolean;
+  if (shape === 'circles') {
+    // A circle's name sits across its top, so a bucket circle needs to be wide enough there to hold it.
+    roomy = ({ width }) => mode === 'nested' && width > 90;
+    placed = pack<Datum>()
+      .size([box.width, box.height])
+      .padding((node) => (node.depth === 0 ? 6 : 2))(root)
+      .descendants()
+      .map((node) => ({ node, x: node.x - node.r, y: node.y - node.r, width: 2 * node.r, height: 2 * node.r }));
+  } else {
+    roomy = ({ width, height }) => mode === 'nested' && height > 48 && width > 56;
+    const span = (node: HierarchyRectangularNode<Datum>) => ({ width: node.x1 - node.x0, height: node.y1 - node.y0 });
+    placed = treemap<Datum>()
+      .tile(treemapSquarify)
+      .size([box.width, box.height])
+      .paddingOuter(mode === 'zoomed' ? 0 : 3)
+      .paddingInner(2)
+      .paddingTop((node) => (node.depth === 1 && roomy(span(node)) ? header : mode === 'zoomed' ? 0 : 3))(root)
+      .descendants()
+      .map((node) => ({ node, x: node.x0, y: node.y0, ...span(node) }));
+  }
 
   const totals: Record<string, number> = {};
-  const cells = laidOut.descendants().flatMap((node): Cell[] => {
+  const cells = placed.flatMap(({ node, ...where }): Cell[] => {
     const d = node.data;
     if (d.kind === 'root') return [];
-    const shape = { x: node.x0, y: node.y0, width: node.x1 - node.x0, height: node.y1 - node.y0, value: node.value ?? 0 };
+    const geometry = { ...where, value: node.value ?? 0 };
     if (d.kind === 'tile') {
       totals[d.bucket.key] = d.value;
-      const middle = color ? median(d.points.flatMap((point) => (point.values[color.id] === undefined ? [] : [point.values[color.id]]))) : undefined;
-      // Brands with logos lead the preview, then the rest; within each, the highest on the color measure, or else the alphabet.
-      const rank = (point: Point) => (color ? (point.values[color.id] ?? -1) : 0);
-      const preview = [...d.points].sort(
-        (a, b) => Number(Boolean(b.logos.whole)) - Number(Boolean(a.logos.whole)) || rank(b) - rank(a) || a.name.localeCompare(b.name),
-      );
-      return [{ kind: 'tile', ...shape, bucket: d.bucket, median: middle, preview, shade: color ? (middle === undefined ? -1 : shadeOf(middle, breaks)) : undefined }];
+      // Brands with logos lead the preview, then the rest, each in alphabetical order.
+      const preview = [...d.points].sort((a, b) => Number(Boolean(b.logos.whole)) - Number(Boolean(a.logos.whole)) || a.name.localeCompare(b.name));
+      return [{ kind: 'tile', ...geometry, bucket: d.bucket, preview }];
     }
     if (d.kind === 'bucket') {
       totals[d.bucket.key] = node.value ?? 0;
       // A zoomed bucket is the whole chart, so it needs no box of its own.
-      return mode === 'zoomed' ? [] : [{ kind: 'bucket', ...shape, bucket: d.bucket, named: roomy(node) }];
+      return mode === 'zoomed' ? [] : [{ kind: 'bucket', ...geometry, bucket: d.bucket, named: roomy(where) }];
     }
     const bucket = (node.parent!.data as Extract<Datum, { kind: 'bucket' }>).bucket;
-    if (d.kind === 'other') return [{ kind: 'other', ...shape, bucket }];
-    const shadeValue = color ? d.point.values[color.id] : undefined;
-    return [
-      {
-        kind: 'brand',
-        ...shape,
-        bucket,
-        point: d.point,
-        licensed: d.licensed,
-        shade: color ? (shadeValue === undefined ? -1 : shadeOf(shadeValue, breaks)) : undefined,
-      },
-    ];
+    if (d.kind === 'other') return [{ kind: 'other', ...geometry, bucket }];
+    return [{ kind: 'brand', ...geometry, bucket, point: d.point, licensed: d.licensed }];
   });
 
   return {
     options,
     mode,
+    shape,
     grouping,
     zoomed: grouping.buckets.length > 1 ? zoomed : undefined,
     size,
-    color,
     cells,
     shown: drawn.size,
     missing: missing.size,
@@ -280,7 +250,6 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
     unrecorded: unrecorded.sort((a, b) => a.name.localeCompare(b.name)),
     aside: setAside?.aside,
     hiddenLicensed,
-    breaks,
     totals,
   };
 }
@@ -321,11 +290,7 @@ const tipLines = (cell: Cell, layout: Layout) => {
   const lines = [point.name + (cell.licensed ? ' (made under license)' : '')];
   if (cell.bucket.name) lines.push(cell.bucket.name);
   lines.push(`${layout.size.label}: ${layout.size.format(cell.value)}`);
-  if (layout.color) {
-    const value = point.values[layout.color.id];
-    lines.push(`${layout.color.label}: ${value === undefined ? 'no figure yet' : layout.color.format(value)}`);
-  }
-  const caption = point.captions[layout.color?.id ?? layout.size.id] ?? point.captions[layout.size.id];
+  const caption = point.captions[layout.size.id];
   if (caption) lines.push(caption);
   return lines;
 };
@@ -392,21 +357,25 @@ function plateGrid(width: number, height: number, count: number) {
   return { columns, rows, width: (width - (columns - 1) * plate.gap) / columns, height: plate.minHeight };
 }
 
-// A bucket drawn whole: its name, its count, a few of its brands' logos, and its median as a shade.
-function renderTile(cell: Cell, layout: Layout, scale: number) {
-  const { bucket, value, median, preview = [] } = cell;
-  // Its brands are counted in a badge by its name, so the tooltip gives the sizing figure, and the count too where
-  // the size is not the count.
+// The lines of a whole bucket's tooltip. Its brands are counted in a badge by its name, so this gives the sizing
+// figure, and the count too where the size is not the count.
+const tileLines = ({ bucket, value, preview = [] }: Cell, layout: Layout) => {
   const count = preview.length;
   const lines = [bucket.name, layout.size.format(value)];
   if (layout.size.id !== 'brands') lines.splice(1, 0, `${count} brand${count === 1 ? '' : 's'}`);
-  if (layout.color) lines.push(`Median ${layout.color.label.toLowerCase()}: ${median === undefined ? 'no figures yet' : layout.color.format(median)}`);
   lines.push('Click to see its brands');
-  const shaded = cell.shade !== undefined && cell.shade >= 0;
+  return lines;
+};
+
+// A bucket drawn whole: its name, its count, and a few of its brands' logos.
+function renderTile(cell: Cell, layout: Layout, scale: number) {
+  const { bucket, preview = [] } = cell;
+  const count = preview.length;
+  const lines = tileLines(cell, layout);
   // A tile narrower or shorter than its padding would be widened by it, past the edge of the chart.
   const tight = cell.width < 30 || cell.height < 30;
-  const classes = ['tile', cell.shade === -1 && 'unshaded', shaded && cell.shade! >= darkFrom && 'on-dark', tight && 'tight'].filter(Boolean).join(' ');
-  const style = position(cell) + (shaded ? `;--shade:${steps[cell.shade!]}` : '');
+  const classes = ['tile', tight && 'tight'].filter(Boolean).join(' ');
+  const style = position(cell);
   // Its brands sit in a grid of plates below the name, a logo where there is one and the name where not.
   // The plates grow to fill the tile when it has few brands, and shrink no smaller than 50 by 26px (room for a
   // name on two lines) when it has many, where the last plate says how many more there are. Plates are sized
@@ -444,9 +413,48 @@ function brandName(name: string, width: number, height: number) {
   return across ? fittedName(name, width, height, 15) : width >= 30 && height >= 12 ? fittedName(name, width, height, 15) : '';
 }
 
+const classList = (...names: (string | false | undefined)[]) => names.filter(Boolean).join(' ');
+
+// The cells as circles, each drawn in its square. What a circle says is fitted to the square inside it, whose
+// side is the circle's width over √2. Names only for now: no logos.
+function renderCircles(layout: Layout, scale: number) {
+  return layout.cells
+    .map((cell) => {
+      const inner = cell.width * scale * Math.SQRT1_2;
+      if (cell.kind === 'tile') {
+        const lines = tileLines(cell, layout);
+        const name = inner >= 28 ? fittedName(cell.bucket.name, inner - 4, inner * 0.5, 16) : '';
+        const badge = inner >= 44 ? `<span class="tile-badge">${cell.preview?.length ?? 0}</span>` : '';
+        return (
+          `<button type="button" class="tile round" style="${position(cell)}" data-zoom="${escape(cell.bucket.key)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">` +
+          badge +
+          name +
+          `</button>`
+        );
+      }
+      if (cell.kind === 'bucket') {
+        const tip = `${cell.bucket.name}: ${layout.size.format(cell.value)}\nClick the name to see these brands alone`;
+        const name = cell.named
+          ? `<button type="button" class="bucket-name" data-zoom="${escape(cell.bucket.key)}" aria-label="${escape(`Zoom into ${cell.bucket.name}`)}">${escape(cell.bucket.name)}</button>`
+          : '';
+        return `<div class="bucket round" style="${position(cell)}" data-tip="${escape(tip)}">${name}</div>`;
+      }
+      if (cell.kind === 'other') {
+        const tip = `${cell.bucket.name}\nOther business: ${layout.size.format(cell.value)}`;
+        return `<div class="other round" style="${position(cell)}" data-tip="${escape(tip)}">${inner >= 46 ? fittedName('Other business', inner, inner, 11) : ''}</div>`;
+      }
+      const point = cell.point!;
+      const lines = tipLines(cell, layout);
+      const classes = classList('brand', 'round', cell.licensed && 'licensed');
+      return `<a class="${classes}" style="${position(cell)}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${brandName(point.name, inner - 2, inner - 2)}</a>`;
+    })
+    .join('');
+}
+
 // The cells as HTML, so the build and the browser draw them the same way. `scale` is pixels per layout
 // unit, which sets how many brands fit in a tile.
 export function renderCells(layout: Layout, scale = 1) {
+  if (layout.shape === 'circles') return renderCircles(layout, scale);
   return layout.cells
     .map((cell) => {
       if (cell.kind === 'tile') return renderTile(cell, layout, scale);
@@ -463,40 +471,15 @@ export function renderCells(layout: Layout, scale = 1) {
       }
       const point = cell.point!;
       const lines = tipLines(cell, layout);
-      const shade = cell.shade !== undefined && cell.shade >= 0 ? `;--shade:${steps[cell.shade]}` : '';
       // A cell's logo is drawn in at most 80% of its width and 60% of its height.
       const logo = showsLogo(cell) ? pickLogo(point.logos, cell.width * scale * 0.8, cell.height * scale * 0.6) : undefined;
       const content = logo
         ? `<img src="${escape(logo.src)}" alt="" loading="lazy">`
         : brandName(point.name, cell.width * scale - 6, cell.height * scale - 6);
-      // A shaded cell is filled with its shade. A logo gets a white halo so a dark mark stays legible; a name
-      // turns white on the darker steps instead.
-      const classes = ['brand', cell.licensed && 'licensed', cell.shade !== undefined && 'shaded', cell.shade === -1 && 'unshaded', (cell.shade ?? -1) >= darkFrom && 'on-dark']
-        .filter(Boolean)
-        .join(' ');
-      return `<a class="${classes}" style="${position(cell)}${shade}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
+      const classes = classList('brand', cell.licensed && 'licensed');
+      return `<a class="${classes}" style="${position(cell)}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
     })
     .join('');
-}
-
-// The key for a measure shown as color: one swatch per step, labeled at its ends, and one for no figure.
-export function renderLegend(layout: Layout) {
-  const { color, breaks } = layout;
-  if (!color) return '';
-  if (breaks.length === 0) return `<p class="legend-empty">No brand here has a figure for ${escape(color.label.toLowerCase())} yet.</p>`;
-  const swatches = steps
-    .map((step, index) => {
-      const range = `${color.format(breaks[index])} to ${color.format(breaks[index + 1])}`;
-      return `<span class="swatch" style="background:${step}" title="${escape(range)}"></span>`;
-    })
-    .join('');
-  return (
-    `<span class="legend-label">${escape(layout.mode === 'buckets' ? `Median ${color.label.toLowerCase()}` : color.label)}</span>` +
-    `<span class="legend-end">${escape(color.format(breaks[0]))}</span>` +
-    `<span class="swatches" role="img" aria-label="${escape(`Lighter to darker: ${color.format(breaks[0])} to ${color.format(breaks.at(-1)!)}`)}">${swatches}</span>` +
-    `<span class="legend-end">${escape(color.format(breaks.at(-1)!))}</span>` +
-    `<span class="swatch none" aria-hidden="true"></span><span class="legend-end">No figure</span>`
-  );
 }
 
 const plural = (count: number, noun: string) => `${count} ${noun}${count === 1 ? '' : 's'}`;

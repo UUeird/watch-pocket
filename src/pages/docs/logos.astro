@@ -1,0 +1,379 @@
+---
+import Docs from '../../layouts/Docs.astro';
+import DocsFigure from '../../components/DocsFigure.astro';
+import rolex from '../../data/logos/rolex.svg?url';
+import rolexCrown from '../../data/logos/rolex-logomark.png?url';
+import cartier from '../../data/logos/cartier.svg?url';
+import longines from '../../data/logos/longines.svg?url';
+import tagHeuer from '../../data/logos/tag-heuer.svg?url';
+import breitling from '../../data/logos/breitling-logomark.png?url';
+import tissotMark from '../../data/logos/tissot-logomark.svg?url';
+import zodiacMark from '../../data/logos/zodiac-logomark.png?url';
+
+// The seven blues the charts once shaded brands with, lightest first.
+const oldSteps = ['#cde2fb', '#9ec5f4', '#6da7ec', '#3987e5', '#256abf', '#184f95', '#0d366b'];
+const shadedExamples = [
+  { name: 'Rolex', src: rolexCrown },
+  { name: 'Breitling', src: breitling },
+  { name: 'Cartier', src: cartier },
+  { name: 'Longines', src: longines },
+  { name: 'TAG Heuer', src: tagHeuer },
+];
+
+// Rolex's colors as they appear in its files: the green of its whole logo, and the average of its gold crown.
+const green = '#006039';
+const gold = '#a27418';
+// Contrast as the Web Content Accessibility Guidelines define it, from 1:1 to 21:1.
+const channel = (value: number) => {
+  const v = value / 255;
+  return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+};
+const luminance = (hex: string) => {
+  const [r, g, b] = [1, 3, 5].map((index) => parseInt(hex.slice(index, index + 2), 16));
+  return 0.2126 * channel(r) + 0.7152 * channel(g) + 0.0722 * channel(b);
+};
+const contrast = (a: string, b: string) => {
+  const [hi, lo] = [luminance(a), luminance(b)].sort((x, y) => y - x);
+  return (hi + 0.05) / (lo + 0.05);
+};
+// Marks and other graphics need at least 3:1 against what's behind them.
+const enough = 3;
+const grounds = [
+  { name: 'White', hex: '#ffffff' },
+  { name: 'Black', hex: '#000000' },
+  { name: 'Rolex gold', hex: gold },
+  { name: 'Rolex green', hex: green },
+];
+const rows = grounds.map((ground) => {
+  const forGreen = ground.hex === green ? undefined : contrast(green, ground.hex);
+  const forGold = ground.hex === gold ? undefined : contrast(gold, ground.hex);
+  return { ...ground, forGreen, forGold };
+});
+const ratio = (value?: number) => (value === undefined ? '—' : `${value.toFixed(1)} : 1`);
+const passes = (value?: number) => value === undefined || value >= enough;
+---
+
+<Docs
+  title="How logos are shown"
+  lede="Logos are drawn by their makers for a white page. The charts show them that way, pick the version of each logo that reads best at its size, and never redraw a mark."
+>
+  <h2 id="white">Logos sit on white</h2>
+  <p>
+    Nearly every logo file is made to sit on a light background: dark lettering, colored symbols, sometimes fine detail. So in the
+    charts each brand's box is white, in light and dark mode alike, and each logo appears exactly as drawn.
+  </p>
+  <p>
+    The charts used to offer a second measure, <strong>Shade by</strong>, which filled each box with one of seven blues. It showed two
+    figures at once, but it put logos on backgrounds they were never drawn for:
+  </p>
+  <figure class="live">
+    <div class="steps" role="img" aria-label="Five brand logos, each shown on seven shades of blue from light to dark. Dark logos vanish on the dark shades, and gold ones blur on the middle shades.">
+      {
+        shadedExamples.map(({ src }) =>
+          oldSteps.map((step) => (
+            <span class="step" style={`background:${step}`}>
+              <img src={src} alt="" />
+            </span>
+          )),
+        )
+      }
+    </div>
+    <figcaption>
+      Rolex, Breitling, Cartier, Longines and TAG Heuer on the old shades. Dark marks disappear as the blue deepens, and gold ones blur
+      into the middle shades.
+    </figcaption>
+  </figure>
+  <p>
+    Keeping them legible took thin halos around dark logos and white plates behind gold ones, chosen by measuring each logo in the
+    browser. Each fix brought its own problems, so Shade by was removed. The charts now show one measure, as size, and the zoomed view
+    still lets you size brands by age or price.
+  </p>
+
+  <h2 id="versions">The whole logo, its name, or its symbol</h2>
+  <p>
+    Many brands have a symbol as well as a name: Rolex's crown, Omega's Ω, Tissot's T and cross. Where we have them, a brand can have
+    three versions of its logo: the whole logo, the name alone (its <em>wordmark</em>) and the symbol alone (its <em>logomark</em>). The
+    parts are cropped from the whole logo, never redrawn.
+  </p>
+  <div class="versions">
+    <figure class="live">
+      <span class="tile wide"><img src={rolex} alt="The Rolex logo" /></span>
+      <figcaption>Rolex's whole logo</figcaption>
+    </figure>
+    <figure class="live">
+      <span class="tile"><img src={rolexCrown} alt="The Rolex crown" /></span>
+      <figcaption>Its symbol, the crown</figcaption>
+    </figure>
+  </div>
+  <p>For each box, the chart picks the version that reads best at the size the box is drawn:</p>
+  <ol>
+    <li>The whole logo, if its name would be drawn at least 12 pixels tall. Where we don't know how tall the name is within the logo, the whole logo must be drawn 100 pixels tall.</li>
+    <li>Otherwise the name or the symbol, whichever we have. Where we have both, the name wins if it would be drawn with at least twice the area of the symbol, since a wide box suits a name and a symbol reads at a smaller size.</li>
+    <li>Otherwise, with neither, the whole logo at whatever size fits, or the brand's name set in type in the smallest boxes.</li>
+  </ol>
+  <p>A logo is shrunk to fit its box, but never enlarged past the size of its file.</p>
+  <DocsFigure src="groups-revenue.png" alt="Ownership groups by revenue: Rolex shows its crown in a large box, Cartier its wordmark in a wide one, Tissot its T and cross." wide>
+    In a large square box Rolex shows its crown. Cartier's wide box suits its name. Tissot's small box shows its symbol.
+  </DocsFigure>
+
+  <h2 id="unaltered">Marks are never altered</h2>
+  <p>
+    A logo may be cropped and resized, and its background cleaned up, but the mark itself is never changed. Cleaning up a background
+    takes care, because some white in a logo is background and some is part of the design. The test is what the brand does on a dark or
+    colored background:
+  </p>
+  <ul>
+    <li><strong>If the area takes on the background's color</strong>, it was never part of the mark, so it is made transparent. The inside of the O in Longines is one.</li>
+    <li><strong>If the area stays white</strong>, it is part of the mark and stays white. Tissot's cross is the Swiss flag's, and is always white on red. So is Zodiac's cross inside its black badge.</li>
+  </ul>
+  <div class="grounds">
+    <figure class="live">
+      <span class="tile tinted wide"><img src={longines} alt="The Longines wordmark on a tinted background; the inside of the O shows the background." /></span>
+      <figcaption>Longines: the inside of the O shows whatever is behind it.</figcaption>
+    </figure>
+    <figure class="live">
+      <span class="tile tinted"><img src={tissotMark} alt="Tissot's T and cross on a tinted background; the cross stays white." /></span>
+      <figcaption>Tissot: the cross stays white on red, whatever is behind it.</figcaption>
+    </figure>
+    <figure class="live">
+      <span class="tile tinted"><img src={zodiacMark} alt="Zodiac's badge on a tinted background; the cross stays white inside the black badge." /></span>
+      <figcaption>Zodiac: the cross is part of the badge.</figcaption>
+    </figure>
+  </div>
+  <p>
+    For the same reason, logos are never redrawn in a single color to suit a background. A one-color version keeps only a logo's shape,
+    and white details drawn as shapes, like Tissot's T and cross, fill in with everything else:
+  </p>
+  <figure class="live">
+    <div class="grounds">
+      <span class="tile"><img src={tissotMark} alt="Tissot's T and cross as drawn" /></span>
+      <span class="tile" role="img" aria-label="The same file redrawn in one color: two blank squares"><span class="mask" style={`--mask:url(${tissotMark})`}></span></span>
+    </div>
+    <figcaption>Tissot's file as drawn, and the same file redrawn in one color. The T and the cross are lost.</figcaption>
+  </figure>
+
+  <h2 id="brand-colors">Brand colors <span class="status">Planned</span></h2>
+  <p>
+    White works for every logo, but it makes every box look alike. A next step is to let boxes take on a brand's own colors, such as
+    Rolex green or Breitling's navy, where the brand itself puts its logo on them.
+  </p>
+  <p>
+    One color per brand isn't enough. Rolex's whole logo is green, and its crown is gold, so the crown could sit on green or the logo on
+    gold. Which pairing works depends on the version a box shows, and on how well each of a logo's colors stands out from the background.
+    For Rolex, using the colors in its files:
+  </p>
+  <div class="contrast">
+    <table>
+      <thead>
+        <tr>
+          <th>Background</th>
+          <th>Green logo</th>
+          <th>Gold crown</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          rows.map(({ name, hex, forGreen, forGold }) => (
+            <tr>
+              <td>
+                <span class="chip" style={`background:${hex}`} />
+                {name}
+              </td>
+              <td class:list={['num', { weak: !passes(forGreen) }]}>{ratio(forGreen)}</td>
+              <td class:list={['num', { weak: !passes(forGold) }]}>{ratio(forGold)}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+    <div class="swatches">
+      {
+        grounds.map(({ name, hex }) => (
+          <div class="swatch-row">
+            {hex !== green && (
+              <span class="tile small wide" style={`background:${hex}`}>
+                <img src={rolex} alt={`Rolex logo on ${name.toLowerCase()}`} />
+              </span>
+            )}
+            {hex !== gold && (
+              <span class="tile small" style={`background:${hex}`}>
+                <img src={rolexCrown} alt={`Rolex crown on ${name.toLowerCase()}`} />
+              </span>
+            )}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+  <p>
+    A mark needs a contrast of at least {enough}:1 with what's behind it to read clearly. White passes for both of Rolex's colors. Black
+    fails the green. The pairings that feel most like Rolex, gold on green and green on gold, are only about 2:1: fine on a large sign,
+    but soft in a small box.
+  </p>
+  <p>The plan:</p>
+  <ul>
+    <li>Each brand records a short list of its own colors, and optionally which version of its logo goes on which of them, for pairings the brand actually uses.</li>
+    <li>For every other version, a background is chosen from white, black and the brand's colors: whichever gives the weakest color in the logo the most contrast.</li>
+    <li>A pairing that falls below {enough}:1 is used only in boxes large enough to carry it, with white in smaller ones.</li>
+    <li>Where a brand publishes its own light version of a logo for dark backgrounds, that version can be used on its dark colors. It is the brand's own design, so it isn't an alteration.</li>
+  </ul>
+  <p>Recorded on a brand, it might look like this:</p>
+  <pre><code>{`colors:
+  - { name: green, hex: '#006039' }
+  - { name: gold, hex: '#a27418' }
+pairings:
+  logomark: green   # the gold crown on Rolex green`}</code></pre>
+  <p>
+    All of this is worked out when the site is built, not in your browser: a logo's colors are measured once from its file, and each
+    version's background is written into the chart's data. The charts then draw it with no measuring and no flash of a logo before its
+    background arrives, even with JavaScript turned off.
+  </p>
+</Docs>
+
+<style>
+  .live {
+    margin: 20px 0 28px;
+  }
+
+  .live figcaption {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 92px));
+    gap: 4px;
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 3 / 2;
+    padding: 8px;
+    border-radius: 3px;
+  }
+
+  .step img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  /* A box as the charts draw one: white, so a logo shows as its maker drew it. */
+  .tile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 100px;
+    padding: 14px;
+    background: #ffffff;
+    border: 1px solid #d4d0c6;
+    border-radius: 4px;
+  }
+
+  .tile.wide {
+    width: 260px;
+  }
+
+  .tile.small {
+    width: 90px;
+    height: 56px;
+    padding: 8px;
+  }
+
+  .tile.small.wide {
+    width: 160px;
+  }
+
+  .tile.tinted {
+    background: #6da7ec;
+  }
+
+  .tile img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .versions,
+  .grounds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .grounds .live {
+    max-width: 260px;
+    margin: 12px 0 20px;
+  }
+
+  /* The file's shape alone, filled with one color: what redrawing a logo in one color would do. */
+  .mask {
+    display: block;
+    width: 100%;
+    aspect-ratio: 125.957 / 60.886;
+    background: #1c1b19;
+    -webkit-mask: var(--mask) center / contain no-repeat;
+    mask: var(--mask) center / contain no-repeat;
+  }
+
+  .contrast {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+    margin: 16px 0 24px;
+  }
+
+  .contrast table {
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+  }
+
+  .contrast th,
+  .contrast td {
+    padding: 6px 14px 6px 0;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .contrast .num {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .contrast .weak {
+    color: #b4261a;
+    font-weight: 600;
+  }
+
+  .chip {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    vertical-align: -2px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+  }
+
+  .swatches {
+    display: grid;
+    gap: 6px;
+  }
+
+  .swatch-row {
+    display: flex;
+    gap: 6px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .contrast .weak {
+      color: #ff8a7a;
+    }
+  }
+</style>

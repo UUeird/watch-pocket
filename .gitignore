@@ -9,3 +9,4 @@ dist/
 # Playwright output
 test-results/
 playwright-report/
+public/docs/media/.tmp/

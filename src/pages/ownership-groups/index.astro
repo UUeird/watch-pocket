@@ -1,9 +1,10 @@
 ---
+import Filters from '../../components/Filters.astro';
 import FlagBadge from '../../components/FlagBadge.astro';
 import OwnershipTimeline from '../../components/OwnershipTimeline.astro';
 import Treemap from '../../components/Treemap.astro';
 import Base from '../../layouts/Base.astro';
-import { describeControl, formatStake, href, loadCatalog, plural, type Brand } from '../../lib/catalog';
+import { describeControl, formatStake, href, label, loadCatalog, plural, type Brand, type Group } from '../../lib/catalog';
 import { chartData } from '../../lib/chart-data';
 
 const catalog = await loadCatalog();
@@ -39,6 +40,27 @@ const initials = (name: string) =>
     .slice(0, 2)
     .toUpperCase();
 
+// The filters work on each brand tile, by the brand's own fields and its group's, so a card shows the brands that
+// match and hides when none do. A brand searches by its name and its group's.
+const controlOf = (group: Group) => (group.data.parent || !group.data.control ? 'subsidiary' : group.data.control);
+const distinct = (values: (string | undefined)[]) => [...new Set(values.filter((value) => value !== undefined))].sort();
+const tileBrands = held.flatMap(({ tiles }) => tiles.map(({ brand }) => brand));
+const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));
+const controls = distinct(groups.map(controlOf)).map((value) => ({
+  value,
+  label: describeControl(groups.find((group) => controlOf(group) === value)!),
+}));
+const filterData = (group: Group, brand: Brand) => ({
+  'data-id': brand.id,
+  'data-q': [brand.data.name, group.data.name].join(' ').toLowerCase(),
+  'data-country': group.data.country,
+  'data-control': controlOf(group),
+  'data-segment': brand.data.segment,
+  'data-origin': brand.data.origin,
+  'data-makes': brand.data.makes.join('|'),
+  'data-tags': brand.data.tags.join('|'),
+});
+
 const stakeNote = (stake: Tile['stake']) =>
   stake === 'unknown' ? 'Part-owned, stake unknown' : `${formatStake(stake)} stake`;
 ---
@@ -47,7 +69,21 @@ const stakeNote = (stake: Tile['stake']) =>
   <h1>Ownership groups</h1>
   <p class="lede">Groups and corporations, with the brands each currently holds.</p>
 
-  <Treemap id="groups" title="Ownership groups" data={data} />
+  <Filters
+    target="group-cards"
+    noun="brands"
+    placeholder="Search groups and brands"
+    filters={[
+      { name: 'country', label: 'Group based in', options: options(distinct(groups.map((group) => group.data.country))) },
+      { name: 'control', label: 'Control', options: controls },
+      { name: 'origin', label: 'Brand origin', options: options(distinct(tileBrands.map((brand) => brand.data.origin))) },
+      { name: 'segment', label: 'Segment', options: options(distinct(tileBrands.map((brand) => brand.data.segment))) },
+      { name: 'makes', label: 'Makes', options: options(distinct(tileBrands.flatMap((brand) => brand.data.makes))) },
+      { name: 'tags', label: 'Type', options: options(distinct(tileBrands.flatMap((brand) => brand.data.tags))) },
+    ]}
+  />
+
+  <Treemap id="groups" title="Ownership groups" data={data} follow="group-cards" />
   <OwnershipTimeline holdings={holdings} />
 
   <h2 class="section-heading">All groups</h2>
@@ -58,10 +94,10 @@ const stakeNote = (stake: Tile['stake']) =>
   </ul>
 
   <p class="order-note" data-order-note>Largest first, by number of brands.</p>
-  <div class="cards">
+  <div class="cards" id="group-cards">
     {
       held.map(({ group, owned, licensed, tiles }, index) => (
-        <section class="card" data-group={group.id} data-index={index}>
+        <section class="card" data-group={group.id} data-index={index} data-filter-group>
           {group.data.logo && (
             <div class="card-logo">
               <img
@@ -87,22 +123,22 @@ const stakeNote = (stake: Tile['stake']) =>
           </p>
           {tiles.length > 0 && (
             <ul class="tiles">
-              {tiles.map(({ brand: { id, data: { name, logo } }, stake, licensed }) => (
-                <li>
-                  <a class:list={['tile', { licensed }]} href={href(`/brands/${id}/`)}>
+              {tiles.map(({ brand, stake, licensed }) => (
+                <li {...filterData(group, brand)}>
+                  <a class:list={['tile', { licensed }]} href={href(`/brands/${brand.id}/`)}>
                     <span class="plate">
-                      {logo ? (
+                      {brand.data.logo ? (
                         <img
-                          src={logo.src}
-                          width={logo.width}
-                          height={logo.height}
-                          style={{ height: `${logoHeight(logo, 1500, 40)}px` }}
+                          src={brand.data.logo.src}
+                          width={brand.data.logo.width}
+                          height={brand.data.logo.height}
+                          style={{ height: `${logoHeight(brand.data.logo, 1500, 40)}px` }}
                           alt=""
                           loading="lazy"
                         />
                       ) : (
                         <span class="monogram" aria-hidden="true">
-                          {initials(name)}
+                          {initials(brand.data.name)}
                         </span>
                       )}
                       {stake !== undefined && (
@@ -112,7 +148,7 @@ const stakeNote = (stake: Tile['stake']) =>
                       )}
                     </span>
                     <span class="tile-name">
-                      {name}
+                      {brand.data.name}
                       {stake !== undefined && <span class="visually-hidden">, {stakeNote(stake)}</span>}
                       {licensed && <span class="visually-hidden">, made under license</span>}
                     </span>
