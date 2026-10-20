@@ -1,0 +1,136 @@
+---
+import Docs from '../../layouts/Docs.astro';
+import DocsFigure from '../../components/DocsFigure.astro';
+import { href } from '../../lib/catalog';
+import { metrics } from '../../lib/metrics';
+
+// Listed from the measures themselves, so this page names them as the charts do.
+const totals = metrics.filter((metric) => metric.additive);
+const perBrand = metrics.filter((metric) => !metric.additive);
+---
+
+<Docs
+  title="Reading the charts"
+  lede="The Brands and Ownership Groups pages open with a chart of every brand, sized by a figure you choose. This guide covers what the boxes mean and how to change them."
+>
+  <h2 id="boxes">Boxes within boxes</h2>
+  <p>
+    The chart is a <em>treemap</em>: each brand is a box, and the brands are grouped into larger boxes, such as a country or an
+    ownership group. A box's area stands for the figure the chart is sized by, so a bigger box means more of it.
+  </p>
+  <p>
+    The <a href={href('/brands/')}>Brands</a> page starts with one box per nation of origin, sized by how many brands come from there.
+    The number by each name counts its brands, and the box shows as many of their logos as fit, then how many more there are.
+  </p>
+  <DocsFigure src="brands-overview.png" alt="The Brands chart: a box per country, largest first, each showing a count and a grid of brand logos." wide>
+    The Brands chart, grouped by nation of origin. Switzerland has the most brands, so its box is largest.
+  </DocsFigure>
+
+  <h2 id="size-by">Choosing what sizes the chart</h2>
+  <p>The <strong>Size by</strong> menu above the chart picks the figure. Its choices come in two groups.</p>
+  <DocsFigure src="controls.png" alt="The chart's controls: a Size by menu and a Draw as menu." width={540} />
+  <h3>Totals for each box</h3>
+  <p>These figures add up, so a group's box is the sum of its brands and boxes can be compared across the whole chart:</p>
+  <ul>{totals.map((metric) => <li>{metric.label}</li>)}</ul>
+  <p>
+    Sized by number of brands, each box is drawn whole. Sized by anything else in this group, each box opens up to show its brands as
+    boxes of their own.
+  </p>
+  <h3>Within one box</h3>
+  <p>
+    These figures don't add up. A country's brands don't have a combined age, for example. So they are offered once you zoom into a
+    single box:
+  </p>
+  <ul>{perBrand.map((metric) => <li>{metric.label}</li>)}</ul>
+  <p>
+    Brands with no figure yet for the chosen measure are left out of the sizing. The line under the chart says how many, and inside a
+    zoomed box they are listed by name.
+  </p>
+
+  <h2 id="zoom">Zooming into a box</h2>
+  <p>
+    Click a box, or its name, to see its brands alone. From there, <strong>All by …</strong> returns to the whole chart, and so does the
+    Escape key. Where the box has a page of its own, such as a country or a group, a link to it appears beside its name.
+  </p>
+  <DocsFigure src="zoom.mp4" alt="A recording: the pointer clicks Switzerland, the chart zooms into its brands, hovers two brands to show their details, and returns." wide>
+    Zooming into Switzerland, where brands are sized by age. Hovering over a brand shows its figures.
+  </DocsFigure>
+  <DocsFigure src="brands-zoomed.png" alt="Switzerland zoomed in: brands as boxes of different sizes, larger ones showing logos and smaller ones names." wide>
+    Inside a box, the largest brands show their logos and smaller ones their names. Narrow boxes set the name sideways.
+  </DocsFigure>
+
+  <h2 id="group-by">Grouping</h2>
+  <p>On the Brands page, <strong>Group by</strong> sorts the brands into boxes by:</p>
+  <ul>
+    <li><strong>Owning group</strong>: the corporation that owns each brand today. A brand with several part-owners sits in each of their boxes, but is counted once.</li>
+    <li><strong>Nation of origin</strong>: where the brand was founded, which may differ from where it is run or made today.</li>
+    <li><strong>Segment</strong>: where the brand sits in the market, from haute horlogerie to budget.</li>
+    <li><strong>Nothing</strong>: every brand in one box.</li>
+  </ul>
+  <p>
+    Brands with nothing recorded for the grouping aren't drawn as a box of their own, since a gap in the data would otherwise be the
+    biggest box. They are listed under the chart instead.
+  </p>
+
+  <h2 id="revenue">Revenue and other business</h2>
+  <p>
+    The <a href={href('/ownership-groups/')}>Ownership Groups</a> page groups brands by their owner. Sized by revenue, a group can record
+    its total revenue as well as its brands'. Whatever its watch brands don't account for, such as jewelry, fashion or leather goods,
+    shows as a hatched block. <strong>Include groups' other business</strong> turns those blocks on and off.
+  </p>
+  <DocsFigure src="groups-revenue.png" alt="Ownership groups sized by annual revenue: Richemont's box is mostly a hatched other-business block beside Cartier and Vacheron Constantin." wide>
+    Sized by annual revenue. Most of Richemont's revenue comes from outside its watch brands.
+  </DocsFigure>
+  <p>
+    Sized by watches made a year, a brand made under license counts toward the group that makes it rather than the one that owns the
+    name, and its box has a dashed edge.
+  </p>
+
+  <h2 id="circles">Rectangles or circles</h2>
+  <p>
+    <strong>Draw as</strong> switches the same chart between rectangles and circles packed inside one another. Circles show each box's
+    size less precisely, but make the nesting easy to see. For now, circles show names rather than logos.
+  </p>
+  <DocsFigure src="size-and-shape.mp4" alt="A recording: Size by changes to annual revenue, then Draw as changes to circles, then Size by returns to number of brands." wide>
+    Sizing ownership groups by revenue, then drawing them as circles.
+  </DocsFigure>
+  <div class="pair">
+    <DocsFigure src="groups-circles.png" alt="Ownership groups as circles, sized by number of brands, each labeled with its name and count." wide>
+      By number of brands.
+    </DocsFigure>
+    <DocsFigure src="groups-revenue-circles.png" alt="Ownership groups as circles sized by revenue, with brand circles inside each group's circle." wide>
+      By annual revenue, with each group's brands inside it.
+    </DocsFigure>
+  </div>
+
+  <h2 id="filters">Following the filters</h2>
+  <p>
+    On the Brands page, the chart follows the filters above the table: it draws only the brands that match, and the line under it says
+    so.
+  </p>
+  <DocsFigure src="follow-filters.mp4" alt="A recording: the owner filter is set to Richemont and the chart narrows to its brands, then to Swatch Group." wide>
+    Filtering by owner narrows the chart to that group's brands.
+  </DocsFigure>
+
+  <h2 id="notes">The notes under the chart</h2>
+  <p>
+    A line under the chart says what is drawn and what is left out. Brands left out for a missing figure, or with nothing recorded for
+    the grouping, are listed below it as links.
+  </p>
+  <DocsFigure src="brands-note.png" alt="The note under a zoomed chart, counting the brands drawn and those with no figure yet." wide />
+  <DocsFigure src="brands-unsized.png" alt="An opened list of brands with no figure for the chosen measure, each a link to its page." wide />
+
+  <h2 id="remembered">Your choices are remembered</h2>
+  <p>
+    Each page remembers how you last set its chart, in this browser only. On a narrow screen the chart keeps a readable size and scrolls
+    sideways.
+  </p>
+</Docs>
+
+<style>
+  .pair {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0 16px;
+  }
+</style>
