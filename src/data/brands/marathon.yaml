@@ -1,5 +1,6 @@
 name: Marathon
 origin: Canada
 periods: [{ from: 1939 }]
+segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q107563969

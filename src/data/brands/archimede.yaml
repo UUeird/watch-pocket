@@ -1,5 +1,6 @@
 name: Archimede
 origin: Germany
 periods: [{ from: 2003 }]
+segment: mid-range
 sources:
   - https://timetransformed.com/2016/03/11/archimede/

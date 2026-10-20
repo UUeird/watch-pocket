@@ -1,6 +1,7 @@
 name: Peseux
 origin: Switzerland
 periods: [{ from: 1923 }]
+segment: mid-range
 makes: [movements]
 ownership:
   - owner: swatch-group

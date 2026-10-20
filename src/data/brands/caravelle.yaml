@@ -1,5 +1,6 @@
 name: Caravelle
 origin: United States
+segment: budget
 sources:
   - https://www.dialicious.com/en/caravelle
   - https://en.wikipedia.org/wiki/Bulova

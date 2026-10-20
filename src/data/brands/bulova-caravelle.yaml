@@ -1,6 +1,7 @@
 name: Bulova Caravelle
 origin: United States
 periods: [{ from: 1962 }]
+segment: budget
 tags:
   - fashion
 ownership:

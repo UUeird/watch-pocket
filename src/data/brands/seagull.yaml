@@ -6,5 +6,6 @@ logoCredit:
   license: Public domain
 origin: China
 periods: [{ from: 1955 }]
+segment: budget
 sources:
   - https://en.wikipedia.org/wiki/Tianjin_Seagull

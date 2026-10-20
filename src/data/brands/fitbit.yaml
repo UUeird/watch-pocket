@@ -6,6 +6,7 @@ logoCredit:
   license: Public domain
 origin: United States
 periods: [{ from: 2007 }]
+segment: budget
 makes: [smartwatches]
 sources:
   - https://www.wikidata.org/wiki/Q5455414

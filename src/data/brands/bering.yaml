@@ -1,6 +1,7 @@
 name: Bering
 origin: Denmark
 periods: [{ from: 2010 }]
+segment: budget
 tags:
   - direct-to-consumer
 sources:

@@ -1,5 +1,6 @@
 name: Braun
 status: active
+segment: budget
 website: https://braun-clocks.com
 sources:
   - https://www.dialicious.com/en/braun

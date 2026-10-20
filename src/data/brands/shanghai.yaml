@@ -1,5 +1,6 @@
 name: Shanghai
 origin: China
 periods: [{ from: 1955 }]
+segment: budget
 sources:
   - https://www.goldthread2.com/culture/chinas-first-mechanical-watch-still-total-steal/article/2153716

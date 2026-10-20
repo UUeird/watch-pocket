@@ -1,5 +1,6 @@
 name: Fiyta
 origin: China
 periods: [{ from: 1987 }]
+segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q15942781

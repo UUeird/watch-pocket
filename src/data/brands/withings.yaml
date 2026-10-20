@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: France
 periods: [{ from: 2008 }]
+segment: mid-range
 makes: [smartwatches]
 sources:
   - https://www.wikidata.org/wiki/Q3569499

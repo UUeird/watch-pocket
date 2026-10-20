@@ -1,5 +1,6 @@
 name: Damasko
 origin: Germany
 periods: [{ from: 1994 }]
+segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q22101765

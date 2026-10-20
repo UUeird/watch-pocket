@@ -1,6 +1,7 @@
 name: U-Boat
 origin: Italy
 status: active
+segment: mid-range
 website: https://www.uboatwatch.com
 sources:
   - https://www.dialicious.com/en/u-boat

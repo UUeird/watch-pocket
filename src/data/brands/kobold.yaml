@@ -1,6 +1,7 @@
 name: Kobold
 origin: United States
 periods: [{ from: 1998 }]
+segment: mid-range
 website: https://koboldwatch.com
 sources:
   - https://www.dialicious.com/en/kobold

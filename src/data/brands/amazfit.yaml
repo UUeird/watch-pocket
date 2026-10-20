@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: China
 periods: [{ from: 2013 }]
+segment: budget
 makes: [smartwatches]
 sources:
   - https://www.wikidata.org/wiki/Q105273852

@@ -1,6 +1,7 @@
 name: Philip Watch
 origin: Italy
 periods: [{ from: 1858 }]
+segment: mid-range
 ownership:
   - owner: morellato-group
     from: 2006

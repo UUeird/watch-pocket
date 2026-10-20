@@ -1,5 +1,6 @@
 name: Poljot
 origin: Russia
 periods: [{ from: 1964 }]
+segment: budget
 sources:
   - https://www.wikidata.org/wiki/Q1758680

@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: United States
 periods: [{ from: 1989 }]
+segment: mid-range
 makes: [smartwatches]
 sources:
   - https://en.wikipedia.org/wiki/Garmin

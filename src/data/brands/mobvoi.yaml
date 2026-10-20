@@ -1,6 +1,7 @@
 name: Mobvoi
 origin: China
 periods: [{ from: 2012 }]
+segment: budget
 makes: [smartwatches]
 sources:
   - https://www.wikidata.org/wiki/Q28224108

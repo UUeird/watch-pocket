@@ -5,5 +5,6 @@ logoCredit:
   license: Public domain
 origin: United States
 periods: [{ from: 1864, to: 1968 }]
+segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Elgin_National_Watch_Company

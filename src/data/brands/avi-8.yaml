@@ -1,6 +1,7 @@
 name: AVI-8
 origin: Hong Kong
 periods: [{ from: 2012 }]
+segment: budget
 ownership:
   - owner: solar-time
 sources:

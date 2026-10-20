@@ -5,5 +5,6 @@ logoCredit:
   license: Public domain
 origin: France
 periods: [{ from: 1837 }]
+segment: luxury
 sources:
   - https://www.wikidata.org/wiki/Q843887

@@ -1,6 +1,7 @@
 name: Lorus
 origin: Japan
 periods: [{ from: 1982 }]
+segment: budget
 ownership:
   - owner: seiko-group
 sources:

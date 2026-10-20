@@ -1,6 +1,7 @@
 name: Halios
 origin: Canada
 periods: [{ from: 2009 }]
+segment: mid-range
 tags:
   - direct-to-consumer
 sources:

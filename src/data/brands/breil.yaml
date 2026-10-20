@@ -1,6 +1,7 @@
 name: Breil
 origin: Italy
 status: active
+segment: budget
 website: https://www.breil.com
 sources:
   - https://www.dialicious.com/en/breil

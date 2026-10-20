@@ -1,6 +1,7 @@
 name: Anonimo
 origin: Italy
 periods: [{ from: 1997 }]
+segment: mid-range
 website: https://anonimo.com
 sources:
   - https://www.dialicious.com/en/anonimo

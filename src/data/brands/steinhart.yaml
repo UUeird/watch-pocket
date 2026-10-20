@@ -1,5 +1,6 @@
 name: Steinhart
 origin: Germany
 periods: [{ from: 2001 }]
+segment: mid-range
 sources:
   - https://timetransformed.com/2015/08/23/steinhart/

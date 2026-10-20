@@ -1,6 +1,7 @@
 name: Zelos
 origin: Singapore
 periods: [{ from: 2014 }]
+segment: mid-range
 tags:
   - direct-to-consumer
 sources:

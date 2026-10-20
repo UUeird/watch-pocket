@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: United States
 periods: [{ from: 2012, to: 2016 }, { from: 2025 }]
+segment: budget
 makes: [smartwatches]
 sources:
   - https://9to5google.com/2025/07/25/pebble-smartwatches-update-trademark-core-devices/

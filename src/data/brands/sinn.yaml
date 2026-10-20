@@ -5,5 +5,6 @@ logoCredit:
   license: Public domain
 origin: Germany
 periods: [{ from: 1961 }]
+segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Sinn_(watchmaker)

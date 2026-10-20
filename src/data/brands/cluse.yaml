@@ -1,6 +1,7 @@
 name: CLUSE
 origin: Netherlands
 periods: [{ from: 2013 }]
+segment: budget
 tags:
   - direct-to-consumer
 sources:

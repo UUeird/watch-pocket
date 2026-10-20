@@ -1,6 +1,7 @@
 name: Buler
 origin: Switzerland
 periods: [{ from: 1945 }]
+segment: mid-range
 sources:
   - https://www.dialicious.com/en/buler
   - https://wiki.grail-watch.com/index.php/Buler

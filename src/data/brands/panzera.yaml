@@ -1,6 +1,7 @@
 name: Panzera
 origin: Australia
 periods: [{ from: 2009 }]
+segment: mid-range
 website: https://panzerawatches.com
 sources:
   - https://www.dialicious.com/en/panzera

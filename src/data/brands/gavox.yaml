@@ -1,6 +1,7 @@
 name: Gavox
 origin: Belgium
 periods: [{ from: 2011 }]
+segment: mid-range
 website: https://www.gavox.com
 sources:
   - https://www.dialicious.com/en/gavox

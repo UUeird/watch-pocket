@@ -1,5 +1,6 @@
 name: Howard
 origin: United States
 periods: [{ from: 1858 }]
+segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/E._Howard_&_Co.

@@ -1,6 +1,7 @@
 name: MWC
 origin: Switzerland
 periods: [{ from: 1974 }]
+segment: mid-range
 website: https://mwc-usa.com
 sources:
   - https://www.dialicious.com/en/mwc

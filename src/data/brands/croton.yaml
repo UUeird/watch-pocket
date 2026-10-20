@@ -1,5 +1,6 @@
 name: Croton
 origin: United States
 periods: [{ from: 1878 }]
+segment: budget
 sources:
   - https://riverjournalonline.com/business/a-tale-of-two-villages-croton-watch-company/23762/

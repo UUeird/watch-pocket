@@ -1,6 +1,7 @@
 name: Nordgreen
 origin: Denmark
 periods: [{ from: 2017 }]
+segment: budget
 tags:
   - direct-to-consumer
 sources:

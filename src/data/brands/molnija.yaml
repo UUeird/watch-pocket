@@ -1,5 +1,6 @@
 name: Molnija
 origin: Russia
 periods: [{ from: 1947 }]
+segment: budget
 sources:
   - https://www.wikidata.org/wiki/Q4508720

@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: Finland
 periods: [{ from: 1936 }]
+segment: mid-range
 makes: [smartwatches]
 sources:
   - https://www.wikidata.org/wiki/Q740115

@@ -7,5 +7,6 @@ logoCredit:
   author: UrbanEgor
 origin: Belarus
 periods: [{ from: 1953 }]
+segment: budget
 sources:
   - https://en.wikipedia.org/wiki/Luch_(watchmaker)

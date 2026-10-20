@@ -1,5 +1,6 @@
 name: Parnis
 origin: China
 periods: [{ from: 2005 }]
+segment: budget
 sources:
   - https://en.wikipedia.org/wiki/Parnis_Watches

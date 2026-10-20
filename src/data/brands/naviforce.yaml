@@ -1,5 +1,6 @@
 name: Naviforce
 origin: China
 periods: [{ from: 2012 }]
+segment: budget
 sources:
   - https://www.rankred.com/chinese-watch-brands/
