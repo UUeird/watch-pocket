@@ -1,5 +1,29 @@
 name: Submariner Date
 line: rolex/submariner
+photos:
+  - file: ../../../photos/rolex/submariner/submariner-date.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:The_Rolex_Submariner_Professional.JPG
+      license: CC BY-SA 3.0
+      licenseUrl: http://creativecommons.org/licenses/by-sa/3.0/
+      author: Dr.K. (talk) 17:56, 28 January 2007 (UTC)
+  - file: ../../../photos/rolex/submariner/submariner-date-2.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_Oyster_Perpetual_Date_Submariner_Watch.JPG
+      license: Public domain
+      author: User:Eternalsleeper
+  - file: ../../../photos/rolex/submariner/submariner-date-3.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_Submariner_300m_Chonometer.jpg
+      license: CC BY-SA 3.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+      author: Si Griffiths
+  - file: ../../../photos/rolex/submariner/submariner-date-4.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_Submariner_diving_watch.jpg
+      license: CC BY 2.0
+      licenseUrl: https://creativecommons.org/licenses/by/2.0
+      author: foeoc kannilc
 sources:
   - https://www.bobswatches.com/rolex-blog/watch-review/rolex-submariner-stainless-steel-16800.html
   - https://www.bobswatches.com/rolex/submariner/16613-ultimate-guide

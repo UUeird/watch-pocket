@@ -2,6 +2,13 @@ name: Apple Watch Nike
 line: apple/apple-watch
 collaborators: [nike]
 website: https://www.apple.com/apple-watch-nike/
+photos:
+  - file: ../../../photos/apple/apple-watch/apple-watch-nike.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Apple_Watch_Nike%2B_(28956976313).jpg
+      license: CC BY 2.0
+      licenseUrl: https://creativecommons.org/licenses/by/2.0
+      author: Maurizio Pesce
 sources:
   - https://support.apple.com/en-us/108056
 references:

@@ -1,5 +1,12 @@
 name: Apple Watch Series
 line: apple/apple-watch
+photos:
+  - file: ../../../photos/apple/apple-watch/apple-watch-series.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Apple_Watch_Series_7;_January_2022_(03).jpg
+      license: CC BY 2.0
+      licenseUrl: https://creativecommons.org/licenses/by/2.0
+      author: MIKI Yoshihito
 sources:
   - https://support.apple.com/en-us/108056
 references:

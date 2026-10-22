@@ -16,7 +16,8 @@
     "check:external": "node scripts/check-external.mjs",
     "photos:official": "node scripts/refresh-official-photos.mjs",
     "photos:commons": "node scripts/find-commons-photos.mjs",
-    "photos:add": "node scripts/add-model-photo.mjs"
+    "photos:add": "node scripts/add-model-photo.mjs",
+    "photos:review": "node scripts/build-photo-review.mjs"
   },
   "dependencies": {
     "astro": "^7.3.8",
