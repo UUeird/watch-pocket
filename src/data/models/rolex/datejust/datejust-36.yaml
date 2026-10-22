@@ -1,5 +1,12 @@
 name: Datejust 36
 line: rolex/datejust
+photos:
+  - file: ../../../photos/rolex/datejust/datejust-36.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_Datejust_36_-_Rolex_Crown_(50826142188).jpg
+      license: CC BY 2.0
+      licenseUrl: https://creativecommons.org/licenses/by/2.0
+      author: ajay_suresh
 references:
   - ref: "126234"
     caseSize: 36

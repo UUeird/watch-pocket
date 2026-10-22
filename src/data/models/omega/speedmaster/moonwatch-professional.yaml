@@ -1,5 +1,18 @@
 name: Moonwatch Professional
 line: omega/speedmaster
+photos:
+  - file: ../../../photos/omega/speedmaster/moonwatch-professional.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Classic_Speedy_(24067321725).jpg
+      license: CC BY 2.0
+      licenseUrl: https://creativecommons.org/licenses/by/2.0
+      author: Daniel Zimmermann from Bayern, Deutschland (Germany)
+  - file: ../../../photos/omega/speedmaster/moonwatch-professional-2.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Omega_(23497183123).jpg
+      license: CC BY 2.0
+      licenseUrl: https://creativecommons.org/licenses/by/2.0
+      author: Daniel Zimmermann from Bayern, Deutschland (Germany)
 references:
   - ref: 311.30.42.30.01.005
     periods: [{ from: 2014, to: 2021 }]
