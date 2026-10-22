@@ -1,0 +1,95 @@
+---
+// A model's photo and a link to the maker's page for it. The photo is the best we may show:
+// 1. our own copy, from Wikimedia Commons under a free license or from the brand's press kit, credited;
+// 2. otherwise the brand's own image from its page (see scripts/refresh-official-photos.mjs), loaded from their site
+//    and credited to them. If it fails to load, the figure removes itself and the link stands alone.
+import { Image } from 'astro:assets';
+import officialPhotos from '../data/official-photos.json';
+import { sourceHost, type Model } from '../lib/catalog';
+
+interface Props {
+  model: Model;
+  brandName: string;
+}
+
+const { model, brandName } = Astro.props;
+const { name, photo, photoCredit, website } = model.data;
+const official = photo ? undefined : (officialPhotos as Record<string, { src: string; page: string }>)[model.id];
+const alt = `${brandName} ${name}`;
+---
+
+{
+  (photo || official || website) && (
+    <aside class="model-photo">
+      {photo && photoCredit && (
+        <figure>
+          <Image src={photo} alt={alt} widths={[360, 720]} sizes="(min-width: 720px) 360px, 100vw" />
+          <figcaption>
+            Photo{photoCredit.author && ` by ${photoCredit.author}`} ·{' '}
+            {photoCredit.licenseUrl ? <a href={photoCredit.licenseUrl}>{photoCredit.license}</a> : photoCredit.license} ·{' '}
+            <a href={photoCredit.source}>Source</a>
+          </figcaption>
+        </figure>
+      )}
+      {official && (
+        <figure data-official-photo>
+          <img src={official.src} alt={alt} loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()" />
+          <figcaption>
+            Image © {brandName}, shown from <a href={official.page}>{sourceHost(official.page)}</a>
+          </figcaption>
+        </figure>
+      )}
+      {
+        website && (
+          <a class="official" href={website}>
+            See it on {sourceHost(website)} <span aria-hidden="true">↗</span>
+          </a>
+        )
+      }
+    </aside>
+  )
+}
+
+<style>
+  .model-photo {
+    display: grid;
+    gap: 10px;
+    justify-items: start;
+    width: min(360px, 100%);
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  /* Product shots are made for a light page, so each sits on a white plate in both color schemes. */
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: contain;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+  }
+
+  figcaption {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+
+  .official {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    text-decoration: none;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+  }
+
+  .official:hover,
+  .official:focus-visible {
+    text-decoration: underline;
+  }
+</style>

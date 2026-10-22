@@ -1,6 +1,7 @@
 name: Apple Watch Nike
 line: apple/apple-watch
 collaborators: [nike]
+website: https://www.apple.com/apple-watch-nike/
 sources:
   - https://support.apple.com/en-us/108056
 references:

@@ -1,5 +1,6 @@
 name: Apple Watch SE
 line: apple/apple-watch
+website: https://www.apple.com/apple-watch-se-3/
 sources:
   - https://support.apple.com/en-us/108056
 references:
