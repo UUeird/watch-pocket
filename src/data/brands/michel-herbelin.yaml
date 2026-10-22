@@ -9,4 +9,4 @@ origin: France
 periods: [{ from: 1947 }]
 segment: mid-range
 sources:
-  - https://herbelin.com/about/?lang=en
+  - https://web.archive.org/web/20230929110143/https://herbelin.com/about/?lang=en

@@ -1,6 +1,10 @@
 name: Tommy Hilfiger
-logo: ../logos/tommy-hilfiger.svg
+logo: ../logos/tommy-hilfiger-name.png
+logomark: ../logos/tommy-hilfiger.svg
 logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Tommy_Hilfiger_Logo.png
+  license: Public domain
+logomarkCredit:
   source: https://commons.wikimedia.org/wiki/File:Tommy_Hilfiger_logo.svg
   license: Public domain
 origin: United States

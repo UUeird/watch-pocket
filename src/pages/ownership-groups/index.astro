@@ -2,14 +2,11 @@
 import Filters from '../../components/Filters.astro';
 import FlagBadge from '../../components/FlagBadge.astro';
 import OwnershipTimeline from '../../components/OwnershipTimeline.astro';
-import Treemap from '../../components/Treemap.astro';
 import Base from '../../layouts/Base.astro';
 import { describeControl, formatStake, href, label, loadCatalog, plural, type Brand, type Group } from '../../lib/catalog';
-import { chartData } from '../../lib/chart-data';
 
 const catalog = await loadCatalog();
 const { groups, brandsOf, licensesOf, holdingsOf } = catalog;
-const data = chartData(catalog, { groupsOnly: true });
 const holdings = groups.map((group) => ({ group, records: holdingsOf({ collection: 'groups', id: group.id }) }));
 
 // A brand as it sits in a group: owned outright, owned in part (with the stake), or made under license.
@@ -83,7 +80,6 @@ const stakeNote = (stake: Tile['stake']) =>
     ]}
   />
 
-  <Treemap id="groups" title="Ownership groups" data={data} follow="group-cards" />
   <OwnershipTimeline holdings={holdings} />
 
   <h2 class="section-heading">All groups</h2>
@@ -93,11 +89,11 @@ const stakeNote = (stake: Tile['stake']) =>
     <li><span class="key-tile licensed" /> Made under license, not owned</li>
   </ul>
 
-  <p class="order-note" data-order-note>Largest first, by number of brands.</p>
+  <p class="order-note">Largest first, by number of brands. <a href={href('/chart/')}>See them on the chart</a>.</p>
   <div class="cards" id="group-cards">
     {
-      held.map(({ group, owned, licensed, tiles }, index) => (
-        <section class="card" data-group={group.id} data-index={index} data-filter-group>
+      held.map(({ group, owned, licensed, tiles }) => (
+        <section class="card" data-group={group.id} data-filter-group>
           {group.data.logo && (
             <div class="card-logo">
               <img
@@ -116,7 +112,6 @@ const stakeNote = (stake: Tile['stake']) =>
             </h2>
             <FlagBadge country={group.data.country} />
           </div>
-          <p class="measure" data-measure hidden />
           <p class="meta">
             {describeControl(group)} · {plural(owned.length, 'brand')}
             {licensed.length > 0 && ` · ${licensed.length} licensed`}
@@ -163,55 +158,11 @@ const stakeNote = (stake: Tile['stake']) =>
   </div>
 </Base>
 
-<script>
-  import { metricById } from '../../lib/treemap';
-
-  // The cards follow the treemap above: largest first by whatever it is sized by, with each group's figure shown.
-  const cards = [...document.querySelectorAll<HTMLElement>('.card[data-group]')];
-  const note = document.querySelector<HTMLElement>('[data-order-note]')!;
-  const treemap = document.querySelector<HTMLElement>('[data-treemap]');
-  const follow = () => {
-    if (!treemap?.dataset.totals) return;
-    const size = treemap.dataset.size!;
-    const totals: Record<string, number> = JSON.parse(treemap.dataset.totals);
-    const { format } = metricById(size);
-    const ranked = [...cards].sort(
-      (a, b) =>
-        (totals[b.dataset.group!] ?? -1) - (totals[a.dataset.group!] ?? -1) || Number(a.dataset.index) - Number(b.dataset.index),
-    );
-    // Moved in the page rather than reordered by CSS, so tabbing goes in the order shown.
-    cards[0]?.parentElement?.append(...ranked);
-    for (const card of cards) {
-      const measure = card.querySelector<HTMLElement>('[data-measure]')!;
-      const total = totals[card.dataset.group!];
-      // The brand count is already in each card's summary line.
-      measure.hidden = size === 'brands';
-      measure.textContent = total === undefined ? 'No figure yet' : format(total);
-      measure.classList.toggle('unknown', total === undefined);
-    }
-    const label = metricById(size).label.toLowerCase();
-    note.textContent = `Largest first, by ${label}, as in the chart above.`;
-  };
-  treemap?.addEventListener('treemap:layout', follow);
-  follow();
-</script>
-
 <style>
   .order-note {
     margin: -8px 0 16px;
     color: var(--muted);
     font-size: 0.8125rem;
-  }
-
-  .measure {
-    margin: 4px 0 0;
-    font-size: 1.0625rem;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .measure.unknown {
-    color: var(--muted);
-    font-size: 0.875rem;
   }
 
   .section-heading {

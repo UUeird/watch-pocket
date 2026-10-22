@@ -1,6 +1,10 @@
 name: Elgin
 logo: ../logos/elgin.png
+logomark: ../logos/elgin-logomark.png
 logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Elgin_National_Watch_Company_Father_Time.png
+  license: Public domain
+logomarkCredit:
   source: https://commons.wikimedia.org/wiki/File:Elgin_National_Watch_Company_Father_Time.png
   license: Public domain
 origin: United States

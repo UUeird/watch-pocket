@@ -4,8 +4,10 @@ import { metrics, type Metric } from './metrics';
 // Everything here works on plain data, with no content collections, so the page can run the same layout
 // again in the browser when a reader regroups, resizes or filters the chart.
 
-// The layout is worked out in this box and drawn in percentages, so it scales with the page.
-export const box = { width: 1000, height: 600 };
+// The layout is worked out in this box and drawn in percentages, so it scales with the page. Circles pack into
+// one round shape, so they get a square box; rectangles a wide one.
+export type Box = { width: number; height: number };
+export const boxFor = (shape: Shape): Box => (shape === 'circles' ? { width: 1000, height: 1000 } : { width: 1000, height: 600 });
 // Room at the top of each bucket for its name, given only where the bucket is big enough to spare it.
 const header = 20;
 
@@ -33,6 +35,8 @@ export type Bucket = {
   key: string;
   name: string;
   href?: string;
+  // The logo of the group or brand the bucket stands for, if it has one.
+  logos?: Point['logos'];
   // The bucket's own figure by measure id, where it has one beyond its brands', e.g. a group's whole revenue.
   values?: Record<string, number>;
   // For brands with no value recorded for the grouping, or none that makes a useful box (no owning group),
@@ -70,7 +74,8 @@ export type Shape = 'rects' | 'circles';
 // What the chart shows:
 // - `buckets`: one box per bucket, for a measure that is the same for every brand (a count), which says
 //   nothing about the brands themselves.
-// - `nested`: buckets holding their brands, for a measure that differs by brand and adds up.
+// - `nested`: buckets holding their brands, for a measure that differs by brand and adds up. Circles always nest,
+//   a count drawing every brand the same size, so each bucket shows the brands in it.
 // - `zoomed`: the brands of one bucket, for any measure that differs by brand, since nothing is summed across buckets.
 export type Mode = 'buckets' | 'nested' | 'zoomed';
 
@@ -95,6 +100,7 @@ export type Layout = {
   options: Options;
   mode: Mode;
   shape: Shape;
+  box: Box;
   grouping: Grouping;
   // The bucket zoomed into, unless the grouping has only one.
   zoomed?: Bucket;
@@ -137,7 +143,9 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
   // A measure that cannot size this mode falls back to the first that can.
   const allowed = sizesFor(Boolean(zoomed));
   const size = allowed.find((metric) => metric.id === options.size) ?? allowed.find((metric) => metric.id === 'age') ?? allowed[0];
-  const mode: Mode = zoomed ? 'zoomed' : size.uniform ? 'buckets' : 'nested';
+  const shape = options.shape ?? 'rects';
+  const box = boxFor(shape);
+  const mode: Mode = zoomed ? 'zoomed' : size.uniform && shape === 'rects' ? 'buckets' : 'nested';
   const moveLicensed = Boolean(grouping.licensing && size.includesLicensed);
   const buckets = zoomed ? [zoomed] : grouping.buckets.filter((bucket) => !bucket.aside);
   const bucketKeys = new Set(buckets.map((bucket) => bucket.key));
@@ -190,18 +198,20 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
     .sum((d) => ('value' in d ? d.value : 0))
     .sort((a, b) => (b.value ?? 0) - (a.value ?? 0));
 
-  const shape = options.shape ?? 'rects';
   // Each node's box: as laid out by the treemap, or the square around its circle, packed into one circle as tall as the chart.
   let placed: { node: HierarchyNode<Datum>; x: number; y: number; width: number; height: number }[];
   let roomy: (box: { width: number; height: number }) => boolean;
   if (shape === 'circles') {
     // A circle's name sits across its top, so a bucket circle needs to be wide enough there to hold it.
     roomy = ({ width }) => mode === 'nested' && width > 90;
+    // A margin round the whole, since bucket labels straddle the top edge of their circles, and a ring inside each
+    // bucket so its label sits mostly clear of its brands.
+    const margin = mode === 'zoomed' ? 0 : 24;
     placed = pack<Datum>()
-      .size([box.width, box.height])
-      .padding((node) => (node.depth === 0 ? 6 : 2))(root)
+      .size([box.width - 2 * margin, box.height - 2 * margin])
+      .padding((node) => (node.depth === 0 ? 6 : node.depth === 1 && mode === 'nested' ? 8 : 2))(root)
       .descendants()
-      .map((node) => ({ node, x: node.x - node.r, y: node.y - node.r, width: 2 * node.r, height: 2 * node.r }));
+      .map((node) => ({ node, x: node.x - node.r + margin, y: node.y - node.r + margin, width: 2 * node.r, height: 2 * node.r }));
   } else {
     roomy = ({ width, height }) => mode === 'nested' && height > 48 && width > 56;
     const span = (node: HierarchyRectangularNode<Datum>) => ({ width: node.x1 - node.x0, height: node.y1 - node.y0 });
@@ -240,6 +250,7 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
     options,
     mode,
     shape,
+    box,
     grouping,
     zoomed: grouping.buckets.length > 1 ? zoomed : undefined,
     size,
@@ -258,7 +269,7 @@ const escape = (text: string) =>
   text.replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]!);
 
 const pct = (value: number, of: number) => `${((value / of) * 100).toFixed(3)}%`;
-const position = ({ x, y, width, height }: Cell) =>
+const position = ({ x, y, width, height }: Cell, box: Box) =>
   `left:${pct(x, box.width)};top:${pct(y, box.height)};width:${pct(width, box.width)};height:${pct(height, box.height)}`;
 
 // What fits in a cell, judged in layout units (about a pixel each at full width).
@@ -375,7 +386,7 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
   // A tile narrower or shorter than its padding would be widened by it, past the edge of the chart.
   const tight = cell.width < 30 || cell.height < 30;
   const classes = ['tile', tight && 'tight'].filter(Boolean).join(' ');
-  const style = position(cell);
+  const style = position(cell, layout.box);
   // Its brands sit in a grid of plates below the name, a logo where there is one and the name where not.
   // The plates grow to fill the tile when it has few brands, and shrink no smaller than 50 by 26px (room for a
   // name on two lines) when it has many, where the last plate says how many more there are. Plates are sized
@@ -415,38 +426,80 @@ function brandName(name: string, width: number, height: number) {
 
 const classList = (...names: (string | false | undefined)[]) => names.filter(Boolean).join(' ');
 
+// The largest box of a logo's shape that fits in a circle `diameter` across, kept a little inside its edge.
+const inCircle = (logo: LogoFile, diameter: number, margin = 0.8) => {
+  const aspect = logo.width / logo.height;
+  const diagonal = Math.hypot(aspect, 1);
+  return { width: (diameter * margin * aspect) / diagonal, height: (diameter * margin) / diagonal };
+};
+
+// A brand's logo in its circle, by the same rules as a rectangle: the whole logo where its name reads, or else
+// its name or symbol alone. Sized as a share of the circle, so it scales with the chart.
+function circleLogo(logos: Point['logos'], diameter: number) {
+  if (!logos.whole || diameter < 48) return '';
+  const room = inCircle(logos.whole, diameter);
+  const logo = pickLogo(logos, room.width, room.height);
+  if (!logo) return '';
+  const fit = inCircle(logo, 1);
+  return `<img src="${escape(logo.src)}" alt="" loading="lazy" style="max-width:${(fit.width * 100).toFixed(1)}%;max-height:${(fit.height * 100).toFixed(1)}%">`;
+}
+
+// A bucket circle's label across its top: its logo on a white plate where it has one that reads there,
+// and otherwise its name.
+function bucketLabel(cell: Cell, scale: number) {
+  const { bucket } = cell;
+  const diameter = cell.width * scale;
+  const label = `aria-label="${escape(`Zoom into ${bucket.name}`)}" data-zoom="${escape(bucket.key)}"`;
+  const height = Math.min(44, Math.max(18, diameter * 0.1));
+  // The label is centered on the circle's top edge, so its foot sits half its height inside; it keeps within the
+  // chord there.
+  const foot = height / 2 + 4;
+  const chord = 2 * Math.sqrt(Math.max(0, foot * (diameter - foot)));
+  const width = Math.min(diameter * 0.5, chord * 0.9);
+  // Below 24px tall a group's logo is too small to read, so the name stands in for it.
+  const logo = bucket.logos && height >= 24 ? pickLogo(bucket.logos, width - 12, height - 6) : undefined;
+  if (logo) {
+    return `<button type="button" class="bucket-name logo" style="height:${height.toFixed(1)}px;max-width:${width.toFixed(1)}px" ${label}><img src="${escape(logo.src)}" alt="" loading="lazy"></button>`;
+  }
+  return `<button type="button" class="bucket-name" ${label}>${escape(bucket.name)}</button>`;
+}
+
 // The cells as circles, each drawn in its square. What a circle says is fitted to the square inside it, whose
-// side is the circle's width over √2. Names only for now: no logos.
+// side is the circle's width over √2.
 function renderCircles(layout: Layout, scale: number) {
   return layout.cells
     .map((cell) => {
-      const inner = cell.width * scale * Math.SQRT1_2;
+      const diameter = cell.width * scale;
+      const inner = diameter * Math.SQRT1_2;
+      const style = position(cell, layout.box);
       if (cell.kind === 'tile') {
         const lines = tileLines(cell, layout);
         const name = inner >= 28 ? fittedName(cell.bucket.name, inner - 4, inner * 0.5, 16) : '';
         const badge = inner >= 44 ? `<span class="tile-badge">${cell.preview?.length ?? 0}</span>` : '';
         return (
-          `<button type="button" class="tile round" style="${position(cell)}" data-zoom="${escape(cell.bucket.key)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">` +
+          `<button type="button" class="tile round" style="${style}" data-zoom="${escape(cell.bucket.key)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">` +
           badge +
           name +
           `</button>`
         );
       }
       if (cell.kind === 'bucket') {
-        const tip = `${cell.bucket.name}: ${layout.size.format(cell.value)}\nClick the name to see these brands alone`;
-        const name = cell.named
-          ? `<button type="button" class="bucket-name" data-zoom="${escape(cell.bucket.key)}" aria-label="${escape(`Zoom into ${cell.bucket.name}`)}">${escape(cell.bucket.name)}</button>`
-          : '';
-        return `<div class="bucket round" style="${position(cell)}" data-tip="${escape(tip)}">${name}</div>`;
+        const count = layout.cells.filter((other) => other.kind === 'brand' && other.bucket === cell.bucket).length;
+        const figure = layout.size.uniform ? layout.size.format(count) : `${layout.size.format(cell.value)}`;
+        const tip = `${cell.bucket.name}: ${figure}\nClick to see these brands alone`;
+        const name = cell.named ? bucketLabel(cell, scale) : '';
+        // The whole circle zooms in for a pointer; its label is the button for the keyboard.
+        return `<div class="bucket round" style="${style}" data-zoom="${escape(cell.bucket.key)}" data-tip="${escape(tip)}">${name}</div>`;
       }
       if (cell.kind === 'other') {
         const tip = `${cell.bucket.name}\nOther business: ${layout.size.format(cell.value)}`;
-        return `<div class="other round" style="${position(cell)}" data-tip="${escape(tip)}">${inner >= 46 ? fittedName('Other business', inner, inner, 11) : ''}</div>`;
+        return `<div class="other round" style="${style}" data-tip="${escape(tip)}">${inner >= 46 ? fittedName('Other business', inner, inner, 11) : ''}</div>`;
       }
       const point = cell.point!;
       const lines = tipLines(cell, layout);
       const classes = classList('brand', 'round', cell.licensed && 'licensed');
-      return `<a class="${classes}" style="${position(cell)}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${brandName(point.name, inner - 2, inner - 2)}</a>`;
+      const content = circleLogo(point.logos, diameter) || brandName(point.name, inner - 2, inner - 2);
+      return `<a class="${classes}" style="${style}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
     })
     .join('');
 }
@@ -463,11 +516,11 @@ export function renderCells(layout: Layout, scale = 1) {
         const name = cell.named
           ? `<button type="button" class="bucket-name" data-zoom="${escape(cell.bucket.key)}" aria-label="${escape(`Zoom into ${cell.bucket.name}`)}">${escape(cell.bucket.name)}</button>`
           : '';
-        return `<div class="bucket" style="${position(cell)}" data-tip="${escape(tip)}">${name}</div>`;
+        return `<div class="bucket" style="${position(cell, layout.box)}" data-tip="${escape(tip)}">${name}</div>`;
       }
       if (cell.kind === 'other') {
         const tip = `${cell.bucket.name}\nOther business: ${layout.size.format(cell.value)}`;
-        return `<div class="other" style="${position(cell)}" data-tip="${escape(tip)}">${showsName(cell) ? '<span>Other business</span>' : ''}</div>`;
+        return `<div class="other" style="${position(cell, layout.box)}" data-tip="${escape(tip)}">${showsName(cell) ? '<span>Other business</span>' : ''}</div>`;
       }
       const point = cell.point!;
       const lines = tipLines(cell, layout);
@@ -477,7 +530,7 @@ export function renderCells(layout: Layout, scale = 1) {
         ? `<img src="${escape(logo.src)}" alt="" loading="lazy">`
         : brandName(point.name, cell.width * scale - 6, cell.height * scale - 6);
       const classes = classList('brand', cell.licensed && 'licensed');
-      return `<a class="${classes}" style="${position(cell)}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
+      return `<a class="${classes}" style="${position(cell, layout.box)}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
     })
     .join('');
 }
@@ -492,6 +545,9 @@ export function renderNote(layout: Layout, filtered = false) {
   if (mode === 'buckets') {
     const buckets = layout.cells.filter((cell) => cell.kind === 'tile').length;
     parts.push(`${plural(shown, 'brand')}${matching} across ${buckets} ${buckets === 1 ? 'box' : 'boxes'} by ${grouping.label.toLowerCase()}, each sized by its number of brands. Click a box to see its brands, sized by a figure of their own.`);
+  } else if (size.uniform && !zoomed) {
+    const buckets = layout.cells.filter((cell) => cell.kind === 'bucket').length;
+    parts.push(`${plural(shown, 'brand')}${matching} across ${buckets} ${buckets === 1 ? 'circle' : 'circles'} by ${grouping.label.toLowerCase()}, one small circle per brand. Click a circle to see its brands alone.`);
   } else {
     const where = zoomed ? ` in ${zoomed.name}` : '';
     parts.push(`${plural(shown, 'brand')}${matching}${where}, sized by ${size.label.toLowerCase()}.`);
