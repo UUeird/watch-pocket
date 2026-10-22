@@ -1,8 +1,10 @@
 // Adds a photo to a model: downloads it into src/data/photos/ and adds it, with its credit, to the model's `photos`.
-// It goes last, or first with --primary, which makes it the photo the model's page shows large.
+// It goes last, or first with --primary, which makes it the photo the model's page shows large. With --ref it goes
+// to that one reference's `photos` instead, for a reference that looks unlike the model's others.
 //
 // From Wikimedia Commons, with the credit taken from the file's page:
 //   npm run photos:add -- richard-mille/rm-67/rm-67-02 "File:Richard Mille RM 67-02.jpg"
+//   npm run photos:add -- rolex/gmt-master-ii/gmt-master-ii "File:Rolex GMT Master II Pepsi.jpg" --ref 126710BLRO
 //
 // From a brand's press kit, with the page it came from and the terms it was given on:
 //   npm run photos:add -- richard-mille/rm-67/rm-67-02 ~/Downloads/rm67-02.jpg --source https://… --license "Press image, editorial use"
@@ -29,8 +31,15 @@ try {
   process.exit(1);
 }
 const doc = parseDocument(yaml);
-const existing = doc.get('photos')?.toJSON() ?? [];
 const primary = rest.includes('--primary');
+const ref = option('ref');
+// The reference's place in the model's list, when the photo is for one.
+const refIndex = ref === undefined ? -1 : (doc.get('references')?.toJSON() ?? []).findIndex((entry) => String(entry.ref) === ref);
+if (ref !== undefined && refIndex === -1) {
+  console.error(`${modelId} has no reference ${ref}.`);
+  process.exit(1);
+}
+const existing = (ref === undefined ? doc.get('photos') : doc.getIn(['references', refIndex, 'photos']))?.toJSON() ?? [];
 
 const quote = (text) => JSON.stringify(text);
 let credit;
@@ -38,7 +47,8 @@ let saveTo;
 const photosDir = join('src/data/photos', dirname(modelId));
 mkdirSync(photosDir, { recursive: true });
 // Each photo gets its own file: the model's name, then -2, -3 and so on.
-const base = modelId.split('/').at(-1) + (existing.length > 0 ? `-${existing.length + 1}` : '');
+const slug = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+const base = modelId.split('/').at(-1) + (ref === undefined ? '' : `-${slug(ref)}`) + (existing.length > 0 ? `-${existing.length + 1}` : '');
 
 if (from.startsWith('File:')) {
   const api = 'https://commons.wikimedia.org/w/api.php';
@@ -85,6 +95,25 @@ if (existing.some((photo) => photo.credit?.source === credit.source)) {
 }
 const entry = { file: relative(dirname(modelFile), saveTo), credit: Object.fromEntries(Object.entries(credit).filter(([, value]) => value)) };
 const photos = primary ? [entry, ...existing] : [...existing, entry];
+const owner = ref === undefined ? modelId : `${modelId} ${ref}`;
+if (ref !== undefined) {
+  // The reference's photos block is rewritten as text, like the model's below, so the rest of the file keeps its
+  // formatting. It sits right after the reference's `ref` line.
+  const lines = yaml.split('\n');
+  const starts = lines.flatMap((line, index) => (/^  - ref:/.test(line) ? [index] : []));
+  const at = starts[refIndex];
+  const block = stringify({ photos }, { lineWidth: 0 }).trimEnd().split('\n').map((line) => `    ${line}`);
+  let from = at + 1;
+  let to = from;
+  if (/^    photos:/.test(lines[from] ?? '')) {
+    to++;
+    while (to < lines.length && lines[to].startsWith('      ')) to++;
+  }
+  lines.splice(from, to - from, ...block);
+  writeFileSync(modelFile, lines.join('\n'));
+  console.log(`Added ${saveTo} to ${owner} in ${modelFile} as photo ${primary ? 1 : photos.length} of ${photos.length} (${credit.license}). Check it shows ${owner}, then build.`);
+  process.exit(0);
+}
 // Only the photos block is rewritten, so the rest of the file keeps its formatting. It goes where it was, or after
 // the model's website, or its line, ahead of its references.
 const block = stringify({ photos }, { lineWidth: 0 }).trimEnd();

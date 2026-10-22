@@ -29,11 +29,14 @@ The site is built with [Astro](https://astro.build) from data files in the repo:
 A model's page shows the best photo we may use, in this order:
 
 1. **Our own copies** (`photos` on the model, each a `file` in `src/data/photos/` and its `credit`): from Wikimedia Commons under a free license (public domain, CC0, CC BY, CC BY-SA), or failing that from the brand's press kit for editorial use. The first is the primary, shown large; the others sit under it as thumbnails. A brand's `pressKit` records where to ask.
+
+   A reference that looks unlike the model's others (another bezel, dial or metal) can have `photos` of its own, in the same form. Its page shows those, or else the model's, saying they show the model in general; the model's page shows its own photos and then its references', each labeled.
 2. **The brand's own photo**, loaded from its site and credited to it, taken from the share preview on the model's `website` and recorded in `src/data/official-photos.json`. If it fails to load, the page shows the link alone.
 
 ```sh
 npm run photos:commons -- --brand rolex   # list Commons candidates for models with no photo (changes nothing)
 npm run photos:add -- rolex/gmt-master-ii/gmt-master-ii "File:Rolex GMT Master II Pepsi.jpg"   # adds it last; --primary puts it first
+npm run photos:add -- <model id> "File:<title>" --ref 126710BLRO   # adds it to that reference instead
 npm run photos:add -- <model id> photo.jpg --source <url> --license "Press image, editorial use"
 npm run photos:official                    # refresh the brands' own photos from each model's website
 ```

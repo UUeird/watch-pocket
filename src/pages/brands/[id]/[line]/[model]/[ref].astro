@@ -1,5 +1,6 @@
 ---
 import Breadcrumb from '../../../../../components/Breadcrumb.astro';
+import ModelPhoto from '../../../../../components/ModelPhoto.astro';
 import Base from '../../../../../layouts/Base.astro';
 import {
   describeBezel,
@@ -38,8 +39,13 @@ const facts = [
 
 <Base title={`${brand.data.name} ${ref}`}>
   <Breadcrumb brand={brand} line={line} model={model} />
-  <h1>{ref}</h1>
-  <p class="lede">Reference{periods.length > 0 && (discontinued ? ' · discontinued' : ' · current')}</p>
+  <div class="head">
+    <div>
+      <h1>{ref}</h1>
+      <p class="lede">Reference{periods.length > 0 && (discontinued ? ' · discontinued' : ' · current')}</p>
+    </div>
+    <ModelPhoto model={model} brandName={brand.data.name} reference={reference} />
+  </div>
 
   <dl class="facts">
     {
@@ -65,3 +71,14 @@ const facts = [
     )
   }
 </Base>
+
+<style>
+  /* The photo sits beside the reference number on a wide screen, and under it on a narrow one. */
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px 32px;
+    margin-bottom: 24px;
+  }
+</style>
