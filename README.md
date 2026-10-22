@@ -35,6 +35,8 @@ A model's page shows the best photo we may use, in this order:
 
 ```sh
 npm run photos:commons -- --brand rolex   # list Commons candidates for models with no photo (changes nothing)
+npm run photos:commons -- --refs          # also search each reference number; candidates list the references they name
+npm run photos:review                     # build the photo review page's data from that list
 npm run photos:add -- rolex/gmt-master-ii/gmt-master-ii "File:Rolex GMT Master II Pepsi.jpg"   # adds it last; --primary puts it first
 npm run photos:add -- <model id> "File:<title>" --ref 126710BLRO   # adds it to that reference instead
 npm run photos:add -- <model id> photo.jpg --source <url> --license "Press image, editorial use"
