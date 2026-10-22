@@ -1,6 +1,19 @@
 name: Submariner Date
 line: rolex/submariner
+sources:
+  - https://www.bobswatches.com/rolex-blog/watch-review/rolex-submariner-stainless-steel-16800.html
+  - https://www.bobswatches.com/rolex/submariner/16613-ultimate-guide
+  - https://watchbase.com/rolex/submariner/16613-black-superluminova
 references:
+  - ref: "16800"
+    periods: [{ from: 1979, to: 1988 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: aluminum, colors: [black], style: dive }
+    crystal: sapphire
+    movement: "3035"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "16610"
     periods: [{ from: 1988, to: 2010 }]
     caseSize: 40
@@ -8,6 +21,15 @@ references:
     bezel: { material: aluminum, colors: [black], style: dive }
     movement: "3135"
     dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  # Its bezel insert matched the dial, blue or black.
+  - ref: "16613"
+    periods: [{ from: 1988, to: 2009 }]
+    caseSize: 40
+    metals: [steel, yellow-gold]
+    bezel: { material: aluminum, style: dive }
+    movement: "3135"
+    dials: [{ color: blue }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 116610LN
     periods: [{ from: 2010, to: 2020 }]
