@@ -1,4 +1,5 @@
-// Adds a photo to a model: downloads it into src/data/photos/ and writes `photo` and `photoCredit` into the model's file.
+// Adds a photo to a model: downloads it into src/data/photos/ and adds it, with its credit, to the model's `photos`.
+// It goes last, or first with --primary, which makes it the photo the model's page shows large.
 //
 // From Wikimedia Commons, with the credit taken from the file's page:
 //   npm run photos:add -- richard-mille/rm-67/rm-67-02 "File:Richard Mille RM 67-02.jpg"
@@ -6,9 +7,10 @@
 // From a brand's press kit, with the page it came from and the terms it was given on:
 //   npm run photos:add -- richard-mille/rm-67/rm-67-02 ~/Downloads/rm67-02.jpg --source https://… --license "Press image, editorial use"
 //
-// It refuses a Commons file whose license the site can't use, and won't replace a model's existing photo.
-import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+// It refuses a Commons file whose license the site can't use, or one the model already has.
+import { copyFileSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, extname, join, relative } from 'node:path';
+import { parseDocument, stringify } from 'yaml';
 import { freeLicense, headersFor } from './lib/data.mjs';
 
 const [modelId, from, ...rest] = process.argv.slice(2);
@@ -26,17 +28,17 @@ try {
   console.error(`No model at ${modelFile}.`);
   process.exit(1);
 }
-if (/^photo:/m.test(yaml)) {
-  console.error(`${modelId} already has a photo. Remove its photo and photoCredit first to replace it.`);
-  process.exit(1);
-}
+const doc = parseDocument(yaml);
+const existing = doc.get('photos')?.toJSON() ?? [];
+const primary = rest.includes('--primary');
 
 const quote = (text) => JSON.stringify(text);
 let credit;
 let saveTo;
 const photosDir = join('src/data/photos', dirname(modelId));
 mkdirSync(photosDir, { recursive: true });
-const base = modelId.split('/').at(-1);
+// Each photo gets its own file: the model's name, then -2, -3 and so on.
+const base = modelId.split('/').at(-1) + (existing.length > 0 ? `-${existing.length + 1}` : '');
 
 if (from.startsWith('File:')) {
   const api = 'https://commons.wikimedia.org/w/api.php';
@@ -76,15 +78,25 @@ if (from.startsWith('File:')) {
   credit = { source, license };
 }
 
-const lines = [
-  `photo: ${relative(dirname(modelFile), saveTo)}`,
-  'photoCredit:',
-  ...Object.entries(credit)
-    .filter(([, value]) => value)
-    .map(([key, value]) => `  ${key}: ${quote(value)}`),
-];
-// Placed after the model's website, or its line, ahead of its references.
-const after = /^website:.*$/m.test(yaml) ? /^website:.*$/m : /^line:.*$/m;
-yaml = yaml.replace(after, (line) => `${line}\n${lines.join('\n')}`);
-writeFileSync(modelFile, yaml);
-console.log(`Added ${saveTo} to ${modelFile} (${credit.license}). Check the photo shows ${modelId}, then build.`);
+if (existing.some((photo) => photo.credit?.source === credit.source)) {
+  console.error(`${modelId} already has the photo from ${credit.source}.`);
+  rmSync(saveTo);
+  process.exit(1);
+}
+const entry = { file: relative(dirname(modelFile), saveTo), credit: Object.fromEntries(Object.entries(credit).filter(([, value]) => value)) };
+const photos = primary ? [entry, ...existing] : [...existing, entry];
+// Only the photos block is rewritten, so the rest of the file keeps its formatting. It goes where it was, or after
+// the model's website, or its line, ahead of its references.
+const block = stringify({ photos }, { lineWidth: 0 }).trimEnd();
+const lines = yaml.split('\n');
+const at = lines.findIndex((line) => /^photos:/.test(line));
+if (at !== -1) {
+  let end = at + 1;
+  while (end < lines.length && (lines[end].startsWith(' ') || lines[end] === '')) end++;
+  lines.splice(at, end - at, block);
+} else {
+  const after = lines.findIndex((line) => /^website:/.test(line)) !== -1 ? lines.findIndex((line) => /^website:/.test(line)) : lines.findIndex((line) => /^line:/.test(line));
+  lines.splice(after + 1, 0, block);
+}
+writeFileSync(modelFile, lines.join('\n'));
+console.log(`Added ${saveTo} to ${modelFile} as photo ${primary ? 1 : photos.length} of ${photos.length} (${credit.license}). Check it shows ${modelId}, then build.`);

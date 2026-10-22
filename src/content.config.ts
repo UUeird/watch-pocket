@@ -238,11 +238,10 @@ const models = defineCollection({
       // The maker's own page for this model. Linked from the model's page, and where its fallback photo is found
       // (see scripts/refresh-official-photos.mjs).
       website: z.url().optional(),
-      // A photo of the model we may show: from Wikimedia Commons under a free license, or from the brand's press kit
-      // for editorial use, with `photoCredit` saying which. Without one, the page shows the brand's own image from
-      // `website`, loaded from their site.
-      photo: image().optional(),
-      photoCredit: credit,
+      // Photos of the model we may show, the first being the primary: from Wikimedia Commons under a free license, or
+      // from the brand's press kit for editorial use, each with a `credit` saying which. Without any, the page shows
+      // the brand's own image from `website`, loaded from their site.
+      photos: z.array(z.object({ file: image(), credit: credit.unwrap() })).default([]),
       // Where this model's facts were taken from.
       sources,
       references: z
@@ -299,8 +298,8 @@ const models = defineCollection({
         })
         .default([]),
       })
-      .refine((model) => (model.photo === undefined) === (model.photoCredit === undefined), {
-        message: 'A `photo` needs a `photoCredit` saying where it came from and on what terms, and a credit needs its photo.',
+      .refine((model) => new Set(model.photos.map(({ credit }) => credit.source)).size === model.photos.length, {
+        message: 'The same photo is listed twice in `photos`.',
       }),
 });
 

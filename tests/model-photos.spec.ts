@@ -20,10 +20,15 @@ test.describe('Model photos', () => {
     await expect(page.getByRole('link', { name: /See it on richardmille\.com/ })).toBeVisible();
   });
 
-  test('prefers a licensed photo of our own, with its credit', async ({ page }) => {
+  test('prefers licensed photos of our own, the primary first, with their credits', async ({ page }) => {
     await page.goto('brands/rolex/gmt-master-ii/gmt-master-ii/');
-    await expect(page.locator('.model-photo figure img')).toBeVisible();
-    await expect(page.locator('.model-photo figcaption')).toContainText('CC BY-SA');
+    const shown = page.locator('.model-photo figure:visible');
+    await expect(shown).toHaveCount(1);
+    await expect(shown.locator('figcaption')).toContainText('Public domain');
     await expect(page.locator('[data-official-photo]')).toHaveCount(0);
+    // A thumbnail swaps in the other photo, with its own credit.
+    await page.getByRole('button', { name: 'Show photo 2' }).click();
+    await expect(shown.locator('figcaption')).toContainText('CC BY-SA');
+    await expect(page.getByRole('button', { name: 'Show photo 2' })).toHaveAttribute('aria-pressed', 'true');
   });
 });

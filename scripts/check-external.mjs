@@ -52,7 +52,9 @@ async function check(url) {
     } catch (error) {
       const code = error.cause?.code ?? error.name;
       // A site that no longer exists, against one that's slow or refusing scripts today.
-      if (['ENOTFOUND', 'ECONNREFUSED', 'ERR_TLS_CERT_ALTNAME_INVALID', 'CERT_HAS_EXPIRED'].includes(code)) return { state: 'broken', detail: code };
+      if (['ENOTFOUND', 'ECONNREFUSED'].includes(code)) return { state: 'broken', detail: code };
+      // A lapsed certificate makes browsers warn, but the site is usually still there.
+      if (/CERT|SSL|TLS/.test(code)) return { state: 'unchecked', detail: `security certificate problem (${code})` };
       return { state: 'unchecked', detail: code === 'TimeoutError' ? 'timed out' : code };
     }
     // Only the status is needed, not the page.

@@ -67,8 +67,9 @@ control: private/'
 try "group control outside the list" $D/groups/kering.yaml 's/^control: public$/control: luxury-group/'
 try "heritage after the brand's own founding" $D/brands/arnold-son.yaml 's/^  from: 1764$/  from: 2000/'
 try "heritage with no source" $D/brands/arnold-son.yaml '/^    - https:\/\/www.thehourmarkers.com/d; s/^  sources:$/  sources: []/'
-try "model photo with no credit" $D/models/rolex/gmt-master-ii/gmt-master-ii.yaml '/^photoCredit:$/,/^  author: /d'
+try "model photo credit with no license" $D/models/rolex/gmt-master-ii/gmt-master-ii.yaml '/^      license: Public domain$/d'
 try "model photo that does not exist" $D/models/rolex/gmt-master-ii/gmt-master-ii.yaml 's#gmt-master-ii.jpg#no-such-photo.jpg#'
+try "the same model photo twice" $D/models/rolex/gmt-master-ii/gmt-master-ii.yaml 's#File:Rolex_GMT_Master_II_116710BLNR_Batman.jpg#File:Rolex_GMT_Master_II_Pepsi.jpg#'
 try "model website that is not a web address" $D/models/richard-mille/rm-67/rm-67-02.yaml 's#^website: .*#website: richardmille.com#'
 
 exit $failures

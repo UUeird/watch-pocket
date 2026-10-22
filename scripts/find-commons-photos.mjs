@@ -1,5 +1,5 @@
-// Looks on Wikimedia Commons for freely licensed photos of each model that has no photo of its own, and lists them
-// for review. It changes no data: pick a photo, check it shows the right watch, then add it with
+// Looks on Wikimedia Commons for freely licensed photos of each model, leaving out those it already has, and lists
+// them for review. It changes no data: pick a photo, check it shows the right watch, then add it with
 // `npm run photos:add -- <model id> "File:<title>"`.
 //
 //   npm run photos:commons
@@ -55,7 +55,7 @@ async function candidates(query) {
 }
 
 const brands = new Map(load('brands').map((brand) => [brand.id, brand.data]));
-const models = load('models').filter((model) => !model.data.photo && (!brandOnly || model.id.startsWith(`${brandOnly}/`)));
+const models = load('models').filter((model) => !brandOnly || model.id.startsWith(`${brandOnly}/`));
 
 const found = {};
 const none = [];
@@ -63,9 +63,10 @@ for (const model of models) {
   const brandId = model.id.split('/')[0];
   const brand = brands.get(brandId);
   // The model's name already starts with its number or line, so the brand's name is added in quotes to keep namesakes out.
-  const list = await candidates(`"${brand.name}" ${model.data.name}`);
+  const have = new Set((model.data.photos ?? []).map((photo) => photo.credit?.source));
+  const list = (await candidates(`"${brand.name}" ${model.data.name}`)).filter((candidate) => !have.has(candidate.page));
   if (list.length > 0) found[model.id] = list;
-  else none.push({ model: model.id, pressKit: brand.pressKit });
+  else if (have.size === 0) none.push({ model: model.id, pressKit: brand.pressKit });
   // Commons asks bots to go gently.
   await new Promise((resolve) => setTimeout(resolve, 300));
 }
