@@ -31,4 +31,10 @@ test.describe('Model photos', () => {
     await expect(shown.locator('figcaption')).toContainText('CC BY-SA');
     await expect(page.getByRole('button', { name: 'Show photo 2' })).toHaveAttribute('aria-pressed', 'true');
   });
+
+  test("shows the model's photos on a reference with none of its own, saying so", async ({ page }) => {
+    await page.goto('brands/rolex/gmt-master-ii/gmt-master-ii/126710blro/');
+    await expect(page.locator('.model-photo figure:visible figcaption')).toContainText('Public domain');
+    await expect(page.locator('.model-photo')).toContainText('Shows the GMT-Master II in general, not this reference in particular.');
+  });
 });

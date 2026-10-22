@@ -224,6 +224,16 @@ const lines = defineCollection({
   }),
 });
 
+// Photos we may show, the first being the primary, each with a `credit` saying where it came from and on what terms.
+// No photo may be listed twice.
+const photos = (image: SchemaContext['image']) =>
+  z
+    .array(z.object({ file: image(), credit: credit.unwrap() }))
+    .refine((list) => new Set(list.map(({ credit }) => credit.source)).size === list.length, {
+      message: 'The same photo is listed twice in `photos`.',
+    })
+    .default([]);
+
 // A model is one named design within a line (e.g. Submariner Date). Files live at models/<brand>/<line>/<model>.yaml.
 // Its references are the individual reference numbers, each a fixed configuration with its own on-sale periods,
 // so successive generations of a model are successive references.
@@ -241,13 +251,16 @@ const models = defineCollection({
       // Photos of the model we may show, the first being the primary: from Wikimedia Commons under a free license, or
       // from the brand's press kit for editorial use, each with a `credit` saying which. Without any, the page shows
       // the brand's own image from `website`, loaded from their site.
-      photos: z.array(z.object({ file: image(), credit: credit.unwrap() })).default([]),
+      photos: photos(image),
       // Where this model's facts were taken from.
       sources,
       references: z
         .array(
           z.object({
             ref: z.string(),
+            // Photos of this reference in particular, where it looks unlike the model's others (a different bezel or
+            // dial), in the same form as the model's. Its page shows these, or the model's when it has none.
+            photos: photos(image),
             // The first period's `from` is the year the reference was released.
             periods,
             // The maker's list price in a given year, in its home currency where it publishes one.
@@ -297,9 +310,6 @@ const models = defineCollection({
           message: 'Two references in this model produce the same URL; make each `ref` distinct.',
         })
         .default([]),
-      })
-      .refine((model) => new Set(model.photos.map(({ credit }) => credit.source)).size === model.photos.length, {
-        message: 'The same photo is listed twice in `photos`.',
       }),
 });
 

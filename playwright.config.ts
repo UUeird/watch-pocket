@@ -1,7 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 import astroConfig from './astro.config.mjs';
 
-const port = 4322;
+// TEST_PORT moves it where another server already holds 4322.
+const port = Number(process.env.TEST_PORT ?? 4322);
 // Where the built site is served, including the base path if astro.config.mjs sets one. Ends with a slash.
 const siteUrl = `http://localhost:${port}${(astroConfig.base ?? '').replace(/\/$/, '')}/`;
 
