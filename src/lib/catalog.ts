@@ -110,14 +110,15 @@ async function buildCatalog() {
   }
   const lines = await getCollection('lines');
   const discontinued = (line: Line) => line.data.periods.at(-1)?.to !== undefined;
-  // Current lines first, then oldest first.
+  // Current lines first, then oldest first, then by name, with numbers in number order (RM 07 before RM 032).
   const linesOf = (brandId: string) =>
     lines
       .filter((line) => line.data.brand.id === brandId)
       .sort(
         (a, b) =>
           Number(discontinued(a)) - Number(discontinued(b)) ||
-          (a.data.periods[0]?.from ?? 0) - (b.data.periods[0]?.from ?? 0),
+          (a.data.periods[0]?.from ?? 0) - (b.data.periods[0]?.from ?? 0) ||
+          a.data.name.localeCompare(b.data.name, 'en', { numeric: true }),
       );
   const models = (await getCollection('models')).sort(byName);
   const modelsOf = (lineId: string) => models.filter((model) => model.data.line.id === lineId);
