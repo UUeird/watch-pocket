@@ -12,13 +12,19 @@ const sections = [
     title: 'Brands',
     path: '/brands/',
     count: count(brands.length),
-    text: 'Every brand with its owner, origin and founding, sized and sorted on a treemap.',
+    text: 'Every brand with its owner, origin and founding.',
   },
   {
     title: 'Ownership Groups',
     path: '/ownership-groups/',
     count: count(groups.length),
     text: 'The corporations and families that hold the brands, and how much each holds.',
+  },
+  {
+    title: 'Chart',
+    path: '/chart/',
+    count: count(brands.length),
+    text: 'Every brand as a circle inside the group that owns it, sized by a figure you choose.',
   },
   {
     title: 'Countries',

@@ -10,9 +10,22 @@ test.use({ viewport, colorScheme: 'light', deviceScaleFactor: 2 });
 
 const settle = (page: Page) => page.waitForTimeout(600);
 
-test('brands overview, zoomed box, and the note', async ({ page }) => {
-  await page.goto('brands/');
+// The chart page opens on circles grouped by owner. Each capture sets the view it shows.
+const setUp = async (page: Page, { grouping, shape }: { grouping: string; shape: string }) => {
+  await page.locator(`${chart} select[name="grouping"]`).selectOption(grouping);
+  await page.locator(`${chart} select[name="shape"]`).selectOption(shape);
   await settle(page);
+};
+
+test('the chart as it opens: brands in circles inside their owners', async ({ page }) => {
+  await page.goto('chart/');
+  await settle(page);
+  await still(page.locator(`${chart} .frame`), 'chart-overview');
+});
+
+test('brands overview, zoomed box, and the note', async ({ page }) => {
+  await page.goto('chart/');
+  await setUp(page, { grouping: 'origin', shape: 'rects' });
   await still(page.locator(chart), 'brands-overview');
 
   await page.locator(`${chart} .tile[data-zoom="Switzerland"]`).click();
@@ -25,8 +38,8 @@ test('brands overview, zoomed box, and the note', async ({ page }) => {
 });
 
 test('ownership groups sized by revenue, as rectangles and circles', async ({ page }) => {
-  await page.goto('ownership-groups/');
-  await settle(page);
+  await page.goto('chart/');
+  await setUp(page, { grouping: 'owner', shape: 'rects' });
   await still(page.locator(`${chart} .controls`), 'controls');
   await page.locator(`${chart} select[name="size"]`).selectOption('annual-revenue');
   await settle(page);
@@ -46,7 +59,8 @@ test('recording: zooming into a box and back out', async ({ browser, baseURL }) 
     browser,
     'zoom',
     async (page, ready) => {
-      await page.goto('brands/', { waitUntil: 'networkidle' });
+      await page.goto('chart/', { waitUntil: 'networkidle' });
+      await setUp(page, { grouping: 'origin', shape: 'rects' });
       await page.locator(chart).scrollIntoViewIfNeeded();
       ready();
       await page.waitForTimeout(900);
@@ -72,7 +86,8 @@ test('recording: changing what sizes the chart, then drawing it as circles', asy
     browser,
     'size-and-shape',
     async (page, ready) => {
-      await page.goto('ownership-groups/', { waitUntil: 'networkidle' });
+      await page.goto('chart/', { waitUntil: 'networkidle' });
+      await setUp(page, { grouping: 'owner', shape: 'rects' });
       ready();
       await page.waitForTimeout(900);
       const size = page.locator(`${chart} select[name="size"]`);
@@ -96,7 +111,7 @@ test('recording: the chart following the filters', async ({ browser, baseURL }) 
     browser,
     'follow-filters',
     async (page, ready) => {
-      await page.goto('brands/', { waitUntil: 'networkidle' });
+      await page.goto('chart/', { waitUntil: 'networkidle' });
       ready();
       await page.waitForTimeout(900);
       const owner = page.locator('select[name="owner"]');
