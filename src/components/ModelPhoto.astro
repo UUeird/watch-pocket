@@ -1,0 +1,148 @@
+---
+// A model's photos and a link to the maker's page for it. The photos are the best we may show:
+// 1. our own copies, from Wikimedia Commons under a free license or from the brand's press kit, each credited. The
+//    first is the primary, shown large; the rest sit under it as thumbnails that swap in when picked;
+// 2. otherwise the brand's own image from its page (see scripts/refresh-official-photos.mjs), loaded from their site
+//    and credited to them. If it fails to load, the figure removes itself and the link stands alone.
+import { Image } from 'astro:assets';
+import officialPhotos from '../data/official-photos.json';
+import { sourceHost, type Model } from '../lib/catalog';
+
+interface Props {
+  model: Model;
+  brandName: string;
+}
+
+const { model, brandName } = Astro.props;
+const { name, photos, website } = model.data;
+const official = photos.length > 0 ? undefined : (officialPhotos as Record<string, { src: string; page: string }>)[model.id];
+const alt = `${brandName} ${name}`;
+---
+
+{
+  (photos.length > 0 || official || website) && (
+    <aside class="model-photo" data-gallery>
+      {photos.map(({ file, credit }, index) => (
+        <figure data-photo={index} hidden={index > 0}>
+          <Image src={file} alt={photos.length > 1 ? `${alt}, photo ${index + 1} of ${photos.length}` : alt} widths={[360, 720]} sizes="(min-width: 720px) 360px, 100vw" />
+          <figcaption>
+            Photo{credit.author && ` by ${credit.author}`} · {credit.licenseUrl ? <a href={credit.licenseUrl}>{credit.license}</a> : credit.license} ·{' '}
+            <a href={credit.source}>Source</a>
+          </figcaption>
+        </figure>
+      ))}
+      {photos.length > 1 && (
+        <div class="thumbs" role="group" aria-label="Photos">
+          {photos.map(({ file }, index) => (
+            <button type="button" data-show={index} aria-pressed={index === 0 ? 'true' : 'false'} aria-label={`Show photo ${index + 1}`}>
+              <Image src={file} alt="" width={96} />
+            </button>
+          ))}
+        </div>
+      )}
+      {official && (
+        <figure data-official-photo>
+          <img src={official.src} alt={alt} loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()" />
+          <figcaption>
+            Image © {brandName}, shown from <a href={official.page}>{sourceHost(official.page)}</a>
+          </figcaption>
+        </figure>
+      )}
+      {
+        website && (
+          <a class="official" href={website}>
+            See it on {sourceHost(website)} <span aria-hidden="true">↗</span>
+          </a>
+        )
+      }
+    </aside>
+  )
+}
+
+<script>
+  // Picking a thumbnail shows that photo, with its credit, in place of the one shown.
+  for (const gallery of document.querySelectorAll<HTMLElement>('[data-gallery]')) {
+    const buttons = [...gallery.querySelectorAll<HTMLButtonElement>('[data-show]')];
+    for (const button of buttons) {
+      button.addEventListener('click', () => {
+        for (const figure of gallery.querySelectorAll<HTMLElement>('[data-photo]')) figure.hidden = figure.dataset.photo !== button.dataset.show;
+        for (const other of buttons) other.setAttribute('aria-pressed', String(other === button));
+      });
+    }
+  }
+</script>
+
+<style>
+  .model-photo {
+    display: grid;
+    gap: 10px;
+    justify-items: start;
+    width: min(360px, 100%);
+  }
+
+  figure {
+    margin: 0;
+    width: 100%;
+  }
+
+  /* Product shots are made for a light page, so each sits on a white plate in both color schemes. */
+  figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: contain;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+  }
+
+  figcaption {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+
+  .thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .thumbs button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    padding: 2px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .thumbs button[aria-pressed='true'] {
+    border: 2px solid var(--accent);
+  }
+
+  .thumbs img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .official {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    text-decoration: none;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+  }
+
+  .official:hover,
+  .official:focus-visible {
+    text-decoration: underline;
+  }
+</style>

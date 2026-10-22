@@ -1,5 +1,17 @@
 name: GMT-Master II
 line: rolex/gmt-master-ii
+photos:
+  - file: ../../../photos/rolex/gmt-master-ii/gmt-master-ii-2.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_GMT_Master_II_116710BLNR_Batman.jpg
+      license: Public domain
+      author: gabihil
+  - file: ../../../photos/rolex/gmt-master-ii/gmt-master-ii.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_GMT_Master_II_Pepsi.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: OpaleHorse
 references:
   - ref: 126710BLRO
     periods: [{ from: 2018 }]

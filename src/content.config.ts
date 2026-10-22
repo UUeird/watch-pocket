@@ -169,6 +169,8 @@ const brands = defineCollection({
         // Revenue from this brand alone.
         revenue,
         website: z.url().optional(),
+        // The brand's press or media portal, where photos for editorial use can be requested.
+        pressKit: z.url().optional(),
         // Ownership is dated because brands change hands; a record with no `to` is a current owner.
         ownership: z
           .array(
@@ -227,67 +229,78 @@ const lines = defineCollection({
 // so successive generations of a model are successive references.
 const models = defineCollection({
   loader: glob({ pattern: '*/*/*.yaml', base: './src/data/models' }),
-  schema: z.object({
-    name: z.string(),
-    line: reference('lines'),
-    // Other brands a special edition is made with, e.g. Hermès for Apple Watch Hermès.
-    collaborators: z.array(reference('brands')).default([]),
-    // Where this model's facts were taken from.
-    sources,
-    references: z
-      .array(
-        z.object({
-          ref: z.string(),
-          // The first period's `from` is the year the reference was released.
-          periods,
-          // The maker's list price in a given year, in its home currency where it publishes one.
-          price: z.object({ amount: z.number().positive(), currency, year: z.number().int() }).optional(),
-          caseSize: z.number().optional(),
-          // The fields below use fixed vocabularies so references can be filtered and compared across brands.
-          // Where a brand has its own name for an option (Jubilee, Slate), it goes in `name` for display only.
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      line: reference('lines'),
+      // Other brands a special edition is made with, e.g. Hermès for Apple Watch Hermès.
+      collaborators: z.array(reference('brands')).default([]),
+      // The maker's own page for this model. Linked from the model's page, and where its fallback photo is found
+      // (see scripts/refresh-official-photos.mjs).
+      website: z.url().optional(),
+      // Photos of the model we may show, the first being the primary: from Wikimedia Commons under a free license, or
+      // from the brand's press kit for editorial use, each with a `credit` saying which. Without any, the page shows
+      // the brand's own image from `website`, loaded from their site.
+      photos: z.array(z.object({ file: image(), credit: credit.unwrap() })).default([]),
+      // Where this model's facts were taken from.
+      sources,
+      references: z
+        .array(
+          z.object({
+            ref: z.string(),
+            // The first period's `from` is the year the reference was released.
+            periods,
+            // The maker's list price in a given year, in its home currency where it publishes one.
+            price: z.object({ amount: z.number().positive(), currency, year: z.number().int() }).optional(),
+            caseSize: z.number().optional(),
+            // The fields below use fixed vocabularies so references can be filtered and compared across brands.
+            // Where a brand has its own name for an option (Jubilee, Slate), it goes in `name` for display only.
 
-          // What this reference's case is made of; more than one means a mixed case (steel and gold), not a choice.
-          metals: z.array(metal).default([]),
-          // Finishes the case is sold in, as options under this reference.
-          caseColors: z.array(z.object({ color, name: z.string().optional() })).default([]),
-          // The maker's own model numbers, where one reference covers several (Apple: by connectivity and region).
-          modelNumbers: z
-            .array(
-              z.object({
-                number: z.string(),
-                connectivity: z.enum(['gps', 'gps-cellular']).optional(),
-                regions: z.string().optional(),
-              }),
-            )
-            .default([]),
-          bezel: z
-            .object({
-              material: metal.optional(),
-              colors: z.array(color).default([]),
-              style: z.enum(['smooth', 'fluted', 'dive', 'gmt', 'tachymeter', 'gem-set']).optional(),
-            })
-            .optional(),
-          crystal: z.enum(['sapphire', 'acrylic', 'mineral']).optional(),
-          // The calibre name: an identifier, not a category.
-          movement: z.string().optional(),
-          // Options offered under this one reference number. Some brands give each its own reference instead.
-          dials: z.array(z.object({ color, name: z.string().optional() })).default([]),
-          bracelets: z
-            .array(
-              z.object({
-                type: z.enum(['bracelet', 'leather-strap', 'rubber-strap', 'fabric-strap']),
-                name: z.string().optional(),
-              }),
-            )
-            .default([]),
-        }),
-      )
-      // Each reference gets a page at a URL built from `ref`, so two that slugify alike would collide.
-      .refine((list) => new Set(list.map(({ ref }) => refSlug(ref))).size === list.length, {
-        message: 'Two references in this model produce the same URL; make each `ref` distinct.',
+            // What this reference's case is made of; more than one means a mixed case (steel and gold), not a choice.
+            metals: z.array(metal).default([]),
+            // Finishes the case is sold in, as options under this reference.
+            caseColors: z.array(z.object({ color, name: z.string().optional() })).default([]),
+            // The maker's own model numbers, where one reference covers several (Apple: by connectivity and region).
+            modelNumbers: z
+              .array(
+                z.object({
+                  number: z.string(),
+                  connectivity: z.enum(['gps', 'gps-cellular']).optional(),
+                  regions: z.string().optional(),
+                }),
+              )
+              .default([]),
+            bezel: z
+              .object({
+                material: metal.optional(),
+                colors: z.array(color).default([]),
+                style: z.enum(['smooth', 'fluted', 'dive', 'gmt', 'tachymeter', 'gem-set']).optional(),
+              })
+              .optional(),
+            crystal: z.enum(['sapphire', 'acrylic', 'mineral']).optional(),
+            // The calibre name: an identifier, not a category.
+            movement: z.string().optional(),
+            // Options offered under this one reference number. Some brands give each its own reference instead.
+            dials: z.array(z.object({ color, name: z.string().optional() })).default([]),
+            bracelets: z
+              .array(
+                z.object({
+                  type: z.enum(['bracelet', 'leather-strap', 'rubber-strap', 'fabric-strap']),
+                  name: z.string().optional(),
+                }),
+              )
+              .default([]),
+          }),
+        )
+        // Each reference gets a page at a URL built from `ref`, so two that slugify alike would collide.
+        .refine((list) => new Set(list.map(({ ref }) => refSlug(ref))).size === list.length, {
+          message: 'Two references in this model produce the same URL; make each `ref` distinct.',
+        })
+        .default([]),
       })
-      .default([]),
-  }),
+      .refine((model) => new Set(model.photos.map(({ credit }) => credit.source)).size === model.photos.length, {
+        message: 'The same photo is listed twice in `photos`.',
+      }),
 });
 
 export const collections = { groups, brands, lines, models };

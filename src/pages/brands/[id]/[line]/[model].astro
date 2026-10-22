@@ -1,5 +1,6 @@
 ---
 import Breadcrumb from '../../../../components/Breadcrumb.astro';
+import ModelPhoto from '../../../../components/ModelPhoto.astro';
 import Base from '../../../../layouts/Base.astro';
 import Sources from '../../../../components/Sources.astro';
 import {
@@ -41,21 +42,27 @@ const { name, references, sources } = model.data;
 
 <Base title={`${brand.data.name} ${name}`}>
   <Breadcrumb brand={brand} line={line} />
-  <h1>{name}</h1>
-  <p class="lede">
-    Model · {plural(references.length, 'reference')}
-    {
-      collaborators.map((collaborator) => (
-        <>
-          {' · with '}
-          <a href={href(`/brands/${collaborator.id}/`)}>{collaborator.data.name}</a>
-        </>
-      ))
-    }
-  </p>
+  <div class="head">
+    <div>
+      <h1>{name}</h1>
+      <p class="lede">
+        Model · {plural(references.length, 'reference')}
+        {
+          collaborators.map((collaborator) => (
+            <>
+              {' · with '}
+              <a href={href(`/brands/${collaborator.id}/`)}>{collaborator.data.name}</a>
+            </>
+          ))
+        }
+      </p>
+    </div>
+    <ModelPhoto model={model} brandName={brand.data.name} />
+  </div>
 
   <h2>References</h2>
-  <div class="table-wrap">
+  {references.length === 0 && <p>No references recorded yet.</p>}
+  <div class="table-wrap" hidden={references.length === 0}>
     <table>
       <thead>
         <tr>
@@ -96,3 +103,14 @@ const { name, references, sources } = model.data;
 
   <Sources sources={sources} />
 </Base>
+
+<style>
+  /* The photo sits beside the model's name on a wide screen, and under it on a narrow one. */
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px 32px;
+    margin-bottom: 24px;
+  }
+</style>
