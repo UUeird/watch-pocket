@@ -1,8 +1,14 @@
 name: Titan
 logo: ../logos/titan.jpg
+logomark: ../logos/titan-logomark.png
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Titan_Logo_2009.jpg
   license: Public domain
+logomarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:Titan_Company_Logo.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: "Titan Company"
 origin: India
 periods: [{ from: 1984 }]
 segment: budget
