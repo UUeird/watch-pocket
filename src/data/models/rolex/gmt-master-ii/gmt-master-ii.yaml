@@ -30,7 +30,40 @@ photos:
       license: CC BY-SA 4.0
       licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
       author: "File:Rolex GMT Master II - 16710 in it sitting on top of the box.jpg: Peter WILSON derivative work: Pittigrilli"
+sources:
+  - https://www.luxurybazaar.com/grey-market/rolex-16710/
+  - https://beckertime.com/buy-used-rolex/gmt-master-ii
+  - https://www.phillips.com/detail/rolex/172580
+  - https://www.sothebys.com/en/buy/auction/2023/important-watches-i/gmt-master-ii-reference-116710blnr-a-stainless
 references:
+  # The 16710 was sold with black, red/blue or red/black aluminum inserts, so no bezel colors are given.
+  - ref: "16710"
+    periods: [{ from: 1989, to: 2007 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: aluminum, style: gmt }
+    crystal: sapphire
+    movement: "3185"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]
+  - ref: 116710LN
+    periods: [{ from: 2007, to: 2019 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: gmt }
+    crystal: sapphire
+    movement: "3186"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: 116710BLNR
+    periods: [{ from: 2013, to: 2019 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: ceramic, colors: [blue, black], style: gmt }
+    crystal: sapphire
+    movement: "3186"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 126710BLRO
     periods: [{ from: 2018 }]
     caseSize: 40
