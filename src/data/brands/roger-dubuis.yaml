@@ -1,7 +1,11 @@
 name: Roger Dubuis
 logo: ../logos/roger-dubuis.svg
+logomark: ../logos/roger-dubuis-logomark.png
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Roger_Dubuis_Logo.svg
+  license: Public domain
+logomarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:Roger_Dubuis_Logo.jpg
   license: Public domain
 origin: Switzerland
 periods: [{ from: 1995 }]
