@@ -1,5 +1,12 @@
 name: Apple Watch Ultra
 line: apple/apple-watch
+photos:
+  - file: ../../../photos/apple/apple-watch/apple-watch-ultra.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Apple_Watch_Ultra_2.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: Pangalau
 sources:
   - https://support.apple.com/en-us/108056
 references:
