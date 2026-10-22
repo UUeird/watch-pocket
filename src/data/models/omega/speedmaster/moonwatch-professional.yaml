@@ -13,6 +13,30 @@ photos:
       license: CC BY 2.0
       licenseUrl: https://creativecommons.org/licenses/by/2.0
       author: Daniel Zimmermann from Bayern, Deutschland (Germany)
+  - file: ../../../photos/omega/speedmaster/moonwatch-professional-3.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Flight-Qualified_by_NASA_(23456599843).jpg
+      license: CC BY 2.0
+      licenseUrl: https://creativecommons.org/licenses/by/2.0
+      author: Daniel Zimmermann from Bayern, Deutschland (Germany)
+  - file: ../../../photos/omega/speedmaster/moonwatch-professional-4.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Moonwatch_(24023224706).jpg
+      license: CC BY 2.0
+      licenseUrl: https://creativecommons.org/licenses/by/2.0
+      author: Daniel Zimmermann from Bayern, Deutschland (Germany)
+  - file: ../../../photos/omega/speedmaster/moonwatch-professional-5.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:ColaReb_(23478513323).jpg
+      license: CC BY 2.0
+      licenseUrl: https://creativecommons.org/licenses/by/2.0
+      author: Daniel Zimmermann from Bayern, Deutschland (Germany)
+  - file: ../../../photos/omega/speedmaster/moonwatch-professional-6.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Speedmaster_(23456608783).jpg
+      license: CC BY 2.0
+      licenseUrl: https://creativecommons.org/licenses/by/2.0
+      author: Daniel Zimmermann from Bayern, Deutschland (Germany)
 references:
   - ref: 311.30.42.30.01.005
     periods: [{ from: 2014, to: 2021 }]

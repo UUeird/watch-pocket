@@ -12,6 +12,24 @@ photos:
       license: CC BY-SA 4.0
       licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
       author: OpaleHorse
+  - file: ../../../photos/rolex/gmt-master-ii/gmt-master-ii-3.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_GMT_Master_II_-_16710_in_it_sitting_on_top_of_the_box.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: Peter WILSON
+  - file: ../../../photos/rolex/gmt-master-ii/gmt-master-ii-4.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_GMT_Master_II_-_16710_(without_background).jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: "File:Rolex GMT Master II - 16710 in it sitting on top of the box.jpg: Peter WILSON derivative work: Pittigrilli"
+  - file: ../../../photos/rolex/gmt-master-ii/gmt-master-ii-5.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_GMT_Master_II_-_16710_(without_background,_cropped_to_casing).jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: "File:Rolex GMT Master II - 16710 in it sitting on top of the box.jpg: Peter WILSON derivative work: Pittigrilli"
 references:
   - ref: 126710BLRO
     periods: [{ from: 2018 }]
