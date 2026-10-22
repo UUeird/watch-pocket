@@ -11,7 +11,7 @@ const perBrand = metrics.filter((metric) => !metric.additive);
 
 <Docs
   title="Reading the charts"
-  lede="The Brands and Ownership Groups pages open with a chart of every brand, sized by a figure you choose. This guide covers what the boxes mean and how to change them."
+  lede="The Chart page draws every brand, grouped and sized by a figure you choose. This guide covers what the circles and boxes mean and how to change them."
 >
   <h2 id="boxes">Boxes within boxes</h2>
   <p>
@@ -19,8 +19,15 @@ const perBrand = metrics.filter((metric) => !metric.additive);
     ownership group. A box's area stands for the figure the chart is sized by, so a bigger box means more of it.
   </p>
   <p>
-    The <a href={href('/brands/')}>Brands</a> page starts with one box per nation of origin, sized by how many brands come from there.
-    The number by each name counts its brands, and the box shows as many of their logos as fit, then how many more there are.
+    The <a href={href('/chart/')}>Chart</a> page opens with every brand as a circle inside the group that owns it. Each brand shows its
+    logo where there's room, and each group its logo across the top of its circle.
+  </p>
+  <DocsFigure src="chart-overview.png" alt="Ownership groups as circles, each holding a circle per brand with the brand's logo, and the group's logo across its top." wide>
+    The chart as it opens: brands inside their owners.
+  </DocsFigure>
+  <p>
+    Drawn as rectangles and grouped by nation of origin, there is one box per country, sized by how many brands come from there. The
+    number by each name counts its brands, and the box shows as many of their logos as fit, then how many more there are.
   </p>
   <DocsFigure src="brands-overview.png" alt="The Brands chart: a box per country, largest first, each showing a count and a grid of brand logos." wide>
     The Brands chart, grouped by nation of origin. Switzerland has the most brands, so its box is largest.
@@ -33,8 +40,8 @@ const perBrand = metrics.filter((metric) => !metric.additive);
   <p>These figures add up, so a group's box is the sum of its brands and boxes can be compared across the whole chart:</p>
   <ul>{totals.map((metric) => <li>{metric.label}</li>)}</ul>
   <p>
-    Sized by number of brands, each box is drawn whole. Sized by anything else in this group, each box opens up to show its brands as
-    boxes of their own.
+    As rectangles sized by number of brands, each box is drawn whole; as circles, each brand is a circle of the same size inside its
+    group. Sized by anything else in this group, each box opens up to show its brands as boxes of their own.
   </p>
   <h3>Within one box</h3>
   <p>
@@ -49,7 +56,7 @@ const perBrand = metrics.filter((metric) => !metric.additive);
 
   <h2 id="zoom">Zooming into a box</h2>
   <p>
-    Click a box, or its name, to see its brands alone. From there, <strong>All by …</strong> returns to the whole chart, and so does the
+    Click a box or circle, or its name, to see its brands alone. From there, <strong>All by …</strong> returns to the whole chart, and so does the
     Escape key. Where the box has a page of its own, such as a country or a group, a link to it appears beside its name.
   </p>
   <DocsFigure src="zoom.mp4" alt="A recording: the pointer clicks Switzerland, the chart zooms into its brands, hovers two brands to show their details, and returns." wide>
@@ -60,7 +67,7 @@ const perBrand = metrics.filter((metric) => !metric.additive);
   </DocsFigure>
 
   <h2 id="group-by">Grouping</h2>
-  <p>On the Brands page, <strong>Group by</strong> sorts the brands into boxes by:</p>
+  <p><strong>Group by</strong> sorts the brands into boxes by:</p>
   <ul>
     <li><strong>Owning group</strong>: the corporation that owns each brand today. A brand with several part-owners sits in each of their boxes, but is counted once.</li>
     <li><strong>Nation of origin</strong>: where the brand was founded, which may differ from where it is run or made today.</li>
@@ -74,7 +81,7 @@ const perBrand = metrics.filter((metric) => !metric.additive);
 
   <h2 id="revenue">Revenue and other business</h2>
   <p>
-    The <a href={href('/ownership-groups/')}>Ownership Groups</a> page groups brands by their owner. Sized by revenue, a group can record
+    Grouped by owner and sized by revenue, a group can record
     its total revenue as well as its brands'. Whatever its watch brands don't account for, such as jewelry, fashion or leather goods,
     shows as a hatched block. <strong>Include groups' other business</strong> turns those blocks on and off.
   </p>
@@ -89,13 +96,14 @@ const perBrand = metrics.filter((metric) => !metric.additive);
   <h2 id="circles">Rectangles or circles</h2>
   <p>
     <strong>Draw as</strong> switches the same chart between rectangles and circles packed inside one another. Circles show each box's
-    size less precisely, but make the nesting easy to see. For now, circles show names rather than logos.
+    size less precisely, but make the nesting easy to see. Circles show logos by the same rules as rectangles: a brand's whole logo where
+    its name is large enough to read, otherwise its name or symbol alone, and its name in text where the circle is too small for a logo.
   </p>
   <DocsFigure src="size-and-shape.mp4" alt="A recording: Size by changes to annual revenue, then Draw as changes to circles, then Size by returns to number of brands." wide>
     Sizing ownership groups by revenue, then drawing them as circles.
   </DocsFigure>
   <div class="pair">
-    <DocsFigure src="groups-circles.png" alt="Ownership groups as circles, sized by number of brands, each labeled with its name and count." wide>
+    <DocsFigure src="groups-circles.png" alt="Ownership groups as circles, sized by number of brands, each holding a same-sized circle per brand." wide>
       By number of brands.
     </DocsFigure>
     <DocsFigure src="groups-revenue-circles.png" alt="Ownership groups as circles sized by revenue, with brand circles inside each group's circle." wide>
@@ -105,8 +113,7 @@ const perBrand = metrics.filter((metric) => !metric.additive);
 
   <h2 id="filters">Following the filters</h2>
   <p>
-    On the Brands page, the chart follows the filters above the table: it draws only the brands that match, and the line under it says
-    so.
+    The chart follows the filters above it: it draws only the brands that match, and the line under it says so.
   </p>
   <DocsFigure src="follow-filters.mp4" alt="A recording: the owner filter is set to Richemont and the chart narrows to its brands, then to Swatch Group." wide>
     Filtering by owner narrows the chart to that group's brands.
@@ -122,7 +129,7 @@ const perBrand = metrics.filter((metric) => !metric.additive);
 
   <h2 id="remembered">Your choices are remembered</h2>
   <p>
-    Each page remembers how you last set its chart, in this browser only. On a narrow screen the chart keeps a readable size and scrolls
+    The chart remembers how you last set it, in this browser only. On a narrow screen the chart keeps a readable size and scrolls
     sideways.
   </p>
 </Docs>

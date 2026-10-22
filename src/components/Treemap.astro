@@ -96,7 +96,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
 
   <div class="frame">
     <div class="scroll">
-      <div class="canvas" aria-label={`${title}, grouped and sized`} set:html={renderCells(layout)} />
+      <div class="canvas" data-shape={layout.shape} aria-label={`${title}, grouped and sized`} set:html={renderCells(layout)} />
     </div>
     <div class="tip" role="presentation" hidden></div>
   </div>
@@ -223,6 +223,12 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 6px;
+  }
+
+  /* Circles pack into one round shape, so they're drawn in a square the full width of the page, which leaves
+     room for brands' logos. */
+  .canvas[data-shape='circles'] {
+    aspect-ratio: 1;
   }
 
   .canvas :global(.bucket),
@@ -434,17 +440,38 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     font-weight: 600;
   }
 
+  .canvas :global(.bucket.round) {
+    cursor: zoom-in;
+  }
+
   /* A bucket circle's name sits across its top, over the brands inside it. */
   .canvas :global(.bucket.round .bucket-name) {
     position: absolute;
-    top: 2px;
+    top: 0;
     left: 50%;
     z-index: 1;
     max-width: 60%;
     padding: 1px 8px;
     background: var(--surface);
     border-radius: 999px;
-    translate: -50% 0;
+    translate: -50% -50%;
+  }
+
+  /* Or its logo, on a white plate since logos are drawn for a light page. */
+  .canvas :global(.bucket.round .bucket-name.logo) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 3px 6px;
+    background: #ffffff;
+    border: 1px solid var(--line);
+  }
+
+  .canvas :global(.bucket-name.logo img) {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 
   .canvas :global(.other) {
@@ -576,7 +603,8 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
       const layout = layoutTreemap(data, options);
       selects.size.value = layout.size.id;
       toggle.hidden = layout.mode === 'buckets' || !ownMeasures.includes(layout.size.id);
-      canvas.innerHTML = renderCells(layout, canvas.clientWidth / 1000);
+      canvas.dataset.shape = layout.shape;
+      canvas.innerHTML = renderCells(layout, canvas.clientWidth / layout.box.width);
       note.innerHTML = renderNote(layout, options.visible !== undefined);
       unsized.innerHTML = renderUnsized(layout);
       crumbs.hidden = !layout.zoomed;
@@ -603,7 +631,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
       if (!still.matches) canvas.animate([{ opacity: 0, scale: next ? '0.96' : '1.03' }, { opacity: 1, scale: '1' }], { duration: 220, easing: 'ease-out' });
       // Keyboard focus follows: to the way back out, or to the box just left.
       if (next) unzoomButton.focus();
-      else if (previous) canvas.querySelector<HTMLElement>(`[data-zoom="${CSS.escape(previous)}"]`)?.focus();
+      else if (previous) canvas.querySelector<HTMLElement>(`button[data-zoom="${CSS.escape(previous)}"]`)?.focus();
     };
 
     selects.grouping.addEventListener('change', () => {
