@@ -1,4 +1,10 @@
 name: Kelton
+logo: ../logos/kelton.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Kelton.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: "01081997k"
 origin: France
 periods: [{ from: 1955 }]
 website: https://www.kelton.fr
