@@ -38,10 +38,16 @@ export function measuresOf({ brands, references }: Catalog) {
 
 // An image's file and drawn size, as the chart needs it.
 const logoFile = (image?: LogoFile): LogoFile | undefined => image && { src: image.src, width: image.width, height: image.height };
+// A brand's or group's logo and its parts.
+const logosOf = ({ data }: Brand | Group): Point['logos'] => ({
+  whole: logoFile(data.logo),
+  wordmark: logoFile(data.wordmark),
+  logomark: logoFile(data.logomark),
+});
 
-// The ways the brands page can group its treemap. Category and status are left out: nearly every brand is an
-// active watch brand, so either would draw one huge box and a few specks. `owners` alone is what the ownership groups page uses.
-export function chartData(catalog: Catalog, { groupsOnly = false } = {}): ChartData {
+// The ways the chart page can group brands. Category and status are left out: nearly every brand is an
+// active watch brand, so either would draw one huge box and a few specks.
+export function chartData(catalog: Catalog): ChartData {
   const { brands, groups } = catalog;
   const measures = measuresOf(catalog);
   const brandsById = new Map(brands.map((brand) => [brand.id, brand]));
@@ -50,11 +56,7 @@ export function chartData(catalog: Catalog, { groupsOnly = false } = {}): ChartD
     id: brand.id,
     name: brand.data.name,
     href: href(`/brands/${brand.id}/`),
-    logos: {
-      whole: logoFile(brand.data.logo),
-      wordmark: logoFile(brand.data.wordmark),
-      logomark: logoFile(brand.data.logomark),
-    },
+    logos: logosOf(brand),
     buckets: {
       owner: ownerKeys(brand),
       origin: [brand.data.origin ?? 'unrecorded'],
@@ -71,16 +73,15 @@ export function chartData(catalog: Catalog, { groupsOnly = false } = {}): ChartD
       const value = metric.groupValue?.(group);
       if (value !== undefined) values[metric.id] = value;
     }
-    return { key: group.id, name: group.data.name, href: href(`/ownership-groups/${group.id}/`), values };
+    return { key: group.id, name: group.data.name, href: href(`/ownership-groups/${group.id}/`), logos: logosOf(group), values };
   });
   const owner: Grouping = { id: 'owner', label: 'Owner', buckets: groupBuckets, licensing: true };
-  if (groupsOnly) return { points, groupings: [owner] };
 
   // Brands held by another brand sit under that brand.
   const brandOwners = [...new Set(points.flatMap((point) => point.buckets.owner).filter((key) => key.startsWith('brand:')))].map(
     (key): Bucket => {
       const brand = brandsById.get(key.slice('brand:'.length))!;
-      return { key, name: brand.data.name, href: href(`/brands/${brand.id}/`) };
+      return { key, name: brand.data.name, href: href(`/brands/${brand.id}/`), logos: logosOf(brand) };
     },
   );
   const notRecorded = (what: string): Bucket => ({ key: 'unrecorded', name: `${what} not recorded`, aside: `with no ${what.toLowerCase()} recorded` });

@@ -3,15 +3,13 @@ import CountryLink from '../../components/CountryLink.astro';
 import Filters from '../../components/Filters.astro';
 import FoundingChart from '../../components/FoundingChart.astro';
 import Owners from '../../components/Owners.astro';
-import Treemap from '../../components/Treemap.astro';
 import Base from '../../layouts/Base.astro';
 import { brandYears, currentOwners, href, label, loadCatalog } from '../../lib/catalog';
-import { chartData, measuresOf } from '../../lib/chart-data';
+import { measuresOf } from '../../lib/chart-data';
 import { metrics } from '../../lib/metrics';
 
 const catalog = await loadCatalog();
 const { brands, groups, linesOf } = catalog;
-const data = chartData(catalog);
 // The table's measure column can show any per-brand figure; a count of one brand each says nothing.
 const measures = measuresOf(catalog);
 const columnMetrics = metrics.filter((metric) => metric.id !== 'brands');
@@ -60,7 +58,6 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
     ]}
   />
 
-  <Treemap id="brands" title="Brands" data={data} follow="brands" initial={{ grouping: 'origin' }} />
   <FoundingChart
     brands={brands.map((brand) => ({ id: brand.id, name: brand.data.name, founded: brand.data.periods[0]?.from }))}
     follow="brands"
