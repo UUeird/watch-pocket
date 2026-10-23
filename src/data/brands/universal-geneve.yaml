@@ -12,3 +12,4 @@ segment: luxury
 ownership:
   - owner: breitling-sa
     from: 2023
+logoBackground: '#013e51'

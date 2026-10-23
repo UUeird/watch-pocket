@@ -3,6 +3,10 @@ logo: ../logos/patek-philippe.png
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Patek_Philippe_Logo.png
   license: Public domain
+logoOnDark: ../logos/patek-philippe-on-dark.png
+logoOnDarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:Patek_Philippe_Logo2.png
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1839 }]
 segment: haute

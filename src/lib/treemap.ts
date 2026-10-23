@@ -12,7 +12,8 @@ export const boxFor = (shape: Shape): Box => (shape === 'circles' ? { width: 100
 const header = 20;
 
 // One version of a brand's logo: its file and its drawn size, for its shape.
-export type LogoFile = { src: string; width: number; height: number };
+// `background` is the solid color the file brings along, if any, and `onBlack` whether it reads on black.
+export type LogoFile = { src: string; width: number; height: number; background?: string; onBlack?: boolean };
 
 // A brand as the chart sees it.
 export type Point = {
@@ -20,7 +21,9 @@ export type Point = {
   name: string;
   href: string;
   // Its logo, and the logo's name and symbol alone, of those it has. Parts are cropped at the logo's own scale.
-  logos: { whole?: LogoFile; wordmark?: LogoFile; logomark?: LogoFile };
+  // `onDark` and `logomarkOnDark` are the whole logo's and the logomark's versions for a dark background, and
+  // `background` the color they are drawn on, where the brand has one.
+  logos: { whole?: LogoFile; wordmark?: LogoFile; logomark?: LogoFile; onDark?: LogoFile; logomarkOnDark?: LogoFile; background?: string };
   // The bucket it sits in under each grouping, by grouping id. Several for a brand with part-owners.
   buckets: Record<string, string[]>;
   // The group making it under license. For a measure that counts licensed brands, it sits there instead of with its owner.
@@ -398,10 +401,12 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
   const more = preview.length - shown.length;
   // A plate's logo is drawn inside its padding: 8% of its width each side and 6% of its height top and bottom.
   const plates = shown.map((point) => {
-    const logo = pickLogo(point.logos, grid.width * 0.84, grid.height * 0.88);
+    const logo = forDark(point.logos, pickLogo(point.logos, grid.width * 0.84, grid.height * 0.88));
+    const fill = fillOf(point.logos, logo);
+    const classes = classList('plate', !logo && 'named', fill.dark && 'on-dark');
     return logo
-      ? `<span class="plate"><img src="${escape(logo.src)}" alt="" loading="lazy"></span>`
-      : `<span class="plate named">${fittedName(point.name, grid.width - 8, grid.height - 4, Math.min(18, grid.height * 0.45))}</span>`;
+      ? `<span class="${classes}" style="${fill.style}"><img src="${escape(logo.src)}" alt="" loading="lazy"></span>`
+      : `<span class="${classes}" style="${fill.style}">${fittedName(point.name, grid.width - 8, grid.height - 4, Math.min(18, grid.height * 0.45))}</span>`;
   });
   if (room > 0 && more > 0) plates.push(`<span class="plate more">+${more} more</span>`);
   const gridStyle = `grid-template-columns:repeat(${grid.columns},${grid.width.toFixed(1)}px);grid-auto-rows:${grid.height.toFixed(1)}px;--plate-font:${Math.min(16, Math.max(10, grid.height * 0.38)).toFixed(1)}px`;
@@ -424,6 +429,24 @@ function brandName(name: string, width: number, height: number) {
   return across ? fittedName(name, width, height, 15) : width >= 30 && height >= 12 ? fittedName(name, width, height, 15) : '';
 }
 
+// A brand's initials, for a circle too small for its name: the first letter of up to three of its words.
+export const initials = (name: string) =>
+  name
+    .split(/[\s\-–]+/)
+    .map((word) => word.replace(/[^\p{L}\p{N}]/gu, ''))
+    .filter(Boolean)
+    .slice(0, 3)
+    .map((word) => word[0].toUpperCase())
+    .join('');
+
+// A brand's initials sized to fill a circle's inner square, or nothing where even they would not read.
+function brandInitials(name: string, inner: number) {
+  const letters = initials(name);
+  if (!letters || inner < 12) return '';
+  const size = Math.min(16, (inner * 0.9) / (letters.length * 0.65), inner * 0.7);
+  return size < 7 ? '' : `<span class="fit initials" style="font-size:${size.toFixed(1)}px">${escape(letters)}</span>`;
+}
+
 const classList = (...names: (string | false | undefined)[]) => names.filter(Boolean).join(' ');
 
 // The largest box of a logo's shape that fits in a circle `diameter` across, kept a little inside its edge.
@@ -433,16 +456,36 @@ const inCircle = (logo: LogoFile, diameter: number, margin = 0.8) => {
   return { width: (diameter * margin * aspect) / diagonal, height: (diameter * margin) / diagonal };
 };
 
-// A brand's logo in its circle, by the same rules as a rectangle: the whole logo where its name reads, or else
-// its name or symbol alone. Sized as a share of the circle, so it scales with the chart.
+// A brand's logo in its circle: the whole logo where its name reads, or else its name or symbol alone where that
+// reads, by the same rules as a rectangle. Where none of them reads, nothing, so the circle shows the brand's name or
+// initials instead. Sized as a share of the circle, so it scales with the chart.
+const readableMark = 14;
 function circleLogo(logos: Point['logos'], diameter: number) {
-  if (!logos.whole || diameter < 48) return '';
-  const room = inCircle(logos.whole, diameter);
+  const { whole, wordmark, logomark } = logos;
+  if (!whole) return undefined;
+  const room = inCircle(whole, diameter);
   const logo = pickLogo(logos, room.width, room.height);
-  if (!logo) return '';
-  const fit = inCircle(logo, 1);
-  return `<img src="${escape(logo.src)}" alt="" loading="lazy" style="max-width:${(fit.width * 100).toFixed(1)}%;max-height:${(fit.height * 100).toFixed(1)}%">`;
+  if (!logo) return undefined;
+  // The logo as drawn: fitted in the circle, never grown past its own size.
+  const box = inCircle(logo, diameter);
+  const scale = Math.min(1, box.width / logo.width, box.height / logo.height);
+  const height = logo.height * scale;
+  const reads =
+    logo === logomark
+      ? Math.max(logo.width, logo.height) * scale >= readableMark
+      : logo === wordmark
+        ? height >= readable
+        : // The whole logo, picked with no part to fall back on: its name is taken to be a tenth of it, as in pickLogo.
+          Boolean(wordmark) || Boolean(logomark) || (height * readable) / readableWhole >= readable;
+  if (!reads) return undefined;
+  return circleImage(forDark(logos, logo)!);
 }
+
+const circleImage = (logo: LogoFile) => {
+  const fit = inCircle(logo, 1);
+  const html = `<img src="${escape(logo.src)}" alt="" loading="lazy" style="max-width:${(fit.width * 100).toFixed(1)}%;max-height:${(fit.height * 100).toFixed(1)}%">`;
+  return { logo, html };
+};
 
 // A bucket circle's label across its top: its logo on a white plate where it has one that reads there,
 // and otherwise its name.
@@ -463,6 +506,39 @@ function bucketLabel(cell: Cell, scale: number) {
   }
   return `<button type="button" class="bucket-name" ${label}>${escape(bucket.name)}</button>`;
 }
+
+// A brand's name in its circle where it fits whole, and its initials where not.
+function circleName(name: string, inner: number) {
+  return fitName(name, inner - 2, inner - 2, 15) ? brandName(name, inner - 2, inner - 2) : brandInitials(name, inner);
+}
+
+// The logo to draw in place of `shown`: the brand's version for a dark background where the whole logo or the
+// logomark would otherwise need white, so the cell can stay black.
+const forDark = (logos: Point['logos'], shown?: LogoFile) => {
+  if (!shown || shown.onBlack || shown.background || logos.background) return shown;
+  const dark = shown === logos.whole ? logos.onDark : shown === logos.logomark ? logos.logomarkOnDark : undefined;
+  return dark ?? shown;
+};
+
+// A brand's fill, in a cell, circle or plate: the color its logo is drawn on where the brand records one, or the
+// solid background the logo shown brings along, so the two meet without an edge; and otherwise black, unless the
+// logo shown was drawn for a light page and needs white.
+const brandFill = (logos: Point['logos'], shown?: LogoFile) =>
+  logos.background ?? shown?.background ?? (shown && !shown.onBlack ? '#ffffff' : '#000000');
+// The fill as a style and the class that sets light text on a dark one.
+const fillOf = (logos: Point['logos'], shown?: LogoFile) => {
+  const fill = brandFill(logos, shown);
+  return { style: `background:${fill}`, dark: isDark(fill) };
+};
+
+// Whether a `#rrggbb` color is dark enough to want light text on it, by its relative luminance.
+const isDark = (hex: string) => {
+  const [r, g, b] = [1, 3, 5].map((at) => {
+    const channel = parseInt(hex.slice(at, at + 2), 16) / 255;
+    return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b < 0.18;
+};
 
 // The cells as circles, each drawn in its square. What a circle says is fitted to the square inside it, whose
 // side is the circle's width over √2.
@@ -497,9 +573,11 @@ function renderCircles(layout: Layout, scale: number) {
       }
       const point = cell.point!;
       const lines = tipLines(cell, layout);
-      const classes = classList('brand', 'round', cell.licensed && 'licensed');
-      const content = circleLogo(point.logos, diameter) || brandName(point.name, inner - 2, inner - 2);
-      return `<a class="${classes}" style="${style}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
+      const logo = circleLogo(point.logos, diameter);
+      const content = logo?.html || circleName(point.name, inner);
+      const fill = brandFill(point.logos, logo?.logo);
+      const classes = classList('brand', 'round', cell.licensed && 'licensed', isDark(fill) && 'on-dark');
+      return `<a class="${classes}" style="${style};background:${fill}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
     })
     .join('');
 }
@@ -525,12 +603,13 @@ export function renderCells(layout: Layout, scale = 1) {
       const point = cell.point!;
       const lines = tipLines(cell, layout);
       // A cell's logo is drawn in at most 80% of its width and 60% of its height.
-      const logo = showsLogo(cell) ? pickLogo(point.logos, cell.width * scale * 0.8, cell.height * scale * 0.6) : undefined;
+      const logo = showsLogo(cell) ? forDark(point.logos, pickLogo(point.logos, cell.width * scale * 0.8, cell.height * scale * 0.6)) : undefined;
       const content = logo
         ? `<img src="${escape(logo.src)}" alt="" loading="lazy">`
         : brandName(point.name, cell.width * scale - 6, cell.height * scale - 6);
-      const classes = classList('brand', cell.licensed && 'licensed');
-      return `<a class="${classes}" style="${position(cell, layout.box)}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
+      const fill = fillOf(point.logos, logo);
+      const classes = classList('brand', cell.licensed && 'licensed', fill.dark && 'on-dark');
+      return `<a class="${classes}" style="${position(cell, layout.box)};${fill.style}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
     })
     .join('');
 }

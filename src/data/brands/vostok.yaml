@@ -11,3 +11,4 @@ periods: [{ from: 1942 }]
 segment: budget
 sources:
   - https://en.wikipedia.org/wiki/Vostok_(watches)
+logoBackground: '#3c71b7'

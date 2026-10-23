@@ -4,6 +4,12 @@ logomark: ../logos/apple.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg
   license: Public domain
+logoOnDark: ../logos/apple-on-dark.svg
+logoOnDarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:Apple_logo_white.svg
+  license: Public domain
+  author: Rob Janoff
+logomarkOnDark: ../logos/apple-on-dark.svg
 origin: United States
 headquarters: United States
 manufacturing: [China]

@@ -3,6 +3,12 @@ logo: ../logos/richard-mille.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Richard_Mille_Logo.svg
   license: Public domain
+logoOnDark: ../logos/richard-mille-on-dark.png
+logoOnDarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:RICHARD-MILLE-LOGO-WHITE-TRANSPARENT-BG.png
+  license: CC0
+  licenseUrl: https://creativecommons.org/publicdomain/zero/1.0
+  author: Jeromluther
 origin: Switzerland
 periods: [{ from: 2001 }]
 segment: haute

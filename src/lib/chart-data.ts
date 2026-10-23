@@ -1,5 +1,8 @@
+import { readFile } from 'node:fs/promises';
+import { dirname, resolve } from 'node:path';
 import { countryHref, currentOwners, href, label, type Brand, type Group, type Reference } from './catalog';
 import { metrics } from './metrics';
+import { logoTone, type Tone } from './logo-tone';
 import type { Bucket, ChartData, Grouping, LogoFile, Point } from './treemap';
 
 type Catalog = {
@@ -36,19 +39,45 @@ export function measuresOf({ brands, references }: Catalog) {
   );
 }
 
+// How each logo file sits on a fill, by its `src`. Astro gives no file path for an SVG, so each file is found from
+// the path its record gives, e.g. `logo: ../logos/omega.svg`.
+type Tones = Map<string, Tone>;
+const logoKeys = ['logo', 'wordmark', 'logomark', 'logoOnDark', 'logomarkOnDark'] as const;
+async function tonesOf(records: (Brand | Group)[]): Promise<Tones> {
+  const found = await Promise.all(
+    records.map(async (record) => {
+      if (!record.filePath) return [];
+      const text = await readFile(record.filePath, 'utf8');
+      return logoKeys.flatMap((key) => {
+        const image = record.data[key];
+        const given = text.match(new RegExp(`^${key}:\\s*['"]?([^'"\\s]+)`, 'm'))?.[1];
+        return image && given ? [{ src: image.src, path: resolve(dirname(record.filePath!), given) }] : [];
+      });
+    }),
+  );
+  return new Map(await Promise.all(found.flat().map(async ({ src, path }) => [src, await logoTone(path)] as const)));
+}
+
 // An image's file and drawn size, as the chart needs it.
-const logoFile = (image?: LogoFile): LogoFile | undefined => image && { src: image.src, width: image.width, height: image.height };
+const logoFile = (tones: Tones, image?: LogoFile): LogoFile | undefined =>
+  image && { src: image.src, width: image.width, height: image.height, ...(tones.get(image.src) ?? { onBlack: false }) };
+const onBlack = (file?: LogoFile) => file && { ...file, background: undefined, onBlack: true };
 // A brand's or group's logo and its parts.
-const logosOf = ({ data }: Brand | Group): Point['logos'] => ({
-  whole: logoFile(data.logo),
-  wordmark: logoFile(data.wordmark),
-  logomark: logoFile(data.logomark),
+const logosOf = (tones: Tones, { data }: Brand | Group): Point['logos'] => ({
+  whole: logoFile(tones, data.logo),
+  wordmark: logoFile(tones, data.wordmark),
+  logomark: logoFile(tones, data.logomark),
+  // Versions made for a dark background read on black by definition, whatever the pixel check makes of them.
+  onDark: onBlack(logoFile(tones, data.logoOnDark)),
+  logomarkOnDark: onBlack(logoFile(tones, data.logomarkOnDark)),
+  background: data.logoBackground,
 });
 
 // The ways the chart page can group brands. Category and status are left out: nearly every brand is an
 // active watch brand, so either would draw one huge box and a few specks.
-export function chartData(catalog: Catalog): ChartData {
+export async function chartData(catalog: Catalog): Promise<ChartData> {
   const { brands, groups } = catalog;
+  const tones = await tonesOf([...brands, ...groups]);
   const measures = measuresOf(catalog);
   const brandsById = new Map(brands.map((brand) => [brand.id, brand]));
 
@@ -56,7 +85,7 @@ export function chartData(catalog: Catalog): ChartData {
     id: brand.id,
     name: brand.data.name,
     href: href(`/brands/${brand.id}/`),
-    logos: logosOf(brand),
+    logos: logosOf(tones, brand),
     buckets: {
       owner: ownerKeys(brand),
       origin: [brand.data.origin ?? 'unrecorded'],
@@ -73,7 +102,7 @@ export function chartData(catalog: Catalog): ChartData {
       const value = metric.groupValue?.(group);
       if (value !== undefined) values[metric.id] = value;
     }
-    return { key: group.id, name: group.data.name, href: href(`/ownership-groups/${group.id}/`), logos: logosOf(group), values };
+    return { key: group.id, name: group.data.name, href: href(`/ownership-groups/${group.id}/`), logos: logosOf(tones, group), values };
   });
   const owner: Grouping = { id: 'owner', label: 'Owner', buckets: groupBuckets, licensing: true };
 
@@ -81,7 +110,7 @@ export function chartData(catalog: Catalog): ChartData {
   const brandOwners = [...new Set(points.flatMap((point) => point.buckets.owner).filter((key) => key.startsWith('brand:')))].map(
     (key): Bucket => {
       const brand = brandsById.get(key.slice('brand:'.length))!;
-      return { key, name: brand.data.name, href: href(`/brands/${brand.id}/`), logos: logosOf(brand) };
+      return { key, name: brand.data.name, href: href(`/brands/${brand.id}/`), logos: logosOf(tones, brand) };
     },
   );
   const notRecorded = (what: string): Bucket => ({ key: 'unrecorded', name: `${what} not recorded`, aside: `with no ${what.toLowerCase()} recorded` });

@@ -7,7 +7,7 @@ import { chartData } from '../../lib/chart-data';
 
 const catalog = await loadCatalog();
 const { brands, groups, linesOf } = catalog;
-const data = chartData(catalog);
+const data = await chartData(catalog);
 const distinct = (values: (string | undefined)[]) => [...new Set(values.filter((value) => value !== undefined))].sort();
 const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));
 // The Owner filter lists groups, so a brand held by another brand matches none of its options.
