@@ -43,6 +43,7 @@ const logosOf = ({ data }: Brand | Group): Point['logos'] => ({
   whole: logoFile(data.logo),
   wordmark: logoFile(data.wordmark),
   logomark: logoFile(data.logomark),
+  background: data.logoBackground,
 });
 
 // The ways the chart page can group brands. Category and status are left out: nearly every brand is an

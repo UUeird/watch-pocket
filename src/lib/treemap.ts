@@ -20,7 +20,8 @@ export type Point = {
   name: string;
   href: string;
   // Its logo, and the logo's name and symbol alone, of those it has. Parts are cropped at the logo's own scale.
-  logos: { whole?: LogoFile; wordmark?: LogoFile; logomark?: LogoFile };
+  // `background` is the color they are drawn on, where the brand has one.
+  logos: { whole?: LogoFile; wordmark?: LogoFile; logomark?: LogoFile; background?: string };
   // The bucket it sits in under each grouping, by grouping id. Several for a brand with part-owners.
   buckets: Record<string, string[]>;
   // The group making it under license. For a measure that counts licensed brands, it sits there instead of with its owner.
@@ -502,6 +503,15 @@ function circleName(name: string, inner: number) {
   return fitName(name, inner - 2, inner - 2, 15) ? brandName(name, inner - 2, inner - 2) : brandInitials(name, inner);
 }
 
+// Whether a `#rrggbb` color is dark enough to want light text on it, by its relative luminance.
+const isDark = (hex: string) => {
+  const [r, g, b] = [1, 3, 5].map((at) => {
+    const channel = parseInt(hex.slice(at, at + 2), 16) / 255;
+    return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b < 0.18;
+};
+
 // The cells as circles, each drawn in its square. What a circle says is fitted to the square inside it, whose
 // side is the circle's width over √2.
 function renderCircles(layout: Layout, scale: number) {
@@ -535,9 +545,11 @@ function renderCircles(layout: Layout, scale: number) {
       }
       const point = cell.point!;
       const lines = tipLines(cell, layout);
-      const classes = classList('brand', 'round', cell.licensed && 'licensed');
+      const { background } = point.logos;
+      const classes = classList('brand', 'round', cell.licensed && 'licensed', background && isDark(background) && 'on-dark');
       const content = circleLogo(point.logos, diameter) || circleName(point.name, inner);
-      return `<a class="${classes}" style="${style}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
+      const fill = background ? `;background:${background}` : '';
+      return `<a class="${classes}" style="${style}${fill}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
     })
     .join('');
 }

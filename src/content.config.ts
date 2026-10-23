@@ -46,6 +46,12 @@ const logoFields = (image: SchemaContext['image']) => ({
   logomarkCredit: credit,
   wordmark: image().optional(),
   wordmarkCredit: credit,
+  // The color the logo is drawn on, where the brand sets it on one (Rolex's green), as `#rrggbb`. The logo files
+  // must read on it. Without one, a logo sits on white.
+  logoBackground: z
+    .string()
+    .regex(/^#[0-9a-fA-F]{6}$/, 'A `logoBackground` is a color as `#rrggbb`.')
+    .optional(),
 });
 type LogoRecord = Partial<Record<'logo' | 'logoCredit' | 'logomark' | 'logomarkCredit' | 'wordmark' | 'wordmarkCredit', unknown>>;
 const creditHasLogo = (record: LogoRecord) =>
