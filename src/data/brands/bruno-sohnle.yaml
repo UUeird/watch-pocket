@@ -8,3 +8,4 @@ periods: [{ from: 2000 }]
 segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q17353455
+logoBackground: '#281c1e'

@@ -9,3 +9,4 @@ segment: haute
 ownership:
   - owner: lvmh
     from: 2011
+logoBackground: '#00274b'
