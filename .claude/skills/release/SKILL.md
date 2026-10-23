@@ -18,7 +18,7 @@ faster. This is a single-PR flow with no batching.
     against the schema), internal links and browser tests, in that order.
   - `npm run test:rules` — as well, when the schema or its rules changed. Stop the
     dev server first (`npx astro dev stop`); the script refuses to run otherwise.
-  - If another server holds port 4322, run the browser tests with
+  - If another server holds port 4391, run the browser tests with
     `TEST_PORT=<free port>`.
 - Push, and open the PR if there isn't one, or refresh the body (`gh pr edit`)
   so it describes everything on the branch and says which checks ran.

@@ -4,7 +4,7 @@ import { createReadStream, existsSync, statSync } from 'node:fs';
 import { createServer } from 'node:http';
 import { extname, join, normalize } from 'node:path';
 
-const port = Number(process.argv[2] ?? 4322);
+const port = Number(process.argv[2] ?? 4391);
 // The site is built for a base path (see astro.config.mjs), so dist/ is served under it, as GitHub Pages does.
 const { default: config } = await import('../astro.config.mjs');
 const base = (config.base ?? '/').replace(/\/$/, '');

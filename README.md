@@ -18,6 +18,8 @@ npm run verify   # all of the above in turn: run it before merging a pull reques
 
 There is no CI: checks run locally before a pull request is merged, which is much faster. Run `npm run verify`, and `npm run test:rules` as well when the schema or its rules change.
 
+Each browser-test run uploads its summary to the [tada board](https://app.tada-ai.app/b/watch-pocket)'s Test trends once this machine has a token: set `TADA_TOKEN` (a `test-runs:write` token for the `watch-pocket` board, minted as tada's `docs/operations/test-runs.md` describes) and `TADA_TEST_RUNS_BOARD=watch-pocket` in a gitignored `.env.local` or the shell. Without both, nothing is uploaded. A failed upload never fails the tests: the run waits in `playwright-report/upload-queue.json` and goes with the next one (`tests/reporting/`).
+
 ## Data
 
 The site is built with [Astro](https://astro.build) from data files in the repo:
