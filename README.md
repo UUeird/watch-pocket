@@ -13,7 +13,10 @@ npm run preview  # serve the built site
 npm run check    # type check
 npm run test:links  # check internal links in the built site (run after a build)
 npm run test:browser  # browser tests for the filters (run after a build)
+npm run verify   # all of the above in turn: run it before merging a pull request
 ```
+
+There is no CI: checks run locally before a pull request is merged, which is much faster. Run `npm run verify`, and `npm run test:rules` as well when the schema or its rules change.
 
 ## Data
 
@@ -57,7 +60,7 @@ Every pull request runs the type check, the build, the link check, the browser t
 
 ## Deployment
 
-The site is published to GitHub Pages at https://www.watchpocket.app/ (the bare watchpocket.app redirects there). Once CI passes on `main`, the Deploy workflow (`.github/workflows/deploy.yml`) builds that commit and publishes it; it can also be run by hand from the Actions tab. It also republishes `main` each Monday, refreshing the brands' own model photos first.
+The site is published to GitHub Pages at https://www.watchpocket.app/ (the bare watchpocket.app redirects there). Each push to `main` runs the Deploy workflow (`.github/workflows/deploy.yml`), which builds that commit and publishes it; it can also be run by hand from the Actions tab. It also republishes `main` each Monday, refreshing the brands' own model photos first.
 
 The custom domain is set in the repo's Pages settings, and DNS for watchpocket.app is at Porkbun: a `www` CNAME to `uueird.github.io`, and A/AAAA records on the apex pointing to GitHub's Pages addresses. `site` in `astro.config.mjs` holds the same address.
 

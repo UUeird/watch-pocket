@@ -1,11 +1,10 @@
 name: Deploy
 
-# Publishes the site to GitHub Pages once CI has passed on main, so a red commit is never deployed. It also
+# Publishes main to GitHub Pages on every push. Tests run locally before a pull request is merged (see the release
+# skill); the build here still validates every data file, so a commit that doesn't build is never deployed. It also
 # republishes main each Monday, so brands' own photos of their models (see below) stay current between commits.
 on:
-  workflow_run:
-    workflows: [CI]
-    types: [completed]
+  push:
     branches: [main]
   schedule:
     - cron: '0 6 * * 1'
@@ -24,13 +23,9 @@ concurrency:
 jobs:
   build:
     name: Build
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-        with:
-          # The commit CI passed on, not whatever main points at by the time this runs.
-          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
       - uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc

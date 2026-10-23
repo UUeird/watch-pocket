@@ -9,6 +9,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "test:links": "node scripts/check-links.mjs",
+    "verify": "npm run check && npm run build && npm run test:links && npm run test:browser",
     "test:browser": "playwright test --project=chromium",
     "docs:media": "DOCS=1 npm run build && playwright test --project=docs-media",
     "test:docs": "DOCS=1 npm run build && playwright test --project=chromium tests/docs.spec.ts",
