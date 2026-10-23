@@ -5,7 +5,7 @@ type Data = CollectionEntry<'brands' | 'groups'>['data'];
 
 interface Props {
   name: string;
-  data: Pick<Data, 'logo' | 'logoCredit' | 'logomark' | 'logomarkCredit' | 'wordmark' | 'wordmarkCredit'>;
+  data: Pick<Data, 'logo' | 'logoCredit' | 'logomark' | 'logomarkCredit' | 'wordmark' | 'wordmarkCredit' | 'logoOnDark' | 'logoOnDarkCredit' | 'logomarkOnDark' | 'logomarkOnDarkCredit'>;
 }
 
 const { name, data } = Astro.props;
@@ -15,6 +15,8 @@ const credits = [
   { label: 'Logo', credit: data.logoCredit },
   { label: 'Logomark', credit: data.logomark && data.logomarkCredit },
   { label: 'Wordmark', credit: data.wordmark && data.wordmarkCredit },
+  { label: 'Logo for dark backgrounds', credit: data.logoOnDark && data.logoOnDarkCredit },
+  { label: 'Logomark for dark backgrounds', credit: data.logomarkOnDark && data.logomarkOnDarkCredit },
 ].filter((entry) => logo && entry.credit);
 ---
 

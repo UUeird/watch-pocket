@@ -4,6 +4,13 @@ logomark: ../logos/jaeger-lecoultre-logomark.png
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Jaeger-LeCoultre_Logo_(cropped).png
   license: Public domain
+logoOnDark: ../logos/jaeger-lecoultre-on-dark.png
+logoOnDarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:Jaeger-LeCoultre_Logo-white-transparent-bg.png
+  license: CC0
+  licenseUrl: https://creativecommons.org/publicdomain/zero/1.0
+  author: Jeromluther
+logomarkOnDark: ../logos/jaeger-lecoultre-logomark-on-dark.png
 origin: Switzerland
 periods: [{ from: 1833 }]
 segment: luxury

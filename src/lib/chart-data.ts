@@ -42,7 +42,7 @@ export function measuresOf({ brands, references }: Catalog) {
 // How each logo file sits on a fill, by its `src`. Astro gives no file path for an SVG, so each file is found from
 // the path its record gives, e.g. `logo: ../logos/omega.svg`.
 type Tones = Map<string, Tone>;
-const logoKeys = ['logo', 'wordmark', 'logomark'] as const;
+const logoKeys = ['logo', 'wordmark', 'logomark', 'logoOnDark', 'logomarkOnDark'] as const;
 async function tonesOf(records: (Brand | Group)[]): Promise<Tones> {
   const found = await Promise.all(
     records.map(async (record) => {
@@ -61,11 +61,15 @@ async function tonesOf(records: (Brand | Group)[]): Promise<Tones> {
 // An image's file and drawn size, as the chart needs it.
 const logoFile = (tones: Tones, image?: LogoFile): LogoFile | undefined =>
   image && { src: image.src, width: image.width, height: image.height, ...(tones.get(image.src) ?? { onBlack: false }) };
+const onBlack = (file?: LogoFile) => file && { ...file, background: undefined, onBlack: true };
 // A brand's or group's logo and its parts.
 const logosOf = (tones: Tones, { data }: Brand | Group): Point['logos'] => ({
   whole: logoFile(tones, data.logo),
   wordmark: logoFile(tones, data.wordmark),
   logomark: logoFile(tones, data.logomark),
+  // Versions made for a dark background read on black by definition, whatever the pixel check makes of them.
+  onDark: onBlack(logoFile(tones, data.logoOnDark)),
+  logomarkOnDark: onBlack(logoFile(tones, data.logomarkOnDark)),
   background: data.logoBackground,
 });
 

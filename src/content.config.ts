@@ -46,21 +46,48 @@ const logoFields = (image: SchemaContext['image']) => ({
   logomarkCredit: credit,
   wordmark: image().optional(),
   wordmarkCredit: credit,
+  // The brand's own version of its whole logo for a dark background (often all white), where the `logo` is dark and
+  // would be lost on black. The chart shows it on black in place of the `logo`. Needs its own credit when it comes
+  // from another file.
+  logoOnDark: image().optional(),
+  logoOnDarkCredit: credit,
+  // Its symbol alone in the same version, shown on black in place of the `logomark`. One cut from the `logoOnDark`
+  // file is covered by `logoOnDarkCredit`.
+  logomarkOnDark: image().optional(),
+  logomarkOnDarkCredit: credit,
   // The color the logo is drawn on, where the brand sets it on one (Rolex's green), as `#rrggbb`. The logo files
-  // must read on it. Without one, a logo sits on white.
+  // must read on it. Without one, the chart draws a logo on black, or on white where it is dark.
   logoBackground: z
     .string()
     .regex(/^#[0-9a-fA-F]{6}$/, 'A `logoBackground` is a color as `#rrggbb`.')
     .optional(),
 });
-type LogoRecord = Partial<Record<'logo' | 'logoCredit' | 'logomark' | 'logomarkCredit' | 'wordmark' | 'wordmarkCredit', unknown>>;
+type LogoRecord = Partial<
+  Record<
+    | 'logo'
+    | 'logoCredit'
+    | 'logomark'
+    | 'logomarkCredit'
+    | 'wordmark'
+    | 'wordmarkCredit'
+    | 'logoOnDark'
+    | 'logoOnDarkCredit'
+    | 'logomarkOnDark'
+    | 'logomarkOnDarkCredit',
+    unknown
+  >
+>;
 const creditHasLogo = (record: LogoRecord) =>
   (record.logoCredit === undefined || record.logo !== undefined) &&
+  (record.logoOnDarkCredit === undefined || record.logoOnDark !== undefined) &&
+  (record.logomarkOnDarkCredit === undefined || record.logomarkOnDark !== undefined) &&
   (record.logomarkCredit === undefined || record.logomark !== undefined) &&
   (record.wordmarkCredit === undefined || record.wordmark !== undefined);
-const creditNeedsLogo = { message: 'A `logoCredit`, `logomarkCredit` or `wordmarkCredit` needs its file to credit.' };
-const partsNeedLogo = (record: LogoRecord) => (record.logomark === undefined && record.wordmark === undefined) || record.logo !== undefined;
-const partsNeedLogoMessage = { message: 'A `logomark` or `wordmark` is a part of a `logo`: give the whole `logo` too.' };
+const creditNeedsLogo = { message: 'A logo credit (`logoCredit`, `logomarkCredit`, …) needs its file to credit.' };
+const partsNeedLogo = (record: LogoRecord) =>
+  (record.logomark === undefined && record.wordmark === undefined && record.logoOnDark === undefined && record.logomarkOnDark === undefined) ||
+  record.logo !== undefined;
+const partsNeedLogoMessage = { message: 'A `logomark`, `wordmark`, `logoOnDark` or `logomarkOnDark` goes with a `logo`: give the whole `logo` too.' };
 
 const groups = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/data/groups' }),

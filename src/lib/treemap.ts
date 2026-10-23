@@ -21,8 +21,9 @@ export type Point = {
   name: string;
   href: string;
   // Its logo, and the logo's name and symbol alone, of those it has. Parts are cropped at the logo's own scale.
-  // `background` is the color they are drawn on, where the brand has one.
-  logos: { whole?: LogoFile; wordmark?: LogoFile; logomark?: LogoFile; background?: string };
+  // `onDark` and `logomarkOnDark` are the whole logo's and the logomark's versions for a dark background, and
+  // `background` the color they are drawn on, where the brand has one.
+  logos: { whole?: LogoFile; wordmark?: LogoFile; logomark?: LogoFile; onDark?: LogoFile; logomarkOnDark?: LogoFile; background?: string };
   // The bucket it sits in under each grouping, by grouping id. Several for a brand with part-owners.
   buckets: Record<string, string[]>;
   // The group making it under license. For a measure that counts licensed brands, it sits there instead of with its owner.
@@ -400,7 +401,7 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
   const more = preview.length - shown.length;
   // A plate's logo is drawn inside its padding: 8% of its width each side and 6% of its height top and bottom.
   const plates = shown.map((point) => {
-    const logo = pickLogo(point.logos, grid.width * 0.84, grid.height * 0.88);
+    const logo = forDark(point.logos, pickLogo(point.logos, grid.width * 0.84, grid.height * 0.88));
     const fill = fillOf(point.logos, logo);
     const classes = classList('plate', !logo && 'named', fill.dark && 'on-dark');
     return logo
@@ -477,10 +478,14 @@ function circleLogo(logos: Point['logos'], diameter: number) {
         : // The whole logo, picked with no part to fall back on: its name is taken to be a tenth of it, as in pickLogo.
           Boolean(wordmark) || Boolean(logomark) || (height * readable) / readableWhole >= readable;
   if (!reads) return undefined;
+  return circleImage(forDark(logos, logo)!);
+}
+
+const circleImage = (logo: LogoFile) => {
   const fit = inCircle(logo, 1);
   const html = `<img src="${escape(logo.src)}" alt="" loading="lazy" style="max-width:${(fit.width * 100).toFixed(1)}%;max-height:${(fit.height * 100).toFixed(1)}%">`;
   return { logo, html };
-}
+};
 
 // A bucket circle's label across its top: its logo on a white plate where it has one that reads there,
 // and otherwise its name.
@@ -506,6 +511,14 @@ function bucketLabel(cell: Cell, scale: number) {
 function circleName(name: string, inner: number) {
   return fitName(name, inner - 2, inner - 2, 15) ? brandName(name, inner - 2, inner - 2) : brandInitials(name, inner);
 }
+
+// The logo to draw in place of `shown`: the brand's version for a dark background where the whole logo or the
+// logomark would otherwise need white, so the cell can stay black.
+const forDark = (logos: Point['logos'], shown?: LogoFile) => {
+  if (!shown || shown.onBlack || shown.background || logos.background) return shown;
+  const dark = shown === logos.whole ? logos.onDark : shown === logos.logomark ? logos.logomarkOnDark : undefined;
+  return dark ?? shown;
+};
 
 // A brand's fill, in a cell, circle or plate: the color its logo is drawn on where the brand records one, or the
 // solid background the logo shown brings along, so the two meet without an edge; and otherwise black, unless the
@@ -590,7 +603,7 @@ export function renderCells(layout: Layout, scale = 1) {
       const point = cell.point!;
       const lines = tipLines(cell, layout);
       // A cell's logo is drawn in at most 80% of its width and 60% of its height.
-      const logo = showsLogo(cell) ? pickLogo(point.logos, cell.width * scale * 0.8, cell.height * scale * 0.6) : undefined;
+      const logo = showsLogo(cell) ? forDark(point.logos, pickLogo(point.logos, cell.width * scale * 0.8, cell.height * scale * 0.6)) : undefined;
       const content = logo
         ? `<img src="${escape(logo.src)}" alt="" loading="lazy">`
         : brandName(point.name, cell.width * scale - 6, cell.height * scale - 6);
