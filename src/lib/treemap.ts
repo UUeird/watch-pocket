@@ -12,7 +12,8 @@ export const boxFor = (shape: Shape): Box => (shape === 'circles' ? { width: 100
 const header = 20;
 
 // One version of a brand's logo: its file and its drawn size, for its shape.
-export type LogoFile = { src: string; width: number; height: number };
+// `onBlack` says whether it reads on a black circle.
+export type LogoFile = { src: string; width: number; height: number; onBlack?: boolean };
 
 // A brand as the chart sees it.
 export type Point = {
@@ -458,10 +459,10 @@ const inCircle = (logo: LogoFile, diameter: number, margin = 0.8) => {
 const readableMark = 14;
 function circleLogo(logos: Point['logos'], diameter: number) {
   const { whole, wordmark, logomark } = logos;
-  if (!whole) return '';
+  if (!whole) return undefined;
   const room = inCircle(whole, diameter);
   const logo = pickLogo(logos, room.width, room.height);
-  if (!logo) return '';
+  if (!logo) return undefined;
   // The logo as drawn: fitted in the circle, never grown past its own size.
   const box = inCircle(logo, diameter);
   const scale = Math.min(1, box.width / logo.width, box.height / logo.height);
@@ -473,10 +474,15 @@ function circleLogo(logos: Point['logos'], diameter: number) {
         ? height >= readable
         : // The whole logo, picked with no part to fall back on: its name is taken to be a tenth of it, as in pickLogo.
           Boolean(wordmark) || Boolean(logomark) || (height * readable) / readableWhole >= readable;
-  if (!reads) return '';
+  if (!reads) return undefined;
   const fit = inCircle(logo, 1);
-  return `<img src="${escape(logo.src)}" alt="" loading="lazy" style="max-width:${(fit.width * 100).toFixed(1)}%;max-height:${(fit.height * 100).toFixed(1)}%">`;
+  const html = `<img src="${escape(logo.src)}" alt="" loading="lazy" style="max-width:${(fit.width * 100).toFixed(1)}%;max-height:${(fit.height * 100).toFixed(1)}%">`;
+  return { logo, html };
 }
+
+// A brand circle's fill: the color its logo is drawn on where the brand has one, and otherwise black, unless the
+// logo it shows was drawn for a light page and needs white.
+const circleFill = (logos: Point['logos'], shown?: LogoFile) => logos.background ?? (shown && !shown.onBlack ? '#ffffff' : '#000000');
 
 // A bucket circle's label across its top: its logo on a white plate where it has one that reads there,
 // and otherwise its name.
@@ -545,11 +551,11 @@ function renderCircles(layout: Layout, scale: number) {
       }
       const point = cell.point!;
       const lines = tipLines(cell, layout);
-      const { background } = point.logos;
-      const classes = classList('brand', 'round', cell.licensed && 'licensed', background && isDark(background) && 'on-dark');
-      const content = circleLogo(point.logos, diameter) || circleName(point.name, inner);
-      const fill = background ? `;background:${background}` : '';
-      return `<a class="${classes}" style="${style}${fill}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
+      const logo = circleLogo(point.logos, diameter);
+      const content = logo?.html || circleName(point.name, inner);
+      const fill = circleFill(point.logos, logo?.logo);
+      const classes = classList('brand', 'round', cell.licensed && 'licensed', isDark(fill) && 'on-dark');
+      return `<a class="${classes}" style="${style};background:${fill}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
     })
     .join('');
 }

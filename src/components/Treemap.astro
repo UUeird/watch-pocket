@@ -409,9 +409,10 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     border-radius: 2px;
   }
 
-  /* A brand circle filled with its logo's own background color, where that is dark. */
+  /* A brand circle on a dark fill: black by default, or its logo's own dark background color. */
   .canvas :global(.brand.on-dark) {
     color: #ffffff;
+    border-color: #6b6860;
   }
 
   /* Made under license by the group, not owned by it. */
