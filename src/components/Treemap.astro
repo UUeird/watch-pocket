@@ -337,7 +337,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     margin-top: 6px;
   }
 
-  /* Logos are drawn for a light page, so each sits on a white plate. */
+  /* Each plate takes its brand's fill, black or white, set on it (see brandFill in src/lib/treemap.ts). */
   .canvas :global(.tile .plate) {
     display: flex;
     align-items: center;
@@ -353,6 +353,10 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     overflow: hidden;
     padding: 0 4px;
     color: #1c1b19;
+  }
+
+  .canvas :global(.tile .plate.on-dark) {
+    color: #ffffff;
   }
 
   /* A name set at the size that fits its space, on one line or two (see fitName in src/lib/treemap.ts). One that
@@ -403,13 +407,14 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     line-height: 1.2;
     text-align: center;
     text-decoration: none;
-    /* Logos are drawn for a light page, so cells stay white in both color schemes. */
+    /* Each brand's fill is set on it: black, or white where its logo was drawn for a light page (see brandFill in
+       src/lib/treemap.ts). The same in both color schemes. */
     background: #ffffff;
     border: 1px solid #d4d0c6;
     border-radius: 2px;
   }
 
-  /* A brand circle on a dark fill: black by default, or its logo's own dark background color. */
+  /* A brand on a dark fill: black by default, or its logo's own dark background color. */
   .canvas :global(.brand.on-dark) {
     color: #ffffff;
     border-color: #6b6860;

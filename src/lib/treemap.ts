@@ -12,8 +12,8 @@ export const boxFor = (shape: Shape): Box => (shape === 'circles' ? { width: 100
 const header = 20;
 
 // One version of a brand's logo: its file and its drawn size, for its shape.
-// `onBlack` says whether it reads on a black circle.
-export type LogoFile = { src: string; width: number; height: number; onBlack?: boolean };
+// `background` is the solid color the file brings along, if any, and `onBlack` whether it reads on black.
+export type LogoFile = { src: string; width: number; height: number; background?: string; onBlack?: boolean };
 
 // A brand as the chart sees it.
 export type Point = {
@@ -401,9 +401,11 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
   // A plate's logo is drawn inside its padding: 8% of its width each side and 6% of its height top and bottom.
   const plates = shown.map((point) => {
     const logo = pickLogo(point.logos, grid.width * 0.84, grid.height * 0.88);
+    const fill = fillOf(point.logos, logo);
+    const classes = classList('plate', !logo && 'named', fill.dark && 'on-dark');
     return logo
-      ? `<span class="plate"><img src="${escape(logo.src)}" alt="" loading="lazy"></span>`
-      : `<span class="plate named">${fittedName(point.name, grid.width - 8, grid.height - 4, Math.min(18, grid.height * 0.45))}</span>`;
+      ? `<span class="${classes}" style="${fill.style}"><img src="${escape(logo.src)}" alt="" loading="lazy"></span>`
+      : `<span class="${classes}" style="${fill.style}">${fittedName(point.name, grid.width - 8, grid.height - 4, Math.min(18, grid.height * 0.45))}</span>`;
   });
   if (room > 0 && more > 0) plates.push(`<span class="plate more">+${more} more</span>`);
   const gridStyle = `grid-template-columns:repeat(${grid.columns},${grid.width.toFixed(1)}px);grid-auto-rows:${grid.height.toFixed(1)}px;--plate-font:${Math.min(16, Math.max(10, grid.height * 0.38)).toFixed(1)}px`;
@@ -480,10 +482,6 @@ function circleLogo(logos: Point['logos'], diameter: number) {
   return { logo, html };
 }
 
-// A brand circle's fill: the color its logo is drawn on where the brand has one, and otherwise black, unless the
-// logo it shows was drawn for a light page and needs white.
-const circleFill = (logos: Point['logos'], shown?: LogoFile) => logos.background ?? (shown && !shown.onBlack ? '#ffffff' : '#000000');
-
 // A bucket circle's label across its top: its logo on a white plate where it has one that reads there,
 // and otherwise its name.
 function bucketLabel(cell: Cell, scale: number) {
@@ -508,6 +506,17 @@ function bucketLabel(cell: Cell, scale: number) {
 function circleName(name: string, inner: number) {
   return fitName(name, inner - 2, inner - 2, 15) ? brandName(name, inner - 2, inner - 2) : brandInitials(name, inner);
 }
+
+// A brand's fill, in a cell, circle or plate: the color its logo is drawn on where the brand records one, or the
+// solid background the logo shown brings along, so the two meet without an edge; and otherwise black, unless the
+// logo shown was drawn for a light page and needs white.
+const brandFill = (logos: Point['logos'], shown?: LogoFile) =>
+  logos.background ?? shown?.background ?? (shown && !shown.onBlack ? '#ffffff' : '#000000');
+// The fill as a style and the class that sets light text on a dark one.
+const fillOf = (logos: Point['logos'], shown?: LogoFile) => {
+  const fill = brandFill(logos, shown);
+  return { style: `background:${fill}`, dark: isDark(fill) };
+};
 
 // Whether a `#rrggbb` color is dark enough to want light text on it, by its relative luminance.
 const isDark = (hex: string) => {
@@ -553,7 +562,7 @@ function renderCircles(layout: Layout, scale: number) {
       const lines = tipLines(cell, layout);
       const logo = circleLogo(point.logos, diameter);
       const content = logo?.html || circleName(point.name, inner);
-      const fill = circleFill(point.logos, logo?.logo);
+      const fill = brandFill(point.logos, logo?.logo);
       const classes = classList('brand', 'round', cell.licensed && 'licensed', isDark(fill) && 'on-dark');
       return `<a class="${classes}" style="${style};background:${fill}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
     })
@@ -585,8 +594,9 @@ export function renderCells(layout: Layout, scale = 1) {
       const content = logo
         ? `<img src="${escape(logo.src)}" alt="" loading="lazy">`
         : brandName(point.name, cell.width * scale - 6, cell.height * scale - 6);
-      const classes = classList('brand', cell.licensed && 'licensed');
-      return `<a class="${classes}" style="${position(cell, layout.box)}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
+      const fill = fillOf(point.logos, logo);
+      const classes = classList('brand', cell.licensed && 'licensed', fill.dark && 'on-dark');
+      return `<a class="${classes}" style="${position(cell, layout.box)};${fill.style}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
     })
     .join('');
 }

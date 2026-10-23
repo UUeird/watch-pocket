@@ -1,6 +1,6 @@
 import { countryHref, currentOwners, href, label, type Brand, type Group, type Reference } from './catalog';
 import { metrics } from './metrics';
-import { logoReadsOnBlack } from './logo-tone';
+import { logoTone, type Tone } from './logo-tone';
 import type { Bucket, ChartData, Grouping, LogoFile, Point } from './treemap';
 
 type Catalog = {
@@ -37,16 +37,16 @@ export function measuresOf({ brands, references }: Catalog) {
   );
 }
 
-// Whether each logo file reads on black, by its `src`.
-type Tones = Map<string, boolean>;
+// How each logo file sits on a fill, by its `src`.
+type Tones = Map<string, Tone>;
 async function tonesOf(records: (Brand | Group)[]): Promise<Tones> {
   const images = records.flatMap(({ data }) => [data.logo, data.wordmark, data.logomark]).filter((image) => image !== undefined);
-  return new Map(await Promise.all(images.map(async (image) => [image.src, await logoReadsOnBlack(image)] as const)));
+  return new Map(await Promise.all(images.map(async (image) => [image.src, await logoTone(image)] as const)));
 }
 
 // An image's file and drawn size, as the chart needs it.
 const logoFile = (tones: Tones, image?: LogoFile): LogoFile | undefined =>
-  image && { src: image.src, width: image.width, height: image.height, onBlack: tones.get(image.src) ?? false };
+  image && { src: image.src, width: image.width, height: image.height, ...(tones.get(image.src) ?? { onBlack: false }) };
 // A brand's or group's logo and its parts.
 const logosOf = (tones: Tones, { data }: Brand | Group): Point['logos'] => ({
   whole: logoFile(tones, data.logo),
