@@ -265,7 +265,9 @@ export async function uploadRun(options: UploadRunOptions): Promise<void> {
         ...gitContext(options.cwd ?? process.cwd()),
         ...runScope(options.argv ?? process.argv, options.status),
       });
-      queue.push({ board: config.board, record });
+      // A run that ran nothing, such as one whose web server didn't start, says nothing about the suite.
+      if (record.passed + record.failed + record.flaky + record.skipped === 0) log('no tests ran, so this run is not uploaded');
+      else queue.push({ board: config.board, record });
     } catch (error) {
       // No usable report: nothing to add, but still worth sending what earlier runs queued.
       log(`no record for this run (${(error as Error).message.split('\n')[0]})`);
