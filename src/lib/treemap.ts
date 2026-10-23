@@ -424,6 +424,24 @@ function brandName(name: string, width: number, height: number) {
   return across ? fittedName(name, width, height, 15) : width >= 30 && height >= 12 ? fittedName(name, width, height, 15) : '';
 }
 
+// A brand's initials, for a circle too small for its name: the first letter of up to three of its words.
+export const initials = (name: string) =>
+  name
+    .split(/[\s\-–]+/)
+    .map((word) => word.replace(/[^\p{L}\p{N}]/gu, ''))
+    .filter(Boolean)
+    .slice(0, 3)
+    .map((word) => word[0].toUpperCase())
+    .join('');
+
+// A brand's initials sized to fill a circle's inner square, or nothing where even they would not read.
+function brandInitials(name: string, inner: number) {
+  const letters = initials(name);
+  if (!letters || inner < 12) return '';
+  const size = Math.min(16, (inner * 0.9) / (letters.length * 0.65), inner * 0.7);
+  return size < 7 ? '' : `<span class="fit initials" style="font-size:${size.toFixed(1)}px">${escape(letters)}</span>`;
+}
+
 const classList = (...names: (string | false | undefined)[]) => names.filter(Boolean).join(' ');
 
 // The largest box of a logo's shape that fits in a circle `diameter` across, kept a little inside its edge.
@@ -465,6 +483,11 @@ function bucketLabel(cell: Cell, scale: number) {
   return `<button type="button" class="bucket-name" ${label}>${escape(bucket.name)}</button>`;
 }
 
+// A brand's name in its circle where it fits whole, and its initials where not.
+function circleName(name: string, inner: number) {
+  return fitName(name, inner - 2, inner - 2, 15) ? brandName(name, inner - 2, inner - 2) : brandInitials(name, inner);
+}
+
 // The cells as circles, each drawn in its square. What a circle says is fitted to the square inside it, whose
 // side is the circle's width over √2.
 function renderCircles(layout: Layout, scale: number) {
@@ -499,7 +522,7 @@ function renderCircles(layout: Layout, scale: number) {
       const point = cell.point!;
       const lines = tipLines(cell, layout);
       const classes = classList('brand', 'round', cell.licensed && 'licensed');
-      const content = circleLogo(point.logos, diameter) || brandName(point.name, inner - 2, inner - 2);
+      const content = circleLogo(point.logos, diameter) || circleName(point.name, inner);
       return `<a class="${classes}" style="${style}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
     })
     .join('');

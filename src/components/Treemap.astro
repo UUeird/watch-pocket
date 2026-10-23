@@ -370,6 +370,12 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     text-overflow: ellipsis;
   }
 
+  /* A brand's initials, where its circle is too small for its name. */
+  .canvas :global(.fit.initials) {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
   .canvas :global(.tile .plate.more) {
     color: inherit;
     font-size: var(--plate-font, 0.625rem);
