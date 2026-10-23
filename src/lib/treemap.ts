@@ -451,14 +451,28 @@ const inCircle = (logo: LogoFile, diameter: number, margin = 0.8) => {
   return { width: (diameter * margin * aspect) / diagonal, height: (diameter * margin) / diagonal };
 };
 
-// A brand's logo in its circle, by the same rules as a rectangle: the whole logo where its name reads, or else
-// its name or symbol alone. Sized as a share of the circle, so it scales with the chart. A small circle still
-// shows its logo, which reads better than a blank, and the tooltip names the brand.
+// A brand's logo in its circle: the whole logo where its name reads, or else its name or symbol alone where that
+// reads, by the same rules as a rectangle. Where none of them reads, nothing, so the circle shows the brand's name or
+// initials instead. Sized as a share of the circle, so it scales with the chart.
+const readableMark = 14;
 function circleLogo(logos: Point['logos'], diameter: number) {
-  if (!logos.whole || diameter < 20) return '';
-  const room = inCircle(logos.whole, diameter);
+  const { whole, wordmark, logomark } = logos;
+  if (!whole) return '';
+  const room = inCircle(whole, diameter);
   const logo = pickLogo(logos, room.width, room.height);
   if (!logo) return '';
+  // The logo as drawn: fitted in the circle, never grown past its own size.
+  const box = inCircle(logo, diameter);
+  const scale = Math.min(1, box.width / logo.width, box.height / logo.height);
+  const height = logo.height * scale;
+  const reads =
+    logo === logomark
+      ? Math.max(logo.width, logo.height) * scale >= readableMark
+      : logo === wordmark
+        ? height >= readable
+        : // The whole logo, picked with no part to fall back on: its name is taken to be a tenth of it, as in pickLogo.
+          Boolean(wordmark) || Boolean(logomark) || (height * readable) / readableWhole >= readable;
+  if (!reads) return '';
   const fit = inCircle(logo, 1);
   return `<img src="${escape(logo.src)}" alt="" loading="lazy" style="max-width:${(fit.width * 100).toFixed(1)}%;max-height:${(fit.height * 100).toFixed(1)}%">`;
 }
