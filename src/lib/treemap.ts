@@ -434,9 +434,10 @@ const inCircle = (logo: LogoFile, diameter: number, margin = 0.8) => {
 };
 
 // A brand's logo in its circle, by the same rules as a rectangle: the whole logo where its name reads, or else
-// its name or symbol alone. Sized as a share of the circle, so it scales with the chart.
+// its name or symbol alone. Sized as a share of the circle, so it scales with the chart. A small circle still
+// shows its logo, which reads better than a blank, and the tooltip names the brand.
 function circleLogo(logos: Point['logos'], diameter: number) {
-  if (!logos.whole || diameter < 48) return '';
+  if (!logos.whole || diameter < 20) return '';
   const room = inCircle(logos.whole, diameter);
   const logo = pickLogo(logos, room.width, room.height);
   if (!logo) return '';
