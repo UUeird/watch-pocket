@@ -12,7 +12,13 @@ const siteUrl = `http://localhost:${port}${(astroConfig.base ?? '').replace(/\/$
 export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  reporter: process.env.CI ? 'github' : 'list',
+  // The JSON report is what each run's summary for the tada board's Test trends is built from; the upload reporter
+  // sends it once the others have finished, on a machine that has opted in (tests/reporting/test-run-upload.ts).
+  reporter: [
+    ['list'],
+    ['json', { outputFile: 'playwright-report/results.json' }],
+    ['./tests/reporting/upload-reporter.ts', { resultsFile: 'playwright-report/results.json' }],
+  ],
   // Trailing slash matters: tests navigate to paths relative to the site's base, e.g. `references/`.
   use: { baseURL: siteUrl },
   projects: [
