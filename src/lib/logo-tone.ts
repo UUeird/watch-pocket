@@ -34,9 +34,9 @@ async function measure(path: string) {
   return drawn > 0 && clear / drawn >= 0.85;
 }
 
-// `fsPath` is where Astro found the image; without one (a remote image), the logo is taken to need white.
-export function logoReadsOnBlack(image: { fsPath?: string }) {
-  const path = image.fsPath;
+// Astro keeps where it found an image as a hidden `fsPath`; without one, the logo is taken to need white.
+export function logoReadsOnBlack(image: object) {
+  const path = (image as { fsPath?: string }).fsPath;
   if (!path) return Promise.resolve(false);
   let known = readsOnBlack.get(path);
   if (!known) {
