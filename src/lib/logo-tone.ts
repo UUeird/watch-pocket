@@ -1,7 +1,7 @@
 import sharp from 'sharp';
 
 // How a logo file sits on a fill: the solid background it brings along, if any, as `#rrggbb`; and otherwise whether
-// nearly all of its drawn pixels stand out from black by at least 3:1, the contrast for large text and marks.
+// most of its drawn pixels stand out from black by at least 3:1, the contrast for large text and marks.
 // Worked out once per file, at build time.
 export type Tone = { background?: string; onBlack: boolean };
 const tones = new Map<string, Promise<Tone>>();
@@ -37,13 +37,13 @@ async function measure(path: string): Promise<Tone> {
     // Contrast with black is (L + 0.05) / 0.05, so 3:1 needs a luminance of at least 0.1.
     if (luminance(data[at], data[at + 1], data[at + 2]) >= 0.1) clear++;
   }
-  return { onBlack: drawn > 0 && clear / drawn >= 0.85 };
+  // Three quarters is enough: a thin dark outline or a small dark detail (TAG Heuer's, Bodet's) still reads, while a
+  // logo built on a dark shape (Tissot's black T) does not.
+  return { onBlack: drawn > 0 && clear / drawn >= 0.75 };
 }
 
-// Astro keeps where it found an image as a hidden `fsPath`; without one, the logo is taken to need white.
-export function logoTone(image: object): Promise<Tone> {
-  const path = (image as { fsPath?: string }).fsPath;
-  if (!path) return Promise.resolve({ onBlack: false });
+// A logo file's tone, from its path on disk. One that cannot be read is taken to need white.
+export function logoTone(path: string): Promise<Tone> {
   let known = tones.get(path);
   if (!known) {
     known = measure(path).catch(() => ({ onBlack: false }));

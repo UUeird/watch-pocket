@@ -1,3 +1,5 @@
+import { readFile } from 'node:fs/promises';
+import { dirname, resolve } from 'node:path';
 import { countryHref, currentOwners, href, label, type Brand, type Group, type Reference } from './catalog';
 import { metrics } from './metrics';
 import { logoTone, type Tone } from './logo-tone';
@@ -37,11 +39,23 @@ export function measuresOf({ brands, references }: Catalog) {
   );
 }
 
-// How each logo file sits on a fill, by its `src`.
+// How each logo file sits on a fill, by its `src`. Astro gives no file path for an SVG, so each file is found from
+// the path its record gives, e.g. `logo: ../logos/omega.svg`.
 type Tones = Map<string, Tone>;
+const logoKeys = ['logo', 'wordmark', 'logomark'] as const;
 async function tonesOf(records: (Brand | Group)[]): Promise<Tones> {
-  const images = records.flatMap(({ data }) => [data.logo, data.wordmark, data.logomark]).filter((image) => image !== undefined);
-  return new Map(await Promise.all(images.map(async (image) => [image.src, await logoTone(image)] as const)));
+  const found = await Promise.all(
+    records.map(async (record) => {
+      if (!record.filePath) return [];
+      const text = await readFile(record.filePath, 'utf8');
+      return logoKeys.flatMap((key) => {
+        const image = record.data[key];
+        const given = text.match(new RegExp(`^${key}:\\s*['"]?([^'"\\s]+)`, 'm'))?.[1];
+        return image && given ? [{ src: image.src, path: resolve(dirname(record.filePath!), given) }] : [];
+      });
+    }),
+  );
+  return new Map(await Promise.all(found.flat().map(async ({ src, path }) => [src, await logoTone(path)] as const)));
 }
 
 // An image's file and drawn size, as the chart needs it.
