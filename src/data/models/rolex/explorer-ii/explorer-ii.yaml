@@ -1,5 +1,18 @@
 name: Explorer II
 line: rolex/explorer-ii
+photos:
+  - file: ../../../photos/rolex/explorer-ii/explorer-ii.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_Explorer_II_ref._16550_Pannone,_met%C3%A0_anni_Ottanta.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: EMore98
+  - file: ../../../photos/rolex/explorer-ii/explorer-ii-2.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_Explorer_II_del_1972,_ref._1655,_ribattezzato_%22Freccione%22.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: Clyde94
 sources:
   - https://www.uhren2000.de/en/blogs/news/rolex-is-releasing-the-new-explorer-ii-reference-226570
   - https://5dwatches.com/blog/rolex-explorer-vs-explorer-ii

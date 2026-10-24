@@ -6,6 +6,13 @@ sources:
   - https://professionalwatches.com/the-2022-rolex-air-king/
 references:
   - ref: "126900"
+    photos:
+      - file: ../../../photos/rolex/air-king/air-king-126900.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Rolex_Air-King_ref._126900,_risalente_al_2022.jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: EMore98
     periods: [{ from: 2022 }]
     caseSize: 40
     metals: [steel]

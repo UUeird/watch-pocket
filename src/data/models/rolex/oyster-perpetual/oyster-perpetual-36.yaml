@@ -4,6 +4,13 @@ sources:
   - https://www.watchcollectinglifestyle.com/home/rolex-2020-new-oyster-perpetual-41-mm-and-vibrant-color-dials
 references:
   - ref: "126000"
+    photos:
+      - file: ../../../photos/rolex/oyster-perpetual/oyster-perpetual-36-126000.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Quadrante_Med_Blue_del_Rolex_Oyster_Perpetual_ref._126000.jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: EMore98
     periods: [{ from: 2020 }]
     caseSize: 36
     metals: [steel]
