@@ -1,0 +1,16 @@
+name: Air-King
+line: rolex/air-king
+website: https://www.rolex.com/watches/air-king/m126900-0001.html
+sources:
+  - https://wristcheck.com/us/discover/referencecheck/rolex-air-king-ref-126900
+  - https://professionalwatches.com/the-2022-rolex-air-king/
+references:
+  - ref: "126900"
+    periods: [{ from: 2022 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: steel, style: smooth }
+    crystal: sapphire
+    movement: "3230"
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]

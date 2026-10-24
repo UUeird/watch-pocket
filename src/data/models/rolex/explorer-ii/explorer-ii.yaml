@@ -1,0 +1,15 @@
+name: Explorer II
+line: rolex/explorer-ii
+sources:
+  - https://www.uhren2000.de/en/blogs/news/rolex-is-releasing-the-new-explorer-ii-reference-226570
+  - https://5dwatches.com/blog/rolex-explorer-vs-explorer-ii
+references:
+  - ref: "226570"
+    periods: [{ from: 2021 }]
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: steel, style: gmt }
+    crystal: sapphire
+    movement: "3285"
+    dials: [{ color: white }, { color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]

@@ -1,0 +1,13 @@
+name: Oyster Perpetual 36
+line: rolex/oyster-perpetual
+sources:
+  - https://www.watchcollectinglifestyle.com/home/rolex-2020-new-oyster-perpetual-41-mm-and-vibrant-color-dials
+references:
+  - ref: "126000"
+    periods: [{ from: 2020 }]
+    caseSize: 36
+    metals: [steel]
+    bezel: { material: steel, style: smooth }
+    crystal: sapphire
+    movement: "3230"
+    bracelets: [{ type: bracelet, name: Oyster }]

@@ -1,0 +1,21 @@
+name: Explorer 36
+line: rolex/explorer
+sources:
+  - https://watchcollectinglifestyle.com/home/rolex-explorer-goes-36-mm-ref-124270-new-two-tone-explorer-ref-124273-and-a-movement-update-on-the-explorer-ii-ref-226570-introducing
+  - https://5dwatches.com/blog/rolex-explorer-vs-explorer-ii
+references:
+  - ref: "124270"
+    periods: [{ from: 2021 }]
+    caseSize: 36
+    metals: [steel]
+    crystal: sapphire
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "124273"
+    periods: [{ from: 2021 }]
+    caseSize: 36
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold, style: smooth }
+    crystal: sapphire
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
