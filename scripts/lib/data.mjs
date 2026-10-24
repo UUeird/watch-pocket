@@ -83,3 +83,14 @@ export async function eachPolitely(items, task, { limit = 12, perHost = 2, hostO
     next();
   });
 }
+
+// The references whose number appears in `text` as a whole: ignoring case, and spaces or punctuation inside it
+// (126710 BLRO), but not as part of a longer number (16610 in 116610LN). Numbers shorter than five characters, and
+// names that are words rather than numbers (Apple's), match too loosely to count.
+const squash = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '');
+export const refsNamed = (text, refs) =>
+  refs.filter((ref) => {
+    const chars = squash(ref);
+    if (!/\d{3}/.test(ref) || chars.length < 5) return false;
+    return new RegExp(`(?<![a-z0-9])${[...chars].join('[^a-z0-9]?')}(?![0-9])`, 'i').test(text);
+  });

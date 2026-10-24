@@ -129,6 +129,7 @@ const descriptors = [segment, ...tags, copycat && 'copycat', brandStatus(brand)]
         <h2>Product lines</h2>
         <Tiles
           label="Product lines"
+          brandName={name}
           tiles={lines.map((line) => {
             const models = modelsOf(line.id);
             return {

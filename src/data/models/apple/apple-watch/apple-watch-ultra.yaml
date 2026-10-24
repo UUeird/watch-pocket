@@ -1,12 +1,5 @@
 name: Apple Watch Ultra
 line: apple/apple-watch
-photos:
-  - file: ../../../photos/apple/apple-watch/apple-watch-ultra.jpg
-    credit:
-      source: https://commons.wikimedia.org/wiki/File:Apple_Watch_Ultra_2.jpg
-      license: CC BY-SA 4.0
-      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
-      author: Pangalau
 sources:
   - https://support.apple.com/en-us/108056
 references:
@@ -20,6 +13,13 @@ references:
       - { number: A2684, connectivity: gps-cellular, regions: "EU/APAC" }
       - { number: A2859, connectivity: gps-cellular, regions: "CN" }
   - ref: "Ultra 2, 49 mm"
+    photos:
+      - file: ../../../photos/apple/apple-watch/apple-watch-ultra.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Apple_Watch_Ultra_2.jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: Pangalau
     periods: [{ from: 2023, to: 2025 }]
     caseSize: 49
     metals: [titanium]

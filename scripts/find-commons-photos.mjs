@@ -11,7 +11,7 @@
 // Models with no candidate are listed with the brand's press kit (`pressKit` on the brand), the next place to ask.
 // Candidates go to scripts/out/commons-photos.json as well as the console.
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { freeLicense, headersFor, load } from './lib/data.mjs';
+import { freeLicense, headersFor, load, refsNamed } from './lib/data.mjs';
 
 const args = process.argv.slice(2);
 const brandOnly = args.includes('--brand') ? args[args.indexOf('--brand') + 1] : undefined;
@@ -59,17 +59,6 @@ async function candidates(query) {
     })
     .filter((candidate) => freeLicense(candidate.license) && candidate.width >= 400);
 }
-
-// The references whose number appears in `text` as a whole: ignoring case, and spaces or punctuation inside it
-// (126710 BLRO), but not as part of a longer number (16610 in 116610LN). Numbers shorter than five characters, and
-// names that are words rather than numbers (Apple's), match too loosely to count.
-const squash = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '');
-const refsNamed = (text, refs) =>
-  refs.filter((ref) => {
-    const chars = squash(ref);
-    if (!/\d{3}/.test(ref) || chars.length < 5) return false;
-    return new RegExp(`(?<![a-z0-9])${[...chars].join('[^a-z0-9]?')}(?![0-9])`, 'i').test(text);
-  });
 
 const brands = new Map(load('brands').map((brand) => [brand.id, brand.data]));
 const models = load('models').filter((model) => !brandOnly || model.id.startsWith(`${brandOnly}/`));

@@ -45,6 +45,7 @@ const discontinued = periods.at(-1)?.to !== undefined;
     ) : (
       <Tiles
         label="Models"
+        brandName={brand.data.name}
         tiles={models.map((model) => ({
           href: href(`/brands/${model.id}/`),
           title: model.data.name,

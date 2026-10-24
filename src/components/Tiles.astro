@@ -2,14 +2,26 @@
 // A grid of tiles for lines, models or references: a photo on top and a label that is always shown under it.
 // A tile with several photos cycles through them while pointed at or focused. One with none shows a plain watch.
 import { Image } from 'astro:assets';
-import type { TilePhoto } from '../lib/tile-photos';
+import { creditOf, type TilePhoto } from '../lib/tile-photos';
 
 interface Props {
   label: string;
+  // The brand whose watches these are, which the maker's own images are credited to.
+  brandName: string;
   tiles: { href: string; title: string; detail?: string; photos: TilePhoto[] }[];
 }
 
-const { label, tiles } = Astro.props;
+const { label, brandName, tiles } = Astro.props;
+// Every photo the grid can show, once each, credited under it as its license asks.
+const seen = new Set<string>();
+const credits = tiles.flatMap(({ title, photos }) =>
+  photos.flatMap((photo) => {
+    const credit = creditOf(photo, brandName);
+    if (seen.has(credit.source)) return [];
+    seen.add(credit.source);
+    return [{ title: photo.general ? 'Model photo' : title, ...credit }];
+  }),
+);
 ---
 
 <ul class="tiles" aria-label={label}>
@@ -21,7 +33,7 @@ const { label, tiles } = Astro.props;
             {photos[0]?.general && <span class="general">Model photo</span>}
             {photos.map((photo, index) =>
               'file' in photo ? (
-                <Image src={photo.file} alt={index === 0 ? photo.alt : ''} widths={[240, 480]} sizes="240px" loading="lazy" hidden={index > 0} />
+                <Image class="fill" src={photo.file} alt={index === 0 ? photo.alt : ''} widths={[240, 480]} sizes="240px" loading="lazy" hidden={index > 0} />
               ) : (
                 <img
                   src={photo.src}
@@ -48,8 +60,37 @@ const { label, tiles } = Astro.props;
     ))
   }
 </ul>
+{
+  credits.length > 0 && (
+    <details class="credits">
+      <summary>Photo credits</summary>
+      <ul>
+        {credits.map(({ title, by, license, licenseUrl, source, host }) => (
+          <li>
+            <strong>{title}</strong>: {host ? <>Image {license}, shown from <a href={source}>{host}</a></> : <>Photo{by && ` by ${by}`} · {licenseUrl ? <a href={licenseUrl}>{license}</a> : license} · <a href={source}>Source</a></>}
+          </li>
+        ))}
+      </ul>
+    </details>
+  )
+}
 
 <style>
+  .credits {
+    margin: -20px 0 32px;
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+
+  .credits summary {
+    cursor: pointer;
+  }
+
+  .credits ul {
+    margin: 6px 0 0;
+    padding-left: 18px;
+  }
+
   .tiles {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -59,7 +100,7 @@ const { label, tiles } = Astro.props;
     list-style: none;
   }
 
-  a {
+  .tiles a {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -71,13 +112,13 @@ const { label, tiles } = Astro.props;
     overflow: hidden;
   }
 
-  a:hover,
-  a:focus-visible {
+  .tiles a:hover,
+  .tiles a:focus-visible {
     border-color: var(--accent);
   }
 
-  a:hover strong,
-  a:focus-visible strong {
+  .tiles a:hover strong,
+  .tiles a:focus-visible strong {
     color: var(--accent);
     text-decoration: underline;
   }
@@ -90,7 +131,7 @@ const { label, tiles } = Astro.props;
     background: #ffffff;
   }
 
-  /* Photos are cut out on white or shot on white, so the frame stays white in dark mode too. */
+  /* The makers' images are cut out on white, so they sit whole on a white frame, in dark mode too. */
   .frame :global(img) {
     position: absolute;
     inset: 0;
@@ -100,6 +141,12 @@ const { label, tiles } = Astro.props;
     padding: 8px;
     box-sizing: border-box;
     background: #ffffff;
+  }
+
+  /* Photos of our own are shot in the wild, so they fill the frame, cropped to it. */
+  .frame :global(img.fill) {
+    object-fit: cover;
+    padding: 0;
   }
 
   .frame :global(img[hidden]) {
