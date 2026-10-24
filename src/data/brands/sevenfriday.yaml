@@ -1,7 +1,8 @@
 name: SevenFriday
-status: active
+periods: [{ from: 2012 }]
 segment: mid-range
 website: https://www.sevenfriday.com
 sources:
   - https://www.dialicious.com/en/sevenfriday
   - https://www.sevenfriday.com/
+  - https://en.wikipedia.org/wiki/SevenFriday

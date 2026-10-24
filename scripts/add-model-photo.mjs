@@ -1,6 +1,7 @@
 // Adds a photo to a model: downloads it into src/data/photos/ and adds it, with its credit, to the model's `photos`.
-// It goes last, or first with --primary, which makes it the photo the model's page shows large. With --ref it goes
-// to that one reference's `photos` instead, for a reference that looks unlike the model's others.
+// It goes last, or first with --primary. Photos belong to the reference they show wherever that can be told, so for a
+// model with references it needs --ref <ref>, or --model for a photo that could be any of them; a file whose title
+// names exactly one of the model's references goes to that one without being told.
 //
 // From Wikimedia Commons, with the credit taken from the file's page:
 //   npm run photos:add -- richard-mille/rm-67/rm-67-02 "File:Richard Mille RM 67-02.jpg"
@@ -13,7 +14,7 @@
 import { copyFileSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, extname, join, relative } from 'node:path';
 import { parseDocument, stringify } from 'yaml';
-import { freeLicense, headersFor } from './lib/data.mjs';
+import { freeLicense, headersFor, refsNamed } from './lib/data.mjs';
 
 const [modelId, from, ...rest] = process.argv.slice(2);
 const option = (name) => (rest.includes(`--${name}`) ? rest[rest.indexOf(`--${name}`) + 1] : undefined);
@@ -32,7 +33,20 @@ try {
 }
 const doc = parseDocument(yaml);
 const primary = rest.includes('--primary');
-const ref = option('ref');
+const refs = (doc.get('references')?.toJSON() ?? []).map((entry) => String(entry.ref));
+let ref = option('ref');
+if (ref === undefined && !rest.includes('--model') && refs.length > 0) {
+  const named = from.startsWith('File:') ? refsNamed(from, refs) : [];
+  if (named.length !== 1) {
+    console.error(
+      `${modelId} has references, so say what the photo shows: --ref <${refs.slice(0, 6).join(' | ')}${refs.length > 6 ? ' | …' : ''}>, ` +
+        'or --model for a photo that could be any of them.',
+    );
+    process.exit(1);
+  }
+  ref = named[0];
+  console.log(`The file's title names ${ref}, so it goes to that reference.`);
+}
 // The reference's place in the model's list, when the photo is for one.
 const refIndex = ref === undefined ? -1 : (doc.get('references')?.toJSON() ?? []).findIndex((entry) => String(entry.ref) === ref);
 if (ref !== undefined && refIndex === -1) {

@@ -1,5 +1,5 @@
 name: Ming
-status: active
+periods: [{ from: 2017 }]
 website: https://www.ming.watch
 sources:
   - https://www.dialicious.com/en/ming

@@ -7,8 +7,9 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: Asia Commercial Holdings Ltd.
 origin: Switzerland
-status: active
+periods: [{ from: 1860 }]
 website: https://www.juvenia.ch
 sources:
   - https://www.dialicious.com/en/juvenia
   - https://www.juvenia.ch/
+  - https://en.wikipedia.org/wiki/Juvenia

@@ -1,6 +1,6 @@
 name: RZE
 origin: Singapore
-status: active
+periods: [{ from: 2020 }]
 website: https://www.rzewatches.com
 sources:
   - https://www.dialicious.com/en/rze

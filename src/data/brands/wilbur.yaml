@@ -1,6 +1,6 @@
 name: Wilbur
 origin: United States
-status: active
+periods: [{ from: 2020 }]
 website: https://www.wilburco.com
 sources:
   - https://www.dialicious.com/en/wilbur

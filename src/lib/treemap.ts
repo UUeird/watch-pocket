@@ -28,6 +28,8 @@ export type Point = {
   buckets: Record<string, string[]>;
   // The group making it under license. For a measure that counts licensed brands, it sits there instead of with its owner.
   licensee?: string;
+  // The stakes of its part-owners, by bucket key under the owner grouping: a percentage, or `unknown`.
+  stakes?: Record<string, number | 'unknown'>;
   // Figures by measure id, only where known.
   values: Record<string, number>;
   captions: Record<string, string>;
@@ -55,6 +57,8 @@ export type Grouping = {
   buckets: Bucket[];
   // Whether brands made under license move to the group that makes them, for measures that count them.
   licensing?: boolean;
+  // Whether brands' `stakes` are keyed by this grouping's buckets, so a part-owner can count only its stake.
+  stakes?: boolean;
 };
 
 export type ChartData = { points: Point[]; groupings: Grouping[] };
@@ -64,6 +68,8 @@ export type Options = {
   size: string;
   // Whether a bucket's own figure beyond its brands' is drawn as a block of its own.
   otherBusiness?: boolean;
+  // Whether a part-owned brand counts toward each owner by only that owner's stake, for a measure that allows it.
+  byStake?: boolean;
   // Brands left in by the page's filters; all of them when unset.
   visible?: Set<string>;
   // The bucket zoomed into, showing its brands alone.
@@ -93,6 +99,8 @@ export type Cell = {
   bucket: Bucket;
   point?: Point;
   licensed?: boolean;
+  // The bucket's stake in a part-owned brand, where the measure can be split by stake.
+  stake?: number | 'unknown';
   // Room was left for the bucket's name.
   named?: boolean;
   // A tile's brands, those with logos first, to show inside it.
@@ -119,6 +127,8 @@ export type Layout = {
   aside?: string;
   // Brands made under license that a measure of what a group owns does not count toward the maker.
   hiddenLicensed: number;
+  // Brands drawn under a part-owner, which the stake option would change.
+  partOwned: number;
   // Each bucket's total for the size measure, including its own figure where shown.
   totals: Record<string, number>;
 };
@@ -137,7 +147,7 @@ type Datum =
   | { kind: 'root'; children: Datum[] }
   | { kind: 'bucket'; bucket: Bucket; children: Datum[] }
   | { kind: 'tile'; bucket: Bucket; value: number; points: Point[] }
-  | { kind: 'brand'; point: Point; value: number; licensed: boolean }
+  | { kind: 'brand'; point: Point; value: number; licensed: boolean; stake?: number | 'unknown' }
   | { kind: 'other'; bucket: Bucket; value: number };
 
 export function layoutTreemap(data: ChartData, options: Options): Layout {
@@ -172,6 +182,8 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
 
   // Counted once each, though a brand with part-owners sits in several buckets.
   const drawn = new Set<string>();
+  const partOwned = new Set<string>();
+  const splits = Boolean(grouping.stakes && size.byStake && mode !== 'buckets');
   const missing = new Map<string, Point>();
   const children: Datum[] = [];
   for (const bucket of buckets) {
@@ -182,7 +194,11 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
         missing.set(point.id, point);
         continue;
       }
-      brands.push({ kind: 'brand', point, value, licensed });
+      const stake = splits && !licensed ? point.stakes?.[bucket.key] : undefined;
+      if (stake !== undefined) partOwned.add(point.id);
+      // A stake that isn't public leaves the brand counted in full.
+      const share = options.byStake && typeof stake === 'number' ? stake / 100 : 1;
+      brands.push({ kind: 'brand', point, value: value * share, licensed, stake });
       drawn.add(point.id);
     }
     if (brands.length === 0) continue;
@@ -246,7 +262,7 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
     }
     const bucket = (node.parent!.data as Extract<Datum, { kind: 'bucket' }>).bucket;
     if (d.kind === 'other') return [{ kind: 'other', ...geometry, bucket }];
-    return [{ kind: 'brand', ...geometry, bucket, point: d.point, licensed: d.licensed }];
+    return [{ kind: 'brand', ...geometry, bucket, point: d.point, licensed: d.licensed, stake: d.stake }];
   });
 
   return {
@@ -264,6 +280,7 @@ export function layoutTreemap(data: ChartData, options: Options): Layout {
     unrecorded: unrecorded.sort((a, b) => a.name.localeCompare(b.name)),
     aside: setAside?.aside,
     hiddenLicensed,
+    partOwned: partOwned.size,
     totals,
   };
 }
@@ -304,6 +321,10 @@ const tipLines = (cell: Cell, layout: Layout) => {
   const lines = [point.name + (cell.licensed ? ' (made under license)' : '')];
   if (cell.bucket.name) lines.push(cell.bucket.name);
   lines.push(`${layout.size.label}: ${layout.size.format(cell.value)}`);
+  const owner = cell.bucket.name;
+  if (cell.stake === 'unknown') lines.push(`${owner}’s stake isn’t public, so it’s counted in full`);
+  else if (cell.stake !== undefined && layout.options.byStake) lines.push(`${owner}’s ${cell.stake}% stake of ${layout.size.format(point.values[layout.size.id])}`);
+  else if (cell.stake !== undefined) lines.push(`${owner} holds ${cell.stake}%`);
   const caption = point.captions[layout.size.id];
   if (caption) lines.push(caption);
   return lines;
@@ -638,6 +659,8 @@ export function renderNote(layout: Layout, filtered = false) {
   }
   if (hiddenLicensed > 0) parts.push(`${plural(hiddenLicensed, 'brand')} made under license ${hiddenLicensed === 1 ? 'counts toward its owner' : 'count toward their owners'}, not the group that makes ${hiddenLicensed === 1 ? 'it' : 'them'}.`);
   if (size.includesLicensed && layout.cells.some((cell) => cell.licensed)) parts.push('A dashed edge marks a brand made under license, counted toward the group that makes it.');
+  if (layout.partOwned > 0 && options.byStake) parts.push('A part-owned brand counts toward each owner by that owner’s stake, or in full where the stake isn’t public.');
+  else if (layout.partOwned > 0) parts.push('A part-owned brand counts in full toward each of its owners.');
   if (options.otherBusiness && layout.cells.some((cell) => cell.kind === 'other')) parts.push('A hatched block is the part of a group’s own figure that its watch brands don’t account for.');
   return escape(parts.join(' '));
 }

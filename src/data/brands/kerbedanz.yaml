@@ -1,5 +1,6 @@
 name: Kerbedanz
 origin: Switzerland
+periods: [{ from: 2011 }]
 sources:
   - https://www.dialicious.com/en/kerbedanz
   - https://europastar.com/swisstime/1004097134-kerbedanz-maximus-ultra-precision.html

@@ -1,5 +1,5 @@
 name: Lederer
-status: active
+periods: [{ from: 2020 }]
 website: https://lederertimepieces.com
 sources:
   - https://www.dialicious.com/en/lederer

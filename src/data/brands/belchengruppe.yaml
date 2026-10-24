@@ -1,6 +1,6 @@
 name: Belchengruppe
 origin: Switzerland
-status: active
+periods: [{ from: 2020 }]
 website: https://www.belchengruppe.ch
 sources:
   - https://www.dialicious.com/en/belchengruppe

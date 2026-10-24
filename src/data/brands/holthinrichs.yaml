@@ -1,6 +1,6 @@
 name: Holthinrichs
 origin: Netherlands
-status: active
+periods: [{ from: 2016 }]
 website: https://holthinrichs.com
 sources:
   - https://www.dialicious.com/en/holthinrichs

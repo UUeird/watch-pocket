@@ -4,10 +4,12 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Diesel_logo.svg
   license: Public domain
 origin: Italy
-status: active
+periods: [{ from: 1978 }]
 segment: budget
 tags:
   - fashion
 licensees:
   - licensee: fossil-group
 logoBackground: '#e92d31'
+sources:
+  - https://en.wikipedia.org/wiki/Diesel_(company)

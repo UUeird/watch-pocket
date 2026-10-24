@@ -1,6 +1,6 @@
 name: Nautage
 origin: Denmark
-status: active
+periods: [{ from: 2020 }]
 website: https://nautage.com
 sources:
   - https://www.dialicious.com/en/nautage

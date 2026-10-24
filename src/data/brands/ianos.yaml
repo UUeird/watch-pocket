@@ -1,6 +1,6 @@
 name: Ianos
 origin: Switzerland
-status: active
+periods: [{ from: 2019 }]
 website: https://ianoswatches.com
 sources:
   - https://www.dialicious.com/en/ianos

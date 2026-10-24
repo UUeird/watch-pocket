@@ -1,6 +1,8 @@
 name: Nodus
 origin: United States
-status: active
+periods: [{ from: 2017 }]
 segment: mid-range
 tags:
   - direct-to-consumer
+sources:
+  - https://www.ablogtowatch.com/nodus-avalon-watch-review/

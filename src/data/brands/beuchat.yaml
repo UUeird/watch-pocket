@@ -1,5 +1,5 @@
 name: Beuchat
-status: active
+periods: [{ from: 1904 }]
 website: https://beuchat.com
 sources:
   - https://www.dialicious.com/en/beuchat

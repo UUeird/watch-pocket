@@ -1,6 +1,6 @@
 name: SYE
 origin: France
-status: active
+periods: [{ from: 2020 }]
 website: https://www.syewatches.com
 sources:
   - https://www.dialicious.com/en/sye

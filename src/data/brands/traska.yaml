@@ -1,6 +1,6 @@
 name: Traska
 origin: United States
-status: active
+periods: [{ from: 2018 }]
 website: https://www.traskawatch.com
 sources:
   - https://www.dialicious.com/en/traska

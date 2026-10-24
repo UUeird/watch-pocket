@@ -6,5 +6,7 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: URWERK
 origin: Switzerland
-status: active
+periods: [{ from: 1997 }]
 segment: haute
+sources:
+  - https://www.dialicious.com/en/urwerk

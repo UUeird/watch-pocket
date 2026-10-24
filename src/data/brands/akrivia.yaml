@@ -1,5 +1,5 @@
 name: Akrivia
-status: active
+periods: [{ from: 2012 }]
 website: https://www.rexheprexhepi.com
 sources:
   - https://www.dialicious.com/en/akrivia

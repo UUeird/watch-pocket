@@ -1,6 +1,6 @@
 name: Cyrus
 origin: Switzerland
-status: active
+periods: [{ from: 2010 }]
 website: https://cyrus-watches.ch
 sources:
   - https://www.dialicious.com/en/cyrus
