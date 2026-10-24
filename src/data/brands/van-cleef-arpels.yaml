@@ -1,10 +1,14 @@
 name: Van Cleef & Arpels
 logo: ../logos/van-cleef-arpels.svg
 logomark: ../logos/van-cleef-arpels-logomark.png
+logomarkOnDark: ../logos/van-cleef-arpels-logomark-on-dark.png
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Van_Cleef_Arpels_logo.svg
   license: Public domain
 logomarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:Van_Cleef_%26_Arpels_logo.jpg
+  license: Public domain
+logomarkOnDarkCredit:
   source: https://commons.wikimedia.org/wiki/File:Van_Cleef_%26_Arpels_logo.jpg
   license: Public domain
 origin: France
