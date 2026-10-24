@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
-import { countryHref, currentOwners, href, label, type Brand, type Group, type Reference } from './catalog';
+import { countryHref, currentOwners, href, label, type Brand, type Group, type Owner, type Reference } from './catalog';
 import { metrics } from './metrics';
 import { logoTone, type Tone } from './logo-tone';
 import type { Bucket, ChartData, Grouping, LogoFile, Point } from './treemap';
@@ -15,9 +15,17 @@ type Catalog = {
 const independent: Bucket = { key: 'independent', name: 'Independent', aside: 'with no owning group on record' };
 
 // A brand's current owners as owner-grouping keys: a group's id, or `brand:<id>` for a brand held by another brand.
+const ownerKey = (owner: Owner) => (owner.collection === 'groups' ? owner.id : `brand:${owner.id}`);
 const ownerKeys = (brand: Brand) => {
-  const keys = currentOwners(brand).map((owner) => (owner.collection === 'groups' ? owner.id : `brand:${owner.id}`));
+  const keys = currentOwners(brand).map(ownerKey);
   return keys.length > 0 ? keys : [independent.key];
+};
+// The stakes of a brand's current part-owners, by owner-grouping key. Owners of the whole brand are left out.
+const stakesOf = (brand: Brand) => {
+  const stakes = brand.data.ownership.flatMap((record) =>
+    record.to === undefined && record.stake !== undefined ? [[ownerKey(record.owner), record.stake] as const] : [],
+  );
+  return stakes.length > 0 ? Object.fromEntries(stakes) : undefined;
 };
 
 // Each brand's figure for every measure, keyed by measure id, for the treemap and the measure column.
@@ -92,6 +100,7 @@ export async function chartData(catalog: Catalog): Promise<ChartData> {
       segment: [brand.data.segment ?? 'unrecorded'],
       none: ['all'],
     },
+    stakes: stakesOf(brand),
     licensee: brand.data.licensees.find((record) => record.to === undefined)?.licensee.id,
     ...measures.get(brand.id)!,
   }));
@@ -104,7 +113,7 @@ export async function chartData(catalog: Catalog): Promise<ChartData> {
     }
     return { key: group.id, name: group.data.name, href: href(`/ownership-groups/${group.id}/`), logos: logosOf(tones, group), values };
   });
-  const owner: Grouping = { id: 'owner', label: 'Owner', buckets: groupBuckets, licensing: true };
+  const owner: Grouping = { id: 'owner', label: 'Owner', buckets: groupBuckets, licensing: true, stakes: true };
 
   // Brands held by another brand sit under that brand.
   const brandOwners = [...new Set(points.flatMap((point) => point.buckets.owner).filter((key) => key.startsWith('brand:')))].map(
