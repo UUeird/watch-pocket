@@ -2,7 +2,7 @@
 import Filters from '../../components/Filters.astro';
 import Treemap from '../../components/Treemap.astro';
 import Base from '../../layouts/Base.astro';
-import { currentOwners, label, loadCatalog } from '../../lib/catalog';
+import { activeGroups, currentOwners, label, loadCatalog } from '../../lib/catalog';
 import { chartData } from '../../lib/chart-data';
 
 const catalog = await loadCatalog();
@@ -34,7 +34,7 @@ const groupOwnerIds = (brand: (typeof brands)[number]) =>
         label: 'Owner',
         options: [
           { value: 'independent', label: 'Independent' },
-          ...groups.map((group) => ({ value: group.id, label: group.data.name })),
+          ...activeGroups(groups).map((group) => ({ value: group.id, label: group.data.name })),
         ],
       },
       { name: 'origin', label: 'Nation of origin', options: options(distinct(brands.map((brand) => brand.data.origin))) },

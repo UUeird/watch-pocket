@@ -18,10 +18,12 @@ interface Props {
 const { group } = Astro.props;
 const { groups, groupsById, holdingsOf, licensesOf } = await loadCatalog();
 const subsidiaries = groups.filter((other) => other.data.parent?.id === group.id);
-const { name, country, founded, website, parent, sources } = group.data;
+const { name, country, founded, dissolved, website, parent, sources } = group.data;
 const { flag } = countries[country];
 const owner = { collection: 'groups' as const, id: group.id };
 const holdings = holdingsOf(owner);
+const current = holdings.filter((record) => record.to === undefined);
+const former = holdings.filter((record) => record.to !== undefined);
 const licenses = licensesOf(group.id);
 ---
 
@@ -38,6 +40,14 @@ const licenses = licensesOf(group.id);
         <>
           <dt>Founded</dt>
           <dd>{founded}</dd>
+        </>
+      )
+    }
+    {
+      dissolved && (
+        <>
+          <dt>Dissolved</dt>
+          <dd>{dissolved}</dd>
         </>
       )
     }
@@ -78,8 +88,33 @@ const licenses = licensesOf(group.id);
     )
   }
 
-  <h2>Brands</h2>
-  {holdings.length === 0 ? <p>No brands on record.</p> : <Holdings owner={owner} />}
+  {holdings.length === 0 && (
+    <>
+      <h2>Brands</h2>
+      <p>No brands on record.</p>
+    </>
+  )}
+  {
+    current.length > 0 && (
+      <>
+        <h2>Brands</h2>
+        <Holdings owner={owner} only="current" />
+      </>
+    )
+  }
+  {
+    former.length > 0 && (
+      <>
+        <h2>Formerly held</h2>
+        <p class="section-note">
+          {dissolved !== undefined
+            ? `Brands ${name} held before it was dissolved in ${dissolved}, and the years it held each.`
+            : `Brands ${name} once held and has since sold, closed or lost, and the years it held each.`}
+        </p>
+        <Holdings owner={owner} only="former" />
+      </>
+    )
+  }
 
   {
     licenses.length > 0 && (
@@ -98,3 +133,11 @@ const licenses = licensesOf(group.id);
 
   <Sources sources={sources} />
 </Base>
+
+<style>
+  .section-note {
+    margin: -4px 0 12px;
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+</style>

@@ -101,6 +101,8 @@ const groups = defineCollection({
         // or owned by a foundation. A group with a `parent` is a subsidiary and leaves this out.
         control: z.enum(['public', 'private', 'foundation']).optional(),
         founded: z.number().int().optional(),
+        // The year a group stopped existing, merged into another or wound up. Its brands' records keep it as a past owner.
+        dissolved: z.number().int().optional(),
         website: z.url().optional(),
         parent: reference('groups').optional(),
         // The whole company's revenue, including any business beyond its watch brands.
@@ -110,8 +112,11 @@ const groups = defineCollection({
       })
       .refine(creditHasLogo, creditNeedsLogo)
       .refine(partsNeedLogo, partsNeedLogoMessage)
-      .refine((group) => (group.control === undefined) !== (group.parent === undefined), {
-        message: 'Give a group either `control` or a `parent`: a subsidiary is controlled by its parent.',
+      .refine((group) => (group.control !== undefined && group.parent !== undefined ? false : group.dissolved !== undefined || group.control !== undefined || group.parent !== undefined), {
+        message: 'Give a group either `control` or a `parent`: a subsidiary is controlled by its parent. A dissolved group may leave both out.',
+      })
+      .refine((group) => group.dissolved === undefined || group.founded === undefined || group.dissolved >= group.founded, {
+        message: 'A group cannot be dissolved before it was founded.',
       }),
 });
 
