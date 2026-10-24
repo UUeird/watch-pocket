@@ -23,7 +23,11 @@ export function referencePhotos(model: Model, reference: Reference, brandName: s
   const name = `${brandName} ${model.data.name} ${reference.ref}`;
   if (reference.photos.length > 0) return reference.photos.map(({ file }) => ({ file, alt: name }));
   if (reference.officialPhoto) return [{ src: reference.officialPhoto.src, alt: name }];
-  return modelPhotos(model, brandName).map((photo) => ({ ...photo, alt: name, general: true }));
+  // Only photos of the model as a whole stand in, never another reference's, which may look quite different.
+  const general = model.data.photos.map(({ file }) => ({ file, alt: name, general: true }));
+  if (general.length > 0) return general;
+  const shared = official[model.id];
+  return shared ? [{ src: shared.src, alt: name, general: true }] : [];
 }
 
 // A line's photos: the first of each model's, so cycling through them shows the range.
