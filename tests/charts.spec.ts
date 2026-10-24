@@ -151,6 +151,13 @@ test.describe('Tiles', () => {
     await expect(tiles.first().locator('a')).toHaveAttribute('href', /\/brands\/richard-mille\//);
   });
 
+  test("a line of one model steps through that model's references", async ({ page }) => {
+    await page.goto('brands/rolex/');
+    const daytona = page.getByRole('list', { name: 'Product lines' }).locator('a[href$="/cosmograph-daytona/"]');
+    await expect(daytona).toHaveAttribute('data-cycle', '');
+    expect(await daytona.locator('.frame img').count()).toBeGreaterThan(1);
+  });
+
   test("a reference with no photo of its own borrows the model's, marked as such", async ({ page }) => {
     await page.goto('brands/rolex/submariner/submariner-date/');
     const tiles = page.getByRole('list', { name: 'References' }).locator('li');
