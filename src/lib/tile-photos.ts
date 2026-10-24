@@ -38,9 +38,26 @@ export function referencePhotos(model: Model, reference: Reference, brandName: s
   return shared ? [{ ...shared, alt: name, general: true }] : [];
 }
 
-// A line's photos: the first of each model's, so cycling through them shows the range.
-export const linePhotos = (models: Model[], brandName: string, limit = 5) =>
-  models.flatMap((model) => modelPhotos(model, brandName).slice(0, 1)).slice(0, limit);
+// A line's photos, so cycling through them shows its range: one per reference, newest first, taking each model's in
+// turn, then photos of each model as a whole, then the maker's image of a model. A line of one model still steps
+// through that model's references.
+export function linePhotos(models: Model[], brandName: string, limit = 5): TilePhoto[] {
+  const perModel = models.map((model) => {
+    const name = `${brandName} ${model.data.name}`;
+    const ofReferences = newestFirst(model.data.references).flatMap(({ ref, photos }) =>
+      photos.slice(0, 1).map(({ file, credit }) => ({ file, credit, alt: `${name} ${ref}` })),
+    );
+    const own = model.data.photos.slice(0, 1).map(({ file, credit }) => ({ file, credit, alt: name }));
+    const ours = [...ofReferences, ...own];
+    const shared = official[model.id];
+    return ours.length > 0 ? ours : shared ? [{ ...shared, alt: name }] : [];
+  });
+  const photos: TilePhoto[] = [];
+  for (let round = 0; photos.length < limit && perModel.some((list) => list.length > round); round++) {
+    for (const list of perModel) if (list[round] && photos.length < limit) photos.push(list[round]);
+  }
+  return photos;
+}
 
 // How a photo is credited under a grid, e.g. "Photo by Matt C · CC BY 2.0", with links to the license and source.
 export const creditOf = (photo: TilePhoto, brandName: string) =>
