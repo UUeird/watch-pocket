@@ -1,7 +1,8 @@
 name: Optima
 origin: Switzerland
-status: active
+periods: [{ from: 1923 }]
 website: https://optimawatch.com
 sources:
   - https://www.dialicious.com/en/optima
   - https://optimawatch.com/
+  - https://optimawatch.com/la-maison/

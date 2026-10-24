@@ -1,7 +1,8 @@
 name: Gorilla
 origin: Switzerland
-status: active
+periods: [{ from: 2016 }]
 website: https://gorilla-watches.com
 sources:
   - https://www.dialicious.com/en/gorilla
   - https://gorilla-watches.com/
+  - https://gorilla-watches.com/en-us/blogs/about-us

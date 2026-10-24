@@ -7,8 +7,9 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: Korloff
 origin: France
-status: active
+periods: [{ from: 1978 }]
 website: https://korloff.com
 sources:
   - https://www.dialicious.com/en/korloff
   - https://korloff.com/
+  - https://korloff.com/en/pages/maison

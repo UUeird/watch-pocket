@@ -1,7 +1,8 @@
 name: MkII
 origin: United States
-status: active
+periods: [{ from: 2002 }]
 website: https://mkiiwatches.com
 sources:
   - https://www.dialicious.com/en/mkii
   - https://mkiiwatches.com/
+  - https://mkiiwatches.com/pages/about-us

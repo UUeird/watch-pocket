@@ -1,6 +1,7 @@
 name: Pitzmann
-status: active
+periods: [{ from: 2021 }]
 website: https://www.pitzmann.com
 sources:
   - https://www.dialicious.com/en/pitzmann
   - https://www.pitzmann.com/
+  - https://www.pitzmann.com/about

@@ -1,6 +1,6 @@
 name: Hulsman
 origin: Netherlands
-status: active
+periods: [{ from: 2014 }]
 website: https://hulsman-timepieces.com
 sources:
   - https://www.dialicious.com/en/hulsman

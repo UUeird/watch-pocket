@@ -1,7 +1,8 @@
 name: Geovani
 origin: Switzerland
-status: active
+periods: [{ from: 2003 }]
 website: https://geovaniwatch.com
 sources:
   - https://www.dialicious.com/en/geovani
   - https://geovaniwatch.com/
+  - https://geovaniwatch.com/la-maison/

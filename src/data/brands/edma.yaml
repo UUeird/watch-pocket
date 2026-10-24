@@ -1,7 +1,8 @@
 name: Edma
 origin: Switzerland
-status: active
+periods: [{ from: 1944 }]
 website: https://edma-watches.com
 sources:
   - https://www.dialicious.com/en/edma
   - https://edma-watches.com/
+  - https://edma-watches.com/pages/about-edma

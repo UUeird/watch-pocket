@@ -1,6 +1,6 @@
 name: Reservoir
 origin: France
-status: active
+periods: [{ from: 2017 }]
 website: https://www.reservoir-watch.com
 sources:
   - https://www.dialicious.com/en/reservoir

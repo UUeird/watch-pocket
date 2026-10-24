@@ -1,5 +1,5 @@
 name: Alcadus
-status: active
+periods: [{ from: 2018 }]
 website: https://alcadus.com
 sources:
   - https://www.dialicious.com/en/alcadus

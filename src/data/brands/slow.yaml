@@ -1,6 +1,6 @@
 name: Slow
 origin: Germany
-status: active
+periods: [{ from: 2012 }]
 website: https://www.slow-watches.com
 sources:
   - https://www.dialicious.com/en/slow

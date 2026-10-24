@@ -1,7 +1,8 @@
 name: Minuteman
 origin: United States
-status: active
+periods: [{ from: 2012 }]
 website: https://minutemanwatches.com
 sources:
   - https://www.dialicious.com/en/minuteman
   - https://minutemanwatches.com/
+  - https://minutemanwatches.com/pages/about-us

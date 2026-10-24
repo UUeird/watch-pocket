@@ -1,7 +1,8 @@
 name: Typsim
 origin: United States
-status: active
+periods: [{ from: 2019 }]
 website: https://www.typsim.com
 sources:
   - https://www.dialicious.com/en/typsim
   - https://www.typsim.com/
+  - https://www.typsim.com/about

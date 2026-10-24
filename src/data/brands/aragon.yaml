@@ -1,6 +1,7 @@
 name: Aragon
-status: active
+periods: [{ from: 1991 }]
 website: https://www.aragonwatch.com
 sources:
   - https://www.dialicious.com/en/aragon
   - https://www.aragonwatch.com/
+  - https://www.aragonwatch.com/aboutus.php

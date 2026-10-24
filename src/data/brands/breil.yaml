@@ -1,9 +1,10 @@
 name: Breil
 origin: Italy
-status: active
+periods: [{ from: 1935 }]
 segment: budget
 website: https://www.breil.com
 sources:
   - https://www.dialicious.com/en/breil
   - https://www.wikidata.org/wiki/Q14755374
   - https://www.breil.com/
+  - https://www.breil.com/en/who-we-are/

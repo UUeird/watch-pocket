@@ -1,7 +1,8 @@
 name: Praesidus
 origin: United States
-status: active
+periods: [{ from: 2019 }]
 website: https://praesidus.com
 sources:
   - https://www.dialicious.com/en/praesidus
   - https://praesidus.com/
+  - https://praesidus.com/pages/who-we-are-1

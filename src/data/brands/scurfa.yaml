@@ -1,7 +1,8 @@
 name: Scurfa
 origin: United Kingdom
-status: active
+periods: [{ from: 2013 }]
 website: https://www.scurfawatches.com
 sources:
   - https://www.dialicious.com/en/scurfa
   - https://www.scurfawatches.com/
+  - https://www.scurfawatches.com/about/

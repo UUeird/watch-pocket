@@ -1,7 +1,8 @@
 name: Nite
 origin: United Kingdom
-status: active
+periods: [{ from: 2003 }]
 website: https://us.nitewatches.com
 sources:
   - https://www.dialicious.com/en/nite
   - https://us.nitewatches.com/
+  - https://us.nitewatches.com/pages/our-story

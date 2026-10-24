@@ -1,7 +1,8 @@
 name: Monbrey
 origin: Hong Kong
-status: active
+periods: [{ from: 2022 }]
 website: https://monbrey.com
 sources:
   - https://www.dialicious.com/en/monbrey
   - https://monbrey.com/
+  - https://monbrey.com/pages/about-us

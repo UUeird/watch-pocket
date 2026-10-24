@@ -1,5 +1,5 @@
 name: Neminus
-status: active
+periods: [{ from: 2017 }]
 website: https://www.neminuslab.com
 sources:
   - https://www.dialicious.com/en/neminus

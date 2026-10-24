@@ -1,6 +1,7 @@
 name: Selten
-status: active
+periods: [{ from: 2021 }]
 website: https://seltenwatch.com
 sources:
   - https://www.dialicious.com/en/selten
   - https://seltenwatch.com/
+  - https://seltenwatch.com/pages/about-us

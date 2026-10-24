@@ -1,7 +1,8 @@
 name: Heinrich
 origin: Germany
-status: active
+periods: [{ from: 2021 }]
 website: https://heinrich.watch
 sources:
   - https://www.dialicious.com/en/heinrich
   - https://heinrich.watch/
+  - https://heinrich.watch/en

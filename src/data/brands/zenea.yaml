@@ -1,7 +1,8 @@
 name: Zenea
 origin: Canada
-status: active
+periods: [{ from: 2019 }]
 website: https://www.zeneawatches.com
 sources:
   - https://www.dialicious.com/en/zenea
   - https://www.zeneawatches.com/
+  - https://www.zeneawatches.com/pages/the-company
