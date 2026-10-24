@@ -4,6 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Hugo_Boss_logo_2021.svg
   license: Public domain
 origin: Germany
+control: public
 periods: [{ from: 1924 }]
 segment: budget
 tags:
@@ -11,4 +12,5 @@ tags:
 licensees:
   - licensee: movado-group
 sources:
+  - https://en.wikipedia.org/wiki/Hugo_Boss
   - https://www.wikidata.org/wiki/Q491627

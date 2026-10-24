@@ -6,6 +6,9 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by/4.0
   author: Samsung
 origin: South Korea
+control: public
 status: active
 segment: mid-range
 makes: [smartwatches]
+sources:
+  - https://en.wikipedia.org/wiki/Samsung_Electronics

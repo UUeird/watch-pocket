@@ -7,7 +7,9 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: Anibalmru
 origin: France
+control: family
 periods: [{ from: 1948 }]
 segment: mid-range
 sources:
+  - https://en.wikipedia.org/wiki/Yema_(watchmaker)
   - https://www.wikidata.org/wiki/Q3572153

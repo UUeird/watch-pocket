@@ -5,8 +5,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Logo_NIKE.svg
   license: Public domain
 origin: United States
+control: public
 headquarters: United States
 periods: [{ from: 1964 }]
 segment: budget
 sources:
+  - https://en.wikipedia.org/wiki/Nike,_Inc.
   - https://www.wikidata.org/wiki/Q483915

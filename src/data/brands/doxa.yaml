@@ -6,7 +6,9 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: DOXA Watches
 origin: Switzerland
+control: family
 periods: [{ from: 1889 }]
 segment: mid-range
 sources:
+  - https://en.wikipedia.org/wiki/Doxa_SA
   - https://www.wikidata.org/wiki/Q2744515
