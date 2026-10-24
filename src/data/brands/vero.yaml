@@ -1,7 +1,8 @@
 name: Vero
 origin: United States
-status: active
+periods: [{ from: 2015 }]
 website: https://vero-watch.com
 sources:
   - https://www.dialicious.com/en/vero
   - https://vero-watch.com/
+  - https://vero-watch.com/pages/about-us

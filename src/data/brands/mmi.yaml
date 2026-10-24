@@ -1,7 +1,8 @@
 name: MMI
 origin: Singapore
-status: active
+periods: [{ from: 2019 }]
 website: https://www.mmiwatches.com
 sources:
   - https://www.dialicious.com/en/mmi
   - https://www.mmiwatches.com/
+  - https://www.mmiwatches.com/pages/about-us

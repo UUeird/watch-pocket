@@ -1,7 +1,8 @@
 name: Redux
 origin: United States
-status: active
+periods: [{ from: 2012 }]
 website: https://reduxwatch.com
 sources:
   - https://www.dialicious.com/en/redux
   - https://reduxwatch.com/
+  - https://reduxwatch.com/pages/about-us

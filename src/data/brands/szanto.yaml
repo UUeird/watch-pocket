@@ -1,6 +1,6 @@
 name: Szanto
 origin: United States
-status: active
+periods: [{ from: 2013 }]
 website: https://szantotime.com
 sources:
   - https://www.dialicious.com/en/szanto

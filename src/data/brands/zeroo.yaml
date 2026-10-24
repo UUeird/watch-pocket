@@ -1,7 +1,8 @@
 name: Zeroo
 origin: Japan
-status: active
+periods: [{ from: 2017 }]
 website: https://zerootime.com
 sources:
   - https://www.dialicious.com/en/zeroo
   - https://zerootime.com/
+  - https://zerootime.com/en-global/pages/company

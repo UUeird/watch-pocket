@@ -1,6 +1,7 @@
 name: Storm
-status: active
+periods: [{ from: 1989 }]
 website: https://stormwatches.com
 sources:
   - https://www.dialicious.com/en/storm
   - https://stormwatches.com/
+  - https://stormwatches.com/pages/about-us

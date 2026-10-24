@@ -1,6 +1,7 @@
 name: Mulco
-status: active
+periods: [{ from: 1958 }]
 website: https://mulco.com
 sources:
   - https://www.dialicious.com/en/mulco
   - https://mulco.com/
+  - https://mulco.com/pages/about-us

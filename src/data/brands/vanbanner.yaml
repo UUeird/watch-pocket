@@ -1,7 +1,8 @@
 name: VanBanner
 origin: Canada
-status: active
+periods: [{ from: 2020 }]
 website: https://vanbannerwatches.com
 sources:
   - https://www.dialicious.com/en/vanbanner
   - https://vanbannerwatches.com/
+  - https://vanbannerwatches.com/pages/about

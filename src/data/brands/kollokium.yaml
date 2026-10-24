@@ -1,7 +1,8 @@
 name: Kollokium
 origin: Switzerland
-status: active
+periods: [{ from: 2020 }]
 website: https://kollokium.com
 sources:
   - https://www.dialicious.com/en/kollokium
   - https://kollokium.com/
+  - https://kollokium.com/pages/about-us-1

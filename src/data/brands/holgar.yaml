@@ -1,7 +1,8 @@
 name: Holgar
 origin: Switzerland
-status: active
+periods: [{ from: 2021 }]
 website: https://holgarswiss.com
 sources:
   - https://www.dialicious.com/en/holgar
   - https://holgarswiss.com/
+  - https://holgarswiss.com/pages/about

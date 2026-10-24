@@ -1,6 +1,7 @@
 name: Corniche
-status: active
+periods: [{ from: 2013 }]
 website: https://cornichewatches.com
 sources:
   - https://www.dialicious.com/en/corniche
   - https://cornichewatches.com/
+  - https://cornichewatches.com/our-story/

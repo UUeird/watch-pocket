@@ -1,5 +1,5 @@
 name: Zinvo
-status: active
+periods: [{ from: 2014 }]
 website: https://zinvo.us
 sources:
   - https://www.dialicious.com/en/zinvo

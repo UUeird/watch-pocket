@@ -1,6 +1,7 @@
 name: Greyhours
-status: active
+periods: [{ from: 2013 }]
 website: https://www.greyhours.com
 sources:
   - https://www.dialicious.com/en/greyhours
   - https://www.greyhours.com/
+  - https://www.greyhours.com/en/

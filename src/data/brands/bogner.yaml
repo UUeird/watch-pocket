@@ -4,8 +4,9 @@ logomark: ../logos/bogner-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Bogner-Logo.svg
   license: Public domain
-status: active
+periods: [{ from: 1932 }]
 website: https://www.bogner.com
 sources:
   - https://www.dialicious.com/en/bogner
   - https://www.bogner.com/
+  - https://www.bogner.com/en-us/s/brands/72.html

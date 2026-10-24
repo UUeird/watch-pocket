@@ -1,7 +1,8 @@
 name: Miansai
 origin: United States
-status: active
+periods: [{ from: 2008 }]
 website: https://www.miansai.com
 sources:
   - https://www.dialicious.com/en/miansai
   - https://www.miansai.com/
+  - https://www.miansai.com/pages/about

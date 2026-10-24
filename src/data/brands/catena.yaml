@@ -1,6 +1,7 @@
 name: Catena
-status: active
+periods: [{ from: 1947 }]
 website: http://www.catena.ch
 sources:
   - https://www.dialicious.com/en/catena
   - http://www.catena.ch/
+  - http://www.catena.ch/en/index.php

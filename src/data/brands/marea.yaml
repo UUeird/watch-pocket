@@ -1,5 +1,5 @@
 name: Marea
-status: active
+periods: [{ from: 1995 }]
 website: https://www.marea.es
 sources:
   - https://www.dialicious.com/en/marea

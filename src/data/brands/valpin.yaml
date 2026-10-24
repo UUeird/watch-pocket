@@ -1,6 +1,6 @@
 name: Valpin
 origin: Switzerland
-status: active
+periods: [{ from: 2014 }]
 website: https://www.valpin.com
 sources:
   - https://www.dialicious.com/en/valpin

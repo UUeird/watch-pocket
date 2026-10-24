@@ -1,7 +1,8 @@
 name: Sangamon
 origin: United States
-status: active
+periods: [{ from: 2019 }]
 website: https://sangamonwatches.com
 sources:
   - https://www.dialicious.com/en/sangamon
   - https://sangamonwatches.com/
+  - https://sangamonwatches.com/pages/about-us

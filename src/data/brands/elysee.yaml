@@ -1,6 +1,6 @@
 name: Elysee
 origin: Germany
-status: active
+periods: [{ from: 1960 }]
 website: https://elysee1960.com/
 sources:
   - https://www.dialicious.com/en/elysee

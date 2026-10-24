@@ -1,6 +1,7 @@
 name: Unity
-status: active
+periods: [{ from: 2010 }]
 website: https://unitywatches.com
 sources:
   - https://www.dialicious.com/en/unity
   - https://unitywatches.com/
+  - https://unitywatches.com/sobre-unity/

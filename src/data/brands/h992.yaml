@@ -1,6 +1,6 @@
 name: H992
 origin: Switzerland
-status: active
+periods: [{ from: 2022 }]
 website: https://h992.swiss
 sources:
   - https://www.dialicious.com/en/h992

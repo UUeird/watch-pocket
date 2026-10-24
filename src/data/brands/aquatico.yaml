@@ -1,7 +1,8 @@
 name: Aquatico
 origin: Hong Kong
-status: active
+periods: [{ from: 2017 }]
 website: https://www.aquaticowatch.com
 sources:
   - https://www.dialicious.com/en/aquatico
   - https://www.aquaticowatch.com/
+  - https://www.aquaticowatch.com/pages/our-story

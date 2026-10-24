@@ -6,7 +6,7 @@ logoCredit:
   licenseUrl: https://creativecommons.org/publicdomain/zero/1.0
   author: GANT
 origin: United States
-status: active
+periods: [{ from: 1949 }]
 segment: budget
 website: https://gant.com
 sources:

@@ -1,6 +1,6 @@
 name: Marchand
 origin: Switzerland
-status: active
+periods: [{ from: 2015 }]
 website: https://marchandwatches.com
 sources:
   - https://www.dialicious.com/en/marchand

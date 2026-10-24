@@ -1,6 +1,6 @@
 name: Beaucroft
 origin: United Kingdom
-status: active
+periods: [{ from: 2020 }]
 website: https://beaucroftwatches.com
 sources:
   - https://www.dialicious.com/en/beaucroft

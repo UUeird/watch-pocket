@@ -1,7 +1,8 @@
 name: Xemex
 origin: Switzerland
-status: active
+periods: [{ from: 1996 }]
 website: http://www.xemex.com
 sources:
   - https://www.dialicious.com/en/xemex
   - http://www.xemex.com/
+  - http://www.xemex.com/en/About-us/

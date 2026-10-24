@@ -1,7 +1,8 @@
 name: Zealandic
 origin: New Zealand
-status: active
+periods: [{ from: 2021 }]
 website: https://www.zealandic.co.nz
 sources:
   - https://www.dialicious.com/en/zealandic
   - https://www.zealandic.co.nz/
+  - https://www.zealandic.co.nz/pages/about

@@ -1,6 +1,6 @@
 name: Scalfaro
 origin: Switzerland
-status: active
+periods: [{ from: 2001 }]
 website: https://www.scalfaro.com
 sources:
   - https://www.dialicious.com/en/scalfaro

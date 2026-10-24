@@ -1,7 +1,8 @@
 name: MCT
 origin: Switzerland
-status: active
+periods: [{ from: 2007 }]
 website: http://www.mctwatches.com
 sources:
   - https://www.dialicious.com/en/mct
   - http://www.mctwatches.com/
+  - http://www.mctwatches.com/brand/our-purpose

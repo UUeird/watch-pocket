@@ -1,7 +1,8 @@
 name: 47ZERO
 origin: France
-status: active
+periods: [{ from: 2023 }]
 website: https://47zero.com
 sources:
   - https://www.dialicious.com/en/47zero
   - https://47zero.com/
+  - https://47zero.com/en/about/
