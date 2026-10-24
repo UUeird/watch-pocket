@@ -1,5 +1,6 @@
 name: Czapek
 origin: Switzerland
+control: private
 periods: [{ from: 2015 }]
 heritage:
   from: 1845
@@ -8,3 +9,7 @@ heritage:
 segment: haute
 sources:
   - https://web.archive.org/web/20190722123938/http://www.fhs.swiss/eng/2015_11_30_02_Czapek.html
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Czapek_%26_Cie
+    - https://www.europastar.com/1004113599.html

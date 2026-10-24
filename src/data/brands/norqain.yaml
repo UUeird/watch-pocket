@@ -1,8 +1,13 @@
 name: Norqain
 origin: Switzerland
+control: family
 periods: [{ from: 2018 }]
 segment: mid-range
 website: https://norqain.com
 sources:
   - https://www.dialicious.com/en/norqain
   - https://norqain.com/
+independent:
+  sources:
+    - https://en.worldtempus.com/watch-brand/norqain-454
+    - https://www.europastar.com/1004113803.html

@@ -11,3 +11,9 @@ sources:
   - https://www.wikidata.org/wiki/Q1408512
   - https://www.festinagroup.com:443/
   - https://en.wikipedia.org/wiki/Festina
+ownership:
+  - owner: festina-group
+    from: 1984
+    sources:
+      - https://en.wikipedia.org/wiki/Festina
+      - https://www.europastar.com/news/2038024-festina-group.html

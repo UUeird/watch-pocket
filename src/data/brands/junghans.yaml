@@ -10,3 +10,6 @@ segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Junghans
   - https://www.wikidata.org/wiki/Q560976
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Junghans

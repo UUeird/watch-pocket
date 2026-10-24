@@ -11,3 +11,9 @@ periods: [{ from: 1927 }]
 segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Stowa
+ownership:
+  - owner: tempus-arte
+    from: 2021
+    sources:
+      - https://usa.watchpro.com/?p=59372
+      - https://atelierdegriff.com/2021/07/12/confirmed-tempus-arte-group-acquires-stowa/

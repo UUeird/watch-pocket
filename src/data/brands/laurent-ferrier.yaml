@@ -4,7 +4,12 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Laurent_Ferrier_Logo.png
   license: Public domain
 origin: Switzerland
+control: private
 periods: [{ from: 2009 }]
 segment: haute
 sources:
   - https://en.wikipedia.org/wiki/Laurent_Ferrier
+independent:
+  sources:
+    - https://luxe.digital/brands/laurent-ferrier/
+    - https://www.europastar.com/1004115439.html

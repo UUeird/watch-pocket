@@ -12,3 +12,6 @@ makes: [smartwatches]
 sources:
   - https://en.wikipedia.org/wiki/Xiaomi
   - https://www.wikidata.org/wiki/Q1636958
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Xiaomi

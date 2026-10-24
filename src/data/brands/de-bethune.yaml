@@ -4,3 +4,11 @@ periods: [{ from: 2002 }]
 segment: haute
 sources:
   - https://www.wikidata.org/wiki/Q20731634
+ownership:
+  - owner: the-1916-company
+    stake: unknown
+    basis: disclosed
+    from: 2021
+    sources:
+      - https://watchesbysjx.com/?p=120598
+      - https://www.debethune.ch/en/media/news/leadership-transition-de-bethune
