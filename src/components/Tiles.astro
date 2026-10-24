@@ -153,9 +153,29 @@ const credits = tiles.flatMap(({ title, photos }) =>
     display: none;
   }
 
+  /* While a tile cycles, the next photo blurs in over the one before, which stays put underneath until it is covered. */
+  .frame :global(img) {
+    transition:
+      opacity 0.5s ease,
+      filter 0.5s ease;
+  }
+
+  .frame :global(img.off) {
+    opacity: 0;
+    filter: blur(8px);
+  }
+
+  .frame :global(img.on) {
+    z-index: 1;
+  }
+
+  .frame :global(img.under) {
+    transition: none;
+  }
+
   .general {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 6px;
     left: 6px;
     padding: 1px 6px;
@@ -206,20 +226,68 @@ const credits = tiles.flatMap(({ title, photos }) =>
 
 <script>
   // A tile with several photos steps through them while pointed at or focused, then returns to the first.
+  // Each photo is loaded and decoded before it is shown, so the frame never flashes empty.
   const still = matchMedia('(prefers-reduced-motion: reduce)');
+  const fade = 500;
   for (const tile of document.querySelectorAll<HTMLElement>('[data-cycle]')) {
     let timer = 0;
+    // Bumped on every start and stop, so a step still waiting on a photo knows when it has been called off.
+    let run = 0;
+    let current: HTMLImageElement | undefined;
     const photos = () => [...tile.querySelectorAll<HTMLImageElement>('.frame img')];
-    const show = (index: number) => photos().forEach((photo, at) => (photo.hidden = at !== index));
+    const show = (next: HTMLImageElement) => {
+      const before = current;
+      current = next;
+      if (before === next) return;
+      for (const photo of photos()) {
+        if (photo === next || photo === before) continue;
+        photo.classList.remove('on', 'under');
+        photo.classList.add('off');
+      }
+      before?.classList.replace('on', 'under');
+      next.classList.remove('off', 'under');
+      next.classList.add('on');
+      window.setTimeout(() => {
+        if (before && before !== current) before.classList.replace('under', 'off');
+      }, fade);
+    };
+    // Starts every photo loading, hidden but in place, so each is ready by the time its turn comes.
+    const prime = () => {
+      const [first, ...rest] = photos();
+      current ??= first;
+      first?.classList.add('on');
+      for (const photo of rest) {
+        if (photo === current) continue;
+        photo.loading = 'eager';
+        photo.classList.add('off');
+        photo.hidden = false;
+      }
+    };
+    const step = async (token: number) => {
+      const list = photos();
+      if (!current || list.length < 2) return;
+      const next = list[(list.indexOf(current) + 1) % list.length];
+      try {
+        await next.decode();
+      } catch {
+        // A photo that fails to load removes itself, so the next step skips it.
+      }
+      if (token !== run) return;
+      if (next.isConnected) show(next);
+      timer = window.setTimeout(() => step(token), 1100);
+    };
     const start = () => {
       if (still.matches || timer) return;
-      let index = 0;
-      timer = window.setInterval(() => show((index = (index + 1) % photos().length)), 1100);
+      prime();
+      const token = ++run;
+      timer = window.setTimeout(() => step(token), 1100);
     };
     const stop = () => {
-      clearInterval(timer);
+      clearTimeout(timer);
       timer = 0;
-      show(0);
+      run++;
+      const first = photos()[0];
+      if (first) show(first);
     };
     tile.addEventListener('pointerenter', start);
     tile.addEventListener('pointerleave', stop);
