@@ -534,9 +534,9 @@ function circleName(name: string, inner: number) {
 }
 
 // The logo to draw in place of `shown`: the brand's version for a dark background where the whole logo or the
-// logomark would otherwise need white, so the cell can stay black.
+// logomark would otherwise need white, or brings its own light box along, so the cell can stay black.
 const forDark = (logos: Point['logos'], shown?: LogoFile) => {
-  if (!shown || shown.onBlack || shown.background || logos.background) return shown;
+  if (!shown || logos.background || (shown.onBlack && !shown.background)) return shown;
   const dark = shown === logos.whole ? logos.onDark : shown === logos.logomark ? logos.logomarkOnDark : undefined;
   return dark ?? shown;
 };
