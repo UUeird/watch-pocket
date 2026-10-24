@@ -1,5 +1,5 @@
 name: Benarus
-status: active
+periods: [{ from: 2008 }]
 website: https://www.benaruswatch.com
 sources:
   - https://www.dialicious.com/en/benarus

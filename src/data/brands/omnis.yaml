@@ -1,6 +1,6 @@
 name: Omnis
 origin: France
-status: active
+periods: [{ from: 2023 }]
 website: https://omnis-watches.com
 sources:
   - https://www.dialicious.com/en/omnis

@@ -1,6 +1,6 @@
 name: Reiser
 origin: Germany
-status: active
+periods: [{ from: 2019 }]
 website: https://www.reiserwatches.com
 sources:
   - https://www.dialicious.com/en/reiser

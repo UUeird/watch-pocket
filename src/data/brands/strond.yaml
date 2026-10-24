@@ -1,6 +1,6 @@
 name: Strond
 origin: United Kingdom
-status: active
+periods: [{ from: 2020 }]
 website: https://www.stronduk.com
 sources:
   - https://www.dialicious.com/en/strond

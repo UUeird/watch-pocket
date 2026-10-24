@@ -1,5 +1,5 @@
 name: EMG
-status: active
+periods: [{ from: 2016 }]
 website: https://emgwatches.com
 sources:
   - https://www.dialicious.com/en/emg
