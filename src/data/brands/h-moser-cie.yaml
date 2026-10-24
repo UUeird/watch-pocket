@@ -5,6 +5,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:H._Moser_&_Cie_Logo.svg
   license: Public domain
 origin: Switzerland
+control: family
 periods: [{ from: 1828 }]
 segment: haute
 sources:

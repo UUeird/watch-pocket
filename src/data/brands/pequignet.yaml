@@ -5,7 +5,9 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Pequignet_logo.svg
   license: Public domain
 origin: France
+control: private
 periods: [{ from: 1973 }]
 segment: mid-range
 sources:
+  - https://en.wikipedia.org/wiki/Pequignet
   - https://www.wikidata.org/wiki/Q3375046

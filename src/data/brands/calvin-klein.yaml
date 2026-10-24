@@ -4,6 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Calvin_Klein_logo.svg
   license: Public domain
 origin: United States
+control: public
 periods: [{ from: 1968 }]
 segment: budget
 tags:
@@ -11,4 +12,5 @@ tags:
 licensees:
   - licensee: movado-group
 sources:
+  - https://en.wikipedia.org/wiki/Calvin_Klein_(fashion_house)
   - https://www.wikidata.org/wiki/Q1068628

@@ -7,10 +7,12 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: RMarei
 origin: Switzerland
+control: private
 periods: [{ from: 1962 }]
 segment: mid-range
 website: https://aquastar.ch
 sources:
+  - https://en.wikipedia.org/wiki/Aquastar_(watch_brand)
   - https://www.dialicious.com/en/aquastar
   - https://www.wikidata.org/wiki/Q96372277
   - https://aquastar.ch/

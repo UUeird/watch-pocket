@@ -1,5 +1,6 @@
 name: Jacob & Co.
 origin: United States
+control: private
 periods: [{ from: 1986 }]
 segment: luxury
 sources:

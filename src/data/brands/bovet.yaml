@@ -4,7 +4,9 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Bovet_Fleurier_logo.svg
   license: Public domain
 origin: Switzerland
+control: private
 periods: [{ from: 1822 }]
 segment: haute
 sources:
+  - https://en.wikipedia.org/wiki/Bovet_Fleurier
   - https://www.wikidata.org/wiki/Q4950531

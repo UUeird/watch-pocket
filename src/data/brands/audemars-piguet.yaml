@@ -5,6 +5,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Logo_Audemars_Piguet.svg
   license: Public domain
 origin: Switzerland
+control: family
 periods: [{ from: 1875 }]
 segment: haute
 revenue:

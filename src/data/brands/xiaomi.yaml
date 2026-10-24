@@ -5,8 +5,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Xiaomi_logo_(2021-).svg
   license: Public domain
 origin: China
+control: public
 periods: [{ from: 2010 }]
 segment: budget
 makes: [smartwatches]
 sources:
+  - https://en.wikipedia.org/wiki/Xiaomi
   - https://www.wikidata.org/wiki/Q1636958
