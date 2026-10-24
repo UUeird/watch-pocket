@@ -20,7 +20,53 @@ photos:
 sources:
   - https://www.luxurybazaar.com/brands/rolex/ref-126500ln/
   - https://www.belmontwatches.com/products/rolex-daytona-126500ln
+  - https://www.timeandwatches.com/p/history-of-rolex-cosmograph-daytona.html
+  - https://watchmydiamonds.com/rolex-daytona-reference-guide/
+  - https://millenarywatches.com/list-rolex-daytona-models-reference-numbers/
+  - https://wristcheck.com/us/discover/buying-guides/rolex-daytona-price-guide
+  - https://www.watchguys.com/pages/rolex-daytona-guide
 references:
+  - ref: "6239"
+    caseSize: 37
+    metals: [steel]
+    bezel: { material: steel, style: tachymeter }
+    crystal: acrylic
+    movement: Valjoux 72
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "6263"
+    caseSize: 37
+    metals: [steel]
+    bezel: { colors: [black], style: tachymeter }
+    crystal: acrylic
+    movement: Valjoux 727
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "16520"
+    periods: [{ from: 1988, to: 2000 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: steel, style: tachymeter }
+    crystal: sapphire
+    movement: "4030"
+    dials: [{ color: white }, { color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "116520"
+    periods: [{ from: 2000, to: 2016 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: steel, style: tachymeter }
+    crystal: sapphire
+    movement: "4130"
+    dials: [{ color: white }, { color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: 116500LN
+    periods: [{ from: 2016, to: 2023 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "4130"
+    dials: [{ color: white }, { color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 126500LN
     photos:
       - file: ../../../photos/rolex/cosmograph-daytona/cosmograph-daytona-126500ln.jpg
@@ -37,3 +83,43 @@ references:
     movement: "4131"
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "126506"
+    periods: [{ from: 2023 }]
+    caseSize: 40
+    metals: [platinum]
+    bezel: { material: ceramic, colors: [brown], style: tachymeter }
+    crystal: sapphire
+    movement: "4131"
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "126508"
+    periods: [{ from: 2023 }]
+    caseSize: 40
+    metals: [yellow-gold]
+    bezel: { material: yellow-gold, style: tachymeter }
+    crystal: sapphire
+    movement: "4131"
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "126509"
+    periods: [{ from: 2023 }]
+    caseSize: 40
+    metals: [white-gold]
+    bezel: { material: white-gold, style: tachymeter }
+    crystal: sapphire
+    movement: "4131"
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: 126515LN
+    periods: [{ from: 2023 }]
+    caseSize: 40
+    metals: [rose-gold]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "4131"
+    bracelets: [{ type: rubber-strap, name: Oysterflex }]
+  - ref: 126518LN
+    periods: [{ from: 2023 }]
+    caseSize: 40
+    metals: [yellow-gold]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "4131"
+    bracelets: [{ type: rubber-strap, name: Oysterflex }]
