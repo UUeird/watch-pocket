@@ -1,0 +1,19 @@
+name: Yacht-Master 40
+line: rolex/yacht-master
+sources:
+  - https://www.loupe.watch/watches/rolex/yacht-master
+  - https://www.1stdibs.com/de/schmuck/uhren/armbanduhren/ungetragene-rolex-yacht-master-40-reference-126655-komplettset-2025/id-j_26906402
+references:
+  - ref: "126622"
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: platinum }
+    crystal: sapphire
+    dials: [{ color: silver, name: Rhodium }, { color: blue }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "126655"
+    caseSize: 40
+    metals: [rose-gold]
+    bezel: { material: ceramic, colors: [black] }
+    crystal: sapphire
+    bracelets: [{ type: rubber-strap, name: Oysterflex }]

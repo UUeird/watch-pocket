@@ -118,7 +118,8 @@ const groups = defineCollection({
 const color = z.enum([
   'black', 'white', 'silver', 'gray', 'blue', 'green', 'red', 'yellow', 'orange', 'brown', 'pink', 'purple', 'gold', 'rose-gold', 'champagne',
 ]);
-const metal = z.enum(['steel', 'aluminum', 'yellow-gold', 'white-gold', 'rose-gold', 'platinum', 'titanium', 'ceramic', 'bronze']);
+// `carbon` covers carbon composites such as Richard Mille's Carbon TPT.
+const metal = z.enum(['steel', 'aluminum', 'yellow-gold', 'white-gold', 'rose-gold', 'platinum', 'titanium', 'ceramic', 'bronze', 'carbon']);
 
 const endsAfterStart = ({ from, to }: { from?: number; to?: number }) =>
   from === undefined || to === undefined || to >= from;
@@ -294,6 +295,9 @@ const models = defineCollection({
             // Photos of this reference in particular, where it looks unlike the model's others (a different bezel or
             // dial), in the same form as the model's. Its page shows these, or the model's when it has none.
             photos: photos(image),
+            // The maker's own image of this reference in particular, from the page it appears on. Shown loaded from
+            // their site and credited to them, where the reference has no photo of our own.
+            officialPhoto: z.object({ src: z.url(), page: z.url() }).optional(),
             // The first period's `from` is the year the reference was released.
             periods,
             // The maker's list price in a given year, in its home currency where it publishes one.
