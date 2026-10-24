@@ -46,6 +46,8 @@ export type Metric = {
   additive: boolean;
   // The same for every brand, so it says something about buckets and nothing about the brands in them.
   uniform?: boolean;
+  // Whether a part-owner can be credited with only its stake of a brand's figure, as with revenue.
+  byStake?: boolean;
 };
 
 const usd = (value: number) =>
@@ -102,6 +104,7 @@ export const metrics: Metric[] = [
       return figure && toUsd(figure.amount, figure.currency);
     },
     additive: true,
+    byStake: true,
   },
   {
     id: 'lifetime-revenue',
@@ -112,6 +115,7 @@ export const metrics: Metric[] = [
     groupValue: (group) =>
       group.data.revenue.length === 0 ? undefined : sum(group.data.revenue.map((r) => toUsd(r.amount, r.currency))),
     additive: true,
+    byStake: true,
   },
   {
     id: 'production',

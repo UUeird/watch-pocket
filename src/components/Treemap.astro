@@ -86,6 +86,10 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
       <input type="checkbox" name="otherBusiness" checked={options.otherBusiness} />
       Include groups’ other business
     </label>
+    <label class="toggle" data-stake-toggle hidden={layout.partOwned === 0}>
+      <input type="checkbox" name="byStake" checked={options.byStake} />
+      Count part-owned brands by stake
+    </label>
   </div>
 
   <nav class="crumbs" aria-label="Zoom" hidden={!layout.zoomed}>
@@ -568,6 +572,8 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     const other = section.querySelector<HTMLInputElement>('input[name="otherBusiness"]')!;
     const toggle = other.closest<HTMLElement>('.toggle')!;
     const ownMeasures = toggle.dataset.own!.split(' ');
+    const byStake = section.querySelector<HTMLInputElement>('input[name="byStake"]')!;
+    const stakeToggle = byStake.closest<HTMLElement>('.toggle')!;
     const key = (name: string) => `treemap.${section.dataset.treemap}.${name}`;
 
     const unsized = section.querySelector<HTMLElement>('.unsized')!;
@@ -583,6 +589,8 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     }
     const savedOther = recall(key('otherBusiness'));
     if (savedOther !== null) other.checked = savedOther === 'true';
+    const savedStake = recall(key('byStake'));
+    if (savedStake !== null) byStake.checked = savedStake === 'true';
     // The overview and a zoomed box each keep their own size measure, since they offer different ones.
     const sizeChoice = { overview: recall(key('size')) ?? selects.size.value, zoomed: recall(key('zoomSize')) ?? 'age' };
     // The box zoomed into. A fresh visit starts on the overview.
@@ -613,6 +621,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
         grouping: selects.grouping.value,
         size: zoomed ? sizeChoice.zoomed : sizeChoice.overview,
         otherBusiness: other.checked,
+        byStake: byStake.checked,
         visible: rows && rows.ids.size < rows.all ? rows.ids : undefined,
         zoom,
         shape: selects.shape.value as Shape,
@@ -620,6 +629,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
       const layout = layoutTreemap(data, options);
       selects.size.value = layout.size.id;
       toggle.hidden = layout.mode === 'buckets' || !ownMeasures.includes(layout.size.id);
+      stakeToggle.hidden = layout.partOwned === 0;
       canvas.dataset.shape = layout.shape;
       canvas.innerHTML = renderCells(layout, canvas.clientWidth / layout.box.width);
       note.innerHTML = renderNote(layout, options.visible !== undefined);
@@ -668,6 +678,10 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     });
     other.addEventListener('change', () => {
       remember(key('otherBusiness'), String(other.checked));
+      draw();
+    });
+    byStake.addEventListener('change', () => {
+      remember(key('byStake'), String(byStake.checked));
       draw();
     });
     canvas.addEventListener('click', (event) => {
