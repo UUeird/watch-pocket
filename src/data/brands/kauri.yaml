@@ -1,6 +1,6 @@
 name: Kauri
 origin: Switzerland
-status: active
+periods: [{ from: 2019 }]
 website: https://kauri-watches.ch
 sources:
   - https://www.dialicious.com/en/kauri

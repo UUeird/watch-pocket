@@ -1,5 +1,5 @@
 name: Bohen
-status: active
+periods: [{ from: 2021 }]
 website: https://www.bohen-watches.com
 sources:
   - https://www.dialicious.com/en/bohen

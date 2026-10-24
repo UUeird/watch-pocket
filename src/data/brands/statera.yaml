@@ -1,6 +1,6 @@
 name: Statera
 origin: Brazil
-status: active
+periods: [{ from: 2021 }]
 website: https://www.staterawatch.co
 sources:
   - https://www.dialicious.com/en/statera

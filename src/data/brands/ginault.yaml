@@ -1,6 +1,6 @@
 name: Ginault
 origin: United States
-status: active
+periods: [{ from: 2011 }]
 website: http://ginault.com
 sources:
   - https://www.dialicious.com/en/ginault

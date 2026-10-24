@@ -1,5 +1,5 @@
 name: Version
-status: active
+periods: [{ from: 2024 }]
 website: https://versionwatches.fr
 sources:
   - https://www.dialicious.com/en/version

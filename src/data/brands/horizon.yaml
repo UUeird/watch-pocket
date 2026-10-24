@@ -1,6 +1,6 @@
 name: Horizon
 origin: Singapore
-status: active
+periods: [{ from: 2012 }]
 website: https://www.horizon-watches.com
 sources:
   - https://www.dialicious.com/en/horizon

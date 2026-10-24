@@ -1,6 +1,6 @@
 name: Boderry
 origin: China
-status: active
+periods: [{ from: 2019 }]
 website: https://www.boderry.com
 sources:
   - https://www.dialicious.com/en/boderry
