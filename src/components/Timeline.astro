@@ -1,0 +1,511 @@
+---
+import { href, plural, type Brand, type Group } from '../lib/catalog';
+import { describe, describeHolding, type Section } from '../lib/timeline';
+
+interface Props {
+  sections: Section[];
+  // Every dated purchase each group made, by group id, including brands it has since sold.
+  purchases: Map<string, { brand: Brand; from: number; to?: number }[]>;
+  // Fields the page's filters match on, for each brand.
+  filterData: (brand: Brand) => Record<string, string | undefined>;
+  // The id the page's filters target.
+  id: string;
+}
+
+const { sections, purchases, filterData, id } = Astro.props;
+const thisYear = new Date().getFullYear();
+// The axis runs to the end of this year, so a current holding reaches the right edge.
+const end = thisYear + 1;
+const earliest = Math.min(...sections.flatMap(({ rows }) => rows.map((row) => row.heritage ?? row.first)));
+const start = Math.floor(earliest / 50) * 50;
+// Ticks every ten years. The full view labels every fifty; the recent view labels them all.
+const ticks = Array.from({ length: Math.floor((thisYear - start) / 10) + 1 }, (_, index) => start + index * 10);
+const ownerHref = (holding: { owner: { collection: string; id: string } }) =>
+  href(holding.owner.collection === 'brands' ? `/brands/${holding.owner.id}/` : `/ownership-groups/${holding.owner.id}/`);
+const span = (from: number, to?: number) => ({ '--from': from, '--to': to ?? end });
+---
+
+<section class="timeline" data-timeline style={{ '--start': start, '--end': end }} data-scale="all">
+  <div class="scale" role="group" aria-label="Years shown">
+    <button type="button" data-scale-to="all" aria-pressed="true">Since {start}</button>
+    <button type="button" data-scale-to="recent" aria-pressed="false">Since 1950</button>
+  </div>
+
+  <ul class="key" aria-label="Key">
+    <li><span class="key-life" /> Trading</li>
+    <li><span class="key-heritage" /> Claimed heritage</li>
+    <li><span class="key-buy" /> Bought by a group</li>
+    <li><span class="key-band" /> Held by that group</li>
+    <li><span class="key-band past" /> Held, since sold</li>
+    <li><span class="key-band part" /> Part-owned</li>
+  </ul>
+
+  <div class="axis" aria-hidden="true">
+    <span />
+    <span class="track">
+      {ticks.map((year) => <span class:list={['tick', { major: year % 50 === 0, century: year % 100 === 0, recent: year > 1950 }]} style={{ '--from': year }}>{year}</span>)}
+    </span>
+  </div>
+
+  <div id={id}>
+    {
+      sections.map(({ key, name, href: sectionHref, group, rows, undated }) => {
+        const bought = group ? (purchases.get(group.id) ?? []) : [];
+        return (
+          <section class="owner" data-filter-group aria-label={name}>
+            <div class="row head">
+              <span class="name">
+                {sectionHref ? <a href={sectionHref}>{name}</a> : name}
+                <span class="count">
+                  {plural(rows.length, 'brand')}
+                  {undated > 0 && ` · ${undated} more undated`}
+                </span>
+              </span>
+              <span class="track">
+                {ticks.map((year) => <span class:list={['grid', { major: year % 50 === 0 }]} style={{ '--from': year }} />)}
+                {bought.map((purchase) => (
+                  <a
+                    class:list={['buy', { past: purchase.to !== undefined }]}
+                    style={{ '--from': purchase.from }}
+                    href={href(`/brands/${purchase.brand.id}/`)}
+                    aria-label={`${purchase.brand.data.name}, bought ${purchase.from}${purchase.to ? `, sold ${purchase.to}` : ''}`}
+                    data-tip={`${purchase.brand.data.name}\nBought by ${group!.data.name} in ${purchase.from}${purchase.to ? `\nHeld until ${purchase.to}` : ''}`}
+                  />
+                ))}
+              </span>
+            </div>
+            <ul class="rows">
+              {rows.map((line) => (
+                <li class="row" {...filterData(line.brand)} data-tip={describe(line).join('\n')} style={{ '--lanes': line.lanes }}>
+                  <a class="name" href={href(`/brands/${line.brand.id}/`)}>
+                    {line.brand.data.name}
+                  </a>
+                  <span class="track">
+                    {ticks.map((year) => <span class:list={['grid', { major: year % 50 === 0 }]} style={{ '--from': year }} />)}
+                    {line.heritage !== undefined && line.periods[0] && <span class="heritage" style={span(line.heritage, line.periods[0].from)} />}
+                    {line.periods.map(({ from, to }) => (
+                      <span class:list={['life', { ended: to !== undefined }]} style={span(from, to)} />
+                    ))}
+                    {line.holdings.map((holding) => (
+                      <span
+                        class:list={['band', { past: holding.to !== undefined, part: holding.stake !== undefined }]}
+                        style={{ ...span(holding.from, holding.to), '--lane': holding.lane }}
+                      >
+                        <span class="owner-name">{holding.name}</span>
+                      </span>
+                    ))}
+                    {line.holdings.map((holding) => (
+                      <a class="buy" style={{ '--from': holding.from, '--lane': holding.lane }} href={ownerHref(holding)} aria-label={describeHolding(holding)} tabindex="-1" />
+                    ))}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })
+    }
+  </div>
+  <div class="tip" role="presentation" hidden></div>
+</section>
+
+<style>
+  .timeline {
+    --name: 180px;
+    --row: 22px;
+    --mark: #2a78d6;
+    --mark-past: #9dbde6;
+    --life: #8f8b82;
+    --on-mark: #ffffff;
+    --span: calc(var(--end) - var(--start));
+    position: relative;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .timeline {
+      --mark: #5598e7;
+      --mark-past: #34567f;
+      --life: #77736b;
+    }
+  }
+
+  .timeline[data-scale='recent'] {
+    --start: 1950 !important;
+  }
+
+  @media (max-width: 640px) {
+    .timeline {
+      --name: 110px;
+    }
+  }
+
+  .scale {
+    display: inline-flex;
+    margin-bottom: 12px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .scale button {
+    padding: 4px 12px;
+    font: inherit;
+    font-size: 0.875rem;
+    color: var(--text);
+    background: var(--surface);
+    border: 0;
+    cursor: pointer;
+  }
+
+  .scale button + button {
+    border-left: 1px solid var(--line);
+  }
+
+  .scale button[aria-pressed='true'] {
+    color: var(--surface);
+    background: var(--text);
+  }
+
+  .key {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    margin: 0 0 12px;
+    padding: 0;
+    color: var(--muted);
+    font-size: 0.8125rem;
+    list-style: none;
+  }
+
+  .key li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .key-life,
+  .key-heritage {
+    width: 22px;
+    height: 0;
+    border-top: 2px solid var(--life);
+  }
+
+  .key-heritage {
+    border-top-style: dotted;
+  }
+
+  .key-buy {
+    width: 8px;
+    height: 8px;
+    rotate: 45deg;
+    background: var(--mark);
+  }
+
+  .key-band {
+    width: 22px;
+    height: 10px;
+    border-radius: 2px;
+    background: var(--mark);
+  }
+
+  .key-band.past {
+    background: var(--mark-past);
+  }
+
+  .key-band.part,
+  .band.part {
+    background: repeating-linear-gradient(135deg, var(--mark) 0 3px, color-mix(in srgb, var(--mark) 45%, transparent) 3px 6px);
+  }
+
+  .axis,
+  .row {
+    display: grid;
+    grid-template-columns: var(--name) 1fr;
+    align-items: stretch;
+  }
+
+  .axis {
+    position: sticky;
+    top: var(--header-height, 0);
+    z-index: 3;
+    height: 22px;
+    color: var(--muted);
+    font-size: 0.6875rem;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .track {
+    position: relative;
+    overflow: hidden;
+    margin-right: 8px;
+  }
+
+  /* Anything placed on the axis by its years. */
+  .tick,
+  .grid,
+  .life,
+  .heritage,
+  .band,
+  .buy {
+    position: absolute;
+    left: calc((var(--from) - var(--start)) / var(--span) * 100%);
+  }
+
+  .life,
+  .heritage,
+  .band {
+    width: calc((var(--to) - var(--from)) / var(--span) * 100%);
+  }
+
+  .tick {
+    top: 4px;
+    translate: -50% 0;
+    display: none;
+  }
+
+  .tick:first-child {
+    translate: 0 0;
+  }
+
+  [data-scale='all'] .tick.major,
+  [data-scale='recent'] .tick.recent {
+    display: block;
+  }
+
+  /* On a narrow screen the full view labels each century only. */
+  @media (max-width: 640px) {
+    [data-scale='all'] .tick.major:not(.century) {
+      display: none;
+    }
+  }
+
+  .grid {
+    top: 0;
+    bottom: 0;
+    display: none;
+    border-left: 1px solid var(--line);
+  }
+
+  [data-scale='all'] .grid.major,
+  [data-scale='recent'] .grid {
+    display: block;
+  }
+
+  .owner {
+    margin: 0;
+  }
+
+  .rows {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .row {
+    --lanes: 1;
+    height: calc(var(--row) + (var(--lanes) - 1) * 14px);
+  }
+
+  .row:hover {
+    background: color-mix(in srgb, var(--text) 4%, transparent);
+  }
+
+  .row.head {
+    height: auto;
+    min-height: 30px;
+    margin-top: 16px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .name {
+    overflow: hidden;
+    align-self: center;
+    padding-right: 10px;
+    font-size: 0.8125rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .head .name {
+    padding: 4px 10px 4px 0;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    white-space: normal;
+  }
+
+  .count {
+    display: block;
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+
+  .life,
+  .heritage {
+    top: calc(50% - 1px);
+    height: 2px;
+    background: var(--life);
+  }
+
+  .heritage {
+    height: 0;
+    background: none;
+    border-top: 2px dotted var(--life);
+  }
+
+  /* A short upright stroke where the brand stopped trading. */
+  .life.ended::after {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 2px;
+    height: 10px;
+    content: '';
+    background: var(--life);
+  }
+
+  /* Overlapping holdings stack, centered on the lifeline. */
+  .band {
+    --lane: 0;
+    top: calc(50% - var(--lanes) * 7px + var(--lane) * 14px);
+    height: 13px;
+    container-type: inline-size;
+    background: var(--mark);
+    border-radius: 2px;
+  }
+
+  .band.past {
+    background: var(--mark-past);
+  }
+
+  .owner-name {
+    display: block;
+    overflow: hidden;
+    padding: 0 4px 0 8px;
+    color: var(--on-mark);
+    font-size: 0.625rem;
+    line-height: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  /* On stripes the name gets a solid backing to stay readable. */
+  .band.part .owner-name {
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-right: 6px;
+    background: var(--mark);
+    border-radius: 0 2px 2px 0;
+  }
+
+  .band.past .owner-name {
+    color: var(--text);
+  }
+
+  /* The owner's name shows only where the band is wide enough to read it. */
+  @container (max-width: 44px) {
+    .owner-name {
+      display: none;
+    }
+  }
+
+  .buy {
+    --lane: 0;
+    z-index: 2;
+    top: calc(50% - var(--lanes, 1) * 7px + var(--lane) * 14px + 1.5px);
+    width: 10px;
+    height: 10px;
+    translate: -50% 0;
+    rotate: 45deg;
+    background: var(--mark);
+    border: 2px solid var(--surface);
+    box-sizing: border-box;
+  }
+
+  .buy.past {
+    background: var(--surface);
+    border-color: var(--mark);
+  }
+
+  .buy:hover,
+  .buy:focus-visible {
+    outline: 2px solid var(--accent);
+  }
+
+  .tip {
+    position: absolute;
+    z-index: 4;
+    max-width: 320px;
+    padding: 6px 9px;
+    color: var(--text);
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    white-space: pre-line;
+    pointer-events: none;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.12);
+  }
+
+  .tip::first-line {
+    font-weight: 600;
+  }
+</style>
+
+<script>
+  for (const section of document.querySelectorAll<HTMLElement>('[data-timeline]')) {
+    // The years shown are remembered in this browser where storage allows.
+    const buttons = [...section.querySelectorAll<HTMLButtonElement>('[data-scale-to]')];
+    const setScale = (scale: string) => {
+      section.dataset.scale = scale;
+      for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.scaleTo === scale));
+    };
+    try {
+      const saved = localStorage.getItem('timeline.scale');
+      if (saved && buttons.some((button) => button.dataset.scaleTo === saved)) setScale(saved);
+    } catch {
+      // Keeps the default.
+    }
+    for (const button of buttons) {
+      button.addEventListener('click', () => {
+        setScale(button.dataset.scaleTo!);
+        try {
+          localStorage.setItem('timeline.scale', button.dataset.scaleTo!);
+        } catch {
+          // Not remembered this time.
+        }
+      });
+    }
+
+    // One tooltip, beside the pointer: a purchase on a group's row, or a brand's whole story on its own.
+    const tip = section.querySelector<HTMLElement>('.tip')!;
+    const place = (x: number, y: number) => {
+      const bounds = section.getBoundingClientRect();
+      tip.style.left = `${Math.max(4, Math.min(x - bounds.left + 14, bounds.width - tip.offsetWidth - 4))}px`;
+      tip.style.top = `${y - bounds.top + 16}px`;
+    };
+    section.addEventListener('pointermove', (event) => {
+      const target = (event.target as HTMLElement).closest<HTMLElement>('[data-tip]');
+      if (!target || !(event.target as HTMLElement).closest('.track')) {
+        tip.hidden = true;
+        return;
+      }
+      if (tip.textContent !== target.dataset.tip) tip.textContent = target.dataset.tip!;
+      tip.hidden = false;
+      place(event.clientX, event.clientY);
+    });
+    section.addEventListener('pointerleave', () => (tip.hidden = true));
+    section.addEventListener('focusin', (event) => {
+      const target = (event.target as HTMLElement).closest<HTMLElement>('[data-tip]');
+      if (!target) return;
+      tip.textContent = target.dataset.tip!;
+      tip.hidden = false;
+      const rect = (event.target as HTMLElement).getBoundingClientRect();
+      place(rect.right, rect.top);
+    });
+    section.addEventListener('focusout', () => (tip.hidden = true));
+  }
+</script>

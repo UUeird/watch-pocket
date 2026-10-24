@@ -87,11 +87,39 @@ test.describe('Ownership groups', () => {
     await page.goto('ownership-groups/');
     await expect(page.locator('.card').first()).toContainText('Swatch Group');
   });
+});
 
-  test('timeline links each purchase to its brand', async ({ page }) => {
-    await page.goto('ownership-groups/');
-    const dots = page.locator('.timeline .dot');
-    expect(await dots.count()).toBeGreaterThan(20);
-    await expect(dots.first()).toHaveAttribute('href', /\/brands\//);
+test.describe('Timeline', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto('timeline/');
+  });
+
+  test('groups brands under their current owner, each purchase marked', async ({ page }) => {
+    const lvmh = page.locator('section.owner[aria-label="LVMH"]');
+    const zenith = lvmh.locator('li.row', { hasText: 'Zenith' });
+    await expect(zenith.locator('.band')).toContainText('LVMH');
+    await expect(zenith.locator('.buy')).toHaveAttribute('href', /\/ownership-groups\/lvmh\//);
+    // The group's own row marks every purchase, linked to the brand bought.
+    const bought = lvmh.locator('.head .buy');
+    expect(await bought.count()).toBeGreaterThan(2);
+    await expect(bought.first()).toHaveAttribute('href', /\/brands\//);
+    await expect(page.locator('section.owner').last()).toHaveAttribute('aria-label', 'Independent');
+  });
+
+  test('stacks part-owners held at the same time', async ({ page }) => {
+    const kenissi = page.locator('li.row[data-id="kenissi"]').first();
+    const [first, second] = await kenissi.locator('.band').all();
+    const a = (await first.boundingBox())!;
+    const b = (await second.boundingBox())!;
+    expect(a.y + a.height).toBeLessThanOrEqual(b.y + 1);
+  });
+
+  test('filters hide owners with no matching brands, and the years shown are remembered', async ({ page }) => {
+    await page.getByPlaceholder('Search brands').fill('zenith');
+    await expect(page.locator('section.owner[aria-label="LVMH"]')).toBeVisible();
+    await expect(page.locator('section.owner[aria-label="Swatch Group"]')).toBeHidden();
+    await page.getByRole('button', { name: 'Since 1950' }).click();
+    await page.reload();
+    await expect(page.locator('[data-timeline]')).toHaveAttribute('data-scale', 'recent');
   });
 });

@@ -1,13 +1,11 @@
 ---
 import Filters from '../../components/Filters.astro';
 import FlagBadge from '../../components/FlagBadge.astro';
-import OwnershipTimeline from '../../components/OwnershipTimeline.astro';
 import Base from '../../layouts/Base.astro';
 import { describeControl, formatStake, href, label, loadCatalog, plural, type Brand, type Group } from '../../lib/catalog';
 
 const catalog = await loadCatalog();
-const { groups, brandsOf, licensesOf, holdingsOf } = catalog;
-const holdings = groups.map((group) => ({ group, records: holdingsOf({ collection: 'groups', id: group.id }) }));
+const { groups, brandsOf, licensesOf } = catalog;
 
 // A brand as it sits in a group: owned outright, owned in part (with the stake), or made under license.
 type Tile = { brand: Brand; stake?: number | 'unknown'; licensed?: boolean };
@@ -80,8 +78,6 @@ const stakeNote = (stake: Tile['stake']) =>
     ]}
   />
 
-  <OwnershipTimeline holdings={holdings} />
-
   <h2 class="section-heading">All groups</h2>
   <ul class="legend" aria-label="Key">
     <li><span class="key-tile" /> Owned outright</li>
@@ -89,7 +85,7 @@ const stakeNote = (stake: Tile['stake']) =>
     <li><span class="key-tile licensed" /> Made under license, not owned</li>
   </ul>
 
-  <p class="order-note">Largest first, by number of brands. <a href={href('/chart/')}>See them on the chart</a>.</p>
+  <p class="order-note">Largest first, by number of brands. <a href={href('/chart/')}>See them on the chart</a>, or <a href={href('/timeline/')}>when each was bought</a>.</p>
   <div class="cards" id="group-cards">
     {
       held.map(({ group, owned, licensed, tiles }) => (

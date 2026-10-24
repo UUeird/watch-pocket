@@ -1,0 +1,73 @@
+---
+import Filters from '../../components/Filters.astro';
+import Timeline from '../../components/Timeline.astro';
+import Base from '../../layouts/Base.astro';
+import { href, label, loadCatalog, plural, type Brand } from '../../lib/catalog';
+import { sectionsOf } from '../../lib/timeline';
+
+const { brands, groups, ownerName, holdingsOf } = await loadCatalog();
+const sections = sectionsOf(brands, groups, ownerName, (group) => href(`/ownership-groups/${group.id}/`));
+const purchases = new Map(
+  groups.map((group) => [
+    group.id,
+    holdingsOf({ collection: 'groups', id: group.id })
+      .filter((record) => record.from !== undefined)
+      .map(({ brand, from, to }) => ({ brand, from: from!, to })),
+  ]),
+);
+const shown = new Set(sections.flatMap(({ rows }) => rows.map((row) => row.brand.id))).size;
+const undated = brands.length - shown;
+
+const distinct = (values: (string | undefined)[]) => [...new Set(values.filter((value) => value !== undefined))].sort();
+const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));
+// The Owner filter matches a brand's current groups, or Independent for a brand with none.
+const ownerIds = (brand: Brand) => {
+  const owners = brand.data.ownership.filter((record) => record.to === undefined && record.owner.collection === 'groups');
+  return owners.length > 0 ? owners.map((record) => record.owner.id) : brand.data.ownership.some((record) => record.to === undefined) ? [] : ['independent'];
+};
+const filterData = (brand: Brand) => ({
+  'data-id': brand.id,
+  'data-q': brand.data.name.toLowerCase(),
+  'data-owner': ownerIds(brand).join('|'),
+  'data-origin': brand.data.origin,
+  'data-segment': brand.data.segment,
+});
+---
+
+<Base title="Timeline">
+  <h1>Timeline</h1>
+  <p class="lede">
+    Each brand's life from its founding to today, sorted under the group that owns it now. A diamond marks the year a
+    group bought it, and a band runs for as long as that group held it.
+  </p>
+
+  <Filters
+    target="timeline-rows"
+    noun="brands"
+    placeholder="Search brands"
+    filters={[
+      {
+        name: 'owner',
+        label: 'Owner',
+        options: [{ value: 'independent', label: 'Independent' }, ...groups.map((group) => ({ value: group.id, label: group.data.name }))],
+      },
+      { name: 'origin', label: 'Nation of origin', options: options(distinct(brands.map((brand) => brand.data.origin))) },
+      { name: 'segment', label: 'Segment', options: options(distinct(brands.map((brand) => brand.data.segment))) },
+    ]}
+  />
+
+  <Timeline id="timeline-rows" sections={sections} purchases={purchases} filterData={filterData} />
+
+  <p class="note">
+    {plural(undated, 'brand')} with no years on record yet {undated === 1 ? 'is' : 'are'} left out. A purchase with no year
+    is left off its brand's line.
+  </p>
+</Base>
+
+<style>
+  .note {
+    margin: 24px 0 0;
+    color: var(--muted);
+    font-size: 0.8125rem;
+  }
+</style>
