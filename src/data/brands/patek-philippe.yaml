@@ -8,6 +8,7 @@ logoOnDarkCredit:
   source: https://commons.wikimedia.org/wiki/File:Patek_Philippe_Logo2.png
   license: Public domain
 origin: Switzerland
+control: family
 periods: [{ from: 1839 }]
 segment: haute
 revenue:

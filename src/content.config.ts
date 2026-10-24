@@ -89,6 +89,10 @@ const partsNeedLogo = (record: LogoRecord) =>
   record.logo !== undefined;
 const partsNeedLogoMessage = { message: 'A `logomark`, `wordmark`, `logoOnDark` or `logomarkOnDark` goes with a `logo`: give the whole `logo` too.' };
 
+// Who controls a company: listed on a stock exchange, held by one family, held privately by others (founders,
+// partners, private equity), or owned by a foundation.
+const control = z.enum(['public', 'family', 'private', 'foundation']).optional();
+
 const groups = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/data/groups' }),
   schema: ({ image }) =>
@@ -97,9 +101,8 @@ const groups = defineCollection({
         name: z.string(),
         ...logoFields(image),
         country,
-        // Who controls the company: listed on a stock exchange, held privately (a family, founder or partners),
-        // or owned by a foundation. A group with a `parent` is a subsidiary and leaves this out.
-        control: z.enum(['public', 'private', 'foundation']).optional(),
+        // Who controls the company. A group with a `parent` is a subsidiary and leaves this out.
+        control,
         founded: z.number().int().optional(),
         // The year a group stopped existing, merged into another or wound up. Its brands' records keep it as a past owner.
         dissolved: z.number().int().optional(),
@@ -229,6 +232,8 @@ const brands = defineCollection({
         independent: z
           .object({ sources: sources.refine((list) => list.length > 0, { message: 'Independence needs at least one source.' }) })
           .optional(),
+        // Who controls the brand, for one no group or other brand owns; an owned brand is controlled as its owner is.
+        control,
         // Companies that make and sell the brand's watches under license without owning the brand. Dated like ownership.
         licensees: z
           .array(z.object({ licensee: reference('groups'), ...tenure }).refine(endsAfterStart, tenureEnds))
@@ -236,6 +241,9 @@ const brands = defineCollection({
           .default([]),
         // For facts on this brand other than ownership and licensing, which cite their own.
         sources,
+      })
+      .refine((brand) => brand.control === undefined || brand.ownership.every((record) => record.to !== undefined), {
+        message: 'Give `control` only for a brand with no current owner; an owned brand is controlled as its owner is.',
       })
       .refine((brand) => brand.periods.length === 0 || brand.status === undefined, {
         message: 'Set either `periods` or `status`, not both: status is derived from periods.',

@@ -4,12 +4,12 @@ import Filters from '../../components/Filters.astro';
 import FoundingChart from '../../components/FoundingChart.astro';
 import Owners from '../../components/Owners.astro';
 import Base from '../../layouts/Base.astro';
-import { activeGroups, brandYears, currentOwners, href, label, loadCatalog } from '../../lib/catalog';
+import { activeGroups, brandYears, controlNames, currentOwners, href, label, loadCatalog } from '../../lib/catalog';
 import { measuresOf } from '../../lib/chart-data';
 import { metrics } from '../../lib/metrics';
 
 const catalog = await loadCatalog();
-const { brands, groups, linesOf } = catalog;
+const { brands, groups, linesOf, brandControl } = catalog;
 // The table's measure column can show any per-brand figure; a count of one brand each says nothing.
 const measures = measuresOf(catalog);
 const columnMetrics = metrics.filter((metric) => metric.id !== 'brands');
@@ -51,6 +51,7 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
           ...activeGroups(groups).map((group) => ({ value: group.id, label: group.data.name })),
         ],
       },
+      { name: 'control', label: 'Control', options: Object.entries(controlNames).map(([value, name]) => ({ value, label: name })) },
       { name: 'origin', label: 'Nation of origin', options: options(origins) },
       { name: 'segment', label: 'Segment', options: options(segments) },
       { name: 'makes', label: 'Makes', options: options(makes) },
@@ -94,6 +95,7 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
                 data-id={brand.id}
                 data-q={[brand.data.name, ...lineNames].join(' ').toLowerCase()}
                 data-owner={groupOwnerIds(brand).join('|')}
+                data-control={brandControl(brand)?.control}
                 data-segment={brand.data.segment}
                 data-origin={brand.data.origin}
                 data-makes={makes.join('|')}

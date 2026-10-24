@@ -125,3 +125,19 @@ test.describe('Timeline', () => {
     await expect(page.locator('[data-timeline]')).toHaveAttribute('data-scale', 'recent');
   });
 });
+
+test.describe('Control', () => {
+  test("a brand shows who controls it, its own or its owner's", async ({ page }) => {
+    await page.goto('brands/patek-philippe/');
+    await expect(page.locator('.facts')).toContainText('Family-owned');
+    await page.goto('brands/omega/');
+    await expect(page.locator('.facts')).toContainText('Publicly traded, through Swatch Group');
+  });
+
+  test('the brands list filters by control', async ({ page }) => {
+    await page.goto('brands/');
+    await page.locator('select[name="control"]').selectOption('family');
+    await expect(page.locator('#brands tr[data-id="patek-philippe"]')).toBeVisible();
+    await expect(page.locator('#brands tr[data-id="omega"]')).toBeHidden();
+  });
+});

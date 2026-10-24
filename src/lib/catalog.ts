@@ -18,7 +18,8 @@ export const countryHref = (country: string) => href(`/countries/${countrySlug(c
 export const label = (value: string) => value.replace(/-/g, ' ');
 
 // Who controls a group, in words. A group with a parent is that parent's subsidiary.
-const controlNames = { public: 'Publicly traded', private: 'Privately held', foundation: 'Foundation-owned' };
+export const controlNames = { public: 'Publicly traded', family: 'Family-owned', private: 'Privately held', foundation: 'Foundation-owned' };
+export type Control = keyof typeof controlNames;
 export const describeControl = ({ data: { control, parent, dissolved } }: Group) =>
   dissolved !== undefined ? `Dissolved in ${dissolved}` : parent || !control ? 'Subsidiary' : controlNames[control];
 
@@ -97,6 +98,20 @@ async function buildCatalog() {
     brands
       .flatMap((brand) => brand.data.ownership.filter((record) => owns(record.owner, owner)).map((record) => ({ brand, ...record })))
       .sort((a, b) => Number(a.to !== undefined) - Number(b.to !== undefined));
+  // Who controls a brand: its own `control` when nothing owns it, or its owner's, through any parent groups and
+  // owning brands. `via` names the company at the top of that chain. Unknown for a brand with several current owners.
+  const groupControl = (group: Group): { control: Control; via?: string } | undefined =>
+    group.data.parent ? groupControl(groupsById.get(group.data.parent.id)!) : group.data.control && { control: group.data.control, via: group.data.name };
+  const brandControl = (brand: Brand): { control: Control; via?: string } | undefined => {
+    const owners = currentOwners(brand);
+    if (owners.length === 0) return brand.data.control ? { control: brand.data.control } : undefined;
+    if (owners.length > 1) return undefined;
+    const [owner] = owners;
+    if (owner.collection === 'groups') return groupControl(groupsById.get(owner.id)!);
+    const parent = brandsById.get(owner.id)!;
+    const above = brandControl(parent);
+    return above && { control: above.control, via: above.via ?? parent.data.name };
+  };
   const brandsOf = (groupId: string) =>
     brands.filter((brand) => currentOwners(brand).some((owner) => owns(owner, { collection: 'groups', id: groupId })));
   // Brands a group currently makes and sells under license, without owning them.
@@ -144,5 +159,5 @@ async function buildCatalog() {
     const brand = brands.find((candidate) => candidate.id === line.data.brand.id)!;
     return model.data.references.map((reference) => ({ reference, model, line, brand }));
   });
-  return { brands, groups, groupsById, ownerName, holdingsOf, brandsOf, licensesOf, lines, linesOf, models, modelsOf, collaborationsOf, references };
+  return { brands, groups, groupsById, ownerName, brandControl, holdingsOf, brandsOf, licensesOf, lines, linesOf, models, modelsOf, collaborationsOf, references };
 }

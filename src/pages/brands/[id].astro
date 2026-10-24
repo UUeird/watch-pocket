@@ -5,7 +5,7 @@ import Holdings from '../../components/Holdings.astro';
 import Logo from '../../components/Logo.astro';
 import SourceLinks from '../../components/SourceLinks.astro';
 import Sources from '../../components/Sources.astro';
-import { brandStatus, formatPeriods, formatStake, href, label, lineHref, loadCatalog, ownerHref, type Brand } from '../../lib/catalog';
+import { brandStatus, controlNames, formatPeriods, formatStake, href, label, lineHref, loadCatalog, ownerHref, type Brand } from '../../lib/catalog';
 
 export async function getStaticPaths() {
   const { brands } = await loadCatalog();
@@ -17,7 +17,7 @@ interface Props {
 }
 
 const { brand } = Astro.props;
-const { brands, groupsById, ownerName, holdingsOf, linesOf, collaborationsOf } = await loadCatalog();
+const { brands, groupsById, ownerName, brandControl, holdingsOf, linesOf, collaborationsOf } = await loadCatalog();
 const self = { collection: 'brands' as const, id: brand.id };
 const holdings = holdingsOf(self);
 const collaborations = collaborationsOf(brand.id);
@@ -29,6 +29,7 @@ const showStake = ownership.some((record) => record.stake !== undefined);
 const showBasis = ownership.some((record) => record.basis !== undefined);
 const showOwnerSources = ownership.some((record) => record.sources.length > 0);
 const showLicenseeSources = licensees.some((record) => record.sources.length > 0);
+const control = brandControl(brand);
 const descriptors = [segment, ...tags, copycat && 'copycat', brandStatus(brand)];
 ---
 
@@ -38,6 +39,17 @@ const descriptors = [segment, ...tags, copycat && 'copycat', brandStatus(brand)]
   <p class="lede cap">{descriptors.filter((value) => typeof value === 'string').map(label).join(' · ')}</p>
 
   <dl class="facts">
+    {
+      control && (
+        <>
+          <dt>Control</dt>
+          <dd>
+            {controlNames[control.control]}
+            {control.via && `, through ${control.via}`}
+          </dd>
+        </>
+      )
+    }
     {
       makes.length > 0 && (
         <>
