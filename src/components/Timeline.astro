@@ -34,10 +34,10 @@ const span = (from: number, to?: number) => ({ '--from': from, '--to': to ?? end
   <ul class="key" aria-label="Key">
     <li><span class="key-life" /> Trading</li>
     <li><span class="key-heritage" /> Claimed heritage</li>
-    <li><span class="key-buy" /> Bought by a group</li>
-    <li><span class="key-band" /> Held by that group</li>
+    <li><span class="key-band" /> Held by a group</li>
     <li><span class="key-band past" /> Held, since sold</li>
     <li><span class="key-band part" /> Part-owned</li>
+    <li><span class="key-buy" /> A group's purchase, on its own row</li>
   </ul>
 
   <div class="axis" aria-hidden="true">
@@ -87,15 +87,16 @@ const span = (from: number, to?: number) => ({ '--from': from, '--to': to ?? end
                       <span class:list={['life', { ended: to !== undefined }]} style={span(from, to)} />
                     ))}
                     {line.holdings.map((holding) => (
-                      <span
+                      <a
                         class:list={['band', { past: holding.to !== undefined, part: holding.stake !== undefined }]}
                         style={{ ...span(holding.from, holding.to), '--lane': holding.lane }}
+                        href={ownerHref(holding)}
+                        aria-label={`${line.brand.data.name}: ${describeHolding(holding)}`}
+                        data-tip={`${line.brand.data.name}\n${describeHolding(holding)}`}
+                        tabindex="-1"
                       >
                         <span class="owner-name">{holding.name}</span>
-                      </span>
-                    ))}
-                    {line.holdings.map((holding) => (
-                      <a class="buy" style={{ '--from': holding.from, '--lane': holding.lane }} href={ownerHref(holding)} aria-label={describeHolding(holding)} tabindex="-1" />
+                      </a>
                     ))}
                   </span>
                 </li>
@@ -373,6 +374,14 @@ const span = (from: number, to?: number) => ({ '--from': from, '--to': to ?? end
     container-type: inline-size;
     background: var(--mark);
     border-radius: 2px;
+    /* A thin gap at the start, so one owner handing straight to the next shows as a divider. */
+    box-shadow: inset 2px 0 0 var(--bg);
+  }
+
+  .band:hover,
+  .band:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
   }
 
   .band.past {
@@ -382,7 +391,7 @@ const span = (from: number, to?: number) => ({ '--from': from, '--to': to ?? end
   .owner-name {
     display: block;
     overflow: hidden;
-    padding: 0 4px 0 8px;
+    padding: 0 4px 0 6px;
     color: var(--on-mark);
     font-size: 0.625rem;
     line-height: 13px;

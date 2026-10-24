@@ -97,8 +97,10 @@ test.describe('Timeline', () => {
   test('groups brands under their current owner, each purchase marked', async ({ page }) => {
     const lvmh = page.locator('section.owner[aria-label="LVMH"]');
     const zenith = lvmh.locator('li.row', { hasText: 'Zenith' });
-    await expect(zenith.locator('.band')).toContainText('LVMH');
-    await expect(zenith.locator('.buy')).toHaveAttribute('href', /\/ownership-groups\/lvmh\//);
+    const band = zenith.locator('.band');
+    await expect(band).toContainText('LVMH');
+    await expect(band).toHaveAttribute('href', /\/ownership-groups\/lvmh\//);
+    await expect(zenith.locator('.buy')).toHaveCount(0);
     // The group's own row marks every purchase, linked to the brand bought.
     const bought = lvmh.locator('.head .buy');
     expect(await bought.count()).toBeGreaterThan(2);
