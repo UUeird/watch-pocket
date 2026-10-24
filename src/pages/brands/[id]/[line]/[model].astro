@@ -3,6 +3,8 @@ import Breadcrumb from '../../../../components/Breadcrumb.astro';
 import ModelPhoto from '../../../../components/ModelPhoto.astro';
 import Base from '../../../../layouts/Base.astro';
 import Sources from '../../../../components/Sources.astro';
+import Tiles from '../../../../components/Tiles.astro';
+import { referencePhotos } from '../../../../lib/tile-photos';
 import {
   describeBezel,
   describeBracelet,
@@ -62,6 +64,20 @@ const { name, references, sources } = model.data;
 
   <h2>References</h2>
   {references.length === 0 && <p>No references recorded yet.</p>}
+  {
+    references.length > 0 && (
+      <Tiles
+        label="References"
+        tiles={references.map((reference) => ({
+          href: refHref(model, reference),
+          title: reference.ref,
+          detail: [formatPeriods(reference.periods), reference.caseSize && `${reference.caseSize} mm`].filter(Boolean).join(' · '),
+          photos: referencePhotos(model, reference, brand.data.name),
+        }))}
+      />
+    )
+  }
+  {references.length > 0 && <h3>Compare references</h3>}
   <div class="table-wrap" hidden={references.length === 0}>
     <table>
       <thead>

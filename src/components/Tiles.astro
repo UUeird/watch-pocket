@@ -1,0 +1,182 @@
+---
+// A grid of tiles for lines, models or references: a photo on top and a label that is always shown under it.
+// A tile with several photos cycles through them while pointed at or focused. One with none shows a plain watch.
+import { Image } from 'astro:assets';
+import type { TilePhoto } from '../lib/tile-photos';
+
+interface Props {
+  label: string;
+  tiles: { href: string; title: string; detail?: string; photos: TilePhoto[] }[];
+}
+
+const { label, tiles } = Astro.props;
+---
+
+<ul class="tiles" aria-label={label}>
+  {
+    tiles.map(({ href, title, detail, photos }) => (
+      <li>
+        <a href={href} data-cycle={photos.length > 1 ? '' : undefined}>
+          <span class="frame">
+            {photos[0]?.general && <span class="general">Model photo</span>}
+            {photos.map((photo, index) =>
+              'file' in photo ? (
+                <Image src={photo.file} alt={index === 0 ? photo.alt : ''} widths={[240, 480]} sizes="240px" loading="lazy" hidden={index > 0} />
+              ) : (
+                <img
+                  src={photo.src}
+                  alt={index === 0 ? photo.alt : ''}
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  hidden={index > 0}
+                  onerror="this.remove()"
+                />
+              ),
+            )}
+            <svg class="blank" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M18 4h12l2 9M18 4l-2 9M18 44h12l2-9M18 44l-2-9" />
+              <circle cx="24" cy="24" r="12" />
+              <path d="M24 17v7l5 3" />
+            </svg>
+          </span>
+          <span class="label">
+            <strong>{title}</strong>
+            {detail && <span class="detail">{detail}</span>}
+          </span>
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+    margin: 0 0 32px;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  a:hover,
+  a:focus-visible {
+    border-color: var(--accent);
+  }
+
+  a:hover strong,
+  a:focus-visible strong {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  .frame {
+    position: relative;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    background: #ffffff;
+  }
+
+  /* Photos are cut out on white or shot on white, so the frame stays white in dark mode too. */
+  .frame :global(img) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+    box-sizing: border-box;
+    background: #ffffff;
+  }
+
+  .frame :global(img[hidden]) {
+    display: none;
+  }
+
+  .general {
+    position: absolute;
+    z-index: 1;
+    top: 6px;
+    left: 6px;
+    padding: 1px 6px;
+    color: #4a4740;
+    font-size: 0.6875rem;
+    background: rgb(255 255 255 / 0.85);
+    border: 1px solid #ddd9cf;
+    border-radius: 999px;
+  }
+
+  /* Shown only where no photo is left in the frame. */
+  .blank {
+    width: 40%;
+    fill: none;
+    stroke: #b9b5ab;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .frame:has(img) .blank {
+    display: none;
+  }
+
+  .frame:not(:has(img)) {
+    background: color-mix(in srgb, var(--text) 5%, var(--surface));
+  }
+
+  .label {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 10px 10px;
+    border-top: 1px solid var(--line);
+  }
+
+  strong {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  .detail {
+    color: var(--muted);
+    font-size: 0.8125rem;
+  }
+</style>
+
+<script>
+  // A tile with several photos steps through them while pointed at or focused, then returns to the first.
+  const still = matchMedia('(prefers-reduced-motion: reduce)');
+  for (const tile of document.querySelectorAll<HTMLElement>('[data-cycle]')) {
+    let timer = 0;
+    const photos = () => [...tile.querySelectorAll<HTMLImageElement>('.frame img')];
+    const show = (index: number) => photos().forEach((photo, at) => (photo.hidden = at !== index));
+    const start = () => {
+      if (still.matches || timer) return;
+      let index = 0;
+      timer = window.setInterval(() => show((index = (index + 1) % photos().length)), 1100);
+    };
+    const stop = () => {
+      clearInterval(timer);
+      timer = 0;
+      show(0);
+    };
+    tile.addEventListener('pointerenter', start);
+    tile.addEventListener('pointerleave', stop);
+    tile.addEventListener('focus', start);
+    tile.addEventListener('blur', stop);
+  }
+</script>

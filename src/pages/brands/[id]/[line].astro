@@ -1,6 +1,8 @@
 ---
 import Breadcrumb from '../../../components/Breadcrumb.astro';
 import Base from '../../../layouts/Base.astro';
+import Tiles from '../../../components/Tiles.astro';
+import { modelPhotos } from '../../../lib/tile-photos';
 import { formatPeriods, href, loadCatalog, plural, type Brand, type Line, type Model } from '../../../lib/catalog';
 
 export async function getStaticPaths() {
@@ -41,13 +43,15 @@ const discontinued = periods.at(-1)?.to !== undefined;
     models.length === 0 ? (
       <p>No models recorded yet.</p>
     ) : (
-      <ul>
-        {models.map((model) => (
-          <li>
-            <a href={href(`/brands/${model.id}/`)}>{model.data.name}</a> ({plural(model.data.references.length, 'reference')})
-          </li>
-        ))}
-      </ul>
+      <Tiles
+        label="Models"
+        tiles={models.map((model) => ({
+          href: href(`/brands/${model.id}/`),
+          title: model.data.name,
+          detail: plural(model.data.references.length, 'reference'),
+          photos: modelPhotos(model, brand.data.name),
+        }))}
+      />
     )
   }
 </Base>

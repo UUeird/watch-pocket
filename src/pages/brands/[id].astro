@@ -4,8 +4,10 @@ import CountryLink from '../../components/CountryLink.astro';
 import Holdings from '../../components/Holdings.astro';
 import Logo from '../../components/Logo.astro';
 import SourceLinks from '../../components/SourceLinks.astro';
+import Tiles from '../../components/Tiles.astro';
+import { linePhotos } from '../../lib/tile-photos';
 import Sources from '../../components/Sources.astro';
-import { brandStatus, formatPeriods, formatStake, href, label, lineHref, loadCatalog, ownerHref, type Brand } from '../../lib/catalog';
+import { brandStatus, formatPeriods, formatStake, href, label, lineHref, loadCatalog, ownerHref, plural, type Brand } from '../../lib/catalog';
 
 export async function getStaticPaths() {
   const { brands } = await loadCatalog();
@@ -17,7 +19,7 @@ interface Props {
 }
 
 const { brand } = Astro.props;
-const { brands, groupsById, ownerName, holdingsOf, linesOf, collaborationsOf } = await loadCatalog();
+const { brands, groupsById, ownerName, holdingsOf, linesOf, modelsOf, collaborationsOf } = await loadCatalog();
 const self = { collection: 'brands' as const, id: brand.id };
 const holdings = holdingsOf(self);
 const collaborations = collaborationsOf(brand.id);
@@ -125,26 +127,18 @@ const descriptors = [segment, ...tags, copycat && 'copycat', brandStatus(brand)]
     lines.length > 0 && (
       <>
         <h2>Product lines</h2>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Line</th>
-                <th>On sale</th>
-              </tr>
-            </thead>
-            <tbody>
-              {lines.map((line) => (
-                <tr>
-                  <td>
-                    <a href={lineHref(line)}>{line.data.name}</a>
-                  </td>
-                  <td class="num">{formatPeriods(line.data.periods) || 'Not recorded'}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <Tiles
+          label="Product lines"
+          tiles={lines.map((line) => {
+            const models = modelsOf(line.id);
+            return {
+              href: lineHref(line),
+              title: line.data.name,
+              detail: [models.length > 0 && plural(models.length, 'model'), formatPeriods(line.data.periods)].filter(Boolean).join(' · '),
+              photos: linePhotos(models, name),
+            };
+          })}
+        />
       </>
     )
   }

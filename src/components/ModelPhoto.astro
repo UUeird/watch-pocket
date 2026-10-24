@@ -64,8 +64,9 @@ const altOf = (ref: string | undefined) => (ref ? `${brandName} ${name} ${ref}` 
       )}
       {
         website && (
-          <a class="official" href={website}>
+          <a class="official" href={website} target="_blank" rel="noopener">
             See it on {sourceHost(website)} <span aria-hidden="true">↗</span>
+            <span class="visually-hidden">(opens in a new tab)</span>
           </a>
         )
       }
@@ -87,6 +88,15 @@ const altOf = (ref: string | undefined) => (ref ? `${brandName} ${name} ${ref}` 
 </script>
 
 <style>
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
   .model-photo {
     display: grid;
     gap: 10px;

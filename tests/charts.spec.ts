@@ -95,3 +95,20 @@ test.describe('Ownership groups', () => {
     await expect(dots.first()).toHaveAttribute('href', /\/brands\//);
   });
 });
+
+test.describe('Tiles', () => {
+  test('a brand shows its lines as tiles, each labeled and linked', async ({ page }) => {
+    await page.goto('brands/richard-mille/');
+    const tiles = page.getByRole('list', { name: 'Product lines' }).locator('li');
+    expect(await tiles.count()).toBeGreaterThan(10);
+    await expect(tiles.first().locator('strong')).toBeVisible();
+    await expect(tiles.first().locator('a')).toHaveAttribute('href', /\/brands\/richard-mille\//);
+  });
+
+  test("a reference with no photo of its own borrows the model's, marked as such", async ({ page }) => {
+    await page.goto('brands/rolex/submariner/submariner-date/');
+    const tiles = page.getByRole('list', { name: 'References' }).locator('li');
+    await expect(tiles.filter({ hasText: '126610LN' })).toBeVisible();
+    await expect(tiles.filter({ hasText: '126610LN' }).locator('.general')).toHaveText('Model photo');
+  });
+});
