@@ -443,9 +443,10 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     rotate: 180deg;
   }
 
+  /* Filled to its share of the cell, so a small logo file is grown as well as a large one shrunk. */
   .canvas :global(.brand img) {
-    max-width: 80%;
-    max-height: 60%;
+    width: 80%;
+    height: 60%;
     object-fit: contain;
   }
 
