@@ -3,3 +3,27 @@ line: richard-mille/rm-65
 website: https://www.richardmille.com/collections/rm-65-01-automatic-split-seconds-chronograph
 sources:
   - https://www.richardmille.com/collections/rm-65-01-automatic-split-seconds-chronograph
+  - https://www.timeandwatches.com/2020/12/richard-mille-rm-65-01-automatic-split.html
+  - https://watchesbysjx.com/2020/12/richard-mille-rm-65-01-automatic-split-seconds-chronograph.html
+  - https://wristcheck.com/us/buy/richard-mille/rm65-01-rm65-01
+  - https://happyjewelers.com/products/richard-mille-rm65-01-44-50mm-skeleton-dial-watch-ref-rm-65-01-ca
+references:
+  - ref: RM65-01 CA
+    officialPhoto:
+      src: https://media.richardmille.com/wp-content/uploads/2020/12/08120017/richard-mille-rm-65-01-automatic-split-seconds-chronograph-68942.png
+      page: https://www.richardmille.com/collections/rm-65-01-automatic-split-seconds-chronograph
+    periods: [{ from: 2020 }]
+    price: { amount: 270000, currency: CHF, year: 2020 }
+    caseSize: 44.5
+    metals: [carbon]
+    crystal: sapphire
+    movement: RMAC4
+    bracelets: [{ type: rubber-strap }]
+  - ref: RM65-01 RG CA
+    periods: [{ from: 2020 }]
+    caseSize: 44.5
+    metals: [rose-gold, carbon]
+    bezel: { material: rose-gold }
+    crystal: sapphire
+    movement: RMAC4
+    bracelets: [{ type: rubber-strap }]

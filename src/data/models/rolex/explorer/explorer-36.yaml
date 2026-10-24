@@ -1,0 +1,28 @@
+name: Explorer 36
+line: rolex/explorer
+photos:
+  - file: ../../../photos/rolex/explorer/explorer-36.png
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_Oyster_Perpetual_Explorer_Ref._114270_Cal._3130.png
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: Max3351
+sources:
+  - https://watchcollectinglifestyle.com/home/rolex-explorer-goes-36-mm-ref-124270-new-two-tone-explorer-ref-124273-and-a-movement-update-on-the-explorer-ii-ref-226570-introducing
+  - https://5dwatches.com/blog/rolex-explorer-vs-explorer-ii
+references:
+  - ref: "124270"
+    periods: [{ from: 2021 }]
+    caseSize: 36
+    metals: [steel]
+    crystal: sapphire
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "124273"
+    periods: [{ from: 2021 }]
+    caseSize: 36
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold, style: smooth }
+    crystal: sapphire
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]

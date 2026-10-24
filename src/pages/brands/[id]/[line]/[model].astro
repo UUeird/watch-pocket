@@ -3,6 +3,9 @@ import Breadcrumb from '../../../../components/Breadcrumb.astro';
 import ModelPhoto from '../../../../components/ModelPhoto.astro';
 import Base from '../../../../layouts/Base.astro';
 import Sources from '../../../../components/Sources.astro';
+import Tiles from '../../../../components/Tiles.astro';
+import { Image } from 'astro:assets';
+import { referencePhotos } from '../../../../lib/tile-photos';
 import {
   describeBezel,
   describeBracelet,
@@ -13,6 +16,7 @@ import {
   loadCatalog,
   plural,
   refHref,
+  sourceHost,
   type Brand,
   type Line,
   type Model,
@@ -37,7 +41,7 @@ interface Props {
 }
 
 const { model, line, brand, collaborators } = Astro.props;
-const { name, references, sources } = model.data;
+const { name, references, sources, website } = model.data;
 ---
 
 <Base title={`${brand.data.name} ${name}`}>
@@ -56,16 +60,43 @@ const { name, references, sources } = model.data;
           ))
         }
       </p>
+      {
+        references.length > 0 && website && (
+          <p class="maker">
+            <a href={website} target="_blank" rel="noopener">
+              See it on {sourceHost(website)} <span aria-hidden="true">↗</span>
+              <span class="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </p>
+        )
+      }
     </div>
-    <ModelPhoto model={model} brandName={brand.data.name} />
+    {/* With references, their grid shows the watches; the gallery is kept for a model that has none recorded. */}
+    {references.length === 0 && <ModelPhoto model={model} brandName={brand.data.name} />}
   </div>
 
   <h2>References</h2>
   {references.length === 0 && <p>No references recorded yet.</p>}
+  {
+    references.length > 0 && (
+      <Tiles
+        label="References"
+        brandName={brand.data.name}
+        tiles={references.map((reference) => ({
+          href: refHref(model, reference),
+          title: reference.ref,
+          detail: [formatPeriods(reference.periods), reference.caseSize && `${reference.caseSize} mm`].filter(Boolean).join(' · '),
+          photos: referencePhotos(model, reference, brand.data.name),
+        }))}
+      />
+    )
+  }
+  {references.length > 0 && <h3>Compare references</h3>}
   <div class="table-wrap" hidden={references.length === 0}>
     <table>
       <thead>
         <tr>
+          <th><span class="visually-hidden">Photo</span></th>
           <th>Reference</th>
           <th>On sale</th>
           <th>Case</th>
@@ -82,6 +113,18 @@ const { name, references, sources } = model.data;
         {
           references.map((reference) => (
             <tr>
+              <td class="thumb">
+                {(() => {
+                  // The first photo the reference's tile shows, small; a stand-in photo of the model is left out here.
+                  const photo = referencePhotos(model, reference, brand.data.name).find((candidate) => !candidate.general);
+                  if (!photo) return null;
+                  return 'file' in photo ? (
+                    <Image class="fill" src={photo.file} alt="" width={96} />
+                  ) : (
+                    <img src={photo.src} alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+                  );
+                })()}
+              </td>
               <td class="num">
                 <a href={refHref(model, reference)}>{reference.ref}</a>
               </td>
@@ -112,5 +155,40 @@ const { name, references, sources } = model.data;
     justify-content: space-between;
     gap: 16px 32px;
     margin-bottom: 24px;
+  }
+
+  .maker {
+    margin: 8px 0 0;
+    font-size: 0.875rem;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  /* A small photo of each reference at the start of its row, on white like the tiles. */
+  .thumb {
+    width: 48px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .thumb :global(img) {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  .thumb :global(img.fill) {
+    object-fit: cover;
   }
 </style>
