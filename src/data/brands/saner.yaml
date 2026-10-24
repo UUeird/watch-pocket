@@ -1,5 +1,5 @@
 name: Saner
-status: active
+periods: [{ from: 1970 }]
 website: https://saner-watches.ch
 sources:
   - https://www.dialicious.com/en/saner

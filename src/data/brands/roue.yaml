@@ -1,6 +1,6 @@
 name: Roue
 origin: United States
-status: active
+periods: [{ from: 2017 }]
 website: https://rouewatch.com
 sources:
   - https://www.dialicious.com/en/roue

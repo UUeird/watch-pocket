@@ -1,6 +1,6 @@
 name: Buci
 origin: France
-status: active
+periods: [{ from: 2022 }]
 website: https://www.buci-paris.com
 sources:
   - https://www.dialicious.com/en/buci

@@ -1,6 +1,6 @@
 name: BND
 origin: France
-status: active
+periods: [{ from: 2021 }]
 website: https://bnd-watches.com
 sources:
   - https://www.dialicious.com/en/bnd

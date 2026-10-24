@@ -4,9 +4,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:EPOS_Watches_Logo.jpg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1983 }]
 segment: mid-range
 website: https://epos.ch
 sources:
   - https://www.dialicious.com/en/epos
   - https://epos.ch/
+  - https://en.wikipedia.org/wiki/Epos_(watch_manufacturer)

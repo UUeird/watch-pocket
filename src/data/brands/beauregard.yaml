@@ -1,5 +1,5 @@
 name: Beauregard
-status: active
+periods: [{ from: 2018 }]
 website: https://www.beauregard.ch
 sources:
   - https://www.dialicious.com/en/beauregard

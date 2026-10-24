@@ -1,6 +1,6 @@
 name: Aerowatch
 origin: Switzerland
-status: active
+periods: [{ from: 1910 }]
 segment: mid-range
 website: https://www.aerowatch.com
 sources:

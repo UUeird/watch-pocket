@@ -4,7 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:KUOE_logo.png
   license: Public domain
 origin: Japan
-status: active
+periods: [{ from: 2020 }]
 website: https://www.kuoe-en.com
 sources:
   - https://www.dialicious.com/en/kuoe

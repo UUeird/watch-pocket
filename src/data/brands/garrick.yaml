@@ -1,6 +1,6 @@
 name: Garrick
 origin: United Kingdom
-status: active
+periods: [{ from: 2014 }]
 website: https://garrick.co.uk
 sources:
   - https://www.dialicious.com/en/garrick

@@ -1,6 +1,6 @@
 name: Namica
 origin: Japan
-status: active
+periods: [{ from: 2020 }]
 website: https://www.namicawatches.com
 sources:
   - https://www.dialicious.com/en/namica

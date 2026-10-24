@@ -1,5 +1,5 @@
 name: Batavi
-status: active
+periods: [{ from: 2017 }]
 website: https://www.batavi-watches.com
 sources:
   - https://www.dialicious.com/en/batavi

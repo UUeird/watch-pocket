@@ -1,6 +1,6 @@
 name: Bianchet
 origin: Switzerland
-status: active
+periods: [{ from: 2017 }]
 website: https://www.bianchet.com
 sources:
   - https://www.dialicious.com/en/bianchet

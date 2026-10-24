@@ -4,8 +4,9 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Cerruti_logo.svg
   license: Public domain
 origin: Italy
-status: active
+periods: [{ from: 1967 }]
 website: https://www.cerruti.com
 sources:
   - https://www.dialicious.com/en/cerruti
   - https://www.cerruti.com/
+  - https://en.wikipedia.org/wiki/Cerruti_1881

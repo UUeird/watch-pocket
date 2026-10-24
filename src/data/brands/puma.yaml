@@ -3,9 +3,10 @@ logo: ../logos/puma.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Puma-logo-(text).svg
   license: Public domain
-status: active
+periods: [{ from: 1948 }]
 segment: budget
 website: https://us.puma.com
 sources:
   - https://www.dialicious.com/en/puma
   - https://us.puma.com/
+  - https://en.wikipedia.org/wiki/Puma_(brand)

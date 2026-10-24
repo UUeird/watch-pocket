@@ -1,5 +1,5 @@
 name: Byrne
-status: active
+periods: [{ from: 2022 }]
 website: https://www.byrnewatch.com
 sources:
   - https://www.dialicious.com/en/byrne

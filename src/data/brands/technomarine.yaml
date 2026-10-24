@@ -1,7 +1,8 @@
 name: Technomarine
-status: active
+periods: [{ from: 1997 }]
 segment: budget
 website: https://www.technomarine.com
 sources:
   - https://www.dialicious.com/en/technomarine
   - https://www.technomarine.com/
+  - https://www.wikidata.org/wiki/Q3516908
