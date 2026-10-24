@@ -1,8 +1,9 @@
 name: Grönefeld
 origin: Netherlands
-status: active
+periods: [{ from: 2008 }]
 segment: haute
 website: https://www.gronefeld.com
 sources:
   - https://www.dialicious.com/en/gronefeld
   - https://www.gronefeld.com/
+  - https://www.fratellowatches.com/a-brief-history-of-time-gronefelds-complete-brand-history/

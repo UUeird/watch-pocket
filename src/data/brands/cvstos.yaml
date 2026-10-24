@@ -1,8 +1,9 @@
 name: Cvstos
 origin: Switzerland
-status: active
+periods: [{ from: 2005 }]
 segment: luxury
 website: http://www.cvstos.com
 sources:
   - https://www.dialicious.com/en/cvstos
   - http://www.cvstos.com/
+  - https://en.worldtempus.com/article/cvstos-fifth-anniversary-with-a-boutique-in-geneva-6260.html

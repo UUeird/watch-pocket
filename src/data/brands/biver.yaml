@@ -1,8 +1,9 @@
 name: Biver
 origin: Switzerland
-status: active
+periods: [{ from: 2022 }]
 segment: haute
 website: https://jcbiver.com
 sources:
   - https://www.dialicious.com/en/biver
   - https://jcbiver.com/
+  - https://en.wikipedia.org/wiki/JC_Biver

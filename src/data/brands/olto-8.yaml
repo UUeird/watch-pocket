@@ -1,5 +1,5 @@
 name: OLTO-8
-status: active
+periods: [{ from: 2018 }]
 website: https://olto-8.com
 sources:
   - https://www.dialicious.com/en/olto-8

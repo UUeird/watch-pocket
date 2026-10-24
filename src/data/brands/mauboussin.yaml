@@ -1,7 +1,8 @@
 name: Mauboussin
 origin: France
-status: active
+periods: [{ from: 1827 }]
 website: https://www.mauboussin.com
 sources:
   - https://www.dialicious.com/en/mauboussin
   - https://www.mauboussin.com/
+  - https://en.wikipedia.org/wiki/Mauboussin

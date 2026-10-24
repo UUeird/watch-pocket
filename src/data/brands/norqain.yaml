@@ -1,6 +1,6 @@
 name: Norqain
 origin: Switzerland
-status: active
+periods: [{ from: 2018 }]
 segment: mid-range
 website: https://norqain.com
 sources:

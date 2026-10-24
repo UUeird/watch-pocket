@@ -1,6 +1,6 @@
 name: Done
 origin: Switzerland
-status: active
+periods: [{ from: 2016 }]
 website: https://www.donewatches.ch
 sources:
   - https://www.dialicious.com/en/done

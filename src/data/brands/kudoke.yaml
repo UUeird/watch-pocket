@@ -1,6 +1,6 @@
 name: Kudoke
 origin: Germany
-status: active
+periods: [{ from: 2008 }]
 segment: luxury
 website: https://www.kudoke.eu
 sources:

@@ -1,7 +1,8 @@
 name: Marloe
 origin: United Kingdom
-status: active
+periods: [{ from: 2015 }]
 website: https://www.marloewatchcompany.com
 sources:
   - https://www.dialicious.com/en/marloe
   - https://www.marloewatchcompany.com/
+  - https://nationalmotormuseum.org.uk/news/time-well-spent-at-national-motor-museum/

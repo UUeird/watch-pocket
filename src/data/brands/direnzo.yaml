@@ -1,5 +1,5 @@
 name: Direnzo
-status: active
+periods: [{ from: 2016 }]
 website: https://direnzowatches.com
 sources:
   - https://www.dialicious.com/en/direnzo

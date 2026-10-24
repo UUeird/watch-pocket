@@ -1,6 +1,6 @@
 name: Strom
 origin: Switzerland
-status: active
+periods: [{ from: 2001 }]
 website: https://stromwatches.com
 sources:
   - https://www.dialicious.com/en/strom

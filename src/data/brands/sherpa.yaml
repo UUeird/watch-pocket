@@ -1,6 +1,6 @@
 name: Sherpa
 origin: Germany
-status: active
+periods: [{ from: 2019 }]
 website: https://sherpawatches.com
 sources:
   - https://www.dialicious.com/en/sherpa

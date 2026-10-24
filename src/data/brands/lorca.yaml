@@ -1,6 +1,6 @@
 name: Lorca
 origin: United States
-status: active
+periods: [{ from: 2022 }]
 website: https://lorcawatches.com
 sources:
   - https://www.dialicious.com/en/lorca

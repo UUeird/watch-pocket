@@ -1,7 +1,8 @@
 name: Leica
 origin: Japan
-status: active
+periods: [{ from: 1869 }]
 website: https://leica-camera.com
 sources:
   - https://www.dialicious.com/en/leica
   - https://leica-camera.com/
+  - https://en.wikipedia.org/wiki/Leica_Camera

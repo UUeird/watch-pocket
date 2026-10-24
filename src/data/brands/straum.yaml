@@ -1,6 +1,6 @@
 name: Straum
 origin: Norway
-status: active
+periods: [{ from: 2021 }]
 website: https://straum.co
 sources:
   - https://www.dialicious.com/en/straum
