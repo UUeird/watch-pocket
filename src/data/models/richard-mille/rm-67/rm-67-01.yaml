@@ -3,3 +3,14 @@ line: richard-mille/rm-67
 website: https://www.richardmille.com/collections/rm-67-01-automatic-extra-flat
 sources:
   - https://www.richardmille.com/collections/rm-67-01-automatic-extra-flat
+  - https://www.ablogtowatch.com/richard-mille-rm-67-01-automatic-extra-flat-watch/
+  - https://wristcheck.com/us/buy/richard-mille/rm67-01-ti-extra-flat
+references:
+  - ref: RM67-01
+    periods: [{ from: 2015 }]
+    caseSize: 38.7
+    metals: [titanium]
+    bezel: { material: titanium }
+    crystal: sapphire
+    movement: CRMA6
+    bracelets: [{ type: rubber-strap }]

@@ -118,7 +118,8 @@ const groups = defineCollection({
 const color = z.enum([
   'black', 'white', 'silver', 'gray', 'blue', 'green', 'red', 'yellow', 'orange', 'brown', 'pink', 'purple', 'gold', 'rose-gold', 'champagne',
 ]);
-const metal = z.enum(['steel', 'aluminum', 'yellow-gold', 'white-gold', 'rose-gold', 'platinum', 'titanium', 'ceramic', 'bronze']);
+// `carbon` covers carbon composites such as Richard Mille's Carbon TPT.
+const metal = z.enum(['steel', 'aluminum', 'yellow-gold', 'white-gold', 'rose-gold', 'platinum', 'titanium', 'ceramic', 'bronze', 'carbon']);
 
 const endsAfterStart = ({ from, to }: { from?: number; to?: number }) =>
   from === undefined || to === undefined || to >= from;
