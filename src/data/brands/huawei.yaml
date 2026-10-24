@@ -11,3 +11,6 @@ makes: [smartwatches]
 sources:
   - https://en.wikipedia.org/wiki/Huawei
   - https://www.wikidata.org/wiki/Q160120
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Huawei

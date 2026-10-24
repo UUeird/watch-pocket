@@ -10,3 +10,6 @@ segment: luxury
 sources:
   - https://en.wikipedia.org/wiki/Herm%C3%A8s
   - https://www.wikidata.org/wiki/Q843887
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Herm%C3%A8s

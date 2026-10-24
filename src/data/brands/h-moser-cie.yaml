@@ -6,8 +6,13 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:H._Moser_&_Cie_Logo.svg
   license: Public domain
 origin: Switzerland
-control: family
 periods: [{ from: 1828 }]
 segment: haute
 sources:
   - https://en.wikipedia.org/wiki/H._Moser_&_Cie.
+ownership:
+  - owner: melb-holding
+    from: 2012
+    sources:
+      - https://en.wikipedia.org/wiki/H._Moser_%26_Cie
+      - https://www.watchtime.com/featured/remaking-moser-streamlining-production-and-focusing-on-profitability/

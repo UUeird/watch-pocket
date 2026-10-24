@@ -19,3 +19,6 @@ segment: broad
 makes: [smartwatches]
 sources:
   - https://en.wikipedia.org/wiki/Apple_Inc.
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Apple_Inc.

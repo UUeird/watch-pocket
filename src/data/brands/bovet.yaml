@@ -10,3 +10,6 @@ segment: haute
 sources:
   - https://en.wikipedia.org/wiki/Bovet_Fleurier
   - https://www.wikidata.org/wiki/Q4950531
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Bovet_Fleurier

@@ -10,3 +10,6 @@ segment: luxury
 sources:
   - https://en.wikipedia.org/wiki/Chopard
   - https://www.wikidata.org/wiki/Q670112
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Chopard

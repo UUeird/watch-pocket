@@ -1,6 +1,11 @@
 name: Louis Erard
 origin: Switzerland
+control: private
 periods: [{ from: 1929 }]
 segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q17461916
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Louis_Erard
+    - https://teddybaldassarre.com/blogs/watches/louis-erard-history

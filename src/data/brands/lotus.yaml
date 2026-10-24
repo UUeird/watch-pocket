@@ -8,3 +8,8 @@ periods: [{ from: 1980 }]
 sources:
   - https://www.dialicious.com/en/lotus
   - https://www.wikidata.org/wiki/Q16593585
+ownership:
+  - owner: festina-group
+    sources:
+      - https://en.wikipedia.org/wiki/Festina
+      - https://www.fhs.swiss/eng/2001-01-31_143.html

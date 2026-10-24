@@ -10,3 +10,6 @@ segment: haute
 sources:
   - https://en.wikipedia.org/wiki/Parmigiani_Fleurier
   - https://www.wikidata.org/wiki/Q3365612
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Parmigiani_Fleurier
