@@ -111,4 +111,11 @@ test.describe('Tiles', () => {
     await expect(tiles.filter({ hasText: '126610LN' })).toBeVisible();
     await expect(tiles.filter({ hasText: '126610LN' }).locator('.general')).toHaveText('Model photo');
   });
+
+  test("a reference with the maker's own image of it shows that instead", async ({ page }) => {
+    await page.goto('brands/richard-mille/rm-65/rm-65-01/');
+    const tiles = page.getByRole('list', { name: 'References' }).locator('li');
+    await expect(tiles.filter({ hasText: 'RM65-01 CA' }).locator('.general')).toHaveCount(0);
+    await expect(tiles.filter({ hasText: 'RM65-01 RG CA' }).locator('.general')).toHaveCount(1);
+  });
 });

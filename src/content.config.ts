@@ -295,6 +295,9 @@ const models = defineCollection({
             // Photos of this reference in particular, where it looks unlike the model's others (a different bezel or
             // dial), in the same form as the model's. Its page shows these, or the model's when it has none.
             photos: photos(image),
+            // The maker's own image of this reference in particular, from the page it appears on. Shown loaded from
+            // their site and credited to them, where the reference has no photo of our own.
+            officialPhoto: z.object({ src: z.url(), page: z.url() }).optional(),
             // The first period's `from` is the year the reference was released.
             periods,
             // The maker's list price in a given year, in its home currency where it publishes one.

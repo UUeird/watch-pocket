@@ -18,10 +18,11 @@ export function modelPhotos(model: Model, brandName: string): TilePhoto[] {
   return official[model.id] ? [{ src: official[model.id].src, alt: name }] : [];
 }
 
-// A reference's photos: its own, or failing that its model's.
+// A reference's photos: its own, or the maker's image of it, or failing those its model's.
 export function referencePhotos(model: Model, reference: Reference, brandName: string): TilePhoto[] {
   const name = `${brandName} ${model.data.name} ${reference.ref}`;
   if (reference.photos.length > 0) return reference.photos.map(({ file }) => ({ file, alt: name }));
+  if (reference.officialPhoto) return [{ src: reference.officialPhoto.src, alt: name }];
   return modelPhotos(model, brandName).map((photo) => ({ ...photo, alt: name, general: true }));
 }
 

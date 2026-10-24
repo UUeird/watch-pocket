@@ -23,10 +23,12 @@ const { name, website } = model.data;
 const ofModel = model.data.photos.map((photo) => ({ ...photo, ref: undefined as string | undefined }));
 const ofReferences = model.data.references.flatMap(({ ref, photos }) => photos.map((photo) => ({ ...photo, ref })));
 const own = reference ? reference.photos.map((photo) => ({ ...photo, ref: undefined })) : [];
-const photos = reference ? (own.length > 0 ? own : ofModel) : [...ofModel, ...ofReferences];
+// The maker's image of this reference, which comes before any photo of the model in general.
+const refOfficial = own.length === 0 ? reference?.officialPhoto : undefined;
+const photos = reference ? (own.length > 0 ? own : refOfficial ? [] : ofModel) : [...ofModel, ...ofReferences];
 // On a reference's page, photos of the model in general rather than of this reference.
-const general = reference !== undefined && own.length === 0 && photos.length > 0;
-const official = photos.length > 0 ? undefined : (officialPhotos as Record<string, { src: string; page: string }>)[model.id];
+const general = reference !== undefined && own.length === 0 && !refOfficial && photos.length > 0;
+const official = refOfficial ?? (photos.length > 0 ? undefined : (officialPhotos as Record<string, { src: string; page: string }>)[model.id]);
 const alt = `${brandName} ${name}${reference ? ` ${reference.ref}` : ''}`;
 const altOf = (ref: string | undefined) => (ref ? `${brandName} ${name} ${ref}` : alt);
 ---
