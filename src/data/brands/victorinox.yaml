@@ -1,6 +1,7 @@
 name: Victorinox
 logo: ../logos/victorinox.svg
 logomark: ../logos/victorinox-logomark.svg
+logomarkOnDark: ../logos/victorinox-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Victorinox_Logo.svg
   license: Public domain
