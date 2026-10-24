@@ -1,7 +1,8 @@
 name: Braun
-status: active
+periods: [{ from: 1921 }]
 segment: budget
 website: https://braun-clocks.com
 sources:
   - https://www.dialicious.com/en/braun
   - https://braun-clocks.com/
+  - https://www.wikidata.org/wiki/Q631220

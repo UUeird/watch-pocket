@@ -1,6 +1,6 @@
 name: Mondia
 origin: Switzerland
-status: active
+periods: [{ from: 1935 }]
 website: https://mondiaswiss.com
 sources:
   - https://www.dialicious.com/en/mondia

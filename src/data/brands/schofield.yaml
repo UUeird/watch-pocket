@@ -1,7 +1,8 @@
 name: Schofield
 origin: United Kingdom
-status: active
+periods: [{ from: 2011 }]
 website: https://schofieldwatchcompany.com
 sources:
   - https://www.dialicious.com/en/schofield
   - https://schofieldwatchcompany.com/
+  - https://usa.watchpro.com/?p=5726

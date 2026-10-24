@@ -1,8 +1,9 @@
 name: Graham
 origin: United Kingdom
-status: active
+periods: [{ from: 1995 }]
 segment: luxury
 website: https://graham1695.com
 sources:
   - https://www.dialicious.com/en/graham
   - https://graham1695.com/
+  - https://timetransformed.com/2015/09/05/graham/

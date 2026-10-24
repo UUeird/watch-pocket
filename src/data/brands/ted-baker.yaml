@@ -4,5 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:TedBaker.svg
   license: Public domain
 origin: United Kingdom
-status: active
+periods: [{ from: 1988 }]
 segment: budget
+sources:
+  - https://en.wikipedia.org/wiki/Ted_Baker

@@ -5,9 +5,10 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Grovana_logo.svg
   license: Public domain
 origin: Switzerland
-status: active
+periods: [{ from: 1924 }]
 segment: mid-range
 website: https://www.grovana.ch
 sources:
   - https://www.dialicious.com/en/grovana
   - https://www.grovana.ch/
+  - https://en.wikipedia.org/wiki/Grovana
