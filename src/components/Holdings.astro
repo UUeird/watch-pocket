@@ -5,10 +5,17 @@ import { formatStake, href, loadCatalog, type Owner } from '../lib/catalog';
 
 interface Props {
   owner: Owner;
+  // Only the brands held now, or only those held before and since let go. All of them when unset.
+  only?: 'current' | 'former';
 }
 
+const { owner, only } = Astro.props;
 const { holdingsOf } = await loadCatalog();
-const holdings = holdingsOf(Astro.props.owner);
+const holdings = holdingsOf(owner).filter(
+  (record) => only === undefined || (only === 'current') === (record.to === undefined),
+);
+// Every brand held now ends at the present, so the column says nothing there.
+const showTo = only !== 'current';
 const showStake = holdings.some((record) => record.stake !== undefined);
 const showBasis = holdings.some((record) => record.basis !== undefined);
 const showSources = holdings.some((record) => record.sources.length > 0);
@@ -22,7 +29,7 @@ const showSources = holdings.some((record) => record.sources.length > 0);
         <th>Nation of origin</th>
         {showStake && <th>Stake</th>}
         <th>Held from</th>
-        <th>To</th>
+        {showTo && <th>To</th>}
         {showBasis && <th>Basis</th>}
         {showSources && <th>Source</th>}
       </tr>
@@ -37,7 +44,7 @@ const showSources = holdings.some((record) => record.sources.length > 0);
             <td>{brand.data.origin && <CountryLink country={brand.data.origin} />}</td>
             {showStake && <td class="num">{formatStake(stake)}</td>}
             <td class="num">{from ?? 'Unknown'}</td>
-            <td class="num">{to ?? 'Present'}</td>
+            {showTo && <td class="num">{to ?? 'Present'}</td>}
             {showBasis && <td class="cap">{basis}</td>}
             {showSources && (
               <td>

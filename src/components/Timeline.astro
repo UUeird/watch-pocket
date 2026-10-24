@@ -374,6 +374,8 @@ const span = (from: number, to?: number) => ({ '--from': from, '--to': to ?? end
     container-type: inline-size;
     background: var(--mark);
     border-radius: 2px;
+    display: flex;
+    text-decoration: none;
     /* A thin gap at the start, so one owner handing straight to the next shows as a divider. */
     box-shadow: inset 2px 0 0 var(--bg);
   }
@@ -388,8 +390,12 @@ const span = (from: number, to?: number) => ({ '--from': from, '--to': to ?? end
     background: var(--mark-past);
   }
 
+  /* The name stays in view at the left edge when the band starts before the years shown. */
   .owner-name {
+    position: sticky;
+    left: 0;
     display: block;
+    min-width: 0;
     overflow: hidden;
     padding: 0 4px 0 6px;
     color: var(--on-mark);
@@ -401,7 +407,6 @@ const span = (from: number, to?: number) => ({ '--from': from, '--to': to ?? end
 
   /* On stripes the name gets a solid backing to stay readable. */
   .band.part .owner-name {
-    display: inline-block;
     max-width: 100%;
     box-sizing: border-box;
     padding-right: 6px;

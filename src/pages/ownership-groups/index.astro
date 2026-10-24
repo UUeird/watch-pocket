@@ -2,10 +2,13 @@
 import Filters from '../../components/Filters.astro';
 import FlagBadge from '../../components/FlagBadge.astro';
 import Base from '../../layouts/Base.astro';
-import { describeControl, formatStake, href, label, loadCatalog, plural, type Brand, type Group } from '../../lib/catalog';
+import { activeGroups, describeControl, formatStake, href, label, loadCatalog, plural, type Brand, type Group } from '../../lib/catalog';
 
 const catalog = await loadCatalog();
-const { groups, brandsOf, licensesOf } = catalog;
+const { brandsOf, licensesOf } = catalog;
+// Dissolved groups own nothing now, so they get no card; they're listed by name under the cards for their past holdings.
+const groups = activeGroups(catalog.groups);
+const former = catalog.groups.filter((group) => group.data.dissolved !== undefined);
 
 // A brand as it sits in a group: owned outright, owned in part (with the stake), or made under license.
 type Tile = { brand: Brand; stake?: number | 'unknown'; licensed?: boolean };
@@ -86,6 +89,20 @@ const stakeNote = (stake: Tile['stake']) =>
   </ul>
 
   <p class="order-note">Largest first, by number of brands. <a href={href('/chart/')}>See them on the chart</a>, or <a href={href('/timeline/')}>when each was bought</a>.</p>
+  {
+    former.length > 0 && (
+      <p class="order-note">
+        Former groups, kept for the brands they once held:{' '}
+        {former.map((group, index) => (
+          <>
+            {index > 0 && ', '}
+            <a href={href(`/ownership-groups/${group.id}/`)}>{group.data.name}</a> ({group.data.founded ?? '?'}–{group.data.dissolved})
+          </>
+        ))}
+        .
+      </p>
+    )
+  }
   <div class="cards" id="group-cards">
     {
       held.map(({ group, owned, licensed, tiles }) => (

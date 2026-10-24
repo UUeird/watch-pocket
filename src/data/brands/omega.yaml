@@ -8,6 +8,11 @@ origin: Switzerland
 periods: [{ from: 1848 }]
 segment: luxury
 ownership:
+  - owner: ssih
+    from: 1930
+    to: 1983
+    sources:
+      - https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Suisse_pour_l%27Industrie_Horlog%C3%A8re
   - owner: swatch-group
     from: 1983
 revenue:

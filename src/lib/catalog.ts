@@ -19,7 +19,11 @@ export const label = (value: string) => value.replace(/-/g, ' ');
 
 // Who controls a group, in words. A group with a parent is that parent's subsidiary.
 const controlNames = { public: 'Publicly traded', private: 'Privately held', foundation: 'Foundation-owned' };
-export const describeControl = ({ data: { control, parent } }: Group) => (parent || !control ? 'Subsidiary' : controlNames[control]);
+export const describeControl = ({ data: { control, parent, dissolved } }: Group) =>
+  dissolved !== undefined ? `Dissolved in ${dissolved}` : parent || !control ? 'Subsidiary' : controlNames[control];
+
+// Groups that still exist, for lists of current owners.
+export const activeGroups = (groups: Group[]) => groups.filter((group) => group.data.dissolved === undefined);
 
 // A count with its noun, e.g. `1 brand` or `3 brands`.
 export const plural = (count: number, noun: string) => `${count} ${noun}${count === 1 ? '' : 's'}`;
