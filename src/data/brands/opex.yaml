@@ -4,3 +4,7 @@ website: https://www.opex-paris.com
 sources:
   - https://www.dialicious.com/en/opex
   - https://www.opex-paris.com/
+ownership:
+  - owner: timex-group
+    sources:
+      - https://en.wikipedia.org/wiki/Timex_Group

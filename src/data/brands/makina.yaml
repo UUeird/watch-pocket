@@ -5,3 +5,7 @@ website: https://www.makinawatches.com
 sources:
   - https://www.dialicious.com/en/makina
   - https://www.makinawatches.com/
+control: family
+independent:
+  sources:
+    - https://www.makinawatches.com/

@@ -5,3 +5,8 @@ website: https://maisondutemps-eu.com
 sources:
   - https://www.dialicious.com/en/maisondutemps
   - https://maisondutemps-eu.com/
+control: private
+independent:
+  sources:
+    - https://maisondutemps-eu.com/pages/our-story
+    - https://maisondutemps-eu.com/pages/legal-notices

@@ -4,3 +4,7 @@ website: https://oligowatches.com
 sources:
   - https://www.dialicious.com/en/oligo
   - https://oligowatches.com/
+control: private
+independent:
+  sources:
+    - https://oligowatches.com/

@@ -5,3 +5,7 @@ website: https://marchandwatches.com
 sources:
   - https://www.dialicious.com/en/marchand
   - https://marchandwatches.com/
+control: private
+independent:
+  sources:
+    - https://marchandwatches.com/pages/about-us
