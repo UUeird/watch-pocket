@@ -9,3 +9,9 @@ origin: Switzerland
 periods: [{ from: 2012, to: 2021 }, { from: 2022 }]
 segment: haute
 logoBackground: '#000000'
+ownership:
+  - owner: kairos-technology-switzerland
+    from: 2021
+    sources:
+      - https://professionalwatches.com/hyt-returns/
+      - https://en.wikipedia.org/wiki/HYT_(watchmaker)

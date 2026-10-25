@@ -9,3 +9,15 @@ segment: mid-range
 makes: [smartwatches]
 sources:
   - https://www.wikidata.org/wiki/Q3569499
+control: private
+ownership:
+  - owner: nokia
+    from: 2016
+    to: 2018
+    sources:
+      - https://www.mobihealthnews.com/news/withings-cofounder-buys-back-digital-health-business-nokia
+      - https://www.wareable.com/wearable-tech/withings-buys-nokia-digital-health-business-6148
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Withings
+    - https://www.mobihealthnews.com/news/withings-cofounder-buys-back-digital-health-business-nokia

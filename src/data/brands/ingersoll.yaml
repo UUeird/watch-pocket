@@ -8,3 +8,8 @@ periods: [{ from: 1892 }]
 segment: budget
 sources:
   - https://en.wikipedia.org/wiki/Ingersoll_Watch_Company
+ownership:
+  - owner: zeon
+    sources:
+      - https://en.wikipedia.org/wiki/Ingersoll_Watch_Company
+      - https://www.watchpro.com/?p=42662

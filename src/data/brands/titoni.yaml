@@ -11,3 +11,8 @@ periods: [{ from: 1919 }]
 segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q685001
+control: family
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Titoni
+    - https://www.europastar.com/IMG/pdf/highlight_es219_titoni.pdf

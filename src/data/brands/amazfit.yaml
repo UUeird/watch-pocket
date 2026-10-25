@@ -9,3 +9,8 @@ segment: budget
 makes: [smartwatches]
 sources:
   - https://www.wikidata.org/wiki/Q105273852
+ownership:
+  - owner: zepp-health
+    sources:
+      - https://en.wikipedia.org/wiki/Amazfit
+      - https://www.slashgear.com/2249473/who-owns-amazfit-smartwatches-not-amazon/

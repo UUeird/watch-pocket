@@ -6,9 +6,14 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: DOXA Watches
 origin: Switzerland
-control: family
 periods: [{ from: 1889 }]
 segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Doxa_SA
   - https://www.wikidata.org/wiki/Q2744515
+ownership:
+  - owner: walca
+    from: 1997
+    sources:
+      - https://en.wikipedia.org/wiki/Doxa_SA
+      - https://www.europastar.com/magazine/highlights/1004085489-doxa-making-the-most-of-independence.html
