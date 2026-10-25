@@ -4,3 +4,7 @@ website: https://www.aventi.com
 sources:
   - https://www.dialicious.com/en/aventi
   - https://www.aventi.com/
+control: private
+independent:
+  sources:
+    - https://fifthwrist.com/dts-aventi-a-super-car-for-your-wrist

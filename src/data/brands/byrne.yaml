@@ -4,3 +4,8 @@ website: https://www.byrnewatch.com
 sources:
   - https://www.dialicious.com/en/byrne
   - https://www.byrnewatch.com/
+control: private
+independent:
+  sources:
+    - https://www.watchtime.com/wristwatch-industry-news/geneva-watch-days-welcomes-byrne-a-new-independent-brand/
+    - https://www.europastar.com/the-watch-files/independent-watchmaking/1004114477-byrne-changing-faces.html

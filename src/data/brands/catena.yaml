@@ -5,3 +5,10 @@ sources:
   - https://www.dialicious.com/en/catena
   - http://www.catena.ch/
   - http://www.catena.ch/en/index.php
+ownership:
+  - owner: stelux
+    stake: 88
+    basis: disclosed
+    sources:
+      - https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0710/2026071000185.pdf
+      - https://www.hanglungmalls.com/en/grand-plaza/shopping/city-chain

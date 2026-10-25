@@ -5,3 +5,7 @@ website: https://beaucroftwatches.com
 sources:
   - https://www.dialicious.com/en/beaucroft
   - https://beaucroftwatches.com/
+control: private
+independent:
+  sources:
+    - https://www.watchgecko.com/blogs/magazine/founders-friday-a-conversation-wit-matt-and-karim-of-beaucroft

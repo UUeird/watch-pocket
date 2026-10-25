@@ -5,3 +5,8 @@ website: https://www.apose.fr
 sources:
   - https://www.dialicious.com/en/apose
   - https://www.apose.fr/
+ownership:
+  - owner: thrt
+    basis: disclosed
+    sources:
+      - https://www.apose.fr/mentionslegales
