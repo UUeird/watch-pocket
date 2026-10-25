@@ -5,3 +5,7 @@ website: https://pageswatches.com
 sources:
   - https://www.dialicious.com/en/pages
   - https://pageswatches.com/
+control: private
+independent:
+  sources:
+    - https://pageswatches.com/

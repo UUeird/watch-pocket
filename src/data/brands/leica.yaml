@@ -1,8 +1,18 @@
 name: Leica
-origin: Japan
+origin: Germany
 periods: [{ from: 1869 }]
 website: https://leica-camera.com
 sources:
   - https://www.dialicious.com/en/leica
   - https://leica-camera.com/
   - https://en.wikipedia.org/wiki/Leica_Camera
+ownership:
+  - owner: acm-projektentwicklung
+    stake: 55
+    sources:
+      - https://en.wikipedia.org/wiki/Leica_Camera
+  - owner: blackstone
+    stake: 45
+    from: 2011
+    sources:
+      - https://en.wikipedia.org/wiki/Leica_Camera

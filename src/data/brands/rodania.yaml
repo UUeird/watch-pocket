@@ -4,7 +4,6 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Rodania_logo.png
   license: Public domain
 origin: Switzerland
-control: private
 periods: [{ from: 1930 }]
 segment: mid-range
 website: https://www.rodania.com
@@ -13,3 +12,9 @@ sources:
   - https://www.dialicious.com/en/rodania
   - https://www.wikidata.org/wiki/Q7356446
   - https://www.rodania.com/
+ownership:
+  - owner: vincent-gaye-company
+    from: 2022
+    sources:
+      - https://en.wikipedia.org/wiki/Rodania
+      - https://www.rodania.com/pages/who-we-are

@@ -5,3 +5,7 @@ website: http://www.vandaag.de
 sources:
   - https://www.dialicious.com/en/vandaag
   - http://www.vandaag.de/
+control: private
+independent:
+  sources:
+    - https://www.vandaag.de/Impressum

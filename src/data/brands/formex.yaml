@@ -10,3 +10,7 @@ website: https://formexwatch.com
 sources:
   - https://www.dialicious.com/en/formex
   - https://formexwatch.com/
+control: family
+independent:
+  sources:
+    - http://www.europastar.com/the-watch-files/independent-watchmaking/1004114450-formex-extreme-shapes-meet-sport-chic.html

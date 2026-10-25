@@ -5,3 +5,7 @@ website: https://aera.co
 sources:
   - https://www.dialicious.com/en/aera
   - https://aera.co/
+control: private
+independent:
+  sources:
+    - https://aera.co/

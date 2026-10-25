@@ -6,3 +6,7 @@ sources:
   - https://www.dialicious.com/en/rec
   - https://www.recwatches.com/
   - https://www.recwatches.com/about/
+control: private
+independent:
+  sources:
+    - https://www.recwatches.com/about/

@@ -5,3 +5,7 @@ website: https://laventure.swiss
 sources:
   - https://www.dialicious.com/en/laventure
   - https://laventure.swiss/
+control: private
+independent:
+  sources:
+    - http://laventure.swiss/en

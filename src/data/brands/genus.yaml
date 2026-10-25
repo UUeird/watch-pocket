@@ -6,3 +6,7 @@ sources:
   - https://www.dialicious.com/en/genus
   - https://genuswatches.swiss/
   - https://genuswatches.swiss/story/
+control: private
+independent:
+  sources:
+    - https://genuswatches.swiss/story/

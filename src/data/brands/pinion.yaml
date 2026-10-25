@@ -6,3 +6,7 @@ website: https://www.pinionwatches.com
 sources:
   - https://www.dialicious.com/en/pinion
   - https://www.pinionwatches.com/
+control: private
+independent:
+  sources:
+    - https://www.pinionwatches.com/

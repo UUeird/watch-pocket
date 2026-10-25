@@ -17,3 +17,8 @@ licensees:
 logoBackground: '#001c4b'
 sources:
   - https://en.wikipedia.org/wiki/Tommy_Hilfiger_(company)
+ownership:
+  - owner: pvh
+    from: 2010
+    sources:
+      - https://en.wikipedia.org/wiki/Tommy_Hilfiger_(company)

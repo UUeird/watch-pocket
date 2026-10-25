@@ -11,3 +11,7 @@ website: https://boegli.com
 sources:
   - https://www.dialicious.com/en/boegli
   - https://boegli.com/
+control: family
+independent:
+  sources:
+    - https://boegli.com/pages/introduction

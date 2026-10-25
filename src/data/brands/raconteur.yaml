@@ -5,3 +5,7 @@ website: https://raconteurwatches.com
 sources:
   - https://www.dialicious.com/en/raconteur
   - https://raconteurwatches.com/
+control: private
+independent:
+  sources:
+    - https://raconteurwatches.com/pages/the-story

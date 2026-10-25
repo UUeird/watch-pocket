@@ -5,3 +5,8 @@ sources:
   - https://www.dialicious.com/en/temption
   - https://www.wikidata.org/wiki/Q104860846
   - http://www.temption-watches.de/
+control: private
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Temption
+    - http://www.temption-watches.de/impressum

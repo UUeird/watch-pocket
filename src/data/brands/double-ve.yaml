@@ -5,3 +5,7 @@ website: https://double-ve.ch
 sources:
   - https://www.dialicious.com/en/double-ve
   - https://double-ve.ch/
+control: private
+independent:
+  sources:
+    - https://double-ve.ch/elements/pages/about/

@@ -5,3 +5,7 @@ website: https://vertex-watches.com
 sources:
   - https://www.dialicious.com/en/vertex
   - https://vertex-watches.com/
+control: family
+independent:
+  sources:
+    - https://www.europastar.com/the-watch-files/watchmaking-in-the-uk/1004113294-vertex-beyond-the-dirty-dozen-fame.html

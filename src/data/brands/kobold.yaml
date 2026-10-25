@@ -6,3 +6,7 @@ website: https://koboldwatch.com
 sources:
   - https://www.dialicious.com/en/kobold
   - https://koboldwatch.com/
+control: family
+independent:
+  sources:
+    - https://koboldwatch.com/pages/about-kobold

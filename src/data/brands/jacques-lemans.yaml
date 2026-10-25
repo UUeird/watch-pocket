@@ -9,3 +9,7 @@ periods: [{ from: 1975 }]
 segment: budget
 sources:
   - https://www.jacques-lemans.com/downloads/01_company_presentation.pdf
+control: family
+independent:
+  sources:
+    - https://de.wikipedia.org/wiki/Jacques_Lemans

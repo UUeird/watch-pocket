@@ -6,3 +6,7 @@ sources:
   - https://www.dialicious.com/en/tsovet
   - https://www.tsovet.com/
   - https://www.wikidata.org/wiki/Q7849869
+control: private
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Tsovet_Time_Instruments

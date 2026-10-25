@@ -6,3 +6,8 @@ website: https://www.delmawatches.com
 sources:
   - https://www.dialicious.com/en/delma
   - https://www.delmawatches.com/
+control: family
+independent:
+  sources:
+    - https://www.delmawatches.com/
+    - https://www.delmawatches.com/pages/statement-of-ownership

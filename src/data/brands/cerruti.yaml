@@ -10,3 +10,21 @@ sources:
   - https://www.dialicious.com/en/cerruti
   - https://www.cerruti.com/
   - https://en.wikipedia.org/wiki/Cerruti_1881
+ownership:
+  - owner: matlinpatterson
+    from: 2006
+    to: 2010
+    sources:
+      - https://en.wikipedia.org/wiki/Cerruti_1881
+  - owner: trinity
+    from: 2010
+    to: 2023
+    sources:
+      - https://en.wikipedia.org/wiki/Cerruti_1881
+      - https://www.retailsector.co.uk/640632-cerruti-1881-and-kent-and-curwen-acquired-for-83m/
+  - owner: biem-l-fdlkk
+    basis: reported
+    from: 2023
+    sources:
+      - https://bd.fashionnetwork.com/news/China-s-biem-l-fdlkk-garment-is-the-new-owner-of-cerruti-1881-and-kent-curwen,1504098.html
+      - https://www.retailsector.co.uk/640632-cerruti-1881-and-kent-and-curwen-acquired-for-83m/

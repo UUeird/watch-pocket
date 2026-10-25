@@ -6,3 +6,7 @@ website: https://circulawatches.com
 sources:
   - https://www.dialicious.com/en/circula
   - https://circulawatches.com/
+control: family
+independent:
+  sources:
+    - https://monochrome-watches.com/interview-talking-to-cornelius-huber-on-the-revival-of-circula-watches/

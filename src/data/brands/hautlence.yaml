@@ -4,3 +4,9 @@ periods: [{ from: 2004 }]
 segment: haute
 sources:
   - https://web.archive.org/web/20240521102416/https://www.hautlence.com/wp-content/uploads/2024/03/HAUTLENCE_Press-Release_20th-Anniversary_ENGLISH.pdf
+ownership:
+  - owner: melb-holding
+    from: 2012
+    sources:
+      - https://luxuriousmagazine.com/change-announced-shareholder-structure-luxury-watch-brand-hautlence
+      - https://wiki.grail-watch.com/index.php/MELB_Holding

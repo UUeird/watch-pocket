@@ -6,3 +6,7 @@ sources:
   - https://www.dialicious.com/en/aquatico
   - https://www.aquaticowatch.com/
   - https://www.aquaticowatch.com/pages/our-story
+control: private
+independent:
+  sources:
+    - https://www.aquaticowatch.com/pages/our-story

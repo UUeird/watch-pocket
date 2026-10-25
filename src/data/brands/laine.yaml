@@ -5,3 +5,7 @@ website: https://www.lainewatches.com
 sources:
   - https://www.dialicious.com/en/laine
   - https://www.lainewatches.com/
+control: private
+independent:
+  sources:
+    - https://www.lainewatches.com/

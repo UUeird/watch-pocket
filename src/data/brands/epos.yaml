@@ -11,3 +11,7 @@ sources:
   - https://www.dialicious.com/en/epos
   - https://epos.ch/
   - https://en.wikipedia.org/wiki/Epos_(watch_manufacturer)
+control: family
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Epos_(watch_manufacturer)

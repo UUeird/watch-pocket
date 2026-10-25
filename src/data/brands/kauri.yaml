@@ -5,3 +5,7 @@ website: https://kauri-watches.ch
 sources:
   - https://www.dialicious.com/en/kauri
   - https://kauri-watches.ch/
+control: private
+independent:
+  sources:
+    - https://kauri-watches.ch/presentation/

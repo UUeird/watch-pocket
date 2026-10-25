@@ -4,3 +4,14 @@ website: https://www.leinfelder-uhren.de
 sources:
   - https://www.dialicious.com/en/leinfelder
   - https://www.leinfelder-uhren.de/
+ownership:
+  - owner: tempus-arte
+    basis: disclosed
+    to: 2022
+    sources:
+      - https://www.leinfelder-uhren.de/
+  - owner: goldschmiede-leinfelder
+    basis: disclosed
+    from: 2022
+    sources:
+      - https://www.leinfelder-uhren.de/

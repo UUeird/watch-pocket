@@ -1,3 +1,7 @@
 name: Dodane
 origin: France
 status: active
+control: family
+independent:
+  sources:
+    - https://www.dodane1857.fr/

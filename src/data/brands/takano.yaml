@@ -5,3 +5,8 @@ website: https://takanowatch.jp
 sources:
   - https://www.dialicious.com/en/takano
   - https://takanowatch.jp/
+ownership:
+  - owner: precision-watch-tokyo
+    basis: disclosed
+    sources:
+      - https://takanowatch.jp/

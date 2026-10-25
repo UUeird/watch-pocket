@@ -5,3 +5,7 @@ website: https://nomadicwatches.com
 sources:
   - https://www.dialicious.com/en/nomadic
   - https://nomadicwatches.com/
+control: private
+independent:
+  sources:
+    - https://nomadicwatches.com/pages/about-us

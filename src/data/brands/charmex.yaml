@@ -5,3 +5,8 @@ website: https://www.charmex.ch
 sources:
   - https://www.dialicious.com/en/charmex
   - https://www.charmex.ch/
+control: family
+independent:
+  sources:
+    - https://www.charmex.ch/about-us/tradition.html
+    - https://masterhorologer.com/charmex-watches/

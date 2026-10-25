@@ -4,3 +4,9 @@ website: https://www.cauny.com
 sources:
   - https://www.dialicious.com/en/cauny
   - https://www.cauny.com/
+ownership:
+  - owner: ourtime
+    basis: disclosed
+    from: 2019
+    sources:
+      - https://www.cauny.com/pages/our-history

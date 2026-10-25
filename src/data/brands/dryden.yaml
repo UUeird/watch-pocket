@@ -5,3 +5,7 @@ website: https://drydenwatchco.com
 sources:
   - https://www.dialicious.com/en/dryden
   - https://drydenwatchco.com/
+control: private
+independent:
+  sources:
+    - https://drydenwatchco.com/pages/about-dryden-watch-company

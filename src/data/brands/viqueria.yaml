@@ -5,3 +5,7 @@ website: https://www.viqueriawatches.com
 sources:
   - https://www.dialicious.com/en/viqueria
   - https://www.viqueriawatches.com/
+control: private
+independent:
+  sources:
+    - https://www.viqueriawatches.com/about-us/

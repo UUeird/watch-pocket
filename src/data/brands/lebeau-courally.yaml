@@ -4,3 +4,7 @@ website: https://lebeau-courally.com
 sources:
   - https://www.dialicious.com/en/lebeau-courally
   - https://lebeau-courally.com/
+control: family
+independent:
+  sources:
+    - https://lebeau-courally.com/over-ons

@@ -4,3 +4,7 @@ website: https://www.shorehamwatches.com
 sources:
   - https://www.dialicious.com/en/shoreham
   - https://www.shorehamwatches.com/
+control: private
+independent:
+  sources:
+    - https://www.shorehamwatches.com/about.html

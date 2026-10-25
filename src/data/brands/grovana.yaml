@@ -12,3 +12,7 @@ sources:
   - https://www.dialicious.com/en/grovana
   - https://www.grovana.ch/
   - https://en.wikipedia.org/wiki/Grovana
+control: family
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Grovana

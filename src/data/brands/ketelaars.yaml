@@ -4,3 +4,8 @@ website: https://ketelaarswatches.com
 sources:
   - https://www.dialicious.com/en/ketelaars
   - https://ketelaarswatches.com/
+control: private
+independent:
+  sources:
+    - https://monochrome-watches.com/meet-ketelaars-watches-a-young-dutch-brand-with-big-potential/
+    - https://monochrome-watches.com/the-coolest-non-swiss-independent-watchmakers-part-3/

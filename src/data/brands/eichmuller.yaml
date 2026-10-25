@@ -4,3 +4,8 @@ website: https://www.eichmueller.de
 sources:
   - https://www.dialicious.com/en/eichmuller
   - https://www.eichmueller.de/
+control: family
+independent:
+  sources:
+    - https://www.eichmueller.de/ueber-uns/
+    - https://www.eichmueller.de/impressum

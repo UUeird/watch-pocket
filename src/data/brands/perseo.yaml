@@ -6,3 +6,8 @@ sources:
   - https://www.dialicious.com/en/perseo
   - https://www.wikidata.org/wiki/Q97435657
   - http://www.perseo-watches.it/
+control: family
+independent:
+  sources:
+    - https://www.perseo-watches.it/chi-siamo/
+    - http://www.perseo-watches.it/

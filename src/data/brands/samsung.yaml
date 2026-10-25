@@ -13,3 +13,6 @@ makes: [smartwatches]
 sources:
   - https://www.wikidata.org/wiki/Q20718
   - https://en.wikipedia.org/wiki/Samsung_Electronics
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Samsung_Electronics

@@ -5,3 +5,8 @@ website: https://wolbrook.com
 sources:
   - https://www.dialicious.com/en/wolbrook
   - https://wolbrook.com/
+control: private
+independent:
+  sources:
+    - https://wolbrook.com/
+    - https://wolbrook.com/pages/wolbrook-story

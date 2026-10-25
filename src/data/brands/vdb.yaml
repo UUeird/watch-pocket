@@ -4,3 +4,8 @@ website: https://vintage-vdb.com
 sources:
   - https://www.dialicious.com/en/vdb
   - https://vintage-vdb.com/
+control: private
+independent:
+  sources:
+    - https://vintage-vdb.com/de/impressum/
+    - https://vintage-vdb.com/de/about-vdb/the-man-behind/

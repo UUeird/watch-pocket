@@ -4,3 +4,8 @@ website: https://alstawatch.com
 sources:
   - https://www.dialicious.com/en/alsta
   - https://alstawatch.com/
+control: private
+independent:
+  sources:
+    - https://alstawatch.com/pages/about-alsta
+    - https://alstawatch.com/pages/history

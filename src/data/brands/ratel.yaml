@@ -5,3 +5,7 @@ website: https://ratelgeneve.com
 sources:
   - https://www.dialicious.com/en/ratel
   - https://ratelgeneve.com/
+control: private
+independent:
+  sources:
+    - https://ratelgeneve.com/about-us/

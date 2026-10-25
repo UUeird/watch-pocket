@@ -12,3 +12,8 @@ website: https://hegid.com
 sources:
   - https://www.dialicious.com/en/hegid
   - https://hegid.com/
+control: private
+independent:
+  sources:
+    - https://hegid.com/
+    - https://international.franceclat.fr/brands-timepieces/hegid/

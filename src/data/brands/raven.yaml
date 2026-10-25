@@ -6,3 +6,7 @@ website: https://ravenwatches.com
 sources:
   - https://www.dialicious.com/en/raven
   - https://ravenwatches.com/
+control: private
+independent:
+  sources:
+    - https://ravenwatches.com/pages/about

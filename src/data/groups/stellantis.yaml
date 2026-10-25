@@ -1,0 +1,6 @@
+name: Stellantis
+country: Netherlands
+control: public
+sources:
+  - https://en.wikipedia.org/wiki/Maserati
+  - https://en.wikipedia.org/wiki/Morellato_Group

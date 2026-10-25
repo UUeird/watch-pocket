@@ -4,3 +4,8 @@ periods: [{ from: 1994 }]
 segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q22101765
+control: family
+independent:
+  sources:
+    - https://www.damasko-watches.com/Manufaktur-Technologien/UEber-DAMASKO/
+    - https://www.damasko-watches.com/Informationen/Impressum/

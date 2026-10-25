@@ -2,3 +2,19 @@ name: Radley
 origin: United Kingdom
 status: active
 segment: budget
+ownership:
+  - owner: exponent-private-equity
+    from: 2007
+    to: 2016
+    sources:
+      - https://fashionunited.uk/news/business/bregal-freshstream-acquires-radley/2016060720660
+  - owner: bregal-freshstream
+    from: 2016
+    to: 2026
+    sources:
+      - https://fashionunited.uk/news/business/bregal-freshstream-acquires-radley/2016060720660
+  - owner: gordon-brothers
+    basis: reported
+    from: 2026
+    sources:
+      - https://www.theretailbulletin.com/fashion/radley-acquired-out-of-administration-by-gordon-brothers-27-05-2026/

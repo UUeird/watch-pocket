@@ -5,3 +5,7 @@ sources:
   - https://www.dialicious.com/en/kerbedanz
   - https://europastar.com/swisstime/1004097134-kerbedanz-maximus-ultra-precision.html
   - https://news.dupontregistry.com/watches/maximus-by-kerbedanz-the-worlds-largest-tourbillon-in-a-wristwatch/
+control: private
+independent:
+  sources:
+    - https://www.montres-passion.fr/?p=15045

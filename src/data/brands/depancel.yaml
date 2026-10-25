@@ -6,3 +6,7 @@ website: https://depancel.com
 sources:
   - https://www.dialicious.com/en/depancel
   - https://depancel.com/
+control: private
+independent:
+  sources:
+    - https://depancel.com/en/

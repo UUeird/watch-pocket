@@ -4,3 +4,7 @@ website: https://www.twcowatches.com
 sources:
   - https://www.dialicious.com/en/twco
   - https://www.twcowatches.com/
+control: private
+independent:
+  sources:
+    - https://www.twcowatches.com/about-us/

@@ -4,7 +4,6 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Hugo_Boss_logo_2021.svg
   license: Public domain
 origin: Germany
-control: public
 periods: [{ from: 1924 }]
 segment: budget
 tags:
@@ -14,3 +13,11 @@ licensees:
 sources:
   - https://en.wikipedia.org/wiki/Hugo_Boss
   - https://www.wikidata.org/wiki/Q491627
+ownership:
+  - owner: frasers
+    stake: 47.89
+    basis: reported
+    from: 2026
+    sources:
+      - https://www.nasdaq.com/articles/frasers-plans-further-increase-its-interest-hugo-boss
+      - https://fashionunited.uk/news/business/frasers-announces-two-billion-euro-bid-for-hugo-boss/2026061088572

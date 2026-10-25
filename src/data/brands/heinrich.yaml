@@ -6,3 +6,7 @@ sources:
   - https://www.dialicious.com/en/heinrich
   - https://heinrich.watch/
   - https://heinrich.watch/en
+control: private
+independent:
+  sources:
+    - https://heinrich.watch/en

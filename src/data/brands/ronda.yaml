@@ -10,3 +10,8 @@ segment: budget
 makes: [movements]
 sources:
   - https://en.wikipedia.org/wiki/Ronda_(watchmaker)
+control: family
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Ronda_(watchmaker)
+    - https://www.europastar.com/the-watch-files/those-who-innovate/1004116191-ronda-s-mechanical-revival.html

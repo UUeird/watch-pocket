@@ -4,3 +4,7 @@ website: https://www.batavi-watches.com
 sources:
   - https://www.dialicious.com/en/batavi
   - https://www.batavi-watches.com/
+control: private
+independent:
+  sources:
+    - https://monochrome-watches.com/in-conversation-with-ugur-mamak-founder-and-owner-of-batavi-watches/

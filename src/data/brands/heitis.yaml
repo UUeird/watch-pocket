@@ -5,3 +5,7 @@ website: https://www.heitiswatch.com
 sources:
   - https://www.dialicious.com/en/heitis
   - https://www.heitiswatch.com/
+control: private
+independent:
+  sources:
+    - https://www.heitiswatch.com/

@@ -5,3 +5,7 @@ website: https://seals-watches.com
 sources:
   - https://www.dialicious.com/en/seals
   - https://seals-watches.com/
+control: private
+independent:
+  sources:
+    - https://seals-watches.com/pages/about-us

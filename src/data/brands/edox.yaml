@@ -9,3 +9,12 @@ periods: [{ from: 1884 }]
 segment: mid-range
 sources:
   - https://www.edox.ch/edox-history/
+control: family
+ownership:
+  - owner: general-watch-co
+    to: 1983
+    sources:
+      - https://en.wikipedia.org/wiki/Era_Watch_Company
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Era_Watch_Company

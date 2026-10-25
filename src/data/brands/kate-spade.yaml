@@ -13,3 +13,8 @@ licensees:
   - licensee: fossil-group
 sources:
   - https://en.wikipedia.org/wiki/Kate_Spade_New_York
+ownership:
+  - owner: tapestry
+    from: 2017
+    sources:
+      - https://en.wikipedia.org/wiki/Kate_Spade_New_York

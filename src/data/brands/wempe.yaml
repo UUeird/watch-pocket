@@ -7,3 +7,7 @@ origin: Germany
 periods: [{ from: 1878 }]
 sources:
   - https://www.wikidata.org/wiki/Q1483424
+control: family
+independent:
+  sources:
+    - https://de.wikipedia.org/wiki/Gerhard_D._Wempe

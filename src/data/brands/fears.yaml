@@ -6,3 +6,7 @@ website: https://www.fearswatches.com
 sources:
   - https://www.dialicious.com/en/fears
   - https://www.fearswatches.com/
+control: family
+independent:
+  sources:
+    - https://www.fearswatches.com/

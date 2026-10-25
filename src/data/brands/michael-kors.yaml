@@ -12,3 +12,7 @@ licensees:
   - licensee: fossil-group
 sources:
   - https://en.wikipedia.org/wiki/Capri_Holdings
+ownership:
+  - owner: capri
+    sources:
+      - https://en.wikipedia.org/wiki/Capri_Holdings

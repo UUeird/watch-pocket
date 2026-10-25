@@ -4,3 +4,9 @@ website: https://store.siduna.watch
 sources:
   - https://www.dialicious.com/en/siduna
   - https://store.siduna.watch/
+ownership:
+  - owner: woodshores
+    basis: disclosed
+    from: 2018
+    sources:
+      - https://store.siduna.watch/about-i-1

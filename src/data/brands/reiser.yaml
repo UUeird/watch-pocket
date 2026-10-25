@@ -6,3 +6,8 @@ sources:
   - https://www.dialicious.com/en/reiser
   - https://www.reiserwatches.com/
   - https://www.reiserwatches.com/our-story/
+ownership:
+  - owner: global-watches
+    basis: disclosed
+    sources:
+      - https://www.reiserwatches.com/impressum/

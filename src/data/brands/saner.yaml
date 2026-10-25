@@ -4,3 +4,7 @@ website: https://saner-watches.ch
 sources:
   - https://www.dialicious.com/en/saner
   - https://saner-watches.ch/
+control: family
+independent:
+  sources:
+    - https://saner-watches.ch/pages/histoires

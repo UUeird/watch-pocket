@@ -5,3 +5,15 @@ website: https://poiray.com
 sources:
   - https://www.dialicious.com/en/poiray
   - https://poiray.com/
+ownership:
+  - owner: ams
+    from: 2013
+    to: 2025
+    sources:
+      - https://fashionunited.fr/actualite/business/le-joaillier-poiray-rachete-par-le-proprietaire-de-zadig-voltaire/2025060638372
+  - owner: iena-investissements
+    basis: reported
+    from: 2025
+    sources:
+      - https://fashionunited.fr/actualite/business/le-joaillier-poiray-rachete-par-le-proprietaire-de-zadig-voltaire/2025060638372
+      - https://luxus-plus.com/joaillerie-poiray-tombe-dans-lescarcelle-des-proprietaires-de-zadig-et-voltaire/

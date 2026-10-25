@@ -5,3 +5,7 @@ website: https://strehler.watch
 sources:
   - https://www.dialicious.com/en/strehler
   - https://strehler.watch/
+control: family
+independent:
+  sources:
+    - https://monochrome-watches.com/interview-andreas-strehler-independent-watchmaker-state-of-industry-for-small-high-end-indie-watchmakers

@@ -9,3 +9,8 @@ website: https://www.maseratiwatches.com
 sources:
   - https://www.dialicious.com/en/maserati
   - https://www.maseratiwatches.com/
+ownership:
+  - owner: stellantis
+    sources:
+      - https://en.wikipedia.org/wiki/Maserati
+      - https://en.wikipedia.org/wiki/Morellato_Group

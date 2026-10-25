@@ -6,3 +6,8 @@ logoCredit:
 origin: Germany
 status: active
 segment: mid-range
+ownership:
+  - owner: carl-bamberg
+    basis: disclosed
+    sources:
+      - https://askania.berlin/impressum/

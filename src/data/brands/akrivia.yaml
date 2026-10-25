@@ -4,3 +4,8 @@ website: https://www.rexheprexhepi.com
 sources:
   - https://www.dialicious.com/en/akrivia
   - https://www.rexheprexhepi.com/
+control: private
+independent:
+  sources:
+    - https://www.rexheprexhepi.com/rexhep-rexhepi
+    - https://www.rexheprexhepi.com/ateliers

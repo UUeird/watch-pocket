@@ -5,3 +5,7 @@ website: https://arcanaut.watch
 sources:
   - https://www.dialicious.com/en/arcanaut
   - https://arcanaut.watch/
+control: private
+independent:
+  sources:
+    - https://arcanaut.watch/pages/about

@@ -6,3 +6,8 @@ tags:
   - direct-to-consumer
 sources:
   - https://www.fox32chicago.com/news/chicago-watchmaker-oak-oscar
+control: private
+independent:
+  sources:
+    - https://www.oakandoscar.com/
+    - https://www.gearpatrol.com/?p=347973

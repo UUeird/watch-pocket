@@ -8,3 +8,20 @@ status: active
 segment: budget
 tags:
   - fashion
+ownership:
+  - owner: lvmh
+    stake: unknown
+    from: 1997
+    to: 2026
+    sources:
+      - https://en.wikipedia.org/wiki/Marc_Jacobs
+  - owner: whp-global
+    stake: 50
+    from: 2026
+    sources:
+      - https://en.wikipedia.org/wiki/Marc_Jacobs
+  - owner: g-iii-apparel
+    stake: 50
+    from: 2026
+    sources:
+      - https://en.wikipedia.org/wiki/Marc_Jacobs

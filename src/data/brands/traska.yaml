@@ -5,3 +5,7 @@ website: https://www.traskawatch.com
 sources:
   - https://www.dialicious.com/en/traska
   - https://www.traskawatch.com/
+control: private
+independent:
+  sources:
+    - https://www.traskawatch.com/pages/about

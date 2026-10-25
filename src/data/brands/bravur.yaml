@@ -5,3 +5,7 @@ website: https://bravurwatches.com
 sources:
   - https://www.dialicious.com/en/bravur
   - https://bravurwatches.com/
+control: private
+independent:
+  sources:
+    - https://www.gearpatrol.com/watches/a711183/bravur-watches-magnus-appelryd-interview/

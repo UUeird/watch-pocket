@@ -6,3 +6,7 @@ sources:
   - https://www.dialicious.com/en/gorilla
   - https://gorilla-watches.com/
   - https://gorilla-watches.com/en-us/blogs/about-us
+control: family
+independent:
+  sources:
+    - https://gorilla-watches.com/en-us/blogs/about-us

@@ -6,3 +6,7 @@ sources:
   - https://www.dialicious.com/en/swc
   - https://swcusa.com/
   - https://swcusa.com/pages/about-us
+control: family
+independent:
+  sources:
+    - https://swcusa.com/pages/about-us

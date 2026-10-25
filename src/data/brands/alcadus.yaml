@@ -4,3 +4,7 @@ website: https://alcadus.com
 sources:
   - https://www.dialicious.com/en/alcadus
   - https://alcadus.com/
+control: private
+independent:
+  sources:
+    - https://alcadus.com/about-us/

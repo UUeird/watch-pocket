@@ -5,3 +5,7 @@ website: https://www.marlinwatch.co.uk
 sources:
   - https://www.dialicious.com/en/marlin
   - https://www.marlinwatch.co.uk/
+control: private
+independent:
+  sources:
+    - https://www.marlinwatch.co.uk/about

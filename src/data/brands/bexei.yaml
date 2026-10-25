@@ -5,3 +5,7 @@ website: https://www.bexei.hu
 sources:
   - https://www.dialicious.com/en/bexei
   - https://www.bexei.hu/
+control: private
+independent:
+  sources:
+    - https://www.bexei.hu/

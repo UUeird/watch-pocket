@@ -4,3 +4,9 @@ website: https://asteriskwatches.com
 sources:
   - https://www.dialicious.com/en/asterisk
   - https://asteriskwatches.com/
+ownership:
+  - owner: { brand: xeric }
+    basis: disclosed
+    sources:
+      - https://asteriskwatches.com/
+      - https://www.collectspace.com/news/news-060226a-xeric-asterisk-space-missions-watches.html

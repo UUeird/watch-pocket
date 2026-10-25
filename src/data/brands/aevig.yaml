@@ -7,3 +7,7 @@ sources:
   - https://www.dialicious.com/en/aevig
   - https://aevig.com/
   - https://aevig.com/about/
+control: private
+independent:
+  sources:
+    - https://aevig.com/about/

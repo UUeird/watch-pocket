@@ -5,3 +5,7 @@ website: https://havenwatchco.com
 sources:
   - https://www.dialicious.com/en/haven
   - https://havenwatchco.com/
+control: private
+independent:
+  sources:
+    - https://mspmag.com/shop-and-style/haven-watch-co-releases-collaboration-with-first-avenue/

@@ -10,3 +10,8 @@ periods: [{ from: 1947 }]
 segment: mid-range
 sources:
   - https://web.archive.org/web/20230929110143/https://herbelin.com/about/?lang=en
+control: family
+independent:
+  sources:
+    - https://herbelin.com/
+    - https://web.archive.org/web/20230929110143/https://herbelin.com/about/?lang=en

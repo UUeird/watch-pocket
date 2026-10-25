@@ -2,3 +2,8 @@ name: Illinois Watch Co.
 origin: United States
 status: defunct
 segment: mid-range
+ownership:
+  - owner: { brand: hamilton }
+    from: 1927
+    sources:
+      - https://en.wikipedia.org/wiki/Illinois_Watch_Company

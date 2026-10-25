@@ -9,3 +9,8 @@ origin: Switzerland
 sources:
   - https://www.dialicious.com/en/minerva
   - https://en.wikipedia.org/wiki/Montblanc_(company)
+ownership:
+  - owner: richemont
+    from: 2006
+    sources:
+      - https://en.wikipedia.org/wiki/Montblanc_(company)

@@ -4,3 +4,7 @@ website: https://www.ganewatches.com
 sources:
   - https://www.dialicious.com/en/gane
   - https://www.ganewatches.com/
+control: private
+independent:
+  sources:
+    - https://www.ganewatches.com/about-us

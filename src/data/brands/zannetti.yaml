@@ -5,3 +5,8 @@ website: https://zannetti.com
 sources:
   - https://www.dialicious.com/en/zannetti
   - https://zannetti.com/
+control: family
+independent:
+  sources:
+    - https://zannetti.com/
+    - https://zannetti.com/pages/about-us

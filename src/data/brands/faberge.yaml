@@ -11,3 +11,20 @@ website: https://www.faberge.com
 sources:
   - https://www.dialicious.com/en/faberge
   - https://www.faberge.com/
+ownership:
+  - owner: pallinghurst
+    from: 2007
+    to: 2013
+    sources:
+      - https://en.wikipedia.org/wiki/Faberg%C3%A9_(company)
+  - owner: gemfields
+    from: 2013
+    to: 2025
+    sources:
+      - https://en.wikipedia.org/wiki/Faberg%C3%A9_(company)
+      - https://www.nationaljeweler.com/articles/14178-gemfields-sells-faberge-for-50m
+  - owner: smg-capital
+    from: 2025
+    sources:
+      - https://www.nationaljeweler.com/articles/14178-gemfields-sells-faberge-for-50m
+      - https://en.wikipedia.org/wiki/Faberg%C3%A9_(company)
