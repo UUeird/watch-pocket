@@ -6,3 +6,7 @@ website: https://www.cornavin-watches.ch
 sources:
   - https://www.dialicious.com/en/cornavin
   - https://www.cornavin-watches.ch/
+control: family
+independent:
+  sources:
+    - https://www.cornavin-watches.ch/pages/about-us

@@ -6,3 +6,9 @@ sources:
   - https://www.dialicious.com/en/geovani
   - https://geovaniwatch.com/
   - https://geovaniwatch.com/la-maison/
+ownership:
+  - owner: ribawatch
+    basis: disclosed
+    from: 2003
+    sources:
+      - https://geovaniwatch.com/la-maison/

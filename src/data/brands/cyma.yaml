@@ -2,3 +2,8 @@ name: Cyma
 origin: Switzerland
 status: defunct
 segment: mid-range
+ownership:
+  - owner: stelux
+    sources:
+      - https://en.wikipedia.org/wiki/Cyma_Watches
+      - https://wiki.grail-watch.com/index.php/Cyma

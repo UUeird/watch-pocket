@@ -5,3 +5,7 @@ website: https://www.clemencewatches.com
 sources:
   - https://www.dialicious.com/en/clemence
   - https://www.clemencewatches.com/
+control: private
+independent:
+  sources:
+    - https://www.clemencewatches.com/about
