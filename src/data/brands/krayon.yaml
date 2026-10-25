@@ -4,3 +4,7 @@ website: http://www.krayon.ch
 sources:
   - https://www.dialicious.com/en/krayon
   - http://www.krayon.ch/
+control: private
+independent:
+  sources:
+    - https://www.krayon.ch/krayon/historic-setting.php?lang=en

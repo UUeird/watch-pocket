@@ -4,3 +4,9 @@ website: https://lorenz.it
 sources:
   - https://www.dialicious.com/en/lorenz
   - https://lorenz.it/
+ownership:
+  - owner: leader-watch-company
+    basis: disclosed
+    from: 2016
+    sources:
+      - https://lorenz.it/en/pages/the-lorenz-brand

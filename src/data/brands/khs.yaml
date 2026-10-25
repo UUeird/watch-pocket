@@ -4,3 +4,7 @@ website: https://www.khs.net
 sources:
   - https://www.dialicious.com/en/khs
   - https://www.khs.net/
+control: private
+independent:
+  sources:
+    - https://www.khs.net/pages/impressum
