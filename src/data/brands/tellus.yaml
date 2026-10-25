@@ -4,3 +4,7 @@ website: https://www.maison-tellus.com
 sources:
   - https://www.dialicious.com/en/tellus
   - https://www.maison-tellus.com/
+control: family
+independent:
+  sources:
+    - https://www.maison-tellus.com/pages/notre-heritage
