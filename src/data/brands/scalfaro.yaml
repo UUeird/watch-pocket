@@ -5,3 +5,7 @@ website: https://www.scalfaro.com
 sources:
   - https://www.dialicious.com/en/scalfaro
   - https://www.scalfaro.com/
+control: family
+independent:
+  sources:
+    - https://www.scalfaro.com/

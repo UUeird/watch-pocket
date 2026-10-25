@@ -4,3 +4,7 @@ website: https://radial-watch.com
 sources:
   - https://www.dialicious.com/en/radial
   - https://radial-watch.com/
+control: private
+independent:
+  sources:
+    - https://radial-watch.com/policies/legal-notice
