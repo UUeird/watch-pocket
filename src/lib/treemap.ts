@@ -302,10 +302,10 @@ const readableWhole = 100;
 
 // The version of a logo to show in a `width` by `height` pixel space: the whole logo where its name is drawn
 // large enough to read, and otherwise its logomark, unless its wordmark would be drawn at twice the area there, as a
-// wide space suits the name and a symbol reads smaller than a name. An image is shrunk to fit but never grown past its own size.
+// wide space suits the name and a symbol reads smaller than a name. An image is shrunk or grown to fill the space.
 function pickLogo({ whole, wordmark, logomark }: Point['logos'], width: number, height: number) {
   if (!whole) return undefined;
-  const scale = (logo: LogoFile) => Math.min(1, width / logo.width, height / logo.height);
+  const scale = (logo: LogoFile) => Math.min(width / logo.width, height / logo.height);
   // A wordmark cropped at the logo's scale is as tall as the name is within the logo.
   const name = wordmark ? wordmark.height * scale(whole) : (whole.height * scale(whole) * readable) / readableWhole;
   if ((!wordmark && !logomark) || name >= readable) return whole;
@@ -487,9 +487,9 @@ function circleLogo(logos: Point['logos'], diameter: number) {
   const room = inCircle(whole, diameter);
   const logo = pickLogo(logos, room.width, room.height);
   if (!logo) return undefined;
-  // The logo as drawn: fitted in the circle, never grown past its own size.
+  // The logo as drawn: fitted in the circle, grown if it is smaller than that.
   const box = inCircle(logo, diameter);
-  const scale = Math.min(1, box.width / logo.width, box.height / logo.height);
+  const scale = Math.min(box.width / logo.width, box.height / logo.height);
   const height = logo.height * scale;
   const reads =
     logo === logomark
@@ -504,7 +504,7 @@ function circleLogo(logos: Point['logos'], diameter: number) {
 
 const circleImage = (logo: LogoFile) => {
   const fit = inCircle(logo, 1);
-  const html = `<img src="${escape(logo.src)}" alt="" loading="lazy" style="max-width:${(fit.width * 100).toFixed(1)}%;max-height:${(fit.height * 100).toFixed(1)}%">`;
+  const html = `<img src="${escape(logo.src)}" alt="" loading="lazy" style="width:${(fit.width * 100).toFixed(1)}%;height:${(fit.height * 100).toFixed(1)}%">`;
   return { logo, html };
 };
 
