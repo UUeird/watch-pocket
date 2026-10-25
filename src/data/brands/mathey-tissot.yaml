@@ -7,3 +7,8 @@ sources:
   - https://www.dialicious.com/en/mathey-tissot
   - https://www.wikidata.org/wiki/Q6787078
   - https://matheytissot.com/
+control: family
+independent:
+  sources:
+    - https://en.worldtempus.com/article/industry-news/people-and-interviews/mathey-tissot-ambitions-for-2022-31042.html
+    - https://en.wikipedia.org/wiki/Mathey-Tissot

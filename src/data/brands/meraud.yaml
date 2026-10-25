@@ -5,3 +5,7 @@ website: https://meraud-watches.com
 sources:
   - https://www.dialicious.com/en/meraud
   - https://meraud-watches.com/
+control: private
+independent:
+  sources:
+    - https://meraud-watches.com/pages/our-story

@@ -5,3 +5,7 @@ website: https://www.mecwatches.com
 sources:
   - https://www.dialicious.com/en/mec
   - https://www.mecwatches.com/
+control: private
+independent:
+  sources:
+    - https://www.mecwatches.com/

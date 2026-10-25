@@ -5,3 +5,7 @@ website: https://www.votumwatches.com
 sources:
   - https://www.dialicious.com/en/votum
   - https://www.votumwatches.com/
+control: family
+independent:
+  sources:
+    - https://www.votumwatches.com/

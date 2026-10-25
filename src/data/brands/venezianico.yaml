@@ -14,3 +14,7 @@ sources:
   - https://www.dialicious.com/en/venezianico
   - https://www.wikidata.org/wiki/Q133189962
   - https://www.venezianico.com/
+control: family
+independent:
+  sources:
+    - https://www.europastar.com/the-watch-files/portraits/1004115732-venezianico-utopia-as-a-watchmaking-method.html

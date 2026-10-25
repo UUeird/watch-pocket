@@ -6,3 +6,7 @@ sources:
   - https://www.dialicious.com/en/meisterstein
   - https://www.meisterstein.com/
   - https://www.meisterstein.com/ueber-uns
+control: private
+independent:
+  sources:
+    - https://www.meisterstein.com/impressum

@@ -5,3 +5,7 @@ website: https://www.merairterre.com
 sources:
   - https://www.dialicious.com/en/matwatches
   - https://www.merairterre.com/
+control: private
+independent:
+  sources:
+    - https://www.merairterre.com/

@@ -5,3 +5,7 @@ website: https://www.vitreumwatches.com
 sources:
   - https://www.dialicious.com/en/vitreum
   - https://www.vitreumwatches.com/
+control: private
+independent:
+  sources:
+    - https://www.vitreumwatches.com/

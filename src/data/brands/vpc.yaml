@@ -5,3 +5,7 @@ sources:
   - https://www.dialicious.com/en/vpc
   - https://vpcwatch.co/
   - https://vpcwatch.co/about/
+control: private
+independent:
+  sources:
+    - https://vpcwatch.co/about/

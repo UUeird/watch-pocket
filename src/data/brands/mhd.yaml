@@ -5,3 +5,7 @@ website: https://www.mhdwatches.com
 sources:
   - https://www.dialicious.com/en/mhd
   - https://www.mhdwatches.com/
+control: private
+independent:
+  sources:
+    - https://www.mhdwatches.com/
