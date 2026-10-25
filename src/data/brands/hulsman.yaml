@@ -5,3 +5,7 @@ website: https://hulsman-timepieces.com
 sources:
   - https://www.dialicious.com/en/hulsman
   - https://hulsman-timepieces.com/
+control: private
+independent:
+  sources:
+    - https://hulsman-timepieces.com/

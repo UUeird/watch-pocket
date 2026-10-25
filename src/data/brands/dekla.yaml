@@ -5,3 +5,7 @@ website: https://deklawatches.com
 sources:
   - https://www.dialicious.com/en/dekla
   - https://deklawatches.com/
+control: private
+independent:
+  sources:
+    - https://deklawatches.com/imprint

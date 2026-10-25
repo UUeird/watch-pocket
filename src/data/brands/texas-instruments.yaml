@@ -11,3 +11,7 @@ tags:
   - early-digital
 sources:
   - https://www.wikidata.org/wiki/Q193412
+control: public
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Texas_Instruments

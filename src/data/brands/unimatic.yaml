@@ -6,3 +6,7 @@ website: https://www.unimaticwatches.com
 sources:
   - https://www.dialicious.com/en/unimatic
   - https://www.unimaticwatches.com/
+control: private
+independent:
+  sources:
+    - https://timeandtidewatches.com/everything-you-need-to-know-about-unimatic/

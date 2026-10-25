@@ -2,3 +2,8 @@ name: Hampden
 origin: United States
 status: defunct
 segment: mid-range
+ownership:
+  - owner: clinton-watch-company
+    from: 1958
+    sources:
+      - https://en.wikipedia.org/wiki/Hampden_Watch_Company

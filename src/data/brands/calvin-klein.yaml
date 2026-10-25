@@ -4,7 +4,6 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Calvin_Klein_logo.svg
   license: Public domain
 origin: United States
-control: public
 periods: [{ from: 1968 }]
 segment: budget
 tags:
@@ -14,3 +13,9 @@ licensees:
 sources:
   - https://en.wikipedia.org/wiki/Calvin_Klein_(fashion_house)
   - https://www.wikidata.org/wiki/Q1068628
+ownership:
+  - owner: pvh
+    from: 2003
+    sources:
+      - https://en.wikipedia.org/wiki/Calvin_Klein_(fashion_house)
+      - https://movadogroupinc.gcs-web.com/news-releases/news-release-details/movado-group-inc-announces-global-watch-and-jewelry-license

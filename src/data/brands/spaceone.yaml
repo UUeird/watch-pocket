@@ -5,3 +5,7 @@ website: https://spaceonewatches.com
 sources:
   - https://www.dialicious.com/en/spaceone
   - https://spaceonewatches.com/
+control: private
+independent:
+  sources:
+    - https://spaceonewatches.com/

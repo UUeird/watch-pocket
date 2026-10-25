@@ -4,3 +4,7 @@ website: https://www.batiscafo.store
 sources:
   - https://www.dialicious.com/en/batiscafo
   - https://www.batiscafo.store/
+control: private
+independent:
+  sources:
+    - https://www.batiscafo.store/

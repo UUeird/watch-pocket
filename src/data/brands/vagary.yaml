@@ -5,3 +5,8 @@ website: https://www.vagary.it
 sources:
   - https://www.dialicious.com/en/vagary
   - https://www.vagary.it/
+ownership:
+  - owner: citizen
+    basis: disclosed
+    sources:
+      - https://www.vagary.it/

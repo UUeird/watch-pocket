@@ -8,3 +8,8 @@ periods: [{ from: 1991 }]
 segment: luxury
 sources:
   - https://www.wikidata.org/wiki/Q21820020
+control: family
+independent:
+  sources:
+    - http://www.europastar.com/the-watch-files/portraits/1004115066-franck-muller-mystery-and-exuberance.html
+    - https://watchesbysjx.com/2018/02/the-richest-people-in-swiss-watchmaking-in-2017.html?amp=1

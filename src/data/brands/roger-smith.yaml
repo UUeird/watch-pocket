@@ -4,3 +4,7 @@ periods: [{ from: 2001 }]
 segment: haute
 sources:
   - https://en.wikipedia.org/wiki/Roger_W._Smith
+control: private
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Roger_W._Smith

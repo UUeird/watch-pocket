@@ -5,3 +5,9 @@ sources:
   - https://www.dialicious.com/en/paulin
   - https://www.paulinwatches.com/
   - https://www.paulinwatches.com/pages/about-us
+ownership:
+  - owner: { brand: anordain }
+    basis: disclosed
+    from: 2023
+    sources:
+      - https://www.paulinwatches.com/pages/about-us

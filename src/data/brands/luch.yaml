@@ -10,3 +10,8 @@ periods: [{ from: 1953 }]
 segment: budget
 sources:
   - https://en.wikipedia.org/wiki/Luch_(watchmaker)
+ownership:
+  - owner: { brand: franck-muller }
+    stake: unknown
+    sources:
+      - https://en.wikipedia.org/wiki/Luch_(watchmaker)

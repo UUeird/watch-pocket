@@ -10,3 +10,8 @@ licensees:
   - licensee: swatch-group
 sources:
   - https://www.wikidata.org/wiki/Q1385309
+ownership:
+  - owner: mayhoola
+    from: 2016
+    sources:
+      - https://en.wikipedia.org/wiki/Balmain_(fashion_house)

@@ -6,3 +6,8 @@ sources:
   - https://www.dialicious.com/en/47zero
   - https://47zero.com/
   - https://47zero.com/en/about/
+control: family
+independent:
+  sources:
+    - https://47zero.com/en/about/
+    - https://47zero.com/en/legal-mention/

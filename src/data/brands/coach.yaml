@@ -4,7 +4,6 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Coach_New_Logo.svg
   license: Public domain
 origin: United States
-control: public
 periods: [{ from: 1941 }]
 segment: budget
 tags:
@@ -14,3 +13,13 @@ licensees:
 sources:
   - https://en.wikipedia.org/wiki/Coach_New_York
   - https://www.wikidata.org/wiki/Q727697
+ownership:
+  - owner: sara-lee
+    from: 1985
+    to: 2001
+    sources:
+      - https://en.wikipedia.org/wiki/Coach_New_York
+  - owner: tapestry
+    from: 2001
+    sources:
+      - https://en.wikipedia.org/wiki/Coach_New_York

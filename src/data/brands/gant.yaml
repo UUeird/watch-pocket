@@ -12,3 +12,8 @@ website: https://gant.com
 sources:
   - https://www.dialicious.com/en/gant
   - https://gant.com/
+ownership:
+  - owner: maus-freres
+    from: 2008
+    sources:
+      - https://en.wikipedia.org/wiki/Gant_(company)

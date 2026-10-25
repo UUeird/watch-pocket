@@ -4,3 +4,7 @@ periods: [{ from: 1894, to: 1958 }]
 segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Gruen_Watch_Company
+ownership:
+  - owner: mz-berger
+    sources:
+      - https://en.wikipedia.org/wiki/Gruen_Watch_Company

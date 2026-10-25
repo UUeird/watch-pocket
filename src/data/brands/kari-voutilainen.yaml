@@ -4,3 +4,7 @@ periods: [{ from: 2002 }]
 segment: haute
 sources:
   - https://www.acollectedman.com/blogs/journal/watchmaking-journey-kari-voutilainen
+control: private
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Kari_Voutilainen

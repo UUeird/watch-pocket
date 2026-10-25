@@ -8,3 +8,7 @@ website: https://www.dunhill.com
 sources:
   - https://www.dialicious.com/en/dunhill
   - https://www.dunhill.com/
+ownership:
+  - owner: richemont
+    sources:
+      - https://en.wikipedia.org/wiki/Alfred_Dunhill

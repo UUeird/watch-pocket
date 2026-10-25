@@ -5,3 +5,7 @@ website: https://www.elkawatch.ch
 sources:
   - https://www.dialicious.com/en/elka
   - https://www.elkawatch.ch/
+control: private
+independent:
+  sources:
+    - https://www.elkawatch.ch/

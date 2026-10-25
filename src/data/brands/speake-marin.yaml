@@ -11,3 +11,8 @@ periods: [{ from: 2002 }]
 segment: haute
 sources:
   - https://www.wikidata.org/wiki/Q16950856
+control: private
+independent:
+  sources:
+    - https://speake-marin.com/
+    - https://en.wikipedia.org/wiki/Speake-Marin

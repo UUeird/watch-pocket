@@ -5,3 +5,13 @@ segment: mid-range
 sources:
   - https://www.dialicious.com/en/lanco
   - https://en.wikipedia.org/wiki/Langendorf_Watch_Company_SA
+ownership:
+  - owner: langendorf-watch-company
+    to: 1965
+    sources:
+      - https://en.wikipedia.org/wiki/Langendorf_Watch_Company_SA
+  - owner: ssih
+    from: 1965
+    to: 1981
+    sources:
+      - https://en.wikipedia.org/wiki/Langendorf_Watch_Company_SA

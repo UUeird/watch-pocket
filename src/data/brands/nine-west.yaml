@@ -8,3 +8,10 @@ status: active
 segment: budget
 tags:
   - fashion
+ownership:
+  - owner: authentic-brands
+    basis: reported
+    from: 2018
+    sources:
+      - https://fashionunited.uk/news/business/authentic-brands-group-completes-nine-west-bandolino-acquisition/2018070430546
+      - https://insideretail.com.au/news/authentic-brands-buys-nine-west-bandolino-for-us340-million-201806

@@ -4,3 +4,7 @@ website: http://www.haute-rive-watches.ch
 sources:
   - https://www.dialicious.com/en/haute-rive
   - http://www.haute-rive-watches.ch/
+control: family
+independent:
+  sources:
+    - https://www.haute-rive-watches.ch/

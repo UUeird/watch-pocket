@@ -5,3 +5,7 @@ website: https://feynman.watch
 sources:
   - https://www.dialicious.com/en/feynman
   - https://feynman.watch/
+control: private
+independent:
+  sources:
+    - https://feynman.watch/pages/about

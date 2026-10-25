@@ -6,3 +6,7 @@ sources:
   - https://www.dialicious.com/en/typsim
   - https://www.typsim.com/
   - https://www.typsim.com/about
+control: private
+independent:
+  sources:
+    - https://www.typsim.com/about

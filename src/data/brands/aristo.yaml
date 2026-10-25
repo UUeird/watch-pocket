@@ -5,3 +5,13 @@ logoCredit:
   license: Public domain
 origin: Germany
 status: active
+control: family
+ownership:
+  - owner: julius-epple
+    from: 1907
+    to: 1998
+    sources:
+      - https://de.wikipedia.org/wiki/Aristo_Vollmer
+independent:
+  sources:
+    - https://de.wikipedia.org/wiki/Aristo_Vollmer

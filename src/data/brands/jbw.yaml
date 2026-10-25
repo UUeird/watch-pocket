@@ -4,3 +4,7 @@ periods: [{ from: 2008 }]
 segment: budget
 sources:
   - https://www.fashionbeans.com/article/jbw-watches-review
+control: family
+independent:
+  sources:
+    - https://www.fashionbeans.com/article/jbw-watches-review

@@ -10,3 +10,7 @@ periods: [{ from: 1945 }]
 segment: budget
 sources:
   - https://en.wikipedia.org/wiki/Pobeda_(watch)
+ownership:
+  - owner: { brand: raketa }
+    sources:
+      - https://en.wikipedia.org/wiki/Pobeda_(watch)

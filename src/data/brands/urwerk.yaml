@@ -10,3 +10,8 @@ periods: [{ from: 1997 }]
 segment: haute
 sources:
   - https://www.dialicious.com/en/urwerk
+control: private
+independent:
+  sources:
+    - https://www.urwerk.com/story
+    - https://www.optionstheedge.com/node/3677

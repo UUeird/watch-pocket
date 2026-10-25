@@ -4,3 +4,7 @@ website: https://www.arlywatch.de
 sources:
   - https://www.dialicious.com/en/arly
   - https://www.arlywatch.de/
+control: private
+independent:
+  sources:
+    - https://www.arlywatch.de/über-uns

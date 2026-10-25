@@ -13,3 +13,7 @@ licensees:
 logoBackground: '#e92d31'
 sources:
   - https://en.wikipedia.org/wiki/Diesel_(company)
+ownership:
+  - owner: otb
+    sources:
+      - https://en.wikipedia.org/wiki/Diesel_(company)

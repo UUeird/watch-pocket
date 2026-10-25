@@ -7,3 +7,8 @@ sources:
   - https://www.dialicious.com/en/herbelin
   - https://web.archive.org/web/20230929110143/https://herbelin.com/about/?lang=en
   - https://www.wantedonline.co.za/watches-and-jewellery/2016-08-07-michel-herbelin-a-short-history/
+control: family
+independent:
+  sources:
+    - https://fr.wikipedia.org/wiki/Michel_Herbelin
+    - https://www.wantedonline.co.za/watches-and-jewellery/2016-08-07-michel-herbelin-a-short-history/

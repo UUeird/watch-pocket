@@ -9,3 +9,8 @@ periods: [{ from: 1853 }]
 segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q663923
+ownership:
+  - owner: gt-thommen-watch
+    from: 2012
+    sources:
+      - https://en.wikipedia.org/wiki/Revue_Thommen

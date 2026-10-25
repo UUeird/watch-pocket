@@ -8,3 +8,9 @@ website: https://joop.com
 sources:
   - https://www.dialicious.com/en/joop
   - https://joop.com/
+ownership:
+  - owner: holy-fashion-group
+    stake: 100
+    from: 2008
+    sources:
+      - https://de.wikipedia.org/wiki/Joop!

@@ -10,3 +10,7 @@ website: https://www.unikatuhren.ch
 sources:
   - https://www.dialicious.com/en/unikatuhren
   - https://www.unikatuhren.ch/
+control: family
+independent:
+  sources:
+    - https://www.unikatuhren.ch/

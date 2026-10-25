@@ -6,3 +6,7 @@ website: https://www.dwiss.com
 sources:
   - https://www.dialicious.com/en/dwiss
   - https://www.dwiss.com/
+control: private
+independent:
+  sources:
+    - https://www.dwiss.com/pages/about

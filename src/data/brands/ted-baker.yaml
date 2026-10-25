@@ -8,3 +8,8 @@ periods: [{ from: 1988 }]
 segment: budget
 sources:
   - https://en.wikipedia.org/wiki/Ted_Baker
+ownership:
+  - owner: authentic-brands
+    from: 2022
+    sources:
+      - https://en.wikipedia.org/wiki/Ted_Baker

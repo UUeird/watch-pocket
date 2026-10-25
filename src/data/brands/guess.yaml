@@ -12,3 +12,10 @@ licensees:
   - licensee: timex-group
 sources:
   - https://www.wikidata.org/wiki/Q2470307
+ownership:
+  - owner: authentic-brands
+    stake: 51
+    basis: reported
+    from: 2026
+    sources:
+      - https://en.wikipedia.org/wiki/Guess_(clothing)

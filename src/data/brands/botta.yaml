@@ -5,3 +5,8 @@ website: https://www.botta-design.de
 sources:
   - https://www.dialicious.com/en/botta
   - https://www.botta-design.de/
+control: private
+independent:
+  sources:
+    - https://www.botta-design.de/policies/legal-notice
+    - https://www.botta-design.de/pages/uber-uns

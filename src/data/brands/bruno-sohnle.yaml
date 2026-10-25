@@ -9,3 +9,8 @@ segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q17353455
 logoBackground: '#281c1e'
+control: family
+independent:
+  sources:
+    - https://brunosoehnle-glashuette.com/en/about-us/history
+    - https://www.watchtime.net/brands/promotion/special-deutsche-uhrenmarken-bruno-soehnle

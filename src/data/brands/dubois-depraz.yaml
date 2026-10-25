@@ -17,3 +17,7 @@ segment: luxury
 makes: [movements]
 sources:
   - https://www.wikidata.org/wiki/Q3040558
+control: private
+independent:
+  sources:
+    - https://www.dubois-depraz.ch/

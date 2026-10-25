@@ -5,3 +5,8 @@ website: http://cattin.swiss
 sources:
   - https://www.dialicious.com/en/cattin
   - http://cattin.swiss/
+control: family
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Catorex
+    - http://cattin.swiss/

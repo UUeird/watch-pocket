@@ -5,3 +5,7 @@ website: https://www.anicorn-watches.com
 sources:
   - https://www.dialicious.com/en/anicorn
   - https://www.anicorn-watches.com/
+control: private
+independent:
+  sources:
+    - https://www.anicorn-watches.com/pages/about

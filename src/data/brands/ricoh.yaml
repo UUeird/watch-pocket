@@ -10,3 +10,7 @@ sources:
   - https://wiki.grail-watch.com/index.php/Ricoh
   - https://japanese-microbrands.com/en/blogs/japan-vintage-journal/ricoh-die-vergessene-schwester-von-seiko-citizen-und-orient
   - https://en.wikipedia.org/wiki/Ricoh
+control: public
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Ricoh

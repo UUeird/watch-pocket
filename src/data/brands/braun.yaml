@@ -6,3 +6,9 @@ sources:
   - https://www.dialicious.com/en/braun
   - https://braun-clocks.com/
   - https://www.wikidata.org/wiki/Q631220
+ownership:
+  - owner: procter-gamble
+    from: 2005
+    sources:
+      - https://en.wikipedia.org/wiki/Braun_(company)
+      - https://www.europastar.com/news/1004022641-zeon-limited-announces-a-new-exclusive-worldwide.html

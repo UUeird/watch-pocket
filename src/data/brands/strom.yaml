@@ -5,3 +5,7 @@ website: https://stromwatches.com
 sources:
   - https://www.dialicious.com/en/strom
   - https://stromwatches.com/
+control: family
+independent:
+  sources:
+    - https://stromwatches.com/about-us

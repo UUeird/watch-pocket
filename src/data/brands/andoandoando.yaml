@@ -5,3 +5,7 @@ website: https://andoandoando.com
 sources:
   - https://www.dialicious.com/en/andoandoando
   - https://andoandoando.com/
+control: private
+independent:
+  sources:
+    - https://andoandoando.com/pages/history

@@ -4,3 +4,9 @@ segment: budget
 sources:
   - https://www.dialicious.com/en/caravelle
   - https://en.wikipedia.org/wiki/Bulova
+ownership:
+  - owner: { brand: bulova }
+    from: 1962
+    sources:
+      - https://www.bulova.com/us/en/product/45C118.html
+      - https://en.wikipedia.org/wiki/Bulova

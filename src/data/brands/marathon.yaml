@@ -4,3 +4,7 @@ periods: [{ from: 1939 }]
 segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q107563969
+control: family
+independent:
+  sources:
+    - https://www.europastar.com/the-watch-files/a-world-watch-tour/1004114567-marathon-watch-company-s-band-of-brothers.html

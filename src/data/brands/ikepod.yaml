@@ -6,3 +6,7 @@ sources:
   - https://www.dialicious.com/en/ikepod
   - https://www.wikidata.org/wiki/Q5995843
   - https://ikepod.com/
+control: private
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Ikepod

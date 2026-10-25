@@ -6,3 +6,7 @@ website: https://alkinwatches.com
 sources:
   - https://www.dialicious.com/en/alkin
   - https://alkinwatches.com/
+control: private
+independent:
+  sources:
+    - https://alkinwatches.com/pages/about

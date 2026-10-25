@@ -9,3 +9,8 @@ website: https://morellatogroup.com
 sources:
   - https://www.dialicious.com/en/morellato
   - https://morellatogroup.com/
+ownership:
+  - owner: morellato-group
+    sources:
+      - https://en.wikipedia.org/wiki/Morellato_Group
+      - https://morellatogroup.com/en/history

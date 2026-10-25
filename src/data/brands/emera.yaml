@@ -6,3 +6,7 @@ sources:
   - https://www.dialicious.com/en/emera
   - https://emerawatches.com/
   - https://emerawatches.com/history/
+control: private
+independent:
+  sources:
+    - https://emerawatches.com/

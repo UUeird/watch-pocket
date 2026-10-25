@@ -6,3 +6,7 @@ tags:
   - direct-to-consumer
 sources:
   - https://www.europastar.com/magazine/features/1003798462-obaku-44-the-time-of-zen.html
+control: private
+independent:
+  sources:
+    - https://www.obaku.com/pages/obaku-story

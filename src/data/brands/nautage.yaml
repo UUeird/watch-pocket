@@ -5,3 +5,7 @@ website: https://nautage.com
 sources:
   - https://www.dialicious.com/en/nautage
   - https://nautage.com/
+control: family
+independent:
+  sources:
+    - https://nautage.com/about/

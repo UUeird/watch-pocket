@@ -11,3 +11,10 @@ segment: budget
 tags:
   - fashion
 logoBackground: '#e1cec8'
+ownership:
+  - owner: whp-global
+    basis: reported
+    from: 2019
+    sources:
+      - https://fashionunited.com/news/business/anne-klein-is-acquired-by-whp-global/2019071829018
+      - https://www.retaildive.com/news/anne-klein-sold-to-pe-backed-firm/558951

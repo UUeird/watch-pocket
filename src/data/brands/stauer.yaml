@@ -4,3 +4,11 @@ periods: [{ from: 2003 }]
 segment: budget
 sources:
   - https://www.businesswire.com/news/home/20240321335778/en/Cambridge-Savings-Bank-Provides-Stauer-With-a-%2410.5-Million-Credit-Facility-to-Facilitate-Future-Growth
+ownership:
+  - owner: stanfield-capital
+    stake: unknown
+    basis: reported
+    from: 2015
+    sources:
+      - https://www.cambridgesavings.com/newsroom/cambridge-savings-bank-provides-stauer-105-million-credit-facility-facilitate-future
+      - https://northcoastmezz.com/?p=6084

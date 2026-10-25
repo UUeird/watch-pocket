@@ -5,3 +5,7 @@ website: https://isotopewatches.com
 sources:
   - https://www.dialicious.com/en/isotope
   - https://isotopewatches.com/
+control: private
+independent:
+  sources:
+    - https://isotopewatches.com/

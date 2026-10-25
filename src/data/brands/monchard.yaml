@@ -5,3 +5,7 @@ website: https://monchardwatches.com
 sources:
   - https://www.dialicious.com/en/monchard
   - https://monchardwatches.com/
+control: private
+independent:
+  sources:
+    - https://monchardwatches.com/pages/about-us
