@@ -13,3 +13,6 @@ segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Squale_Watches
   - https://www.wikidata.org/wiki/Q25344999
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Squale_Watches

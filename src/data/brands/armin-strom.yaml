@@ -1,6 +1,11 @@
 name: Armin Strom
 origin: Switzerland
+control: family
 periods: [{ from: 1967 }]
 segment: haute
 sources:
   - https://monochrome-watches.com/armin-strom/
+independent:
+  sources:
+    - https://www.europastar.com/1004114852.html
+    - https://professionalwatches.com/armin-strom-passed-away-at-86/

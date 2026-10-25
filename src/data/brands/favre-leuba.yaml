@@ -9,3 +9,10 @@ logoCredit:
 origin: Switzerland
 status: revived
 segment: mid-range
+ownership:
+  - owner: titan-company
+    from: 2011
+    to: 2023
+    sources:
+      - https://en.wikipedia.org/wiki/Favre-Leuba
+      - https://www.businesstoday.in/amp/latest/corporate/story/titan-to-scale-down-operations-of-swiss-watch-brand-favre-leuba-280743-2020-12-07

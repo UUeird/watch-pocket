@@ -12,3 +12,6 @@ segment: budget
 sources:
   - https://en.wikipedia.org/wiki/Nike,_Inc.
   - https://www.wikidata.org/wiki/Q483915
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Nike,_Inc.

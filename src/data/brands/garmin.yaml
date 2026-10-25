@@ -10,3 +10,6 @@ segment: mid-range
 makes: [smartwatches]
 sources:
   - https://en.wikipedia.org/wiki/Garmin
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Garmin

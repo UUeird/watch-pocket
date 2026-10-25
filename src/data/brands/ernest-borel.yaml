@@ -4,3 +4,10 @@ periods: [{ from: 1856 }]
 segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q1028719
+ownership:
+  - owner: citychamp
+    stake: unknown
+    basis: reported
+    sources:
+      - https://en.wikipedia.org/wiki/Ernest_Borel
+      - https://simplywall.st/stocks/hk/consumer-durables/hkg-1856/ernest-borel-holdings-shares/ownership

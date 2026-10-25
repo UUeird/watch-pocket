@@ -7,7 +7,21 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by/3.0
   author: Greubel Forsey
 origin: Switzerland
+control: private
 periods: [{ from: 2004 }]
 segment: haute
 sources:
   - https://www.wikidata.org/wiki/Q3116546
+ownership:
+  - owner: richemont
+    stake: 20
+    basis: disclosed
+    from: 2006
+    to: 2022
+    sources:
+      - https://professionalwatches.com/greubel-forsey-regains-full-independence/
+      - https://fashionunited.uk/news/business/richemont-sells-stake-in-luxury-watchmaker-greubel-forsey/2022032562245
+independent:
+  sources:
+    - https://professionalwatches.com/greubel-forsey-regains-full-independence/
+    - https://fashionunited.uk/news/business/richemont-sells-stake-in-luxury-watchmaker-greubel-forsey/2022032562245

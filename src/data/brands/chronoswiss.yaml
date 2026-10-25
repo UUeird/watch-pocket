@@ -6,9 +6,14 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
   author: Chronoswiss
 origin: Germany
+control: family
 periods: [{ from: 1983 }]
 segment: luxury
 website: https://chronoswiss.com
 sources:
   - https://www.dialicious.com/en/chronoswiss
   - https://chronoswiss.com/
+independent:
+  sources:
+    - https://chronoswiss.com/en/team
+    - https://www.watchtime.com/?p=12597
