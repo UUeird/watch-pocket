@@ -1,0 +1,622 @@
+<title>Watch Pocket Logo Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+  /* Layout: a sticky tally and filter bar over a single column of brand rows; each row lays its candidates out as a strip of swatches. */
+  :root {
+    --bg: #f6f5f1;
+    --surface: #ffffff;
+    --ink: #1d1c19;
+    --muted: #6c695f;
+    --line: #e1ded5;
+    --accent: #8a5a1c;
+    --accent-soft: #f3e9da;
+    --good: #2f7d32;
+    --good-soft: #e5f2e5;
+    --navy: #0d366b;
+    --display: 'Fraunces', Georgia, serif;
+    --body: 'IBM Plex Sans', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151412; --surface: #1e1d1a; --ink: #ece9e2; --muted: #a09c92; --line: #34322d;
+      --accent: #d9a55a; --accent-soft: #3a2e1d; --good: #7cc47f; --good-soft: #1f3320; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #151412; --surface: #1e1d1a; --ink: #ece9e2; --muted: #a09c92; --line: #34322d;
+    --accent: #d9a55a; --accent-soft: #3a2e1d; --good: #7cc47f; --good-soft: #1f3320; color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font: 15px/1.5 var(--body);
+  }
+
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-block: 24px 64px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+
+  h1 {
+    margin: 0;
+    font: 600 1.75rem/1.2 var(--display);
+    text-wrap: balance;
+  }
+
+  .lede {
+    max-width: 64ch;
+    margin: 6px 0 0;
+    color: var(--muted);
+  }
+
+  .bar {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 20px;
+    margin: 20px 0 16px;
+    padding: 10px 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .tally {
+    display: flex;
+    gap: 16px;
+    font-variant-numeric: tabular-nums;
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+
+  .tally strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .filters {
+    display: flex;
+    gap: 4px;
+    margin-left: auto;
+  }
+
+  .filters button {
+    padding: 4px 10px;
+    font: 500 0.8125rem var(--body);
+    color: var(--muted);
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    cursor: pointer;
+  }
+
+  .filters button[aria-pressed="true"] {
+    color: var(--ink);
+    background: var(--surface);
+    border-color: var(--ink);
+  }
+
+  .status {
+    margin: 0 0 12px;
+    color: var(--muted);
+    font-size: 0.8125rem;
+  }
+
+  .brands {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .brand {
+    display: grid;
+    gap: 10px;
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+  }
+
+  .brand[data-state="approved"] {
+    border-color: var(--good);
+  }
+
+  .brand[data-state="skipped"] {
+    opacity: 0.6;
+  }
+
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 12px;
+  }
+
+  .head h2 {
+    margin: 0;
+    font: 600 1.125rem var(--display);
+  }
+
+  .meta {
+    color: var(--muted);
+    font-size: 0.8125rem;
+  }
+
+  .match {
+    font-size: 0.8125rem;
+    min-width: 0;
+  }
+
+  .match .warn {
+    padding: 1px 6px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 3px;
+    font-weight: 500;
+  }
+
+
+
+  .candidates {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
+    gap: 10px;
+  }
+
+  .candidate {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 6px;
+    min-width: 0;
+    padding: 8px;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+  }
+
+  .candidate[aria-current="true"] {
+    background: var(--good-soft);
+    border-color: var(--good);
+  }
+
+  /* Each logo is shown twice: on white, as the site lists it, and on navy, as the darkest treemap shade. The
+     checkerboard under the white half shows where a file is transparent. */
+  .swatches {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+  }
+
+  .swatch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    padding: 6px;
+    border-radius: 3px;
+  }
+
+  .swatch.light {
+    background: repeating-conic-gradient(#ffffff 0 25%, #eeece6 0 50%) 0 0 / 12px 12px;
+  }
+
+  .swatch.dark {
+    background: var(--navy);
+  }
+
+  .swatch img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .facts {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: var(--muted);
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .facts a {
+    color: var(--accent);
+    font-family: var(--mono);
+  }
+
+  .facts .licence {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  button.use,
+  button.skip {
+    padding: 6px 10px;
+    font: 500 0.8125rem var(--body);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button.use {
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  .roles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  button.use[aria-pressed="true"] {
+    color: #ffffff;
+    background: var(--good);
+    border-color: var(--good);
+  }
+
+  button.skip {
+    color: var(--muted);
+    background: none;
+    border: 1px dashed var(--line);
+  }
+
+  button.skip[aria-pressed="true"] {
+    color: var(--ink);
+    border-style: solid;
+    border-color: var(--ink);
+  }
+
+  button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  button:disabled {
+    cursor: default;
+    opacity: 0.6;
+  }
+
+  .actions {
+    display: flex;
+    gap: 6px;
+    margin-left: auto;
+  }
+
+  .research {
+    margin: 0;
+    padding: 8px 10px;
+    font-size: 0.875rem;
+    background: var(--accent-soft);
+    border-radius: 4px;
+  }
+
+  .why {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: var(--muted);
+  }
+
+  .confidence {
+    display: inline-block;
+    padding: 0 6px;
+    font-weight: 600;
+    font-size: 0.6875rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-radius: 3px;
+  }
+
+  .confidence.high {
+    color: var(--good);
+    background: var(--good-soft);
+  }
+
+  .confidence.medium {
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  .confidence.low {
+    color: var(--muted);
+    background: var(--line);
+  }
+
+  button.reject {
+    padding: 6px 10px;
+    font: 500 0.8125rem var(--body);
+    color: var(--muted);
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button.reject:hover {
+    border-color: var(--line);
+  }
+
+  /* A rejected candidate shrinks to its file name, with a way to undo. */
+  .candidate[data-rejected] {
+    opacity: 0.55;
+  }
+
+  .candidate[data-rejected] .swatches,
+  .candidate[data-rejected] .why,
+  .candidate[data-rejected] button.use {
+    display: none;
+  }
+
+  .section {
+    margin-top: 20px;
+  }
+
+  .section h2 {
+    margin: 0;
+    font: 600 1.25rem var(--display);
+  }
+
+  .section p {
+    margin: 4px 0 0;
+    max-width: 64ch;
+    color: var(--muted);
+  }
+
+  .empty {
+    padding: 24px;
+    color: var(--muted);
+    text-align: center;
+    border: 1px dashed var(--line);
+    border-radius: 6px;
+  }
+</style>
+
+<div class="wrap">
+  <h1>Logo candidates</h1>
+  <p class="lede">
+    Freely licensed logos from Wikimedia Commons for brands that have none. Pick for each brand, or skip a brand
+    when none of them is right. A file can be the brand's full logo, its logomark (the symbol alone), or a logo to
+    crop the logomark out of. Choices save as you make them, and Claude adds the approved ones to the site.
+  </p>
+
+  <div class="bar">
+    <div class="tally" aria-live="polite">
+      <span><strong id="count-total">0</strong> brands</span>
+      <span><strong id="count-approved">0</strong> approved</span>
+      <span><strong id="count-skipped">0</strong> skipped</span>
+      <span><strong id="count-open">0</strong> to review</span>
+      <span><strong id="count-unsure">0</strong> for Claude to research</span>
+    </div>
+    <div class="filters" role="group" aria-label="Show">
+      <button type="button" id="filter-open" data-filter="open" aria-pressed="true">To review</button>
+      <button type="button" id="filter-approved" data-filter="approved" aria-pressed="false">Approved</button>
+      <button type="button" id="filter-unsure" data-filter="unsure" aria-pressed="false">For research</button>
+      <button type="button" id="filter-skipped" data-filter="skipped" aria-pressed="false">Skipped</button>
+      <button type="button" id="filter-all" data-filter="all" aria-pressed="false">All</button>
+    </div>
+  </div>
+
+  <p class="status" id="status">Loading candidates…</p>
+  <ol class="brands" id="brands"></ol>
+</div>
+
+<script>
+  const state = { brands: [], decisions: {}, filter: 'open', db: null, canWrite: true, researched: new Set() };
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, props = {}, children = []) => {
+    const node = Object.assign(document.createElement(tag), props);
+    for (const child of [].concat(children)) if (child != null) node.append(child);
+    return node;
+  };
+  // A brand's decision: which file is its logo, which its logomark, which logo to crop a logomark from, or
+  // that none of the candidates is right. Early choices were saved as `choice`, a file to use as the logo or
+  // null to skip, and are read the same way.
+  const decisionOf = (id) => {
+    const d = state.decisions[id];
+    if (!d) return { rejected: [] };
+    return {
+      logo: d.logo ?? (d.choice || undefined),
+      logomark: d.logomark,
+      cropMarkFrom: d.cropMarkFrom,
+      skipped: d.skipped ?? d.choice === null,
+      unsure: d.unsure,
+      askAgain: d.askAgain,
+      rejected: d.rejected ?? [],
+    };
+  };
+  const stateOf = (id) => {
+    const d = decisionOf(id);
+    // Once Claude has answered with research notes, a brand asked about is back to review.
+    return d.logo || d.logomark || d.cropMarkFrom ? 'approved' : d.skipped ? 'skipped' : (d.unsure && !state.researched.has(id)) || d.askAgain ? 'unsure' : 'open';
+  };
+
+  function render() {
+    const counts = { open: 0, approved: 0, skipped: 0, unsure: 0 };
+    for (const b of state.brands) counts[stateOf(b.id)]++;
+    $('count-total').textContent = state.brands.length;
+    $('count-approved').textContent = counts.approved;
+    $('count-skipped').textContent = counts.skipped;
+    $('count-open').textContent = counts.open;
+    $('count-unsure').textContent = counts.unsure;
+    for (const button of document.querySelectorAll('.filters button')) button.setAttribute('aria-pressed', String(button.dataset.filter === state.filter));
+
+    const shown = state.brands.filter((b) => state.filter === 'all' || stateOf(b.id) === state.filter);
+    const list = $('brands');
+    list.replaceChildren();
+    if (shown.length === 0) {
+      list.append(el('li', { className: 'empty', textContent: state.filter === 'open' ? 'Every brand has been reviewed.' : 'No brands here yet.' }));
+      return;
+    }
+    // Brands with no logo come first, those traced through Wikidata before those found only by a file's name;
+    // brands that have a logo and want a logomark follow, each group under its own heading.
+    const sections = {
+      certain: ['Logos for brands with none', 'Traced through Wikidata, so these candidates are mostly the right company.'],
+      uncertain: ['Less certain', 'These were found only by a Commons file named after the brand, so some belong to a different company with the same name.'],
+      mark: ['Logomarks for brands with a logo', 'The symbol alone, for small spaces. Each brand’s current logo is first: crop a logomark from it, or mark it as the logomark itself where it already is just a symbol.'],
+    };
+    let current;
+    for (const brand of shown) {
+      const section = brand.kind === 'mark' ? 'mark' : brand.certain ? 'certain' : 'uncertain';
+      if (section !== current) {
+        current = section;
+        list.append(el('li', { className: 'section' }, [el('h2', { textContent: sections[section][0] }), el('p', { textContent: sections[section][1] })]));
+      }
+      list.append(renderBrand(brand));
+    }
+  }
+
+  function renderBrand(brand) {
+    const decision = decisionOf(brand.id);
+    const item = el('li', { className: 'brand' });
+    item.dataset.state = stateOf(brand.id);
+    const wd = brand.wikidata;
+    const match = wd
+      ? el('span', { className: 'match' }, [
+          el('a', { href: `https://www.wikidata.org/wiki/${wd.qid}`, target: '_blank', rel: 'noopener', textContent: wd.label || wd.qid }),
+          wd.description ? ` · ${wd.description}` : '',
+          wd.how === 'name search' ? el('span', { className: 'warn', textContent: ' Matched by name: check it is this brand ' }) : null,
+        ])
+      : el('span', { className: 'match' }, el('span', { className: 'warn', textContent: 'Found by file name only: check it is this brand' }));
+    const skipped = stateOf(brand.id) === 'skipped';
+    const skip = el('button', { type: 'button', className: 'skip', textContent: skipped ? 'Skipped' : 'None of these', disabled: !state.canWrite });
+    skip.setAttribute('aria-pressed', String(skipped));
+    skip.addEventListener('click', () => decide(brand.id, skipped ? { rejected: decision.rejected } : { skipped: true, rejected: decision.rejected }, true));
+    // Asks Claude to look further: more candidates, and a note on which is right and why.
+    const unsure = stateOf(brand.id) === 'unsure';
+    const researched = state.researched.has(brand.id);
+    const ask = el('button', { type: 'button', className: 'skip', textContent: unsure ? 'Asked Claude to research' : researched ? 'Researched · ask again' : 'I don’t know', disabled: !state.canWrite });
+    ask.setAttribute('aria-pressed', String(unsure));
+    // After research, asking again is its own flag, so the first answer still counts as an answer.
+    ask.addEventListener('click', () =>
+      decide(brand.id, unsure ? { unsure: researched ? decision.unsure : undefined, askAgain: undefined } : researched ? { askAgain: true } : { unsure: true }),
+    );
+    item.append(
+      el('div', { className: 'head' }, [
+        el('h2', { textContent: brand.name }),
+        el('span', { className: 'meta', textContent: brand.origin || 'Nation not recorded' }),
+        el('span', { className: 'actions' }, [ask, skip]),
+      ]),
+      match,
+    );
+    if (brand.research) item.append(el('p', { className: 'research' }, [el('strong', { textContent: 'Claude’s research: ' }), brand.research]));
+    const grid = el('div', { className: 'candidates' });
+    for (const c of brand.candidates) {
+      const rejected = decision.rejected.includes(c.title);
+      const card = el('div', { className: 'candidate' });
+      card.setAttribute('aria-current', String([decision.logo, decision.logomark, decision.cropMarkFrom].includes(c.title)));
+      if (rejected) card.dataset.rejected = '';
+      const img = () => el('img', { src: c.thumbPath, alt: '', loading: 'lazy' });
+      // Three roles a file can take; each is a toggle, and a role holds one file per brand.
+      const roles = [
+        { key: 'logo', label: 'Logo' },
+        { key: 'logomark', label: 'Logomark' },
+        { key: 'cropMarkFrom', label: 'Crop a logomark from it' },
+      ].filter(({ key }) => !(c.current && key === 'logo'));
+      const use = el('div', { className: 'roles' }, roles.map(({ key, label }) => {
+        const on = decision[key] === c.title;
+        const button = el('button', { type: 'button', className: 'use', textContent: label, disabled: !state.canWrite });
+        button.setAttribute('aria-pressed', String(on));
+        button.addEventListener('click', () => decide(brand.id, { [key]: on ? undefined : c.title, skipped: undefined, unsure: undefined }));
+        return button;
+      }));
+      const reject = el('button', { type: 'button', className: 'reject', textContent: rejected ? 'Rejected · undo' : 'Reject', disabled: !state.canWrite });
+      reject.setAttribute('aria-pressed', String(rejected));
+      reject.addEventListener('click', () => {
+        const list = rejected ? decision.rejected.filter((t) => t !== c.title) : [...decision.rejected, c.title];
+        // A rejected file cannot also hold a role.
+        const cleared = Object.fromEntries(['logo', 'logomark', 'cropMarkFrom'].filter((k) => !rejected && decision[k] === c.title).map((k) => [k, undefined]));
+        decide(brand.id, { ...cleared, rejected: list.length ? list : undefined });
+      });
+      use.append(reject);
+      const badge = c.confidence ? el('span', { className: `confidence ${c.confidence}`, textContent: c.confidence[0].toUpperCase() + c.confidence.slice(1) }) : null;
+      card.append(
+        el('div', { className: 'swatches' }, [el('div', { className: 'swatch light' }, img()), el('div', { className: 'swatch dark' }, img())]),
+        c.why ? el('p', { className: 'why' }, [badge, ' ', c.why]) : null,
+        el('p', { className: 'facts' }, [
+          el('span', { className: 'licence', textContent: c.licence }),
+          ` · ${c.via} · ${c.mime.replace('image/', '').replace('svg+xml', 'svg')}${c.width ? ` ${c.width}×${c.height}` : ''}`,
+          c.author ? el('br') : null,
+          c.author ? `By ${c.author.slice(0, 80)}` : null,
+          el('br'),
+          c.page ? el('a', { href: c.page, target: '_blank', rel: 'noopener', textContent: c.title.replace(/^File:/, '') }) : c.title,
+        ]),
+        use,
+      );
+      grid.append(card);
+    }
+    item.append(grid);
+    return item;
+  }
+
+  // Applies `patch` to a brand's decision (or replaces it outright), and saves it, or clears it when nothing is left.
+  async function decide(id, patch, replace = false) {
+    const previous = state.decisions[id];
+    const next = Object.fromEntries(
+      Object.entries(replace ? patch : { ...decisionOf(id), ...patch }).filter(([, value]) => value !== undefined && value !== false && !(Array.isArray(value) && value.length === 0)),
+    );
+    const empty = Object.keys(next).length === 0;
+    if (empty) delete state.decisions[id];
+    else state.decisions[id] = next;
+    render();
+    if (!state.db) return;
+    try {
+      const ref = state.db.collection('decisions').doc(id);
+      if (empty) await ref.delete();
+      else await ref.set({ ...next, decidedAt: new Date().toISOString() });
+    } catch (error) {
+      if (previous) state.decisions[id] = previous;
+      else delete state.decisions[id];
+      if (error?.code === 'invalid_argument') state.canWrite = false;
+      $('status').textContent = state.canWrite ? 'That choice did not save. Try again in a moment.' : 'You can view these candidates but not choose between them.';
+      render();
+    }
+  }
+
+  for (const button of document.querySelectorAll('.filters button')) {
+    button.addEventListener('click', () => {
+      state.filter = button.dataset.filter;
+      render();
+    });
+  }
+
+  (async () => {
+    try {
+      const res = await fetch('candidates.json');
+      state.brands = await res.json();
+      state.researched = new Set(state.brands.filter((b) => b.research).map((b) => b.id));
+    } catch {
+      $('status').textContent = 'The candidate list did not load. Reload the page to try again.';
+      return;
+    }
+    $('status').textContent = 'Choices are not saving yet: connecting…';
+    render();
+    const db = await window.claude?.use?.('db');
+    if (!db) {
+      $('status').textContent = 'Choices cannot be saved in this view. Open the page signed in to claude.ai to review.';
+      return;
+    }
+    state.db = db;
+    db.collection('decisions').onSnapshot(
+      (snap) => {
+        state.decisions = {};
+        for (const doc of snap.docs) state.decisions[doc.id] = doc.data();
+        $('status').textContent = 'Choices save as you make them.';
+        render();
+      },
+      () => {
+        $('status').textContent = 'Lost the connection to saved choices. Reload the page.';
+      },
+    );
+  })();
+</script>
