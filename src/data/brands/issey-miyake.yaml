@@ -1,0 +1,10 @@
+name: Issey Miyake
+origin: Japan
+tags: [fashion]
+licensees:
+  - licensee: seiko-group
+    sources:
+      - https://www.seikowatches.com/jp-ja/products
+      - https://www.isseymiyake-watch.com/
+sources:
+  - https://www.isseymiyake-watch.com/
