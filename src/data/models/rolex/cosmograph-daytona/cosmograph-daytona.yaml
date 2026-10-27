@@ -1,5 +1,7 @@
 name: Cosmograph Daytona
 line: rolex/cosmograph-daytona
+style: chronograph
+theme: motor-racing
 sources:
   - https://www.luxurybazaar.com/brands/rolex/ref-126500ln/
   - https://www.belmontwatches.com/products/rolex-daytona-126500ln
@@ -17,6 +19,7 @@ references:
     bezel: { material: steel, style: tachymeter }
     crystal: acrylic
     movement: Valjoux 72
+    complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "6263"
     caseSize: 37
@@ -24,6 +27,7 @@ references:
     bezel: { colors: [black], style: tachymeter }
     crystal: acrylic
     movement: Valjoux 727
+    complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "16520"
     photos:
@@ -38,6 +42,7 @@ references:
     bezel: { material: steel, style: tachymeter }
     crystal: sapphire
     movement: "4030"
+    complications: [chronograph]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "116520"
@@ -47,6 +52,7 @@ references:
     bezel: { material: steel, style: tachymeter }
     crystal: sapphire
     movement: "4130"
+    complications: [chronograph]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "116508"
@@ -63,6 +69,7 @@ references:
     bezel: { material: yellow-gold, style: tachymeter }
     crystal: sapphire
     movement: "4130"
+    complications: [chronograph]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "116509"
@@ -77,6 +84,7 @@ references:
     bezel: { material: white-gold, style: tachymeter }
     crystal: sapphire
     movement: "4130"
+    complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 116500LN
     periods: [{ from: 2016, to: 2023 }]
@@ -85,6 +93,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: tachymeter }
     crystal: sapphire
     movement: "4130"
+    complications: [chronograph]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 126500LN
@@ -101,6 +110,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: tachymeter }
     crystal: sapphire
     movement: "4131"
+    complications: [chronograph]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "126506"
@@ -110,6 +120,7 @@ references:
     bezel: { material: ceramic, colors: [brown], style: tachymeter }
     crystal: sapphire
     movement: "4131"
+    complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "126508"
     periods: [{ from: 2023 }]
@@ -118,6 +129,7 @@ references:
     bezel: { material: yellow-gold, style: tachymeter }
     crystal: sapphire
     movement: "4131"
+    complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "126509"
     periods: [{ from: 2023 }]
@@ -126,6 +138,7 @@ references:
     bezel: { material: white-gold, style: tachymeter }
     crystal: sapphire
     movement: "4131"
+    complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 126515LN
     periods: [{ from: 2023 }]
@@ -134,6 +147,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: tachymeter }
     crystal: sapphire
     movement: "4131"
+    complications: [chronograph]
     bracelets: [{ type: rubber-strap, name: Oysterflex }]
   - ref: 126518LN
     periods: [{ from: 2023 }]
@@ -142,4 +156,5 @@ references:
     bezel: { material: ceramic, colors: [black], style: tachymeter }
     crystal: sapphire
     movement: "4131"
+    complications: [chronograph]
     bracelets: [{ type: rubber-strap, name: Oysterflex }]

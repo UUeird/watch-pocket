@@ -1,5 +1,7 @@
 name: RM 43-01 Manual Winding Tourbillon Split-Seconds Chronograph Ferrari
 line: richard-mille/rm-43
+style: chronograph
+theme: motor-racing
 website: https://www.richardmille.com/collections/rm-43-01-ferrari
 sources:
   - https://www.richardmille.com/collections/rm-43-01-ferrari

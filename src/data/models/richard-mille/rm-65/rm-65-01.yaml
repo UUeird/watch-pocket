@@ -1,5 +1,6 @@
 name: RM 65-01 Automatic Winding Split-Seconds Chronograph
 line: richard-mille/rm-65
+style: chronograph
 website: https://www.richardmille.com/collections/rm-65-01-automatic-split-seconds-chronograph
 sources:
   - https://www.richardmille.com/collections/rm-65-01-automatic-split-seconds-chronograph
@@ -18,6 +19,7 @@ references:
     metals: [carbon]
     crystal: sapphire
     movement: RMAC4
+    complications: [date, chronograph, split-seconds]
     bracelets: [{ type: rubber-strap }]
   - ref: RM65-01 RG CA
     periods: [{ from: 2020 }]
@@ -26,4 +28,5 @@ references:
     bezel: { material: rose-gold }
     crystal: sapphire
     movement: RMAC4
+    complications: [date, chronograph, split-seconds]
     bracelets: [{ type: rubber-strap }]
