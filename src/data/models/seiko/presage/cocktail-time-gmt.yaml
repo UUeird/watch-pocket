@@ -1,0 +1,100 @@
+name: "Cocktail Time GMT"
+line: seiko/presage
+style: travel
+website: https://www.seikowatches.com/us-en/products/presage/cocktailtime
+sources:
+  - https://www.seikowatches.com/us-en/products/presage/cocktailtime
+  - https://www.seikowatches.com/us-en/products/presage/hcb004j1
+  - https://www.seikowatches.com/us-en/products/presage/hcb005j1
+  - https://www.seikowatches.com/us-en/products/presage/hcb006j1
+  - https://www.seikowatches.com/us-en/products/presage/ssk037j1
+  - https://www.seikowatches.com/us-en/products/presage/ssk039j1
+  - https://www.seikowatches.com/us-en/products/presage/ssk041j1
+  - https://www.seikowatches.com/us-en/products/presage/ssk049j1
+references:
+  - ref: HCB004
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/06/11/21/10/HCB004J1/HCB004J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcb004j1
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "4R34"
+    complications: [date, gmt]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HCB005
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/06/16/21/10/HCB005J1/HCB005J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcb005j1
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    caseColors: [{ color: rose-gold }]
+    crystal: mineral
+    movement: "4R34"
+    complications: [date, gmt]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HCB006
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/06/16/21/10/HCB006J1/HCB006J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcb006j1
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R34"
+    complications: [date, gmt]
+    dials: [{ color: purple }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSK037
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/04/30/21/16/SSK037J1/SSK037J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/ssk037j1
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R34"
+    complications: [date, gmt]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSK039
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/04/30/21/16/SSK039J1/SSK039J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/ssk039j1
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R34"
+    complications: [date, gmt]
+    dials: [{ color: brown }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSK041
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/06/03/21/22/SSK041J1/SSK041J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/ssk041j1
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R34"
+    complications: [date, gmt]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSK049
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/10/21/15/SSK049J1/SSK049J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/ssk049j1
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R34"
+    complications: [date, gmt]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]

@@ -1,0 +1,85 @@
+name: "Diver's 41.7 mm"
+line: seiko/prospex
+style: dive
+website: https://www.seikowatches.com/us-en/products/prospex/sea
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/sea
+  - https://www.seikowatches.com/us-en/products/prospex/srpl11
+  - https://www.seikowatches.com/us-en/products/prospex/srpl13
+  - https://www.seikowatches.com/us-en/products/prospex/srpl15
+  - https://www.seikowatches.com/us-en/products/prospex/srpl51
+  - https://www.seikowatches.com/us-en/products/prospex/srpl53
+  - https://www.seikowatches.com/us-en/products/prospex/hbb001
+references:
+  - ref: SRPL11
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/05/14/21/11/SRPL11K1/SRPL11K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpl11
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 41.7
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: red }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL13
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/05/14/21/11/SRPL13K1/SRPL13K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpl13
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 41.7
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL15
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/05/14/21/12/SRPL15K1/SRPL15K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpl15
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 41.7
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: SRPL51
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/06/10/21/05/SRPL51K1/SRPL51K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpl51
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 41.7
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL53
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/05/28/21/10/SRPL53K1/SRPL53K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpl53
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 41.7
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBB001
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/05/21/13/HBB001K1/HBB001K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbb001
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 41.7
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
