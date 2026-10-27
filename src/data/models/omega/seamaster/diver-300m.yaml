@@ -8,6 +8,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "8800"
+    complications: [date]
     crystal: sapphire
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -17,6 +18,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "8800"
+    complications: [date]
     crystal: sapphire
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
@@ -26,6 +28,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [blue], style: dive }
     movement: "8800"
+    complications: [date]
     crystal: sapphire
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -35,6 +38,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [blue], style: dive }
     movement: "8800"
+    complications: [date]
     crystal: sapphire
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
@@ -43,6 +47,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "8800"
+    complications: [date]
     crystal: sapphire
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]

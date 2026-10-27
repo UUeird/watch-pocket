@@ -19,6 +19,7 @@ references:
     metals: [carbon]
     crystal: sapphire
     movement: RMAC4
+    complications: [date, chronograph, split-seconds]
     bracelets: [{ type: rubber-strap }]
   - ref: RM65-01 RG CA
     periods: [{ from: 2020 }]
@@ -27,4 +28,5 @@ references:
     bezel: { material: rose-gold }
     crystal: sapphire
     movement: RMAC4
+    complications: [date, chronograph, split-seconds]
     bracelets: [{ type: rubber-strap }]

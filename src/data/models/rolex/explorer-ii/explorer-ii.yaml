@@ -26,5 +26,6 @@ references:
     bezel: { material: steel, style: gmt }
     crystal: sapphire
     movement: "3285"
+    complications: [date, gmt]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]

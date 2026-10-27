@@ -13,6 +13,7 @@ references:
     bezel: { material: yellow-gold, style: fluted }
     crystal: sapphire
     movement: "3255"
+    complications: [date, day]
     bracelets: [{ type: bracelet, name: President }]
   - ref: "228235"
     periods: [{ from: 2015 }]
@@ -21,4 +22,5 @@ references:
     bezel: { material: rose-gold, style: fluted }
     crystal: sapphire
     movement: "3255"
+    complications: [date, day]
     bracelets: [{ type: bracelet, name: President }]

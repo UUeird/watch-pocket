@@ -17,4 +17,5 @@ references:
     bezel: { material: titanium }
     crystal: sapphire
     movement: CRMA6
+    complications: [date]
     bracelets: [{ type: rubber-strap }]

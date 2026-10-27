@@ -21,5 +21,6 @@ references:
     bezel: { material: steel, style: smooth }
     crystal: sapphire
     movement: "3230"
+    complications: []
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]

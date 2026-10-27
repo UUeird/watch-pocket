@@ -31,6 +31,7 @@ try "two references with the same URL" $D/models/rolex/submariner/submariner.yam
 try "line filed under the wrong brand" $D/lines/rolex/milgauss.yaml 's/^brand: rolex$/brand: omega/'
 try "model filed under the wrong line" $D/models/rolex/submariner/submariner.yaml 's#^line: rolex/submariner$#line: rolex/datejust#'
 try "model style outside the list" $D/models/rolex/submariner/submariner.yaml 's/^style: dive$/style: diver/'
+try "split-seconds without chronograph" $D/models/richard-mille/rm-65/rm-65-01.yaml 's/\[date, chronograph, split-seconds\]/[date, split-seconds]/'
 try "status set alongside periods" $D/brands/omega.yaml 's/^segment: /status: active\
 segment: /'
 try "current stakes over 100 percent in total" $D/brands/girard-perregaux.yaml '/to: 2022/d;s/^  - owner: .*/&\

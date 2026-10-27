@@ -11,6 +11,7 @@ references:
     metals: [steel]
     bezel: { material: platinum }
     crystal: sapphire
+    complications: [date]
     dials: [{ color: silver, name: Rhodium }, { color: blue }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "126655"
@@ -18,4 +19,5 @@ references:
     metals: [rose-gold]
     bezel: { material: ceramic, colors: [black] }
     crystal: sapphire
+    complications: [date]
     bracelets: [{ type: rubber-strap, name: Oysterflex }]

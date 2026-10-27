@@ -352,6 +352,21 @@ const models = defineCollection({
             crystal: z.enum(['sapphire', 'acrylic', 'mineral']).optional(),
             // The calibre name: an identifier, not a category.
             movement: z.string().optional(),
+            // What the watch does beyond hours, minutes and seconds. `[]` means it tells the time only; leaving it
+            // out means not recorded. `flyback` and `split-seconds` are kinds of chronograph, so list `chronograph`
+            // with them. Left out for smartwatches, whose functions are software.
+            complications: z
+              .array(
+                z.enum([
+                  'date', 'day', 'chronograph', 'flyback', 'split-seconds', 'gmt', 'world-time', 'tourbillon', 'moonphase',
+                  'power-reserve', 'annual-calendar', 'perpetual-calendar', 'minute-repeater', 'alarm',
+                ]),
+              )
+              .refine((list) => new Set(list).size === list.length, { message: 'A complication is listed twice.' })
+              .refine((list) => !list.some((entry) => entry === 'flyback' || entry === 'split-seconds') || list.includes('chronograph'), {
+                message: 'A `flyback` or `split-seconds` reference also lists `chronograph`.',
+              })
+              .optional(),
             // Options offered under this one reference number. Some brands give each its own reference instead.
             dials: z.array(z.object({ color, name: z.string().optional() })).default([]),
             bracelets: z

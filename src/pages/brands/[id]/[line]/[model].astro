@@ -8,6 +8,7 @@ import { Image } from 'astro:assets';
 import { referencePhotos } from '../../../../lib/tile-photos';
 import {
   describeBezel,
+  describeComplications,
   describeBracelet,
   describeDial,
   formatPeriods,
@@ -107,6 +108,7 @@ const capitalize = (value: string) => value.charAt(0).toUpperCase() + value.slic
           <th>Bezel</th>
           <th>Crystal</th>
           <th>Movement</th>
+          <th>Complications</th>
           <th>Dials</th>
           <th>Bracelets</th>
         </tr>
@@ -137,6 +139,7 @@ const capitalize = (value: string) => value.charAt(0).toUpperCase() + value.slic
               <td class="cap">{describeBezel(reference.bezel)}</td>
               <td class="cap">{reference.crystal}</td>
               <td class="num">{reference.movement}</td>
+              <td class="cap">{describeComplications(reference.complications)}</td>
               <td class="cap">{reference.dials.map(describeDial).join(', ')}</td>
               <td class="cap">{reference.bracelets.map(describeBracelet).join(', ')}</td>
             </tr>
