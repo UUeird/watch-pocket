@@ -1,5 +1,6 @@
 name: Oyster Perpetual 36
 line: rolex/oyster-perpetual
+style: everyday
 sources:
   - https://www.watchcollectinglifestyle.com/home/rolex-2020-new-oyster-perpetual-41-mm-and-vibrant-color-dials
 references:
@@ -17,4 +18,5 @@ references:
     bezel: { material: steel, style: smooth }
     crystal: sapphire
     movement: "3230"
+    complications: []
     bracelets: [{ type: bracelet, name: Oyster }]

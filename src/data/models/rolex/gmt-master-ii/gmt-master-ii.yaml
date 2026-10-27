@@ -1,5 +1,6 @@
 name: GMT-Master II
 line: rolex/gmt-master-ii
+style: travel
 sources:
   - https://www.luxurybazaar.com/grey-market/rolex-16710/
   - https://beckertime.com/buy-used-rolex/gmt-master-ii
@@ -39,6 +40,7 @@ references:
     bezel: { material: aluminum, style: gmt }
     crystal: sapphire
     movement: "3185"
+    complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]
   - ref: 116710LN
@@ -48,6 +50,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: gmt }
     crystal: sapphire
     movement: "3186"
+    complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 116710BLNR
@@ -63,6 +66,7 @@ references:
     bezel: { material: ceramic, colors: [blue, black], style: gmt }
     crystal: sapphire
     movement: "3186"
+    complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 126710BLRO
@@ -71,6 +75,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [red, blue], style: gmt }
     movement: "3285"
+    complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]
   - ref: 126710BLNR
@@ -79,5 +84,6 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [blue, black], style: gmt }
     movement: "3285"
+    complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]

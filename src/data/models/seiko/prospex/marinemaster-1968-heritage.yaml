@@ -1,0 +1,71 @@
+name: "Marinemaster 1968 Heritage"
+line: seiko/prospex
+style: dive
+website: https://www.seikowatches.com/us-en/products/prospex/marinemaster
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/marinemaster
+  - https://www.seikowatches.com/us-en/products/prospex/hbf001j1
+  - https://www.seikowatches.com/us-en/products/prospex/hbf002j1
+  - https://www.seikowatches.com/us-en/products/prospex/hbf003j1
+  - https://www.seikowatches.com/us-en/products/prospex/sla077j1
+  - https://www.seikowatches.com/us-en/products/prospex/sla079j1
+references:
+  - ref: HBF001
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/05/21/14/HBF001J1/HBF001J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbf001j1
+    price: { amount: 3600, currency: USD, year: 2026 }
+    caseSize: 42.6
+    metals: [steel]
+    crystal: sapphire
+    movement: "8L45"
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBF002
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/05/21/14/HBF002J1/HBF002J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbf002j1
+    price: { amount: 3900, currency: USD, year: 2026 }
+    caseSize: 42.6
+    metals: [steel]
+    crystal: sapphire
+    movement: "8L45"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBF003
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/09/04/21/12/HBF003J1/HBF003J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbf003j1
+    caseSize: 42.6
+    metals: [steel]
+    crystal: sapphire
+    movement: "8L45"
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SLA077
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/07/25/21/10/SLA077J1/SLA077J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sla077j1
+    price: { amount: 2900, currency: USD, year: 2026 }
+    caseSize: 42.6
+    metals: [steel]
+    crystal: sapphire
+    movement: "8L35"
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SLA079
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/07/26/21/15/SLA079J1/SLA079J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sla079j1
+    price: { amount: 2900, currency: USD, year: 2026 }
+    caseSize: 42.6
+    metals: [steel]
+    crystal: sapphire
+    movement: "8L35"
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

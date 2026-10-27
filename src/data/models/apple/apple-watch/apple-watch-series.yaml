@@ -1,5 +1,6 @@
 name: Apple Watch Series
 line: apple/apple-watch
+style: smartwatch
 photos:
   - file: ../../../photos/apple/apple-watch/apple-watch-series.jpg
     credit:

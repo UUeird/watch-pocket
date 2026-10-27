@@ -290,6 +290,15 @@ const models = defineCollection({
     z.object({
       name: z.string(),
       line: reference('lines'),
+      // What the watch is designed for, one per model. `showpiece` is for a watch whose point is its movement or
+      // art rather than a use; `jewelry` for one built around gem-setting.
+      style: z
+        .enum(['dive', 'chronograph', 'travel', 'field', 'pilot', 'sport', 'everyday', 'dress', 'jewelry', 'showpiece', 'smartwatch'])
+        .optional(),
+      // What the watch is themed on or made for, where it has one: a sport, an activity, a subject.
+      theme: z
+        .enum(['motor-racing', 'sailing', 'aviation', 'space', 'exploration', 'tennis', 'soccer', 'cycling', 'running', 'music'])
+        .optional(),
       // Other brands a special edition is made with, e.g. Hermès for Apple Watch Hermès.
       collaborators: z.array(reference('brands')).default([]),
       // The maker's own page for this model. Linked from the model's page, and where its fallback photo is found
@@ -343,6 +352,21 @@ const models = defineCollection({
             crystal: z.enum(['sapphire', 'acrylic', 'mineral']).optional(),
             // The calibre name: an identifier, not a category.
             movement: z.string().optional(),
+            // What the watch does beyond hours, minutes and seconds. `[]` means it tells the time only; leaving it
+            // out means not recorded. `flyback` and `split-seconds` are kinds of chronograph, so list `chronograph`
+            // with them. Left out for smartwatches, whose functions are software.
+            complications: z
+              .array(
+                z.enum([
+                  'date', 'day', 'chronograph', 'flyback', 'split-seconds', 'gmt', 'world-time', 'tourbillon', 'moonphase',
+                  'power-reserve', 'annual-calendar', 'perpetual-calendar', 'minute-repeater', 'alarm',
+                ]),
+              )
+              .refine((list) => new Set(list).size === list.length, { message: 'A complication is listed twice.' })
+              .refine((list) => !list.some((entry) => entry === 'flyback' || entry === 'split-seconds') || list.includes('chronograph'), {
+                message: 'A `flyback` or `split-seconds` reference also lists `chronograph`.',
+              })
+              .optional(),
             // Options offered under this one reference number. Some brands give each its own reference instead.
             dials: z.array(z.object({ color, name: z.string().optional() })).default([]),
             bracelets: z
