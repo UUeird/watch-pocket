@@ -1,7 +1,8 @@
 name: Solios
 origin: Canada
-status: active
+periods: [{ from: 2019 }]
 website: https://www.solioswatches.com
 sources:
   - https://www.dialicious.com/en/solios
   - https://www.solioswatches.com/
+  - https://www.solioswatches.com/pages/our-story

@@ -1,7 +1,12 @@
 name: Elysee
 origin: Germany
-status: active
-website: https://elysee-watches.com
+periods: [{ from: 1960 }]
+website: https://elysee1960.com/
 sources:
   - https://www.dialicious.com/en/elysee
-  - https://elysee-watches.com/
+  - https://elysee1960.com/
+control: family
+independent:
+  sources:
+    - https://usa.watchpro.com/?p=6256
+    - https://elysee1960.com/policies/legal-notice

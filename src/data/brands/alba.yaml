@@ -1,6 +1,7 @@
 name: Alba
 origin: Japan
 periods: [{ from: 1979 }]
+segment: budget
 ownership:
   - owner: seiko-group
 sources:

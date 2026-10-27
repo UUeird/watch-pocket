@@ -1,7 +1,8 @@
 name: Titus
 origin: Switzerland
-status: active
+periods: [{ from: 1887 }]
 website: https://www.solvil-et-titus.my
 sources:
   - https://www.dialicious.com/en/titus
   - https://www.solvil-et-titus.my/
+  - https://www.solvil-et-titus.my/pages/brand-story

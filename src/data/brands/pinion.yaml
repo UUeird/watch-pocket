@@ -1,7 +1,12 @@
 name: Pinion
 origin: United Kingdom
 periods: [{ from: 2013 }]
+segment: mid-range
 website: https://www.pinionwatches.com
 sources:
   - https://www.dialicious.com/en/pinion
   - https://www.pinionwatches.com/
+control: private
+independent:
+  sources:
+    - https://www.pinionwatches.com/

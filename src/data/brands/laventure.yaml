@@ -1,7 +1,11 @@
 name: Laventure
 origin: Switzerland
-status: active
+periods: [{ from: 2017 }]
 website: https://laventure.swiss
 sources:
   - https://www.dialicious.com/en/laventure
   - https://laventure.swiss/
+control: private
+independent:
+  sources:
+    - http://laventure.swiss/en

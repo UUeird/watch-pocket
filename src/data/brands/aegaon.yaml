@@ -5,3 +5,7 @@ website: https://aegaon.com
 sources:
   - https://www.dialicious.com/en/aegaon
   - https://aegaon.com/
+control: private
+independent:
+  sources:
+    - https://aegaon.com/pages/about-aegaon

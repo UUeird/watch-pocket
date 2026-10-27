@@ -1,5 +1,16 @@
 name: Minerva
+logo: ../logos/minerva.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Minerva_logo_2.jpg
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Revorm
 origin: Switzerland
 sources:
   - https://www.dialicious.com/en/minerva
   - https://en.wikipedia.org/wiki/Montblanc_(company)
+ownership:
+  - owner: richemont
+    from: 2006
+    sources:
+      - https://en.wikipedia.org/wiki/Montblanc_(company)

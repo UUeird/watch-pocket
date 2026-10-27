@@ -1,6 +1,6 @@
 name: Arpiem
 origin: France
-status: active
+periods: [{ from: 2018 }]
 website: https://arpiem.fr
 sources:
   - https://www.dialicious.com/en/arpiem

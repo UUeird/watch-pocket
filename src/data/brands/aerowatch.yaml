@@ -1,7 +1,13 @@
 name: Aerowatch
 origin: Switzerland
-status: active
+periods: [{ from: 1910 }]
+segment: mid-range
 website: https://www.aerowatch.com
 sources:
   - https://www.dialicious.com/en/aerowatch
   - https://www.aerowatch.com/
+control: family
+independent:
+  sources:
+    - https://www.aerowatch.com/
+    - https://www.thehourmarkers.com/brands/aerowatch-watches

@@ -1,7 +1,13 @@
 name: CWC
 origin: United Kingdom
-status: active
+periods: [{ from: 1972 }]
 website: https://www.cwcwatch.com
 sources:
   - https://www.dialicious.com/en/cwc
   - https://www.cwcwatch.com/
+  - https://www.cwcwatch.com/pages/cwc-history
+ownership:
+  - owner: silvermans
+    from: 1996
+    sources:
+      - https://en.wikipedia.org/wiki/Cabot_Watch_Company

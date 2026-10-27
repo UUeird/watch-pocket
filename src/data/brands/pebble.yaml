@@ -5,8 +5,25 @@ logoCredit:
   license: Public domain
 origin: United States
 periods: [{ from: 2012, to: 2016 }, { from: 2025 }]
-tags:
-  - smartwatch
+segment: budget
+makes: [smartwatches]
 sources:
   - https://9to5google.com/2025/07/25/pebble-smartwatches-update-trademark-core-devices/
   - https://mobileworldlive.com/devices/pebble-sets-out-comeback-plan-with-new-watches
+ownership:
+  - owner: { brand: fitbit }
+    from: 2016
+    to: 2021
+    sources:
+      - https://en.wikipedia.org/wiki/Pebble_(watch)
+  - owner: alphabet
+    basis: reported
+    from: 2021
+    to: 2025
+    sources:
+      - https://9to5google.com/2025/07/25/pebble-smartwatches-update-trademark-core-devices/
+  - owner: core-devices
+    from: 2025
+    sources:
+      - https://en.wikipedia.org/wiki/Pebble_(watch)
+      - https://9to5google.com/2025/07/25/pebble-smartwatches-update-trademark-core-devices/

@@ -1,8 +1,10 @@
 ---
 import Breadcrumb from '../../../../../components/Breadcrumb.astro';
+import ModelPhoto from '../../../../../components/ModelPhoto.astro';
 import Base from '../../../../../layouts/Base.astro';
 import {
   describeBezel,
+  describeComplications,
   describeBracelet,
   describeDial,
   describeModelNumber,
@@ -21,32 +23,41 @@ export async function getStaticPaths() {
 }
 
 const { reference, model, line, brand } = Astro.props;
-const { ref, periods, caseSize, metals, caseColors, modelNumbers, bezel, crystal, movement, dials, bracelets } = reference;
+const { ref, periods, price, caseSize, metals, caseColors, modelNumbers, bezel, crystal, movement, complications, dials, bracelets } = reference;
 const discontinued = periods.at(-1)?.to !== undefined;
-const facts = [
+// Each fact with whether it reads from a fixed vocabulary (`rose-gold`), which is capitalized for display.
+const facts: [string, string | undefined, boolean?][] = [
   ['On sale', formatPeriods(periods) || 'Not recorded'],
-  ['Case size', caseSize && `${caseSize} mm`],
-  ['Metals', metals.map(label).join(', ')],
-  ['Case colors', caseColors.map(describeDial).join(', ')],
-  ['Bezel', describeBezel(bezel)],
-  ['Crystal', crystal],
+  ['List price', price && `${price.currency} ${price.amount.toLocaleString('en-US')} (${price.year})`],
+  ['Case size', caseSize ? `${caseSize} mm` : undefined],
+  ['Metals', metals.map(label).join(', '), true],
+  ['Case colors', caseColors.map(describeDial).join(', '), true],
+  ['Bezel', describeBezel(bezel), true],
+  ['Crystal', crystal, true],
   ['Movement', movement],
-  ['Dials', dials.map(describeDial).join(', ')],
-  ['Bracelets', bracelets.map(describeBracelet).join(', ')],
-].filter(([, value]) => value);
+  ['Complications', describeComplications(complications), true],
+  ['Dials', dials.map(describeDial).join(', '), true],
+  ['Bracelets', bracelets.map(describeBracelet).join(', '), true],
+];
+const shown = facts.filter(([, value]) => value);
 ---
 
 <Base title={`${brand.data.name} ${ref}`}>
   <Breadcrumb brand={brand} line={line} model={model} />
-  <h1>{ref}</h1>
-  <p class="lede">Reference{periods.length > 0 && (discontinued ? ' · discontinued' : ' · current')}</p>
+  <div class="head">
+    <div>
+      <h1>{ref}</h1>
+      <p class="lede">Reference{periods.length > 0 && (discontinued ? ' · discontinued' : ' · current')}</p>
+    </div>
+    <ModelPhoto model={model} brandName={brand.data.name} reference={reference} />
+  </div>
 
   <dl class="facts">
     {
-      facts.map(([term, value]) => (
+      shown.map(([term, value, vocabulary]) => (
         <>
           <dt>{term}</dt>
-          <dd class="cap">{value}</dd>
+          <dd class:list={{ cap: vocabulary }}>{value}</dd>
         </>
       ))
     }
@@ -65,3 +76,14 @@ const facts = [
     )
   }
 </Base>
+
+<style>
+  /* The photo sits beside the reference number on a wide screen, and under it on a narrow one. */
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px 32px;
+    margin-bottom: 24px;
+  }
+</style>

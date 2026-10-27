@@ -1,7 +1,24 @@
 name: Valentino
+logo: ../logos/valentino.svg
+logomark: ../logos/valentino-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Valentino_logo.svg
+  license: Public domain
 origin: Italy
-status: active
+periods: [{ from: 1960 }]
 website: https://www.valentino.com
 sources:
   - https://www.dialicious.com/en/valentino
   - https://www.valentino.com/
+  - https://en.wikipedia.org/wiki/Valentino_(fashion_house)
+ownership:
+  - owner: mayhoola
+    stake: 70
+    from: 2012
+    sources:
+      - https://en.wikipedia.org/wiki/Valentino_(fashion_house)
+  - owner: kering
+    stake: 30
+    from: 2023
+    sources:
+      - https://en.wikipedia.org/wiki/Valentino_(fashion_house)

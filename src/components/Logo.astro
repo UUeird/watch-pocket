@@ -1,32 +1,24 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-
-type Data = CollectionEntry<'brands' | 'groups'>['data'];
+import BrandLogo from './BrandLogo.astro';
 
 interface Props {
   name: string;
-  logo: Data['logo'];
-  credit: Data['logoCredit'];
-  logomark?: Data['logomark'];
-  logomarkCredit?: Data['logomarkCredit'];
+  record: CollectionEntry<'brands'> | CollectionEntry<'groups'>;
 }
 
-const { name, logo, credit, logomark, logomarkCredit } = Astro.props;
-// Each file carries its own credit, since the two can come from different sources on different terms.
+const { name, record } = Astro.props;
+const { data } = record;
+const { logo } = data;
+// The logo's credit, then those of its parts taken from other files, which are shown in its place where it is small.
 const credits = [
-  { label: 'Logo', file: logo, credit },
-  { label: 'Logomark', file: logomark, credit: logomarkCredit },
-].filter((entry) => entry.file && entry.credit);
+  { label: 'Logo', credit: data.logoCredit },
+  { label: 'Logomark', credit: data.logomark && data.logomarkCredit },
+  { label: 'Wordmark', credit: data.wordmark && data.wordmarkCredit },
+].filter((entry) => logo && entry.credit);
 ---
 
-{
-  (logo || logomark) && (
-    <div class="logos">
-      {logo && <img class="logo" src={logo.src} width={logo.width} height={logo.height} alt={`${name} logo`} />}
-      {logomark && <img class="logo logomark" src={logomark.src} width={logomark.width} height={logomark.height} alt={`${name} logomark`} />}
-    </div>
-  )
-}
+{logo && <BrandLogo record={record} width={216} height={72} class="logo" alt={`${name} logo`} loading="eager" />}
 {
   credits.map(({ label, credit }) => (
     <p class="logo-credit">
@@ -36,17 +28,3 @@ const credits = [
     </p>
   ))
 }
-
-<style>
-  .logos {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 16px;
-  }
-
-  /* The symbol sits beside the full logo on the same white plate, a little shorter. */
-  .logomark {
-    max-height: 72px;
-  }
-</style>

@@ -4,8 +4,12 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Garmin_logo_2006.svg
   license: Public domain
 origin: United States
+control: public
 periods: [{ from: 1989 }]
-tags:
-  - smartwatch
+segment: mid-range
+makes: [smartwatches]
 sources:
   - https://en.wikipedia.org/wiki/Garmin
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Garmin

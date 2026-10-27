@@ -1,6 +1,11 @@
 name: VPC
-status: active
+periods: [{ from: 2023 }]
 website: https://vpcwatch.co
 sources:
   - https://www.dialicious.com/en/vpc
   - https://vpcwatch.co/
+  - https://vpcwatch.co/about/
+control: private
+independent:
+  sources:
+    - https://vpcwatch.co/about/

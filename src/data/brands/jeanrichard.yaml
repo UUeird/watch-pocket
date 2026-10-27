@@ -1,5 +1,12 @@
 name: JeanRichard
 origin: Switzerland
+segment: mid-range
 sources:
   - https://www.dialicious.com/en/jeanrichard
   - https://www.wikidata.org/wiki/Q21014550
+ownership:
+  - owner: sowind-group
+    from: 1986
+    sources:
+      - https://timetransformed.com/2015/09/25/jeanrichard/
+      - https://wiki.grail-watch.com/index.php/PPR

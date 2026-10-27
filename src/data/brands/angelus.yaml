@@ -1,7 +1,14 @@
 name: Angelus
 origin: Switzerland
 periods: [{ from: 1891 }]
+segment: luxury
 website: https://angelus-watches.com
 sources:
   - https://www.dialicious.com/en/angelus
   - https://angelus-watches.com/
+ownership:
+  - owner: { brand: la-joux-perret }
+    from: 2015
+    sources:
+      - https://wiki.grail-watch.com/index.php/Angelus
+      - https://watchesbysjx.com/2015/03/introducing-the-angelus-u10-tourbillon-lumiere-dead-seconds-tourbillon-mechanical-revenge-on-the-seventies-quartz-watch.html

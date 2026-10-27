@@ -1,6 +1,6 @@
 ---
 import { metrics } from '../lib/metrics';
-import { layoutTreemap, renderCells, renderLegend, renderNote, renderUnsized, type ChartData, type Options } from '../lib/treemap';
+import { layoutTreemap, renderCells, renderNote, renderUnsized, type ChartData, type Options } from '../lib/treemap';
 
 interface Props {
   // A name for the chart's state in the browser, so each page remembers its own choices.
@@ -23,10 +23,9 @@ const coverage = Object.fromEntries(metrics.map((metric) => [metric.id, placeabl
 // Measures that add up can size the whole chart; the rest size brands only within one box.
 const totals = metrics.filter((metric) => metric.additive);
 const perBrand = metrics.filter((metric) => !metric.additive);
-const colors = metrics.filter((metric) => !metric.additive);
 // Measures with a group-level figure, for which a group's other business can be shown.
 const withOwn = metrics.filter((metric) => data.groupings.some((grouping) => grouping.buckets.some((bucket) => bucket.values?.[metric.id] !== undefined)));
-const options: Options = { grouping: data.groupings[0].id, size: 'brands', color: 'age', otherBusiness: true, ...initial };
+const options: Options = { grouping: data.groupings[0].id, size: 'brands', otherBusiness: true, shape: 'rects', ...initial };
 const layout = layoutTreemap(data, options);
 const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (${coverage[id]})`);
 ---
@@ -77,22 +76,19 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
       </select>
     </label>
     <label class="control">
-      <span>Shade by</span>
-      <select name="color">
-        <option value="" selected={!options.color}>Nothing</option>
-        {
-          colors.map((metric) => (
-            <option value={metric.id} selected={metric.id === options.color} disabled={coverage[metric.id] === 0}>
-              {metric.label}
-              {optionLabel(metric.id)}
-            </option>
-          ))
-        }
+      <span>Draw as</span>
+      <select name="shape">
+        <option value="rects" selected={options.shape === 'rects'}>Rectangles</option>
+        <option value="circles" selected={options.shape === 'circles'}>Circles</option>
       </select>
     </label>
     <label class="toggle" data-own={withOwn.map((metric) => metric.id).join(' ')} hidden={!withOwn.some((metric) => metric.id === options.size)}>
       <input type="checkbox" name="otherBusiness" checked={options.otherBusiness} />
       Include groups’ other business
+    </label>
+    <label class="toggle" data-stake-toggle hidden={layout.partOwned === 0}>
+      <input type="checkbox" name="byStake" checked={options.byStake} />
+      Count part-owned brands by stake
     </label>
   </div>
 
@@ -104,22 +100,18 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
 
   <div class="frame">
     <div class="scroll">
-      <div class="canvas" aria-label={`${title}, grouped and sized`} set:html={renderCells(layout)} />
+      <div class="canvas" data-shape={layout.shape} aria-label={`${title}, grouped and sized`} set:html={renderCells(layout)} />
     </div>
     <div class="tip" role="presentation" hidden></div>
   </div>
-  <p class="legend" set:html={renderLegend(layout)} />
   <p class="note" aria-live="polite" set:html={renderNote(layout)} />
   <div class="unsized" set:html={renderUnsized(layout)} />
   <script is:inline type="application/json" set:html={JSON.stringify(data).replace(/</g, '\\u003c')} />
 </section>
 
 <style>
-  /* The chart is wider than the page's text column where the window allows, since more width fits more brands in each box. */
   .treemap {
-    --wide: max(100%, min(100vw - 48px, 1440px));
-    width: var(--wide);
-    margin: 0 0 32px calc((100% - var(--wide)) / 2);
+    margin-bottom: 32px;
   }
 
   .controls {
@@ -185,7 +177,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 4px;
-    cursor: zoom-out;
+    cursor: pointer;
   }
 
   .crumb-page {
@@ -237,6 +229,12 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     border-radius: 6px;
   }
 
+  /* Circles pack into one round shape, so they're drawn in a square the full width of the page, which leaves
+     room for brands' logos. */
+  .canvas[data-shape='circles'] {
+    aspect-ratio: 1;
+  }
+
   .canvas :global(.bucket),
   .canvas :global(.other),
   .canvas :global(.brand) {
@@ -266,10 +264,10 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     text-underline-offset: 2px;
     background: none;
     border: 0;
-    cursor: zoom-in;
+    cursor: pointer;
   }
 
-  /* A whole bucket, shaded by its median and zooming into its brands. */
+  /* A whole bucket, zooming into its brands. */
   .canvas :global(.tile) {
     position: absolute;
     box-sizing: border-box;
@@ -280,30 +278,16 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     overflow: hidden;
     padding: 6px 8px;
     font: inherit;
-    color: #1c1b19;
+    color: var(--text);
     text-align: left;
-    cursor: zoom-in;
-    background: var(--shade, var(--bg));
-    border: 1px solid color-mix(in srgb, #1c1b19 14%, transparent);
+    cursor: pointer;
+    background: var(--bg);
+    border: 1px solid var(--line);
     border-radius: 4px;
   }
 
   .canvas :global(.tile.tight) {
     padding: 0;
-  }
-
-  .canvas :global(.tile.on-dark) {
-    color: #ffffff;
-  }
-
-  /* Without a shade measure, tiles take the page's own colors. */
-  .canvas :global(.tile:not([style*='--shade'])) {
-    color: var(--text);
-    border-color: var(--line);
-  }
-
-  .canvas :global(.tile.unshaded) {
-    background: repeating-linear-gradient(135deg, var(--bg) 0 5px, var(--line) 5px 6px);
   }
 
   .canvas :global(.tile:hover),
@@ -318,20 +302,36 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     flex: none;
   }
 
-  .canvas :global(.tile-name) {
+  /* The tile's name, after a badge counting its brands. */
+  .canvas :global(.tile-head) {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     max-width: 100%;
+  }
+
+  .canvas :global(.tile-badge) {
+    flex: none;
+    min-width: 1.5em;
+    padding: 1px 5px;
+    box-sizing: border-box;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.2;
+    text-align: center;
+    background: color-mix(in srgb, currentColor 16%, transparent);
+    border-radius: 999px;
+  }
+
+  .canvas :global(.tile-name) {
+    min-width: 0;
     overflow: hidden;
     font-size: 0.875rem;
     font-weight: 600;
     line-height: 1.2;
     white-space: nowrap;
     text-overflow: ellipsis;
-  }
-
-  .canvas :global(.tile-count) {
-    font-size: 0.75rem;
-    font-variant-numeric: tabular-nums;
-    opacity: 0.85;
   }
 
   .canvas :global(.tile-logos) {
@@ -341,7 +341,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     margin-top: 6px;
   }
 
-  /* Logos are drawn for a light page, so each sits on a white plate. */
+  /* Each plate takes its brand's fill, set on it: white, or the brand's own color (see logoFill in src/lib/logo.ts). */
   .canvas :global(.tile .plate) {
     display: flex;
     align-items: center;
@@ -359,6 +359,10 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     color: #1c1b19;
   }
 
+  .canvas :global(.tile .plate.on-dark) {
+    color: #ffffff;
+  }
+
   /* A name set at the size that fits its space, on one line or two (see fitName in src/lib/treemap.ts). One that
      cannot fit even at the smallest size is cut short. */
   .canvas :global(.fit) {
@@ -372,6 +376,12 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
 
   .canvas :global(.fit.cut) {
     text-overflow: ellipsis;
+  }
+
+  /* A brand's initials, where its circle is too small for its name. */
+  .canvas :global(.fit.initials) {
+    font-weight: 600;
+    letter-spacing: 0.02em;
   }
 
   .canvas :global(.tile .plate.more) {
@@ -401,37 +411,17 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     line-height: 1.2;
     text-align: center;
     text-decoration: none;
-    /* Logos are drawn for a light page, so cells stay white in both color schemes. */
+    /* Each brand's fill is set on it: white, or the brand's own color (see logoFill in src/lib/logo.ts). The same
+       in both color schemes. */
     background: #ffffff;
     border: 1px solid #d4d0c6;
     border-radius: 2px;
   }
 
-  /* A brand shaded by a measure is filled with its step. */
-  .canvas :global(.brand.shaded) {
-    background: var(--shade, #ffffff);
-    border-color: color-mix(in srgb, #1c1b19 18%, transparent);
-  }
-
-  /* No figure for the shading measure: a faint hatch, so it never reads as the lightest step. */
-  .canvas :global(.brand.unshaded) {
-    background: repeating-linear-gradient(135deg, #ffffff 0 3px, #e2dfd7 3px 4px);
-  }
-
-  /* On a shade, each logo is set by its own contrast with it (see src/lib/logo-contrast.ts): plain, with a thin
-     white halo along its edges that lifts a dark mark, or on a white plate for a mid-toned mark a halo cannot rescue. */
-  .canvas :global(.brand img[data-set='halo']) {
-    filter: drop-shadow(0 0 0.5px #ffffff) drop-shadow(0 0 1px rgb(255 255 255 / 0.9)) drop-shadow(0 0 2px rgb(255 255 255 / 0.45));
-  }
-
-  .canvas :global(.brand img[data-set='plate']) {
-    padding: 4px 8px;
-    background: #ffffff;
-    border-radius: 3px;
-  }
-
+  /* A brand on a dark fill: its own dark color, or black behind a logo drawn in white. */
   .canvas :global(.brand.on-dark) {
     color: #ffffff;
+    border-color: #6b6860;
   }
 
   /* Made under license by the group, not owned by it. */
@@ -453,9 +443,56 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     rotate: 180deg;
   }
 
+  /* Filled to its share of the cell, so a small logo file is grown as well as a large one shrunk. */
   .canvas :global(.brand img) {
-    max-width: 80%;
-    max-height: 60%;
+    width: 80%;
+    height: 60%;
+    object-fit: contain;
+  }
+
+  /* Drawn as circles: a tile's badge and name sit centered in it. */
+  .canvas :global(.tile.round) {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+  }
+
+  .canvas :global(.tile.round .fit) {
+    font-weight: 600;
+  }
+
+  .canvas :global(.bucket.round) {
+    cursor: zoom-in;
+  }
+
+  /* A bucket circle's name sits across its top, over the brands inside it. */
+  .canvas :global(.bucket.round .bucket-name) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    max-width: 60%;
+    padding: 1px 8px;
+    background: var(--surface);
+    border-radius: 999px;
+    translate: -50% -50%;
+  }
+
+  /* Or its logo, on a white plate since logos are drawn for a light page. */
+  .canvas :global(.bucket.round .bucket-name.logo) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 3px 6px;
+    background: #ffffff;
+    border: 1px solid var(--line);
+  }
+
+  .canvas :global(.bucket-name.logo img) {
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
   }
 
@@ -469,6 +506,11 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     background: repeating-linear-gradient(135deg, transparent 0 6px, var(--line) 6px 7px);
     border: 1px dashed var(--line);
     border-radius: 2px;
+  }
+
+  /* Drawn as circles, each cell is round in its square. After every cell's own corners, so it wins. */
+  .canvas :global(.round) {
+    border-radius: 50%;
   }
 
   .tip {
@@ -491,43 +533,6 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     font-weight: 600;
   }
 
-  .legend {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 6px;
-    margin: 8px 0 0;
-    color: var(--muted);
-    font-size: 0.8125rem;
-  }
-
-  .legend:empty {
-    display: none;
-  }
-
-  .legend :global(.legend-label) {
-    margin-right: 4px;
-    color: var(--text);
-  }
-
-  .legend :global(.swatches) {
-    display: inline-flex;
-    gap: 2px;
-  }
-
-  .legend :global(.swatch) {
-    display: inline-block;
-    width: 22px;
-    height: 10px;
-    border-radius: 2px;
-  }
-
-  .legend :global(.swatch.none) {
-    margin-left: 12px;
-    background: repeating-linear-gradient(135deg, #ffffff 0 3px, #c9c5bb 3px 4px);
-    border: 1px solid var(--line);
-  }
-
   .note {
     margin: 6px 0 0;
     color: var(--muted);
@@ -536,8 +541,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
 </style>
 
 <script>
-  import { setLogos } from '../lib/logo-contrast';
-  import { layoutTreemap, renderCells, renderLegend, renderNote, renderUnsized, zoomedBucket, type ChartData, type Options } from '../lib/treemap';
+  import { layoutTreemap, renderCells, renderNote, renderUnsized, zoomedBucket, type ChartData, type Options, type Shape } from '../lib/treemap';
 
   // Choices are remembered per page in this browser. Storage can be missing or blocked, in which case the page keeps its defaults.
   const recall = (key: string) => {
@@ -558,18 +562,19 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
   for (const section of document.querySelectorAll<HTMLElement>('[data-treemap]')) {
     const data: ChartData = JSON.parse(section.querySelector('script[type="application/json"]')!.textContent!);
     const canvas = section.querySelector<HTMLElement>('.canvas')!;
-    const legend = section.querySelector<HTMLElement>('.legend')!;
     const note = section.querySelector<HTMLElement>('.note')!;
     const tip = section.querySelector<HTMLElement>('.tip')!;
     const frame = section.querySelector<HTMLElement>('.frame')!;
     const selects = {
       grouping: section.querySelector<HTMLSelectElement>('select[name="grouping"]')!,
       size: section.querySelector<HTMLSelectElement>('select[name="size"]')!,
-      color: section.querySelector<HTMLSelectElement>('select[name="color"]')!,
+      shape: section.querySelector<HTMLSelectElement>('select[name="shape"]')!,
     };
     const other = section.querySelector<HTMLInputElement>('input[name="otherBusiness"]')!;
     const toggle = other.closest<HTMLElement>('.toggle')!;
     const ownMeasures = toggle.dataset.own!.split(' ');
+    const byStake = section.querySelector<HTMLInputElement>('input[name="byStake"]')!;
+    const stakeToggle = byStake.closest<HTMLElement>('.toggle')!;
     const key = (name: string) => `treemap.${section.dataset.treemap}.${name}`;
 
     const unsized = section.querySelector<HTMLElement>('.unsized')!;
@@ -578,24 +583,27 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     const crumbCurrent = crumbs.querySelector<HTMLElement>('.crumb-current')!;
     const crumbPage = crumbs.querySelector<HTMLAnchorElement>('.crumb-page')!;
 
-    for (const name of ['grouping', 'color'] as const) {
+    for (const name of ['grouping', 'shape'] as const) {
       const saved = recall(key(name));
       const select = selects[name];
       if (saved !== null && [...select.options].some((option) => option.value === saved && !option.disabled)) select.value = saved;
     }
     const savedOther = recall(key('otherBusiness'));
     if (savedOther !== null) other.checked = savedOther === 'true';
+    const savedStake = recall(key('byStake'));
+    if (savedStake !== null) byStake.checked = savedStake === 'true';
     // The overview and a zoomed box each keep their own size measure, since they offer different ones.
     const sizeChoice = { overview: recall(key('size')) ?? selects.size.value, zoomed: recall(key('zoomSize')) ?? 'age' };
     // The box zoomed into. A fresh visit starts on the overview.
     let zoom: string | undefined;
 
-    // The rows the page's filters leave showing, when the chart follows a table.
+    // The brands the page's filters leave showing, when the chart follows a filtered table or set of cards. A brand
+    // can appear more than once there, so they're counted by id.
     const followed = section.dataset.follow;
     const visibleRows = () => {
       if (!followed) return undefined;
-      const rows = [...document.querySelectorAll<HTMLElement>(`#${followed} tr[data-id]`)];
-      return { ids: new Set(rows.filter((row) => !row.hidden).map((row) => row.dataset.id!)), all: rows.length };
+      const rows = [...document.querySelectorAll<HTMLElement>(`#${followed} [data-id]`)];
+      return { ids: new Set(rows.filter((row) => !row.hidden).map((row) => row.dataset.id!)), all: new Set(rows.map((row) => row.dataset.id!)).size };
     };
     const zoomedNow = () => {
       const grouping = data.groupings.find((candidate) => candidate.id === selects.grouping.value) ?? data.groupings[0];
@@ -613,17 +621,18 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
       const options: Options = {
         grouping: selects.grouping.value,
         size: zoomed ? sizeChoice.zoomed : sizeChoice.overview,
-        color: selects.color.value || undefined,
         otherBusiness: other.checked,
+        byStake: byStake.checked,
         visible: rows && rows.ids.size < rows.all ? rows.ids : undefined,
         zoom,
+        shape: selects.shape.value as Shape,
       };
       const layout = layoutTreemap(data, options);
       selects.size.value = layout.size.id;
       toggle.hidden = layout.mode === 'buckets' || !ownMeasures.includes(layout.size.id);
-      canvas.innerHTML = renderCells(layout, canvas.clientWidth / 1000);
-      setLogos(canvas);
-      legend.innerHTML = renderLegend(layout);
+      stakeToggle.hidden = layout.partOwned === 0;
+      canvas.dataset.shape = layout.shape;
+      canvas.innerHTML = renderCells(layout, canvas.clientWidth / layout.box.width);
       note.innerHTML = renderNote(layout, options.visible !== undefined);
       unsized.innerHTML = renderUnsized(layout);
       crumbs.hidden = !layout.zoomed;
@@ -650,7 +659,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
       if (!still.matches) canvas.animate([{ opacity: 0, scale: next ? '0.96' : '1.03' }, { opacity: 1, scale: '1' }], { duration: 220, easing: 'ease-out' });
       // Keyboard focus follows: to the way back out, or to the box just left.
       if (next) unzoomButton.focus();
-      else if (previous) canvas.querySelector<HTMLElement>(`[data-zoom="${CSS.escape(previous)}"]`)?.focus();
+      else if (previous) canvas.querySelector<HTMLElement>(`button[data-zoom="${CSS.escape(previous)}"]`)?.focus();
     };
 
     selects.grouping.addEventListener('change', () => {
@@ -658,8 +667,8 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
       zoom = undefined;
       draw();
     });
-    selects.color.addEventListener('change', () => {
-      remember(key('color'), selects.color.value);
+    selects.shape.addEventListener('change', () => {
+      remember(key('shape'), selects.shape.value);
       draw();
     });
     selects.size.addEventListener('change', () => {
@@ -670,6 +679,10 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     });
     other.addEventListener('change', () => {
       remember(key('otherBusiness'), String(other.checked));
+      draw();
+    });
+    byStake.addEventListener('change', () => {
+      remember(key('byStake'), String(byStake.checked));
       draw();
     });
     canvas.addEventListener('click', (event) => {

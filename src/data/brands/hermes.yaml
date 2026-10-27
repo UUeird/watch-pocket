@@ -1,5 +1,15 @@
 name: Hermès
+logo: ../logos/hermes.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Hermes_wordmark.svg
+  license: Public domain
 origin: France
+control: public
 periods: [{ from: 1837 }]
+segment: luxury
 sources:
+  - https://en.wikipedia.org/wiki/Herm%C3%A8s
   - https://www.wikidata.org/wiki/Q843887
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Herm%C3%A8s

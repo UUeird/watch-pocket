@@ -5,7 +5,19 @@ logoCredit:
   license: Public domain
 origin: Finland
 periods: [{ from: 1936 }]
-tags:
-  - smartwatch
+segment: mid-range
+makes: [smartwatches]
 sources:
   - https://www.wikidata.org/wiki/Q740115
+ownership:
+  - owner: amer-sports
+    from: 1999
+    to: 2022
+    sources:
+      - https://www.amersports.com/newsroom/amer-sports-develops-its-brand-portfolio-divests-suunto-to-liesheng/
+      - https://en.wikipedia.org/wiki/Suunto
+  - owner: liesheng
+    from: 2022
+    sources:
+      - https://www.amersports.com/newsroom/amer-sports-develops-its-brand-portfolio-divests-suunto-to-liesheng/
+      - https://bicycleretailer.com/industry-news/2022/01/11/amer-sells-suunto-chinese-tech-company

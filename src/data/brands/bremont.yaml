@@ -1,9 +1,19 @@
 name: Bremont
 logo: ../logos/bremont.svg
+logomark: ../logos/bremont-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Bremont_Logo.svg
   license: Public domain
 origin: United Kingdom
 periods: [{ from: 2002 }]
+segment: luxury
 sources:
   - https://www.wikidata.org/wiki/Q4960600
+ownership:
+  - owner: hellcat
+    stake: 63
+    basis: reported
+    from: 2023
+    sources:
+      - https://www.bloomberg.com/news/articles/2025-04-01/bill-ackman-becomes-chairman-of-bremont-after-lifting-stake
+      - https://www.jckonline.com/editorial-article/investor-bill-ackman-bremont/

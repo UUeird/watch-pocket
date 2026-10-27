@@ -1,4 +1,8 @@
 name: Smiths
+logo: ../logos/smiths.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Smiths_Group_logo.svg
+  license: Public domain
 origin: United Kingdom
 periods: [{ from: 1851 }]
 sources:

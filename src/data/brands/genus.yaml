@@ -1,7 +1,12 @@
 name: Genus
 origin: Switzerland
-status: active
+periods: [{ from: 2019 }]
 website: https://genuswatches.swiss
 sources:
   - https://www.dialicious.com/en/genus
   - https://genuswatches.swiss/
+  - https://genuswatches.swiss/story/
+control: private
+independent:
+  sources:
+    - https://genuswatches.swiss/story/

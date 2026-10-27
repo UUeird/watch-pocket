@@ -4,6 +4,12 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Junghans_logo_2010.svg
   license: Public domain
 origin: Germany
+control: private
 periods: [{ from: 1861 }]
+segment: mid-range
 sources:
+  - https://en.wikipedia.org/wiki/Junghans
   - https://www.wikidata.org/wiki/Q560976
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Junghans

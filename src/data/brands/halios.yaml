@@ -1,7 +1,12 @@
 name: Halios
 origin: Canada
 periods: [{ from: 2009 }]
+segment: mid-range
 tags:
   - direct-to-consumer
 sources:
   - https://twobrokewatchsnobs.com/halios-watch-reviews-and-news
+control: private
+independent:
+  sources:
+    - https://gearpatrol.com/2020/04/01/halios-watches-jason-lim-interview/

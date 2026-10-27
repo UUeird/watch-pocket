@@ -1,5 +1,10 @@
 name: Locman
+logo: ../logos/locman.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Locman_logo.svg
+  license: Public domain
 origin: Italy
 periods: [{ from: 1985 }]
+segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q16573261

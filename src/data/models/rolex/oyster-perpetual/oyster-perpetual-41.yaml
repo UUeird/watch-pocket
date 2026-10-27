@@ -1,0 +1,16 @@
+name: Oyster Perpetual 41
+line: rolex/oyster-perpetual
+style: everyday
+sources:
+  - https://www.watchcollectinglifestyle.com/home/rolex-2020-new-oyster-perpetual-41-mm-and-vibrant-color-dials
+  - https://luxurywatchesusa.com/collection/124300/
+references:
+  - ref: "124300"
+    periods: [{ from: 2020 }]
+    caseSize: 41
+    metals: [steel]
+    bezel: { material: steel, style: smooth }
+    crystal: sapphire
+    movement: "3230"
+    complications: []
+    bracelets: [{ type: bracelet, name: Oyster }]

@@ -1,20 +1,73 @@
 name: Submariner Date
 line: rolex/submariner
+style: dive
+photos:
+  - file: ../../../photos/rolex/submariner/submariner-date.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:The_Rolex_Submariner_Professional.JPG
+      license: CC BY-SA 3.0
+      licenseUrl: http://creativecommons.org/licenses/by-sa/3.0/
+      author: Dr.K. (talk) 17:56, 28 January 2007 (UTC)
+  - file: ../../../photos/rolex/submariner/submariner-date-3.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_Submariner_300m_Chonometer.jpg
+      license: CC BY-SA 3.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+      author: Si Griffiths
+sources:
+  - https://www.bobswatches.com/rolex-blog/watch-review/rolex-submariner-stainless-steel-16800.html
+  - https://www.bobswatches.com/rolex/submariner/16613-ultimate-guide
+  - https://watchbase.com/rolex/submariner/16613-black-superluminova
 references:
+  - ref: "16800"
+    periods: [{ from: 1979, to: 1988 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: aluminum, colors: [black], style: dive }
+    crystal: sapphire
+    movement: "3035"
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "16610"
     periods: [{ from: 1988, to: 2010 }]
     caseSize: 40
     metals: [steel]
     bezel: { material: aluminum, colors: [black], style: dive }
     movement: "3135"
+    complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
+  # Its bezel insert matched the dial, blue or black.
+  - ref: "16613"
+    photos:
+      - file: ../../../photos/rolex/submariner/submariner-date-2.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Rolex_Oyster_Perpetual_Date_Submariner_Watch.JPG
+          license: Public domain
+          author: User:Eternalsleeper
+    periods: [{ from: 1988, to: 2009 }]
+    caseSize: 40
+    metals: [steel, yellow-gold]
+    bezel: { material: aluminum, style: dive }
+    movement: "3135"
+    complications: [date]
+    dials: [{ color: blue }, { color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 116610LN
+    photos:
+      - file: ../../../photos/rolex/submariner/submariner-date-4.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Rolex_Submariner_diving_watch.jpg
+          license: CC BY 2.0
+          licenseUrl: https://creativecommons.org/licenses/by/2.0
+          author: foeoc kannilc
     periods: [{ from: 2010, to: 2020 }]
     caseSize: 40
     metals: [steel]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "3135"
+    complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 116610LV
@@ -23,6 +76,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [green], style: dive }
     movement: "3135"
+    complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 126610LN
@@ -31,6 +85,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "3235"
+    complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 126610LV
@@ -39,6 +94,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [green], style: dive }
     movement: "3235"
+    complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 126613LB
@@ -47,6 +103,7 @@ references:
     metals: [steel, yellow-gold]
     bezel: { material: ceramic, colors: [blue], style: dive }
     movement: "3235"
+    complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 126618LN
@@ -55,5 +112,6 @@ references:
     metals: [yellow-gold]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "3235"
+    complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]

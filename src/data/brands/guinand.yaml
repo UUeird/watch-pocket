@@ -1,7 +1,13 @@
 name: Guinand
 origin: Switzerland
 periods: [{ from: 1865 }]
+segment: mid-range
 website: https://www.guinand-uhren.de
 sources:
   - https://www.dialicious.com/en/guinand
   - https://www.guinand-uhren.de/
+control: private
+independent:
+  sources:
+    - https://www.guinand-uhren.de/about-guinand/history.html
+    - https://www.guinand-uhren.de/impressum.html

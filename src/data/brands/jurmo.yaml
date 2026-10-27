@@ -1,6 +1,6 @@
 name: Jurmo
 origin: Finland
-status: active
+periods: [{ from: 2017 }]
 website: https://jurmowatches.com
 sources:
   - https://www.dialicious.com/en/jurmo

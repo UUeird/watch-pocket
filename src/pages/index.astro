@@ -1,278 +1,126 @@
 ---
-import CountryLink from '../components/CountryLink.astro';
-import Filters from '../components/Filters.astro';
-import FoundingChart from '../components/FoundingChart.astro';
-import Owners from '../components/Owners.astro';
-import Treemap from '../components/Treemap.astro';
 import Base from '../layouts/Base.astro';
-import { brandStatus, currentOwners, href, label, loadCatalog } from '../lib/catalog';
-import { chartData, measuresOf } from '../lib/chart-data';
-import { metrics } from '../lib/metrics';
+import { href, loadCatalog } from '../lib/catalog';
 
-const catalog = await loadCatalog();
-const { brands, groups, linesOf } = catalog;
-const data = chartData(catalog);
-// The table's measure column can show any per-brand figure; a count of one brand each says nothing.
-const measures = measuresOf(catalog);
-const columnMetrics = metrics.filter((metric) => metric.id !== 'brands');
-const column = columnMetrics.find((metric) => metric.id === 'age')!;
-const maxOf = (id: string) => Math.max(0, ...[...measures.values()].map(({ values }) => values[id] ?? 0));
-const columnMax = maxOf(column.id);
-const columnValues = Object.fromEntries([...measures].map(([id, { values }]) => [id, values]));
-const distinct = (values: (string | undefined)[]) =>
-  [...new Set(values.filter((value) => value !== undefined))].sort();
-const segments = distinct(brands.map((brand) => brand.data.segment));
-const origins = distinct(brands.map((brand) => brand.data.origin));
-const tags = distinct(brands.flatMap((brand) => brand.data.tags));
-// The Owner filter lists groups, so a brand held by another brand matches none of its options.
-const groupOwnerIds = (brand: (typeof brands)[number]) =>
-  currentOwners(brand)
-    .filter((owner) => owner.collection === 'groups')
-    .map((owner) => owner.id);
-const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));
+const { brands, groups, references } = await loadCatalog();
+// Counts with thousands separators.
+const count = (n: number) => n.toLocaleString('en-US');
+const countries = new Set(brands.map((brand) => brand.data.origin).filter(Boolean));
+// The site's sections, each with what it holds and how big it is.
+const sections = [
+  {
+    title: 'Brands',
+    path: '/brands/',
+    count: count(brands.length),
+    text: 'Every brand with its owner, origin and founding.',
+  },
+  {
+    title: 'Ownership Groups',
+    path: '/ownership-groups/',
+    count: count(groups.length),
+    text: 'The corporations and families that hold the brands, and how much each holds.',
+  },
+  {
+    title: 'Chart',
+    path: '/chart/',
+    count: count(brands.length),
+    text: 'Every brand as a circle inside the group that owns it, sized by a figure you choose.',
+  },
+  {
+    title: 'Countries',
+    path: '/countries/',
+    count: count(countries.size),
+    text: 'Brands by the country they were founded in, whoever owns them today.',
+  },
+  {
+    title: 'References',
+    path: '/references/',
+    count: count(references.length),
+    text: 'Individual watches by reference number, with their metals, dials and bezels.',
+  },
+];
 ---
 
 <Base>
-  <h1>Watch brands</h1>
+  <h1>Who makes your watch?</h1>
   <p class="lede">The names and corporations behind the world's timepieces.</p>
 
-  <Filters
-    target="brands"
-    noun="brands"
-    placeholder="Search brands and product lines"
-    filters={[
-      {
-        name: 'owner',
-        label: 'Owner',
-        options: groups.map((group) => ({ value: group.id, label: group.data.name })),
-      },
-      { name: 'origin', label: 'Nation of origin', options: options(origins) },
-      { name: 'segment', label: 'Segment', options: options(segments) },
-      {
-        name: 'category',
-        label: 'Category',
-        options: [
-          { value: 'watch-brand', label: 'Watch brands' },
-          { value: 'movement-maker', label: 'Movement makers' },
-          { value: 'case-maker', label: 'Case makers' },
-        ],
-      },
-      { name: 'tags', label: 'Type', options: options(tags) },
-    ]}
-  />
-
-  <Treemap id="brands" title="Brands" data={data} follow="brands" initial={{ grouping: 'origin' }} />
-  <FoundingChart
-    brands={brands.map((brand) => ({ id: brand.id, name: brand.data.name, founded: brand.data.periods[0]?.from }))}
-    follow="brands"
-  />
-
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Brand</th>
-          <th>Owner</th>
-          <th>Nation of origin</th>
-          <th>Founded</th>
-          <th>Segment</th>
-          <th>Type</th>
-          <th>Status</th>
-          <th class="measure-head">
-            <span class="measure-controls">
-              <select class="measure-select" aria-label="Figure shown in this column">
-                {columnMetrics.map((metric) => <option value={metric.id} selected={metric === column}>{metric.label}</option>)}
-              </select>
-              <button type="button" class="measure-sort" aria-pressed="false" title="Sort by this figure, largest first">
-                Sort
-              </button>
-            </span>
-          </th>
-        </tr>
-      </thead>
-      <tbody id="brands">
-        {
-          brands.map((brand) => {
-            const { category, tags } = brand.data;
-            // The full logo where there is one, else the symbol alone.
-            const logo = brand.data.logo ?? brand.data.logomark;
-            const lineNames = linesOf(brand.id).map((line) => line.data.name);
-            const types = category === 'watch-brand' ? tags : [category, ...tags];
-            return (
-              <tr
-                data-id={brand.id}
-                data-q={[brand.data.name, ...lineNames].join(' ').toLowerCase()}
-                data-owner={groupOwnerIds(brand).join('|')}
-                data-segment={brand.data.segment}
-                data-origin={brand.data.origin}
-                data-category={category}
-                data-tags={tags.join('|')}
-              >
-                <td>
-                  <div class="brand">
-                    <span class="brand-logo">
-                      {logo && <img src={logo.src} width={logo.width} height={logo.height} alt="" loading="lazy" />}
-                    </span>
-                    <a href={href(`/brands/${brand.id}/`)}>{brand.data.name}</a>
-                  </div>
-                </td>
-                <td>
-                  <Owners brand={brand} />
-                </td>
-                <td>{brand.data.origin && <CountryLink country={brand.data.origin} />}</td>
-                <td class="num">{brand.data.periods[0]?.from}</td>
-                <td class="cap">{brand.data.segment && label(brand.data.segment)}</td>
-                <td class="cap">{types.map(label).join(', ')}</td>
-                <td class="cap">{brandStatus(brand)}</td>
-                <td class="measure">
-                  {(() => {
-                    const value = measures.get(brand.id)!.values[column.id];
-                    return value === undefined ? null : (
-                      <>
-                        <span class="bar" style={{ width: `${(value / columnMax) * 100}%` }} />
-                        <span class="value">{column.format(value)}</span>
-                      </>
-                    );
-                  })()}
-                </td>
-              </tr>
-            );
-          })
-        }
-      </tbody>
-    </table>
-  </div>
+  <ul class="sections">
+    {
+      sections.map((section) => (
+        <li>
+          <a href={href(section.path)}>
+            <div class="head">
+              <span class="count">{section.count}</span>
+              <h2>{section.title}</h2>
+            </div>
+            <p>{section.text}</p>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 </Base>
 
-<script is:inline type="application/json" id="measure-values" set:html={JSON.stringify(columnValues).replace(/</g, '\\u003c')} />
-
-<script>
-  import { metricById } from '../lib/treemap';
-
-  // The measure column: a bar and figure for the chosen measure, and an optional sort by it, largest first.
-  const values: Record<string, Record<string, number>> = JSON.parse(document.getElementById('measure-values')!.textContent!);
-  const select = document.querySelector<HTMLSelectElement>('.measure-select')!;
-  const sort = document.querySelector<HTMLButtonElement>('.measure-sort')!;
-  const body = document.getElementById('brands')!;
-  const rows = [...body.querySelectorAll<HTMLTableRowElement>('tr[data-id]')];
-  const valueOf = (row: HTMLElement, id: string) => values[row.dataset.id!]?.[id];
-
-  const draw = () => {
-    const metric = metricById(select.value);
-    const max = Math.max(0, ...rows.map((row) => valueOf(row, metric.id) ?? 0));
-    for (const row of rows) {
-      const cell = row.querySelector<HTMLElement>('.measure')!;
-      const value = valueOf(row, metric.id);
-      cell.replaceChildren();
-      if (value === undefined) continue;
-      const bar = document.createElement('span');
-      bar.className = 'bar';
-      bar.style.width = `${(value / max) * 100}%`;
-      const text = document.createElement('span');
-      text.className = 'value';
-      text.textContent = metric.format(value);
-      cell.append(bar, text);
-    }
-    const sorted = sort.getAttribute('aria-pressed') === 'true';
-    // Without a sort, rows go back to name order, which is the order they were built in.
-    const order = sorted
-      ? [...rows].sort((a, b) => (valueOf(b, metric.id) ?? -Infinity) - (valueOf(a, metric.id) ?? -Infinity))
-      : rows;
-    body.append(...order);
-  };
-  select.addEventListener('change', draw);
-  sort.addEventListener('click', () => {
-    sort.setAttribute('aria-pressed', String(sort.getAttribute('aria-pressed') !== 'true'));
-    draw();
-  });
-</script>
-
 <style>
-  .measure-head {
-    min-width: 180px;
+  .sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
-  .measure-controls {
-    display: flex;
-    gap: 6px;
-    align-items: center;
+  @media (max-width: 600px) {
+    .sections {
+      grid-template-columns: 1fr;
+    }
   }
 
-  .measure-select {
-    max-width: 150px;
-    padding: 2px 4px;
-    font: inherit;
-    font-size: 0.8125rem;
+  /* Each card is one link, so the whole card is the target. */
+  .sections a {
+    display: grid;
+    gap: 4px;
+    height: 100%;
+    padding: 20px;
     color: var(--text);
+    text-decoration: none;
     background: var(--surface);
     border: 1px solid var(--line);
-    border-radius: 4px;
+    border-radius: 6px;
   }
 
-  .measure-sort {
-    padding: 2px 8px;
-    font: inherit;
-    font-size: 0.8125rem;
-    color: var(--muted);
-    background: none;
-    border: 1px solid var(--line);
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .measure-sort[aria-pressed='true'] {
-    color: var(--accent);
+  .sections a:hover,
+  .sections a:focus-visible {
     border-color: var(--accent);
   }
 
-  .measure {
-    position: relative;
-    min-width: 180px;
+  .sections h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--accent);
   }
 
-  /* The bar sits behind the figure, scaled to the largest figure in the whole list. */
-  .measure :global(.bar) {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 16px;
-    max-width: 100%;
-    translate: 0 -50%;
-    background: color-mix(in srgb, var(--accent) 22%, transparent);
-    border-radius: 0 4px 4px 0;
-  }
-
-  .measure :global(.value) {
-    position: relative;
-    padding-left: 6px;
-    font-size: 0.8125rem;
-    font-variant-numeric: tabular-nums;
-    white-space: nowrap;
-  }
-
-  .brand {
+  .head {
     display: flex;
     align-items: center;
     gap: 12px;
   }
 
-  /* A fixed slot, empty for a brand with no logo, so the names line up. */
-  .brand-logo {
-    display: flex;
+  /* The count, in the accent color, before the section's name. */
+  .count {
     flex: none;
-    align-items: center;
-    justify-content: center;
-    width: 88px;
-    height: 28px;
+    padding: 2px 10px;
+    color: var(--bg);
+    background: var(--accent);
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
   }
 
-  /* Logos are drawn for a light page, so each sits on a white plate in both color schemes. */
-  .brand-logo img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 3px;
-    background: #ffffff;
+  .sections p {
+    margin: 8px 0 0;
   }
 </style>

@@ -1,3 +1,6 @@
 name: Lip
 origin: France
-status: active
+periods: [{ from: 1867 }]
+segment: mid-range
+sources:
+  - https://www.dialicious.com/en/lip

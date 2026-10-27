@@ -5,3 +5,8 @@ website: https://tesourotimepiece.com
 sources:
   - https://www.dialicious.com/en/tesouro
   - https://tesourotimepiece.com/
+control: private
+independent:
+  sources:
+    - https://find-and-update.company-information.service.gov.uk/company/13778442/persons-with-significant-control
+    - https://tesourotimepiece.com/about/

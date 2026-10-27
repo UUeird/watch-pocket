@@ -1,6 +1,7 @@
 name: Revolo
-status: active
+periods: [{ from: 2016 }]
 website: http://www.revolo-watches.com
 sources:
   - https://www.dialicious.com/en/revolo
   - http://www.revolo-watches.com/
+  - http://www.revolo-watches.com/en/our-story

@@ -1,5 +1,6 @@
 name: Maurice Lacroix
 logo: ../logos/maurice-lacroix.svg
+logomark: ../logos/maurice-lacroix-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Maurice_Lacroix.svg
   license: Public domain
@@ -8,3 +9,11 @@ periods: [{ from: 1975 }]
 segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q177591
+ownership:
+  - owner: dksh
+    stake: unknown
+    basis: disclosed
+    from: 2011
+    sources:
+      - https://www.europastar.com/news/1004083972-dksh-takes-a-majority-stake-in-maurice-lacroix.html
+      - https://www.watchpro.com/maurice-lacroix-owners-put-business-up-for-sale/

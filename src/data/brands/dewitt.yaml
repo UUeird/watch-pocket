@@ -1,7 +1,9 @@
 name: Dewitt
 origin: Switzerland
-status: active
+periods: [{ from: 2003 }]
+segment: luxury
 website: https://dewitt.ch
 sources:
   - https://www.dialicious.com/en/dewitt
   - https://dewitt.ch/
+  - https://wiki.grail-watch.com/index.php/DeWitt

@@ -1,11 +1,20 @@
 name: Kate Spade
 logo: ../logos/kate-spade.svg
+logomark: ../logos/kate-spade-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Kate_Spade_New_York_logo.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 1993 }]
+segment: budget
 tags:
   - fashion
 licensees:
   - licensee: fossil-group
+sources:
+  - https://en.wikipedia.org/wiki/Kate_Spade_New_York
+ownership:
+  - owner: tapestry
+    from: 2017
+    sources:
+      - https://en.wikipedia.org/wiki/Kate_Spade_New_York

@@ -1,5 +1,17 @@
 name: Luch
+logo: ../logos/luch.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Логотип_Минского_часового_завода_Луч.svg
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: UrbanEgor
 origin: Belarus
 periods: [{ from: 1953 }]
+segment: budget
 sources:
   - https://en.wikipedia.org/wiki/Luch_(watchmaker)
+ownership:
+  - owner: { brand: franck-muller }
+    stake: unknown
+    sources:
+      - https://en.wikipedia.org/wiki/Luch_(watchmaker)

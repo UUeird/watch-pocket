@@ -1,7 +1,8 @@
 name: Visitor
 origin: United States
-status: active
+periods: [{ from: 2013 }]
 website: https://www.visitorwatchco.com
 sources:
   - https://www.dialicious.com/en/visitor
   - https://www.visitorwatchco.com/
+  - https://www.visitorwatchco.com/about-us

@@ -1,3 +1,8 @@
 name: Lüm-Tec
 origin: United States
 status: active
+segment: mid-range
+control: family
+independent:
+  sources:
+    - https://lum-tec.com/pages/about-lum-tec

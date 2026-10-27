@@ -4,3 +4,7 @@ website: https://trintecwatches.com
 sources:
   - https://www.dialicious.com/en/trintec
   - https://trintecwatches.com/
+control: private
+independent:
+  sources:
+    - https://trintecwatches.com/about/

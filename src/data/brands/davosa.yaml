@@ -1,7 +1,12 @@
 name: Davosa
 origin: Switzerland
 status: active
+segment: mid-range
 website: https://www.davosa-france.com
 sources:
   - https://www.dialicious.com/en/davosa
   - https://www.davosa-france.com/
+control: family
+independent:
+  sources:
+    - https://davosa-usa.com/pages/about-us-1

@@ -1,6 +1,6 @@
 name: Carlingue
 origin: France
-status: active
+periods: [{ from: 2024 }]
 website: https://carlingue-watches.com
 sources:
   - https://www.dialicious.com/en/carlingue

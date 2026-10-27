@@ -1,5 +1,6 @@
 name: WeWood
 periods: [{ from: 2009 }]
+segment: budget
 website: https://wewoodswiss.ch
 sources:
   - https://www.dialicious.com/en/wewood

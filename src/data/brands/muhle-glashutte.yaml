@@ -4,6 +4,13 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Nautische_Instrumente_M%C3%BChle_Glash%C3%BCtte_logo.svg
   license: Public domain
 origin: Germany
+control: family
 periods: [{ from: 1868 }]
+segment: mid-range
 sources:
+  - https://en.wikipedia.org/wiki/M%C3%BChle_Glash%C3%BCtte
   - https://www.wikidata.org/wiki/Q1972115
+independent:
+  sources:
+    - https://www.muehle-glashuette.de/en/25-years-for-muehle-glashuette-interview-with-thilo-muehle/
+    - https://www.europastar.com/1004114519.html

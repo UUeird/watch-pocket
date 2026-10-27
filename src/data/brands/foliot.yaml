@@ -5,3 +5,7 @@ website: https://www.foliotwatches.com
 sources:
   - https://www.dialicious.com/en/foliot
   - https://www.foliotwatches.com/
+control: private
+independent:
+  sources:
+    - https://www.foliotwatches.com/pages/about

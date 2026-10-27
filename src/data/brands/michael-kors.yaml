@@ -4,8 +4,15 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Michael_Kors_Logo.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 1981 }]
+segment: budget
 tags:
   - fashion
 licensees:
   - licensee: fossil-group
+sources:
+  - https://en.wikipedia.org/wiki/Capri_Holdings
+ownership:
+  - owner: capri
+    sources:
+      - https://en.wikipedia.org/wiki/Capri_Holdings

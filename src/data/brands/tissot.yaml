@@ -1,12 +1,25 @@
 name: Tissot
 logo: ../logos/tissot.svg
+logomark: ../logos/tissot-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Tissot_Logo.svg
   license: Public domain
+logoOnDark: ../logos/tissot-on-dark.png
+logoOnDarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:TISSOT-LOGO-TRANSPARENT-WHITE.png
+  license: CC0
+  licenseUrl: https://creativecommons.org/publicdomain/zero/1.0
+  author: Jeromluther
+logomarkOnDark: ../logos/tissot-logomark-on-dark.png
 origin: Switzerland
 periods: [{ from: 1853 }]
 segment: mid-range
 ownership:
+  - owner: ssih
+    from: 1930
+    to: 1983
+    sources:
+      - https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Suisse_pour_l%27Industrie_Horlog%C3%A8re
   - owner: swatch-group
     from: 1983
 revenue:

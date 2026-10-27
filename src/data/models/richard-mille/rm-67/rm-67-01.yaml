@@ -1,0 +1,21 @@
+name: RM 67-01 Automatic Winding Extra Flat
+line: richard-mille/rm-67
+style: everyday
+website: https://www.richardmille.com/collections/rm-67-01-automatic-extra-flat
+sources:
+  - https://www.richardmille.com/collections/rm-67-01-automatic-extra-flat
+  - https://www.ablogtowatch.com/richard-mille-rm-67-01-automatic-extra-flat-watch/
+  - https://wristcheck.com/us/buy/richard-mille/rm67-01-ti-extra-flat
+references:
+  - ref: RM67-01
+    officialPhoto:
+      src: https://media.richardmille.com/wp-content/uploads/2019/01/04131903/RM6701-Ti_FRONT_UNDER-BB.jpg
+      page: https://www.richardmille.com/collections/rm-67-01-automatic-extra-flat
+    periods: [{ from: 2015 }]
+    caseSize: 38.7
+    metals: [titanium]
+    bezel: { material: titanium }
+    crystal: sapphire
+    movement: CRMA6
+    complications: [date]
+    bracelets: [{ type: rubber-strap }]

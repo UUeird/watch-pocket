@@ -1,4 +1,6 @@
 name: Sugess
+periods: [{ from: 2010 }]
+segment: budget
 sources:
   - https://www.dialicious.com/en/sugess
   - https://rotatewatches.com/blogs/blog/which-watches-use-seagull-movements

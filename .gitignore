@@ -9,3 +9,8 @@ dist/
 # Playwright output
 test-results/
 playwright-report/
+public/docs/media/.tmp/
+scripts/out/
+
+# Local secrets, such as the tada token for test-run uploads
+.env.local

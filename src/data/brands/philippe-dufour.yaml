@@ -4,3 +4,8 @@ periods: [{ from: 1978 }]
 segment: haute
 sources:
   - https://www.ahci.ch/members/philippe-dufour
+control: family
+independent:
+  sources:
+    - https://www.ahci.ch/members/philippe-dufour
+    - https://en.wikipedia.org/wiki/Philippe_Dufour

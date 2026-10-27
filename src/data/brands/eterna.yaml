@@ -1,4 +1,9 @@
 name: Eterna
+logo: ../logos/eterna.svg
+logomark: ../logos/eterna-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Eterna_logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1856 }]
 segment: mid-range

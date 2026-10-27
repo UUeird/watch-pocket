@@ -1,7 +1,8 @@
 ---
-// A search box and a row of dropdowns that filter the rows of one table.
-// Each row carries `data-q` (lowercase search text) and one `data-<name>` per filter, holding one value or
-// several joined with "|".
+// A search box and a row of dropdowns that filter the items in one part of the page: the rows of a table, or the
+// tiles in a set of cards. Each item carries `data-q` (lowercase search text) and one `data-<name>` per filter,
+// holding one value or several joined with "|". An item with a `data-id` is counted once however often it appears,
+// and a container marked `data-filter-group` (a card) hides while filtering leaves none of its items showing.
 interface Filter {
   name: string;
   label: string;
@@ -9,9 +10,9 @@ interface Filter {
 }
 
 interface Props {
-  // The id of the <tbody> whose rows are filtered.
+  // The id of the element whose items are filtered, such as a <tbody>.
   target: string;
-  // What a row is, plural, for the count: "brands", "references".
+  // What an item is, plural, for the count: "brands", "references".
   noun: string;
   placeholder: string;
   filters: Filter[];
@@ -177,7 +178,11 @@ const { target, noun, placeholder, filters } = Astro.props;
 <script>
   for (const form of document.querySelectorAll<HTMLFormElement>('[data-filters]')) {
     const target = form.dataset.target!;
-    const rows = [...document.querySelectorAll<HTMLTableRowElement>(`#${target} tr`)];
+    const rows = [...document.querySelectorAll<HTMLElement>(`#${target} [data-q]`)];
+    const groups = [...document.querySelectorAll<HTMLElement>(`#${target} [data-filter-group]`)];
+    // The same brand can sit in several cards; it counts once, as shown if any of its places is.
+    const key = (row: HTMLElement) => row.dataset.id ?? row;
+    const total = new Set(rows.map(key)).size;
     const selects = [...form.querySelectorAll('select')];
     const search = form.querySelector<HTMLInputElement>('input[name="q"]')!;
     const count = form.querySelector('[data-count]')!;
@@ -189,19 +194,19 @@ const { target, noun, placeholder, filters } = Astro.props;
       const wanted = selects.filter((select) => select.value);
       for (const select of selects) select.classList.toggle('active', select.value !== '');
 
-      let shown = 0;
+      const matched = new Set<HTMLElement | string>();
       for (const row of rows) {
         const match =
           row.dataset.q!.includes(q) &&
           wanted.every((select) => (row.dataset[select.name] ?? '').split('|').includes(select.value));
         row.hidden = !match;
-        if (match) shown++;
+        if (match) matched.add(key(row));
       }
+      const shown = matched.size;
 
       const filtering = q !== '' || wanted.length > 0;
-      count.textContent = filtering
-        ? `${shown} of ${rows.length} ${form.dataset.noun}`
-        : `${rows.length} ${form.dataset.noun}`;
+      for (const group of groups) group.hidden = filtering && !group.querySelector('[data-q]:not([hidden])');
+      count.textContent = filtering ? `${shown} of ${total} ${form.dataset.noun}` : `${total} ${form.dataset.noun}`;
       clear.hidden = !filtering;
       empty.hidden = shown > 0;
       // Anything else drawn from the same rows, such as a chart, redraws from what is left showing.

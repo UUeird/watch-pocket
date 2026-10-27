@@ -5,9 +5,21 @@ logoCredit:
   license: Public domain
 origin: United States
 periods: [{ from: 1941 }]
+segment: budget
 tags:
   - fashion
 licensees:
   - licensee: movado-group
 sources:
+  - https://en.wikipedia.org/wiki/Coach_New_York
   - https://www.wikidata.org/wiki/Q727697
+ownership:
+  - owner: sara-lee
+    from: 1985
+    to: 2001
+    sources:
+      - https://en.wikipedia.org/wiki/Coach_New_York
+  - owner: tapestry
+    from: 2001
+    sources:
+      - https://en.wikipedia.org/wiki/Coach_New_York

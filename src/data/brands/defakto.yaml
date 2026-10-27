@@ -1,7 +1,11 @@
 name: Defakto
 origin: Germany
-status: active
+periods: [{ from: 2009 }]
 website: https://www.defakto-watches.com
 sources:
   - https://www.dialicious.com/en/defakto
   - https://www.defakto-watches.com/
+control: private
+independent:
+  sources:
+    - https://www.defakto-watches.com/

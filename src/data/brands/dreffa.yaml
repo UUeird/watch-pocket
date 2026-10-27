@@ -1,6 +1,11 @@
 name: Dreffa
+logo: ../logos/dreffa.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Dreffa_logo.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Dreffa
 origin: Switzerland
 sources:
   - https://www.dialicious.com/en/dreffa
   - https://en.wikipedia.org/wiki/Dreffa
-  - https://ranfft.org/import-code/view?id=72

@@ -1,7 +1,8 @@
 name: Eqvis
 origin: Germany
-status: active
+periods: [{ from: 2011 }]
 website: http://eqvis.net
 sources:
   - https://www.dialicious.com/en/eqvis
   - http://eqvis.net/
+  - http://eqvis.net/about/

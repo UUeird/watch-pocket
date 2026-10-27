@@ -1,6 +1,7 @@
 name: Valimor
-status: active
+periods: [{ from: 2018 }]
 website: https://www.valimor.com
 sources:
   - https://www.dialicious.com/en/valimor
   - https://www.valimor.com/
+  - https://www.valimor.com/about/

@@ -5,3 +5,7 @@ website: https://hentschel-hamburg.com
 sources:
   - https://www.dialicious.com/en/hentschel
   - https://hentschel-hamburg.com/
+control: private
+independent:
+  sources:
+    - https://hentschel-hamburg.com/

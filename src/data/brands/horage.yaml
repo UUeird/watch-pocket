@@ -5,3 +5,7 @@ website: https://www.horage.com
 sources:
   - https://www.dialicious.com/en/horage
   - https://www.horage.com/
+control: private
+independent:
+  sources:
+    - https://monochrome-watches.com/interview-andi-felsl-horage-on-creating-a-one-of-a-kind-watchmaker-chasing-microns

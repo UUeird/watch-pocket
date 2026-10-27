@@ -5,3 +5,8 @@ website: https://www.finewatches.berlin
 sources:
   - https://www.dialicious.com/en/fwb
   - https://www.finewatches.berlin/
+control: family
+independent:
+  sources:
+    - https://usa.watchpro.com/?p=73729
+    - https://www.finewatches.berlin/impressum/

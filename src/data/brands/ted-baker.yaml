@@ -1,3 +1,15 @@
 name: Ted Baker
+logo: ../logos/ted-baker.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:TedBaker.svg
+  license: Public domain
 origin: United Kingdom
-status: active
+periods: [{ from: 1988 }]
+segment: budget
+sources:
+  - https://en.wikipedia.org/wiki/Ted_Baker
+ownership:
+  - owner: authentic-brands
+    from: 2022
+    sources:
+      - https://en.wikipedia.org/wiki/Ted_Baker

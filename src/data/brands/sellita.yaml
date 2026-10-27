@@ -1,6 +1,12 @@
 name: Sellita
 origin: Switzerland
 periods: [{ from: 1950 }]
-category: movement-maker
+segment: mid-range
+makes: [movements]
 sources:
   - https://www.wikidata.org/wiki/Q20077598
+control: private
+independent:
+  sources:
+    - https://escapementmagazine.com/articles/sebastien-chaulmontet-of-sellita/
+    - https://reference.grail-watch.com/?p=629

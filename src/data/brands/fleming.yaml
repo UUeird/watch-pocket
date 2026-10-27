@@ -4,3 +4,7 @@ website: https://www.fleming.watch
 sources:
   - https://www.dialicious.com/en/fleming
   - https://www.fleming.watch/
+control: private
+independent:
+  sources:
+    - https://www.fleming.watch/

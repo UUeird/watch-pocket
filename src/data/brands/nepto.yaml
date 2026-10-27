@@ -1,7 +1,8 @@
 name: Nepto
 origin: France
-status: active
+periods: [{ from: 2018 }]
 website: https://nepto.net
 sources:
   - https://www.dialicious.com/en/nepto
   - https://nepto.net/
+  - https://nepto.net/story/

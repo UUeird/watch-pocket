@@ -1,7 +1,8 @@
 name: Haim
 origin: United States
-status: active
+periods: [{ from: 2020 }]
 website: https://haimwatchco.com
 sources:
   - https://www.dialicious.com/en/haim
   - https://haimwatchco.com/
+  - https://haimwatchco.com/pages/our-story

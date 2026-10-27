@@ -4,3 +4,7 @@ website: https://dietrich.com
 sources:
   - https://www.dialicious.com/en/dietrich
   - https://dietrich.com/
+control: private
+independent:
+  sources:
+    - https://monochrome-watches.com/emmanuel-dietrich-founder-of-dietrich-watches-on-life-as-a-designer-and-watch-entrepreneur

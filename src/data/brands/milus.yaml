@@ -1,8 +1,35 @@
 name: Milus
+logo: ../logos/milus.webp
+logomark: ../logos/milus-logomark.webp
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Milus.webp
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Deriajer
 origin: Switzerland
 periods: [{ from: 1919 }]
+segment: mid-range
 website: https://milus.com
 sources:
   - https://www.dialicious.com/en/milus
   - https://www.wikidata.org/wiki/Q16040718
   - https://milus.com/
+control: private
+ownership:
+  - owner: peace-mark
+    basis: reported
+    from: 2002
+    to: 2008
+    sources:
+      - https://www.europastar.com/news/1003874769-milus-to-become-part-of-the-chow-tai-fook-group.html
+  - owner: chow-tai-fook
+    basis: reported
+    from: 2008
+    to: 2016
+    sources:
+      - https://www.europastar.com/news/1003874769-milus-to-become-part-of-the-chow-tai-fook-group.html
+      - https://www.swissinfo.ch/eng/business/watchmaking_milus--resuscitation-of-a-100-year-old-watch-brand/45409422
+independent:
+  sources:
+    - https://milus.com/
+    - https://www.swissinfo.ch/eng/business/watchmaking_milus--resuscitation-of-a-100-year-old-watch-brand/45409422

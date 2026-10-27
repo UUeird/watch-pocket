@@ -1,7 +1,12 @@
 name: Zeitwinkel
 origin: Switzerland
-status: active
+periods: [{ from: 2006 }]
 website: https://www.zeitwinkel.ch
 sources:
   - https://www.dialicious.com/en/zeitwinkel
   - https://www.zeitwinkel.ch/
+  - https://wiki.grail-watch.com/index.php/Zeitwinkel
+control: private
+independent:
+  sources:
+    - https://www.zeitwinkel.ch/

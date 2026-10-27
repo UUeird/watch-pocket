@@ -30,6 +30,8 @@ try "two current owners" $D/brands/girard-perregaux.yaml '/to: 2022/d'
 try "two references with the same URL" $D/models/rolex/submariner/submariner.yaml 's/ref: "124060"/ref: "114060"/'
 try "line filed under the wrong brand" $D/lines/rolex/milgauss.yaml 's/^brand: rolex$/brand: omega/'
 try "model filed under the wrong line" $D/models/rolex/submariner/submariner.yaml 's#^line: rolex/submariner$#line: rolex/datejust#'
+try "model style outside the list" $D/models/rolex/submariner/submariner.yaml 's/^style: dive$/style: diver/'
+try "split-seconds without chronograph" $D/models/richard-mille/rm-65/rm-65-01.yaml 's/\[date, chronograph, split-seconds\]/[date, split-seconds]/'
 try "status set alongside periods" $D/brands/omega.yaml 's/^segment: /status: active\
 segment: /'
 try "current stakes over 100 percent in total" $D/brands/girard-perregaux.yaml '/to: 2022/d;s/^  - owner: .*/&\
@@ -47,6 +49,14 @@ try "source that is not a link" $D/brands/girard-perregaux.yaml 's/^  - owner: s
 try "logo file that does not exist" $D/brands/rolex.yaml 's#logos/rolex.svg#logos/missing.svg#'
 try "logo credit with no logo" $D/brands/rolex.yaml '/^logo: /d'
 try "logo credit with no source" $D/brands/rolex.yaml '/^  source: /d'
+try "logomark file that does not exist" $D/brands/louis-vuitton.yaml 's#logos/louis-vuitton-logomark.svg#logos/missing.svg#'
+try "logomark with no logo" $D/brands/louis-vuitton.yaml '/^logo: /d;/^logoCredit:/,/^  license: /d'
+try "logomark credit with no logomark" $D/brands/rolex.yaml 's/^logoCredit:$/logomarkCredit: { source: https:\/\/example.com, license: Public domain }\
+logoCredit:/'
+try "dark logo file that does not exist" $D/brands/tissot.yaml 's#logos/tissot-on-dark.png#logos/missing.png#'
+try "dark logo with no logo" $D/brands/tissot.yaml '/^logo: /d;/^logoCredit:/,/^  license: Public domain$/d'
+try "dark logo credit with no dark logo" $D/brands/tissot.yaml '/^logoOnDark: /d'
+try "logo background that is not a color" $D/brands/diesel.yaml "s/^logoBackground: .*/logoBackground: red/"
 try "group logo file that does not exist" $D/groups/kering.yaml 's#logos/kering.svg#logos/missing.svg#'
 try "group logo credit with no logo" $D/groups/kering.yaml '/^logo: /d'
 try "revenue with no source" $D/brands/breguet.yaml 's/^name: Breguet$/name: Breguet\
@@ -63,5 +73,9 @@ control: private/'
 try "group control outside the list" $D/groups/kering.yaml 's/^control: public$/control: luxury-group/'
 try "heritage after the brand's own founding" $D/brands/arnold-son.yaml 's/^  from: 1764$/  from: 2000/'
 try "heritage with no source" $D/brands/arnold-son.yaml '/^    - https:\/\/www.thehourmarkers.com/d; s/^  sources:$/  sources: []/'
+try "model photo credit with no license" $D/models/rolex/gmt-master-ii/gmt-master-ii.yaml '/^          license: Public domain$/d'
+try "model photo that does not exist" $D/models/rolex/gmt-master-ii/gmt-master-ii.yaml 's#gmt-master-ii.jpg#no-such-photo.jpg#'
+try "the same model photo twice" $D/models/rolex/gmt-master-ii/gmt-master-ii.yaml 's#File:Rolex_GMT_Master_II_-_16710_in_it_sitting_on_top_of_the_box.jpg#File:Rolex_GMT_Master_II_Pepsi.jpg#'
+try "model website that is not a web address" $D/models/richard-mille/rm-67/rm-67-02.yaml 's#^website: .*#website: richardmille.com#'
 
 exit $failures

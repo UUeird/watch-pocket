@@ -1,6 +1,11 @@
 name: Chaumet
+logo: ../logos/chaumet.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Chaumet-logo.jpg
+  license: Public domain
 origin: France
 periods: [{ from: 1780 }]
+segment: luxury
 ownership:
   - owner: lvmh
 sources:

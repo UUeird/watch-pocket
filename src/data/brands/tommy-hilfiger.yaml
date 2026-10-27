@@ -1,11 +1,24 @@
 name: Tommy Hilfiger
-logo: ../logos/tommy-hilfiger.svg
+logo: ../logos/tommy-hilfiger-name.png
+logomark: ../logos/tommy-hilfiger.svg
 logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Tommy_Hilfiger_Logo.png
+  license: Public domain
+logomarkCredit:
   source: https://commons.wikimedia.org/wiki/File:Tommy_Hilfiger_logo.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 1985 }]
+segment: budget
 tags:
   - fashion
 licensees:
   - licensee: movado-group
+logoBackground: '#001c4b'
+sources:
+  - https://en.wikipedia.org/wiki/Tommy_Hilfiger_(company)
+ownership:
+  - owner: pvh
+    from: 2010
+    sources:
+      - https://en.wikipedia.org/wiki/Tommy_Hilfiger_(company)

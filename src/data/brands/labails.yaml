@@ -1,5 +1,5 @@
 name: Labails
-status: active
+periods: [{ from: 2017 }]
 website: https://www.labails-watches.com
 sources:
   - https://www.dialicious.com/en/labails

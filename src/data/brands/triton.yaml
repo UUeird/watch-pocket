@@ -5,3 +5,8 @@ website: https://tritonwatch.ch
 sources:
   - https://www.dialicious.com/en/triton
   - https://tritonwatch.ch/
+control: private
+independent:
+  sources:
+    - https://tritonwatch.ch/la-marque/
+    - https://tritonwatch.ch/mentions-legales/

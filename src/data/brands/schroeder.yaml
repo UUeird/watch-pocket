@@ -5,3 +5,7 @@ website: https://www.schroeder1877.com
 sources:
   - https://www.dialicious.com/en/schroeder
   - https://www.schroeder1877.com/
+control: family
+independent:
+  sources:
+    - https://www.schroeder1877.com/fr/a-propos

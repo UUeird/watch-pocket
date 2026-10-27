@@ -1,6 +1,18 @@
 name: Titoni
+logo: ../logos/titoni.png
+logomark: ../logos/titoni-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:TITONI_Logo.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: TITONI LTD
 origin: Switzerland
 periods: [{ from: 1919 }]
 segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q685001
+control: family
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Titoni
+    - https://www.europastar.com/IMG/pdf/highlight_es219_titoni.pdf

@@ -1,0 +1,59 @@
+name: "Speedtimer Mechanical"
+line: seiko/prospex
+style: sport
+website: https://www.seikowatches.com/us-en/products/prospex/speedtimer
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/speedtimer
+  - https://www.seikowatches.com/us-en/products/prospex/spb513j1
+  - https://www.seikowatches.com/us-en/products/prospex/spb515j1
+  - https://www.seikowatches.com/us-en/products/prospex/hbc003j1
+  - https://www.seikowatches.com/us-en/products/prospex/hbc004j1
+references:
+  - ref: SPB513
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/07/17/21/15/SPB513J1/SPB513J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb513j1
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB515
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/07/17/21/15/SPB515J1/SPB515J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb515j1
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBC003
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/05/21/14/HBC003J1/HBC003J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbc003j1
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBC004
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/05/21/14/HBC004J1/HBC004J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbc004j1
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]

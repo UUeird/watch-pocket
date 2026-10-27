@@ -5,3 +5,8 @@ website: https://appellawatches.ch
 sources:
   - https://www.dialicious.com/en/appella
   - https://appellawatches.ch/
+ownership:
+  - owner: { brand: adriatica }
+    basis: disclosed
+    sources:
+      - https://appellawatches.ch/en/content/6-history

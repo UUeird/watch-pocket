@@ -1,7 +1,11 @@
 name: Artya
 origin: Switzerland
-status: active
+periods: [{ from: 2009 }]
 website: https://www.artya.com
 sources:
   - https://www.dialicious.com/en/artya
   - https://www.artya.com/
+control: private
+independent:
+  sources:
+    - https://www.artya.com/history

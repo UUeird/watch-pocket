@@ -1,6 +1,11 @@
 name: Hysek
-status: active
+periods: [{ from: 1997 }]
 website: https://hysek.swiss
 sources:
   - https://www.dialicious.com/en/hysek
   - https://hysek.swiss/
+  - https://en.worldtempus.com/article/industry-news/brands/hysek-compact-manufacture-17935.html
+control: private
+independent:
+  sources:
+    - https://hysek.swiss/en/content/7-notre-maison

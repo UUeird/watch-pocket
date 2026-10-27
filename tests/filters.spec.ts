@@ -12,7 +12,7 @@ const column = async (rows: Locator, index: number) =>
 
 test.describe('Brands filters', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('./');
+    await page.goto('brands/');
   });
 
   test('starts unfiltered', async ({ page }) => {
@@ -45,6 +45,14 @@ test.describe('Brands filters', () => {
     await expect(visibleRows(page, 'brands')).toHaveCount(total);
   });
 
+  test('independent brands have their own owner option, shown as plain text', async ({ page }) => {
+    await filter(page, 'owner').selectOption('independent');
+    const rows = visibleRows(page, 'brands');
+    await expect(rows).toContainText(['Audemars Piguet', 'Patek Philippe']);
+    expect(new Set(await column(rows, 2))).toEqual(new Set(['Independent']));
+    await expect(rows.locator('td:nth-child(2) a')).toHaveCount(0);
+  });
+
   test('filters combine', async ({ page }) => {
     await filter(page, 'origin').selectOption('Switzerland');
     await filter(page, 'segment').selectOption('haute');
@@ -55,10 +63,12 @@ test.describe('Brands filters', () => {
   });
 
   test('a multi-value field matches any of its values', async ({ page }) => {
-    await filter(page, 'tags').selectOption('smartwatch');
+    await filter(page, 'makes').selectOption('smartwatches');
     const rows = visibleRows(page, 'brands');
     expect(await rows.count()).toBeGreaterThan(0);
-    for (const type of await column(rows, 6)) expect(type).toContain('smartwatch');
+    for (const makes of await rows.evaluateAll((trs) => trs.map((tr) => tr.getAttribute('data-makes')))) {
+      expect(makes!.split('|')).toContain('smartwatches');
+    }
   });
 
   test('clear filters resets everything', async ({ page }) => {
@@ -108,5 +118,31 @@ test.describe('References filters', () => {
     for (const metal of metals) expect(metal).toContain('yellow gold');
     // The two-tone Submariner is steel and yellow gold, so it must be among them.
     expect(metals).toContain('steel, yellow gold');
+  });
+});
+
+test.describe('Ownership groups filters', () => {
+  const cards = (page: Page) => page.locator('#group-cards .card:not([hidden])');
+
+  test.beforeEach(async ({ page }) => {
+    await page.goto('ownership-groups/');
+  });
+
+  test('narrows the cards and their brands', async ({ page }) => {
+    const allCards = await cards(page).count();
+    await filter(page, 'segment').selectOption('haute');
+    // Each card left showing holds only matching brands.
+    expect(await cards(page).count()).toBeLessThan(allCards);
+    const shown = await page.locator('#group-cards [data-q]:not([hidden])').evaluateAll((tiles) => tiles.map((tile) => (tile as HTMLElement).dataset.segment));
+    expect(new Set(shown)).toEqual(new Set(['haute']));
+    await expect(count(page)).toContainText(' of ');
+    await clear(page).click();
+    await expect(cards(page)).toHaveCount(allCards);
+  });
+
+  test('searches by group name as well as brand name', async ({ page }) => {
+    await page.getByPlaceholder('Search groups and brands').fill('swatch group');
+    await expect(cards(page)).toHaveCount(1);
+    await expect(cards(page).first()).toHaveAttribute('data-group', 'swatch-group');
   });
 });

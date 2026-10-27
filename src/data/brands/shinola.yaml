@@ -1,9 +1,16 @@
 name: Shinola
 logo: ../logos/shinola.svg
+logomark: ../logos/shinola-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Shinola_logo_2026.svg
   license: Public domain
 origin: United States
 periods: [{ from: 2011 }]
+segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Shinola_(retail_company)
+ownership:
+  - owner: bedrock-manufacturing
+    sources:
+      - https://en.wikipedia.org/wiki/Shinola_(retail_company)
+      - https://www.businessoffashion.com/articles/luxury/tom-kartsotis-american-dream/

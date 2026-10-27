@@ -4,3 +4,7 @@ website: https://www.aevumtime.com
 sources:
   - https://www.dialicious.com/en/aevum
   - https://www.aevumtime.com/
+control: private
+independent:
+  sources:
+    - https://www.aevumtime.com/more-about-aevum

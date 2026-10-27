@@ -1,5 +1,18 @@
 name: Lang & Heyne
+logo: ../logos/lang-heyne.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Lang_Heyne_Logo_DE.jpg
+  license: Public domain
 origin: Germany
 periods: [{ from: 2001 }]
+segment: haute
 sources:
   - https://www.wikidata.org/wiki/Q22032116
+ownership:
+  - owner: tempus-arte
+    stake: unknown
+    basis: reported
+    from: 2013
+    sources:
+      - https://masterhorologer.com/lang-and-heyne-watches-history-and-collections/
+      - https://usa.watchpro.com/?p=59372

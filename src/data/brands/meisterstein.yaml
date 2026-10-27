@@ -1,7 +1,12 @@
 name: Meisterstein
 origin: Germany
-status: active
+periods: [{ from: 2019 }]
 website: https://www.meisterstein.com
 sources:
   - https://www.dialicious.com/en/meisterstein
   - https://www.meisterstein.com/
+  - https://www.meisterstein.com/ueber-uns
+control: private
+independent:
+  sources:
+    - https://www.meisterstein.com/impressum

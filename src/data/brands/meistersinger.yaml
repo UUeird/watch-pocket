@@ -1,8 +1,20 @@
 name: Meistersinger
+logo: ../logos/meistersinger.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:MeisterSinger_TransparentLogo.png
+  license: CC BY-SA 3.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+  author: MeisterSinger GmbH & Co. KG
 origin: Germany
-status: active
+control: family
+periods: [{ from: 2001 }]
+segment: mid-range
 website: https://meistersinger.com
 sources:
   - https://www.dialicious.com/en/meistersinger
   - https://www.wikidata.org/wiki/Q1502844
   - https://meistersinger.com/
+independent:
+  sources:
+    - https://insight-luxury.com/en/2025/03/12/meistersinger-the-single-hand-watch-specialist-launches-the-second-generation
+    - https://madegooddesigns.com/meistersinger-brand-guidelines/

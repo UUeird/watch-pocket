@@ -5,3 +5,7 @@ website: https://www.tourbywatches.com
 sources:
   - https://www.dialicious.com/en/tourby
   - https://www.tourbywatches.com/
+control: private
+independent:
+  sources:
+    - https://www.tourbywatches.com/

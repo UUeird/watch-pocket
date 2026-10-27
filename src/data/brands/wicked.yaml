@@ -1,7 +1,11 @@
 name: Wicked
 origin: Switzerland
-status: active
+periods: [{ from: 2019 }]
 website: https://www.wickedwatch.ch
 sources:
   - https://www.dialicious.com/en/wicked
   - https://www.wickedwatch.ch/
+control: family
+independent:
+  sources:
+    - https://www.wickedwatch.ch/

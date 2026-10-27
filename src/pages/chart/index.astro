@@ -1,0 +1,65 @@
+---
+import Filters from '../../components/Filters.astro';
+import Treemap from '../../components/Treemap.astro';
+import Base from '../../layouts/Base.astro';
+import { activeGroups, currentOwners, label, loadCatalog } from '../../lib/catalog';
+import { chartData } from '../../lib/chart-data';
+
+const catalog = await loadCatalog();
+const { brands, groups, linesOf } = catalog;
+const data = await chartData(catalog);
+const distinct = (values: (string | undefined)[]) => [...new Set(values.filter((value) => value !== undefined))].sort();
+const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));
+// The Owner filter lists groups, so a brand held by another brand matches none of its options.
+// An independent brand matches the Independent option instead.
+const groupOwnerIds = (brand: (typeof brands)[number]) =>
+  brand.data.independent
+    ? ['independent']
+    : currentOwners(brand)
+        .filter((owner) => owner.collection === 'groups')
+        .map((owner) => owner.id);
+---
+
+<Base title="Chart">
+  <h1>Brands and their owners</h1>
+  <p class="lede">Every brand as a circle inside the group that owns it. Regroup, resize or filter to compare.</p>
+
+  <Filters
+    target="chart-brands"
+    noun="brands"
+    placeholder="Search brands and product lines"
+    filters={[
+      {
+        name: 'owner',
+        label: 'Owner',
+        options: [
+          { value: 'independent', label: 'Independent' },
+          ...activeGroups(groups).map((group) => ({ value: group.id, label: group.data.name })),
+        ],
+      },
+      { name: 'origin', label: 'Nation of origin', options: options(distinct(brands.map((brand) => brand.data.origin))) },
+      { name: 'segment', label: 'Segment', options: options(distinct(brands.map((brand) => brand.data.segment))) },
+      { name: 'makes', label: 'Makes', options: options(distinct(brands.flatMap((brand) => brand.data.makes))) },
+      { name: 'tags', label: 'Type', options: options(distinct(brands.flatMap((brand) => brand.data.tags))) },
+    ]}
+  />
+
+  <Treemap id="chart" title="Brands" data={data} follow="chart-brands" initial={{ grouping: 'owner', shape: 'circles' }} />
+
+  <!-- What the filters work on: one item per brand, never shown. The chart draws those left in. -->
+  <ul id="chart-brands" hidden>
+    {
+      brands.map((brand) => (
+        <li
+          data-id={brand.id}
+          data-q={[brand.data.name, ...linesOf(brand.id).map((line) => line.data.name)].join(' ').toLowerCase()}
+          data-owner={groupOwnerIds(brand).join('|')}
+          data-segment={brand.data.segment}
+          data-origin={brand.data.origin}
+          data-makes={brand.data.makes.join('|')}
+          data-tags={brand.data.tags.join('|')}
+        />
+      ))
+    }
+  </ul>
+</Base>

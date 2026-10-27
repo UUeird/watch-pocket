@@ -5,3 +5,7 @@ website: https://vescari.com
 sources:
   - https://www.dialicious.com/en/vescari
   - https://vescari.com/
+control: private
+independent:
+  sources:
+    - https://vescari.com/pages/our-story

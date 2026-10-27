@@ -1,8 +1,16 @@
 name: Hublot
 logo: ../logos/hublot.svg
+logomark: ../logos/hublot-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Hublot_logo.svg
   license: Public domain
+logoOnDark: ../logos/hublot-on-dark.png
+logoOnDarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:HUBLOT-LOGO-WHITE-TRANSPARENT-BG.png
+  license: CC0
+  licenseUrl: https://creativecommons.org/publicdomain/zero/1.0
+  author: Jeromluther
+logomarkOnDark: ../logos/hublot-logomark-on-dark.png
 origin: Switzerland
 periods: [{ from: 1980 }]
 segment: luxury

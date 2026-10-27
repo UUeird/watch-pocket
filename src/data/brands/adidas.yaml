@@ -1,5 +1,14 @@
 name: Adidas
+logo: ../logos/adidas.svg
+logomark: ../logos/adidas-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Adidas_2022_logo.svg
+  license: Public domain
+logomarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:Adidas_2022_logo.svg
+  license: Public domain
 origin: Germany
+segment: budget
 tags: [fashion]
 licensees:
   - licensee: timex-group
@@ -9,3 +18,7 @@ licensees:
 sources:
   - https://www.dialicious.com/en/adidas
   - https://ca.fashionnetwork.com/news/Timex-group-and-adidas-strike-global-licensing-deal,1300575.html
+control: public
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Adidas

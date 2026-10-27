@@ -5,3 +5,7 @@ website: https://www.areswatches.com
 sources:
   - https://www.dialicious.com/en/ares
   - https://www.areswatches.com/
+control: private
+independent:
+  sources:
+    - https://soldiersystems.net/2018/11/15/american-made-diver-1-released-by-ares-watch-company/

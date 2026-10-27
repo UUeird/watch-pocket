@@ -1,8 +1,20 @@
 name: Venezianico
+logo: ../logos/venezianico.webp
+logomark: ../logos/venezianico-logomark.webp
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo-venezianico.webp
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Albertodotta
 origin: Italy
 periods: [{ from: 2017 }]
+segment: mid-range
 website: https://www.venezianico.com
 sources:
   - https://www.dialicious.com/en/venezianico
   - https://www.wikidata.org/wiki/Q133189962
   - https://www.venezianico.com/
+control: family
+independent:
+  sources:
+    - https://www.europastar.com/the-watch-files/portraits/1004115732-venezianico-utopia-as-a-watchmaking-method.html

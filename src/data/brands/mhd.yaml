@@ -1,7 +1,11 @@
 name: MHD
 origin: United Kingdom
-status: active
+periods: [{ from: 2014 }]
 website: https://www.mhdwatches.com
 sources:
   - https://www.dialicious.com/en/mhd
   - https://www.mhdwatches.com/
+control: private
+independent:
+  sources:
+    - https://www.mhdwatches.com/

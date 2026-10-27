@@ -1,13 +1,20 @@
 name: Lacoste
 logo: ../logos/lacoste.svg
+logomark: ../logos/lacoste-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Logo_Lacoste_2026.svg
   license: Public domain
 origin: France
 periods: [{ from: 1933 }]
+segment: budget
 tags:
   - fashion
 licensees:
   - licensee: movado-group
 sources:
   - https://www.wikidata.org/wiki/Q309031
+ownership:
+  - owner: maus-freres
+    from: 2012
+    sources:
+      - https://en.wikipedia.org/wiki/Lacoste

@@ -1,0 +1,301 @@
+---
+// A grid of tiles for lines, models or references: a photo on top and a label that is always shown under it.
+// A tile with several photos cycles through them while pointed at or focused. One with none shows a plain watch.
+import { Image } from 'astro:assets';
+import { creditOf, type TilePhoto } from '../lib/tile-photos';
+
+interface Props {
+  label: string;
+  // The brand whose watches these are, which the maker's own images are credited to.
+  brandName: string;
+  tiles: { href: string; title: string; detail?: string; photos: TilePhoto[] }[];
+}
+
+const { label, brandName, tiles } = Astro.props;
+// Every photo the grid can show, once each, credited under it as its license asks.
+const seen = new Set<string>();
+const credits = tiles.flatMap(({ title, photos }) =>
+  photos.flatMap((photo) => {
+    const credit = creditOf(photo, brandName);
+    if (seen.has(credit.source)) return [];
+    seen.add(credit.source);
+    return [{ title: photo.general ? 'Model photo' : title, ...credit }];
+  }),
+);
+---
+
+<ul class="tiles" aria-label={label}>
+  {
+    tiles.map(({ href, title, detail, photos }) => (
+      <li>
+        <a href={href} data-cycle={photos.length > 1 ? '' : undefined}>
+          <span class="frame">
+            {photos[0]?.general && <span class="general">Model photo</span>}
+            {photos.map((photo, index) =>
+              'file' in photo ? (
+                <Image class="fill" src={photo.file} alt={index === 0 ? photo.alt : ''} widths={[240, 480]} sizes="240px" loading="lazy" hidden={index > 0} />
+              ) : (
+                <img
+                  src={photo.src}
+                  alt={index === 0 ? photo.alt : ''}
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  hidden={index > 0}
+                  onerror="this.remove()"
+                />
+              ),
+            )}
+            <svg class="blank" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M18 4h12l2 9M18 4l-2 9M18 44h12l2-9M18 44l-2-9" />
+              <circle cx="24" cy="24" r="12" />
+              <path d="M24 17v7l5 3" />
+            </svg>
+          </span>
+          <span class="label">
+            <strong>{title}</strong>
+            {detail && <span class="detail">{detail}</span>}
+          </span>
+        </a>
+      </li>
+    ))
+  }
+</ul>
+{
+  credits.length > 0 && (
+    <details class="credits">
+      <summary>Photo credits</summary>
+      <ul>
+        {credits.map(({ title, by, license, licenseUrl, source, host }) => (
+          <li>
+            <strong>{title}</strong>: {host ? <>Image {license}, shown from <a href={source}>{host}</a></> : <>Photo{by && ` by ${by}`} · {licenseUrl ? <a href={licenseUrl}>{license}</a> : license} · <a href={source}>Source</a></>}
+          </li>
+        ))}
+      </ul>
+    </details>
+  )
+}
+
+<style>
+  .credits {
+    margin: -20px 0 32px;
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+
+  .credits summary {
+    cursor: pointer;
+  }
+
+  .credits ul {
+    margin: 6px 0 0;
+    padding-left: 18px;
+  }
+
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+    margin: 0 0 32px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .tiles a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .tiles a:hover,
+  .tiles a:focus-visible {
+    border-color: var(--accent);
+  }
+
+  .tiles a:hover strong,
+  .tiles a:focus-visible strong {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  .frame {
+    position: relative;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  /* The makers' images are cut out on white, so they sit whole on a white frame, in dark mode too. */
+  .frame :global(img) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+    box-sizing: border-box;
+    background: #ffffff;
+  }
+
+  /* Photos of our own are shot in the wild, so they fill the frame, cropped to it. */
+  .frame :global(img.fill) {
+    object-fit: cover;
+    padding: 0;
+  }
+
+  .frame :global(img[hidden]) {
+    display: none;
+  }
+
+  /* While a tile cycles, the next photo blurs in over the one before, which stays put underneath until it is covered. */
+  .frame :global(img) {
+    transition:
+      opacity 0.5s ease,
+      filter 0.5s ease,
+      transform 0.5s ease;
+  }
+
+  /* Scaled up while blurred, so the blur's soft edges fall outside the frame instead of showing as a pale strip. */
+  .frame :global(img.off) {
+    opacity: 0;
+    filter: blur(8px);
+    transform: scale(1.08);
+  }
+
+  .frame :global(img.on) {
+    z-index: 1;
+  }
+
+  .frame :global(img.under) {
+    transition: none;
+  }
+
+  .general {
+    position: absolute;
+    z-index: 2;
+    top: 6px;
+    left: 6px;
+    padding: 1px 6px;
+    color: #4a4740;
+    font-size: 0.6875rem;
+    background: rgb(255 255 255 / 0.85);
+    border: 1px solid #ddd9cf;
+    border-radius: 999px;
+  }
+
+  /* Shown only where no photo is left in the frame. */
+  .blank {
+    width: 40%;
+    fill: none;
+    stroke: #b9b5ab;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .frame:has(img) .blank {
+    display: none;
+  }
+
+  .frame:not(:has(img)) {
+    background: color-mix(in srgb, var(--text) 5%, var(--surface));
+  }
+
+  .label {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 10px 10px;
+    border-top: 1px solid var(--line);
+  }
+
+  strong {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  .detail {
+    color: var(--muted);
+    font-size: 0.8125rem;
+  }
+</style>
+
+<script>
+  // A tile with several photos steps through them while pointed at or focused, then returns to the first.
+  // Each photo is loaded and decoded before it is shown, so the frame never flashes empty.
+  const still = matchMedia('(prefers-reduced-motion: reduce)');
+  const fade = 500;
+  for (const tile of document.querySelectorAll<HTMLElement>('[data-cycle]')) {
+    let timer = 0;
+    // Bumped on every start and stop, so a step still waiting on a photo knows when it has been called off.
+    let run = 0;
+    let current: HTMLImageElement | undefined;
+    const photos = () => [...tile.querySelectorAll<HTMLImageElement>('.frame img')];
+    const show = (next: HTMLImageElement) => {
+      const before = current;
+      current = next;
+      if (before === next) return;
+      for (const photo of photos()) {
+        if (photo === next || photo === before) continue;
+        photo.classList.remove('on', 'under');
+        photo.classList.add('off');
+      }
+      before?.classList.replace('on', 'under');
+      next.classList.remove('off', 'under');
+      next.classList.add('on');
+      window.setTimeout(() => {
+        if (before && before !== current) before.classList.replace('under', 'off');
+      }, fade);
+    };
+    // Starts every photo loading, hidden but in place, so each is ready by the time its turn comes.
+    const prime = () => {
+      const [first, ...rest] = photos();
+      current ??= first;
+      first?.classList.add('on');
+      for (const photo of rest) {
+        if (photo === current) continue;
+        photo.loading = 'eager';
+        photo.classList.add('off');
+        photo.hidden = false;
+      }
+    };
+    const step = async (token: number) => {
+      const list = photos();
+      if (!current || list.length < 2) return;
+      const next = list[(list.indexOf(current) + 1) % list.length];
+      try {
+        await next.decode();
+      } catch {
+        // A photo that fails to load removes itself, so the next step skips it.
+      }
+      if (token !== run) return;
+      if (next.isConnected) show(next);
+      timer = window.setTimeout(() => step(token), 1100);
+    };
+    const start = () => {
+      if (still.matches || timer) return;
+      prime();
+      const token = ++run;
+      timer = window.setTimeout(() => step(token), 1100);
+    };
+    const stop = () => {
+      clearTimeout(timer);
+      timer = 0;
+      run++;
+      const first = photos()[0];
+      if (first) show(first);
+    };
+    tile.addEventListener('pointerenter', start);
+    tile.addEventListener('pointerleave', stop);
+    tile.addEventListener('focus', start);
+    tile.addEventListener('blur', stop);
+  }
+</script>

@@ -1,0 +1,107 @@
+---
+import Docs from '../../layouts/Docs.astro';
+import { href } from '../../lib/catalog';
+
+const guides = [
+  {
+    path: '/docs/charts/',
+    title: 'Reading the charts',
+    image: 'brands-overview.png',
+    summary: 'What the circles and boxes on the Chart page mean, how to resize, regroup and zoom them, and how they follow your filters.',
+  },
+  {
+    path: '/docs/logos/',
+    title: 'How logos are shown',
+    image: 'groups-revenue.png',
+    summary: 'Why logos sit on white, how a chart picks the whole logo, its name or its symbol for each box, and what is planned for brand colors.',
+  },
+];
+---
+
+<Docs
+  title="Overview"
+  lede="WatchPocket maps the names and corporations behind the world's watch brands. These pages explain how to read what it shows."
+>
+  <p>
+    The site has six sections: <a href={href('/brands/')}>Brands</a>, <a href={href('/ownership-groups/')}>Ownership Groups</a>,{' '}
+    <a href={href('/chart/')}>Chart</a>, <a href={href('/timeline/')}>Timeline</a>, <a href={href('/countries/')}>Countries</a> and{' '}
+    <a href={href('/references/')}>References</a>. The Chart draws every brand inside the group that owns it, sized by a figure you
+    choose. The guides below cover it in detail. The Timeline draws each brand's life from its founding, with a band for as long as each
+    owner held it.
+  </p>
+
+  <ul class="guides">
+    {
+      guides.map(({ path, title, image, summary }) => (
+        <li>
+          <a href={href(path)}>
+            <img src={href(`/docs/media/${image}`)} alt="" loading="lazy" />
+            <strong>{title}</strong>
+            <span>{summary}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2>About these pages</h2>
+  <p>
+    Every screenshot and recording here is captured from the live site by an automated browser, the same way the site's tests run.
+    When the charts change, the captures are taken again, so what you see here matches what the site does.
+  </p>
+  <p>
+    The data is a sample and has not yet been verified. Each brand's page lists the sources its figures came from.
+  </p>
+</Docs>
+
+<style>
+  .guides {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    max-width: none !important;
+    margin: 24px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .guides li + li {
+    margin-top: 0;
+  }
+
+  .guides a {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 100%;
+    padding: 12px;
+    color: var(--text);
+    text-decoration: none;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+
+  .guides a:hover {
+    border-color: var(--accent);
+  }
+
+  .guides img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: top left;
+    margin-bottom: 4px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  .guides strong {
+    color: var(--accent);
+  }
+
+  .guides span {
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+</style>

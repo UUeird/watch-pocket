@@ -1,4 +1,12 @@
 name: Junkers
+logo: ../logos/junkers.svg
+logomark: ../logos/junkers-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Junkers-Logo.svg
+  license: Public domain
+logomarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:Junkers-Logo.svg
+  license: Public domain
 origin: Germany
 status: active
 website: https://www.junkers.de

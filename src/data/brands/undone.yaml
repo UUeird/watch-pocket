@@ -1,5 +1,5 @@
 name: Undone
-status: active
+periods: [{ from: 2014 }]
 website: https://undone.com
 sources:
   - https://www.dialicious.com/en/undone

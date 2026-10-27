@@ -1,6 +1,10 @@
 name: Century
 status: active
-website: https://centuryaluminum.com
+website: https://www.century.ch
 sources:
   - https://www.dialicious.com/en/century
   - https://centuryaluminum.com/
+control: family
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Century_Time_Gems

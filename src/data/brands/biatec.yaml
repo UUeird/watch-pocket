@@ -4,3 +4,7 @@ website: https://www.biatecwatches.com
 sources:
   - https://www.dialicious.com/en/biatec
   - https://www.biatecwatches.com/
+control: private
+independent:
+  sources:
+    - https://www.biatecwatches.com/

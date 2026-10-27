@@ -1,6 +1,7 @@
 name: Delbana
 origin: Switzerland
-status: active
+periods: [{ from: 1931 }]
+segment: mid-range
 website: https://delbana.ch
 sources:
   - https://www.dialicious.com/en/delbana

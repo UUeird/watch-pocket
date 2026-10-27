@@ -4,3 +4,7 @@ website: http://jaz.fr
 sources:
   - https://www.dialicious.com/en/jaz
   - http://jaz.fr/
+ownership:
+  - owner: data-access
+    sources:
+      - https://fr.wikipedia.org/wiki/Jaz_(entreprise)

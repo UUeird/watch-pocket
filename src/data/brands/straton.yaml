@@ -1,5 +1,6 @@
 name: Straton
 periods: [{ from: 2015 }]
+segment: mid-range
 website: https://www.stratonwc.com
 sources:
   - https://www.dialicious.com/en/straton

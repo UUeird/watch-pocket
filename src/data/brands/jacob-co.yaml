@@ -1,5 +1,6 @@
 name: Jacob & Co.
 origin: United States
+control: private
 periods: [{ from: 1986 }]
 segment: luxury
 sources:
@@ -11,3 +12,7 @@ revenue:
     basis: estimate
     sources:
       - https://revolutionwatch.com/what-we-can-learn-from-morgan-stanleys-ninth-annual-swiss-watch-report/
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Jacob_%26_Co
+    - https://en.worldtempus.com/article/industry-news/people-and-interviews/jacob-et-co-jacob-arabo-19401.html

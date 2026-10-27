@@ -1,6 +1,7 @@
 name: Spinnaker
 origin: Hong Kong
 periods: [{ from: 2013 }]
+segment: budget
 ownership:
   - owner: solar-time
 sources:

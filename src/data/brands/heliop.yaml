@@ -5,3 +5,7 @@ website: https://www.heliop-watches.com
 sources:
   - https://www.dialicious.com/en/heliop
   - https://www.heliop-watches.com/
+control: private
+independent:
+  sources:
+    - https://www.heliop-watches.com/

@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: France
 periods: [{ from: 1858 }]
+segment: luxury
 ownership:
   - owner: kering
     from: 2000

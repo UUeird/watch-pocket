@@ -1,0 +1,20 @@
+name: "LX Diver"
+line: seiko/prospex
+style: dive
+website: https://www.seikowatches.com/us-en/products/prospex/lx-line
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/lx-line
+  - https://www.seikowatches.com/us-en/products/prospex/snr029j1
+references:
+  - ref: SNR029
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/prospex/SNR029J1/SNR029J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/snr029j1
+    price: { amount: 6500, currency: USD, year: 2026 }
+    caseSize: 44.8
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5R65"
+    complications: [date, power-reserve]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

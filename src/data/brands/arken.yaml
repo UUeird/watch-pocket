@@ -4,3 +4,7 @@ website: https://arken.uk
 sources:
   - https://www.dialicious.com/en/arken
   - https://arken.uk/
+control: private
+independent:
+  sources:
+    - https://arken.uk/ourken

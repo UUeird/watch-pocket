@@ -1,6 +1,13 @@
 name: Paulin
-status: active
+periods: [{ from: 2013 }]
 website: https://www.paulinwatches.com
 sources:
   - https://www.dialicious.com/en/paulin
   - https://www.paulinwatches.com/
+  - https://www.paulinwatches.com/pages/about-us
+ownership:
+  - owner: { brand: anordain }
+    basis: disclosed
+    from: 2023
+    sources:
+      - https://www.paulinwatches.com/pages/about-us

@@ -1,7 +1,16 @@
 name: Morellato
+logo: ../logos/morellato.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Morellato_Group_Logo.svg
+  license: Public domain
 origin: Italy
 status: active
 website: https://morellatogroup.com
 sources:
   - https://www.dialicious.com/en/morellato
   - https://morellatogroup.com/
+ownership:
+  - owner: morellato-group
+    sources:
+      - https://en.wikipedia.org/wiki/Morellato_Group
+      - https://morellatogroup.com/en/history

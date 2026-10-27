@@ -1,7 +1,12 @@
 name: Emera
 origin: Switzerland
-status: active
+periods: [{ from: 2023 }]
 website: https://emerawatches.com
 sources:
   - https://www.dialicious.com/en/emera
   - https://emerawatches.com/
+  - https://emerawatches.com/history/
+control: private
+independent:
+  sources:
+    - https://emerawatches.com/

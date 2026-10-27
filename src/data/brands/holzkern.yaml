@@ -1,7 +1,12 @@
 name: Holzkern
 origin: Austria
-status: active
+periods: [{ from: 2016 }]
 website: https://holzkern.com
 sources:
   - https://www.dialicious.com/en/holzkern
   - https://holzkern.com/
+  - https://holzkern.com/en-us/pages/reviews-about-holzkern
+control: private
+independent:
+  sources:
+    - https://www.trendingtopics.eu/holzkern-scale-up-knackt-mehr-als-50-mio-umsatz-georg-holzer-wird-neuer-ceo/

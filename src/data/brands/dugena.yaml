@@ -1,3 +1,22 @@
 name: Dugena
+logo: ../logos/dugena.svg
+logomark: ../logos/dugena-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Dugena_Logo.svg
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Novatempora dugena
 origin: Germany
 status: active
+segment: budget
+control: family
+ownership:
+  - owner: eganagoldpfeil
+    from: 1993
+    to: 2009
+    sources:
+      - https://de.wikipedia.org/wiki/Dugena
+independent:
+  sources:
+    - https://www.dugena.de/de/historie
+    - https://www.dugena.de/de/impressum

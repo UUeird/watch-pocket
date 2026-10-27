@@ -1,9 +1,14 @@
 ---
 import Breadcrumb from '../../../../components/Breadcrumb.astro';
+import ModelPhoto from '../../../../components/ModelPhoto.astro';
 import Base from '../../../../layouts/Base.astro';
 import Sources from '../../../../components/Sources.astro';
+import Tiles from '../../../../components/Tiles.astro';
+import { Image } from 'astro:assets';
+import { referencePhotos } from '../../../../lib/tile-photos';
 import {
   describeBezel,
+  describeComplications,
   describeBracelet,
   describeDial,
   formatPeriods,
@@ -12,9 +17,11 @@ import {
   loadCatalog,
   plural,
   refHref,
+  sourceHost,
   type Brand,
   type Line,
   type Model,
+  type Reference,
 } from '../../../../lib/catalog';
 
 export async function getStaticPaths() {
@@ -36,57 +43,108 @@ interface Props {
 }
 
 const { model, line, brand, collaborators } = Astro.props;
-const { name, references, sources } = model.data;
+const { name, references, sources, website, style, theme } = model.data;
+const capitalize = (value: string) => value.charAt(0).toUpperCase() + value.slice(1);
+// The compare table's columns after the reference itself. `num` cells keep figures whole; `cap` capitalizes a fixed
+// vocabulary (`rose-gold`). A column no reference here has a value for is left out.
+const columns = (
+  [
+    { name: 'On sale', kind: 'num', value: (reference: Reference) => formatPeriods(reference.periods) },
+    { name: 'Case', kind: 'num', value: (reference: Reference) => (reference.caseSize ? `${reference.caseSize} mm` : '') },
+    { name: 'Metals', kind: 'cap', value: (reference: Reference) => reference.metals.map(label).join(', ') },
+    { name: 'Case colors', kind: 'cap', value: (reference: Reference) => reference.caseColors.map(describeDial).join(', ') },
+    { name: 'Bezel', kind: 'cap', value: (reference: Reference) => describeBezel(reference.bezel) },
+    { name: 'Crystal', kind: 'cap', value: (reference: Reference) => reference.crystal },
+    { name: 'Movement', kind: 'num', value: (reference: Reference) => reference.movement },
+    { name: 'Complications', kind: 'cap', value: (reference: Reference) => describeComplications(reference.complications) },
+    { name: 'Dials', kind: 'cap', value: (reference: Reference) => reference.dials.map(describeDial).join(', ') },
+    { name: 'Bracelets', kind: 'cap', value: (reference: Reference) => reference.bracelets.map(describeBracelet).join(', ') },
+  ] as const
+).filter(({ value }) => references.some((reference) => value(reference)));
+// Each reference's first photo of its own, small; a stand-in photo of the model is left out here.
+const thumbOf = (reference: Reference) => referencePhotos(model, reference, brand.data.name).find((candidate) => !candidate.general);
+const showThumbs = references.some((reference) => thumbOf(reference));
 ---
 
 <Base title={`${brand.data.name} ${name}`}>
   <Breadcrumb brand={brand} line={line} />
-  <h1>{name}</h1>
-  <p class="lede">
-    Model · {plural(references.length, 'reference')}
-    {
-      collaborators.map((collaborator) => (
-        <>
-          {' · with '}
-          <a href={href(`/brands/${collaborator.id}/`)}>{collaborator.data.name}</a>
-        </>
-      ))
-    }
-  </p>
+  <div class="head">
+    <div>
+      <h1>{name}</h1>
+      <p class="lede">
+        {['Model', style, theme].filter(Boolean).map((part) => capitalize(label(part!))).join(' · ')} ·{' '}
+        {plural(references.length, 'reference')}
+        {
+          collaborators.map((collaborator) => (
+            <>
+              {' · with '}
+              <a href={href(`/brands/${collaborator.id}/`)}>{collaborator.data.name}</a>
+            </>
+          ))
+        }
+      </p>
+      {
+        references.length > 0 && website && (
+          <p class="maker">
+            <a href={website} target="_blank" rel="noopener">
+              See it on {sourceHost(website)} <span aria-hidden="true">↗</span>
+              <span class="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </p>
+        )
+      }
+    </div>
+    {/* With references, their grid shows the watches; the gallery is kept for a model that has none recorded. */}
+    {references.length === 0 && <ModelPhoto model={model} brandName={brand.data.name} />}
+  </div>
 
   <h2>References</h2>
-  <div class="table-wrap">
+  {references.length === 0 && <p>No references recorded yet.</p>}
+  {
+    references.length > 0 && (
+      <Tiles
+        label="References"
+        brandName={brand.data.name}
+        tiles={references.map((reference) => ({
+          href: refHref(model, reference),
+          title: reference.ref,
+          detail: [formatPeriods(reference.periods), reference.caseSize && `${reference.caseSize} mm`].filter(Boolean).join(' · '),
+          photos: referencePhotos(model, reference, brand.data.name),
+        }))}
+      />
+    )
+  }
+  {references.length > 0 && <h3>Compare references</h3>}
+  <div class="table-wrap" hidden={references.length === 0}>
     <table>
       <thead>
         <tr>
+          {showThumbs && <th><span class="visually-hidden">Photo</span></th>}
           <th>Reference</th>
-          <th>On sale</th>
-          <th>Case</th>
-          <th>Metals</th>
-          <th>Case colors</th>
-          <th>Bezel</th>
-          <th>Crystal</th>
-          <th>Movement</th>
-          <th>Dials</th>
-          <th>Bracelets</th>
+          {columns.map(({ name }) => <th>{name}</th>)}
         </tr>
       </thead>
       <tbody>
         {
           references.map((reference) => (
             <tr>
+              {showThumbs && (
+                <td class="thumb">
+                  {(() => {
+                    const photo = thumbOf(reference);
+                    if (!photo) return null;
+                    return 'file' in photo ? (
+                      <Image class="fill" src={photo.file} alt="" width={96} />
+                    ) : (
+                      <img src={photo.src} alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" />
+                    );
+                  })()}
+                </td>
+              )}
               <td class="num">
                 <a href={refHref(model, reference)}>{reference.ref}</a>
               </td>
-              <td class="num">{formatPeriods(reference.periods)}</td>
-              <td class="num">{reference.caseSize && `${reference.caseSize} mm`}</td>
-              <td class="cap">{reference.metals.map(label).join(', ')}</td>
-              <td class="cap">{reference.caseColors.map(describeDial).join(', ')}</td>
-              <td class="cap">{describeBezel(reference.bezel)}</td>
-              <td class="cap">{reference.crystal}</td>
-              <td class="num">{reference.movement}</td>
-              <td class="cap">{reference.dials.map(describeDial).join(', ')}</td>
-              <td class="cap">{reference.bracelets.map(describeBracelet).join(', ')}</td>
+              {columns.map(({ value, kind }) => <td class={kind}>{value(reference)}</td>)}
             </tr>
           ))
         }
@@ -96,3 +154,49 @@ const { name, references, sources } = model.data;
 
   <Sources sources={sources} />
 </Base>
+
+<style>
+  /* The photo sits beside the model's name on a wide screen, and under it on a narrow one. */
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px 32px;
+    margin-bottom: 24px;
+  }
+
+  .maker {
+    margin: 8px 0 0;
+    font-size: 0.875rem;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  /* A small photo of each reference at the start of its row, on white like the tiles. */
+  .thumb {
+    width: 48px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .thumb :global(img) {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+
+  .thumb :global(img.fill) {
+    object-fit: cover;
+  }
+</style>

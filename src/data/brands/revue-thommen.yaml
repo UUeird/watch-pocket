@@ -1,6 +1,16 @@
 name: Revue Thommen
+logo: ../logos/revue-thommen.png
+logomark: ../logos/revue-thommen-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Revue_Thommen.jpg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1853 }]
 segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q663923
+ownership:
+  - owner: gt-thommen-watch
+    from: 2012
+    sources:
+      - https://en.wikipedia.org/wiki/Revue_Thommen

@@ -1,7 +1,12 @@
 name: Daniel Roth
+logo: ../logos/daniel-roth.gif
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Daniel-roth-logo.gif
+  license: Public domain
 origin: Switzerland
 status: revived
 segment: haute
 ownership:
   - owner: lvmh
     from: 2011
+logoBackground: '#00274b'

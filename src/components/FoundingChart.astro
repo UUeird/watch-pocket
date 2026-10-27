@@ -200,9 +200,9 @@ const at = (year: number) => `${(((year - first) / (last + 10 - first)) * 100).t
     let shown: Record<string, string[]> = {};
 
     const draw = () => {
-      const rows = followed ? [...document.querySelectorAll<HTMLElement>(`#${followed} tr[data-id]`)] : [];
+      const rows = followed ? [...document.querySelectorAll<HTMLElement>(`#${followed} [data-id]`)] : [];
       const visible = new Set(rows.filter((row) => !row.hidden).map((row) => row.dataset.id!));
-      const all = rows.length === 0 || visible.size === rows.length;
+      const all = rows.length === 0 || visible.size === new Set(rows.map((row) => row.dataset.id!)).size;
       shown = Object.fromEntries(
         Object.entries(byDecade).map(([decade, brands]) => [decade, brands.filter(([id]) => all || visible.has(id)).map(([, name]) => name)]),
       );

@@ -1,5 +1,15 @@
 name: Ingersoll
+logo: ../logos/ingersoll.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Ingersoll_Watch_Company.jpg
+  license: Public domain
 origin: United Kingdom
 periods: [{ from: 1892 }]
+segment: budget
 sources:
   - https://en.wikipedia.org/wiki/Ingersoll_Watch_Company
+ownership:
+  - owner: zeon
+    sources:
+      - https://en.wikipedia.org/wiki/Ingersoll_Watch_Company
+      - https://www.watchpro.com/?p=42662

@@ -1,4 +1,10 @@
 name: MB&F
+logo: ../logos/mbf.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:MBandF.logo.jpg
+  license: CC BY 3.0
+  licenseUrl: https://creativecommons.org/licenses/by/3.0
+  author: MB&F
 origin: Switzerland
 periods: [{ from: 2005 }]
 segment: haute
@@ -12,3 +18,4 @@ ownership:
       - https://theimpression.com/chanel-expands-luxury-portfolio-with-25-stake-in-mbf/
 sources:
   - https://www.wikidata.org/wiki/Q6714650
+logoBackground: '#000000'

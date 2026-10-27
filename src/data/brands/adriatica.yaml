@@ -1,6 +1,12 @@
 name: Adriatica
+logo: ../logos/adriatica.png
+logomark: ../logos/adriatica-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Adriatica.png
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1931 }]
+segment: mid-range
 website: https://adriaticawatches.ch
 sources:
   - https://www.dialicious.com/en/adriatica

@@ -7,6 +7,22 @@ interface Props {
 
 const { title } = Astro.props;
 const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
+const sections = [
+  { path: '/brands/', name: 'Brands' },
+  { path: '/ownership-groups/', name: 'Ownership Groups' },
+  { path: '/chart/', name: 'Chart' },
+  { path: '/timeline/', name: 'Timeline' },
+  { path: '/countries/', name: 'Countries' },
+  { path: '/references/', name: 'References' },
+  // The Docs stay off the published site (see astro.config.mjs), so they're only linked where they're built.
+  ...(import.meta.env.SHOW_DOCS ? [{ path: '/docs/', name: 'Docs' }] : []),
+];
+// The section a page belongs to is marked in the nav: the page itself, or "true" for a page within it.
+const current = (path: string) => {
+  const here = Astro.url.pathname.replace(/\/?$/, '/');
+  const target = href(path);
+  return here === target ? 'page' : here.startsWith(target) ? 'true' : undefined;
+};
 ---
 
 <!doctype html>
@@ -21,10 +37,7 @@ const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
     <header>
       <a class="wordmark" href={href('/')}>WatchPocket</a>
       <nav>
-        <a href={href('/')}>Brands</a>
-        <a href={href('/ownership-groups/')}>Ownership Groups</a>
-        <a href={href('/countries/')}>Countries</a>
-        <a href={href('/references/')}>References</a>
+        {sections.map(({ path, name }) => <a href={href(path)} aria-current={current(path)}>{name}</a>)}
       </nav>
     </header>
     <main>
@@ -33,6 +46,46 @@ const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
     <footer>Sample data only. Not yet verified.</footer>
   </body>
 </html>
+
+<script>
+  // Column labels stick just under the site header, so they need its height, which changes as the nav wraps.
+  const header = document.querySelector('header')!;
+  new ResizeObserver(() => {
+    document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
+  }).observe(header);
+
+  // A scrolling wrapper holds the labels inside it, so a table that fits drops the scrollbar and its labels stick to the page.
+  // One that still has to scroll sideways has its labels slid down to sit under the header as the page scrolls past it.
+  // The slide is a scroll-driven animation, which keeps pace with the scroll; this only measures where it starts and how far it goes.
+  // Browsers without those animations get the slide from a scroll listener, a frame behind.
+  const driven = CSS.supports('animation-timeline: scroll()');
+  const wraps = [...document.querySelectorAll<HTMLElement>('.table-wrap')];
+  const measure = () => {
+    for (const wrap of wraps) {
+      if (wrap.classList.contains('fits')) continue;
+      const table = wrap.querySelector('table')!;
+      const start = table.getBoundingClientRect().top + scrollY - header.offsetHeight;
+      const room = table.offsetHeight - table.tHead!.offsetHeight;
+      wrap.style.setProperty('--lift-start', `${start}px`);
+      wrap.style.setProperty('--lift-end', `${start + room}px`);
+      wrap.style.setProperty('--lift-room', `${room}px`);
+      if (!driven) wrap.style.setProperty('--lift', `${Math.min(Math.max(scrollY - start, 0), room)}px`);
+    }
+  };
+  for (const wrap of wraps) {
+    const table = wrap.querySelector('table')!;
+    new ResizeObserver(() => {
+      wrap.classList.remove('fits');
+      wrap.classList.toggle('fits', table.offsetWidth <= wrap.clientWidth);
+      measure();
+    }).observe(wrap);
+  }
+  // Anything above a table that grows or shrinks moves where its slide starts. Not every such change resizes the
+  // page, so it's measured again as the page scrolls too, which also drives the slide where there are no animations.
+  new ResizeObserver(measure).observe(document.body);
+  addEventListener('load', measure);
+  addEventListener('scroll', measure, { passive: true });
+</script>
 
 <style is:global>
   :root {
@@ -67,12 +120,13 @@ const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
     font: 16px/1.5 system-ui, sans-serif;
   }
 
+  /* Everything spans the window up to a wide cap, so the charts have room for more brands in each box. */
   header,
   main,
   footer {
-    max-width: 960px;
+    max-width: 1488px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 24px;
   }
 
   /* The header stays in view while the page scrolls, on the page background so content slides under it. */
@@ -108,6 +162,12 @@ const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
     white-space: nowrap;
   }
 
+  nav a[aria-current] {
+    color: var(--text);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+
   main {
     padding-top: 24px;
     padding-bottom: 48px;
@@ -136,15 +196,13 @@ const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
   }
 
   /* Logos are drawn for a light page, so each sits on a white plate in both color schemes. */
+  /* A brand's or group's logo at the head of its page; its fill is set on it (see src/lib/logo.ts). */
   .logo {
-    display: block;
-    width: auto;
-    height: auto;
-    max-width: min(240px, 100%);
-    max-height: 96px;
+    box-sizing: border-box;
+    width: min(240px, 100%);
+    height: 96px;
     margin: 0 0 4px;
     padding: 12px;
-    background: #ffffff;
     border: 1px solid var(--line);
   }
 
@@ -163,6 +221,37 @@ const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
     overflow-x: auto;
   }
 
+  .table-wrap.fits {
+    overflow-x: visible;
+  }
+
+  /* A table too wide for the window scrolls sideways, so its labels are slid down by script rather than stuck. */
+  .table-wrap:not(.fits) thead th {
+    position: relative;
+    top: 0;
+    translate: 0 var(--lift, 0);
+  }
+
+  /* The timeline goes through a custom property so the minifier can't fold it into the `animation` shorthand, which
+     browsers reject when it carries a timeline, dropping the whole animation. */
+  @supports (animation-timeline: scroll()) {
+    .table-wrap:not(.fits) thead th {
+      --lift-timeline: scroll(root block);
+      animation: lift linear both;
+      animation-timeline: var(--lift-timeline);
+      animation-range: var(--lift-start, 0) var(--lift-end, 0);
+    }
+  }
+
+  @keyframes lift {
+    from {
+      translate: 0 0;
+    }
+    to {
+      translate: 0 var(--lift-room, 0);
+    }
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -175,6 +264,11 @@ const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
     padding: 8px 12px;
     text-align: left;
     border-bottom: 1px solid var(--line);
+  }
+
+  /* Names wrap so a table fits the window; figures, and anything marked to stay whole, don't. */
+  td.num,
+  .nowrap {
     white-space: nowrap;
   }
 
@@ -184,6 +278,16 @@ const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+  }
+
+  /* The column labels stay in view under the site header; their rule is a shadow, since collapsed borders don't travel with them. */
+  thead th {
+    position: sticky;
+    top: var(--header-height, 0);
+    z-index: 1;
+    background: var(--surface);
+    border-bottom: none;
+    box-shadow: inset 0 -1px 0 var(--line);
   }
 
   td.num {

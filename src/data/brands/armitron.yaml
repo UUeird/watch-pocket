@@ -1,7 +1,18 @@
 name: Armitron
+logo: ../logos/armitron.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Armitron_Logo.svg
+  license: Public domain
 origin: United States
 periods: [{ from: 1956 }]
+segment: budget
 tags:
   - fashion
 sources:
+  - https://en.wikipedia.org/wiki/Armitron
   - https://www.wikidata.org/wiki/Q19600234
+ownership:
+  - owner: e-gluck
+    from: 1975
+    sources:
+      - https://en.wikipedia.org/wiki/Armitron

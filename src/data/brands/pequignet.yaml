@@ -1,5 +1,19 @@
 name: Pequignet
+logo: ../logos/pequignet.svg
+logomark: ../logos/pequignet-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Pequignet_logo.svg
+  license: Public domain
 origin: France
 periods: [{ from: 1973 }]
+segment: mid-range
 sources:
+  - https://en.wikipedia.org/wiki/Pequignet
   - https://www.wikidata.org/wiki/Q3375046
+ownership:
+  - owner: enowe-excellence
+    basis: reported
+    from: 2021
+    sources:
+      - https://monochrome-watches.com/pequignet-royale-paris-39-5mm-big-date-moon-power-reserve-hands-on-price/
+      - https://www.cbinsights.com/company/pequignet

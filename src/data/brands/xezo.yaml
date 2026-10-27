@@ -1,8 +1,9 @@
 name: Xezo
 origin: United States
-status: active
+periods: [{ from: 2001 }]
 website: https://xezo.com
 sources:
   - https://www.dialicious.com/en/xezo
   - https://www.wikidata.org/wiki/Q8043971
   - https://xezo.com/
+  - https://xezo.com/pages/about-xezo

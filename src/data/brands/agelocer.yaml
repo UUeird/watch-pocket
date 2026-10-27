@@ -1,5 +1,5 @@
 name: Agelocer
-status: active
+periods: [{ from: 2013 }]
 website: http://www.agelocer.ch
 sources:
   - https://www.dialicious.com/en/agelocer

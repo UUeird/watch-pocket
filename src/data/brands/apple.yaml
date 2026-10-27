@@ -1,12 +1,24 @@
 name: Apple
 logo: ../logos/apple.svg
+logomark: ../logos/apple.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg
   license: Public domain
+logoOnDark: ../logos/apple-on-dark.svg
+logoOnDarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:Apple_logo_white.svg
+  license: Public domain
+  author: Rob Janoff
+logomarkOnDark: ../logos/apple-on-dark.svg
 origin: United States
+control: public
 headquarters: United States
 manufacturing: [China]
 periods: [{ from: 1976 }]
 segment: broad
-tags:
-  - smartwatch
+makes: [smartwatches]
+sources:
+  - https://en.wikipedia.org/wiki/Apple_Inc.
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Apple_Inc.

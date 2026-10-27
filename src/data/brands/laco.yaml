@@ -1,5 +1,11 @@
 name: Laco
 origin: Germany
 periods: [{ from: 1925 }]
+segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Laco_Uhrenmanufaktur
+control: family
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Laco_Uhrenmanufaktur
+    - https://wornandwound.com/laco-brand-highlight-family-perspective/

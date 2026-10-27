@@ -5,3 +5,7 @@ website: https://levenaig.com
 sources:
   - https://www.dialicious.com/en/levenaig
   - https://levenaig.com/
+control: private
+independent:
+  sources:
+    - https://levenaig.com/

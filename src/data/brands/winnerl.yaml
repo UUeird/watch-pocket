@@ -4,3 +4,7 @@ website: https://winnerl.ch
 sources:
   - https://www.dialicious.com/en/winnerl
   - https://winnerl.ch/
+control: private
+independent:
+  sources:
+    - https://monochrome-watches.com/in-depth-a-closer-look-at-independent-watchmaker-winnerl-and-hand-made-watches/

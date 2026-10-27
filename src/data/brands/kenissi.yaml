@@ -1,7 +1,8 @@
 name: Kenissi
 origin: Switzerland
 periods: [{ from: 2016 }]
-category: movement-maker
+segment: luxury
+makes: [movements]
 ownership:
   - owner: { brand: tudor }
     stake: unknown

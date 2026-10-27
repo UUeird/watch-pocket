@@ -1,7 +1,12 @@
 name: Briston
 origin: France
-status: active
+periods: [{ from: 2012 }]
+segment: mid-range
 website: https://briston-watches.com
 sources:
   - https://www.dialicious.com/en/briston
   - https://briston-watches.com/
+control: private
+independent:
+  sources:
+    - https://briston-watches.com/en/pages/a-propos

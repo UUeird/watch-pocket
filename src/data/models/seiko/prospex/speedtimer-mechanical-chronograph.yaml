@@ -1,0 +1,126 @@
+name: "Speedtimer Mechanical Chronograph"
+line: seiko/prospex
+style: chronograph
+website: https://www.seikowatches.com/us-en/products/prospex/speedtimer
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/speedtimer
+  - https://www.seikowatches.com/us-en/products/prospex/srq045j1
+  - https://www.seikowatches.com/us-en/products/prospex/srq047j1
+  - https://www.seikowatches.com/us-en/products/prospex/srq049j1
+  - https://www.seikowatches.com/us-en/products/prospex/srq051j1
+  - https://www.seikowatches.com/us-en/products/prospex/srq055j1
+  - https://www.seikowatches.com/us-en/products/prospex/srq057j1
+  - https://www.seikowatches.com/us-en/products/prospex/srq059j1
+  - https://www.seikowatches.com/us-en/products/prospex/hbd001j1
+  - https://www.seikowatches.com/us-en/products/prospex/hbd002j1
+references:
+  - ref: SRQ045
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/12/23/11/43/SRQ045J1/SRQ045J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srq045j1
+    price: { amount: 3000, currency: USD, year: 2026 }
+    caseSize: 42.5
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "8R46"
+    complications: [date, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SRQ047
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/09/25/09/02/SRQ047J1/SRQ047J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srq047j1
+    price: { amount: 2500, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "8R48"
+    complications: [date, chronograph]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRQ049
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/09/25/09/08/SRQ049J1/SRQ049J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srq049j1
+    price: { amount: 2700, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "8R48"
+    complications: [date, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRQ051
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/08/19/21/14/SRQ051J1/SRQ051J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srq051j1
+    price: { amount: 2500, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "8R48"
+    complications: [date, chronograph]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRQ055
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/07/17/21/16/SRQ055J1/SRQ055J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srq055j1
+    price: { amount: 2600, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "8R48"
+    complications: [date, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRQ057
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/07/17/21/16/SRQ057J1/SRQ057J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srq057j1
+    price: { amount: 3200, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "8R48"
+    complications: [date, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SRQ059
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/11/19/21/18/SRQ059J1/SRQ059J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srq059j1
+    price: { amount: 2500, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "8R48"
+    complications: [date, chronograph]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBD001
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/05/14/21/10/HBD001J1/HBD001J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbd001j1
+    price: { amount: 2500, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "8R48"
+    complications: [date, chronograph]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBD002
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/05/14/21/10/HBD002J1/HBD002J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbd002j1
+    price: { amount: 2400, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "8R48"
+    complications: [date, chronograph]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]

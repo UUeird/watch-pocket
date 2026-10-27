@@ -1,6 +1,18 @@
 name: Squale
+logo: ../logos/squale.png
+logomark: ../logos/squale-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Squalelogoblue.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Dng25
 origin: Switzerland
+control: family
 periods: [{ from: 1959 }]
 segment: mid-range
 sources:
+  - https://en.wikipedia.org/wiki/Squale_Watches
   - https://www.wikidata.org/wiki/Q25344999
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Squale_Watches

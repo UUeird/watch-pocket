@@ -1,6 +1,10 @@
 name: Lederer
-status: active
+periods: [{ from: 2020 }]
 website: https://lederertimepieces.com
 sources:
   - https://www.dialicious.com/en/lederer
   - https://lederertimepieces.com/
+control: private
+independent:
+  sources:
+    - https://lederertimepieces.com/

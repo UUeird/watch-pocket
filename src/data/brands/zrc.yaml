@@ -4,3 +4,8 @@ website: https://zrc1904.com
 sources:
   - https://www.dialicious.com/en/zrc
   - https://zrc1904.com/
+control: family
+independent:
+  sources:
+    - https://zrc1904.com/since-1904-a-brand-story/zrc-a-long-standing-family-history/
+    - https://zrc1904.com/legal-notices-and-credits/

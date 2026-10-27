@@ -1,5 +1,11 @@
 name: Tutima
 origin: Germany
+control: family
 periods: [{ from: 1927 }]
+segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q7856943
+independent:
+  sources:
+    - https://www.europastar.com/1004114539.html
+    - https://quillandpad.com/2017/09/09/90-years-tutima-abbreviated-complete-history/

@@ -1,5 +1,6 @@
 name: Anoma
 origin: United Kingdom
+periods: [{ from: 2024 }]
 sources:
   - https://www.dialicious.com/en/anoma
   - https://monochrome-watches.com/anoma-a1-prehistoric-hand-chiselled-case-introducing-price/

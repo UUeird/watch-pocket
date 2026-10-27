@@ -1,6 +1,12 @@
 name: Coros
+logo: ../logos/coros.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:COROS_Wearables_Logo.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: COROS2020
 periods: [{ from: 2014 }]
-tags:
-  - smartwatch
+segment: mid-range
+makes: [smartwatches]
 sources:
   - https://en.wikipedia.org/wiki/COROS_Wearables_Inc

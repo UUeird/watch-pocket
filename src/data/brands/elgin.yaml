@@ -1,5 +1,18 @@
 name: Elgin
+logo: ../logos/elgin.png
+logomark: ../logos/elgin-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Elgin_National_Watch_Company_Father_Time.png
+  license: Public domain
+logomarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:Elgin_National_Watch_Company_Father_Time.png
+  license: Public domain
 origin: United States
 periods: [{ from: 1864, to: 1968 }]
+segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Elgin_National_Watch_Company
+ownership:
+  - owner: mz-berger
+    sources:
+      - https://en.wikipedia.org/wiki/Elgin_National_Watch_Company

@@ -1,6 +1,18 @@
 name: Speake-Marin
+logo: ../logos/speake-marin.jpg
+logomark: ../logos/speake-marin-logomark.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Speake-Marin_logo.jpg
+  license: CC BY-SA 3.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+  author: Speake-Marin
 origin: Switzerland
 periods: [{ from: 2002 }]
 segment: haute
 sources:
   - https://www.wikidata.org/wiki/Q16950856
+control: private
+independent:
+  sources:
+    - https://speake-marin.com/
+    - https://en.wikipedia.org/wiki/Speake-Marin

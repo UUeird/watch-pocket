@@ -1,6 +1,7 @@
 name: Hager
-status: active
+periods: [{ from: 2009 }]
 website: https://www.hagerwatches.com
 sources:
   - https://www.dialicious.com/en/hager
   - https://www.hagerwatches.com/
+  - https://www.hagerwatches.com/about-1

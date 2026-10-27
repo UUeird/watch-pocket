@@ -1,3 +1,8 @@
 name: GUB
 origin: East Germany
 status: active
+ownership:
+  - owner: swatch-group
+    from: 2000
+    sources:
+      - https://en.wikipedia.org/wiki/Glash%C3%BCtte_Original

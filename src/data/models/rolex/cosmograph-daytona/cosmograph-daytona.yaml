@@ -1,0 +1,160 @@
+name: Cosmograph Daytona
+line: rolex/cosmograph-daytona
+style: chronograph
+theme: motor-racing
+sources:
+  - https://www.luxurybazaar.com/brands/rolex/ref-126500ln/
+  - https://www.belmontwatches.com/products/rolex-daytona-126500ln
+  - https://www.timeandwatches.com/p/history-of-rolex-cosmograph-daytona.html
+  - https://watchmydiamonds.com/rolex-daytona-reference-guide/
+  - https://millenarywatches.com/list-rolex-daytona-models-reference-numbers/
+  - https://wristcheck.com/us/discover/buying-guides/rolex-daytona-price-guide
+  - https://www.watchguys.com/pages/rolex-daytona-guide
+  - https://phillips.com/detail/rolex/CH080219/245
+  - https://phillips.com/detail/rolex/CH080120/110
+references:
+  - ref: "6239"
+    caseSize: 37
+    metals: [steel]
+    bezel: { material: steel, style: tachymeter }
+    crystal: acrylic
+    movement: Valjoux 72
+    complications: [chronograph]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "6263"
+    caseSize: 37
+    metals: [steel]
+    bezel: { colors: [black], style: tachymeter }
+    crystal: acrylic
+    movement: Valjoux 727
+    complications: [chronograph]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "16520"
+    photos:
+      - file: ../../../photos/rolex/cosmograph-daytona/cosmograph-daytona.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:RolexDaytona.jpg
+          license: CC BY-SA 3.0
+          licenseUrl: http://creativecommons.org/licenses/by-sa/3.0/
+    periods: [{ from: 1988, to: 2000 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: steel, style: tachymeter }
+    crystal: sapphire
+    movement: "4030"
+    complications: [chronograph]
+    dials: [{ color: white }, { color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "116520"
+    periods: [{ from: 2000, to: 2016 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: steel, style: tachymeter }
+    crystal: sapphire
+    movement: "4130"
+    complications: [chronograph]
+    dials: [{ color: white }, { color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "116508"
+    photos:
+      - file: ../../../photos/rolex/cosmograph-daytona/cosmograph-daytona-2.png
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Rolex_Cosmograph_Daytona.png
+          license: CC BY 2.0
+          licenseUrl: https://creativecommons.org/licenses/by/2.0
+          author: Matt C
+    periods: [{ from: 2016, to: 2023 }]
+    caseSize: 40
+    metals: [yellow-gold]
+    bezel: { material: yellow-gold, style: tachymeter }
+    crystal: sapphire
+    movement: "4130"
+    complications: [chronograph]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "116509"
+    photos:
+      - file: ../../../photos/rolex/cosmograph-daytona/cosmograph-daytona-3.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Daytona116509.jpg
+          license: Public domain
+          author: Sealobo at English Wikipedia
+    caseSize: 40
+    metals: [white-gold]
+    bezel: { material: white-gold, style: tachymeter }
+    crystal: sapphire
+    movement: "4130"
+    complications: [chronograph]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: 116500LN
+    periods: [{ from: 2016, to: 2023 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "4130"
+    complications: [chronograph]
+    dials: [{ color: white }, { color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: 126500LN
+    photos:
+      - file: ../../../photos/rolex/cosmograph-daytona/cosmograph-daytona-126500ln.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Rolex_Cosmograph_Daytona_Panda.jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: Shuntfield
+    periods: [{ from: 2023 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "4131"
+    complications: [chronograph]
+    dials: [{ color: white }, { color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "126506"
+    periods: [{ from: 2023 }]
+    caseSize: 40
+    metals: [platinum]
+    bezel: { material: ceramic, colors: [brown], style: tachymeter }
+    crystal: sapphire
+    movement: "4131"
+    complications: [chronograph]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "126508"
+    periods: [{ from: 2023 }]
+    caseSize: 40
+    metals: [yellow-gold]
+    bezel: { material: yellow-gold, style: tachymeter }
+    crystal: sapphire
+    movement: "4131"
+    complications: [chronograph]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "126509"
+    periods: [{ from: 2023 }]
+    caseSize: 40
+    metals: [white-gold]
+    bezel: { material: white-gold, style: tachymeter }
+    crystal: sapphire
+    movement: "4131"
+    complications: [chronograph]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: 126515LN
+    periods: [{ from: 2023 }]
+    caseSize: 40
+    metals: [rose-gold]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "4131"
+    complications: [chronograph]
+    bracelets: [{ type: rubber-strap, name: Oysterflex }]
+  - ref: 126518LN
+    periods: [{ from: 2023 }]
+    caseSize: 40
+    metals: [yellow-gold]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "4131"
+    complications: [chronograph]
+    bracelets: [{ type: rubber-strap, name: Oysterflex }]

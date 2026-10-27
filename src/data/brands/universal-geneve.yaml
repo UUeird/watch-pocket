@@ -1,6 +1,15 @@
 name: Universal Genève
+logo: ../logos/universal-geneve.jpg
+logomark: ../logos/universal-geneve-logomark.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:UG_Logo_2024.jpg
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: AntoineBBB
 origin: Switzerland
 status: revived
+segment: luxury
 ownership:
   - owner: breitling-sa
     from: 2023
+logoBackground: '#013e51'

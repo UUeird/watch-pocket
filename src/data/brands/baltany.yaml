@@ -1,6 +1,7 @@
 name: Baltany
 origin: China
 periods: [{ from: 2021 }]
+segment: budget
 sources:
   - https://www.dialicious.com/en/baltany
   - https://www.watchpatrol.net/fr/decouvrir/marques/baltany/

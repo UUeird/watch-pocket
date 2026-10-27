@@ -1,8 +1,16 @@
 name: Zenith
 logo: ../logos/zenith.svg
+logomark: ../logos/zenith-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Zenith_logo.svg
   license: Public domain
+logoOnDark: ../logos/zenith-on-dark.png
+logoOnDarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:Zenith-logo-WHITE-transparent-bg.png
+  license: CC0
+  licenseUrl: https://creativecommons.org/publicdomain/zero/1.0
+  author: Jeromluther
+logomarkOnDark: ../logos/zenith-logomark-on-dark.png
 origin: Switzerland
 periods: [{ from: 1865 }]
 segment: luxury

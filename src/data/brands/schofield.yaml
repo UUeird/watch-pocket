@@ -1,7 +1,13 @@
 name: Schofield
 origin: United Kingdom
-status: active
+periods: [{ from: 2011 }]
 website: https://schofieldwatchcompany.com
 sources:
   - https://www.dialicious.com/en/schofield
   - https://schofieldwatchcompany.com/
+  - https://usa.watchpro.com/?p=5726
+control: private
+independent:
+  sources:
+    - https://www.fratellowatches.com/fratello-on-air-giles-ellis-of-schofield-watch-company-talks-shop/
+    - https://ablogtowatch.com/first-grail-watch-giles-ellis-schofield

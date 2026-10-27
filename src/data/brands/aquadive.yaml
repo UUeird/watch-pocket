@@ -4,3 +4,9 @@ website: https://aquadive.com
 sources:
   - https://www.dialicious.com/en/aquadive
   - https://aquadive.com/
+ownership:
+  - owner: synchron
+    basis: disclosed
+    sources:
+      - https://aquadive.com/about/
+      - https://aquadive.com/imprint/

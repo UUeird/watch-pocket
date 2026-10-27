@@ -1,6 +1,17 @@
 name: Oakley
+logo: ../logos/oakley.svg
+logomark: ../logos/oakley-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Oakley_logo.svg
+  license: Public domain
 origin: United States
+periods: [{ from: 1975 }]
 sources:
   - https://www.dialicious.com/en/oakley
   - https://en.wikipedia.org/wiki/Oakley,_Inc.
   - https://www.oakleyforum.com/threads/oakley-watches-the-complete-guide-to-every-oakley-watch.102099/
+ownership:
+  - owner: luxottica
+    from: 2007
+    sources:
+      - https://en.wikipedia.org/wiki/Oakley,_Inc.

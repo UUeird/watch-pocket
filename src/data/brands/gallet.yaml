@@ -1,4 +1,11 @@
 name: Gallet
+logo: ../logos/gallet.png
+logomark: ../logos/gallet-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Gallet_logo.png
+  license: CC0
+  licenseUrl: https://creativecommons.org/publicdomain/zero/1.0
+  author: AntoineBBB
 origin: Switzerland
 status: revived
 ownership:

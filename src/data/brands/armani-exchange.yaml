@@ -1,11 +1,18 @@
 name: Armani Exchange
 logo: ../logos/armani-exchange.svg
+logomark: ../logos/armani-exchange-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Armani_Exchange_logo.svg
   license: Public domain
 origin: Italy
 status: active
+segment: budget
 tags:
   - fashion
 licensees:
   - licensee: fossil-group
+ownership:
+  - owner: giorgio-armani
+    from: 1991
+    sources:
+      - https://en.wikipedia.org/wiki/Armani

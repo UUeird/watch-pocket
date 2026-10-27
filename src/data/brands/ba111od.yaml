@@ -1,7 +1,11 @@
 name: BA111OD
 origin: Switzerland
-status: active
+periods: [{ from: 2019 }]
 website: https://ba111od.com
 sources:
   - https://www.dialicious.com/en/ba111od
   - https://ba111od.com/
+control: private
+independent:
+  sources:
+    - https://ba111od.com/pages/pr-ba111od-brand-presentation

@@ -1,7 +1,19 @@
 name: Hegid
+logo: ../logos/hegid.svg
+logomark: ../logos/hegid-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logotype_Hegid.svg
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Edelala
 origin: France
 status: active
 website: https://hegid.com
 sources:
   - https://www.dialicious.com/en/hegid
   - https://hegid.com/
+control: private
+independent:
+  sources:
+    - https://hegid.com/
+    - https://international.franceclat.fr/brands-timepieces/hegid/

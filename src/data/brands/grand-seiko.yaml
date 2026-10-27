@@ -1,10 +1,12 @@
 name: Grand Seiko
 logo: ../logos/grand-seiko.svg
+logomark: ../logos/grand-seiko-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Grand_Seiko_Logo.svg
   license: Public domain
 origin: Japan
 periods: [{ from: 1960 }]
+segment: luxury
 ownership:
   - owner: seiko-group
 sources:

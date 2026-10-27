@@ -1,0 +1,64 @@
+---
+import { href } from '../lib/catalog';
+
+// A screenshot or a recording from public/docs/media/, captured from the real site by `npm run docs:media`.
+// An `.mp4` plays as a silent loop, with its first frame (the `.jpg` of the same name) shown until it starts; anything
+// else shows as an image. Stills are captured at twice their size, so
+// `width` is the size to show them at, in CSS pixels.
+interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  wide?: boolean;
+}
+
+const { src, alt, width, wide = false } = Astro.props;
+const url = href(`/docs/media/${src}`);
+const recording = src.endsWith('.mp4');
+---
+
+<figure class:list={['docs-figure', { wide }]}>
+  {
+    recording ? (
+      <video src={url} poster={url.replace(/\.mp4$/, '.jpg')} autoplay muted loop playsinline controls preload="metadata" aria-label={alt} />
+    ) : (
+      <img src={url} alt={alt} loading="lazy" style={width ? `width:${width}px` : undefined} />
+    )
+  }
+  <figcaption><slot /></figcaption>
+</figure>
+
+<style>
+  .docs-figure {
+    margin: 20px 0 28px;
+    max-width: 68ch;
+  }
+
+  .docs-figure.wide {
+    max-width: none;
+  }
+
+  img,
+  video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  figcaption {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+
+  figcaption:empty {
+    display: none;
+  }
+</style>

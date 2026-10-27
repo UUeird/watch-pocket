@@ -1,6 +1,18 @@
 name: Fortis
+logo: ../logos/fortis.png
+logomark: ../logos/fortis-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Fortis_Logo_Subline_RGB_Black.png
+  license: CC0
+  licenseUrl: https://creativecommons.org/publicdomain/zero/1.0
+  author: Fortis Watches AG
 origin: Switzerland
+control: family
 periods: [{ from: 1912 }]
 segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Fortis_Watches
+independent:
+  sources:
+    - https://www.fortis-swiss.com/pages/why-fortis
+    - https://www.europastar.com/1004115277.html

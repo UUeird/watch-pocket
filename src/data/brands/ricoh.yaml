@@ -1,6 +1,16 @@
 name: Ricoh
+logo: ../logos/ricoh.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Ricoh_logo_2005.svg
+  license: Public domain
 origin: Japan
+periods: [{ from: 1936 }]
 sources:
   - https://www.dialicious.com/en/ricoh
   - https://wiki.grail-watch.com/index.php/Ricoh
   - https://japanese-microbrands.com/en/blogs/japan-vintage-journal/ricoh-die-vergessene-schwester-von-seiko-citizen-und-orient
+  - https://en.wikipedia.org/wiki/Ricoh
+control: public
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Ricoh

@@ -1,5 +1,7 @@
 name: Montblanc
 logo: ../logos/montblanc.svg
+logomark: ../logos/montblanc-logomark.svg
+logomarkOnDark: ../logos/montblanc-logomark-on-dark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Montblanc_logo.svg
   license: Public domain

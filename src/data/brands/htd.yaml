@@ -1,7 +1,13 @@
 name: HTD
 origin: Italy
-status: active
+periods: [{ from: 2020 }]
 website: https://htdwatches.com
 sources:
   - https://www.dialicious.com/en/htd
   - https://htdwatches.com/
+  - https://htdwatches.com/en/pages/about
+control: private
+independent:
+  sources:
+    - https://www.pittimmagine.com/en/pittimmagine/archive/uomo109/exhibitors/H/htd-watches
+    - https://timeandtidewatches.com/brand/htd/

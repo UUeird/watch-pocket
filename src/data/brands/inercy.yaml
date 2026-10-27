@@ -1,7 +1,8 @@
 name: Inercy
 origin: France
-status: active
+periods: [{ from: 2020 }]
 website: https://www.inercy.fr
 sources:
   - https://www.dialicious.com/en/inercy
   - https://www.inercy.fr/
+  - https://www.inercy.fr/en

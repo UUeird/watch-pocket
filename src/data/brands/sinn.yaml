@@ -4,6 +4,12 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Sinn_(Uhrenhersteller)_logo.svg
   license: Public domain
 origin: Germany
+control: private
 periods: [{ from: 1961 }]
+segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Sinn_(watchmaker)
+independent:
+  sources:
+    - https://watchilove.com/sinn-spezialuhren-celebrates-its-60th-anniversary/
+    - https://wiki.grail-watch.com/index.php/Sinn

@@ -1,6 +1,16 @@
 name: Unikatuhren
+logo: ../logos/unikatuhren.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Unikatuhren.jpg
+  license: CC BY-SA 3.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+  author: "Joerg Schaefer"
 status: active
 website: https://www.unikatuhren.ch
 sources:
   - https://www.dialicious.com/en/unikatuhren
   - https://www.unikatuhren.ch/
+control: family
+independent:
+  sources:
+    - https://www.unikatuhren.ch/

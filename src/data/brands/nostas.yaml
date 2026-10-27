@@ -5,3 +5,7 @@ website: https://nostasrome.com
 sources:
   - https://www.dialicious.com/en/nostas
   - https://nostasrome.com/
+control: family
+independent:
+  sources:
+    - https://nostasrome.com/

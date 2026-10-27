@@ -1,7 +1,14 @@
 name: Praesidus
 origin: United States
-status: active
+periods: [{ from: 2019 }]
 website: https://praesidus.com
 sources:
   - https://www.dialicious.com/en/praesidus
   - https://praesidus.com/
+  - https://praesidus.com/pages/who-we-are-1
+ownership:
+  - owner: montrichard
+    basis: disclosed
+    sources:
+      - https://praesidus.com/pages/terms-and-conditions
+      - https://www.ablogtowatch.com/the-superlative-podcast-montrichard-group-cmo-oscar-chabrat-on-the-future-of-microbrands/

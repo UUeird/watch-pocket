@@ -1,5 +1,5 @@
 name: Signum
-status: active
+periods: [{ from: 2020 }]
 website: https://www.signumwatches.com
 sources:
   - https://www.dialicious.com/en/signum

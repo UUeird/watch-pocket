@@ -1,6 +1,7 @@
 name: MVMT
 origin: United States
 periods: [{ from: 2013 }]
+segment: budget
 tags:
   - direct-to-consumer
 ownership:

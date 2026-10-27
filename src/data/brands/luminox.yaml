@@ -1,5 +1,18 @@
 name: Luminox
 origin: United States
 periods: [{ from: 1989 }]
+segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q17109402
+ownership:
+  - owner: { brand: mondaine }
+    stake: 50
+    from: 2006
+    to: 2016
+    sources:
+      - https://en.wikipedia.org/wiki/Luminox
+  - owner: { brand: mondaine }
+    from: 2016
+    sources:
+      - https://en.wikipedia.org/wiki/Luminox
+      - https://instoremag.com/swiss-watch-company-names-top-executive/

@@ -1,6 +1,6 @@
 name: Micromilspec
 origin: Norway
-status: active
+periods: [{ from: 2019 }]
 website: https://www.micromilspec.com
 sources:
   - https://www.dialicious.com/en/micromilspec

@@ -1,3 +1,6 @@
 name: Autodromo
 origin: United States
-status: active
+periods: [{ from: 2011 }]
+segment: mid-range
+sources:
+  - https://www.dialicious.com/en/autodromo

@@ -4,7 +4,12 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Raymond_Weil_logo.svg
   license: Public domain
 origin: Switzerland
+control: family
 periods: [{ from: 1976 }]
 segment: mid-range
 sources:
   - https://www.wikidata.org/wiki/Q676990
+independent:
+  sources:
+    - https://www.raymond-weil.com/en/watchmaking/
+    - https://escapementmagazine.com/articles/elie-bernheim-raymond-weil/

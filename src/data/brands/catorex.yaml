@@ -3,3 +3,7 @@ origin: Switzerland
 sources:
   - https://www.dialicious.com/en/catorex
   - https://www.wikidata.org/wiki/Q24329908
+control: family
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Catorex

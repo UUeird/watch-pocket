@@ -1,6 +1,20 @@
 name: Bogner
-status: active
+logo: ../logos/bogner.svg
+logomark: ../logos/bogner-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Bogner-Logo.svg
+  license: Public domain
+periods: [{ from: 1932 }]
 website: https://www.bogner.com
 sources:
   - https://www.dialicious.com/en/bogner
   - https://www.bogner.com/
+  - https://www.bogner.com/en-us/s/brands/72.html
+ownership:
+  - owner: katjes-international
+    stake: 60
+    basis: disclosed
+    from: 2025
+    sources:
+      - https://www.bogner.com/de-de/news-bogner-katjes-international-successful-transaction/221.html
+      - https://sgbonline.com/exec-bogner-sells-majority-stake-to-katjes-international/

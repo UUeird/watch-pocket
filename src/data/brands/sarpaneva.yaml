@@ -1,5 +1,6 @@
 name: Sarpaneva
-status: active
+periods: [{ from: 2003 }]
+segment: haute
 website: https://studiosarpaneva.com
 sources:
   - https://www.dialicious.com/en/sarpaneva

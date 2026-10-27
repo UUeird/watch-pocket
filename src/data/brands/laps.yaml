@@ -1,7 +1,8 @@
 name: Laps
 origin: France
-status: active
+periods: [{ from: 2016 }]
 website: https://laps.fr
 sources:
   - https://www.dialicious.com/en/laps
   - https://laps.fr/
+  - https://laps.fr/en/pages/our-story

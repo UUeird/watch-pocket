@@ -1,5 +1,15 @@
 name: Eberhard & Co.
+logo: ../logos/eberhard-co.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Eberhard.png
+  license: Public domain
 origin: Switzerland
+control: family
 periods: [{ from: 1887 }]
+segment: luxury
 sources:
   - https://www.wikidata.org/wiki/Q870335
+independent:
+  sources:
+    - https://www.europastar.com/1004114868.html
+    - https://en.worldtempus.com/article/industry-news/brands/eberhard-et-co-the-four-secrets-to-eberhard-et-cos-longevity-26193.html

@@ -1,0 +1,57 @@
+name: External links
+
+# Each Monday, checks every web address in the data, and the brand photos the site loads from brand sites, as brand
+# websites change. Anything gone or moved goes into one open issue, updated each week and closed once all is well.
+on:
+  schedule:
+    - cron: '0 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: external-links
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Check external links
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      # Find this week's brand photos first, so the check covers the ones the site will show.
+      - name: Refresh brands' own model photos
+        run: npm run photos:official || true
+      - name: Check every external link
+        id: check
+        run: |
+          set +e
+          npm run --silent check:external -- --report report.md > /dev/null
+          echo "broken=$?" >> "$GITHUB_OUTPUT"
+          grep -q '^## Moved' report.md && echo "moved=1" >> "$GITHUB_OUTPUT" || echo "moved=0" >> "$GITHUB_OUTPUT"
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Report in an issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BROKEN: ${{ steps.check.outputs.broken }}
+          MOVED: ${{ steps.check.outputs.moved }}
+        run: |
+          gh label create external-links --color D93F0B --description "Links in the data that are gone or moved" --force
+          issue=$(gh issue list --label external-links --state open --json number --jq '.[0].number')
+          # An issue body is limited to 65,536 characters.
+          head -c 60000 report.md > body.md
+          echo -e "\n\n_From the [External links run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})._" >> body.md
+          if [ "$BROKEN" != "0" ] || [ "$MOVED" = "1" ]; then
+            if [ -n "$issue" ]; then gh issue edit "$issue" --body-file body.md
+            else gh issue create --title "External links need attention" --label external-links --body-file body.md; fi
+          elif [ -n "$issue" ]; then
+            gh issue close "$issue" --comment "All external links check out this week."
+          fi

@@ -4,8 +4,13 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Huawei_wordmark_2019.svg
   license: Public domain
 origin: China
+control: private
 periods: [{ from: 1987 }]
-tags:
-  - smartwatch
+segment: mid-range
+makes: [smartwatches]
 sources:
+  - https://en.wikipedia.org/wiki/Huawei
   - https://www.wikidata.org/wiki/Q160120
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Huawei

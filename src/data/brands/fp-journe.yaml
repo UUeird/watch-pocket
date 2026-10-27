@@ -1,4 +1,8 @@
 name: F.P. Journe
+logo: ../logos/fp-journe.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:F._P._Journe_Logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1999 }]
 segment: haute

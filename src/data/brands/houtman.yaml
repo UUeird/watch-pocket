@@ -1,7 +1,8 @@
 name: Houtman
 origin: Australia
-status: active
+periods: [{ from: 2019 }]
 website: https://houtmanwatch.com
 sources:
   - https://www.dialicious.com/en/houtman
   - https://houtmanwatch.com/
+  - https://houtmanwatch.com/pages/about-us

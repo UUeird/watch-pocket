@@ -1,3 +1,13 @@
 name: Askania
+logo: ../logos/askania.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Askania_Logo.png
+  license: Public domain
 origin: Germany
 status: active
+segment: mid-range
+ownership:
+  - owner: carl-bamberg
+    basis: disclosed
+    sources:
+      - https://askania.berlin/impressum/

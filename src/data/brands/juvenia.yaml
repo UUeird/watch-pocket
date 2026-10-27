@@ -1,7 +1,20 @@
 name: Juvenia
+logo: ../logos/juvenia.png
+logomark: ../logos/juvenia-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo-juvenia.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Asia Commercial Holdings Ltd.
 origin: Switzerland
-status: active
+periods: [{ from: 1860 }]
 website: https://www.juvenia.ch
 sources:
   - https://www.dialicious.com/en/juvenia
   - https://www.juvenia.ch/
+  - https://en.wikipedia.org/wiki/Juvenia
+ownership:
+  - owner: asia-commercial-holdings
+    from: 1988
+    sources:
+      - https://en.wikipedia.org/wiki/Juvenia

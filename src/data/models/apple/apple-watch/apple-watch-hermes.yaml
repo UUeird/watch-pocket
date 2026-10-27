@@ -1,6 +1,8 @@
 name: Apple Watch Hermès
 line: apple/apple-watch
+style: smartwatch
 collaborators: [hermes]
+website: https://www.apple.com/apple-watch-hermes/
 sources:
   - https://support.apple.com/en-us/108056
 references:

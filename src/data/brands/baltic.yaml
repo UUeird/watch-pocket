@@ -2,3 +2,7 @@ name: Baltic
 origin: France
 periods: [{ from: 2017 }]
 segment: mid-range
+control: private
+independent:
+  sources:
+    - https://timeandtidewatches.com/everything-you-need-to-know-about-french-independent-baltic/

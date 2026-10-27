@@ -5,3 +5,7 @@ website: https://cincinnatiwatch.com
 sources:
   - https://www.dialicious.com/en/cincinnati
   - https://cincinnatiwatch.com/
+control: private
+independent:
+  sources:
+    - https://cincinnatiwatch.com/pages/about

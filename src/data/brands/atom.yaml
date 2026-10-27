@@ -5,3 +5,7 @@ website: https://atom-watch.com
 sources:
   - https://www.dialicious.com/en/atom
   - https://atom-watch.com/
+control: private
+independent:
+  sources:
+    - https://atom-watch.com/about-us

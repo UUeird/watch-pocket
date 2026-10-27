@@ -1,5 +1,24 @@
 name: Yema
+logo: ../logos/yema.png
+logomark: ../logos/yema-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:YEMA_LOGO.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Anibalmru
 origin: France
 periods: [{ from: 1948 }]
+segment: mid-range
 sources:
+  - https://en.wikipedia.org/wiki/Yema_(watchmaker)
   - https://www.wikidata.org/wiki/Q3572153
+ownership:
+  - owner: seiko-group
+    from: 1988
+    to: 2004
+    sources:
+      - https://en.wikipedia.org/wiki/Yema_(watchmaker)
+  - owner: montres-ambre
+    from: 2009
+    sources:
+      - https://en.wikipedia.org/wiki/Yema_(watchmaker)

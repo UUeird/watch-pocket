@@ -1,6 +1,7 @@
 name: Collins
-status: active
+periods: [{ from: 2016 }]
 website: https://collinswatch.com
 sources:
   - https://www.dialicious.com/en/collins
   - https://collinswatch.com/
+  - https://collinswatch.com/about

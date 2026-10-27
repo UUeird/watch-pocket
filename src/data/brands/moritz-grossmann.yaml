@@ -1,9 +1,14 @@
 name: Moritz Grossmann
+logo: ../logos/moritz-grossmann.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Moritz_Grossmann_Logo.svg
+  license: Public domain
 origin: Germany
 periods: [{ from: 2008 }]
 heritage:
   from: 1854
   sources:
     - https://en.grossmann-uhren.com/history/
+segment: haute
 sources:
   - https://www.wikidata.org/wiki/Q25303194

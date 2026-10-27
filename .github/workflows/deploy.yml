@@ -1,11 +1,13 @@
 name: Deploy
 
-# Publishes the site to GitHub Pages once CI has passed on main, so a red commit is never deployed.
+# Publishes main to GitHub Pages on every push. Tests run locally before a pull request is merged (see the release
+# skill); the build here still validates every data file, so a commit that doesn't build is never deployed. It also
+# republishes main each Monday, so brands' own photos of their models (see below) stay current between commits.
 on:
-  workflow_run:
-    workflows: [CI]
-    types: [completed]
+  push:
     branches: [main]
+  schedule:
+    - cron: '0 6 * * 1'
   workflow_dispatch:
 
 permissions:
@@ -21,18 +23,18 @@ concurrency:
 jobs:
   build:
     name: Build
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-        with:
-          # The commit CI passed on, not whatever main points at by the time this runs.
-          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
       - uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
+      # The photos a brand's own pages show for each model change as its site does. A page that can't be read keeps
+      # the photo found before if it still loads, and drops it otherwise, so this never stops a deploy.
+      - name: Refresh brands' own model photos
+        run: npm run photos:official || true
       - run: npm run build
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5

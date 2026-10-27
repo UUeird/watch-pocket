@@ -1,5 +1,11 @@
 name: Beijing
 origin: China
 periods: [{ from: 1958 }]
+segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Beijing_Watch_Factory
+ownership:
+  - owner: { brand: fiyta }
+    from: 2016
+    sources:
+      - https://en.wikipedia.org/wiki/Beijing_Watch_Factory

@@ -4,8 +4,11 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Esprit_Logo_neu.svg
   license: Public domain
 origin: United States
+control: public
 periods: [{ from: 1968 }]
+segment: budget
 tags:
   - fashion
 sources:
+  - https://en.wikipedia.org/wiki/Esprit_Holdings
   - https://www.wikidata.org/wiki/Q532746

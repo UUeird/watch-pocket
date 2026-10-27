@@ -4,3 +4,9 @@ website: https://prim.cz
 sources:
   - https://www.dialicious.com/en/prim
   - https://prim.cz/
+ownership:
+  - owner: mpm-quality
+    from: 2001
+    sources:
+      - https://en.wikipedia.org/wiki/PRIM_(watches)
+      - https://prim.cz/

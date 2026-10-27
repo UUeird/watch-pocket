@@ -1,0 +1,44 @@
+name: Deepsea
+line: rolex/deepsea
+style: dive
+sources:
+  - https://phillips.com/detail/rolex/HK080122/805/zh
+  - https://commit-watch.co.jp/en/blogs/column/comparison-7
+  - https://rubberb.com/blog/rolex-oyster-perpetual-deepsea-136660-2022
+references:
+  - ref: "116660"
+    photos:
+      - file: ../../../photos/rolex/deepsea/deepsea-116660.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Rolex_Deepsea_Sea-Dweller_116660_Blue_Dial_%27James_Cameron%27_(cropped_and_turned).jpg
+          license: CC0
+          licenseUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
+          author: amh1988
+    periods: [{ from: 2008, to: 2018 }]
+    caseSize: 44
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: dive }
+    crystal: sapphire
+    movement: "3135"
+    complications: [date]
+    dials: [{ color: black }, { color: blue, name: D-Blue }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "126660"
+    periods: [{ from: 2018, to: 2022 }]
+    caseSize: 44
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: dive }
+    crystal: sapphire
+    movement: "3235"
+    complications: [date]
+    dials: [{ color: black }, { color: blue, name: D-Blue }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: "136660"
+    periods: [{ from: 2022 }]
+    caseSize: 44
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: dive }
+    crystal: sapphire
+    movement: "3235"
+    complications: [date]
+    bracelets: [{ type: bracelet, name: Oyster }]

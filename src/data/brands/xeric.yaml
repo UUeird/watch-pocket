@@ -1,7 +1,12 @@
 name: Xeric
 origin: United States
-status: active
+periods: [{ from: 2013 }]
 website: https://www.xeric.com
 sources:
   - https://www.dialicious.com/en/xeric
   - https://www.xeric.com/
+  - https://www.xeric.com/pages/about-us
+control: family
+independent:
+  sources:
+    - https://www.xeric.com/pages/about-us

@@ -1,7 +1,19 @@
 name: Chronoswiss
+logo: ../logos/chronoswiss.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Logo_Chronoswiss.png
+  license: CC BY-SA 3.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+  author: Chronoswiss
 origin: Germany
+control: family
 periods: [{ from: 1983 }]
+segment: luxury
 website: https://chronoswiss.com
 sources:
   - https://www.dialicious.com/en/chronoswiss
   - https://chronoswiss.com/
+independent:
+  sources:
+    - https://chronoswiss.com/en/team
+    - https://www.watchtime.com/?p=12597

@@ -1,7 +1,8 @@
 name: Héron
 origin: Canada
-status: active
+periods: [{ from: 2021 }]
 website: https://www.heronwatches.com
 sources:
   - https://www.dialicious.com/en/heron
   - https://www.heronwatches.com/
+  - https://www.heronwatches.com/pages/about-us

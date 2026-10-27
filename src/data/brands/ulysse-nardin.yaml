@@ -1,4 +1,11 @@
 name: Ulysse Nardin
+logo: ../logos/ulysse-nardin.png
+logomark: ../logos/ulysse-nardin-logomark.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Ulysse_Nardin_logo.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Clyde94
 origin: Switzerland
 periods: [{ from: 1846 }]
 segment: luxury

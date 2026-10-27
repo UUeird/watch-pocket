@@ -1,4 +1,13 @@
 name: Harry Winston
+logo: ../logos/harry-winston.jpg
+logomark: ../logos/harry-winston-logomark.png
+logomarkOnDark: ../logos/harry-winston-logomark-on-dark.png
+wordmark: ../logos/harry-winston-wordmark.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Harry-winston-logo.jpg
+  license: CC BY-SA 3.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+  author: DarryMorozova
 origin: United States
 periods: [{ from: 1932 }]
 segment: luxury

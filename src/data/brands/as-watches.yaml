@@ -4,3 +4,7 @@ website: https://www.as-watches.com
 sources:
   - https://www.dialicious.com/en/as-watches
   - https://www.as-watches.com/
+control: family
+independent:
+  sources:
+    - https://www.as-watches.com/about-us

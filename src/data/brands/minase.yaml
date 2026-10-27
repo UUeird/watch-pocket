@@ -1,7 +1,13 @@
 name: Minase
 origin: Japan
-status: active
+periods: [{ from: 2005 }]
 website: https://minasewatches.com
 sources:
   - https://www.dialicious.com/en/minase
   - https://minasewatches.com/
+ownership:
+  - owner: kyowa
+    basis: disclosed
+    from: 2005
+    sources:
+      - https://minasewatches.com/history

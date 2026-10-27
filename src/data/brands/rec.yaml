@@ -1,7 +1,12 @@
 name: REC
 origin: Denmark
-status: active
+periods: [{ from: 2014 }]
 website: https://www.recwatches.com
 sources:
   - https://www.dialicious.com/en/rec
   - https://www.recwatches.com/
+  - https://www.recwatches.com/about/
+control: private
+independent:
+  sources:
+    - https://www.recwatches.com/about/

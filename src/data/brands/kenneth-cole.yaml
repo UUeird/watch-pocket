@@ -4,6 +4,15 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Kenneth_Cole_2015_logo.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 1982 }]
+segment: budget
 tags:
   - fashion
+sources:
+  - https://en.wikipedia.org/wiki/Kenneth_Cole_Productions
+ownership:
+  - owner: kenneth-cole-productions
+    from: 1982
+    sources:
+      - https://en.wikipedia.org/wiki/Kenneth_Cole_Productions
+      - https://us.fashionnetwork.com/news/Designer-Kenneth-Cole-to-take-namesake-company-private,518007

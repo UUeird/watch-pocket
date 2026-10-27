@@ -1,0 +1,59 @@
+name: "1968 Heritage Diver's GMT"
+line: seiko/prospex
+style: dive
+website: https://www.seikowatches.com/us-en/products/prospex/sea
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/sea
+  - https://www.seikowatches.com/us-en/products/prospex/spb381j1
+  - https://www.seikowatches.com/us-en/products/prospex/spb519j1
+  - https://www.seikowatches.com/us-en/products/prospex/hbc001j1
+  - https://www.seikowatches.com/us-en/products/prospex/hbc002j1
+references:
+  - ref: SPB381
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/02/02/11/42/SPB381J1/SPB381J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb381j1
+    price: { amount: 1500, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R54"
+    complications: [date, gmt]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB519
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/04/16/21/10/SPB519J1/SPB519J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb519j1
+    price: { amount: 1800, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R54"
+    complications: [date, gmt]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBC001
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/05/21/14/HBC001J1/HBC001J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbc001j1
+    price: { amount: 1800, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R54"
+    complications: [date, gmt]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBC002
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/05/21/14/HBC002J1/HBC002J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbc002j1
+    price: { amount: 1800, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R54"
+    complications: [date, gmt]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

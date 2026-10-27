@@ -1,6 +1,17 @@
 name: Ronda
+logo: ../logos/ronda.svg
+logomark: ../logos/ronda-logomark.svg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Ronda_logo.svg
+  license: Public domain
 origin: Switzerland
 periods: [{ from: 1946 }]
-category: movement-maker
+segment: budget
+makes: [movements]
 sources:
   - https://en.wikipedia.org/wiki/Ronda_(watchmaker)
+control: family
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Ronda_(watchmaker)
+    - https://www.europastar.com/the-watch-files/those-who-innovate/1004116191-ronda-s-mechanical-revival.html

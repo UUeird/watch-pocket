@@ -1,6 +1,7 @@
 name: Orient
 origin: Japan
 periods: [{ from: 1950 }]
+segment: budget
 ownership:
   - owner: seiko-epson
 sources:

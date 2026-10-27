@@ -1,5 +1,10 @@
 name: Skmei
+logo: ../logos/skmei.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Skmei-logo.jpg
+  license: Public domain
 origin: China
 periods: [{ from: 2009 }]
+segment: budget
 sources:
   - https://www.wikidata.org/wiki/Q124116169

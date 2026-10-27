@@ -4,8 +4,14 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Daniel_Wellington_logo.svg
   license: Public domain
 origin: Sweden
+control: private
 periods: [{ from: 2011 }]
+segment: budget
 tags:
   - direct-to-consumer
 sources:
+  - https://en.wikipedia.org/wiki/Daniel_Wellington
   - https://www.wikidata.org/wiki/Q22104639
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Daniel_Wellington

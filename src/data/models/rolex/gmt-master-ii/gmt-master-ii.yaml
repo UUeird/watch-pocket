@@ -1,12 +1,81 @@
 name: GMT-Master II
 line: rolex/gmt-master-ii
+style: travel
+sources:
+  - https://www.luxurybazaar.com/grey-market/rolex-16710/
+  - https://beckertime.com/buy-used-rolex/gmt-master-ii
+  - https://www.phillips.com/detail/rolex/172580
+  - https://www.sothebys.com/en/buy/auction/2023/important-watches-i/gmt-master-ii-reference-116710blnr-a-stainless
 references:
+  # The 16710 was sold with black, red/blue or red/black aluminum inserts, so no bezel colors are given.
+  - ref: "16710"
+    photos:
+      - file: ../../../photos/rolex/gmt-master-ii/gmt-master-ii.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Rolex_GMT_Master_II_Pepsi.jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: OpaleHorse
+      - file: ../../../photos/rolex/gmt-master-ii/gmt-master-ii-3.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Rolex_GMT_Master_II_-_16710_in_it_sitting_on_top_of_the_box.jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: Peter WILSON
+      - file: ../../../photos/rolex/gmt-master-ii/gmt-master-ii-4.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Rolex_GMT_Master_II_-_16710_(without_background).jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: "File:Rolex GMT Master II - 16710 in it sitting on top of the box.jpg: Peter WILSON derivative work: Pittigrilli"
+      - file: ../../../photos/rolex/gmt-master-ii/gmt-master-ii-5.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Rolex_GMT_Master_II_-_16710_(without_background,_cropped_to_casing).jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: "File:Rolex GMT Master II - 16710 in it sitting on top of the box.jpg: Peter WILSON derivative work: Pittigrilli"
+    periods: [{ from: 1989, to: 2007 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: aluminum, style: gmt }
+    crystal: sapphire
+    movement: "3185"
+    complications: [date, gmt]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]
+  - ref: 116710LN
+    periods: [{ from: 2007, to: 2019 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: gmt }
+    crystal: sapphire
+    movement: "3186"
+    complications: [date, gmt]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
+  - ref: 116710BLNR
+    photos:
+      - file: ../../../photos/rolex/gmt-master-ii/gmt-master-ii-2.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Rolex_GMT_Master_II_116710BLNR_Batman.jpg
+          license: Public domain
+          author: gabihil
+    periods: [{ from: 2013, to: 2019 }]
+    caseSize: 40
+    metals: [steel]
+    bezel: { material: ceramic, colors: [blue, black], style: gmt }
+    crystal: sapphire
+    movement: "3186"
+    complications: [date, gmt]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 126710BLRO
     periods: [{ from: 2018 }]
     caseSize: 40
     metals: [steel]
     bezel: { material: ceramic, colors: [red, blue], style: gmt }
     movement: "3285"
+    complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]
   - ref: 126710BLNR
@@ -15,5 +84,6 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [blue, black], style: gmt }
     movement: "3285"
+    complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]

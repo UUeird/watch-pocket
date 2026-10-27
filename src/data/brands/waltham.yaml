@@ -1,5 +1,10 @@
 name: Waltham
+logo: ../logos/waltham.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Waltham_New_Logo.png
+  license: Public domain
 origin: United States
 periods: [{ from: 1850 }]
+segment: mid-range
 sources:
   - https://en.wikipedia.org/wiki/Waltham_Watch_Company

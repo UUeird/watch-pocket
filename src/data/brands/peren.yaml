@@ -1,7 +1,14 @@
 name: Peren
+logo: ../logos/peren.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:PerenLogo.JPG
+  license: CC BY-SA 3.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+  author: "Perenwatches"
 origin: Switzerland
 periods: [{ from: 2014 }]
 website: https://perenwatches.com
 sources:
   - https://www.dialicious.com/en/peren
   - https://perenwatches.com/
+logoBackground: '#000000'

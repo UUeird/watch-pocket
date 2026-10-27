@@ -1,9 +1,11 @@
 name: Audemars Piguet
 logo: ../logos/audemars-piguet.svg
+logomark: ../logos/audemars-piguet-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Logo_Audemars_Piguet.svg
   license: Public domain
 origin: Switzerland
+control: family
 periods: [{ from: 1875 }]
 segment: haute
 revenue:
@@ -14,3 +16,6 @@ revenue:
     sources:
       - https://revolutionwatch.com/what-we-can-learn-from-morgan-stanleys-ninth-annual-swiss-watch-report/
       - https://www.loupe.watch/watch-guides/morgan-stanley-watch-report-2025
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Audemars_Piguet

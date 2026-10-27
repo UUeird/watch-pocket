@@ -1,5 +1,13 @@
 name: Lorier
 origin: United States
 periods: [{ from: 2017 }]
+segment: mid-range
 sources:
-  - https://www.lorierwatches.com/pages/about-us
+  - https://web.archive.org/web/20260411231520/https://www.lorierwatches.com/pages/about-us
+ownership:
+  - owner: worn-wound
+    stake: unknown
+    basis: disclosed
+    from: 2026
+    sources:
+      - https://wornandwound.com/?p=161505

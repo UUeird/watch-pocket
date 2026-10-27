@@ -1,18 +1,15 @@
 ---
+import BrandLogo from '../../components/BrandLogo.astro';
+import Filters from '../../components/Filters.astro';
 import FlagBadge from '../../components/FlagBadge.astro';
-import OwnershipTimeline from '../../components/OwnershipTimeline.astro';
-import Treemap from '../../components/Treemap.astro';
 import Base from '../../layouts/Base.astro';
-import { describeControl, formatStake, href, loadCatalog, plural, type Brand } from '../../lib/catalog';
-import { chartData } from '../../lib/chart-data';
+import { activeGroups, describeControl, formatStake, href, label, loadCatalog, plural, type Brand, type Group } from '../../lib/catalog';
 
 const catalog = await loadCatalog();
-const { groups, brandsOf, licensesOf, holdingsOf } = catalog;
-const data = chartData(catalog, { groupsOnly: true });
-const holdings = groups.map((group) => ({ group, records: holdingsOf({ collection: 'groups', id: group.id }) }));
-
-// The image a brand's tile shows: its full logo, or else the symbol alone.
-const logoOf = (brand: Brand) => brand.data.logo ?? brand.data.logomark;
+const { brandsOf, licensesOf } = catalog;
+// Dissolved groups own nothing now, so they get no card; they're listed by name under the cards for their past holdings.
+const groups = activeGroups(catalog.groups);
+const former = catalog.groups.filter((group) => group.data.dissolved !== undefined);
 
 // A brand as it sits in a group: owned outright, owned in part (with the stake), or made under license.
 type Tile = { brand: Brand; stake?: number | 'unknown'; licensed?: boolean };
@@ -28,11 +25,6 @@ const held = groups
   })
   .sort((a, b) => b.owned.length - a.owned.length || b.licensed.length - a.licensed.length);
 
-// Sizes a logo to cover roughly `area` square pixels, within a height range, so a square mark
-// is not dwarfed by a long wordmark. Returns the display height in pixels.
-const logoHeight = ({ width, height }: { width: number; height: number }, area: number, max: number) =>
-  Math.round(Math.min(max, Math.max(10, Math.sqrt(area / (width / height)))));
-
 // Up to two initials, standing in for a brand with no logo file, e.g. `Harry Winston` → `HW`.
 const initials = (name: string) =>
   name
@@ -42,6 +34,27 @@ const initials = (name: string) =>
     .slice(0, 2)
     .toUpperCase();
 
+// The filters work on each brand tile, by the brand's own fields and its group's, so a card shows the brands that
+// match and hides when none do. A brand searches by its name and its group's.
+const controlOf = (group: Group) => (group.data.parent || !group.data.control ? 'subsidiary' : group.data.control);
+const distinct = (values: (string | undefined)[]) => [...new Set(values.filter((value) => value !== undefined))].sort();
+const tileBrands = held.flatMap(({ tiles }) => tiles.map(({ brand }) => brand));
+const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));
+const controls = distinct(groups.map(controlOf)).map((value) => ({
+  value,
+  label: describeControl(groups.find((group) => controlOf(group) === value)!),
+}));
+const filterData = (group: Group, brand: Brand) => ({
+  'data-id': brand.id,
+  'data-q': [brand.data.name, group.data.name].join(' ').toLowerCase(),
+  'data-country': group.data.country,
+  'data-control': controlOf(group),
+  'data-segment': brand.data.segment,
+  'data-origin': brand.data.origin,
+  'data-makes': brand.data.makes.join('|'),
+  'data-tags': brand.data.tags.join('|'),
+});
+
 const stakeNote = (stake: Tile['stake']) =>
   stake === 'unknown' ? 'Part-owned, stake unknown' : `${formatStake(stake)} stake`;
 ---
@@ -50,8 +63,19 @@ const stakeNote = (stake: Tile['stake']) =>
   <h1>Ownership groups</h1>
   <p class="lede">Groups and corporations, with the brands each currently holds.</p>
 
-  <Treemap id="groups" title="Ownership groups" data={data} />
-  <OwnershipTimeline holdings={holdings} />
+  <Filters
+    target="group-cards"
+    noun="brands"
+    placeholder="Search groups and brands"
+    filters={[
+      { name: 'country', label: 'Group based in', options: options(distinct(groups.map((group) => group.data.country))) },
+      { name: 'control', label: 'Control', options: controls },
+      { name: 'origin', label: 'Brand origin', options: options(distinct(tileBrands.map((brand) => brand.data.origin))) },
+      { name: 'segment', label: 'Segment', options: options(distinct(tileBrands.map((brand) => brand.data.segment))) },
+      { name: 'makes', label: 'Makes', options: options(distinct(tileBrands.flatMap((brand) => brand.data.makes))) },
+      { name: 'tags', label: 'Type', options: options(distinct(tileBrands.flatMap((brand) => brand.data.tags))) },
+    ]}
+  />
 
   <h2 class="section-heading">All groups</h2>
   <ul class="legend" aria-label="Key">
@@ -60,62 +84,53 @@ const stakeNote = (stake: Tile['stake']) =>
     <li><span class="key-tile licensed" /> Made under license, not owned</li>
   </ul>
 
-  <p class="order-note" data-order-note>Largest first, by number of brands.</p>
-  <div class="cards">
+  <p class="order-note">Largest first, by number of brands. <a href={href('/chart/')}>See them on the chart</a>, or <a href={href('/timeline/')}>when each was bought</a>.</p>
+  {
+    former.length > 0 && (
+      <p class="order-note">
+        Former groups, kept for the brands they once held:{' '}
+        {former.map((group, index) => (
+          <>
+            {index > 0 && ', '}
+            <a href={href(`/ownership-groups/${group.id}/`)}>{group.data.name}</a> ({group.data.founded ?? '?'}–{group.data.dissolved})
+          </>
+        ))}
+        .
+      </p>
+    )
+  }
+  <div class="cards" id="group-cards">
     {
-      held.map(({ group, owned, licensed, tiles }, index) => (
-        <section class="card" data-group={group.id} data-index={index}>
-          {group.data.logo && (
-            <div class="card-logo">
-              <img
-                src={group.data.logo.src}
-                width={group.data.logo.width}
-                height={group.data.logo.height}
-                style={{ height: `${logoHeight(group.data.logo, 3600, 44)}px` }}
-                alt=""
-                loading="lazy"
-              />
-            </div>
-          )}
+      held.map(({ group, owned, licensed, tiles }) => (
+        <section class="card" data-group={group.id} data-filter-group>
+          {group.data.logo && <BrandLogo record={group} width={168} height={44} area={3600} class="card-logo" />}
           <div class="card-head">
             <h2>
               <a href={href(`/ownership-groups/${group.id}/`)}>{group.data.name}</a>
             </h2>
             <FlagBadge country={group.data.country} />
           </div>
-          <p class="measure" data-measure hidden />
           <p class="meta">
             {describeControl(group)} · {plural(owned.length, 'brand')}
             {licensed.length > 0 && ` · ${licensed.length} licensed`}
           </p>
           {tiles.length > 0 && (
             <ul class="tiles">
-              {tiles.map(({ brand, stake, licensed }) => ({ id: brand.id, name: brand.data.name, logo: logoOf(brand), stake, licensed })).map(({ id, name, logo, stake, licensed }) => (
-                <li>
-                  <a class:list={['tile', { licensed }]} href={href(`/brands/${id}/`)}>
-                    <span class="plate">
-                      {logo ? (
-                        <img
-                          src={logo.src}
-                          width={logo.width}
-                          height={logo.height}
-                          style={{ height: `${logoHeight(logo, 1500, 40)}px` }}
-                          alt=""
-                          loading="lazy"
-                        />
-                      ) : (
-                        <span class="monogram" aria-hidden="true">
-                          {initials(name)}
-                        </span>
-                      )}
+              {tiles.map(({ brand, stake, licensed }) => (
+                <li {...filterData(group, brand)}>
+                  <a class:list={['tile', { licensed }]} href={href(`/brands/${brand.id}/`)}>
+                    <BrandLogo record={brand} width={76} height={40} class="plate">
+                      <span class="monogram" aria-hidden="true">
+                        {initials(brand.data.name)}
+                      </span>
                       {stake !== undefined && (
-                        <span class="stake" title={stakeNote(stake)} aria-hidden="true">
+                        <span slot="after" class="stake" title={stakeNote(stake)} aria-hidden="true">
                           {stake === 'unknown' ? 'Part' : `${stake}%`}
                         </span>
                       )}
-                    </span>
+                    </BrandLogo>
                     <span class="tile-name">
-                      {name}
+                      {brand.data.name}
                       {stake !== undefined && <span class="visually-hidden">, {stakeNote(stake)}</span>}
                       {licensed && <span class="visually-hidden">, made under license</span>}
                     </span>
@@ -130,55 +145,11 @@ const stakeNote = (stake: Tile['stake']) =>
   </div>
 </Base>
 
-<script>
-  import { metricById } from '../../lib/treemap';
-
-  // The cards follow the treemap above: largest first by whatever it is sized by, with each group's figure shown.
-  const cards = [...document.querySelectorAll<HTMLElement>('.card[data-group]')];
-  const note = document.querySelector<HTMLElement>('[data-order-note]')!;
-  const treemap = document.querySelector<HTMLElement>('[data-treemap]');
-  const follow = () => {
-    if (!treemap?.dataset.totals) return;
-    const size = treemap.dataset.size!;
-    const totals: Record<string, number> = JSON.parse(treemap.dataset.totals);
-    const { format } = metricById(size);
-    const ranked = [...cards].sort(
-      (a, b) =>
-        (totals[b.dataset.group!] ?? -1) - (totals[a.dataset.group!] ?? -1) || Number(a.dataset.index) - Number(b.dataset.index),
-    );
-    // Moved in the page rather than reordered by CSS, so tabbing goes in the order shown.
-    cards[0]?.parentElement?.append(...ranked);
-    for (const card of cards) {
-      const measure = card.querySelector<HTMLElement>('[data-measure]')!;
-      const total = totals[card.dataset.group!];
-      // The brand count is already in each card's summary line.
-      measure.hidden = size === 'brands';
-      measure.textContent = total === undefined ? 'No figure yet' : format(total);
-      measure.classList.toggle('unknown', total === undefined);
-    }
-    const label = metricById(size).label.toLowerCase();
-    note.textContent = `Largest first, by ${label}, as in the chart above.`;
-  };
-  treemap?.addEventListener('treemap:layout', follow);
-  follow();
-</script>
-
 <style>
   .order-note {
     margin: -8px 0 16px;
     color: var(--muted);
     font-size: 0.8125rem;
-  }
-
-  .measure {
-    margin: 4px 0 0;
-    font-size: 1.0625rem;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .measure.unknown {
-    color: var(--muted);
-    font-size: 0.875rem;
   }
 
   .section-heading {
@@ -231,21 +202,13 @@ const stakeNote = (stake: Tile['stake']) =>
     border-radius: 6px;
   }
 
-  /* Logos are drawn for a light page, so each sits on a white plate in both color schemes. */
-  .card-logo {
+  /* The group's logo on its fill (see src/lib/logo.ts), drawn to an area, so a long name is capped by width. */
+  .card :global(.card-logo) {
     display: inline-flex;
+    max-width: 180px;
     margin-bottom: 10px;
     padding: 4px 6px;
-    background: #ffffff;
     border-radius: 3px;
-  }
-
-  /* Each logo's height is set inline; a very long wordmark is capped by width instead. */
-  .card-logo img {
-    width: auto;
-    max-width: 180px;
-    object-fit: contain;
-    object-position: left;
   }
 
   .card-head {
@@ -297,23 +260,16 @@ const stakeNote = (stake: Tile['stake']) =>
     border-color: var(--accent);
   }
 
-  .plate {
+  .tile :global(.plate) {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 56px;
     padding: 6px 8px;
-    background: #ffffff;
   }
 
-  .plate img {
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-  }
-
-  /* A brand with no logo file shows its initials in place of one. */
+  /* A brand with no logo that reads here shows its initials in place of one. */
   .monogram {
     display: flex;
     align-items: center;

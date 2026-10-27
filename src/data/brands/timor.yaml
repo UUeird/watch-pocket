@@ -5,3 +5,9 @@ website: https://timorwatch.com
 sources:
   - https://www.dialicious.com/en/timor
   - https://timorwatch.com/
+control: private
+independent:
+  sources:
+    - https://find-and-update.company-information.service.gov.uk/company/12193883/persons-with-significant-control
+    - https://timorwatch.com/pages/terms-and-conditions
+    - https://timorwatch.com/pages/history

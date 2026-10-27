@@ -1,4 +1,17 @@
 name: HYT
+logo: ../logos/hyt.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:HYT-LogoHeadline-B.jpg
+  license: CC BY-SA 3.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+  author: "hyt watches"
 origin: Switzerland
 periods: [{ from: 2012, to: 2021 }, { from: 2022 }]
 segment: haute
+logoBackground: '#000000'
+ownership:
+  - owner: kairos-technology-switzerland
+    from: 2021
+    sources:
+      - https://professionalwatches.com/hyt-returns/
+      - https://en.wikipedia.org/wiki/HYT_(watchmaker)

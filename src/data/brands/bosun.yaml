@@ -1,6 +1,6 @@
 name: Bosun
 origin: United Kingdom
-status: active
+periods: [{ from: 2017 }]
 website: https://www.bosunwatch.com
 sources:
   - https://www.dialicious.com/en/bosun

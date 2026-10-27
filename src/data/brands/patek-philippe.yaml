@@ -1,5 +1,14 @@
 name: Patek Philippe
+logo: ../logos/patek-philippe.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Patek_Philippe_Logo.png
+  license: Public domain
+logoOnDark: ../logos/patek-philippe-on-dark.png
+logoOnDarkCredit:
+  source: https://commons.wikimedia.org/wiki/File:Patek_Philippe_Logo2.png
+  license: Public domain
 origin: Switzerland
+control: family
 periods: [{ from: 1839 }]
 segment: haute
 revenue:
@@ -10,3 +19,6 @@ revenue:
     sources:
       - https://revolutionwatch.com/what-we-can-learn-from-morgan-stanleys-ninth-annual-swiss-watch-report/
       - https://www.loupe.watch/watch-guides/morgan-stanley-watch-report-2025
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Patek_Philippe

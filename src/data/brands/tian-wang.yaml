@@ -1,3 +1,9 @@
 name: Tian Wang
 origin: China
 status: active
+segment: budget
+ownership:
+  - owner: time-watch-investments
+    basis: disclosed
+    sources:
+      - https://www1.hkexnews.hk/listedco/listconews/sehk/2023/1026/2023102600328.pdf

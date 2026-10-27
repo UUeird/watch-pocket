@@ -1,7 +1,12 @@
 name: Panzera
 origin: Australia
 periods: [{ from: 2009 }]
+segment: mid-range
 website: https://panzerawatches.com
 sources:
   - https://www.dialicious.com/en/panzera
   - https://panzerawatches.com/
+control: private
+independent:
+  sources:
+    - https://www.forbes.com.au/covers/entrepreneurs/panzera-the-stupid-idea-that-became-australias-watch-success-story/

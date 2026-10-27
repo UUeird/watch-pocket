@@ -18,8 +18,13 @@ export const countryHref = (country: string) => href(`/countries/${countrySlug(c
 export const label = (value: string) => value.replace(/-/g, ' ');
 
 // Who controls a group, in words. A group with a parent is that parent's subsidiary.
-const controlNames = { public: 'Publicly traded', private: 'Privately held', foundation: 'Foundation-owned' };
-export const describeControl = ({ data: { control, parent } }: Group) => (parent || !control ? 'Subsidiary' : controlNames[control]);
+export const controlNames = { public: 'Publicly traded', family: 'Family-owned', private: 'Privately held', foundation: 'Foundation-owned' };
+export type Control = keyof typeof controlNames;
+export const describeControl = ({ data: { control, parent, dissolved } }: Group) =>
+  dissolved !== undefined ? `Dissolved in ${dissolved}` : parent || !control ? 'Subsidiary' : controlNames[control];
+
+// Groups that still exist, for lists of current owners.
+export const activeGroups = (groups: Group[]) => groups.filter((group) => group.data.dissolved === undefined);
 
 // A count with its noun, e.g. `1 brand` or `3 brands`.
 export const plural = (count: number, noun: string) => `${count} ${noun}${count === 1 ? '' : 's'}`;
@@ -56,9 +61,19 @@ export const brandStatus = ({ data }: Brand) => {
   return data.periods.length > 1 ? 'revived' : 'active';
 };
 
+// The years a brand traded, up to the present while it still does. Without recorded years, its status unless that is plain active.
+export const brandYears = (brand: Brand) => {
+  const status = brandStatus(brand);
+  return formatPeriods(brand.data.periods) || (status === 'active' ? '' : status[0].toUpperCase() + status.slice(1));
+};
+
 export type Reference = Model['data']['references'][number];
 
 export const refHref = (model: Model, reference: Reference) => href(`/brands/${model.id}/${refSlug(reference.ref)}/`);
+
+// A reference's complications in words: "Time only" for an empty list, nothing when they are not recorded.
+export const describeComplications = (complications: Reference['complications']) =>
+  complications && (complications.length === 0 ? 'Time only' : complications.map((entry) => (entry === 'gmt' ? 'GMT' : label(entry))).join(', '));
 
 export const describeBezel = (bezel: Reference['bezel']) =>
   bezel ? [bezel.colors.join(' and '), bezel.material, bezel.style].filter(Boolean).map((part) => label(part!)).join(', ') : '';
@@ -87,6 +102,20 @@ async function buildCatalog() {
     brands
       .flatMap((brand) => brand.data.ownership.filter((record) => owns(record.owner, owner)).map((record) => ({ brand, ...record })))
       .sort((a, b) => Number(a.to !== undefined) - Number(b.to !== undefined));
+  // Who controls a brand: its own `control` when nothing owns it, or its owner's, through any parent groups and
+  // owning brands. `via` names the company at the top of that chain. Unknown for a brand with several current owners.
+  const groupControl = (group: Group): { control: Control; via?: string } | undefined =>
+    group.data.parent ? groupControl(groupsById.get(group.data.parent.id)!) : group.data.control && { control: group.data.control, via: group.data.name };
+  const brandControl = (brand: Brand): { control: Control; via?: string } | undefined => {
+    const owners = currentOwners(brand);
+    if (owners.length === 0) return brand.data.control ? { control: brand.data.control } : undefined;
+    if (owners.length > 1) return undefined;
+    const [owner] = owners;
+    if (owner.collection === 'groups') return groupControl(groupsById.get(owner.id)!);
+    const parent = brandsById.get(owner.id)!;
+    const above = brandControl(parent);
+    return above && { control: above.control, via: above.via ?? parent.data.name };
+  };
   const brandsOf = (groupId: string) =>
     brands.filter((brand) => currentOwners(brand).some((owner) => owns(owner, { collection: 'groups', id: groupId })));
   // Brands a group currently makes and sells under license, without owning them.
@@ -104,14 +133,15 @@ async function buildCatalog() {
   }
   const lines = await getCollection('lines');
   const discontinued = (line: Line) => line.data.periods.at(-1)?.to !== undefined;
-  // Current lines first, then oldest first.
+  // Current lines first, then oldest first, then by name, with numbers in number order (RM 07 before RM 032).
   const linesOf = (brandId: string) =>
     lines
       .filter((line) => line.data.brand.id === brandId)
       .sort(
         (a, b) =>
           Number(discontinued(a)) - Number(discontinued(b)) ||
-          (a.data.periods[0]?.from ?? 0) - (b.data.periods[0]?.from ?? 0),
+          (a.data.periods[0]?.from ?? 0) - (b.data.periods[0]?.from ?? 0) ||
+          a.data.name.localeCompare(b.data.name, 'en', { numeric: true }),
       );
   const models = (await getCollection('models')).sort(byName);
   const modelsOf = (lineId: string) => models.filter((model) => model.data.line.id === lineId);
@@ -133,5 +163,5 @@ async function buildCatalog() {
     const brand = brands.find((candidate) => candidate.id === line.data.brand.id)!;
     return model.data.references.map((reference) => ({ reference, model, line, brand }));
   });
-  return { brands, groups, groupsById, ownerName, holdingsOf, brandsOf, licensesOf, lines, linesOf, models, modelsOf, collaborationsOf, references };
+  return { brands, groups, groupsById, ownerName, brandControl, holdingsOf, brandsOf, licensesOf, lines, linesOf, models, modelsOf, collaborationsOf, references };
 }

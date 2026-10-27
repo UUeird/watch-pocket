@@ -1,5 +1,16 @@
 name: Pobeda
+logo: ../logos/pobeda.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Pobeda_Logo.png
+  license: CC BY-SA 4.0
+  licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+  author: Pobedaad
 origin: Russia
 periods: [{ from: 1945 }]
+segment: budget
 sources:
   - https://en.wikipedia.org/wiki/Pobeda_(watch)
+ownership:
+  - owner: { brand: raketa }
+    sources:
+      - https://en.wikipedia.org/wiki/Pobeda_(watch)

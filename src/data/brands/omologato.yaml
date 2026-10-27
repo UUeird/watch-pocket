@@ -5,3 +5,7 @@ website: https://www.omologatowatches.com
 sources:
   - https://www.dialicious.com/en/omologato
   - https://www.omologatowatches.com/
+control: family
+independent:
+  sources:
+    - https://find-and-update.company-information.service.gov.uk/company/09680148/persons-with-significant-control

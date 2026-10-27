@@ -4,8 +4,10 @@ import CountryLink from '../../components/CountryLink.astro';
 import Holdings from '../../components/Holdings.astro';
 import Logo from '../../components/Logo.astro';
 import SourceLinks from '../../components/SourceLinks.astro';
+import Tiles from '../../components/Tiles.astro';
+import { linePhotos } from '../../lib/tile-photos';
 import Sources from '../../components/Sources.astro';
-import { brandStatus, formatPeriods, formatStake, href, label, lineHref, loadCatalog, ownerHref, type Brand } from '../../lib/catalog';
+import { brandStatus, controlNames, formatPeriods, formatStake, href, label, lineHref, loadCatalog, ownerHref, plural, type Brand } from '../../lib/catalog';
 
 export async function getStaticPaths() {
   const { brands } = await loadCatalog();
@@ -17,27 +19,47 @@ interface Props {
 }
 
 const { brand } = Astro.props;
-const { brands, groupsById, ownerName, holdingsOf, linesOf, collaborationsOf } = await loadCatalog();
+const { brands, groupsById, ownerName, brandControl, holdingsOf, linesOf, modelsOf, collaborationsOf } = await loadCatalog();
 const self = { collection: 'brands' as const, id: brand.id };
 const holdings = holdingsOf(self);
 const collaborations = collaborationsOf(brand.id);
 const brandName = (modelId: string) => brands.find((other) => other.id === modelId.split('/')[0])?.data.name;
 const lines = linesOf(brand.id);
-const { name, logo, logoCredit, logomark, logomarkCredit, origin, headquarters, manufacturing, periods, heritage, category, segment, tags, production, copycat, website, ownership, licensees, sources } =
+const { name, origin, headquarters, manufacturing, periods, heritage, makes, segment, tags, production, copycat, website, ownership, independent, licensees, sources } =
   brand.data;
 const showStake = ownership.some((record) => record.stake !== undefined);
 const showBasis = ownership.some((record) => record.basis !== undefined);
 const showOwnerSources = ownership.some((record) => record.sources.length > 0);
 const showLicenseeSources = licensees.some((record) => record.sources.length > 0);
-const descriptors = [category !== 'watch-brand' && category, segment, ...tags, copycat && 'copycat', brandStatus(brand)];
+const control = brandControl(brand);
+const descriptors = [segment, ...tags, copycat && 'copycat', brandStatus(brand)];
 ---
 
 <Base title={name}>
-  <Logo name={name} logo={logo} credit={logoCredit} logomark={logomark} logomarkCredit={logomarkCredit} />
+  <Logo name={name} record={brand} />
   <h1>{name}</h1>
   <p class="lede cap">{descriptors.filter((value) => typeof value === 'string').map(label).join(' · ')}</p>
 
   <dl class="facts">
+    {
+      control && (
+        <>
+          <dt>Control</dt>
+          <dd>
+            {controlNames[control.control]}
+            {control.via && `, through ${control.via}`}
+          </dd>
+        </>
+      )
+    }
+    {
+      makes.length > 0 && (
+        <>
+          <dt>Makes</dt>
+          <dd>{makes.map(label).join(', ').replace(/^./, (first) => first.toUpperCase())}</dd>
+        </>
+      )
+    }
     {
       origin && (
         <>
@@ -117,26 +139,19 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
     lines.length > 0 && (
       <>
         <h2>Product lines</h2>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Line</th>
-                <th>On sale</th>
-              </tr>
-            </thead>
-            <tbody>
-              {lines.map((line) => (
-                <tr>
-                  <td>
-                    <a href={lineHref(line)}>{line.data.name}</a>
-                  </td>
-                  <td class="num">{formatPeriods(line.data.periods) || 'Not recorded'}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <Tiles
+          label="Product lines"
+          brandName={name}
+          tiles={lines.map((line) => {
+            const models = modelsOf(line.id);
+            return {
+              href: lineHref(line),
+              title: line.data.name,
+              detail: [models.length > 0 && plural(models.length, 'model'), formatPeriods(line.data.periods)].filter(Boolean).join(' · '),
+              photos: linePhotos(models, name),
+            };
+          })}
+        />
       </>
     )
   }
@@ -158,8 +173,15 @@ const descriptors = [category !== 'watch-brand' && category, segment, ...tags, c
 
   <h2>Ownership</h2>
   {
+    independent && (
+      <p>
+        Independent today: no group or other company owns it. Source: <SourceLinks sources={independent.sources} />
+      </p>
+    )
+  }
+  {
     ownership.length === 0 ? (
-      <p>No owner on record.</p>
+      !independent && <p>No owner on record.</p>
     ) : (
       <div class="table-wrap">
         <table>

@@ -2,3 +2,9 @@ name: Torgoen
 status: active
 tags:
   - fashion
+ownership:
+  - owner: e-gluck
+    basis: reported
+    from: 2019
+    sources:
+      - https://jckonline.com/?p=97433

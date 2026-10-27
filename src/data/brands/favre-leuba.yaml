@@ -1,3 +1,18 @@
 name: Favre-Leuba
+logo: ../logos/favre-leuba.jpg
+logomark: ../logos/favre-leuba-logomark.jpg
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Favre-Leuba-logo-old.jpg
+  license: CC0
+  licenseUrl: https://creativecommons.org/publicdomain/zero/1.0
+  author: Nordloyd
 origin: Switzerland
 status: revived
+segment: mid-range
+ownership:
+  - owner: titan-company
+    from: 2011
+    to: 2023
+    sources:
+      - https://en.wikipedia.org/wiki/Favre-Leuba
+      - https://www.businesstoday.in/amp/latest/corporate/story/titan-to-scale-down-operations-of-swiss-watch-brand-favre-leuba-280743-2020-12-07

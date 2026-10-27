@@ -5,9 +5,20 @@ logoCredit:
   license: Public domain
 origin: United States
 periods: [{ from: 1989 }]
+segment: budget
 tags:
   - fashion
 licensees:
   - licensee: fossil-group
 sources:
   - https://www.wikidata.org/wiki/Q938773
+ownership:
+  - owner: lvmh
+    from: 2001
+    to: 2016
+    sources:
+      - https://en.wikipedia.org/wiki/DKNY
+  - owner: g-iii-apparel
+    from: 2016
+    sources:
+      - https://en.wikipedia.org/wiki/DKNY

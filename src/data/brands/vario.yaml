@@ -5,3 +5,7 @@ website: https://vario.sg
 sources:
   - https://www.dialicious.com/en/vario
   - https://vario.sg/
+control: private
+independent:
+  sources:
+    - https://vario.sg/pages/why-buy-vario

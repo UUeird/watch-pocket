@@ -1,7 +1,13 @@
 name: Aevig
 origin: Netherlands
-status: active
+periods: [{ from: 2013 }]
+segment: mid-range
 website: https://aevig.com
 sources:
   - https://www.dialicious.com/en/aevig
   - https://aevig.com/
+  - https://aevig.com/about/
+control: private
+independent:
+  sources:
+    - https://aevig.com/about/

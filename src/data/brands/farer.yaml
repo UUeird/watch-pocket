@@ -1,5 +1,10 @@
 name: Farer
 origin: United Kingdom
 periods: [{ from: 2015 }]
+segment: mid-range
 sources:
   - https://farer.com/pages/our-story
+control: private
+independent:
+  sources:
+    - https://farer.com/pages/our-story

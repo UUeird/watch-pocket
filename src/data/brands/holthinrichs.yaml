@@ -1,7 +1,11 @@
 name: Holthinrichs
 origin: Netherlands
-status: active
+periods: [{ from: 2016 }]
 website: https://holthinrichs.com
 sources:
   - https://www.dialicious.com/en/holthinrichs
   - https://holthinrichs.com/
+control: private
+independent:
+  sources:
+    - https://www.europastar.com/the-watch-files/independent-watchmaking/1004116301-inside-delft-s-watchmaking-arsenal-the.html

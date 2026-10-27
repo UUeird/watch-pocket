@@ -1,3 +1,20 @@
 name: Benrus
+logo: ../logos/benrus.png
+logoCredit:
+  source: https://commons.wikimedia.org/wiki/File:Benrus_Logo.png
+  license: Public domain
 origin: United States
 status: revived
+segment: mid-range
+ownership:
+  - owner: mz-berger
+    to: 2014
+    sources:
+      - https://en.wikipedia.org/wiki/Benrus
+      - https://www.jckonline.com/editorial-article/former-alex-and-ani-ceo-buys-benrus-watch-brand/
+  - owner: benrus-holdings
+    basis: reported
+    from: 2017
+    sources:
+      - https://en.wikipedia.org/wiki/Benrus
+      - https://jckonline.com/?p=99030

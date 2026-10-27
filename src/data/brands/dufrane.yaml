@@ -5,3 +5,7 @@ website: https://www.dufranewatches.com
 sources:
   - https://www.dialicious.com/en/dufrane
   - https://www.dufranewatches.com/
+control: family
+independent:
+  sources:
+    - https://www.dufranewatches.com/
