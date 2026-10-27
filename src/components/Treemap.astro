@@ -341,7 +341,7 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     margin-top: 6px;
   }
 
-  /* Each plate takes its brand's fill, black or white, set on it (see brandFill in src/lib/treemap.ts). */
+  /* Each plate takes its brand's fill, set on it: white, or the brand's own color (see logoFill in src/lib/logo.ts). */
   .canvas :global(.tile .plate) {
     display: flex;
     align-items: center;
@@ -411,14 +411,14 @@ const optionLabel = (id: string) => (coverage[id] === 0 ? ' (no data yet)' : ` (
     line-height: 1.2;
     text-align: center;
     text-decoration: none;
-    /* Each brand's fill is set on it: black, or white where its logo was drawn for a light page (see brandFill in
-       src/lib/treemap.ts). The same in both color schemes. */
+    /* Each brand's fill is set on it: white, or the brand's own color (see logoFill in src/lib/logo.ts). The same
+       in both color schemes. */
     background: #ffffff;
     border: 1px solid #d4d0c6;
     border-radius: 2px;
   }
 
-  /* A brand on a dark fill: black by default, or its logo's own dark background color. */
+  /* A brand on a dark fill: its own dark color, or black behind a logo drawn in white. */
   .canvas :global(.brand.on-dark) {
     color: #ffffff;
     border-color: #6b6860;
