@@ -15,13 +15,20 @@ const official = officialPhotos as Record<string, { src: string; page: string }>
 const latest = (reference: Reference) => (reference.periods.at(-1)?.to === undefined && reference.periods.length > 0 ? Infinity : (reference.periods[0]?.from ?? -Infinity));
 const newestFirst = (references: Reference[]) => [...references].sort((a, b) => latest(b) - latest(a) || (b.periods[0]?.from ?? 0) - (a.periods[0]?.from ?? 0));
 
-// A model's photos, best first: its references', newest reference first, then its own, then the maker's image of it.
+// The maker's images of a model's references, newest reference first.
+const officialOfReferences = (model: Model, name: string) =>
+  newestFirst(model.data.references).flatMap(({ ref, officialPhoto }) => (officialPhoto ? [{ ...officialPhoto, alt: `${name} ${ref}` }] : []));
+
+// A model's photos, best first: our own of its references, newest reference first, then our own of the model; failing
+// those, the maker's images of its references, then the maker's image of the model.
 export function modelPhotos(model: Model, brandName: string): TilePhoto[] {
   const name = `${brandName} ${model.data.name}`;
   const ofReferences = newestFirst(model.data.references).flatMap(({ ref, photos }) => photos.map(({ file, credit }) => ({ file, credit, alt: `${name} ${ref}` })));
   const own = model.data.photos.map(({ file, credit }) => ({ file, credit, alt: name }));
   const ours = [...ofReferences, ...own];
   if (ours.length > 0) return ours;
+  const makers = officialOfReferences(model, name);
+  if (makers.length > 0) return makers;
   const shared = official[model.id];
   return shared ? [{ ...shared, alt: name }] : [];
 }
@@ -39,7 +46,8 @@ export function referencePhotos(model: Model, reference: Reference, brandName: s
 }
 
 // A line's photos, so cycling through them shows its range: one per reference, newest first, taking each model's in
-// turn, then photos of each model as a whole, then the maker's image of a model. A line of one model still steps
+// turn, then photos of each model as a whole; for a model with none of our own, the maker's images of its
+// references, then the maker's image of the model. A line of one model still steps
 // through that model's references.
 export function linePhotos(models: Model[], brandName: string, limit = 5): TilePhoto[] {
   const perModel = models.map((model) => {
@@ -49,8 +57,11 @@ export function linePhotos(models: Model[], brandName: string, limit = 5): TileP
     );
     const own = model.data.photos.slice(0, 1).map(({ file, credit }) => ({ file, credit, alt: name }));
     const ours = [...ofReferences, ...own];
+    if (ours.length > 0) return ours;
+    const makers = officialOfReferences(model, name);
+    if (makers.length > 0) return makers;
     const shared = official[model.id];
-    return ours.length > 0 ? ours : shared ? [{ ...shared, alt: name }] : [];
+    return shared ? [{ ...shared, alt: name }] : [];
   });
   const photos: TilePhoto[] = [];
   for (let round = 0; photos.length < limit && perModel.some((list) => list.length > round); round++) {
