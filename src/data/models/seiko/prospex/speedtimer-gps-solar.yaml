@@ -1,0 +1,33 @@
+name: "Speedtimer GPS Solar"
+line: seiko/prospex
+style: chronograph
+website: https://www.seikowatches.com/us-en/products/prospex/speedtimer
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/speedtimer
+  - https://www.seikowatches.com/us-en/products/prospex/ssh165j1
+  - https://www.seikowatches.com/us-en/products/prospex/ssh167j1
+references:
+  - ref: SSH165
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/09/06/21/23/SSH165J1/SSH165J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/ssh165j1
+    price: { amount: 2200, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "5X83"
+    complications: [date, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH167
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/09/06/21/23/SSH167J1/SSH167J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/ssh167j1
+    price: { amount: 2200, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "5X83"
+    complications: [date, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

@@ -1,0 +1,47 @@
+name: "1959 Alpinist Modern Re-interpretation"
+line: seiko/prospex
+style: field
+theme: exploration
+website: https://www.seikowatches.com/us-en/products/prospex/core
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/core
+  - https://www.seikowatches.com/us-en/products/prospex/spb155j1
+  - https://www.seikowatches.com/us-en/products/prospex/spb249j1
+  - https://www.seikowatches.com/us-en/products/prospex/spb289j1
+references:
+  - ref: SPB155
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/prospex/SPB155J1/SPB155J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb155j1
+    price: { amount: 725, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R35"
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB249
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/01/05/SPB249J1/SPB249J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb249j1
+    price: { amount: 750, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R35"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB289
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/01/12/SPB289J1/SPB289J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb289j1
+    price: { amount: 875, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R35"
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]

@@ -1,5 +1,6 @@
 name: RM 67-01 Automatic Winding Extra Flat
 line: richard-mille/rm-67
+style: everyday
 website: https://www.richardmille.com/collections/rm-67-01-automatic-extra-flat
 sources:
   - https://www.richardmille.com/collections/rm-67-01-automatic-extra-flat
@@ -16,4 +17,5 @@ references:
     bezel: { material: titanium }
     crystal: sapphire
     movement: CRMA6
+    complications: [date]
     bracelets: [{ type: rubber-strap }]

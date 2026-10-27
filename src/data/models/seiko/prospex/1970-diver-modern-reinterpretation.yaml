@@ -1,0 +1,20 @@
+name: "1970 Diver's Modern Re-interpretation"
+line: seiko/prospex
+style: dive
+website: https://www.seikowatches.com/us-en/products/prospex/sea
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/sea
+  - https://www.seikowatches.com/us-en/products/prospex/spb317j1
+references:
+  - ref: SPB317
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/06/01/12/43/SPB317J1/SPB317J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb317j1
+    price: { amount: 900, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R35"
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]

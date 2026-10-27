@@ -1,0 +1,85 @@
+name: "Turtle"
+line: seiko/prospex
+style: dive
+website: https://www.seikowatches.com/us-en/products/prospex/sea
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/sea
+  - https://www.seikowatches.com/us-en/products/prospex/srpe05
+  - https://www.seikowatches.com/us-en/products/prospex/srpe93
+  - https://www.seikowatches.com/us-en/products/prospex/srpe99
+  - https://www.seikowatches.com/us-en/products/prospex/srpf77
+  - https://www.seikowatches.com/us-en/products/prospex/srpk01
+  - https://www.seikowatches.com/us-en/products/prospex/hbb002
+references:
+  - ref: SRPE05
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/21/SRPE05K1/SRPE05K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpe05
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 45
+    metals: [steel]
+    crystal: sapphire
+    movement: "4R36"
+    complications: [date, day]
+    dials: [{ color: green }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: SRPE93
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/27/SRPE93K1/SRPE93K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpe93
+    price: { amount: 525, currency: USD, year: 2026 }
+    caseSize: 45
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: SRPE99
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/28/SRPE99K1/SRPE99K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpe99
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 45
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPF77
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/34/SRPF77K1/SRPF77K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpf77
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 45
+    metals: [steel]
+    crystal: sapphire
+    movement: "4R36"
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: SRPK01
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/04/28/11/49/SRPK01K1/SRPK01K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpk01
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 45
+    metals: [steel]
+    crystal: sapphire
+    movement: "4R36"
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBB002
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/05/21/13/HBB002K1/HBB002K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbb002
+    price: { amount: 750, currency: USD, year: 2026 }
+    caseSize: 45
+    metals: [steel]
+    crystal: sapphire
+    movement: "4R36"
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]

@@ -1,0 +1,206 @@
+name: "Classic Series"
+line: seiko/presage
+style: dress
+website: https://www.seikowatches.com/us-en/products/presage/classic
+sources:
+  - https://www.seikowatches.com/us-en/products/presage/classic
+  - https://www.seikowatches.com/us-en/products/presage/hcc001j1
+  - https://www.seikowatches.com/us-en/products/presage/hcc002j1
+  - https://www.seikowatches.com/us-en/products/presage/hcc003j1
+  - https://www.seikowatches.com/us-en/products/presage/hcc004j1
+  - https://www.seikowatches.com/us-en/products/presage/hcc007j1
+  - https://www.seikowatches.com/us-en/products/presage/hcc008j1
+  - https://www.seikowatches.com/us-en/products/presage/hcc009j1
+  - https://www.seikowatches.com/us-en/products/presage/spb463j1
+  - https://www.seikowatches.com/us-en/products/presage/spb467j1
+  - https://www.seikowatches.com/us-en/products/presage/spb478j1
+  - https://www.seikowatches.com/us-en/products/presage/spb521j1
+  - https://www.seikowatches.com/us-en/products/presage/spb524j1
+  - https://www.seikowatches.com/us-en/products/presage/spb525j1
+  - https://www.seikowatches.com/us-en/products/presage/spb529j1
+  - https://www.seikowatches.com/us-en/products/presage/spb538j1
+references:
+  - ref: HCC001
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/04/01/21/07/HCC001J1/HCC001J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcc001j1
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R51"
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HCC002
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/04/01/21/07/HCC002J1/HCC002J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcc002j1
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R51"
+    complications: []
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: HCC003
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/04/01/21/07/HCC003J1/HCC003J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcc003j1
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R51"
+    complications: []
+    dials: [{ color: pink }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HCC004
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/30/21/08/HCC004J1/HCC004J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcc004j1
+    price: { amount: 1000, currency: USD, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R51"
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HCC007
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/04/01/21/07/HCC007J1/HCC007J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcc007j1
+    price: { amount: 1700, currency: USD, year: 2026 }
+    caseSize: 39.6
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R51"
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HCC008
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/04/17/21/10/HCC008J1/HCC008J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcc008j1
+    price: { amount: 1150, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    caseColors: [{ color: rose-gold }]
+    crystal: sapphire
+    movement: "6R51"
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HCC009
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/04/17/21/11/HCC009J1/HCC009J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcc009j1
+    price: { amount: 1350, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: sapphire
+    movement: "6R51"
+    complications: []
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB463
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/02/26/21/15/SPB463J1/SPB463J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/spb463j1
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 40.2
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB467
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/02/26/21/15/SPB467J1/SPB467J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/spb467j1
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 40.2
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: orange }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB478
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/11/22/21/39/SPB478J1/SPB478J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/spb478j1
+    price: { amount: 1000, currency: USD, year: 2026 }
+    caseSize: 40.2
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB521
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/04/28/21/21/SPB521J1/SPB521J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/spb521j1
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R51"
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB524
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/04/28/21/24/SPB524J1/SPB524J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/spb524j1
+    price: { amount: 1050, currency: USD, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: sapphire
+    movement: "6R51"
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB525
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/29/21/11/SPB525J1/SPB525J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/spb525j1
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 40.2
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB529
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/07/31/21/09/SPB529J1/SPB529J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/spb529j1
+    price: { amount: 1050, currency: USD, year: 2026 }
+    caseSize: 40.2
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: brown }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SPB538
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/11/19/21/17/SPB538J1/SPB538J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/spb538j1
+    price: { amount: 1900, currency: USD, year: 2026 }
+    caseSize: 35
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: sapphire
+    movement: "6R51"
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]

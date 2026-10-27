@@ -1,0 +1,46 @@
+name: "Octagonal Diver's"
+line: seiko/prospex
+style: dive
+website: https://www.seikowatches.com/us-en/products/prospex/sea
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/sea
+  - https://www.seikowatches.com/us-en/products/prospex/spb481j1
+  - https://www.seikowatches.com/us-en/products/prospex/spb483j1
+  - https://www.seikowatches.com/us-en/products/prospex/spb485j1
+references:
+  - ref: SPB481
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/10/07/21/18/SPB481J1/SPB481J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb481j1
+    price: { amount: 1100, currency: USD, year: 2026 }
+    caseSize: 41.3
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB483
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/10/07/21/18/SPB483J1/SPB483J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb483j1
+    price: { amount: 1100, currency: USD, year: 2026 }
+    caseSize: 41.3
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB485
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/10/07/21/18/SPB485J1/SPB485J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb485j1
+    price: { amount: 1100, currency: USD, year: 2026 }
+    caseSize: 41.3
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: brown }]
+    bracelets: [{ type: bracelet }]
