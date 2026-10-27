@@ -36,7 +36,7 @@ const descriptors = [segment, ...tags, copycat && 'copycat', brandStatus(brand)]
 ---
 
 <Base title={name}>
-  <Logo name={name} data={brand.data} />
+  <Logo name={name} record={brand} />
   <h1>{name}</h1>
   <p class="lede cap">{descriptors.filter((value) => typeof value === 'string').map(label).join(' · ')}</p>
 

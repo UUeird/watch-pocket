@@ -1,0 +1,47 @@
+name: "Alpinist GMT"
+line: seiko/prospex
+style: field
+theme: exploration
+website: https://www.seikowatches.com/us-en/products/prospex/core
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/core
+  - https://www.seikowatches.com/us-en/products/prospex/spb377j1
+  - https://www.seikowatches.com/us-en/products/prospex/spb379j1
+  - https://www.seikowatches.com/us-en/products/prospex/hbc007j1
+references:
+  - ref: SPB377
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/07/31/11/41/SPB377J1/SPB377J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb377j1
+    price: { amount: 1150, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R54"
+    complications: [date, gmt]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SPB379
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/07/31/11/41/SPB379J1/SPB379J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb379j1
+    price: { amount: 1150, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R54"
+    complications: [date, gmt]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HBC007
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/26/21/09/HBC007J1/HBC007J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbc007j1
+    price: { amount: 1150, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R54"
+    complications: [date, gmt]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]

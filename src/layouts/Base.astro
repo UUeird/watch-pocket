@@ -80,9 +80,11 @@ const current = (path: string) => {
       measure();
     }).observe(wrap);
   }
-  // Anything above a table that grows or shrinks moves where its slide starts.
+  // Anything above a table that grows or shrinks moves where its slide starts. Not every such change resizes the
+  // page, so it's measured again as the page scrolls too, which also drives the slide where there are no animations.
   new ResizeObserver(measure).observe(document.body);
-  if (!driven) addEventListener('scroll', measure, { passive: true });
+  addEventListener('load', measure);
+  addEventListener('scroll', measure, { passive: true });
 </script>
 
 <style is:global>
@@ -194,15 +196,13 @@ const current = (path: string) => {
   }
 
   /* Logos are drawn for a light page, so each sits on a white plate in both color schemes. */
+  /* A brand's or group's logo at the head of its page; its fill is set on it (see src/lib/logo.ts). */
   .logo {
-    display: block;
-    width: auto;
-    height: auto;
-    max-width: min(240px, 100%);
-    max-height: 96px;
+    box-sizing: border-box;
+    width: min(240px, 100%);
+    height: 96px;
     margin: 0 0 4px;
     padding: 12px;
-    background: #ffffff;
     border: 1px solid var(--line);
   }
 
@@ -232,10 +232,13 @@ const current = (path: string) => {
     translate: 0 var(--lift, 0);
   }
 
+  /* The timeline goes through a custom property so the minifier can't fold it into the `animation` shorthand, which
+     browsers reject when it carries a timeline, dropping the whole animation. */
   @supports (animation-timeline: scroll()) {
     .table-wrap:not(.fits) thead th {
+      --lift-timeline: scroll(root block);
       animation: lift linear both;
-      animation-timeline: scroll(root block);
+      animation-timeline: var(--lift-timeline);
       animation-range: var(--lift-start, 0) var(--lift-end, 0);
     }
   }

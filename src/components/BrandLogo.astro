@@ -1,0 +1,63 @@
+---
+// A brand's or group's logo on its plate, in a space of a given size, by the same rules as the chart
+// (src/lib/logo.ts): the whole logo, its name or its symbol, whichever reads there, on white or the brand's own
+// color. Where none reads, or there is no logo, the plate holds the default slot instead (a name or initials).
+// The `after` slot is laid over the plate either way, e.g. a stake badge.
+import type { CollectionEntry } from 'astro:content';
+import { logoFill, logoReads, pickLogo, type LogoFile } from '../lib/logo';
+import { logoSetOf } from '../lib/logo-set';
+
+interface Props {
+  record: CollectionEntry<'brands'> | CollectionEntry<'groups'>;
+  // The space the logo is drawn in, in pixels, inside the plate's padding.
+  width: number;
+  height: number;
+  // Draw the logo to cover about this many square pixels rather than fill the space, so a square symbol isn't
+  // dwarfed by a long name beside it.
+  area?: number;
+  class?: string;
+  alt?: string;
+  loading?: 'lazy' | 'eager';
+}
+
+const { record, width, height, area, class: className, alt = '', loading = 'lazy' } = Astro.props;
+const set = await logoSetOf(record);
+const picked = pickLogo(set, width, height);
+const logo = picked && logoReads(set, picked, width, height) ? picked : undefined;
+// The height to draw at to cover `area`, kept within the space.
+const heightFor = ({ width: w, height: h }: LogoFile, cover: number) => Math.round(Math.min(height, Math.max(10, Math.sqrt(cover / (w / h)))));
+const fill = logoFill(set, logo);
+---
+
+<span class:list={['brand-logo-plate', className]} style={`background:${fill}`}>
+  {
+    logo ? (
+      <img
+        src={logo.src}
+        width={logo.width}
+        height={logo.height}
+        alt={alt}
+        loading={loading}
+        style={area ? `width:auto;max-width:100%;height:${heightFor(logo, area)}px` : undefined}
+      />
+    ) : (
+      <slot />
+    )
+  }
+  <slot name="after" />
+</span>
+
+<style>
+  .brand-logo-plate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* The logo grows or shrinks to fill the plate, as in the chart, unless it is drawn to an area. */
+  .brand-logo-plate img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+</style>

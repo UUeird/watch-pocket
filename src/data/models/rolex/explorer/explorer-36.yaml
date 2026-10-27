@@ -1,5 +1,7 @@
 name: Explorer 36
 line: rolex/explorer
+style: field
+theme: exploration
 photos:
   - file: ../../../photos/rolex/explorer/explorer-36.png
     credit:
@@ -16,6 +18,7 @@ references:
     caseSize: 36
     metals: [steel]
     crystal: sapphire
+    complications: []
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "124273"
@@ -24,5 +27,6 @@ references:
     metals: [steel, yellow-gold]
     bezel: { material: yellow-gold, style: smooth }
     crystal: sapphire
+    complications: []
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]

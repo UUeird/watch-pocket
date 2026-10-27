@@ -1,5 +1,7 @@
 name: Explorer II
 line: rolex/explorer-ii
+style: field
+theme: exploration
 photos:
   - file: ../../../photos/rolex/explorer-ii/explorer-ii.jpg
     credit:
@@ -24,5 +26,6 @@ references:
     bezel: { material: steel, style: gmt }
     crystal: sapphire
     movement: "3285"
+    complications: [date, gmt]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]

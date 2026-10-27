@@ -1,0 +1,59 @@
+name: "Classic Series Open Heart"
+line: seiko/presage
+style: dress
+website: https://www.seikowatches.com/us-en/products/presage/classic
+sources:
+  - https://www.seikowatches.com/us-en/products/presage/classic
+  - https://www.seikowatches.com/us-en/products/presage/spb469j1
+  - https://www.seikowatches.com/us-en/products/presage/spb471j1
+  - https://www.seikowatches.com/us-en/products/presage/spb480j1
+  - https://www.seikowatches.com/us-en/products/presage/spb527j1
+references:
+  - ref: SPB469
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/02/26/21/15/SPB469J1/SPB469J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/spb469j1
+    price: { amount: 1200, currency: USD, year: 2026 }
+    caseSize: 40.2
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R5J"
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB471
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/02/26/21/15/SPB471J1/SPB471J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/spb471j1
+    price: { amount: 1200, currency: USD, year: 2026 }
+    caseSize: 40.2
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R5J"
+    complications: []
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB480
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/11/22/21/39/SPB480J1/SPB480J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/spb480j1
+    price: { amount: 1175, currency: USD, year: 2026 }
+    caseSize: 40.2
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R5J"
+    complications: []
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB527
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/29/21/11/SPB527J1/SPB527J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/spb527j1
+    price: { amount: 1200, currency: USD, year: 2026 }
+    caseSize: 40.2
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R5J"
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]

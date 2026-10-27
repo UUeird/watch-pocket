@@ -71,6 +71,10 @@ export type Reference = Model['data']['references'][number];
 
 export const refHref = (model: Model, reference: Reference) => href(`/brands/${model.id}/${refSlug(reference.ref)}/`);
 
+// A reference's complications in words: "Time only" for an empty list, nothing when they are not recorded.
+export const describeComplications = (complications: Reference['complications']) =>
+  complications && (complications.length === 0 ? 'Time only' : complications.map((entry) => (entry === 'gmt' ? 'GMT' : label(entry))).join(', '));
+
 export const describeBezel = (bezel: Reference['bezel']) =>
   bezel ? [bezel.colors.join(' and '), bezel.material, bezel.style].filter(Boolean).map((part) => label(part!)).join(', ') : '';
 export const describeDial = (dial: Reference['dials'][number]) => dial.name ?? dial.color;

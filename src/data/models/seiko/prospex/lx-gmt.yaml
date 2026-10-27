@@ -1,0 +1,33 @@
+name: "LX GMT"
+line: seiko/prospex
+style: travel
+website: https://www.seikowatches.com/us-en/products/prospex/lx-line
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/lx-line
+  - https://www.seikowatches.com/us-en/products/prospex/snr033j1
+  - https://www.seikowatches.com/us-en/products/prospex/snr051j1
+references:
+  - ref: SNR033
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/prospex/SNR033J1/SNR033J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/snr033j1
+    price: { amount: 6000, currency: USD, year: 2026 }
+    caseSize: 44.8
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5R66"
+    complications: [date, gmt, power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SNR051
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/prospex/SNR051J1/SNR051J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/snr051j1
+    price: { amount: 6000, currency: USD, year: 2026 }
+    caseSize: 44.8
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5R66"
+    complications: [date, gmt, power-reserve]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]

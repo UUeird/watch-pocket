@@ -1,5 +1,8 @@
 import { hierarchy, pack, treemap, treemapSquarify, type HierarchyNode, type HierarchyRectangularNode } from 'd3-hierarchy';
+import { isDark, logoFill, logoReads, pickLogo, type LogoFile, type LogoSet } from './logo';
 import { metrics, type Metric } from './metrics';
+
+export type { LogoFile } from './logo';
 
 // Everything here works on plain data, with no content collections, so the page can run the same layout
 // again in the browser when a reader regroups, resizes or filters the chart.
@@ -11,19 +14,13 @@ export const boxFor = (shape: Shape): Box => (shape === 'circles' ? { width: 100
 // Room at the top of each bucket for its name, given only where the bucket is big enough to spare it.
 const header = 20;
 
-// One version of a brand's logo: its file and its drawn size, for its shape.
-// `background` is the solid color the file brings along, if any, and `onBlack` whether it reads on black.
-export type LogoFile = { src: string; width: number; height: number; background?: string; onBlack?: boolean };
-
 // A brand as the chart sees it.
 export type Point = {
   id: string;
   name: string;
   href: string;
-  // Its logo, and the logo's name and symbol alone, of those it has. Parts are cropped at the logo's own scale.
-  // `onDark` and `logomarkOnDark` are the whole logo's and the logomark's versions for a dark background, and
-  // `background` the color they are drawn on, where the brand has one.
-  logos: { whole?: LogoFile; wordmark?: LogoFile; logomark?: LogoFile; onDark?: LogoFile; logomarkOnDark?: LogoFile; background?: string };
+  // Its logo and the parts cropped from it, shown by the rules in src/lib/logo.ts.
+  logos: LogoSet;
   // The bucket it sits in under each grouping, by grouping id. Several for a brand with part-owners.
   buckets: Record<string, string[]>;
   // The group making it under license. For a measure that counts licensed brands, it sits there instead of with its owner.
@@ -295,24 +292,11 @@ const position = ({ x, y, width, height }: Cell, box: Box) =>
 // What fits in a cell, judged in layout units (about a pixel each at full width).
 const showsLogo = ({ width, height }: Cell) => width >= 70 && height >= 40;
 
-// The height in pixels a logo's name must be drawn at to read. Where a logo has no wordmark to say how tall its
-// name is within it, the whole logo must be drawn at `readableWhole` instead, which allows for a name a tenth of it.
-const readable = 12;
-const readableWhole = 100;
-
-// The version of a logo to show in a `width` by `height` pixel space: the whole logo where its name is drawn
-// large enough to read, and otherwise its logomark, unless its wordmark would be drawn at twice the area there, as a
-// wide space suits the name and a symbol reads smaller than a name. An image is shrunk or grown to fill the space.
-function pickLogo({ whole, wordmark, logomark }: Point['logos'], width: number, height: number) {
-  if (!whole) return undefined;
-  const scale = (logo: LogoFile) => Math.min(width / logo.width, height / logo.height);
-  // A wordmark cropped at the logo's scale is as tall as the name is within the logo.
-  const name = wordmark ? wordmark.height * scale(whole) : (whole.height * scale(whole) * readable) / readableWhole;
-  if ((!wordmark && !logomark) || name >= readable) return whole;
-  const area = (logo: LogoFile) => logo.width * logo.height * scale(logo) ** 2;
-  if (!wordmark || !logomark) return wordmark ?? logomark;
-  return area(wordmark) >= 2 * area(logomark) ? wordmark : logomark;
-}
+// The version of a logo shown in a space, where one reads there; otherwise the name stands in.
+const shownLogo = (logos: Point['logos'], width: number, height: number) => {
+  const logo = pickLogo(logos, width, height);
+  return logo && logoReads(logos, logo, width, height) ? logo : undefined;
+};
 const showsName = ({ width, height }: Cell) => width >= 46 && height >= 16;
 
 // The lines of a brand's tooltip: name, then where it sits, then its figures.
@@ -422,7 +406,7 @@ function renderTile(cell: Cell, layout: Layout, scale: number) {
   const more = preview.length - shown.length;
   // A plate's logo is drawn inside its padding: 8% of its width each side and 6% of its height top and bottom.
   const plates = shown.map((point) => {
-    const logo = forDark(point.logos, pickLogo(point.logos, grid.width * 0.84, grid.height * 0.88));
+    const logo = shownLogo(point.logos, grid.width * 0.84, grid.height * 0.88);
     const fill = fillOf(point.logos, logo);
     const classes = classList('plate', !logo && 'named', fill.dark && 'on-dark');
     return logo
@@ -478,28 +462,15 @@ const inCircle = (logo: LogoFile, diameter: number, margin = 0.8) => {
 };
 
 // A brand's logo in its circle: the whole logo where its name reads, or else its name or symbol alone where that
-// reads, by the same rules as a rectangle. Where none of them reads, nothing, so the circle shows the brand's name or
-// initials instead. Sized as a share of the circle, so it scales with the chart.
-const readableMark = 14;
+// reads, by the same rules as anywhere else. Where none of them reads, nothing, so the circle shows the brand's name
+// or initials instead. Sized as a share of the circle, so it scales with the chart.
 function circleLogo(logos: Point['logos'], diameter: number) {
-  const { whole, wordmark, logomark } = logos;
-  if (!whole) return undefined;
-  const room = inCircle(whole, diameter);
+  if (!logos.whole) return undefined;
+  const room = inCircle(logos.whole, diameter);
   const logo = pickLogo(logos, room.width, room.height);
   if (!logo) return undefined;
-  // The logo as drawn: fitted in the circle, grown if it is smaller than that.
   const box = inCircle(logo, diameter);
-  const scale = Math.min(box.width / logo.width, box.height / logo.height);
-  const height = logo.height * scale;
-  const reads =
-    logo === logomark
-      ? Math.max(logo.width, logo.height) * scale >= readableMark
-      : logo === wordmark
-        ? height >= readable
-        : // The whole logo, picked with no part to fall back on: its name is taken to be a tenth of it, as in pickLogo.
-          Boolean(wordmark) || Boolean(logomark) || (height * readable) / readableWhole >= readable;
-  if (!reads) return undefined;
-  return circleImage(forDark(logos, logo)!);
+  return logoReads(logos, logo, box.width, box.height) ? circleImage(logo) : undefined;
 }
 
 const circleImage = (logo: LogoFile) => {
@@ -508,7 +479,7 @@ const circleImage = (logo: LogoFile) => {
   return { logo, html };
 };
 
-// A bucket circle's label across its top: its logo on a white plate where it has one that reads there,
+// A bucket circle's label across its top: its logo on its fill where it has one that reads there,
 // and otherwise its name.
 function bucketLabel(cell: Cell, scale: number) {
   const { bucket } = cell;
@@ -521,9 +492,10 @@ function bucketLabel(cell: Cell, scale: number) {
   const chord = 2 * Math.sqrt(Math.max(0, foot * (diameter - foot)));
   const width = Math.min(diameter * 0.5, chord * 0.9);
   // Below 24px tall a group's logo is too small to read, so the name stands in for it.
-  const logo = bucket.logos && height >= 24 ? pickLogo(bucket.logos, width - 12, height - 6) : undefined;
+  const logo = bucket.logos && height >= 24 ? shownLogo(bucket.logos, width - 12, height - 6) : undefined;
   if (logo) {
-    return `<button type="button" class="bucket-name logo" style="height:${height.toFixed(1)}px;max-width:${width.toFixed(1)}px" ${label}><img src="${escape(logo.src)}" alt="" loading="lazy"></button>`;
+    const fill = fillOf(bucket.logos!, logo);
+    return `<button type="button" class="bucket-name logo" style="height:${height.toFixed(1)}px;max-width:${width.toFixed(1)}px;${fill.style}" ${label}><img src="${escape(logo.src)}" alt="" loading="lazy"></button>`;
   }
   return `<button type="button" class="bucket-name" ${label}>${escape(bucket.name)}</button>`;
 }
@@ -533,32 +505,11 @@ function circleName(name: string, inner: number) {
   return fitName(name, inner - 2, inner - 2, 15) ? brandName(name, inner - 2, inner - 2) : brandInitials(name, inner);
 }
 
-// The logo to draw in place of `shown`: the brand's version for a dark background where the whole logo or the
-// logomark would otherwise need white, or brings its own light box along, so the cell can stay black.
-const forDark = (logos: Point['logos'], shown?: LogoFile) => {
-  if (!shown || logos.background || (shown.onBlack && !shown.background)) return shown;
-  const dark = shown === logos.whole ? logos.onDark : shown === logos.logomark ? logos.logomarkOnDark : undefined;
-  return dark ?? shown;
-};
-
-// A brand's fill, in a cell, circle or plate: the color its logo is drawn on where the brand records one, or the
-// solid background the logo shown brings along, so the two meet without an edge; and otherwise black, unless the
-// logo shown was drawn for a light page and needs white.
-const brandFill = (logos: Point['logos'], shown?: LogoFile) =>
-  logos.background ?? shown?.background ?? (shown && !shown.onBlack ? '#ffffff' : '#000000');
-// The fill as a style and the class that sets light text on a dark one.
+// A brand's fill, in a cell, circle or plate, by the rule in src/lib/logo.ts, as a style and the class that sets
+// light text on a dark one.
 const fillOf = (logos: Point['logos'], shown?: LogoFile) => {
-  const fill = brandFill(logos, shown);
+  const fill = logoFill(logos, shown);
   return { style: `background:${fill}`, dark: isDark(fill) };
-};
-
-// Whether a `#rrggbb` color is dark enough to want light text on it, by its relative luminance.
-const isDark = (hex: string) => {
-  const [r, g, b] = [1, 3, 5].map((at) => {
-    const channel = parseInt(hex.slice(at, at + 2), 16) / 255;
-    return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
-  });
-  return 0.2126 * r + 0.7152 * g + 0.0722 * b < 0.18;
 };
 
 // The cells as circles, each drawn in its square. What a circle says is fitted to the square inside it, whose
@@ -596,9 +547,9 @@ function renderCircles(layout: Layout, scale: number) {
       const lines = tipLines(cell, layout);
       const logo = circleLogo(point.logos, diameter);
       const content = logo?.html || circleName(point.name, inner);
-      const fill = brandFill(point.logos, logo?.logo);
-      const classes = classList('brand', 'round', cell.licensed && 'licensed', isDark(fill) && 'on-dark');
-      return `<a class="${classes}" style="${style};background:${fill}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
+      const fill = fillOf(point.logos, logo?.logo);
+      const classes = classList('brand', 'round', cell.licensed && 'licensed', fill.dark && 'on-dark');
+      return `<a class="${classes}" style="${style};${fill.style}" href="${escape(point.href)}" aria-label="${escape(lines.join(', '))}" data-tip="${escape(lines.join('\n'))}">${content}</a>`;
     })
     .join('');
 }
@@ -624,7 +575,7 @@ export function renderCells(layout: Layout, scale = 1) {
       const point = cell.point!;
       const lines = tipLines(cell, layout);
       // A cell's logo is drawn in at most 80% of its width and 60% of its height.
-      const logo = showsLogo(cell) ? forDark(point.logos, pickLogo(point.logos, cell.width * scale * 0.8, cell.height * scale * 0.6)) : undefined;
+      const logo = showsLogo(cell) ? shownLogo(point.logos, cell.width * scale * 0.8, cell.height * scale * 0.6) : undefined;
       const content = logo
         ? `<img src="${escape(logo.src)}" alt="" loading="lazy">`
         : brandName(point.name, cell.width * scale - 6, cell.height * scale - 6);

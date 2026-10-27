@@ -1,0 +1,20 @@
+name: "Sumo"
+line: seiko/prospex
+style: dive
+website: https://www.seikowatches.com/us-en/products/prospex/sea
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/sea
+  - https://www.seikowatches.com/us-en/products/prospex/spb177j1
+references:
+  - ref: SPB177
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/prospex/SPB177J1/SPB177J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb177j1
+    price: { amount: 900, currency: USD, year: 2026 }
+    caseSize: 45
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R35"
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]

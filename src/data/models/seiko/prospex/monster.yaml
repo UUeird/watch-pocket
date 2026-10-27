@@ -1,0 +1,33 @@
+name: "Monster"
+line: seiko/prospex
+style: dive
+website: https://www.seikowatches.com/us-en/products/prospex/sea
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/sea
+  - https://www.seikowatches.com/us-en/products/prospex/srpe27
+  - https://www.seikowatches.com/us-en/products/prospex/srpg57
+references:
+  - ref: SRPE27
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/22/SRPE27K1/SRPE27K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpe27
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 42.4
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPG57
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/39/SRPG57K1/SRPG57K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpg57
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 42.4
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]

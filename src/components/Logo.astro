@@ -1,26 +1,24 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-
-type Data = CollectionEntry<'brands' | 'groups'>['data'];
+import BrandLogo from './BrandLogo.astro';
 
 interface Props {
   name: string;
-  data: Pick<Data, 'logo' | 'logoCredit' | 'logomark' | 'logomarkCredit' | 'wordmark' | 'wordmarkCredit' | 'logoOnDark' | 'logoOnDarkCredit' | 'logomarkOnDark' | 'logomarkOnDarkCredit'>;
+  record: CollectionEntry<'brands'> | CollectionEntry<'groups'>;
 }
 
-const { name, data } = Astro.props;
+const { name, record } = Astro.props;
+const { data } = record;
 const { logo } = data;
-// The logo's credit, then those of its parts taken from other files, which charts show in its place.
+// The logo's credit, then those of its parts taken from other files, which are shown in its place where it is small.
 const credits = [
   { label: 'Logo', credit: data.logoCredit },
   { label: 'Logomark', credit: data.logomark && data.logomarkCredit },
   { label: 'Wordmark', credit: data.wordmark && data.wordmarkCredit },
-  { label: 'Logo for dark backgrounds', credit: data.logoOnDark && data.logoOnDarkCredit },
-  { label: 'Logomark for dark backgrounds', credit: data.logomarkOnDark && data.logomarkOnDarkCredit },
 ].filter((entry) => logo && entry.credit);
 ---
 
-{logo && <img class="logo" src={logo.src} width={logo.width} height={logo.height} alt={`${name} logo`} />}
+{logo && <BrandLogo record={record} width={216} height={72} class="logo" alt={`${name} logo`} loading="eager" />}
 {
   credits.map(({ label, credit }) => (
     <p class="logo-credit">

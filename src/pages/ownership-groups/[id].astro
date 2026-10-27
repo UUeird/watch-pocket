@@ -28,7 +28,7 @@ const licenses = licensesOf(group.id);
 ---
 
 <Base title={name}>
-  <Logo name={name} data={group.data} />
+  <Logo name={name} record={group} />
   <h1>{name}</h1>
   <p class="lede">{describeControl(group)}</p>
 

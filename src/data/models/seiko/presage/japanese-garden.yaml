@@ -1,0 +1,59 @@
+name: "Inspired by Japanese Gardens"
+line: seiko/presage
+style: dress
+website: https://www.seikowatches.com/us-en/products/presage/japanesegarden
+sources:
+  - https://www.seikowatches.com/us-en/products/presage/japanesegarden
+  - https://www.seikowatches.com/us-en/products/presage/hcb007j1
+  - https://www.seikowatches.com/us-en/products/presage/hcb008j1
+  - https://www.seikowatches.com/us-en/products/presage/ssa463j1
+  - https://www.seikowatches.com/us-en/products/presage/ssa464j1
+references:
+  - ref: HCB007
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/06/16/21/11/HCB007J1/HCB007J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcb007j1
+    price: { amount: 725, currency: USD, year: 2026 }
+    caseSize: 41.8
+    metals: [steel]
+    crystal: sapphire
+    movement: "4R71"
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HCB008
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/06/17/21/10/HCB008J1/HCB008J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcb008j1
+    price: { amount: 675, currency: USD, year: 2026 }
+    caseSize: 41.8
+    metals: [steel]
+    crystal: sapphire
+    movement: "4R71"
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSA463
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/11/21/21/12/SSA463J1/SSA463J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/ssa463j1
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 41.8
+    metals: [steel]
+    crystal: sapphire
+    movement: "4R39"
+    complications: []
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSA464
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/11/21/21/12/SSA464J1/SSA464J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/ssa464j1
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 41.8
+    metals: [steel]
+    crystal: sapphire
+    movement: "4R39"
+    complications: []
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]

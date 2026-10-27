@@ -1,0 +1,124 @@
+name: "Speedtimer Solar Chronograph"
+line: seiko/prospex
+style: chronograph
+website: https://www.seikowatches.com/us-en/products/prospex/speedtimer
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/speedtimer
+  - https://www.seikowatches.com/us-en/products/prospex/hbj001
+  - https://www.seikowatches.com/us-en/products/prospex/hbj002
+  - https://www.seikowatches.com/us-en/products/prospex/hbj003
+  - https://www.seikowatches.com/us-en/products/prospex/hbj004
+  - https://www.seikowatches.com/us-en/products/prospex/hbj005
+  - https://www.seikowatches.com/us-en/products/prospex/ssc957
+  - https://www.seikowatches.com/us-en/products/prospex/ssc961
+  - https://www.seikowatches.com/us-en/products/prospex/ssc963
+  - https://www.seikowatches.com/us-en/products/prospex/ssc965
+references:
+  - ref: HBJ001
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/10/21/16/HBJ001P1/HBJ001P1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbj001
+    price: { amount: 775, currency: USD, year: 2026 }
+    caseSize: 41.4
+    metals: [steel]
+    crystal: sapphire
+    movement: "V192"
+    complications: [date, chronograph, power-reserve]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBJ002
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/10/21/16/HBJ002P1/HBJ002P1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbj002
+    price: { amount: 775, currency: USD, year: 2026 }
+    caseSize: 41.4
+    metals: [steel]
+    crystal: sapphire
+    movement: "V192"
+    complications: [date, chronograph, power-reserve]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBJ003
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/10/21/16/HBJ003P1/HBJ003P1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbj003
+    price: { amount: 775, currency: USD, year: 2026 }
+    caseSize: 41.4
+    metals: [steel]
+    crystal: sapphire
+    movement: "V192"
+    complications: [date, chronograph, power-reserve]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBJ004
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/10/21/16/HBJ004P1/HBJ004P1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbj004
+    price: { amount: 775, currency: USD, year: 2026 }
+    caseSize: 41.4
+    metals: [steel]
+    crystal: sapphire
+    movement: "V192"
+    complications: [date, chronograph, power-reserve]
+    dials: [{ color: yellow }]
+    bracelets: [{ type: bracelet }]
+  - ref: HBJ005
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/10/21/16/HBJ005P1/HBJ005P1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbj005
+    price: { amount: 775, currency: USD, year: 2026 }
+    caseSize: 41.4
+    metals: [steel]
+    crystal: sapphire
+    movement: "V192"
+    complications: [date, chronograph, power-reserve]
+    dials: [{ color: purple }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSC957
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/07/17/21/16/SSC957P1/SSC957P1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/ssc957
+    price: { amount: 1000, currency: USD, year: 2026 }
+    caseSize: 41.4
+    metals: [steel]
+    crystal: sapphire
+    movement: "V192"
+    complications: [date, chronograph, power-reserve]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSC961
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/12/18/21/16/SSC961P1/SSC961P1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/ssc961
+    price: { amount: 750, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "V192"
+    complications: [date, chronograph, power-reserve]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSC963
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/12/19/21/06/SSC963P1/SSC963P1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/ssc963
+    price: { amount: 750, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "V192"
+    complications: [date, chronograph, power-reserve]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSC965
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/12/19/21/06/SSC965P1/SSC965P1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/ssc965
+    price: { amount: 750, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "V192"
+    complications: [date, chronograph, power-reserve]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]

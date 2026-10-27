@@ -1,4 +1,5 @@
 ---
+import BrandLogo from '../../components/BrandLogo.astro';
 import CountryLink from '../../components/CountryLink.astro';
 import Filters from '../../components/Filters.astro';
 import FoundingChart from '../../components/FoundingChart.astro';
@@ -103,9 +104,7 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
               >
                 <td>
                   <div class="brand">
-                    <span class="brand-logo">
-                      {logo && <img src={logo.src} width={logo.width} height={logo.height} alt="" loading="lazy" />}
-                    </span>
+                    {logo ? <BrandLogo record={brand} width={82} height={22} class="brand-logo" /> : <span class="brand-logo" />}
                     <a href={href(`/brands/${brand.id}/`)}>{brand.data.name}</a>
                   </div>
                 </td>
@@ -256,23 +255,15 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
     gap: 12px;
   }
 
-  /* A fixed slot, empty for a brand with no logo, so the names line up. */
-  .brand-logo {
+  /* A fixed slot, so the names line up: each logo on its fill (see src/lib/logo.ts), empty for a brand with none. */
+  .brand :global(.brand-logo) {
     display: flex;
     flex: none;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
     width: 88px;
     height: 28px;
-  }
-
-  /* Logos are drawn for a light page, so each sits on a white plate in both color schemes. */
-  .brand-logo img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
     padding: 3px;
-    background: #ffffff;
   }
 </style>

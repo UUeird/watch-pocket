@@ -47,16 +47,16 @@ const logoFields = (image: SchemaContext['image']) => ({
   wordmark: image().optional(),
   wordmarkCredit: credit,
   // The brand's own version of its whole logo for a dark background (often all white), where the `logo` is dark and
-  // would be lost on black. The chart shows it on black in place of the `logo`. Needs its own credit when it comes
-  // from another file.
+  // would be lost on black. Logos are shown on white for now (see src/lib/logo.ts), so this is kept for a dark view
+  // rather than shown. Needs its own credit when it comes from another file.
   logoOnDark: image().optional(),
   logoOnDarkCredit: credit,
-  // Its symbol alone in the same version, shown on black in place of the `logomark`. One cut from the `logoOnDark`
-  // file is covered by `logoOnDarkCredit`.
+  // Its symbol alone in the same version, kept likewise. One cut from the `logoOnDark` file is covered by
+  // `logoOnDarkCredit`.
   logomarkOnDark: image().optional(),
   logomarkOnDarkCredit: credit,
   // The color the logo is drawn on, where the brand sets it on one (Rolex's green), as `#rrggbb`. The logo files
-  // must read on it. Without one, the chart draws a logo on black, or on white where it is dark.
+  // must read on it. Without one, a logo is drawn on white (see src/lib/logo.ts).
   logoBackground: z
     .string()
     .regex(/^#[0-9a-fA-F]{6}$/, 'A `logoBackground` is a color as `#rrggbb`.')
@@ -290,6 +290,15 @@ const models = defineCollection({
     z.object({
       name: z.string(),
       line: reference('lines'),
+      // What the watch is designed for, one per model. `showpiece` is for a watch whose point is its movement or
+      // art rather than a use; `jewelry` for one built around gem-setting.
+      style: z
+        .enum(['dive', 'chronograph', 'travel', 'field', 'pilot', 'sport', 'everyday', 'dress', 'jewelry', 'showpiece', 'smartwatch'])
+        .optional(),
+      // What the watch is themed on or made for, where it has one: a sport, an activity, a subject.
+      theme: z
+        .enum(['motor-racing', 'sailing', 'aviation', 'space', 'exploration', 'tennis', 'soccer', 'cycling', 'running', 'music'])
+        .optional(),
       // Other brands a special edition is made with, e.g. Hermès for Apple Watch Hermès.
       collaborators: z.array(reference('brands')).default([]),
       // The maker's own page for this model. Linked from the model's page, and where its fallback photo is found
@@ -343,6 +352,21 @@ const models = defineCollection({
             crystal: z.enum(['sapphire', 'acrylic', 'mineral']).optional(),
             // The calibre name: an identifier, not a category.
             movement: z.string().optional(),
+            // What the watch does beyond hours, minutes and seconds. `[]` means it tells the time only; leaving it
+            // out means not recorded. `flyback` and `split-seconds` are kinds of chronograph, so list `chronograph`
+            // with them. Left out for smartwatches, whose functions are software.
+            complications: z
+              .array(
+                z.enum([
+                  'date', 'day', 'chronograph', 'flyback', 'split-seconds', 'gmt', 'world-time', 'tourbillon', 'moonphase',
+                  'power-reserve', 'annual-calendar', 'perpetual-calendar', 'minute-repeater', 'alarm',
+                ]),
+              )
+              .refine((list) => new Set(list).size === list.length, { message: 'A complication is listed twice.' })
+              .refine((list) => !list.some((entry) => entry === 'flyback' || entry === 'split-seconds') || list.includes('chronograph'), {
+                message: 'A `flyback` or `split-seconds` reference also lists `chronograph`.',
+              })
+              .optional(),
             // Options offered under this one reference number. Some brands give each its own reference instead.
             dials: z.array(z.object({ color, name: z.string().optional() })).default([]),
             bracelets: z
