@@ -1,5 +1,6 @@
 name: Diver 300M
 line: omega/seamaster
+style: dive
 references:
   - ref: 210.30.42.20.01.001
     periods: [{ from: 2018 }]

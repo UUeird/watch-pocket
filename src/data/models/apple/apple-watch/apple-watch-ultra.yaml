@@ -1,5 +1,6 @@
 name: Apple Watch Ultra
 line: apple/apple-watch
+style: smartwatch
 sources:
   - https://support.apple.com/en-us/108056
 references:

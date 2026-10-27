@@ -41,7 +41,8 @@ interface Props {
 }
 
 const { model, line, brand, collaborators } = Astro.props;
-const { name, references, sources, website } = model.data;
+const { name, references, sources, website, style, theme } = model.data;
+const capitalize = (value: string) => value.charAt(0).toUpperCase() + value.slice(1);
 ---
 
 <Base title={`${brand.data.name} ${name}`}>
@@ -50,7 +51,8 @@ const { name, references, sources, website } = model.data;
     <div>
       <h1>{name}</h1>
       <p class="lede">
-        Model · {plural(references.length, 'reference')}
+        {['Model', style, theme].filter(Boolean).map((part) => capitalize(label(part!))).join(' · ')} ·{' '}
+        {plural(references.length, 'reference')}
         {
           collaborators.map((collaborator) => (
             <>

@@ -1,5 +1,6 @@
 name: Submariner Date
 line: rolex/submariner
+style: dive
 photos:
   - file: ../../../photos/rolex/submariner/submariner-date.jpg
     credit:

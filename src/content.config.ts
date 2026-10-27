@@ -290,6 +290,15 @@ const models = defineCollection({
     z.object({
       name: z.string(),
       line: reference('lines'),
+      // What the watch is designed for, one per model. `showpiece` is for a watch whose point is its movement or
+      // art rather than a use; `jewelry` for one built around gem-setting.
+      style: z
+        .enum(['dive', 'chronograph', 'travel', 'field', 'pilot', 'sport', 'everyday', 'dress', 'jewelry', 'showpiece', 'smartwatch'])
+        .optional(),
+      // What the watch is themed on or made for, where it has one: a sport, an activity, a subject.
+      theme: z
+        .enum(['motor-racing', 'sailing', 'aviation', 'space', 'exploration', 'tennis', 'soccer', 'cycling', 'running', 'music'])
+        .optional(),
       // Other brands a special edition is made with, e.g. Hermès for Apple Watch Hermès.
       collaborators: z.array(reference('brands')).default([]),
       // The maker's own page for this model. Linked from the model's page, and where its fallback photo is found

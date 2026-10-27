@@ -1,5 +1,6 @@
 name: Submariner
 line: rolex/submariner
+style: dive
 references:
   - ref: "114060"
     periods: [{ from: 2012, to: 2020 }]

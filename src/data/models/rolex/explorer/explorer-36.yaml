@@ -1,5 +1,7 @@
 name: Explorer 36
 line: rolex/explorer
+style: field
+theme: exploration
 photos:
   - file: ../../../photos/rolex/explorer/explorer-36.png
     credit:

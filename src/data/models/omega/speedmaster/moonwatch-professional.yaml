@@ -1,5 +1,7 @@
 name: Moonwatch Professional
 line: omega/speedmaster
+style: chronograph
+theme: space
 references:
   - ref: 311.30.42.30.01.005
     photos:

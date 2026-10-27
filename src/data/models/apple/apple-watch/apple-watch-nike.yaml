@@ -1,5 +1,7 @@
 name: Apple Watch Nike
 line: apple/apple-watch
+style: smartwatch
+theme: running
 collaborators: [nike]
 website: https://www.apple.com/apple-watch-nike/
 photos:

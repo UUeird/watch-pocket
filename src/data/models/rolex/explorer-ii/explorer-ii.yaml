@@ -1,5 +1,7 @@
 name: Explorer II
 line: rolex/explorer-ii
+style: field
+theme: exploration
 photos:
   - file: ../../../photos/rolex/explorer-ii/explorer-ii.jpg
     credit:
