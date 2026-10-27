@@ -1,0 +1,59 @@
+name: "Marinemaster 1965 Heritage"
+line: seiko/prospex
+style: dive
+website: https://www.seikowatches.com/us-en/products/prospex/marinemaster
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/marinemaster
+  - https://www.seikowatches.com/us-en/products/prospex/sje099j1
+  - https://www.seikowatches.com/us-en/products/prospex/sje101j1
+  - https://www.seikowatches.com/us-en/products/prospex/sje117j1
+  - https://www.seikowatches.com/us-en/products/prospex/sje119j1
+references:
+  - ref: SJE099
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/10/16/11/56/SJE099J1/SJE099J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sje099j1
+    price: { amount: 2800, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6L37"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SJE101
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/10/16/11/56/SJE101J1/SJE101J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sje101j1
+    price: { amount: 2800, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6L37"
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SJE117
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/05/28/21/17/SJE117J1/SJE117J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sje117j1
+    price: { amount: 2800, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6L37"
+    complications: [date]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: SJE119
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/05/28/21/18/SJE119J1/SJE119J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sje119j1
+    price: { amount: 2800, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6L37"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]

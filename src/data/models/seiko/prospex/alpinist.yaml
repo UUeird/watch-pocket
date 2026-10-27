@@ -1,0 +1,74 @@
+name: "Alpinist"
+line: seiko/prospex
+style: field
+theme: exploration
+website: https://www.seikowatches.com/us-en/products/prospex/core
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/core
+  - https://www.seikowatches.com/us-en/products/prospex/spb210j1
+  - https://www.seikowatches.com/us-en/products/prospex/spb503j1
+  - https://www.seikowatches.com/us-en/products/prospex/spb505j1
+  - https://www.seikowatches.com/us-en/products/prospex/spb507j1
+  - https://www.seikowatches.com/us-en/products/prospex/hbc006j1
+references:
+  - ref: SPB210
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/prospex/SPB210J1/SPB210J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb210j1
+    price: { amount: 775, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: sapphire
+    movement: "6R35"
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SPB503
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/09/03/21/04/SPB503J1/SPB503J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb503j1
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB505
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/09/03/21/05/SPB505J1/SPB505J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb505j1
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SPB507
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/09/03/21/05/SPB507J1/SPB507J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/spb507j1
+    price: { amount: 900, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HBC006
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/11/21/07/HBC006J1/HBC006J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/hbc006j1
+    price: { amount: 900, currency: USD, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "6R55"
+    complications: [date]
+    dials: [{ color: purple }]
+    bracelets: [{ type: leather-strap }]

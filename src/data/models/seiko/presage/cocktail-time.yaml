@@ -1,0 +1,376 @@
+name: "Cocktail Time"
+line: seiko/presage
+style: dress
+website: https://www.seikowatches.com/us-en/products/presage/cocktailtime
+sources:
+  - https://www.seikowatches.com/us-en/products/presage/cocktailtime
+  - https://www.seikowatches.com/us-en/products/presage/hcb001j1
+  - https://www.seikowatches.com/us-en/products/presage/hcb002j1
+  - https://www.seikowatches.com/us-en/products/presage/hcb003j1
+  - https://www.seikowatches.com/us-en/products/presage/srpb41j1
+  - https://www.seikowatches.com/us-en/products/presage/srpb43j1
+  - https://www.seikowatches.com/us-en/products/presage/srpb46j1
+  - https://www.seikowatches.com/us-en/products/presage/srpb77j9
+  - https://www.seikowatches.com/us-en/products/presage/srpd37j1
+  - https://www.seikowatches.com/us-en/products/presage/srpe15j1
+  - https://www.seikowatches.com/us-en/products/presage/srpe41j1
+  - https://www.seikowatches.com/us-en/products/presage/srpe43j1
+  - https://www.seikowatches.com/us-en/products/presage/srpe45j1
+  - https://www.seikowatches.com/us-en/products/presage/srpk15j1
+  - https://www.seikowatches.com/us-en/products/presage/srpk46j1
+  - https://www.seikowatches.com/us-en/products/presage/srpk48j1
+  - https://www.seikowatches.com/us-en/products/presage/srpl61j1
+  - https://www.seikowatches.com/us-en/products/presage/srpl63j1
+  - https://www.seikowatches.com/us-en/products/presage/srpl64j1
+  - https://www.seikowatches.com/us-en/products/presage/srpm06j1
+  - https://www.seikowatches.com/us-en/products/presage/sre007j1
+  - https://www.seikowatches.com/us-en/products/presage/sre009j1
+  - https://www.seikowatches.com/us-en/products/presage/sre010j1
+  - https://www.seikowatches.com/us-en/products/presage/sre017j1
+  - https://www.seikowatches.com/us-en/products/presage/sre018j1
+  - https://www.seikowatches.com/us-en/products/presage/sre020j1
+  - https://www.seikowatches.com/us-en/products/presage/srp839j1
+  - https://www.seikowatches.com/us-en/products/presage/srp841j1
+  - https://www.seikowatches.com/us-en/products/presage/ssa459j1
+references:
+  - ref: HCB001
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/25/21/20/HCB001J1/HCB001J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcb001j1
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 38.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: HCB002
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/25/21/20/HCB002J1/HCB002J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcb002j1
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 38.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HCB003
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/25/21/21/HCB003J1/HCB003J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/hcb003j1
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 38.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: brown }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SRPB41
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/presage/SRPB41J1/SRPB41J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpb41j1
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPB43
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/presage/SRPB43J1/SRPB43J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpb43j1
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SRPB46
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/presage/SRPB46J1/SRPB46J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpb46j1
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    caseColors: [{ color: rose-gold }]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: brown }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SRPB77
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/presage/SRPB77J9/SRPB77J9.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpb77j9
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPD37
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/presage/SRPD37J1/SRPD37J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpd37j1
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SRPE15
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/presage/SRPE15J1/SRPE15J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpe15j1
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPE41
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/presage/SRPE41J1/SRPE41J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpe41j1
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 38.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: red }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SRPE43
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/presage/SRPE43J1/SRPE43J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpe43j1
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 38.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SRPE45
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/presage/SRPE45J1/SRPE45J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpe45j1
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 38.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SRPK15
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/05/22/11/49/SRPK15J1/SRPK15J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpk15j1
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SRPK46
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/10/31/11/45/SRPK46J1/SRPK46J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpk46j1
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: gold }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPK48
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/10/31/11/45/SRPK48J1/SRPK48J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpk48j1
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: brown }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL61
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/04/28/21/26/SRPL61J1/SRPL61J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpl61j1
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL63
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/04/28/21/28/SRPL63J1/SRPL63J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpl63j1
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL64
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/04/28/21/29/SRPL64J1/SRPL64J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpl64j1
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPM06
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/11/19/21/18/SRPM06J1/SRPM06J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srpm06j1
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRE007
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/12/14/11/47/SRE007J1/SRE007J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/sre007j1
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 30.3
+    metals: [steel]
+    crystal: mineral
+    movement: "2R05"
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRE009
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/12/14/11/47/SRE009J1/SRE009J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/sre009j1
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 30.3
+    metals: [steel]
+    crystal: mineral
+    movement: "2R05"
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRE010
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/12/14/11/47/SRE010J1/SRE010J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/sre010j1
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 30.3
+    metals: [steel]
+    crystal: mineral
+    movement: "2R05"
+    complications: [date]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRE017
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/15/21/11/SRE017J1/SRE017J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/sre017j1
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 30.3
+    metals: [steel]
+    crystal: mineral
+    movement: "2R05"
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRE018
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/15/21/11/SRE018J1/SRE018J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/sre018j1
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 30.3
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "2R05"
+    complications: [date]
+    dials: [{ color: gold }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRE020
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/15/21/11/SRE020J1/SRE020J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/sre020j1
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 30.3
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "2R05"
+    complications: [date]
+    dials: [{ color: brown }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SRP839
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/presage/SRP839J1/SRP839J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srp839j1
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 33.8
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRP841
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/presage/SRP841J1/SRP841J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/srp841j1
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 33.8
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSA459
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/05/22/11/49/SSA459J1/SSA459J1.png
+      page: https://www.seikowatches.com/us-en/products/presage/ssa459j1
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: mineral
+    movement: "4R57"
+    complications: [date, power-reserve]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]

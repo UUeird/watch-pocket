@@ -1,0 +1,59 @@
+name: "Samurai"
+line: seiko/prospex
+style: dive
+website: https://www.seikowatches.com/us-en/products/prospex/sea
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/sea
+  - https://www.seikowatches.com/us-en/products/prospex/srpe33
+  - https://www.seikowatches.com/us-en/products/prospex/srpe37
+  - https://www.seikowatches.com/us-en/products/prospex/srpf03
+  - https://www.seikowatches.com/us-en/products/prospex/srpj93
+references:
+  - ref: SRPE33
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/22/SRPE33K1/SRPE33K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpe33
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 43.8
+    metals: [steel]
+    crystal: sapphire
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPE37
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/22/SRPE37K1/SRPE37K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpe37
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 43.8
+    metals: [steel]
+    crystal: sapphire
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: SRPF03
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/28/SRPF03K1/SRPF03K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpf03
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 43.8
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPJ93
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/04/28/11/49/SRPJ93K1/SRPJ93K1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/srpj93
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 43.8
+    metals: [steel]
+    crystal: sapphire
+    movement: "4R35"
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }]

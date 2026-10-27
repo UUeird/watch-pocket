@@ -1,0 +1,111 @@
+name: "Sea Quartz 34 mm"
+line: seiko/prospex
+style: everyday
+website: https://www.seikowatches.com/us-en/products/prospex/sea
+sources:
+  - https://www.seikowatches.com/us-en/products/prospex/sea
+  - https://www.seikowatches.com/us-en/products/prospex/sur595j1
+  - https://www.seikowatches.com/us-en/products/prospex/sur597j1
+  - https://www.seikowatches.com/us-en/products/prospex/sur605j1
+  - https://www.seikowatches.com/us-en/products/prospex/sur607j1
+  - https://www.seikowatches.com/us-en/products/prospex/sur608j1
+  - https://www.seikowatches.com/us-en/products/prospex/sur618j1
+  - https://www.seikowatches.com/us-en/products/prospex/sur620j1
+  - https://www.seikowatches.com/us-en/products/prospex/sur622j1
+references:
+  - ref: SUR595
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/18/21/09/SUR595J1/SUR595J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sur595j1
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N01"
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SUR597
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/18/21/09/SUR597J1/SUR597J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sur597j1
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N01"
+    complications: []
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SUR605
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/01/21/21/17/SUR605J1/SUR605J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sur605j1
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N01"
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SUR607
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/01/21/21/17/SUR607J1/SUR607J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sur607j1
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N01"
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SUR608
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/01/21/21/17/SUR608J1/SUR608J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sur608j1
+    price: { amount: 875, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N01"
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SUR618
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/18/21/09/SUR618J1/SUR618J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sur618j1
+    price: { amount: 1150, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N01"
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SUR620
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/18/21/09/SUR620J1/SUR620J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sur620j1
+    price: { amount: 1150, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N01"
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SUR622
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/18/21/09/SUR622J1/SUR622J1.png
+      page: https://www.seikowatches.com/us-en/products/prospex/sur622j1
+    price: { amount: 2950, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N01"
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
