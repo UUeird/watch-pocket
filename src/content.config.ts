@@ -47,16 +47,16 @@ const logoFields = (image: SchemaContext['image']) => ({
   wordmark: image().optional(),
   wordmarkCredit: credit,
   // The brand's own version of its whole logo for a dark background (often all white), where the `logo` is dark and
-  // would be lost on black. The chart shows it on black in place of the `logo`. Needs its own credit when it comes
-  // from another file.
+  // would be lost on black. Logos are shown on white for now (see src/lib/logo.ts), so this is kept for a dark view
+  // rather than shown. Needs its own credit when it comes from another file.
   logoOnDark: image().optional(),
   logoOnDarkCredit: credit,
-  // Its symbol alone in the same version, shown on black in place of the `logomark`. One cut from the `logoOnDark`
-  // file is covered by `logoOnDarkCredit`.
+  // Its symbol alone in the same version, kept likewise. One cut from the `logoOnDark` file is covered by
+  // `logoOnDarkCredit`.
   logomarkOnDark: image().optional(),
   logomarkOnDarkCredit: credit,
   // The color the logo is drawn on, where the brand sets it on one (Rolex's green), as `#rrggbb`. The logo files
-  // must read on it. Without one, the chart draws a logo on black, or on white where it is dark.
+  // must read on it. Without one, a logo is drawn on white (see src/lib/logo.ts).
   logoBackground: z
     .string()
     .regex(/^#[0-9a-fA-F]{6}$/, 'A `logoBackground` is a color as `#rrggbb`.')
