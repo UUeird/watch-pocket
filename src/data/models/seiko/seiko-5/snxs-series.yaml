@@ -1,0 +1,138 @@
+name: SNXS Series
+line: seiko/seiko-5
+style: everyday
+website: https://www.seikowatches.com/us-en/products/5sports/snxs-series
+sources:
+  - https://www.seikowatches.com/us-en/products/5sports/snxs-series
+  - https://www.seikowatches.com/us-en/products/5sports/srpk87
+  - https://www.seikowatches.com/us-en/products/5sports/srpk89
+  - https://www.seikowatches.com/us-en/products/5sports/srpk91
+  - https://www.seikowatches.com/us-en/products/5sports/srpl55
+  - https://www.seikowatches.com/us-en/products/5sports/srpl57
+  - https://www.seikowatches.com/us-en/products/5sports/srpl59
+  - https://www.seikowatches.com/us-en/products/5sports/sre021
+  - https://www.seikowatches.com/us-en/products/5sports/sre023
+  - https://www.seikowatches.com/us-en/products/5sports/sre024
+  - https://watchesbysjx.com/2024/04/seiko-5-sports-snxs-series.html
+  - https://mrstateless.com/seiko-5-sports-snxs-collection-grows-with-fresh-dial-colors/
+  - https://www.notebookcheck.net/Seiko-introduces-trio-of-new-automatic-stainless-steel-watches-with-compact-designs.1162632.0.html
+references:
+  - ref: SRPK87
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/03/29/21/12/SRPK87K1/SRPK87K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpk87
+    periods: [{ from: 2024 }]
+    price: { amount: 415, currency: USD, year: 2026 }
+    caseSize: 37.4
+    metals: [steel]
+    crystal: mineral
+    movement: 4R36
+    complications: [date, day]
+    dials: [{ color: blue, name: Navy }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPK89
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/03/29/21/12/SRPK89K1/SRPK89K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpk89
+    periods: [{ from: 2024 }]
+    price: { amount: 415, currency: USD, year: 2026 }
+    caseSize: 37.4
+    metals: [steel]
+    crystal: mineral
+    movement: 4R36
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPK91
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/03/29/21/12/SRPK91K1/SRPK91K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpk91
+    periods: [{ from: 2024 }]
+    price: { amount: 415, currency: USD, year: 2026 }
+    caseSize: 37.4
+    metals: [steel]
+    crystal: mineral
+    movement: 4R36
+    complications: [date, day]
+    dials: [{ color: white, name: Ivory }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL55
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/19/21/10/SRPL55K1/SRPL55K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpl55
+    periods: [{ from: 2025 }]
+    price: { amount: 415, currency: USD, year: 2026 }
+    caseSize: 37.4
+    metals: [steel]
+    crystal: mineral
+    movement: 4R36
+    complications: [date, day]
+    dials: [{ color: blue, name: Navy }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL57
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/19/21/10/SRPL57K1/SRPL57K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpl57
+    periods: [{ from: 2025 }]
+    price: { amount: 415, currency: USD, year: 2026 }
+    caseSize: 37.4
+    metals: [steel]
+    crystal: mineral
+    movement: 4R36
+    complications: [date, day]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL59
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/19/21/10/SRPL59K1/SRPL59K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpl59
+    periods: [{ from: 2025 }]
+    price: { amount: 415, currency: USD, year: 2026 }
+    caseSize: 37.4
+    metals: [steel]
+    crystal: mineral
+    movement: 4R36
+    complications: [date, day]
+    dials: [{ color: gold }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRE021
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/10/21/21/10/SRE021K1/SRE021K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/sre021
+    periods: [{ from: 2025 }]
+    price: { amount: 385, currency: USD, year: 2026 }
+    caseSize: 32
+    metals: [steel]
+    crystal: mineral
+    movement: 2R06
+    complications: [date, day]
+    dials: [{ color: blue, name: Navy }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRE023
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/10/21/21/10/SRE023K1/SRE023K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/sre023
+    periods: [{ from: 2025 }]
+    price: { amount: 385, currency: USD, year: 2026 }
+    caseSize: 32
+    metals: [steel]
+    crystal: mineral
+    movement: 2R06
+    complications: [date, day]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRE024
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/10/21/21/11/SRE024K1/SRE024K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/sre024
+    periods: [{ from: 2025 }]
+    price: { amount: 415, currency: USD, year: 2026 }
+    caseSize: 32
+    metals: [steel]
+    # Its bezel and center bracelet links are gold-toned.
+    bezel: { colors: [gold] }
+    crystal: mineral
+    movement: 2R06
+    complications: [date, day]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
