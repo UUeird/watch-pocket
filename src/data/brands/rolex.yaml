@@ -10,6 +10,7 @@ logomarkCredit:
 origin: Switzerland
 periods: [{ from: 1905 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: rolex-sa
     from: 1905
@@ -21,3 +22,5 @@ revenue:
     sources:
       - https://revolutionwatch.com/what-we-can-learn-from-morgan-stanleys-ninth-annual-swiss-watch-report/
       - https://www.loupe.watch/watch-guides/morgan-stanley-watch-report-2025
+sources:
+  - https://en.wikipedia.org/wiki/Rolex

@@ -8,7 +8,9 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1884 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: victorinox
 sources:
   - https://www.wikidata.org/wiki/Q503405
+  - https://en.wikipedia.org/wiki/Victorinox

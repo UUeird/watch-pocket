@@ -7,8 +7,11 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1830 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: richemont
     from: 1988
 sources:
   - https://www.wikidata.org/wiki/Q138109
+  - https://en.wikipedia.org/wiki/Baume_%26_Mercier
+  - https://www.wempe.com/en-int/watches/baume-mercier/hampton/hampton-medium-quartz-m0a-10740

@@ -6,8 +6,11 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1874 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches, movements]
 ownership:
   - owner: richemont
     from: 1988
 sources:
   - https://www.wikidata.org/wiki/Q658961
+  - https://en.wikipedia.org/wiki/Piaget_SA
+  - https://www.wempe.com/en-int/watches/piaget/possession/possession-g0a48090

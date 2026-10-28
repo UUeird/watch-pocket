@@ -7,9 +7,12 @@ origin: Germany
 control: private
 periods: [{ from: 1861 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 sources:
   - https://en.wikipedia.org/wiki/Junghans
   - https://www.wikidata.org/wiki/Q560976
+  - https://www.spliedt.de/en/products/max-bill-automatic-neu-2025-1
+  - https://www.uhrcenter.de/en/watches/junghans/quarzuhr/
 independent:
   sources:
     - https://en.wikipedia.org/wiki/Junghans

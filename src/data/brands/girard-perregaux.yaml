@@ -7,6 +7,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1791 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: kering
     from: 2011
@@ -15,3 +16,5 @@ ownership:
     from: 2022
 sources:
   - https://www.wikidata.org/wiki/Q676416
+  - https://en.wikipedia.org/wiki/Girard-Perregaux
+  - https://www.girard-perregaux.com/uk_en/80189d11a431-11a.html

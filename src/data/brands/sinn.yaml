@@ -7,6 +7,7 @@ origin: Germany
 control: private
 periods: [{ from: 1961 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 sources:
   - https://en.wikipedia.org/wiki/Sinn_(watchmaker)
 independent:

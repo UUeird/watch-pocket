@@ -7,6 +7,7 @@ origin: Germany
 control: private
 periods: [{ from: 1990 }]
 segment: mid-range
+makes: [mechanical-watches]
 sources:
   - https://en.wikipedia.org/wiki/Nomos_Glash%C3%BCtte
 independent:

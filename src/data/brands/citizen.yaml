@@ -6,7 +6,10 @@ logoCredit:
 origin: Japan
 periods: [{ from: 1918 }]
 segment: broad
+makes: [mechanical-watches, quartz-watches, smartwatches]
 ownership:
   - owner: citizen
 sources:
   - https://en.wikipedia.org/wiki/Citizen_Watch
+  - https://www.citizenwatch.com/us/en/product/NJ0150-56W
+  - https://9to5google.com/2020/11/17/the-cz-smart-is-citizens-first-wear-os-watch-priced-at-395-w-wear-3100/

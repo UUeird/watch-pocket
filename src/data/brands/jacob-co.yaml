@@ -3,8 +3,10 @@ origin: United States
 control: private
 periods: [{ from: 1986 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 sources:
   - https://en.wikipedia.org/wiki/Jacob_&_Co
+  - https://www.exquisitetimepieces.com/jacob-co-brilliant-mystery-diamonds-white-gold-strap-38mm-bm526-30-bd-bd-a.html
 revenue:
   - year: 2025
     amount: 180000000

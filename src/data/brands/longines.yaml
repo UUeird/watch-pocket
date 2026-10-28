@@ -12,6 +12,7 @@ logomarkCredit:
 origin: Switzerland
 periods: [{ from: 1832 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: swatch-group
     from: 1983
@@ -23,3 +24,6 @@ revenue:
     sources:
       - https://revolutionwatch.com/what-we-can-learn-from-morgan-stanleys-ninth-annual-swiss-watch-report/
       - https://www.loupe.watch/watch-guides/morgan-stanley-watch-report-2025
+sources:
+  - https://en.wikipedia.org/wiki/Longines
+  - https://www.longines.com/en-gb/suggestions/mens-watches/mens-quartz-watches

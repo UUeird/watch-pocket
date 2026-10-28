@@ -7,7 +7,9 @@ logoCredit:
 origin: Japan
 periods: [{ from: 1960 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: seiko-group
 sources:
   - https://www.wikidata.org/wiki/Q11300325
+  - https://en.wikipedia.org/wiki/Grand_Seiko

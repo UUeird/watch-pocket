@@ -8,6 +8,7 @@ origin: Switzerland
 control: family
 periods: [{ from: 1875 }]
 segment: haute
+makes: [mechanical-watches, quartz-watches, movements]
 revenue:
   - year: 2025
     amount: 2600000000
@@ -16,6 +17,9 @@ revenue:
     sources:
       - https://revolutionwatch.com/what-we-can-learn-from-morgan-stanleys-ninth-annual-swiss-watch-report/
       - https://www.loupe.watch/watch-guides/morgan-stanley-watch-report-2025
+sources:
+  - https://en.wikipedia.org/wiki/Audemars_Piguet
+  - https://watchbase.com/audemars-piguet/royal-oak/67650st-oo-1261st-01
 independent:
   sources:
     - https://en.wikipedia.org/wiki/Audemars_Piguet

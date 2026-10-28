@@ -7,8 +7,11 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1983 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches, smartwatches]
 ownership:
   - owner: swatch-group
     from: 1983
 sources:
   - https://www.wikidata.org/wiki/Q573422
+  - https://en.wikipedia.org/wiki/Swatch
+  - https://news.microsoft.com/source/2004/10/20/swatch-announces-new-swatch-smart-watch-that-delivers-exclusive-entertainment-information-and-more-via-microsofts-msn-direct-service/

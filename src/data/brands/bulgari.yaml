@@ -6,6 +6,10 @@ logoCredit:
 origin: Italy
 periods: [{ from: 1884 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: lvmh
     from: 2011
+sources:
+  - https://www.bulgari.com/en-int/103464.html
+  - https://www.bulgari.com/en-int/101817.html

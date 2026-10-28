@@ -6,6 +6,9 @@ logoCredit:
 origin: Germany
 periods: [{ from: 1845 }]
 segment: haute
+makes: [mechanical-watches]
 ownership:
   - owner: richemont
     from: 2000
+sources:
+  - https://en.wikipedia.org/wiki/A._Lange_%26_S%C3%B6hne

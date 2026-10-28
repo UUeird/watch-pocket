@@ -10,7 +10,11 @@ headquarters: Germany
 manufacturing: [Switzerland]
 periods: [{ from: 1906 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches, smartwatches]
 ownership:
   - owner: richemont
 sources:
   - https://en.wikipedia.org/wiki/Montblanc_(company)
+  - https://www.montblanc.com/en-us/watches
+  - https://www.selfridges.com/US/en/product/montblanc-114337-tradition-stainless-steel-quartz-watch_R03753240/
+  - https://montblanc.com/en-us/smartwatches_cod1647597287182224.html

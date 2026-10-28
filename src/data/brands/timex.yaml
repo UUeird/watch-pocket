@@ -6,7 +6,11 @@ logoCredit:
 origin: United States
 periods: [{ from: 1854 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches, smartwatches]
 ownership:
   - owner: timex-group
 sources:
   - https://www.wikidata.org/wiki/Q1644618
+  - https://timex.com/collections/marlin-automatic-watches
+  - https://timex.com/collections/weekender
+  - https://en.wikipedia.org/wiki/Timex_Datalink

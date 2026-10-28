@@ -6,8 +6,11 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1918 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: swatch-group
     from: 1983
 sources:
   - https://www.wikidata.org/wiki/Q1725661
+  - https://midowatches.com/sg/home
+  - https://www.midowatches.com/us/multifort-chronograph-quartz-m0054171705120.html

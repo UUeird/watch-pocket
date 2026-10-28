@@ -201,7 +201,8 @@ const brands = defineCollection({
         status: z.enum(['active', 'dormant', 'defunct', 'revived']).optional(),
         // Market positioning. `broad` is for brands whose range spans several tiers.
         segment: z.enum(['haute', 'luxury', 'mid-range', 'budget', 'broad']).optional(),
-        // What the brand makes. A brand can make several; brands not yet looked into have none.
+        // What the brand makes or has made, past or present. A brand can make several; brands not yet looked
+        // into have none. `movements` and `cases` are for brands that supply them to other brands.
         makes: z.array(z.enum(['mechanical-watches', 'quartz-watches', 'smartwatches', 'movements', 'cases'])).default([]),
         // What kind of business it is, where that is not simply a watch brand. A brand can carry several.
         tags: z.array(z.enum(['fashion', 'direct-to-consumer', 'early-digital'])).default([]),

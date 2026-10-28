@@ -6,9 +6,12 @@ logoCredit:
 origin: United States
 periods: [{ from: 1984 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches, smartwatches]
 tags:
   - fashion
 ownership:
   - owner: fossil-group
 sources:
   - https://en.wikipedia.org/wiki/Fossil_Group
+  - https://www.fossil.com/en-cl/watches/mens-watches/automatic-watches/
+  - https://www.dillards.com/p/fossil-mens-quartz-analog-42mm-two-tone-stainless-steel-watch/515124830

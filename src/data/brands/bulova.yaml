@@ -6,8 +6,11 @@ logoCredit:
 origin: United States
 periods: [{ from: 1875 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: citizen
     from: 2008
 sources:
   - https://www.wikidata.org/wiki/Q663300
+  - https://en.wikipedia.org/wiki/Bulova
+  - https://www.bulova.com/us/en/product/96B429.html

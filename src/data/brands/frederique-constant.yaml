@@ -2,8 +2,11 @@ name: Frédérique Constant
 origin: Switzerland
 periods: [{ from: 1988 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches, smartwatches]
 ownership:
   - owner: citizen
     from: 2016
 sources:
   - https://www.wikidata.org/wiki/Q4039046
+  - https://en.wikipedia.org/wiki/Frederique_Constant
+  - https://frederique-constant.watchonista.com/node/491119

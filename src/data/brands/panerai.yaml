@@ -8,6 +8,9 @@ headquarters: Switzerland
 manufacturing: [Switzerland]
 periods: [{ from: 1860 }]
 segment: luxury
+makes: [mechanical-watches]
 ownership:
   - owner: richemont
     from: 1997
+sources:
+  - https://bucherer.co.uk/watches/panerai/luminor-due/1341-661-0.html

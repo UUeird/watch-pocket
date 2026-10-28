@@ -6,7 +6,9 @@ logoCredit:
 origin: Japan
 periods: [{ from: 1881 }]
 segment: broad
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: seiko-group
 sources:
   - https://www.wikidata.org/wiki/Q322601
+  - https://en.wikipedia.org/wiki/Seiko
