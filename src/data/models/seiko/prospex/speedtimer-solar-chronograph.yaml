@@ -23,6 +23,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "V192"
+    movementType: quartz
     complications: [date, chronograph, power-reserve]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -35,6 +36,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "V192"
+    movementType: quartz
     complications: [date, chronograph, power-reserve]
     dials: [{ color: gray }]
     bracelets: [{ type: bracelet }]
@@ -47,6 +49,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "V192"
+    movementType: quartz
     complications: [date, chronograph, power-reserve]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -59,6 +62,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "V192"
+    movementType: quartz
     complications: [date, chronograph, power-reserve]
     dials: [{ color: yellow }]
     bracelets: [{ type: bracelet }]
@@ -71,6 +75,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "V192"
+    movementType: quartz
     complications: [date, chronograph, power-reserve]
     dials: [{ color: purple }]
     bracelets: [{ type: bracelet }]
@@ -83,6 +88,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "V192"
+    movementType: quartz
     complications: [date, chronograph, power-reserve]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -95,6 +101,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "V192"
+    movementType: quartz
     complications: [date, chronograph, power-reserve]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -107,6 +114,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "V192"
+    movementType: quartz
     complications: [date, chronograph, power-reserve]
     dials: [{ color: pink }]
     bracelets: [{ type: bracelet }]
@@ -119,6 +127,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "V192"
+    movementType: quartz
     complications: [date, chronograph, power-reserve]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]

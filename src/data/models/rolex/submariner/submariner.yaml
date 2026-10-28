@@ -8,6 +8,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "3130"
+    movementType: mechanical
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -17,6 +18,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "3230"
+    movementType: mechanical
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]

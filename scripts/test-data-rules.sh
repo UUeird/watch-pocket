@@ -77,5 +77,15 @@ try "model photo credit with no license" $D/models/rolex/gmt-master-ii/gmt-maste
 try "model photo that does not exist" $D/models/rolex/gmt-master-ii/gmt-master-ii.yaml 's#gmt-master-ii.jpg#no-such-photo.jpg#'
 try "the same model photo twice" $D/models/rolex/gmt-master-ii/gmt-master-ii.yaml 's#File:Rolex_GMT_Master_II_-_16710_in_it_sitting_on_top_of_the_box.jpg#File:Rolex_GMT_Master_II_Pepsi.jpg#'
 try "model website that is not a web address" $D/models/richard-mille/rm-67/rm-67-02.yaml 's#^website: .*#website: richardmille.com#'
+try "new brand missing a fact" $D/brands/rolex.yaml '/^segment: /d'
+try "listed gap that has been filled in" $D/brands/47zero.yaml 's/^origin: France$/&\
+segment: budget/'
+try "gap list naming a brand that does not exist" $D/known-gaps.json 's/"47zero"/"no-such-brand"/'
+try "smartwatch under a brand without smartwatches" $D/brands/apple.yaml 's/^makes: \[smartwatches\]$/makes: [quartz-watches]/'
+try "mechanical reference under a brand without mechanical watches" $D/brands/rolex.yaml 's/^makes: .*/makes: [quartz-watches]/'
+try "quartz reference under a brand without quartz watches" $D/brands/seiko.yaml 's/^makes: .*/makes: [mechanical-watches]/'
+try "movement type outside the list" $D/models/rolex/submariner/submariner.yaml 's/movementType: mechanical/movementType: automatic/'
+try "line dated before its brand was founded" $D/lines/rolex/milgauss.yaml 's/{ from: 1956, to: 1988 }/{ from: 1900, to: 1988 }/'
+try "brand founded after one of its references" $D/brands/rolex.yaml 's/^periods: \[{ from: 1905 }\]$/periods: [{ from: 2030 }]/'
 
 exit $failures

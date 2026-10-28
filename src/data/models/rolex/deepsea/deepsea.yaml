@@ -20,6 +20,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: dive }
     crystal: sapphire
     movement: "3135"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: black }, { color: blue, name: D-Blue }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -30,6 +31,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: dive }
     crystal: sapphire
     movement: "3235"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: black }, { color: blue, name: D-Blue }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -40,5 +42,6 @@ references:
     bezel: { material: ceramic, colors: [black], style: dive }
     crystal: sapphire
     movement: "3235"
+    movementType: mechanical
     complications: [date]
     bracelets: [{ type: bracelet, name: Oyster }]

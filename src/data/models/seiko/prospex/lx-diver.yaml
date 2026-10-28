@@ -15,6 +15,7 @@ references:
     metals: [titanium]
     crystal: sapphire
     movement: "5R65"
+    movementType: mechanical
     complications: [date, power-reserve]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]

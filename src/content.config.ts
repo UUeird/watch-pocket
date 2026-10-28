@@ -353,6 +353,9 @@ const models = defineCollection({
             crystal: z.enum(['sapphire', 'acrylic', 'mineral']).optional(),
             // The calibre name: an identifier, not a category.
             movement: z.string().optional(),
+            // Whether the movement is mechanical or quartz. Spring Drive counts as mechanical; solar, kinetic and GPS
+            // quartz count as quartz. Left out for smartwatches. The brand's `makes` must agree (see src/lib/consistency.ts).
+            movementType: z.enum(['mechanical', 'quartz']).optional(),
             // What the watch does beyond hours, minutes and seconds. `[]` means it tells the time only; leaving it
             // out means not recorded. `flyback` and `split-seconds` are kinds of chronograph, so list `chronograph`
             // with them. Left out for smartwatches, whose functions are software.

@@ -8,6 +8,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "8800"
+    movementType: mechanical
     complications: [date]
     crystal: sapphire
     dials: [{ color: black }]
@@ -18,6 +19,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "8800"
+    movementType: mechanical
     complications: [date]
     crystal: sapphire
     dials: [{ color: black }]
@@ -28,6 +30,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [blue], style: dive }
     movement: "8800"
+    movementType: mechanical
     complications: [date]
     crystal: sapphire
     dials: [{ color: blue }]
@@ -38,6 +41,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [blue], style: dive }
     movement: "8800"
+    movementType: mechanical
     complications: [date]
     crystal: sapphire
     dials: [{ color: blue }]
@@ -47,6 +51,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "8800"
+    movementType: mechanical
     complications: [date]
     crystal: sapphire
     dials: [{ color: white }]

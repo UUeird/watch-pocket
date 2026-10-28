@@ -18,6 +18,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -30,6 +31,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: white }]
     bracelets: [{ type: rubber-strap }]
@@ -42,6 +44,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -54,6 +57,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]

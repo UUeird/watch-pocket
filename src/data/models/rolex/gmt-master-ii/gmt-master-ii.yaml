@@ -40,6 +40,7 @@ references:
     bezel: { material: aluminum, style: gmt }
     crystal: sapphire
     movement: "3185"
+    movementType: mechanical
     complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]
@@ -50,6 +51,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: gmt }
     crystal: sapphire
     movement: "3186"
+    movementType: mechanical
     complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -66,6 +68,7 @@ references:
     bezel: { material: ceramic, colors: [blue, black], style: gmt }
     crystal: sapphire
     movement: "3186"
+    movementType: mechanical
     complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -75,6 +78,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [red, blue], style: gmt }
     movement: "3285"
+    movementType: mechanical
     complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]
@@ -84,6 +88,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [blue, black], style: gmt }
     movement: "3285"
+    movementType: mechanical
     complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]

@@ -21,6 +21,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -33,6 +34,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -45,6 +47,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -57,6 +60,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: yellow }]
     bracelets: [{ type: leather-strap }]
@@ -69,6 +73,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R34"
+    movementType: mechanical
     complications: [date, gmt]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -81,6 +86,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R39"
+    movementType: mechanical
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -93,6 +99,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R72"
+    movementType: mechanical
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]

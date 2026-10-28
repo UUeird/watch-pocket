@@ -19,6 +19,7 @@ references:
     bezel: { material: steel, style: tachymeter }
     crystal: acrylic
     movement: Valjoux 72
+    movementType: mechanical
     complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "6263"
@@ -27,6 +28,7 @@ references:
     bezel: { colors: [black], style: tachymeter }
     crystal: acrylic
     movement: Valjoux 727
+    movementType: mechanical
     complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "16520"
@@ -42,6 +44,7 @@ references:
     bezel: { material: steel, style: tachymeter }
     crystal: sapphire
     movement: "4030"
+    movementType: mechanical
     complications: [chronograph]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -52,6 +55,7 @@ references:
     bezel: { material: steel, style: tachymeter }
     crystal: sapphire
     movement: "4130"
+    movementType: mechanical
     complications: [chronograph]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -69,6 +73,7 @@ references:
     bezel: { material: yellow-gold, style: tachymeter }
     crystal: sapphire
     movement: "4130"
+    movementType: mechanical
     complications: [chronograph]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -84,6 +89,7 @@ references:
     bezel: { material: white-gold, style: tachymeter }
     crystal: sapphire
     movement: "4130"
+    movementType: mechanical
     complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 116500LN
@@ -93,6 +99,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: tachymeter }
     crystal: sapphire
     movement: "4130"
+    movementType: mechanical
     complications: [chronograph]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -110,6 +117,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: tachymeter }
     crystal: sapphire
     movement: "4131"
+    movementType: mechanical
     complications: [chronograph]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -120,6 +128,7 @@ references:
     bezel: { material: ceramic, colors: [brown], style: tachymeter }
     crystal: sapphire
     movement: "4131"
+    movementType: mechanical
     complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "126508"
@@ -129,6 +138,7 @@ references:
     bezel: { material: yellow-gold, style: tachymeter }
     crystal: sapphire
     movement: "4131"
+    movementType: mechanical
     complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "126509"
@@ -138,6 +148,7 @@ references:
     bezel: { material: white-gold, style: tachymeter }
     crystal: sapphire
     movement: "4131"
+    movementType: mechanical
     complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 126515LN
@@ -147,6 +158,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: tachymeter }
     crystal: sapphire
     movement: "4131"
+    movementType: mechanical
     complications: [chronograph]
     bracelets: [{ type: rubber-strap, name: Oysterflex }]
   - ref: 126518LN
@@ -156,5 +168,6 @@ references:
     bezel: { material: ceramic, colors: [black], style: tachymeter }
     crystal: sapphire
     movement: "4131"
+    movementType: mechanical
     complications: [chronograph]
     bracelets: [{ type: rubber-strap, name: Oysterflex }]

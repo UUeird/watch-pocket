@@ -18,6 +18,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R5J"
+    movementType: mechanical
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -30,6 +31,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R5J"
+    movementType: mechanical
     complications: []
     dials: [{ color: gray }]
     bracelets: [{ type: bracelet }]
@@ -42,6 +44,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R5J"
+    movementType: mechanical
     complications: []
     dials: [{ color: champagne }]
     bracelets: [{ type: bracelet }]
@@ -54,6 +57,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R5J"
+    movementType: mechanical
     complications: []
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]

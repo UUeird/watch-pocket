@@ -16,6 +16,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R36"
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -28,6 +29,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R36"
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]

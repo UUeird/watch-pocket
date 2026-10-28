@@ -1,5 +1,6 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { refSlug } from './slug';
+import { checkBrandFacts, checkModelsAgreeWithBrands } from './consistency';
 
 export { refSlug };
 
@@ -158,6 +159,8 @@ async function buildCatalog() {
       throw new Error(`Model "${model.id}" names line "${model.data.line.id}" but is filed under another line's folder.`);
     }
   }
+  checkBrandFacts(brands);
+  checkModelsAgreeWithBrands(models, lines, brands);
   const references = models.flatMap((model) => {
     const line = lines.find((candidate) => candidate.id === model.data.line.id)!;
     const brand = brands.find((candidate) => candidate.id === line.data.brand.id)!;

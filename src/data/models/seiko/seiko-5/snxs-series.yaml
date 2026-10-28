@@ -27,6 +27,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: 4R36
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: blue, name: Navy }]
     bracelets: [{ type: bracelet }]
@@ -40,6 +41,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: 4R36
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -53,6 +55,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: 4R36
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: white, name: Ivory }]
     bracelets: [{ type: bracelet }]
@@ -66,6 +69,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: 4R36
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: blue, name: Navy }]
     bracelets: [{ type: bracelet }]
@@ -79,6 +83,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: 4R36
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -92,6 +97,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: 4R36
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: gold }]
     bracelets: [{ type: bracelet }]
@@ -105,6 +111,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: 2R06
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: blue, name: Navy }]
     bracelets: [{ type: bracelet }]
@@ -118,6 +125,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: 2R06
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: champagne }]
     bracelets: [{ type: bracelet }]
@@ -133,6 +141,7 @@ references:
     bezel: { colors: [gold] }
     crystal: mineral
     movement: 2R06
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]

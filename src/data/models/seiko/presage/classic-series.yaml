@@ -29,6 +29,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R51"
+    movementType: mechanical
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -41,6 +42,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R51"
+    movementType: mechanical
     complications: []
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -53,6 +55,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R51"
+    movementType: mechanical
     complications: []
     dials: [{ color: pink }]
     bracelets: [{ type: leather-strap }]
@@ -65,6 +68,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R51"
+    movementType: mechanical
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]
@@ -77,6 +81,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R51"
+    movementType: mechanical
     complications: []
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
@@ -90,6 +95,7 @@ references:
     caseColors: [{ color: rose-gold }]
     crystal: sapphire
     movement: "6R51"
+    movementType: mechanical
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]
@@ -103,6 +109,7 @@ references:
     caseColors: [{ color: gold }]
     crystal: sapphire
     movement: "6R51"
+    movementType: mechanical
     complications: []
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -115,6 +122,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R55"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -127,6 +135,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R55"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: orange }]
     bracelets: [{ type: bracelet }]
@@ -139,6 +148,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R55"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: champagne }]
     bracelets: [{ type: bracelet }]
@@ -151,6 +161,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R51"
+    movementType: mechanical
     complications: []
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -164,6 +175,7 @@ references:
     caseColors: [{ color: gold }]
     crystal: sapphire
     movement: "6R51"
+    movementType: mechanical
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -176,6 +188,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R55"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -188,6 +201,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R55"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: brown }]
     bracelets: [{ type: leather-strap }]
@@ -201,6 +215,7 @@ references:
     caseColors: [{ color: gold }]
     crystal: sapphire
     movement: "6R51"
+    movementType: mechanical
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]
