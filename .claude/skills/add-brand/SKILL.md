@@ -18,7 +18,8 @@ ones get one reasonable attempt per fact.
 For brands from before the rule, `node scripts/research-queue.mjs [fact]` lists
 what to research next, highest tier first. When a search finds nothing, record
 the miss with `node scripts/research-queue.mjs --searched <fact> <id>...` so it
-isn't repeated: long-tail misses drop out of the queue for a year. After filling
+isn't repeated: long-tail misses drop out of the queue for a year. `--summary`
+shows progress per fact and tier. After filling
 facts in, run `node scripts/known-gaps.mjs` to drop them from the list.
 
 Research each fact, then add every URL you relied on to the brand's `sources`
