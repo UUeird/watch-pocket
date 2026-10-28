@@ -87,5 +87,9 @@ try "quartz reference under a brand without quartz watches" $D/brands/seiko.yaml
 try "movement type outside the list" $D/models/rolex/submariner/submariner.yaml 's/movementType: mechanical/movementType: automatic/'
 try "line dated before its brand was founded" $D/lines/rolex/milgauss.yaml 's/{ from: 1956, to: 1988 }/{ from: 1900, to: 1988 }/'
 try "brand founded after one of its references" $D/brands/rolex.yaml 's/^periods: \[{ from: 1905 }\]$/periods: [{ from: 2030 }]/'
+try "core brand with a gap" $D/known-gaps.json 's/^{$/{\
+  "rolex": {"segment": null},/'
+try "search date that is not a date" $D/known-gaps.json 's/"47zero": {"makes": null}/"47zero": {"makes": "last week"}/'
+try "gap list naming a fact that does not exist" $D/known-gaps.json 's/"47zero": {"makes": null}/"47zero": {"logo": null}/'
 
 exit $failures

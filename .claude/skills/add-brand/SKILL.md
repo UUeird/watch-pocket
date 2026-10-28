@@ -8,6 +8,18 @@ A new brand must carry five facts, or the build fails (`checkBrandFacts` in
 to get past the build: that list is only for brands from before the rule, and
 may only shrink. If a fact can't be sourced, stop and tell Sam which one and why.
 
+**How hard to look depends on the brand's tier** (`brandTier` in
+`src/lib/consistency.ts`): *core* brands (with lines, or revenue or production
+figures) can't have gaps; *notable* ones (a Wikipedia source or a current owner)
+are researched fully, including older press and auction records; *long-tail*
+ones get one reasonable attempt per fact.
+
+For brands from before the rule, `node scripts/research-queue.mjs [fact]` lists
+what to research next, highest tier first. When a search finds nothing, record
+the miss with `node scripts/research-queue.mjs --searched <fact> <id>...` so it
+isn't repeated: long-tail misses drop out of the queue for a year. After filling
+facts in, run `node scripts/known-gaps.mjs` to drop them from the list.
+
 Research each fact, then add every URL you relied on to the brand's `sources`
 (ownership and heritage cite their own `sources` inside the record).
 
