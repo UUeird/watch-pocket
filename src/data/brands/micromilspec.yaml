@@ -2,8 +2,10 @@ name: Micromilspec
 origin: Norway
 periods: [{ from: 2019 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.micromilspec.com
 sources:
   - https://www.dialicious.com/en/micromilspec
   - https://www.micromilspec.com/
   - https://www.micromilspec.com/collections
+  - https://www.micromilspec.com/products/fieldmaster-watch

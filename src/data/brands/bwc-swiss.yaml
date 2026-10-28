@@ -2,7 +2,9 @@ name: BWC-Swiss
 origin: Switzerland
 periods: [{ from: 1924 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: http://bwc-swiss.de
 sources:
   - https://www.dialicious.com/en/bwc-swiss
   - http://bwc-swiss.de/
+  - http://bwc-swiss.de/shop/

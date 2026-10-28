@@ -1,9 +1,11 @@
 name: Shoreham
 status: active
+makes: [mechanical-watches]
 website: https://www.shorehamwatches.com
 sources:
   - https://www.dialicious.com/en/shoreham
   - https://www.shorehamwatches.com/
+  - https://www.shorehamwatches.com/home.html
 control: private
 independent:
   sources:

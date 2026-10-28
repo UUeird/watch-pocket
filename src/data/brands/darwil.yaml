@@ -2,7 +2,9 @@ name: Darwil
 origin: Switzerland
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.darwil.ch
 sources:
   - https://www.dialicious.com/en/darwil
   - https://www.darwil.ch/
+  - https://www.darwil.ch/shop/

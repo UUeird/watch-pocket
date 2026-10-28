@@ -2,6 +2,7 @@ name: Bosun
 origin: United Kingdom
 periods: [{ from: 2017 }]
 segment: budget
+makes: [quartz-watches]
 website: https://www.bosunwatch.com
 sources:
   - https://www.dialicious.com/en/bosun

@@ -1,6 +1,7 @@
 name: Delta
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://deltawatch.co
 sources:
   - https://www.dialicious.com/en/delta

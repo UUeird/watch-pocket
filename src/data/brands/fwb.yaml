@@ -2,6 +2,7 @@ name: FWB
 origin: Germany
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.finewatches.berlin
 sources:
   - https://www.dialicious.com/en/fwb

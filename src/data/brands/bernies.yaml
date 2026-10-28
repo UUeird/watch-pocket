@@ -1,6 +1,7 @@
 name: Bernies
 status: active
 segment: luxury
+makes: [mechanical-watches]
 website: https://bernies-watches.com
 sources:
   - https://www.dialicious.com/en/bernies

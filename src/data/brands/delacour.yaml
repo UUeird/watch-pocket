@@ -1,6 +1,8 @@
 name: DeLaCour
 status: active
+makes: [mechanical-watches]
 website: https://www.delacour.ch
 sources:
   - https://www.dialicious.com/en/delacour
   - https://www.delacour.ch/
+  - https://www.delacour.ch/english/accessories/pocket-watches

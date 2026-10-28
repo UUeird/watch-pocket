@@ -2,10 +2,12 @@ name: Circula
 origin: Germany
 periods: [{ from: 1955 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://circulawatches.com
 sources:
   - https://www.dialicious.com/en/circula
   - https://circulawatches.com/
+  - https://circulawatches.com/en
 control: family
 independent:
   sources:

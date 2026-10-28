@@ -1,6 +1,9 @@
 name: Beauregard
 periods: [{ from: 2018 }]
+makes: [mechanical-watches, quartz-watches]
 website: https://www.beauregard.ch
 sources:
   - https://www.dialicious.com/en/beauregard
   - https://www.beauregard.ch/
+  - https://www.beauregard.ch/en/catalogue/c/ladies-watches/dahlia
+  - https://www.beauregard.ch/en/catalogue/c/ladies-watches/lili

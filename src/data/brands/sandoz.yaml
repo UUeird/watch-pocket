@@ -1,6 +1,8 @@
 name: Sandoz
 status: active
+makes: [quartz-watches]
 website: https://www.sandoz.es
 sources:
   - https://www.dialicious.com/en/sandoz
   - https://www.sandoz.es/
+  - https://www.sandoz.es/index.php?route=product/category

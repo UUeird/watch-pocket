@@ -6,7 +6,9 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: Borgward Company
 status: active
+makes: [mechanical-watches]
 website: https://www.borgward.ag
 sources:
   - https://www.dialicious.com/en/borgward
   - https://www.borgward.ag/
+  - https://www.borgward.ag/uhrenshop

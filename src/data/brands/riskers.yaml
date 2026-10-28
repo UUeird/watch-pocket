@@ -1,7 +1,9 @@
 name: Riskers
 origin: France
 status: active
+makes: [mechanical-watches, quartz-watches]
 website: https://riskers-watches.com
 sources:
   - https://www.dialicious.com/en/riskers
   - https://riskers-watches.com/
+  - https://riskers-watches.com

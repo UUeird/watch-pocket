@@ -2,6 +2,7 @@ name: Slow
 origin: Germany
 periods: [{ from: 2012 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.slow-watches.com
 sources:
   - https://www.dialicious.com/en/slow

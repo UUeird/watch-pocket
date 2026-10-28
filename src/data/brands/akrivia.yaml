@@ -1,9 +1,11 @@
 name: Akrivia
 periods: [{ from: 2012 }]
+makes: [mechanical-watches]
 website: https://www.rexheprexhepi.com
 sources:
   - https://www.dialicious.com/en/akrivia
   - https://www.rexheprexhepi.com/
+  - https://www.rexheprexhepi.com/collections
 control: private
 independent:
   sources:

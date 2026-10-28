@@ -2,7 +2,9 @@ name: Gavox
 origin: Belgium
 periods: [{ from: 2011 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.gavox.com
 sources:
   - https://www.dialicious.com/en/gavox
   - https://www.gavox.com/
+  - https://www.gavox.com/shop/

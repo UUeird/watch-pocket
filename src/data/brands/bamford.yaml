@@ -2,7 +2,9 @@ name: Bamford
 origin: Switzerland
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.bamfordwatchdepartment.com
 sources:
   - https://www.dialicious.com/en/bamford
   - https://www.bamfordwatchdepartment.com/
+  - https://www.bamfordwatchdepartment.com/shop/

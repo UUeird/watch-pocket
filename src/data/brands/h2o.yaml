@@ -2,7 +2,9 @@ name: H2O
 origin: Germany
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.h2o-watch.com
 sources:
   - https://www.dialicious.com/en/h2o
   - https://www.h2o-watch.com/
+  - https://www.h2o-watch.com/h2o-uhren.html

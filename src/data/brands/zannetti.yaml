@@ -1,10 +1,12 @@
 name: Zannetti
 origin: Italy
 periods: [{ from: 1982 }]
+makes: [mechanical-watches]
 website: https://zannetti.com
 sources:
   - https://www.dialicious.com/en/zannetti
   - https://zannetti.com/
+  - https://zannetti.com/shop/
 control: family
 independent:
   sources:

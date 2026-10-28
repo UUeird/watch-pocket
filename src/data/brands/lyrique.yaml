@@ -1,7 +1,9 @@
 name: Lyrique
 origin: Switzerland
 status: active
+makes: [mechanical-watches]
 website: https://lyrique.ch
 sources:
   - https://www.dialicious.com/en/lyrique
   - https://lyrique.ch/
+  - https://lyrique.ch/watches/etude-no-2

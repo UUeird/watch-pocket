@@ -1,6 +1,7 @@
 name: Helm
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://helmwatches.com
 sources:
   - https://www.dialicious.com/en/helm
