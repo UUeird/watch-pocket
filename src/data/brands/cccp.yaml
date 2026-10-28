@@ -1,6 +1,7 @@
 name: CCCP
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.cccptime.com
 sources:
   - https://www.dialicious.com/en/cccp

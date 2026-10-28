@@ -2,6 +2,7 @@ name: Celegin
 origin: Sweden
 periods: [{ from: 2021 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: http://www.celegin.se
 sources:
   - https://www.dialicious.com/en/celegin

@@ -2,6 +2,7 @@ name: Mondia
 origin: Switzerland
 periods: [{ from: 1935 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://mondiaswiss.com
 sources:
   - https://www.dialicious.com/en/mondia

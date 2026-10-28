@@ -2,6 +2,7 @@ name: Viqueria
 origin: Italy
 periods: [{ from: 2017 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.viqueriawatches.com
 sources:
   - https://www.dialicious.com/en/viqueria

@@ -2,8 +2,10 @@ name: WoodWatch
 origin: Netherlands
 periods: [{ from: 2013 }]
 segment: budget
+makes: [mechanical-watches]
 website: https://www.woodwatch.com
 sources:
   - https://www.dialicious.com/en/woodwatch
   - https://www.woodwatch.com/
   - https://www.woodwatch.com/en/collection/
+  - https://www.woodwatch.com/en/

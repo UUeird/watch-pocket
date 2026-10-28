@@ -1,11 +1,13 @@
 name: Zeitwinkel
 origin: Switzerland
 periods: [{ from: 2006 }]
+makes: [mechanical-watches]
 website: https://www.zeitwinkel.ch
 sources:
   - https://www.dialicious.com/en/zeitwinkel
   - https://www.zeitwinkel.ch/
   - https://wiki.grail-watch.com/index.php/Zeitwinkel
+  - https://www.zeitwinkel.ch/zeitwinkel-home.html
 control: private
 independent:
   sources:

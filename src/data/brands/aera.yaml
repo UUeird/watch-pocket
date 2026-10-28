@@ -2,6 +2,7 @@ name: Aera
 origin: Switzerland
 periods: [{ from: 2018 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://aera.co
 sources:
   - https://www.dialicious.com/en/aera

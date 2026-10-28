@@ -1,6 +1,7 @@
 name: Szanto
 origin: United States
 periods: [{ from: 2013 }]
+makes: [mechanical-watches]
 website: https://szantotime.com
 sources:
   - https://www.dialicious.com/en/szanto

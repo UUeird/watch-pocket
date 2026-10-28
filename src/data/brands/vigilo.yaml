@@ -1,6 +1,7 @@
 name: Vigilo
 status: active
 segment: mid-range
+makes: [quartz-watches]
 website: https://www.vigilo-watches.com
 sources:
   - https://www.dialicious.com/en/vigilo

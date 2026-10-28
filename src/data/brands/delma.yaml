@@ -2,10 +2,12 @@ name: Delma
 origin: Switzerland
 periods: [{ from: 1924 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.delmawatches.com
 sources:
   - https://www.dialicious.com/en/delma
   - https://www.delmawatches.com/
+  - https://www.delmawatches.com/collections/all
 control: family
 independent:
   sources:

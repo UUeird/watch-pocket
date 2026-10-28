@@ -1,5 +1,6 @@
 name: Magon
 status: active
+makes: [mechanical-watches]
 website: https://www.magonwatches.com
 sources:
   - https://www.dialicious.com/en/magon

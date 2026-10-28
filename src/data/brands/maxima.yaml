@@ -2,6 +2,7 @@ name: Maxima
 origin: India
 status: active
 segment: budget
+makes: [mechanical-watches, smartwatches]
 website: https://www.maximawatches.com
 sources:
   - https://www.maximawatches.com/

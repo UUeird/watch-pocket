@@ -2,6 +2,7 @@ name: Grönefeld
 origin: Netherlands
 periods: [{ from: 2008 }]
 segment: haute
+makes: [mechanical-watches]
 website: https://www.gronefeld.com
 sources:
   - https://www.dialicious.com/en/gronefeld

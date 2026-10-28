@@ -1,6 +1,7 @@
 name: Unity
 periods: [{ from: 2010 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://unitywatches.com
 sources:
   - https://www.dialicious.com/en/unity

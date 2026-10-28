@@ -1,7 +1,9 @@
 name: POrtahl
 periods: [{ from: 2020 }]
+makes: [mechanical-watches]
 website: https://portahl.com
 sources:
   - https://www.dialicious.com/en/portahl
   - https://portahl.com/
   - https://portahl.com/en-us/pages/our-story
+  - https://portahl.com/collections/all

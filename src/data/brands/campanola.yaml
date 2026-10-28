@@ -2,6 +2,7 @@ name: Campanola
 origin: Japan
 status: active
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 website: https://www.citizenwatch-global.com
 sources:
   - https://www.dialicious.com/en/campanola

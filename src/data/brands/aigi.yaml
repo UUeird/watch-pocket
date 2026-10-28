@@ -2,6 +2,7 @@ name: Aigi
 origin: Norway
 periods: [{ from: 2017 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://aigitime.com
 sources:
   - https://www.dialicious.com/en/aigi

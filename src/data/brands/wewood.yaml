@@ -1,8 +1,10 @@
 name: WeWood
 periods: [{ from: 2009 }]
 segment: budget
+makes: [quartz-watches]
 website: https://wewoodswiss.ch
 sources:
   - https://www.dialicious.com/en/wewood
   - https://www.wikidata.org/wiki/Q17153839
   - https://wewoodswiss.ch/
+  - https://wewoodswiss.ch/collections/all

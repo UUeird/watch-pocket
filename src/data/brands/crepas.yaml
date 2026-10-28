@@ -1,5 +1,6 @@
 name: Crepas
 status: active
+makes: [mechanical-watches]
 website: https://www.crepaswatches.com
 sources:
   - https://www.dialicious.com/en/crepas

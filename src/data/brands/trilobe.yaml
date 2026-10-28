@@ -2,8 +2,10 @@ name: Trilobe
 origin: France
 periods: [{ from: 2018 }]
 segment: luxury
+makes: [mechanical-watches]
 website: https://trilobe.com
 sources:
   - https://www.dialicious.com/en/trilobe
   - https://trilobe.com/
   - https://trilobe.com/collections/all
+  - https://trilobe.com/en-ue/collections/all

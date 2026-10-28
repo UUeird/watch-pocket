@@ -1,6 +1,7 @@
 name: Version
 periods: [{ from: 2024 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://versionwatches.fr
 sources:
   - https://www.dialicious.com/en/version

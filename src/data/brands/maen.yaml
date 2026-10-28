@@ -2,6 +2,7 @@ name: Maen
 origin: Sweden
 periods: [{ from: 2017 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.maenwatches.com
 sources:
   - https://www.dialicious.com/en/maen

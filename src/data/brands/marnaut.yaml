@@ -2,6 +2,7 @@ name: Marnaut
 origin: Croatia
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.marnaut.com
 sources:
   - https://www.dialicious.com/en/marnaut

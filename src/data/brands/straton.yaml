@@ -1,7 +1,9 @@
 name: Straton
 periods: [{ from: 2015 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.stratonwc.com
 sources:
   - https://www.dialicious.com/en/straton
   - https://www.stratonwc.com/
+  - https://www.stratonwc.com/collections/all

@@ -9,11 +9,13 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1919 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://milus.com
 sources:
   - https://www.dialicious.com/en/milus
   - https://www.wikidata.org/wiki/Q16040718
   - https://milus.com/
+  - https://milus.com/collections/all
 control: private
 ownership:
   - owner: peace-mark

@@ -7,8 +7,10 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1931 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://adriaticawatches.ch
 sources:
   - https://www.dialicious.com/en/adriatica
   - https://www.wikidata.org/wiki/Q376334
   - https://adriaticawatches.ch/
+  - https://adriaticawatches.ch/en/

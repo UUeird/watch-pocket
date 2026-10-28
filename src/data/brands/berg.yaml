@@ -2,6 +2,7 @@ name: Berg
 origin: Norway
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://bergwatches.com
 sources:
   - https://www.dialicious.com/en/berg

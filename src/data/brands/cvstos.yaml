@@ -2,6 +2,7 @@ name: Cvstos
 origin: Switzerland
 periods: [{ from: 2005 }]
 segment: luxury
+makes: [mechanical-watches]
 website: http://www.cvstos.com
 sources:
   - https://www.dialicious.com/en/cvstos

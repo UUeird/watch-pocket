@@ -9,11 +9,13 @@ logoCredit:
 origin: Italy
 periods: [{ from: 2017 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.venezianico.com
 sources:
   - https://www.dialicious.com/en/venezianico
   - https://www.wikidata.org/wiki/Q133189962
   - https://www.venezianico.com/
+  - https://www.venezianico.com/collections/all
 control: family
 independent:
   sources:

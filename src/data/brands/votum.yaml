@@ -2,6 +2,7 @@ name: Votum
 origin: Switzerland
 periods: [{ from: 1962 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.votumwatches.com
 sources:
   - https://www.dialicious.com/en/votum

@@ -2,6 +2,7 @@ name: SWC
 origin: Switzerland
 periods: [{ from: 1996 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://swcusa.com
 sources:
   - https://www.dialicious.com/en/swc

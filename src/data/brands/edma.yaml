@@ -2,6 +2,7 @@ name: Edma
 origin: Switzerland
 periods: [{ from: 1944 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://edma-watches.com
 sources:
   - https://www.dialicious.com/en/edma

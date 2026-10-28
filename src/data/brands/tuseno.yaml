@@ -2,6 +2,7 @@ name: Tusenö
 origin: Sweden
 periods: [{ from: 2015 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://tuseno.com
 sources:
   - https://www.dialicious.com/en/tuseno

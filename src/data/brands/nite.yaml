@@ -2,6 +2,7 @@ name: Nite
 origin: United Kingdom
 periods: [{ from: 2003 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://us.nitewatches.com
 sources:
   - https://www.dialicious.com/en/nite

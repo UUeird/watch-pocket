@@ -2,6 +2,7 @@ name: Arcanaut
 origin: Denmark
 status: active
 segment: luxury
+makes: [mechanical-watches]
 website: https://arcanaut.watch
 sources:
   - https://www.dialicious.com/en/arcanaut

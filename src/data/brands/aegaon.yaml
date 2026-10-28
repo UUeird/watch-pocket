@@ -2,6 +2,7 @@ name: Aegaon
 origin: Estonia
 periods: [{ from: 2012 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://aegaon.com
 sources:
   - https://www.dialicious.com/en/aegaon

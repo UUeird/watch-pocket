@@ -1,6 +1,7 @@
 name: Alcadus
 periods: [{ from: 2018 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://alcadus.com
 sources:
   - https://www.dialicious.com/en/alcadus

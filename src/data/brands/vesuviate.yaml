@@ -1,6 +1,7 @@
 name: Vesuviate
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://vesuviate.com
 sources:
   - https://www.dialicious.com/en/vesuviate

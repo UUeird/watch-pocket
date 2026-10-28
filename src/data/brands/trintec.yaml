@@ -1,6 +1,7 @@
 name: Trintec
 periods: [{ from: 1984 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://trintecwatches.com
 sources:
   - https://www.dialicious.com/en/trintec

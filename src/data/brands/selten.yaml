@@ -1,7 +1,9 @@
 name: Selten
 periods: [{ from: 2021 }]
+makes: [mechanical-watches]
 website: https://seltenwatch.com
 sources:
   - https://www.dialicious.com/en/selten
   - https://seltenwatch.com/
   - https://seltenwatch.com/pages/about-us
+  - https://seltenwatch.com/collections/all

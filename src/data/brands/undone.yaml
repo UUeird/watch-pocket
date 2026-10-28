@@ -1,6 +1,7 @@
 name: Undone
 periods: [{ from: 2014 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://undone.com
 sources:
   - https://www.dialicious.com/en/undone

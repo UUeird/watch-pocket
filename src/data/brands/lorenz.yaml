@@ -1,6 +1,7 @@
 name: Lorenz
 periods: [{ from: 1934 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://lorenz.it
 sources:
   - https://www.dialicious.com/en/lorenz

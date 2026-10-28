@@ -2,6 +2,7 @@ name: Nixoid
 origin: Ukraine
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://nixoid.store
 sources:
   - https://www.dialicious.com/en/nixoid

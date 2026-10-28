@@ -2,7 +2,9 @@ name: Envision
 origin: Italy
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.envision-watches.com
 sources:
   - https://www.dialicious.com/en/envision
   - https://www.envision-watches.com/
+  - https://www.envision-watches.com/collections/all

@@ -2,6 +2,7 @@ name: SpaceOne
 origin: France
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://spaceonewatches.com
 sources:
   - https://www.dialicious.com/en/spaceone

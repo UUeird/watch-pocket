@@ -1,7 +1,9 @@
 name: Holocene
 origin: Belgium
 status: active
+makes: [mechanical-watches]
 website: https://holocene-watches.com
 sources:
   - https://www.dialicious.com/en/holocene
   - https://holocene-watches.com/
+  - https://holocene-watches.com/collections/all

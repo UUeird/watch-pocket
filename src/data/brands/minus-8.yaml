@@ -2,6 +2,7 @@ name: Minus-8
 origin: United States
 periods: [{ from: 2013 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.minus8watch.com
 sources:
   - https://www.dialicious.com/en/minus-8

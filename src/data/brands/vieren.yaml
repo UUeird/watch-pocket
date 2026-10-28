@@ -2,6 +2,7 @@ name: Vieren
 origin: Canada
 periods: [{ from: 2020 }]
 segment: luxury
+makes: [mechanical-watches]
 website: https://vieren.co
 sources:
   - https://www.dialicious.com/en/vieren

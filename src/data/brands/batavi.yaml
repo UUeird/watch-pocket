@@ -1,6 +1,7 @@
 name: Batavi
 periods: [{ from: 2017 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.batavi-watches.com
 sources:
   - https://www.dialicious.com/en/batavi

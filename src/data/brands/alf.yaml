@@ -1,6 +1,7 @@
 name: ALF
 status: active
 segment: budget
+makes: [mechanical-watches]
 website: https://alfwatchcompany.com
 sources:
   - https://www.dialicious.com/en/alf

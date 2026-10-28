@@ -2,6 +2,7 @@ name: Vero
 origin: United States
 periods: [{ from: 2015 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://vero-watch.com
 sources:
   - https://www.dialicious.com/en/vero

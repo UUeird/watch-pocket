@@ -2,6 +2,7 @@ name: Mazzucato
 origin: Italy
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.mazzucatowatches.com
 sources:
   - https://www.dialicious.com/en/mazzucato

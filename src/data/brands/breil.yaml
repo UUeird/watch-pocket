@@ -2,12 +2,14 @@ name: Breil
 origin: Italy
 periods: [{ from: 1935 }]
 segment: budget
+makes: [mechanical-watches, smartwatches]
 website: https://www.breil.com
 sources:
   - https://www.dialicious.com/en/breil
   - https://www.wikidata.org/wiki/Q14755374
   - https://www.breil.com/
   - https://www.breil.com/en/who-we-are/
+  - https://www.breil.com/it/
 ownership:
   - owner: binda
     sources:

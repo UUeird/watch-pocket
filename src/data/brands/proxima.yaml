@@ -1,6 +1,7 @@
 name: Proxima
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.proximawatches.com
 sources:
   - https://www.dialicious.com/en/proxima

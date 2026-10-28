@@ -1,7 +1,9 @@
 name: Hesili
 origin: United States
 status: active
+makes: [mechanical-watches]
 website: https://hesiliny.com
 sources:
   - https://www.dialicious.com/en/hesili
   - https://hesiliny.com/
+  - https://hesiliny.com/collections/all

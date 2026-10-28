@@ -2,6 +2,7 @@ name: Zenton
 origin: Hong Kong
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.zentonwatches.com
 sources:
   - https://www.dialicious.com/en/zenton

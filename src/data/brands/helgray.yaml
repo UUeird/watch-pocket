@@ -1,6 +1,7 @@
 name: Helgray
 status: active
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 website: https://www.helgray.com
 sources:
   - https://www.dialicious.com/en/helgray

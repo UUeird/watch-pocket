@@ -2,6 +2,7 @@ name: Vasco
 origin: France
 periods: [{ from: 2016 }]
 segment: mid-range
+makes: [quartz-watches]
 website: https://vasco.watch
 sources:
   - https://www.dialicious.com/en/vasco

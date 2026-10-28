@@ -2,7 +2,9 @@ name: Celadon
 origin: China
 periods: [{ from: 2012 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://celadonhh.com
 sources:
   - https://www.dialicious.com/en/celadon
   - https://celadonhh.com/
+  - https://celadonhh.com/collections/all

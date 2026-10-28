@@ -1,6 +1,7 @@
 name: Masterblock
 origin: Switzerland
 periods: [{ from: 2018 }]
+makes: [mechanical-watches]
 website: https://www.masterblock.ch
 sources:
   - https://www.dialicious.com/en/masterblock

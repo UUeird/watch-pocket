@@ -2,6 +2,7 @@ name: Haim
 origin: United States
 periods: [{ from: 2020 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://haimwatchco.com
 sources:
   - https://www.dialicious.com/en/haim

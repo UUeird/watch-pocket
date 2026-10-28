@@ -1,5 +1,6 @@
 name: Vanguart
 status: active
+makes: [mechanical-watches]
 website: http://vanguart.com
 sources:
   - https://www.dialicious.com/en/vanguart

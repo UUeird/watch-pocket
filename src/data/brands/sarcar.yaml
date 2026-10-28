@@ -1,6 +1,7 @@
 name: Sarcar
 origin: Switzerland
 periods: [{ from: 1948 }]
+makes: [mechanical-watches]
 website: https://sarcar.com
 sources:
   - https://www.dialicious.com/en/sarcar

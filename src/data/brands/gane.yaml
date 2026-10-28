@@ -1,5 +1,6 @@
 name: Gane
 status: active
+makes: [mechanical-watches]
 website: https://www.ganewatches.com
 sources:
   - https://www.dialicious.com/en/gane

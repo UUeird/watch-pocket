@@ -1,6 +1,7 @@
 name: Marea
 periods: [{ from: 1995 }]
 segment: budget
+makes: [smartwatches]
 website: https://www.marea.es
 sources:
   - https://www.dialicious.com/en/marea

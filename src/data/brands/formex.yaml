@@ -6,6 +6,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1999 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://formexwatch.com
 sources:
   - https://www.dialicious.com/en/formex

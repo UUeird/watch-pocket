@@ -2,6 +2,7 @@ name: Hoffman
 origin: United States
 periods: [{ from: 2016 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://hoffmanwatches.com
 sources:
   - https://www.dialicious.com/en/hoffman

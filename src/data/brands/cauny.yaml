@@ -1,6 +1,7 @@
 name: Cauny
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.cauny.com
 sources:
   - https://www.dialicious.com/en/cauny

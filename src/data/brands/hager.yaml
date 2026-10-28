@@ -1,5 +1,6 @@
 name: Hager
 periods: [{ from: 2009 }]
+makes: [mechanical-watches]
 website: https://www.hagerwatches.com
 sources:
   - https://www.dialicious.com/en/hager

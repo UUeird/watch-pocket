@@ -1,6 +1,7 @@
 name: Satori
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.satoriwatches.com
 sources:
   - https://www.dialicious.com/en/satori

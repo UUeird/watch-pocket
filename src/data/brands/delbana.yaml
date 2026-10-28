@@ -2,7 +2,9 @@ name: Delbana
 origin: Switzerland
 periods: [{ from: 1931 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://delbana.ch
 sources:
   - https://www.dialicious.com/en/delbana
   - https://delbana.ch/
+  - https://delbana.ch/collections/all

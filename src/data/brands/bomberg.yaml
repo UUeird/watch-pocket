@@ -2,7 +2,9 @@ name: Bomberg
 origin: Switzerland
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://bombergwatches.com
 sources:
   - https://www.dialicious.com/en/bomberg
   - https://bombergwatches.com/
+  - https://bombergwatches.com/collections/all

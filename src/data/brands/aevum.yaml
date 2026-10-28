@@ -1,5 +1,6 @@
 name: Aevum
 status: active
+makes: [mechanical-watches]
 website: https://www.aevumtime.com
 sources:
   - https://www.dialicious.com/en/aevum

@@ -2,6 +2,7 @@ name: Wolbrook
 origin: France
 periods: [{ from: 1949 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://wolbrook.com
 sources:
   - https://www.dialicious.com/en/wolbrook

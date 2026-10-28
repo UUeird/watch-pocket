@@ -2,6 +2,7 @@ name: Akerfalk
 origin: Sweden
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://akerfalk.se
 sources:
   - https://www.dialicious.com/en/akerfalk

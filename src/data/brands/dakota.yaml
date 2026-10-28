@@ -2,6 +2,7 @@ name: Dakota
 origin: United States
 status: active
 segment: budget
+makes: [quartz-watches]
 website: https://dakotawatch.com
 sources:
   - https://www.dialicious.com/en/dakota

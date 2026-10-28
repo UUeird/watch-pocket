@@ -1,6 +1,7 @@
 name: Charmex
 origin: Switzerland
 status: active
+makes: [mechanical-watches]
 website: https://www.charmex.ch
 sources:
   - https://www.dialicious.com/en/charmex

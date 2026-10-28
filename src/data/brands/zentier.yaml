@@ -1,6 +1,7 @@
 name: Zentier
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://zentier.com
 sources:
   - https://www.dialicious.com/en/zentier

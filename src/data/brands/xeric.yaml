@@ -2,6 +2,7 @@ name: Xeric
 origin: United States
 periods: [{ from: 2013 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.xeric.com
 sources:
   - https://www.dialicious.com/en/xeric

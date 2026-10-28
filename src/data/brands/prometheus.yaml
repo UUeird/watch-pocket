@@ -2,6 +2,7 @@ name: Prometheus
 origin: Portugal
 periods: [{ from: 2008 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.prometheuswatch.com
 sources:
   - https://www.dialicious.com/en/prometheus

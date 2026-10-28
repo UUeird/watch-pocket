@@ -2,6 +2,7 @@ name: Vescari
 origin: Netherlands
 periods: [{ from: 2016 }]
 segment: mid-range
+makes: [quartz-watches]
 website: https://vescari.com
 sources:
   - https://www.dialicious.com/en/vescari

@@ -1,6 +1,7 @@
 name: Selectron
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://selectronwatches.com
 sources:
   - https://www.dialicious.com/en/selectron

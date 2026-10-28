@@ -1,5 +1,6 @@
 name: Advisor
 status: active
+makes: [mechanical-watches]
 website: https://advisorwatches.com
 sources:
   - https://www.dialicious.com/en/advisor

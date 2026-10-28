@@ -1,8 +1,10 @@
 name: Tacs
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.tacs-watch.com
 sources:
   - https://www.dialicious.com/en/tacs
   - https://www.tacs-watch.com/
   - https://www.tacs-watch.com/en/
+  - https://www.tacs-watch.com/fr/

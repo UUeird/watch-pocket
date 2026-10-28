@@ -1,6 +1,7 @@
 name: Aerotec
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://aerotecwatches.com
 sources:
   - https://www.dialicious.com/en/aerotec

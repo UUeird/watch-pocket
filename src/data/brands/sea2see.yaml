@@ -1,6 +1,7 @@
 name: Sea2see
 periods: [{ from: 2015 }]
 segment: mid-range
+makes: [quartz-watches]
 website: https://www.sea2see.org
 sources:
   - https://www.dialicious.com/en/sea2see

@@ -2,6 +2,7 @@ name: MaisonDuTemps
 origin: France
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://maisondutemps-eu.com
 sources:
   - https://www.dialicious.com/en/maisondutemps

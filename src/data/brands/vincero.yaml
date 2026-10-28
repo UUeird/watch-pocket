@@ -2,7 +2,9 @@ name: Vincero
 origin: United States
 status: active
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 website: https://vincerocollective.com
 sources:
   - https://www.dialicious.com/en/vincero
   - https://vincerocollective.com/
+  - https://vincerocollective.com/collections/all

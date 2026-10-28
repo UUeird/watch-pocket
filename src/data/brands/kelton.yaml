@@ -8,6 +8,7 @@ logoCredit:
 origin: France
 periods: [{ from: 1955 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 website: https://www.kelton.fr
 sources:
   - https://www.dialicious.com/en/kelton

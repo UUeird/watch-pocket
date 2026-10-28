@@ -1,10 +1,12 @@
 name: Hysek
 periods: [{ from: 1997 }]
+makes: [mechanical-watches]
 website: https://hysek.swiss
 sources:
   - https://www.dialicious.com/en/hysek
   - https://hysek.swiss/
   - https://en.worldtempus.com/article/industry-news/brands/hysek-compact-manufacture-17935.html
+  - https://hysek.swiss/en/
 control: private
 independent:
   sources:

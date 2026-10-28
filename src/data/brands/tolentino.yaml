@@ -2,9 +2,11 @@ name: Tolentino
 origin: Switzerland
 periods: [{ from: 2020 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://tolentinowatches.com
 sources:
   - https://www.dialicious.com/en/tolentino
   - https://tolentinowatches.com/
   - https://tolentinowatches.com/gb/content/1-brand
   - https://tolentinowatches.com/gb/
+  - https://tolentinowatches.com/it/

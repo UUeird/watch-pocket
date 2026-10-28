@@ -2,6 +2,7 @@ name: H992
 origin: Switzerland
 periods: [{ from: 2022 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://h992.swiss
 sources:
   - https://www.dialicious.com/en/h992

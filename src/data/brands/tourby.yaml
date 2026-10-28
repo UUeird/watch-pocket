@@ -1,6 +1,7 @@
 name: Tourby
 origin: Germany
 status: active
+makes: [mechanical-watches]
 website: https://www.tourbywatches.com
 sources:
   - https://www.dialicious.com/en/tourby

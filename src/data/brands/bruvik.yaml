@@ -2,6 +2,7 @@ name: Bruvik
 origin: Norway
 periods: [{ from: 2009 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://bruviktime.com
 sources:
   - https://www.dialicious.com/en/bruvik

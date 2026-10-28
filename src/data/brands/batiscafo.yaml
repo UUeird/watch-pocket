@@ -1,6 +1,7 @@
 name: Batiscafo
 periods: [{ from: 2021 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.batiscafo.store
 sources:
   - https://www.dialicious.com/en/batiscafo

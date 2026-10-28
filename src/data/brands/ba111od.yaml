@@ -2,6 +2,7 @@ name: BA111OD
 origin: Switzerland
 periods: [{ from: 2019 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://ba111od.com
 sources:
   - https://www.dialicious.com/en/ba111od

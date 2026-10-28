@@ -1,6 +1,7 @@
 name: McGonigle
 origin: Ireland
 periods: [{ from: 2006 }]
+makes: [mechanical-watches]
 website: https://www.mcgonigle.ch
 sources:
   - https://www.dialicious.com/en/mcgonigle
