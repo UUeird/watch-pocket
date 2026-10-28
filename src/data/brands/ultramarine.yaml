@@ -1,8 +1,10 @@
 name: Ultramarine
 origin: Switzerland
 periods: [{ from: 2018 }]
+segment: mid-range
 website: https://www.ultramarine-watches.com
 sources:
   - https://www.dialicious.com/en/ultramarine
   - https://www.ultramarine-watches.com/
   - https://www.ultramarine-watches.com/about
+  - https://www.ultramarine-watches.com/shop

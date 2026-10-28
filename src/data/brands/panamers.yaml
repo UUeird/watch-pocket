@@ -1,7 +1,9 @@
 name: Panamers
 origin: France
 status: active
+segment: mid-range
 website: http://panamers.com
 sources:
   - https://www.dialicious.com/en/panamers
   - http://panamers.com/
+  - http://panamers.com/en/shop/

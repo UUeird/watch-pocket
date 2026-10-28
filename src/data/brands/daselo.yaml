@@ -1,10 +1,12 @@
 name: Daselo
 origin: Switzerland
 status: active
+segment: mid-range
 website: https://www.daselo-watches.com
 sources:
   - https://www.dialicious.com/en/daselo
   - https://www.daselo-watches.com/
+  - https://www.daselo-watches.com/shop
 control: family
 independent:
   sources:

@@ -1,7 +1,9 @@
 name: Pitzmann
 periods: [{ from: 2021 }]
+segment: mid-range
 website: https://www.pitzmann.com
 sources:
   - https://www.dialicious.com/en/pitzmann
   - https://www.pitzmann.com/
   - https://www.pitzmann.com/about
+  - https://www.pitzmann.com/shop

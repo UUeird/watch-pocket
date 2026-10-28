@@ -1,6 +1,8 @@
 name: Fullgear
 status: active
+segment: mid-range
 website: https://www.fullgear.watch
 sources:
   - https://www.dialicious.com/en/fullgear
   - https://www.fullgear.watch/
+  - https://www.fullgear.watch/en/

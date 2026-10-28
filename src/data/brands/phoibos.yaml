@@ -1,6 +1,7 @@
 name: Phoibos
 origin: Hong Kong
 periods: [{ from: 2014 }]
+segment: mid-range
 website: https://phoiboswatch.com
 sources:
   - https://www.dialicious.com/en/phoibos

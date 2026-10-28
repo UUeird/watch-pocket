@@ -1,10 +1,12 @@
 name: Clemence
 origin: United Kingdom
 status: active
+segment: mid-range
 website: https://www.clemencewatches.com
 sources:
   - https://www.dialicious.com/en/clemence
   - https://www.clemencewatches.com/
+  - https://www.clemencewatches.com/shop
 control: private
 independent:
   sources:

@@ -1,5 +1,6 @@
 name: Enera
 status: active
+segment: mid-range
 website: https://enerawatch.com
 sources:
   - https://www.dialicious.com/en/enera

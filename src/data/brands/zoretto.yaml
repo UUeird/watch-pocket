@@ -1,6 +1,8 @@
 name: Zoretto
 periods: [{ from: 2014 }]
+segment: mid-range
 website: https://www.zoretto-watches.com
 sources:
   - https://www.dialicious.com/en/zoretto
   - https://www.zoretto-watches.com/
+  - https://www.zoretto-watches.com/shop

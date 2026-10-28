@@ -1,6 +1,7 @@
 name: Minuteman
 origin: United States
 periods: [{ from: 2012 }]
+segment: mid-range
 website: https://minutemanwatches.com
 sources:
   - https://www.dialicious.com/en/minuteman

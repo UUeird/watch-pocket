@@ -1,6 +1,8 @@
 name: Longio
 status: active
+segment: luxury
 website: https://www.longiowatch.com
 sources:
   - https://www.dialicious.com/en/longio
   - https://www.longiowatch.com/
+  - https://www.longiowatch.com/shop

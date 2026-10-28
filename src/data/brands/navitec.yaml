@@ -1,5 +1,6 @@
 name: Navitec
 status: active
+segment: mid-range
 website: https://www.navitec.fr
 sources:
   - https://www.dialicious.com/en/navitec

@@ -1,6 +1,7 @@
 name: Meisterstein
 origin: Germany
 periods: [{ from: 2019 }]
+segment: mid-range
 website: https://www.meisterstein.com
 sources:
   - https://www.dialicious.com/en/meisterstein

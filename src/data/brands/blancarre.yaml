@@ -1,6 +1,8 @@
 name: Blancarré
 status: active
+segment: luxury
 website: http://www.blancarre.com
 sources:
   - https://www.dialicious.com/en/blancarre
   - http://www.blancarre.com/
+  - http://blancarre.com/shop/

@@ -1,5 +1,6 @@
 name: Unity
 periods: [{ from: 2010 }]
+segment: mid-range
 website: https://unitywatches.com
 sources:
   - https://www.dialicious.com/en/unity

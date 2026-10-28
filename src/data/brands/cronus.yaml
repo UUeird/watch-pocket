@@ -1,7 +1,9 @@
 name: Cronus
 origin: Germany
 status: active
+segment: mid-range
 website: https://cronus-watches.de
 sources:
   - https://www.dialicious.com/en/cronus
   - https://cronus-watches.de/
+  - https://cronus-watches.de/kollektion/cronus-modelle/

@@ -1,5 +1,6 @@
 name: Lebeau-Courally
 periods: [{ from: 1865 }]
+segment: mid-range
 website: https://lebeau-courally.com
 sources:
   - https://www.dialicious.com/en/lebeau-courally

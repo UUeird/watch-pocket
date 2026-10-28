@@ -1,6 +1,8 @@
 name: Neminus
 periods: [{ from: 2017 }]
+segment: budget
 website: https://www.neminuslab.com
 sources:
   - https://www.dialicious.com/en/neminus
   - https://www.neminuslab.com/
+  - https://www.neminuslab.com/shop

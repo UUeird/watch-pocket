@@ -1,5 +1,6 @@
 name: Radiant
 status: active
+segment: budget
 website: https://www.radiant.es
 sources:
   - https://www.dialicious.com/en/radiant

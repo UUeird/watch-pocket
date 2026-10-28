@@ -1,7 +1,9 @@
 name: Zenton
 origin: Hong Kong
 status: active
+segment: mid-range
 website: https://www.zentonwatches.com
 sources:
   - https://www.dialicious.com/en/zenton
   - https://www.zentonwatches.com/
+  - https://www.zentonwatches.com/watches

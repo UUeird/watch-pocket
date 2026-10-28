@@ -1,5 +1,6 @@
 name: ALF
 status: active
+segment: budget
 website: https://alfwatchcompany.com
 sources:
   - https://www.dialicious.com/en/alf
