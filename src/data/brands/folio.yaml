@@ -1,4 +1,7 @@
 name: Folio
 status: active
+segment: budget
 tags:
   - fashion
+sources:
+  - https://www.walmart.com/browse/jewelry/everyday-watches/folio/3891_3906_2242838/YnJhbmQ6Rm9saW8ie

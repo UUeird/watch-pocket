@@ -1,4 +1,8 @@
 name: Henry Archer
 status: active
+segment: mid-range
 tags:
   - direct-to-consumer
+website: https://henryarcher.com
+sources:
+  - https://henryarcher.com/en/collections/all

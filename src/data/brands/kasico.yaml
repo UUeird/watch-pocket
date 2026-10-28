@@ -1,3 +1,6 @@
 name: Kasico
 origin: China
 status: active
+segment: budget
+sources:
+  - https://the-gadgeteer.com/?p=515837

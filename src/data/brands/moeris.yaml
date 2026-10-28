@@ -1,3 +1,6 @@
 name: Moeris
 origin: Switzerland
 status: defunct
+segment: mid-range
+sources:
+  - https://wiki.grail-watch.com/index.php/Moeris

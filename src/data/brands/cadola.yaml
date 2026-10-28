@@ -1,4 +1,8 @@
 name: Cadola
 status: active
+segment: budget
 tags:
   - direct-to-consumer
+website: https://cadola1946.com
+sources:
+  - https://cadola1946.com/collections/all
