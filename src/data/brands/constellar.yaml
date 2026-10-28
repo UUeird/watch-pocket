@@ -1,9 +1,10 @@
 name: Constellar
 origin: Singapore
-status: active
+periods: [{ from: 2018 }]
 segment: mid-range
 website: https://constellartimepieces.com
 sources:
   - https://www.dialicious.com/en/constellar
   - https://constellartimepieces.com/
   - https://constellartimepieces.com/collections/all
+  - https://constellartimepieces.com/pages/our-story

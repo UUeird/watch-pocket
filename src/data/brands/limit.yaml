@@ -1,8 +1,9 @@
 name: Limit
 origin: United Kingdom
-status: active
+periods: [{ from: 1912 }]
 segment: budget
 ownership:
   - owner: time-products
 sources:
   - https://www.argos.co.uk/product/3165674
+  - https://www.timeproducts.co.uk/

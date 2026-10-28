@@ -1,5 +1,5 @@
 name: Archetype
-status: active
+periods: [{ from: 2020 }]
 segment: mid-range
 makes: [mechanical-watches]
 website: https://www.archetypewatches.com
@@ -7,3 +7,4 @@ sources:
   - https://www.dialicious.com/en/archetype
   - https://www.archetypewatches.com/
   - https://www.archetypewatches.com/collections/all
+  - https://www.archetypewatches.com/pages/our-team
