@@ -4,7 +4,7 @@ logomark: ../logos/maserati-logomark.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Maserati_logo_2.svg
   license: Public domain
-status: active
+periods: [{ from: 1914 }]
 segment: mid-range
 website: https://www.maseratiwatches.com
 sources:

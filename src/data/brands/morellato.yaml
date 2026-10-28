@@ -4,13 +4,14 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Morellato_Group_Logo.svg
   license: Public domain
 origin: Italy
-status: active
+periods: [{ from: 1930 }]
 segment: budget
 website: https://morellatogroup.com
 sources:
   - https://www.dialicious.com/en/morellato
   - https://morellatogroup.com/
   - https://morellatogroup.com/media_file/MORELLATO%20GROUP_COMPANY%20PROFILE_2025_IT.pdf
+  - https://www.morellatostraps.com/en/about/about-us.html
 ownership:
   - owner: morellato-group
     sources:

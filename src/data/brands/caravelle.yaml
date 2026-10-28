@@ -1,9 +1,12 @@
 name: Caravelle
 origin: United States
+periods: [{ from: 1962 }]
 segment: budget
 sources:
   - https://www.dialicious.com/en/caravelle
   - https://en.wikipedia.org/wiki/Bulova
+  - https://www.watchgecko.com/blogs/magazine/the-caravelle-sea-hunter-devil-diver
+  - https://kibblewatches.co.uk/pages/brand-directory-caravelle
 ownership:
   - owner: { brand: bulova }
     from: 1962

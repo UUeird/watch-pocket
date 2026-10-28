@@ -8,6 +8,7 @@ logomarkCredit:
   source: https://commons.wikimedia.org/wiki/File:Adidas_2022_logo.svg
   license: Public domain
 origin: Germany
+periods: [{ from: 1949 }]
 segment: budget
 makes: [smartwatches]
 tags: [fashion]
@@ -20,6 +21,7 @@ sources:
   - https://www.dialicious.com/en/adidas
   - https://ca.fashionnetwork.com/news/Timex-group-and-adidas-strike-global-licensing-deal,1300575.html
   - https://en.wikipedia.org/wiki/Adidas_miCoach
+  - https://www.adidas-group.com/en/about/history
 control: public
 independent:
   sources:

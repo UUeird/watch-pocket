@@ -3,13 +3,14 @@ logo: ../logos/joop.svg
 logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Joop!_logo.svg
   license: Public domain
-status: active
+periods: [{ from: 1988 }]
 segment: mid-range
 website: https://joop.com
 sources:
   - https://www.dialicious.com/en/joop
   - https://joop.com/
   - https://www.zalando.de/chronographen-herren/joop-accessories
+  - https://joop.com/history
 ownership:
   - owner: holy-fashion-group
     stake: 100

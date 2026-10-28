@@ -1,6 +1,6 @@
 name: Radley
 origin: United Kingdom
-status: active
+periods: [{ from: 1998 }]
 segment: budget
 ownership:
   - owner: exponent-private-equity
@@ -18,3 +18,6 @@ ownership:
     from: 2026
     sources:
       - https://www.theretailbulletin.com/fashion/radley-acquired-out-of-administration-by-gordon-brothers-27-05-2026/
+sources:
+  - https://en.wikipedia.org/wiki/Radley_(company)
+  - https://www.exponentpe.com/node/376

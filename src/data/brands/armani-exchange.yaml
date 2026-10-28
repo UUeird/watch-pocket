@@ -5,7 +5,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Armani_Exchange_logo.svg
   license: Public domain
 origin: Italy
-status: active
+periods: [{ from: 1991 }]
 segment: budget
 tags:
   - fashion
@@ -16,3 +16,5 @@ ownership:
     from: 1991
     sources:
       - https://en.wikipedia.org/wiki/Armani
+sources:
+  - https://altayer.com/retail/lifestyle/ax
