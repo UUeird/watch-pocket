@@ -33,8 +33,9 @@ Research each fact, then add every URL you relied on to the brand's `sources`
    catalog. Cite a page per kind (Wikipedia, the brand's collection pages, an
    authorized retailer or press).
 6. **Segment**: `haute`, `luxury`, `mid-range`, `budget`, or `broad` for a range
-   spanning several tiers. Base it on the brand's current list prices, and cite
-   the price page.
+   spanning several tiers. How to decide and source it is being worked out in
+   board task watch-pocket-10.2. Follow whatever has been settled there; until
+   then, ask Sam rather than choosing one.
 7. **Website**: the brand's current official site. Make sure it is the brand,
    not a namesake, parked domain or spam page.
 8. **Logo**: from Wikimedia Commons (public domain, CC BY or CC BY-SA with
