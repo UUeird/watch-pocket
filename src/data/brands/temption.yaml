@@ -1,12 +1,14 @@
 name: Temption
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: http://www.temption-watches.de
 sources:
   - https://www.dialicious.com/en/temption
   - https://www.wikidata.org/wiki/Q104860846
   - http://www.temption-watches.de/
   - https://righttime.com/rt/pre-owned/temption_cgk205.htm
+  - https://en.wikipedia.org/wiki/Temption
 control: private
 independent:
   sources:

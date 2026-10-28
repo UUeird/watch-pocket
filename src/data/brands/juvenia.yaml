@@ -9,6 +9,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1860 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 website: https://www.juvenia.ch
 sources:
   - https://www.dialicious.com/en/juvenia

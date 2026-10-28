@@ -3,6 +3,7 @@ origin: Switzerland
 headquarters: United Kingdom
 periods: [{ from: 1895 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: citychamp
     from: 2014

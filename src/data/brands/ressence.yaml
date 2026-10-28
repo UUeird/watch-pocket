@@ -2,8 +2,10 @@ name: Ressence
 origin: Belgium
 periods: [{ from: 2010 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://www.wikidata.org/wiki/Q17148932
+  - https://en.wikipedia.org/wiki/Ressence
 control: private
 independent:
   sources:

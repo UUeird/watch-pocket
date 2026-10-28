@@ -2,8 +2,10 @@ name: Philippe Dufour
 origin: Switzerland
 periods: [{ from: 1978 }]
 segment: haute
+makes: [mechanical-watches, movements]
 sources:
   - https://www.ahci.ch/members/philippe-dufour
+  - https://en.wikipedia.org/wiki/Philippe_Dufour
 control: family
 independent:
   sources:

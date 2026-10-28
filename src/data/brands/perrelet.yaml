@@ -11,6 +11,7 @@ heritage:
   sources:
     - https://perrelet.com/en-GB/our-history
 segment: luxury
+makes: [mechanical-watches]
 ownership:
   - owner: festina-group
     from: 2004

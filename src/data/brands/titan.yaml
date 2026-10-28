@@ -12,6 +12,7 @@ logomarkCredit:
 origin: India
 periods: [{ from: 1984 }]
 segment: budget
+makes: [quartz-watches, smartwatches]
 ownership:
   - owner: titan-company
 sources:

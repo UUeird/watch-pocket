@@ -2,6 +2,7 @@ name: Laco
 origin: Germany
 periods: [{ from: 1925 }]
 segment: mid-range
+makes: [mechanical-watches]
 sources:
   - https://en.wikipedia.org/wiki/Laco_Uhrenmanufaktur
 control: family

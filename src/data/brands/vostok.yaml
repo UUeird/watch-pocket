@@ -9,6 +9,7 @@ logoCredit:
 origin: Russia
 periods: [{ from: 1942 }]
 segment: budget
+makes: [mechanical-watches, movements]
 sources:
   - https://en.wikipedia.org/wiki/Vostok_(watches)
 logoBackground: '#3c71b7'

@@ -2,6 +2,7 @@ name: Gruen
 origin: United States
 periods: [{ from: 1894, to: 1958 }]
 segment: mid-range
+makes: [mechanical-watches]
 sources:
   - https://en.wikipedia.org/wiki/Gruen_Watch_Company
 ownership:

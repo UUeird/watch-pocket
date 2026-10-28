@@ -9,6 +9,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1962 }]
 segment: mid-range
+makes: [quartz-watches]
 website: https://aquastar.ch
 sources:
   - https://en.wikipedia.org/wiki/Aquastar_(watch_brand)

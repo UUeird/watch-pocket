@@ -2,6 +2,7 @@ name: Westclox
 origin: United States
 status: defunct
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: talley-industries
     from: 1968

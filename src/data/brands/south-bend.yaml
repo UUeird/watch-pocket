@@ -2,5 +2,6 @@ name: South Bend
 origin: United States
 periods: [{ from: 1903, to: 1929 }]
 segment: mid-range
+makes: [mechanical-watches]
 sources:
   - https://en.wikipedia.org/wiki/South_Bend_Watch_Company

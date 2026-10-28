@@ -2,12 +2,14 @@ name: CWC
 origin: United Kingdom
 periods: [{ from: 1972 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.cwcwatch.com
 sources:
   - https://www.dialicious.com/en/cwc
   - https://www.cwcwatch.com/
   - https://www.cwcwatch.com/pages/cwc-history
   - https://www.cwcwatch.com/collections/all
+  - https://en.wikipedia.org/wiki/Cabot_Watch_Company
 ownership:
   - owner: silvermans
     from: 1996

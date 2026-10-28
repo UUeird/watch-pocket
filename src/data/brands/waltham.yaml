@@ -6,5 +6,6 @@ logoCredit:
 origin: United States
 periods: [{ from: 1850 }]
 segment: mid-range
+makes: [mechanical-watches]
 sources:
   - https://en.wikipedia.org/wiki/Waltham_Watch_Company

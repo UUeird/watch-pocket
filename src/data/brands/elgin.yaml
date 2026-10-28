@@ -10,6 +10,7 @@ logomarkCredit:
 origin: United States
 periods: [{ from: 1864, to: 1968 }]
 segment: mid-range
+makes: [mechanical-watches]
 sources:
   - https://en.wikipedia.org/wiki/Elgin_National_Watch_Company
 ownership:

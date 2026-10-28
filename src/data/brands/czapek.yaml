@@ -7,8 +7,10 @@ heritage:
   sources:
     - https://en.worldtempus.com/article/industry-news/business/new-brand-czapek-is-back-20449.html
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://web.archive.org/web/20190722123938/http://www.fhs.swiss/eng/2015_11_30_02_Czapek.html
+  - https://en.wikipedia.org/wiki/Czapek_%26_Cie
 independent:
   sources:
     - https://en.wikipedia.org/wiki/Czapek_%26_Cie

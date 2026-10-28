@@ -9,8 +9,10 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 2002 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://www.wikidata.org/wiki/Q16950856
+  - https://en.wikipedia.org/wiki/Speake-Marin
 control: private
 independent:
   sources:

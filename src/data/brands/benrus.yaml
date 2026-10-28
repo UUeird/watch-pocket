@@ -6,6 +6,7 @@ logoCredit:
 origin: United States
 status: revived
 segment: mid-range
+makes: [mechanical-watches]
 ownership:
   - owner: mz-berger
     to: 2014
@@ -18,3 +19,5 @@ ownership:
     sources:
       - https://en.wikipedia.org/wiki/Benrus
       - https://jckonline.com/?p=99030
+sources:
+  - https://en.wikipedia.org/wiki/Benrus

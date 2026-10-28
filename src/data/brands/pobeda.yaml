@@ -8,6 +8,7 @@ logoCredit:
 origin: Russia
 periods: [{ from: 1945 }]
 segment: budget
+makes: [mechanical-watches]
 sources:
   - https://en.wikipedia.org/wiki/Pobeda_(watch)
 ownership:
