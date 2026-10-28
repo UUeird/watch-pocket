@@ -46,6 +46,7 @@ references:
     metals: [steel]
     bezel: { material: aluminum, colors: [black], style: tachymeter }
     movement: "1861"
+    movementType: mechanical
     complications: [chronograph]
     crystal: acrylic
     dials: [{ color: black }]
@@ -56,6 +57,7 @@ references:
     metals: [steel]
     bezel: { material: aluminum, colors: [black], style: tachymeter }
     movement: "3861"
+    movementType: mechanical
     complications: [chronograph]
     crystal: acrylic
     dials: [{ color: black }]
@@ -66,6 +68,7 @@ references:
     metals: [steel]
     bezel: { material: aluminum, colors: [black], style: tachymeter }
     movement: "3861"
+    movementType: mechanical
     complications: [chronograph]
     crystal: sapphire
     dials: [{ color: black }]
@@ -76,6 +79,7 @@ references:
     metals: [steel]
     bezel: { material: aluminum, colors: [black], style: tachymeter }
     movement: "3861"
+    movementType: mechanical
     complications: [chronograph]
     crystal: acrylic
     dials: [{ color: black }]
@@ -86,6 +90,7 @@ references:
     metals: [steel]
     bezel: { material: aluminum, colors: [black], style: tachymeter }
     movement: "3861"
+    movementType: mechanical
     complications: [chronograph]
     crystal: sapphire
     dials: [{ color: black }]

@@ -20,6 +20,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "4R36"
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: green }]
     bracelets: [{ type: rubber-strap }]
@@ -32,6 +33,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R36"
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
@@ -44,6 +46,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R36"
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -56,6 +59,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "4R36"
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
@@ -68,6 +72,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "4R36"
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -80,6 +85,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "4R36"
+    movementType: mechanical
     complications: [date, day]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]

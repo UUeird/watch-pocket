@@ -21,6 +21,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R5H"
+    movementType: mechanical
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]
@@ -34,6 +35,7 @@ references:
     caseColors: [{ color: gold }]
     crystal: sapphire
     movement: "6R5H"
+    movementType: mechanical
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -46,6 +48,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R54"
+    movementType: mechanical
     complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -58,6 +61,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R5H"
+    movementType: mechanical
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]
@@ -70,6 +74,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R51"
+    movementType: mechanical
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]
@@ -82,6 +87,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R5H"
+    movementType: mechanical
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -94,6 +100,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R5H"
+    movementType: mechanical
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]

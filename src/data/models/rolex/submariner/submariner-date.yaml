@@ -26,6 +26,7 @@ references:
     bezel: { material: aluminum, colors: [black], style: dive }
     crystal: sapphire
     movement: "3035"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -35,6 +36,7 @@ references:
     metals: [steel]
     bezel: { material: aluminum, colors: [black], style: dive }
     movement: "3135"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -51,6 +53,7 @@ references:
     metals: [steel, yellow-gold]
     bezel: { material: aluminum, style: dive }
     movement: "3135"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -67,6 +70,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "3135"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -76,6 +80,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [green], style: dive }
     movement: "3135"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -85,6 +90,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "3235"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -94,6 +100,7 @@ references:
     metals: [steel]
     bezel: { material: ceramic, colors: [green], style: dive }
     movement: "3235"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -103,6 +110,7 @@ references:
     metals: [steel, yellow-gold]
     bezel: { material: ceramic, colors: [blue], style: dive }
     movement: "3235"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -112,6 +120,7 @@ references:
     metals: [yellow-gold]
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "3235"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]

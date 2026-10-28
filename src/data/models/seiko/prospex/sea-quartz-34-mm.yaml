@@ -22,6 +22,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6N01"
+    movementType: quartz
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -34,6 +35,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6N01"
+    movementType: quartz
     complications: []
     dials: [{ color: pink }]
     bracelets: [{ type: bracelet }]
@@ -46,6 +48,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6N01"
+    movementType: quartz
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -58,6 +61,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6N01"
+    movementType: quartz
     complications: []
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -70,6 +74,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6N01"
+    movementType: quartz
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -82,6 +87,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6N01"
+    movementType: quartz
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -94,6 +100,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6N01"
+    movementType: quartz
     complications: []
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -106,6 +113,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6N01"
+    movementType: quartz
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]

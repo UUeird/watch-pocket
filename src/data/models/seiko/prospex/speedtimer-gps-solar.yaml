@@ -16,6 +16,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "5X83"
+    movementType: quartz
     complications: [date, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -28,6 +29,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "5X83"
+    movementType: quartz
     complications: [date, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]

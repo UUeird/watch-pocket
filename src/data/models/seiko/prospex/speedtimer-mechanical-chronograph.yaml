@@ -24,6 +24,7 @@ references:
     caseColors: [{ color: black }]
     crystal: sapphire
     movement: "8R46"
+    movementType: mechanical
     complications: [date, chronograph]
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -36,6 +37,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "8R48"
+    movementType: mechanical
     complications: [date, chronograph]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -48,6 +50,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "8R48"
+    movementType: mechanical
     complications: [date, chronograph]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -60,6 +63,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "8R48"
+    movementType: mechanical
     complications: [date, chronograph]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -72,6 +76,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "8R48"
+    movementType: mechanical
     complications: [date, chronograph]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -85,6 +90,7 @@ references:
     caseColors: [{ color: black }]
     crystal: sapphire
     movement: "8R48"
+    movementType: mechanical
     complications: [date, chronograph]
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -97,6 +103,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "8R48"
+    movementType: mechanical
     complications: [date, chronograph]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -109,6 +116,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "8R48"
+    movementType: mechanical
     complications: [date, chronograph]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -121,6 +129,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "8R48"
+    movementType: mechanical
     complications: [date, chronograph]
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]

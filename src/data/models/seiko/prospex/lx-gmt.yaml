@@ -16,6 +16,7 @@ references:
     metals: [titanium]
     crystal: sapphire
     movement: "5R66"
+    movementType: mechanical
     complications: [date, gmt, power-reserve]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -28,6 +29,7 @@ references:
     metals: [titanium]
     crystal: sapphire
     movement: "5R66"
+    movementType: mechanical
     complications: [date, gmt, power-reserve]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]

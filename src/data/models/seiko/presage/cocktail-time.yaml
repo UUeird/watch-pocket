@@ -42,6 +42,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -54,6 +55,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: leather-strap }]
@@ -66,6 +68,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: brown }]
     bracelets: [{ type: leather-strap }]
@@ -78,6 +81,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -90,6 +94,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
@@ -103,6 +108,7 @@ references:
     caseColors: [{ color: rose-gold }]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: brown }]
     bracelets: [{ type: leather-strap }]
@@ -115,6 +121,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -127,6 +134,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: leather-strap }]
@@ -139,6 +147,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -151,6 +160,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: red }]
     bracelets: [{ type: leather-strap }]
@@ -163,6 +173,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
@@ -175,6 +186,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: leather-strap }]
@@ -187,6 +199,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
@@ -200,6 +213,7 @@ references:
     caseColors: [{ color: gold }]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: gold }]
     bracelets: [{ type: bracelet }]
@@ -213,6 +227,7 @@ references:
     caseColors: [{ color: gold }]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: brown }]
     bracelets: [{ type: bracelet }]
@@ -225,6 +240,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -237,6 +253,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -249,6 +266,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: champagne }]
     bracelets: [{ type: bracelet }]
@@ -261,6 +279,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: pink }]
     bracelets: [{ type: bracelet }]
@@ -273,6 +292,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "2R05"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -285,6 +305,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "2R05"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -297,6 +318,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "2R05"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: champagne }]
     bracelets: [{ type: bracelet }]
@@ -309,6 +331,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "2R05"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -322,6 +345,7 @@ references:
     caseColors: [{ color: gold }]
     crystal: mineral
     movement: "2R05"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: gold }]
     bracelets: [{ type: bracelet }]
@@ -335,6 +359,7 @@ references:
     caseColors: [{ color: gold }]
     crystal: mineral
     movement: "2R05"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: brown }]
     bracelets: [{ type: leather-strap }]
@@ -347,6 +372,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: pink }]
     bracelets: [{ type: bracelet }]
@@ -359,6 +385,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -371,6 +398,7 @@ references:
     metals: [steel]
     crystal: mineral
     movement: "4R57"
+    movementType: mechanical
     complications: [date, power-reserve]
     dials: [{ color: green }]
     bracelets: [{ type: leather-strap }]

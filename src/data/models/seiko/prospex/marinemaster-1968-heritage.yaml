@@ -19,6 +19,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "8L45"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -31,6 +32,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "8L45"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -42,6 +44,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "8L45"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -54,6 +57,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "8L35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -66,6 +70,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "8L35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]

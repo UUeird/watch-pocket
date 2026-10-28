@@ -15,6 +15,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R35"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]

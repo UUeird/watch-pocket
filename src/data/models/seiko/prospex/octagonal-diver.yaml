@@ -17,6 +17,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R55"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -29,6 +30,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R55"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -41,6 +43,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movement: "6R55"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: brown }]
     bracelets: [{ type: bracelet }]

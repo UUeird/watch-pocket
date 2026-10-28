@@ -14,6 +14,7 @@ references:
     metals: [steel, white-gold]
     bezel: { material: white-gold, style: fluted }
     movement: "3235"
+    movementType: mechanical
     complications: [date]
     dials: [{ color: blue }, { color: black }, { color: silver }, { color: white }, { color: gray, name: Slate }, { color: green, name: Mint green }]
     bracelets: [{ type: bracelet, name: Oyster }, { type: bracelet, name: Jubilee }]
