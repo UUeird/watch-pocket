@@ -14,9 +14,10 @@ logomarkOnDark: ../logos/zenith-logomark-on-dark.png
 origin: Switzerland
 periods: [{ from: 1865 }]
 segment: luxury
-makes: [mechanical-watches]
+makes: [mechanical-watches, quartz-watches, movements]
 ownership:
   - owner: lvmh
     from: 1999
 sources:
   - https://en.wikipedia.org/wiki/Zenith_(watchmaker)
+  - https://www.dmarge.com/watches/rolex-daytona-zenith-el-primero

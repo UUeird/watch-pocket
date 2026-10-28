@@ -10,7 +10,7 @@ logomarkCredit:
 origin: Switzerland
 periods: [{ from: 1905 }]
 segment: luxury
-makes: [mechanical-watches]
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: rolex-sa
     from: 1905

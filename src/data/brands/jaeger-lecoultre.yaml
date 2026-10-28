@@ -14,7 +14,7 @@ logomarkOnDark: ../logos/jaeger-lecoultre-logomark-on-dark.png
 origin: Switzerland
 periods: [{ from: 1833 }]
 segment: luxury
-makes: [mechanical-watches, quartz-watches]
+makes: [mechanical-watches, quartz-watches, movements]
 ownership:
   - owner: richemont
     from: 2000

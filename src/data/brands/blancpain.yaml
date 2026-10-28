@@ -7,7 +7,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1735 }]
 segment: haute
-makes: [mechanical-watches]
+makes: [mechanical-watches, movements]
 ownership:
   - owner: swatch-group
     from: 1992

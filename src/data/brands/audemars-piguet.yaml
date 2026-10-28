@@ -8,7 +8,7 @@ origin: Switzerland
 control: family
 periods: [{ from: 1875 }]
 segment: haute
-makes: [mechanical-watches, quartz-watches]
+makes: [mechanical-watches, quartz-watches, movements]
 revenue:
   - year: 2025
     amount: 2600000000

@@ -8,9 +8,10 @@ headquarters: United States
 manufacturing: [Switzerland]
 periods: [{ from: 1881 }]
 segment: mid-range
-makes: [mechanical-watches, quartz-watches]
+makes: [mechanical-watches, quartz-watches, smartwatches]
 ownership:
   - owner: movado-group
 sources:
   - https://www.wikidata.org/wiki/Q939816
   - https://www.movado.com/us/default/mens-designs/automatic-movement/
+  - https://9to5google.com/2019/09/20/movado-connect-2-0-wear-os/

@@ -7,7 +7,7 @@ origin: Switzerland
 control: private
 periods: [{ from: 1904 }]
 segment: mid-range
-makes: [mechanical-watches]
+makes: [mechanical-watches, quartz-watches]
 sources:
   - https://en.wikipedia.org/wiki/Oris
 independent:

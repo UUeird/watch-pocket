@@ -6,7 +6,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1874 }]
 segment: luxury
-makes: [mechanical-watches, quartz-watches]
+makes: [mechanical-watches, quartz-watches, movements]
 ownership:
   - owner: richemont
     from: 1988
