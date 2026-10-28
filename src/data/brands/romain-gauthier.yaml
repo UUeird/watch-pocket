@@ -6,6 +6,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 2002 }]
 segment: haute
+makes: [mechanical-watches]
 ownership:
   - owner: chanel
     stake: 20
@@ -15,3 +16,4 @@ ownership:
       - https://www.luxurybazaar.com/grey-market/chanel-watch-brands/
 sources:
   - https://en.wikipedia.org/wiki/Romain_Gauthier
+  - https://www.timeandwatches.com/2013/01/romain-gauthier-logical-one.html

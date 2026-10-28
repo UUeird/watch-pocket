@@ -8,9 +8,11 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1889 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 sources:
   - https://en.wikipedia.org/wiki/Doxa_SA
   - https://www.wikidata.org/wiki/Q2744515
+  - https://professionalwatches.com/doxa-sub-300b-professional/
 ownership:
   - owner: walca
     from: 1997

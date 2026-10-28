@@ -1,7 +1,9 @@
 name: Sarpaneva
 periods: [{ from: 2003 }]
 segment: haute
+makes: [mechanical-watches]
 website: https://studiosarpaneva.com
 sources:
   - https://www.dialicious.com/en/sarpaneva
   - https://studiosarpaneva.com/
+  - https://ablogtowatch.com/sarpaneva-korona-moonshine-watch

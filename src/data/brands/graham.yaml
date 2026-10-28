@@ -2,8 +2,10 @@ name: Graham
 origin: United Kingdom
 periods: [{ from: 1995 }]
 segment: luxury
+makes: [mechanical-watches]
 website: https://graham1695.com
 sources:
   - https://www.dialicious.com/en/graham
   - https://graham1695.com/
   - https://timetransformed.com/2015/09/05/graham/
+  - https://www.watchonista.com/graham-london/watches/chronofighter-1695

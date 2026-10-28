@@ -2,8 +2,10 @@ name: Hautlence
 origin: Switzerland
 periods: [{ from: 2004 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://web.archive.org/web/20240521102416/https://www.hautlence.com/wp-content/uploads/2024/03/HAUTLENCE_Press-Release_20th-Anniversary_ENGLISH.pdf
+  - https://watchesbysjx.com/2015/10/hautlence-unveils-its-first-ever-tourbillon-wristwatch-with-pricing.html
 ownership:
   - owner: melb-holding
     from: 2012

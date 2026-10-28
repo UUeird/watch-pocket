@@ -2,8 +2,10 @@ name: Kari Voutilainen
 origin: Switzerland
 periods: [{ from: 2002 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://www.acollectedman.com/blogs/journal/watchmaking-journey-kari-voutilainen
+  - https://timeandtidewatches.com/kari-voutilainen-20th-anniversary-tourbillon-introducing/
 control: private
 independent:
   sources:

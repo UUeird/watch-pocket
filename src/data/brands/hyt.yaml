@@ -8,6 +8,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 2012, to: 2021 }, { from: 2022 }]
 segment: haute
+makes: [mechanical-watches]
 logoBackground: '#000000'
 ownership:
   - owner: kairos-technology-switzerland
@@ -15,3 +16,5 @@ ownership:
     sources:
       - https://professionalwatches.com/hyt-returns/
       - https://en.wikipedia.org/wiki/HYT_(watchmaker)
+sources:
+  - https://ablogtowatch.com/hyt-h2-hydromechanical-watch-unveiled
