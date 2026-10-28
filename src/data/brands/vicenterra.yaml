@@ -1,6 +1,7 @@
 name: Vicenterra
 origin: Switzerland
 periods: [{ from: 2010 }]
+segment: luxury
 website: http://www.vicenterra.ch
 sources:
   - https://www.dialicious.com/en/vicenterra

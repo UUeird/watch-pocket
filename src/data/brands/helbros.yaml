@@ -1,5 +1,7 @@
 name: Helbros
 origin: United States
 periods: [{ from: 1913 }]
+segment: budget
 sources:
   - https://electric-watches.co.uk/makers/helbros/
+  - https://thewatchpreserve.com/products/vintage-35mm-helbros-invincible-mens-mechanical-wristwatch-puw-463-chrome

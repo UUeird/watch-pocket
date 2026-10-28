@@ -1,10 +1,12 @@
 name: Monta
 origin: United States
 periods: [{ from: 2016 }]
+segment: mid-range
 tags:
   - direct-to-consumer
 sources:
   - https://gearpatrol.com/2019/08/06/5-questions-with-monta-watches/
+  - https://timeandtidewatches.com/monta-oceanking-60-minute-with-date-hands-on/
 control: private
 independent:
   sources:

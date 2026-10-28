@@ -1,3 +1,6 @@
 name: Sturmanskie
 origin: Russia
 status: active
+segment: mid-range
+sources:
+  - https://sturmanskie.com/catalog/luna/

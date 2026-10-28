@@ -1,7 +1,10 @@
 name: Dodane
 origin: France
 status: active
+segment: luxury
 control: family
+sources:
+  - https://www.ablogtowatch.com/dodane-type-21-watch-available-on-james-list/
 independent:
   sources:
     - https://www.dodane1857.fr/

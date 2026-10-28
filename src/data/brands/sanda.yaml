@@ -1,3 +1,6 @@
 name: Sanda
 origin: China
 status: active
+segment: budget
+sources:
+  - https://brandwiki.lazada.com.ph/sanda/

@@ -1,6 +1,7 @@
 name: Laine
 origin: Switzerland
 periods: [{ from: 2016 }]
+segment: luxury
 website: https://www.lainewatches.com
 sources:
   - https://www.dialicious.com/en/laine

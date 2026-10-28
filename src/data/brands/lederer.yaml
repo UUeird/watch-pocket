@@ -1,5 +1,6 @@
 name: Lederer
 periods: [{ from: 2020 }]
+segment: haute
 website: https://lederertimepieces.com
 sources:
   - https://www.dialicious.com/en/lederer
