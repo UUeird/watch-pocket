@@ -5,7 +5,9 @@ logoCredit:
   license: Public domain
 origin: Japan
 periods: [{ from: 1942 }]
+segment: mid-range
 ownership:
   - owner: seiko-epson
 sources:
   - https://en.wikipedia.org/wiki/Epson
+  - https://openers.jp/en/watch-and-jewelry/watch-and-jewelry_watch-news/1595373

@@ -1,9 +1,11 @@
 name: Aquadive
 status: active
+segment: mid-range
 website: https://aquadive.com
 sources:
   - https://www.dialicious.com/en/aquadive
   - https://aquadive.com/
+  - https://monochrome-watches.com/aquadive-bathyscaphe-100-gmt-poseidon-edition-introducing-price/
 ownership:
   - owner: synchron
     basis: disclosed

@@ -29,15 +29,45 @@ const describe: Record<BrandFact, string> = {
 export const missingFacts = (brand: Brand) =>
   (Object.keys(brandFacts) as BrandFact[]).filter((fact) => !brandFacts[fact](brand));
 
-export function checkBrandFacts(brands: Brand[]) {
-  const gaps = knownGaps as Record<string, BrandFact[]>;
+// How much research a brand gets. Core brands may have no gaps at all; notable ones are researched fully;
+// long-tail ones get one attempt per fact, and a miss is recorded so the search isn't repeated for a year.
+export type Tier = 'core' | 'notable' | 'long-tail';
+export const brandTier = (brand: Brand, brandsWithLines: Set<string>): Tier => {
+  if (brand.data.priority) return brand.data.priority;
+  if (brandsWithLines.has(brand.id) || brand.data.revenue.length > 0 || brand.data.production) return 'core';
+  const wikipedia = JSON.stringify(brand.data).includes('wikipedia.org/');
+  const owned = brand.data.ownership.some((record) => record.to === undefined);
+  // Small high-end makers often have neither, so a luxury or haute segment counts too.
+  const highEnd = brand.data.segment === 'luxury' || brand.data.segment === 'haute';
+  return wikipedia || owned || highEnd ? 'notable' : 'long-tail';
+};
+
+// src/data/known-gaps.json: for each brand from before the rule, each fact it lacks, with `null` (not yet
+// researched) or the date it was last searched for and not found.
+type Gaps = Record<string, Partial<Record<BrandFact, string | null>>>;
+
+export function checkBrandFacts(brands: Brand[], lines: Line[]) {
+  const gaps = knownGaps as Gaps;
   const ids = new Set(brands.map((brand) => brand.id));
-  for (const id of Object.keys(gaps)) {
+  const brandsWithLines = new Set(lines.map((line) => line.data.brand.id));
+  for (const [id, facts] of Object.entries(gaps)) {
     if (!ids.has(id)) throw new Error(`src/data/known-gaps.json lists "${id}", which is not a brand. Remove it from the list.`);
+    for (const [fact, searched] of Object.entries(facts)) {
+      if (!(fact in brandFacts)) throw new Error(`src/data/known-gaps.json lists "${fact}" for "${id}", which is not a brand fact.`);
+      if (searched !== null && !/^\d{4}-\d{2}-\d{2}$/.test(searched ?? '')) {
+        throw new Error(`src/data/known-gaps.json gives "${id}" ${fact} as "${searched}"; use null or the date it was searched (YYYY-MM-DD).`);
+      }
+    }
   }
   for (const brand of brands) {
     const missing = missingFacts(brand);
-    const allowed = gaps[brand.id] ?? [];
+    const allowed = Object.keys(gaps[brand.id] ?? {}) as BrandFact[];
+    if (allowed.length > 0 && brandTier(brand, brandsWithLines) === 'core') {
+      throw new Error(
+        `Brand "${brand.id}" is a core brand, so it can't have gaps: fill in ${allowed.map((fact) => describe[fact]).join(', ')} ` +
+          'and remove its entry from src/data/known-gaps.json.',
+      );
+    }
     const unlisted = missing.filter((fact) => !allowed.includes(fact));
     if (unlisted.length > 0) {
       throw new Error(

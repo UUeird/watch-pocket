@@ -1,5 +1,6 @@
 name: Byrne
 periods: [{ from: 2022 }]
+segment: luxury
 website: https://www.byrnewatch.com
 sources:
   - https://www.dialicious.com/en/byrne

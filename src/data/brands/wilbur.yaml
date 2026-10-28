@@ -1,6 +1,7 @@
 name: Wilbur
 origin: United States
 periods: [{ from: 2020 }]
+segment: luxury
 website: https://www.wilburco.com
 sources:
   - https://www.dialicious.com/en/wilbur

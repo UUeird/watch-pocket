@@ -1,8 +1,10 @@
 name: Catorex
 origin: Switzerland
+segment: mid-range
 sources:
   - https://www.dialicious.com/en/catorex
   - https://www.wikidata.org/wiki/Q24329908
+  - https://masterhorologer.com/2017/04/29/catorex-flag-attitude-collection/
 control: family
 independent:
   sources:

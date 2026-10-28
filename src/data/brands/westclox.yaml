@@ -1,6 +1,7 @@
 name: Westclox
 origin: United States
 status: defunct
+segment: budget
 ownership:
   - owner: talley-industries
     from: 1968
@@ -16,3 +17,5 @@ ownership:
     from: 2007
     sources:
       - https://en.wikipedia.org/wiki/Westclox
+sources:
+  - https://en.wikipedia.org/wiki/Westclox

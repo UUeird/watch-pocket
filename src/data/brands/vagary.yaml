@@ -1,10 +1,12 @@
 name: Vagary
 origin: Italy
 status: active
+segment: budget
 website: https://www.vagary.it
 sources:
   - https://www.dialicious.com/en/vagary
   - https://www.vagary.it/
+  - https://www.granarelli.com/en/products/orologio-vagary-id9-116-10
 ownership:
   - owner: citizen
     basis: disclosed

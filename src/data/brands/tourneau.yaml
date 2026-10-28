@@ -1,6 +1,7 @@
 name: Tourneau
 origin: United States
 periods: [{ from: 1900 }]
+segment: mid-range
 ownership:
   - owner: bucherer
     from: 2018
@@ -10,3 +11,4 @@ ownership:
       - https://nationaljeweler.com/articles/3926-tourneau-acquired-by-european-watch-retailer
 sources:
   - https://www.wikidata.org/wiki/Q7829333
+  - https://www.tourneau.com/watches/tourneau/tny-series-35-tny350701007-TNY0300002.html

@@ -24,3 +24,7 @@ revenue:
     sources:
       - https://www.loupe.watch/watch-guides/morgan-stanley-watch-report-2025
       - https://www.thehourmarkers.com/articles/morgan-stanley-luxeconsult-ninth-annual-swiss-watcher-2025
+control: private
+independent:
+  sources:
+    - https://en.wikipedia.org/wiki/Richard_Mille

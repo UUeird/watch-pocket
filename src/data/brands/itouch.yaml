@@ -1,6 +1,7 @@
 name: iTouch
 origin: United States
 status: active
+segment: budget
 tags:
   - fashion
 ownership:
@@ -8,3 +9,5 @@ ownership:
     basis: reported
     sources:
       - https://iotm2mcouncil.org/iot-library/news/connected-health-news/jillian-michaels-launches-itouch-fitness-tracker/
+sources:
+  - https://www.slashgear.com/1439896/what-is-itouch-budget-smart-watch-brand

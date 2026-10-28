@@ -8,11 +8,13 @@ logoCredit:
   author: Asia Commercial Holdings Ltd.
 origin: Switzerland
 periods: [{ from: 1860 }]
+segment: luxury
 website: https://www.juvenia.ch
 sources:
   - https://www.dialicious.com/en/juvenia
   - https://www.juvenia.ch/
   - https://en.wikipedia.org/wiki/Juvenia
+  - https://www.juvenia.ch/mpa2.4.514.20
 ownership:
   - owner: asia-commercial-holdings
     from: 1988

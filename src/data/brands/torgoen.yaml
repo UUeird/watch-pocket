@@ -1,5 +1,6 @@
 name: Torgoen
 status: active
+segment: mid-range
 tags:
   - fashion
 ownership:
@@ -8,3 +9,5 @@ ownership:
     from: 2019
     sources:
       - https://jckonline.com/?p=97433
+sources:
+  - https://www.ablogtowatch.com/torgoen-t32-automatic-watch-review/

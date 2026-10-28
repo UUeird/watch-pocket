@@ -5,10 +5,12 @@ logoCredit:
   license: Public domain
 origin: Italy
 status: active
+segment: budget
 website: https://morellatogroup.com
 sources:
   - https://www.dialicious.com/en/morellato
   - https://morellatogroup.com/
+  - https://morellatogroup.com/media_file/MORELLATO%20GROUP_COMPANY%20PROFILE_2025_IT.pdf
 ownership:
   - owner: morellato-group
     sources:

@@ -1,10 +1,12 @@
 name: Takano
 origin: Japan
 status: active
+segment: luxury
 website: https://takanowatch.jp
 sources:
   - https://www.dialicious.com/en/takano
   - https://takanowatch.jp/
+  - https://monochrome-watches.com/introducing-takano-chateau-nouvelle-chronometer-by-hajime-asaoka-japanese-extinct-watchmaker-specs-price
 ownership:
   - owner: precision-watch-tokyo
     basis: disclosed

@@ -1,9 +1,11 @@
 name: JAZ
 periods: [{ from: 1919 }]
+segment: budget
 website: http://jaz.fr
 sources:
   - https://www.dialicious.com/en/jaz
   - http://jaz.fr/
+  - https://www.tryrelic.app/antiques/jaz-paris-quartz-watch
 ownership:
   - owner: data-access
     sources:

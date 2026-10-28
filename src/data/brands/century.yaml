@@ -1,9 +1,11 @@
 name: Century
 status: active
+segment: luxury
 website: https://www.century.ch
 sources:
   - https://www.dialicious.com/en/century
   - https://centuryaluminum.com/
+  - https://europastar.com/magazine/features/2029239-century-perfection-and-exclusivity-for-the-ladies.html
 control: family
 independent:
   sources:

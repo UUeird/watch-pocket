@@ -1,9 +1,11 @@
 name: Leinfelder
 status: active
+segment: luxury
 website: https://www.leinfelder-uhren.de
 sources:
   - https://www.dialicious.com/en/leinfelder
   - https://www.leinfelder-uhren.de/
+  - https://www.watchtime.net/brands/promotion/leinfelder-uhren-muenchen-die-neuen-uhren-2022
 ownership:
   - owner: tempus-arte
     basis: disclosed

@@ -1,11 +1,13 @@
 name: Ikepod
 origin: Switzerland
 periods: [{ from: 1994 }]
+segment: mid-range
 website: https://ikepod.com
 sources:
   - https://www.dialicious.com/en/ikepod
   - https://www.wikidata.org/wiki/Q5995843
   - https://ikepod.com/
+  - https://www.thewatchpages.com/watches/ikepod-duopod-blue-monday-d007silb
 control: private
 independent:
   sources:

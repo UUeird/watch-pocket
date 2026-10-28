@@ -1,6 +1,7 @@
 name: Sherpa
 origin: Germany
 periods: [{ from: 2019 }]
+segment: luxury
 website: https://sherpawatches.com
 sources:
   - https://www.dialicious.com/en/sherpa

@@ -159,7 +159,7 @@ async function buildCatalog() {
       throw new Error(`Model "${model.id}" names line "${model.data.line.id}" but is filed under another line's folder.`);
     }
   }
-  checkBrandFacts(brands);
+  checkBrandFacts(brands, lines);
   checkModelsAgreeWithBrands(models, lines, brands);
   const references = models.flatMap((model) => {
     const line = lines.find((candidate) => candidate.id === model.data.line.id)!;

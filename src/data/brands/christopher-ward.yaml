@@ -8,6 +8,14 @@ origin: United Kingdom
 periods: [{ from: 2004 }]
 segment: mid-range
 makes: [mechanical-watches, quartz-watches]
+ownership:
+  - owner: bgf
+    stake: unknown
+    basis: reported
+    from: 2019
+    sources:
+      - https://thebusinessmagazine.co.uk/companies/bgf-invests-6-25m-into-watchmaker-christopher-ward/
+      - https://uk.fashionnetwork.com/news/Watchmaker-Christopher-Ward-wins-backing-from-BGF,1125305.html
 revenue:
   - year: 2025
     amount: 51000000

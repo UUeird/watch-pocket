@@ -4,10 +4,12 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Dunhill_logo.svg
   license: Public domain
 periods: [{ from: 1893 }]
+segment: luxury
 website: https://www.dunhill.com
 sources:
   - https://www.dialicious.com/en/dunhill
   - https://www.dunhill.com/
+  - https://chronomaster.co.uk/watches/dunhill-alfred-ion-automatic
 ownership:
   - owner: richemont
     sources:

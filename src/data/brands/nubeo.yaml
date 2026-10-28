@@ -1,5 +1,8 @@
 name: Nubeo
 origin: Hong Kong
 status: active
+segment: mid-range
 ownership:
   - owner: solar-time
+sources:
+  - https://www.watches.com/products/nubeo-curiosity-evolution-automatic-limited-edition-abalone

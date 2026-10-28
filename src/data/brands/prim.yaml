@@ -1,9 +1,11 @@
 name: Prim
 status: active
+segment: mid-range
 website: https://prim.cz
 sources:
   - https://www.dialicious.com/en/prim
   - https://prim.cz/
+  - https://eshop.prim-hodinky.cz/en/automatic-watch-prim-repre-m-stainless-steel-316-case-silver-dial
 ownership:
   - owner: mpm-quality
     from: 2001
