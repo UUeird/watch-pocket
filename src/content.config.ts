@@ -209,8 +209,8 @@ const brands = defineCollection({
         tags: z.array(z.enum(['fashion', 'direct-to-consumer', 'early-digital'])).default([]),
         copycat: z.boolean().default(false),
         // How much research effort the brand gets. Normally computed (see `brandTier` in src/lib/consistency.ts):
-        // core for brands with lines or revenue or production figures, notable for those with a Wikipedia source or
-        // a current owner, long-tail otherwise. Set it only to override that.
+        // core for brands with lines or revenue or production figures, notable for those with a Wikipedia source,
+        // a current owner or a luxury or haute segment, long-tail otherwise. Set it only to override that.
         priority: z.enum(['core', 'notable', 'long-tail']).optional(),
         // Watches made per year, with the year the figure refers to.
         production: z.object({ units: z.number().int(), year: z.number().int() }).optional(),

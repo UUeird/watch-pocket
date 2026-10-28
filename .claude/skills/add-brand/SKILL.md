@@ -10,7 +10,8 @@ may only shrink. If a fact can't be sourced, stop and tell Sam which one and why
 
 **How hard to look depends on the brand's tier** (`brandTier` in
 `src/lib/consistency.ts`): *core* brands (with lines, or revenue or production
-figures) can't have gaps; *notable* ones (a Wikipedia source or a current owner)
+figures) can't have gaps; *notable* ones (a Wikipedia source, a current owner, or a luxury or haute
+segment)
 are researched fully, including older press and auction records; *long-tail*
 ones get one reasonable attempt per fact.
 

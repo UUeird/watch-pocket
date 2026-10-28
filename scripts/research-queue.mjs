@@ -15,7 +15,8 @@ const tier = (id, b) => {
   if (b.priority) return b.priority;
   if (brandsWithLines.has(id) || (b.revenue ?? []).length > 0 || b.production) return 'core';
   const owned = (b.ownership ?? []).some((record) => record.to === undefined);
-  return JSON.stringify(b).includes('wikipedia.org/') || owned ? 'notable' : 'long-tail';
+  const highEnd = b.segment === 'luxury' || b.segment === 'haute';
+  return JSON.stringify(b).includes('wikipedia.org/') || owned || highEnd ? 'notable' : 'long-tail';
 };
 const order = { core: 0, notable: 1, 'long-tail': 2 };
 

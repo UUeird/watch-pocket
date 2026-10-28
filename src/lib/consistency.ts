@@ -37,7 +37,9 @@ export const brandTier = (brand: Brand, brandsWithLines: Set<string>): Tier => {
   if (brandsWithLines.has(brand.id) || brand.data.revenue.length > 0 || brand.data.production) return 'core';
   const wikipedia = JSON.stringify(brand.data).includes('wikipedia.org/');
   const owned = brand.data.ownership.some((record) => record.to === undefined);
-  return wikipedia || owned ? 'notable' : 'long-tail';
+  // Small high-end makers often have neither, so a luxury or haute segment counts too.
+  const highEnd = brand.data.segment === 'luxury' || brand.data.segment === 'haute';
+  return wikipedia || owned || highEnd ? 'notable' : 'long-tail';
 };
 
 // src/data/known-gaps.json: for each brand from before the rule, each fact it lacks, with `null` (not yet
