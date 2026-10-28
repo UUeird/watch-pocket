@@ -1,7 +1,9 @@
 name: RZE
 origin: Singapore
 periods: [{ from: 2020 }]
+segment: mid-range
 website: https://www.rzewatches.com
 sources:
   - https://www.dialicious.com/en/rze
   - https://www.rzewatches.com/
+  - https://www.rzewatches.com/collections/all

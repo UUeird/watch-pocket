@@ -1,10 +1,12 @@
 name: Namica
 origin: Japan
 periods: [{ from: 2020 }]
+segment: mid-range
 website: https://www.namicawatches.com
 sources:
   - https://www.dialicious.com/en/namica
   - https://www.namicawatches.com/
+  - https://www.namicawatches.com/collections/all
 control: private
 independent:
   sources:

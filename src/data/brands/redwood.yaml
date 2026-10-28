@@ -1,10 +1,12 @@
 name: Redwood
 origin: Canada
 status: active
+segment: mid-range
 website: https://www.redwoodwatches.com
 sources:
   - https://www.dialicious.com/en/redwood
   - https://www.redwoodwatches.com/
+  - https://www.redwoodwatches.com/collections/all
 control: family
 independent:
   sources:

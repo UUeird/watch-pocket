@@ -1,8 +1,10 @@
 name: Vero
 origin: United States
 periods: [{ from: 2015 }]
+segment: mid-range
 website: https://vero-watch.com
 sources:
   - https://www.dialicious.com/en/vero
   - https://vero-watch.com/
   - https://vero-watch.com/pages/about-us
+  - https://vero-watch.com/collections/all

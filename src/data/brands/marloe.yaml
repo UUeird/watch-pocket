@@ -1,8 +1,10 @@
 name: Marloe
 origin: United Kingdom
 periods: [{ from: 2015 }]
+segment: mid-range
 website: https://www.marloewatchcompany.com
 sources:
   - https://www.dialicious.com/en/marloe
   - https://www.marloewatchcompany.com/
   - https://nationalmotormuseum.org.uk/news/time-well-spent-at-national-motor-museum/
+  - https://www.marloewatchcompany.com/collections/all

@@ -1,6 +1,8 @@
 name: Lancaster
 status: active
+segment: mid-range
 website: https://www.lancasteritalia.net
 sources:
   - https://www.dialicious.com/en/lancaster
   - https://www.lancasteritalia.net/
+  - https://www.lancasteritalia.net/shop

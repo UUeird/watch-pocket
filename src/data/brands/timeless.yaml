@@ -1,7 +1,9 @@
 name: Timeless
 origin: Switzerland
 status: active
+segment: mid-range
 website: https://timeless-watch.ch
 sources:
   - https://www.dialicious.com/en/timeless
   - https://timeless-watch.ch/
+  - https://timeless-watch.ch/shop/

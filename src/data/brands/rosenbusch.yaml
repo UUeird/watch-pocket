@@ -1,7 +1,9 @@
 name: Rosenbusch
 origin: Germany
 status: active
+segment: mid-range
 website: https://rosenbusch-watches.com
 sources:
   - https://www.dialicious.com/en/rosenbusch
   - https://rosenbusch-watches.com/
+  - https://rosenbusch-watches.com/collections/all

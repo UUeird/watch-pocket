@@ -1,10 +1,12 @@
 name: Done
 origin: Switzerland
 periods: [{ from: 2016 }]
+segment: mid-range
 website: https://www.donewatches.ch
 sources:
   - https://www.dialicious.com/en/done
   - https://www.donewatches.ch/
+  - https://www.donewatches.ch/collections/all
 control: private
 independent:
   sources:

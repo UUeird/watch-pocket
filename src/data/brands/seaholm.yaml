@@ -1,7 +1,9 @@
 name: Seaholm
 origin: United States
 status: active
+segment: mid-range
 website: https://seaholmautomatic.com
 sources:
   - https://www.dialicious.com/en/seaholm
   - https://seaholmautomatic.com/
+  - https://seaholmautomatic.com/collections/all

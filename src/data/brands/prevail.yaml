@@ -1,7 +1,9 @@
 name: Prevail
 origin: United States
 status: active
+segment: mid-range
 website: https://prevailwatches.com
 sources:
   - https://www.dialicious.com/en/prevail
   - https://prevailwatches.com/
+  - https://prevailwatches.com/collections/all

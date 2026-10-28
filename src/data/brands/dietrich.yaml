@@ -1,9 +1,11 @@
 name: Dietrich
 status: active
+segment: mid-range
 website: https://dietrich.com
 sources:
   - https://www.dialicious.com/en/dietrich
   - https://dietrich.com/
+  - https://dietrich.com/shop/
 control: private
 independent:
   sources:

@@ -1,7 +1,9 @@
 name: Eone
 origin: United States
 status: active
+segment: mid-range
 website: https://www.eone-time.com
 sources:
   - https://www.dialicious.com/en/eone
   - https://www.eone-time.com/
+  - https://www.eone-time.com/collections/all

@@ -1,9 +1,11 @@
 name: Xezo
 origin: United States
 periods: [{ from: 2001 }]
+segment: budget
 website: https://xezo.com
 sources:
   - https://www.dialicious.com/en/xezo
   - https://www.wikidata.org/wiki/Q8043971
   - https://xezo.com/
   - https://xezo.com/pages/about-xezo
+  - https://xezo.com/collections/all

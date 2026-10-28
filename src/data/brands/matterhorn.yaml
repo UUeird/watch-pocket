@@ -1,7 +1,9 @@
 name: MatterHorn
 origin: United Kingdom
 periods: [{ from: 2019 }]
+segment: mid-range
 website: https://www.matterhornwatchco.com
 sources:
   - https://www.dialicious.com/en/matterhorn
   - https://www.matterhornwatchco.com/
+  - https://www.matterhornwatchco.com/shop

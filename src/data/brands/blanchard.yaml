@@ -1,7 +1,9 @@
 name: Blanchard
 origin: United States
 status: active
+segment: mid-range
 website: https://blanchardwatchco.com
 sources:
   - https://www.dialicious.com/en/blanchard
   - https://blanchardwatchco.com/
+  - https://blanchardwatchco.com/collections/all

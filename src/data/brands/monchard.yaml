@@ -1,10 +1,12 @@
 name: Monchard
 origin: Sweden
 status: active
+segment: mid-range
 website: https://monchardwatches.com
 sources:
   - https://www.dialicious.com/en/monchard
   - https://monchardwatches.com/
+  - https://monchardwatches.com/collections/all
 control: private
 independent:
   sources:

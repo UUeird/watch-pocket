@@ -1,6 +1,8 @@
 name: Signum
 periods: [{ from: 2020 }]
+segment: mid-range
 website: https://www.signumwatches.com
 sources:
   - https://www.dialicious.com/en/signum
   - https://www.signumwatches.com/
+  - https://www.signumwatches.com/collections/all

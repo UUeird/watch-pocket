@@ -1,10 +1,12 @@
 name: Makina
 origin: Philippines
 periods: [{ from: 2017 }]
+segment: mid-range
 website: https://www.makinawatches.com
 sources:
   - https://www.dialicious.com/en/makina
   - https://www.makinawatches.com/
+  - https://www.makinawatches.com/shop
 control: family
 independent:
   sources:

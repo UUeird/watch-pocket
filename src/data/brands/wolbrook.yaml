@@ -1,10 +1,12 @@
 name: Wolbrook
 origin: France
 periods: [{ from: 1949 }]
+segment: mid-range
 website: https://wolbrook.com
 sources:
   - https://www.dialicious.com/en/wolbrook
   - https://wolbrook.com/
+  - https://wolbrook.com/collections/all
 control: private
 independent:
   sources:

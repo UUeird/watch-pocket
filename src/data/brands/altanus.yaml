@@ -1,7 +1,9 @@
 name: Altanus
 origin: Switzerland
 status: active
+segment: mid-range
 website: https://altanus.com
 sources:
   - https://www.dialicious.com/en/altanus
   - https://altanus.com/
+  - https://altanus.com/en/shop/

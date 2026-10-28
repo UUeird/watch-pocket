@@ -1,6 +1,8 @@
 name: Panuach
 status: active
+segment: budget
 website: https://panuach.com
 sources:
   - https://www.dialicious.com/en/panuach
   - https://panuach.com/
+  - https://panuach.com/shop/

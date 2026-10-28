@@ -1,7 +1,9 @@
 name: Berg
 origin: Norway
 status: active
+segment: mid-range
 website: https://bergwatches.com
 sources:
   - https://www.dialicious.com/en/berg
   - https://bergwatches.com/
+  - https://bergwatches.com/collections/all

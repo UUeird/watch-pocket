@@ -1,7 +1,9 @@
 name: Hawchester
 origin: United Kingdom
 status: active
+segment: mid-range
 website: https://hawchester.com
 sources:
   - https://www.dialicious.com/en/hawchester
   - https://hawchester.com/
+  - https://hawchester.com/collections/all

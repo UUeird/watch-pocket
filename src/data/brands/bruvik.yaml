@@ -1,7 +1,9 @@
 name: Bruvik
 origin: Norway
 periods: [{ from: 2009 }]
+segment: mid-range
 website: https://bruviktime.com
 sources:
   - https://www.dialicious.com/en/bruvik
   - https://bruviktime.com/
+  - https://bruviktime.com/collections/all

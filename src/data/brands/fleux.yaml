@@ -1,6 +1,8 @@
 name: Fleux
 periods: [{ from: 2021 }]
+segment: mid-range
 website: https://www.fleuxwatches.com
 sources:
   - https://www.dialicious.com/en/fleux
   - https://www.fleuxwatches.com/
+  - https://www.fleuxwatches.com/collections/all

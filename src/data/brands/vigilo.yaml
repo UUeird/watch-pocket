@@ -1,6 +1,8 @@
 name: Vigilo
 status: active
+segment: mid-range
 website: https://www.vigilo-watches.com
 sources:
   - https://www.dialicious.com/en/vigilo
   - https://www.vigilo-watches.com/
+  - https://www.vigilo-watches.com/collections/all

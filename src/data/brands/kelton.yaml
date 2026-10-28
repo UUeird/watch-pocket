@@ -7,7 +7,9 @@ logoCredit:
   author: "01081997k"
 origin: France
 periods: [{ from: 1955 }]
+segment: budget
 website: https://www.kelton.fr
 sources:
   - https://www.dialicious.com/en/kelton
   - https://www.kelton.fr/
+  - https://www.kelton.fr/collections/all

@@ -1,7 +1,9 @@
 name: Orfina
 origin: Switzerland
 status: active
+segment: mid-range
 website: https://orfina.com
 sources:
   - https://www.dialicious.com/en/orfina
   - https://orfina.com/
+  - https://orfina.com/collections/all

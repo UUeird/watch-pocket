@@ -5,7 +5,9 @@ logoCredit:
   license: Public domain
 origin: France
 periods: [{ from: 1918 }]
+segment: mid-range
 website: https://www.eskawatches.com
 sources:
   - https://www.dialicious.com/en/eska
   - https://www.eskawatches.com/
+  - https://www.eskawatches.com/collections/all

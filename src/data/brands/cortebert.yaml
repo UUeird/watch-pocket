@@ -6,8 +6,10 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
   author: Wallstonekraft
 periods: [{ from: 1790 }]
+segment: mid-range
 website: https://cortebert1790.com
 sources:
   - https://www.dialicious.com/en/cortebert
   - https://www.wikidata.org/wiki/Q3900150
   - https://cortebert1790.com/
+  - https://cortebert1790.com/collections/all

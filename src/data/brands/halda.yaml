@@ -1,8 +1,10 @@
 name: Halda
 origin: Sweden
 periods: [{ from: 1887 }]
+segment: luxury
 website: https://www.haldawatches.com
 sources:
   - https://www.dialicious.com/en/halda
   - https://www.wikidata.org/wiki/Q5641221
   - https://www.haldawatches.com/
+  - https://www.haldawatches.com/shop/

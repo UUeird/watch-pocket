@@ -1,9 +1,11 @@
 name: Trintec
 periods: [{ from: 1984 }]
+segment: mid-range
 website: https://trintecwatches.com
 sources:
   - https://www.dialicious.com/en/trintec
   - https://trintecwatches.com/
+  - https://trintecwatches.com/shop/
 control: private
 independent:
   sources:

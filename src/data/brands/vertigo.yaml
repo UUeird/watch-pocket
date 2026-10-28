@@ -1,7 +1,9 @@
 name: Vertigo
 origin: Italy
 status: active
+segment: mid-range
 website: https://www.vertigowatches.com
 sources:
   - https://www.dialicious.com/en/vertigo
   - https://www.vertigowatches.com/
+  - https://www.vertigowatches.com/collections/all

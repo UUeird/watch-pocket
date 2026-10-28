@@ -1,7 +1,9 @@
 name: Mona
 origin: France
 status: active
+segment: mid-range
 website: https://monawatches.com
 sources:
   - https://www.dialicious.com/en/mona
   - https://monawatches.com/
+  - https://monawatches.com/collections/all

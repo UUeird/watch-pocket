@@ -1,6 +1,8 @@
 name: Lorige
 periods: [{ from: 2018 }]
+segment: luxury
 website: https://lorige.com
 sources:
   - https://www.dialicious.com/en/lorige
   - https://lorige.com/
+  - https://lorige.com/watches

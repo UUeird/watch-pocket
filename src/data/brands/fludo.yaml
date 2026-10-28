@@ -1,6 +1,8 @@
 name: Fludo
 periods: [{ from: 1934 }]
+segment: mid-range
 website: https://fludowatch.com
 sources:
   - https://www.dialicious.com/en/fludo
   - https://fludowatch.com/
+  - https://fludowatch.com/shop/

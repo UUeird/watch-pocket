@@ -1,8 +1,10 @@
 name: Kollokium
 origin: Switzerland
 periods: [{ from: 2020 }]
+segment: luxury
 website: https://kollokium.com
 sources:
   - https://www.dialicious.com/en/kollokium
   - https://kollokium.com/
   - https://kollokium.com/pages/about-us-1
+  - https://kollokium.com/collections/all

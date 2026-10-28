@@ -1,7 +1,9 @@
 name: Revelot
 origin: United States
 status: active
+segment: mid-range
 website: https://www.revelot.com
 sources:
   - https://www.dialicious.com/en/revelot
   - https://www.revelot.com/
+  - https://www.revelot.com/collections/all

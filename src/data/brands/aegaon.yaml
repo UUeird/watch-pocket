@@ -1,10 +1,12 @@
 name: Aegaon
 origin: Estonia
 periods: [{ from: 2012 }]
+segment: mid-range
 website: https://aegaon.com
 sources:
   - https://www.dialicious.com/en/aegaon
   - https://aegaon.com/
+  - https://aegaon.com/collections/all
 control: private
 independent:
   sources:

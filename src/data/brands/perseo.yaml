@@ -1,6 +1,7 @@
 name: Perseo
 origin: Italy
 periods: [{ from: 1927 }]
+segment: mid-range
 website: http://www.perseo-watches.it
 sources:
   - https://www.dialicious.com/en/perseo

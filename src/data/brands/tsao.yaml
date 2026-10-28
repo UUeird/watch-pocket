@@ -1,7 +1,9 @@
 name: Tsao
 origin: United States
 periods: [{ from: 2017 }]
+segment: mid-range
 website: https://tsaobaltimore.com
 sources:
   - https://www.dialicious.com/en/tsao
   - https://tsaobaltimore.com/
+  - https://tsaobaltimore.com/collections/all

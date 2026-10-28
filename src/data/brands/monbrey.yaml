@@ -1,8 +1,10 @@
 name: Monbrey
 origin: Hong Kong
 periods: [{ from: 2022 }]
+segment: mid-range
 website: https://monbrey.com
 sources:
   - https://www.dialicious.com/en/monbrey
   - https://monbrey.com/
   - https://monbrey.com/pages/about-us
+  - https://monbrey.com/collections/all

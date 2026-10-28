@@ -1,10 +1,12 @@
 name: Aera
 origin: Switzerland
 periods: [{ from: 2018 }]
+segment: mid-range
 website: https://aera.co
 sources:
   - https://www.dialicious.com/en/aera
   - https://aera.co/
+  - https://aera.co/collections/all
 control: private
 independent:
   sources:

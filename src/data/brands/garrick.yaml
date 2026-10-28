@@ -1,7 +1,9 @@
 name: Garrick
 origin: United Kingdom
 periods: [{ from: 2014 }]
+segment: luxury
 website: https://garrick.co.uk
 sources:
   - https://www.dialicious.com/en/garrick
   - https://garrick.co.uk/
+  - https://garrick.co.uk/collections/all

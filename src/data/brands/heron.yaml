@@ -1,8 +1,10 @@
 name: Héron
 origin: Canada
 periods: [{ from: 2021 }]
+segment: mid-range
 website: https://www.heronwatches.com
 sources:
   - https://www.dialicious.com/en/heron
   - https://www.heronwatches.com/
   - https://www.heronwatches.com/pages/about-us
+  - https://www.heronwatches.com/collections/all

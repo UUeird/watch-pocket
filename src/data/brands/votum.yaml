@@ -1,10 +1,12 @@
 name: Votum
 origin: Switzerland
 periods: [{ from: 1962 }]
+segment: mid-range
 website: https://www.votumwatches.com
 sources:
   - https://www.dialicious.com/en/votum
   - https://www.votumwatches.com/
+  - https://www.votumwatches.com/collections/all
 control: family
 independent:
   sources:

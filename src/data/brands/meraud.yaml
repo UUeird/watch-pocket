@@ -1,10 +1,12 @@
 name: Méraud
 origin: Belgium
 status: active
+segment: mid-range
 website: https://meraud-watches.com
 sources:
   - https://www.dialicious.com/en/meraud
   - https://meraud-watches.com/
+  - https://meraud-watches.com/collections/all
 control: private
 independent:
   sources:

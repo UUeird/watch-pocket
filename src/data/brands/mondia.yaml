@@ -1,10 +1,12 @@
 name: Mondia
 origin: Switzerland
 periods: [{ from: 1935 }]
+segment: mid-range
 website: https://mondiaswiss.com
 sources:
   - https://www.dialicious.com/en/mondia
   - https://mondiaswiss.com/
+  - https://mondiaswiss.com/collections/all
 ownership:
   - owner: diffusione-orologi
     basis: reported

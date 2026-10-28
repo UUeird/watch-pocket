@@ -1,6 +1,8 @@
 name: Pro-Hunter
 status: active
+segment: luxury
 website: https://discoverprohunter.com
 sources:
   - https://www.dialicious.com/en/pro-hunter
   - https://discoverprohunter.com/
+  - https://discoverprohunter.com/shop/

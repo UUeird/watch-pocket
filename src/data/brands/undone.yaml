@@ -1,6 +1,8 @@
 name: Undone
 periods: [{ from: 2014 }]
+segment: mid-range
 website: https://undone.com
 sources:
   - https://www.dialicious.com/en/undone
   - https://undone.com/
+  - https://undone.com/collections/all

@@ -1,7 +1,9 @@
 name: Balticus
 origin: Poland
 status: active
+segment: mid-range
 website: https://balticus-watches.com
 sources:
   - https://www.dialicious.com/en/balticus
   - https://balticus-watches.com/
+  - https://balticus-watches.com/collections/all

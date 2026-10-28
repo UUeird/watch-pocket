@@ -1,6 +1,8 @@
 name: Trafford
 status: active
+segment: mid-range
 website: https://www.traffordwatchco.com
 sources:
   - https://www.dialicious.com/en/trafford
   - https://www.traffordwatchco.com/
+  - https://www.traffordwatchco.com/collections/all

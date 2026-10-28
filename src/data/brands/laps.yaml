@@ -1,8 +1,10 @@
 name: Laps
 origin: France
 periods: [{ from: 2016 }]
+segment: budget
 website: https://laps.fr
 sources:
   - https://www.dialicious.com/en/laps
   - https://laps.fr/
   - https://laps.fr/en/pages/our-story
+  - https://laps.fr/collections/all

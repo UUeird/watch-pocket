@@ -1,8 +1,10 @@
 name: Vieren
 origin: Canada
 periods: [{ from: 2020 }]
+segment: luxury
 website: https://vieren.co
 sources:
   - https://www.dialicious.com/en/vieren
   - https://vieren.co/
   - https://vieren.co/pages/about
+  - https://vieren.co/collections/all

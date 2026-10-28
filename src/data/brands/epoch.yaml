@@ -1,5 +1,6 @@
 name: Epoch
 status: active
+segment: mid-range
 website: https://www.epoch.se
 sources:
   - https://www.dialicious.com/en/epoch

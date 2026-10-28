@@ -1,10 +1,12 @@
 name: Marlin
 origin: United Kingdom
 periods: [{ from: 2020 }]
+segment: mid-range
 website: https://www.marlinwatch.co.uk
 sources:
   - https://www.dialicious.com/en/marlin
   - https://www.marlinwatch.co.uk/
+  - https://www.marlinwatch.co.uk/shop
 control: private
 independent:
   sources:

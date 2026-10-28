@@ -1,8 +1,10 @@
 name: Vasco
 origin: France
 periods: [{ from: 2016 }]
+segment: mid-range
 website: https://vasco.watch
 sources:
   - https://www.dialicious.com/en/vasco
   - https://vasco.watch/
   - https://vasco.watch/en
+  - https://vasco.watch/collections/all

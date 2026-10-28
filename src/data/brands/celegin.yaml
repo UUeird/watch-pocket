@@ -1,10 +1,12 @@
 name: Celegin
 origin: Sweden
 periods: [{ from: 2021 }]
+segment: mid-range
 website: http://www.celegin.se
 sources:
   - https://www.dialicious.com/en/celegin
   - http://www.celegin.se/
+  - http://www.celegin.se/shop/
 control: private
 independent:
   sources:

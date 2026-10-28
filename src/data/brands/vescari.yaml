@@ -1,10 +1,12 @@
 name: Vescari
 origin: Netherlands
 periods: [{ from: 2016 }]
+segment: mid-range
 website: https://vescari.com
 sources:
   - https://www.dialicious.com/en/vescari
   - https://vescari.com/
+  - https://vescari.com/collections/all
 control: private
 independent:
   sources:

@@ -1,10 +1,12 @@
 name: Cincinnati
 origin: United States
 status: active
+segment: mid-range
 website: https://cincinnatiwatch.com
 sources:
   - https://www.dialicious.com/en/cincinnati
   - https://cincinnatiwatch.com/
+  - https://cincinnatiwatch.com/collections/all
 control: private
 independent:
   sources:

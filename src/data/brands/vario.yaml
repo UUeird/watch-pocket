@@ -1,10 +1,12 @@
 name: Vario
 origin: Singapore
 periods: [{ from: 2016 }]
+segment: mid-range
 website: https://vario.sg
 sources:
   - https://www.dialicious.com/en/vario
   - https://vario.sg/
+  - https://vario.sg/collections/all
 control: private
 independent:
   sources:

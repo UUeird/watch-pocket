@@ -1,10 +1,12 @@
 name: MHD
 origin: United Kingdom
 periods: [{ from: 2014 }]
+segment: mid-range
 website: https://www.mhdwatches.com
 sources:
   - https://www.dialicious.com/en/mhd
   - https://www.mhdwatches.com/
+  - https://www.mhdwatches.com/collections/all
 control: private
 independent:
   sources:

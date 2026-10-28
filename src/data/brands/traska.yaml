@@ -1,10 +1,12 @@
 name: Traska
 origin: United States
 periods: [{ from: 2018 }]
+segment: mid-range
 website: https://www.traskawatch.com
 sources:
   - https://www.dialicious.com/en/traska
   - https://www.traskawatch.com/
+  - https://www.traskawatch.com/collections/all
 control: private
 independent:
   sources:

@@ -5,10 +5,12 @@ logoCredit:
   license: Public domain
 origin: France
 periods: [{ from: 1868 }]
+segment: mid-range
 website: https://www.bodet-1868.com
 sources:
   - https://www.dialicious.com/en/bodet
   - https://www.bodet-1868.com/
+  - https://www.bodet-1868.com/shop/
 control: family
 independent:
   sources:

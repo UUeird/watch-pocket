@@ -1,6 +1,8 @@
 name: Delta
 status: active
+segment: mid-range
 website: https://deltawatch.co
 sources:
   - https://www.dialicious.com/en/delta
   - https://deltawatch.co/
+  - https://deltawatch.co/shop/

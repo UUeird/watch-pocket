@@ -8,10 +8,12 @@ logoCredit:
   author: Edelala
 origin: France
 status: active
+segment: luxury
 website: https://hegid.com
 sources:
   - https://www.dialicious.com/en/hegid
   - https://hegid.com/
+  - https://hegid.com/collections/all
 control: private
 independent:
   sources:

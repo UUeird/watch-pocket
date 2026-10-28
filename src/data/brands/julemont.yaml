@@ -1,7 +1,9 @@
 name: Julémont
 origin: Belgium
 status: active
+segment: mid-range
 website: https://julemont-watches.com
 sources:
   - https://www.dialicious.com/en/julemont
   - https://julemont-watches.com/
+  - https://julemont-watches.com/products

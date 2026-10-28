@@ -1,10 +1,12 @@
 name: Poiray
 origin: France
 status: active
+segment: mid-range
 website: https://poiray.com
 sources:
   - https://www.dialicious.com/en/poiray
   - https://poiray.com/
+  - https://poiray.com/collections/all
 ownership:
   - owner: ams
     from: 2013

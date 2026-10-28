@@ -1,9 +1,11 @@
 name: Oligo
 periods: [{ from: 2022 }]
+segment: luxury
 website: https://oligowatches.com
 sources:
   - https://www.dialicious.com/en/oligo
   - https://oligowatches.com/
+  - https://oligowatches.com/shop/
 control: private
 independent:
   sources:

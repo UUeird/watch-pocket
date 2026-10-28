@@ -1,5 +1,6 @@
 name: Batiscafo
 periods: [{ from: 2021 }]
+segment: mid-range
 website: https://www.batiscafo.store
 sources:
   - https://www.dialicious.com/en/batiscafo

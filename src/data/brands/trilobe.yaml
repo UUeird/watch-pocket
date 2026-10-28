@@ -1,7 +1,9 @@
 name: Trilobe
 origin: France
 periods: [{ from: 2018 }]
+segment: luxury
 website: https://trilobe.com
 sources:
   - https://www.dialicious.com/en/trilobe
   - https://trilobe.com/
+  - https://trilobe.com/collections/all

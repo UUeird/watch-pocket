@@ -1,7 +1,9 @@
 name: Newmark
 origin: United Kingdom
 status: active
+segment: mid-range
 website: https://newmarkwatchcompany.com
 sources:
   - https://www.dialicious.com/en/newmark
   - https://newmarkwatchcompany.com/
+  - https://newmarkwatchcompany.com/collections/all

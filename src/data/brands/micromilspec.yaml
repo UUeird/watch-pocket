@@ -1,7 +1,9 @@
 name: Micromilspec
 origin: Norway
 periods: [{ from: 2019 }]
+segment: mid-range
 website: https://www.micromilspec.com
 sources:
   - https://www.dialicious.com/en/micromilspec
   - https://www.micromilspec.com/
+  - https://www.micromilspec.com/collections

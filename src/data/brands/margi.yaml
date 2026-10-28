@@ -1,6 +1,8 @@
 name: Margi
 status: active
+segment: budget
 website: https://www.margi.it
 sources:
   - https://www.dialicious.com/en/margi
   - https://www.margi.it/
+  - https://www.margi.it/shop/

@@ -1,7 +1,9 @@
 name: Chronofixe
 origin: France
 status: active
+segment: mid-range
 website: https://chronofixewatches.com
 sources:
   - https://www.dialicious.com/en/chronofixe
   - https://chronofixewatches.com/
+  - https://chronofixewatches.com/collections/all

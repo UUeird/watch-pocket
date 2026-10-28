@@ -1,8 +1,10 @@
 name: Haim
 origin: United States
 periods: [{ from: 2020 }]
+segment: mid-range
 website: https://haimwatchco.com
 sources:
   - https://www.dialicious.com/en/haim
   - https://haimwatchco.com/
   - https://haimwatchco.com/pages/our-story
+  - https://haimwatchco.com/collections/all

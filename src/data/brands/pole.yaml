@@ -1,6 +1,8 @@
 name: Pole
 status: active
+segment: budget
 website: https://polewatches.com
 sources:
   - https://www.dialicious.com/en/pole
   - https://polewatches.com/
+  - https://polewatches.com/collections/all

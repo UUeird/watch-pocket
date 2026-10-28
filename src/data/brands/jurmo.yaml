@@ -1,7 +1,9 @@
 name: Jurmo
 origin: Finland
 periods: [{ from: 2017 }]
+segment: luxury
 website: https://jurmowatches.com
 sources:
   - https://www.dialicious.com/en/jurmo
   - https://jurmowatches.com/
+  - https://jurmowatches.com/collections/all

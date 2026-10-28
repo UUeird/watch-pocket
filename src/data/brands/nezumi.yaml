@@ -1,7 +1,9 @@
 name: Nezumi
 origin: Sweden
 periods: [{ from: 2011 }]
+segment: mid-range
 website: https://www.nezumistudios.com
 sources:
   - https://www.dialicious.com/en/nezumi
   - https://www.nezumistudios.com/
+  - https://www.nezumistudios.com/shop/

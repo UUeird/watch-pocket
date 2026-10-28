@@ -1,7 +1,9 @@
 name: Hemel
 origin: United States
 status: active
+segment: mid-range
 website: https://www.hemelwatches.com
 sources:
   - https://www.dialicious.com/en/hemel
   - https://www.hemelwatches.com/
+  - https://www.hemelwatches.com/collections/all

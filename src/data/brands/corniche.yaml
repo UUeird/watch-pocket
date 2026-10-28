@@ -1,7 +1,9 @@
 name: Corniche
 periods: [{ from: 2013 }]
+segment: mid-range
 website: https://cornichewatches.com
 sources:
   - https://www.dialicious.com/en/corniche
   - https://cornichewatches.com/
   - https://cornichewatches.com/our-story/
+  - https://cornichewatches.com/shop/

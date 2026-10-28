@@ -1,10 +1,12 @@
 name: Tesouro
 origin: United Kingdom
 status: active
+segment: mid-range
 website: https://tesourotimepiece.com
 sources:
   - https://www.dialicious.com/en/tesouro
   - https://tesourotimepiece.com/
+  - https://tesourotimepiece.com/shop/
 control: private
 independent:
   sources:

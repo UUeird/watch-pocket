@@ -1,6 +1,7 @@
 name: Triton
 origin: France
 periods: [{ from: 1963 }]
+segment: luxury
 website: https://tritonwatch.ch
 sources:
   - https://www.dialicious.com/en/triton

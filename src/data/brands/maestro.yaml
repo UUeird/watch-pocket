@@ -1,7 +1,9 @@
 name: Maéstro
 origin: Canada
 periods: [{ from: 2015 }]
+segment: budget
 website: https://www.maestrowatches.com
 sources:
   - https://www.dialicious.com/en/maestro
   - https://www.maestrowatches.com/
+  - https://www.maestrowatches.com/collections/all

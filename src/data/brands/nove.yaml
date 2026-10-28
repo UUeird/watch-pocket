@@ -1,7 +1,9 @@
 name: Nove
 origin: Switzerland
 status: active
+segment: mid-range
 website: https://nove.com
 sources:
   - https://www.dialicious.com/en/nove
   - https://nove.com/
+  - https://nove.com/collections/all

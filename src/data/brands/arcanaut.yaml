@@ -1,10 +1,12 @@
 name: Arcanaut
 origin: Denmark
 status: active
+segment: luxury
 website: https://arcanaut.watch
 sources:
   - https://www.dialicious.com/en/arcanaut
   - https://arcanaut.watch/
+  - https://arcanaut.watch/collections/all
 control: private
 independent:
   sources:

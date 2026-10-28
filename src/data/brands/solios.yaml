@@ -1,8 +1,10 @@
 name: Solios
 origin: Canada
 periods: [{ from: 2019 }]
+segment: mid-range
 website: https://www.solioswatches.com
 sources:
   - https://www.dialicious.com/en/solios
   - https://www.solioswatches.com/
   - https://www.solioswatches.com/pages/our-story
+  - https://www.solioswatches.com/collections/all

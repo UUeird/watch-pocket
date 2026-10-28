@@ -1,7 +1,9 @@
 name: Storm
 periods: [{ from: 1989 }]
+segment: budget
 website: https://stormwatches.com
 sources:
   - https://www.dialicious.com/en/storm
   - https://stormwatches.com/
   - https://stormwatches.com/pages/about-us
+  - https://stormwatches.com/collections/all

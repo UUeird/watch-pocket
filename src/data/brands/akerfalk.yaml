@@ -1,7 +1,9 @@
 name: Akerfalk
 origin: Sweden
 status: active
+segment: mid-range
 website: https://akerfalk.se
 sources:
   - https://www.dialicious.com/en/akerfalk
   - https://akerfalk.se/
+  - https://akerfalk.se/collections/all

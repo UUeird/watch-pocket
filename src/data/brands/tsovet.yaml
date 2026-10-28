@@ -1,11 +1,13 @@
 name: Tsovet
 origin: United States
 periods: [{ from: 2008 }]
+segment: mid-range
 website: https://www.tsovet.com
 sources:
   - https://www.dialicious.com/en/tsovet
   - https://www.tsovet.com/
   - https://www.wikidata.org/wiki/Q7849869
+  - https://www.tsovet.com/collections/all
 control: private
 independent:
   sources:

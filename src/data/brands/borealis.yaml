@@ -1,7 +1,9 @@
 name: Borealis
 origin: Portugal
 status: active
+segment: mid-range
 website: https://www.borealiswatch.com
 sources:
   - https://www.dialicious.com/en/borealis
   - https://www.borealiswatch.com/
+  - https://www.borealiswatch.com/collections/all

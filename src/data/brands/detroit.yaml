@@ -1,7 +1,9 @@
 name: Detroit
 origin: United States
 periods: [{ from: 2013 }]
+segment: mid-range
 website: https://detroitwatchco.com
 sources:
   - https://www.dialicious.com/en/detroit
   - https://detroitwatchco.com/
+  - https://detroitwatchco.com/collections/all

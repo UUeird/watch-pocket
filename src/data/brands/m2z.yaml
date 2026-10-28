@@ -1,7 +1,9 @@
 name: M2Z
 origin: Italy
 status: active
+segment: mid-range
 website: https://m2zwatches.com
 sources:
   - https://www.dialicious.com/en/m2z
   - https://m2zwatches.com/
+  - https://m2zwatches.com/collections/all

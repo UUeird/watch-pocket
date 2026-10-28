@@ -1,7 +1,9 @@
 name: Straum
 origin: Norway
 periods: [{ from: 2021 }]
+segment: mid-range
 website: https://straum.co
 sources:
   - https://www.dialicious.com/en/straum
   - https://straum.co/
+  - https://straum.co/collections/all

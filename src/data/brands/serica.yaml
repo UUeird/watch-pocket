@@ -1,7 +1,9 @@
 name: Serica
 origin: France
 periods: [{ from: 2019 }]
+segment: mid-range
 website: https://serica-watches.com
 sources:
   - https://www.dialicious.com/en/serica
   - https://serica-watches.com/
+  - https://serica-watches.com/collections/all

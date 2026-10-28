@@ -1,6 +1,8 @@
 name: Bernies
 status: active
+segment: luxury
 website: https://bernies-watches.com
 sources:
   - https://www.dialicious.com/en/bernies
   - https://bernies-watches.com/
+  - https://bernies-watches.com/shop/

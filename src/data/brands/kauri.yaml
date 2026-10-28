@@ -1,10 +1,12 @@
 name: Kauri
 origin: Switzerland
 periods: [{ from: 2019 }]
+segment: luxury
 website: https://kauri-watches.ch
 sources:
   - https://www.dialicious.com/en/kauri
   - https://kauri-watches.ch/
+  - https://kauri-watches.ch/shop/
 control: private
 independent:
   sources:

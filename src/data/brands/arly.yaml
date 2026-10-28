@@ -1,5 +1,6 @@
 name: Arly
 periods: [{ from: 1947 }]
+segment: mid-range
 website: https://www.arlywatch.de
 sources:
   - https://www.dialicious.com/en/arly

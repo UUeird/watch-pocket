@@ -1,7 +1,9 @@
 name: SYE
 origin: France
 periods: [{ from: 2020 }]
+segment: mid-range
 website: https://www.syewatches.com
 sources:
   - https://www.dialicious.com/en/sye
   - https://www.syewatches.com/
+  - https://www.syewatches.com/collections/all

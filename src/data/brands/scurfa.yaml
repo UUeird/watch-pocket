@@ -1,11 +1,13 @@
 name: Scurfa
 origin: United Kingdom
 periods: [{ from: 2013 }]
+segment: mid-range
 website: https://www.scurfawatches.com
 sources:
   - https://www.dialicious.com/en/scurfa
   - https://www.scurfawatches.com/
   - https://www.scurfawatches.com/about/
+  - https://www.scurfawatches.com/shop/
 control: family
 independent:
   sources:

@@ -1,10 +1,12 @@
 name: Elysee
 origin: Germany
 periods: [{ from: 1960 }]
+segment: mid-range
 website: https://elysee1960.com/
 sources:
   - https://www.dialicious.com/en/elysee
   - https://elysee1960.com/
+  - https://elysee1960.com/collections/all
 control: family
 independent:
   sources:

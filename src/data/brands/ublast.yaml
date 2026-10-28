@@ -1,7 +1,9 @@
 name: Ublast
 origin: Italy
 status: active
+segment: mid-range
 website: https://ublastwatch.com
 sources:
   - https://www.dialicious.com/en/ublast
   - https://ublastwatch.com/
+  - https://ublastwatch.com/shop/

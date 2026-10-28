@@ -1,7 +1,9 @@
 name: Ginault
 origin: United States
 periods: [{ from: 2011 }]
+segment: mid-range
 website: http://ginault.com
 sources:
   - https://www.dialicious.com/en/ginault
   - http://ginault.com/
+  - http://ginault.com/shop/

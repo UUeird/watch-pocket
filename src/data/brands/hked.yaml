@@ -1,6 +1,8 @@
 name: HKED
 status: active
+segment: mid-range
 website: https://www.hkedwatches.com
 sources:
   - https://www.dialicious.com/en/hked
   - https://www.hkedwatches.com/
+  - https://www.hkedwatches.com/collections/all

@@ -1,10 +1,12 @@
 name: Bravur
 origin: Sweden
 status: active
+segment: mid-range
 website: https://bravurwatches.com
 sources:
   - https://www.dialicious.com/en/bravur
   - https://bravurwatches.com/
+  - https://bravurwatches.com/collections/all
 control: private
 independent:
   sources:

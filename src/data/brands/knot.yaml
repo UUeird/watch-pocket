@@ -1,7 +1,9 @@
 name: Knot
 origin: Japan
 status: active
+segment: budget
 website: https://knot-designs.com
 sources:
   - https://www.dialicious.com/en/knot
   - https://knot-designs.com/
+  - https://knot-designs.com/collections/all

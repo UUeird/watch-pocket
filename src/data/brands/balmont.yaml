@@ -1,6 +1,8 @@
 name: Balmont
 status: active
+segment: mid-range
 website: https://balmont-watch.com
 sources:
   - https://www.dialicious.com/en/balmont
   - https://balmont-watch.com/
+  - https://balmont-watch.com/collections/all

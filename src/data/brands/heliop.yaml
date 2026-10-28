@@ -1,10 +1,12 @@
 name: Heliop
 origin: France
 status: active
+segment: mid-range
 website: https://www.heliop-watches.com
 sources:
   - https://www.dialicious.com/en/heliop
   - https://www.heliop-watches.com/
+  - https://www.heliop-watches.com/shop/
 control: private
 independent:
   sources:

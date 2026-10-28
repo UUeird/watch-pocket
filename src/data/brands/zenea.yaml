@@ -1,8 +1,10 @@
 name: Zenea
 origin: Canada
 periods: [{ from: 2019 }]
+segment: mid-range
 website: https://www.zeneawatches.com
 sources:
   - https://www.dialicious.com/en/zenea
   - https://www.zeneawatches.com/
   - https://www.zeneawatches.com/pages/the-company
+  - https://www.zeneawatches.com/collections/all

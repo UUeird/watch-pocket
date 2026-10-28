@@ -1,7 +1,9 @@
 name: Omnis
 origin: France
 periods: [{ from: 2023 }]
+segment: mid-range
 website: https://omnis-watches.com
 sources:
   - https://www.dialicious.com/en/omnis
   - https://omnis-watches.com/
+  - https://omnis-watches.com/collections/all

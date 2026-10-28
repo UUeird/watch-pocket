@@ -1,7 +1,9 @@
 name: Konifer
 origin: Canada
 periods: [{ from: 2012 }]
+segment: budget
 website: https://koniferwatch.com
 sources:
   - https://www.dialicious.com/en/konifer
   - https://koniferwatch.com/
+  - https://koniferwatch.com/collections/all

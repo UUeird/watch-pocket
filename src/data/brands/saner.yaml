@@ -1,9 +1,11 @@
 name: Saner
 periods: [{ from: 1970 }]
+segment: mid-range
 website: https://saner-watches.ch
 sources:
   - https://www.dialicious.com/en/saner
   - https://saner-watches.ch/
+  - https://saner-watches.ch/collections/all
 control: family
 independent:
   sources:

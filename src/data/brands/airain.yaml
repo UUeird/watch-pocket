@@ -1,5 +1,6 @@
 name: Airain
 periods: [{ from: 1934 }]
+segment: luxury
 website: https://www.airain.com
 sources:
   - https://www.dialicious.com/en/airain

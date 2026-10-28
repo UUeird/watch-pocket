@@ -1,9 +1,11 @@
 name: Lorenz
 periods: [{ from: 1934 }]
+segment: mid-range
 website: https://lorenz.it
 sources:
   - https://www.dialicious.com/en/lorenz
   - https://lorenz.it/
+  - https://lorenz.it/collections/all
 ownership:
   - owner: leader-watch-company
     basis: disclosed

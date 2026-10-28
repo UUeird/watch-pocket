@@ -1,8 +1,10 @@
 name: Titus
 origin: Switzerland
 periods: [{ from: 1887 }]
+segment: mid-range
 website: https://www.solvil-et-titus.my
 sources:
   - https://www.dialicious.com/en/titus
   - https://www.solvil-et-titus.my/
   - https://www.solvil-et-titus.my/pages/brand-story
+  - https://www.solvil-et-titus.my/collections/all

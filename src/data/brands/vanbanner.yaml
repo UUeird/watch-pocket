@@ -1,6 +1,7 @@
 name: VanBanner
 origin: Canada
 periods: [{ from: 2020 }]
+segment: mid-range
 website: https://vanbannerwatches.com
 sources:
   - https://www.dialicious.com/en/vanbanner

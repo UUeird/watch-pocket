@@ -1,7 +1,9 @@
 name: Schneider
 origin: Switzerland
 status: active
+segment: mid-range
 website: https://www.schneiderandco.ch
 sources:
   - https://www.dialicious.com/en/schneider
   - https://www.schneiderandco.ch/
+  - https://www.schneiderandco.ch/collections/all
