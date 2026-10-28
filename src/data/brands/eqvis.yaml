@@ -1,8 +1,10 @@
 name: Eqvis
 origin: Germany
 periods: [{ from: 2011 }]
+segment: luxury
 website: http://eqvis.net
 sources:
   - https://www.dialicious.com/en/eqvis
   - http://eqvis.net/
   - http://eqvis.net/about/
+  - http://eqvis.net/shop/

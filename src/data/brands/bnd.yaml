@@ -1,6 +1,7 @@
 name: BND
 origin: France
 periods: [{ from: 2021 }]
+segment: mid-range
 website: https://bnd-watches.com
 sources:
   - https://www.dialicious.com/en/bnd

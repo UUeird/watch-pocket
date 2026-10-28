@@ -1,6 +1,7 @@
 name: Reservoir
 origin: France
 periods: [{ from: 2017 }]
+segment: luxury
 website: https://www.reservoir-watch.com
 sources:
   - https://www.dialicious.com/en/reservoir

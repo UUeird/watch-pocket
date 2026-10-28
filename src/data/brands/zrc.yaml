@@ -1,9 +1,11 @@
 name: ZRC
 status: active
+segment: luxury
 website: https://zrc1904.com
 sources:
   - https://www.dialicious.com/en/zrc
   - https://zrc1904.com/
+  - https://zrc1904.com/shop/
 control: family
 independent:
   sources:

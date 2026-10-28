@@ -1,7 +1,9 @@
 name: Slow
 origin: Germany
 periods: [{ from: 2012 }]
+segment: mid-range
 website: https://www.slow-watches.com
 sources:
   - https://www.dialicious.com/en/slow
   - https://www.slow-watches.com/
+  - https://www.slow-watches.com/shop/

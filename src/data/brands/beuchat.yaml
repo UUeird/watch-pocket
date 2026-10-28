@@ -1,6 +1,8 @@
 name: Beuchat
 periods: [{ from: 1904 }]
+segment: budget
 website: https://beuchat.com
 sources:
   - https://www.dialicious.com/en/beuchat
   - https://beuchat.com/
+  - https://beuchat.com/shop/

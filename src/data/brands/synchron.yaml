@@ -1,10 +1,12 @@
 name: Synchron
 origin: Switzerland
 status: active
+segment: mid-range
 website: https://synchronusa.com
 sources:
   - https://www.dialicious.com/en/synchron
   - https://synchronusa.com/
+  - https://synchronusa.com/shop/
 ownership:
   - owner: synchron
     basis: disclosed

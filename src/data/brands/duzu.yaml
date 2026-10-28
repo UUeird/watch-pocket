@@ -1,7 +1,9 @@
 name: Duzu
 origin: Australia
 status: active
+segment: mid-range
 website: http://www.duzuwatches.com
 sources:
   - https://www.dialicious.com/en/duzu
   - http://www.duzuwatches.com/
+  - http://www.duzuwatches.com/shop/

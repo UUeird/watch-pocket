@@ -1,7 +1,9 @@
 name: Valimor
 periods: [{ from: 2018 }]
+segment: mid-range
 website: https://www.valimor.com
 sources:
   - https://www.dialicious.com/en/valimor
   - https://www.valimor.com/
   - https://www.valimor.com/about/
+  - https://www.valimor.com/shop/

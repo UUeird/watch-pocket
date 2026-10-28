@@ -1,6 +1,8 @@
 name: Direnzo
 periods: [{ from: 2016 }]
+segment: mid-range
 website: https://direnzowatches.com
 sources:
   - https://www.dialicious.com/en/direnzo
   - https://direnzowatches.com/
+  - https://direnzowatches.com/shop/

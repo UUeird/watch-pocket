@@ -1,6 +1,8 @@
 name: Marea
 periods: [{ from: 1995 }]
+segment: budget
 website: https://www.marea.es
 sources:
   - https://www.dialicious.com/en/marea
   - https://www.marea.es/
+  - https://www.marea.es/shop/

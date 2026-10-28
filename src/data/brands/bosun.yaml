@@ -1,7 +1,9 @@
 name: Bosun
 origin: United Kingdom
 periods: [{ from: 2017 }]
+segment: budget
 website: https://www.bosunwatch.com
 sources:
   - https://www.dialicious.com/en/bosun
   - https://www.bosunwatch.com/
+  - https://www.bosunwatch.com/shop/

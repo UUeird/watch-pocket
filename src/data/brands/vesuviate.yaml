@@ -1,6 +1,8 @@
 name: Vesuviate
 status: active
+segment: mid-range
 website: https://vesuviate.com
 sources:
   - https://www.dialicious.com/en/vesuviate
   - https://vesuviate.com/
+  - https://vesuviate.com/shop/

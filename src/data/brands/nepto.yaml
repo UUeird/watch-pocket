@@ -1,6 +1,7 @@
 name: Nepto
 origin: France
 periods: [{ from: 2018 }]
+segment: mid-range
 website: https://nepto.net
 sources:
   - https://www.dialicious.com/en/nepto

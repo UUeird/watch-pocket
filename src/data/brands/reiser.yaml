@@ -1,11 +1,13 @@
 name: Reiser
 origin: Germany
 periods: [{ from: 2019 }]
+segment: mid-range
 website: https://www.reiserwatches.com
 sources:
   - https://www.dialicious.com/en/reiser
   - https://www.reiserwatches.com/
   - https://www.reiserwatches.com/our-story/
+  - https://www.reiserwatches.com/shop/
 ownership:
   - owner: global-watches
     basis: disclosed

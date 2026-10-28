@@ -1,7 +1,9 @@
 name: Teknon
 origin: France
 status: active
+segment: mid-range
 website: https://teknonwatchco.com
 sources:
   - https://www.dialicious.com/en/teknon
   - https://teknonwatchco.com/
+  - https://teknonwatchco.com/shop/

@@ -1,7 +1,9 @@
 name: Horloscaphe
 origin: France
 periods: [{ from: 2017 }]
+segment: mid-range
 website: https://www.horloscaphe-watches-paris.com
 sources:
   - https://www.dialicious.com/en/horloscaphe
   - https://www.horloscaphe-watches-paris.com/
+  - https://www.horloscaphe-watches-paris.com/shop/
