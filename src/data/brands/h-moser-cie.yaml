@@ -8,6 +8,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1828 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://en.wikipedia.org/wiki/H._Moser_&_Cie.
 ownership:

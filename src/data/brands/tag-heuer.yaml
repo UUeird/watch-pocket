@@ -7,6 +7,10 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1860 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches, smartwatches]
 ownership:
   - owner: lvmh
     from: 1999
+sources:
+  - https://en.wikipedia.org/wiki/TAG_Heuer
+  - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ101AM.BA0842.html

@@ -9,8 +9,10 @@ headquarters: Switzerland
 manufacturing: [Switzerland]
 periods: [{ from: 1892 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: swatch-group
     from: 1983
 sources:
   - https://en.wikipedia.org/wiki/Hamilton_Watch_Company
+  - https://hamiltonwatch.com/en-ch/field-quartz-watch

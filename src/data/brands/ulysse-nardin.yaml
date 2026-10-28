@@ -9,6 +9,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1846 }]
 segment: luxury
+makes: [mechanical-watches]
 ownership:
   - owner: kering
     from: 2014
@@ -17,3 +18,4 @@ ownership:
     from: 2022
 sources:
   - https://www.wikidata.org/wiki/Q690001
+  - https://en.wikipedia.org/wiki/Ulysse_Nardin

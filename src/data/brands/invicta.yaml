@@ -12,7 +12,10 @@ heritage:
     - https://en.wikipedia.org/wiki/Invicta_Watch_Group
     - https://jamaisvulgaire.com/montres-invicta/
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: invicta-watch-group
 sources:
   - https://en.wikipedia.org/wiki/Invicta_Watch_Group
+  - https://invictastores.com/collections/automatic-watches
+  - https://invictastores.com/collections/quartz-watches

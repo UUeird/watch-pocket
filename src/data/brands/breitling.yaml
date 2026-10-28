@@ -9,7 +9,9 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1884 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: breitling-sa
 sources:
   - https://www.wikidata.org/wiki/Q665740
+  - https://en.wikipedia.org/wiki/Breitling_SA

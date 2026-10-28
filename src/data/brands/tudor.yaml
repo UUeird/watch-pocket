@@ -7,6 +7,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1926 }]
 segment: luxury
+makes: [mechanical-watches]
 ownership:
   - owner: rolex-sa
     from: 1926
@@ -17,3 +18,5 @@ revenue:
     basis: estimate
     sources:
       - https://www.thehourmarkers.com/articles/morgan-stanley-luxeconsult-ninth-annual-swiss-watcher-2025
+sources:
+  - https://en.wikipedia.org/wiki/Tudor_Watches

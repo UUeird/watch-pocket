@@ -7,8 +7,10 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1983 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: swatch-group
     from: 1983
 sources:
   - https://www.wikidata.org/wiki/Q573422
+  - https://en.wikipedia.org/wiki/Swatch

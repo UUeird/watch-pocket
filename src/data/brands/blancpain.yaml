@@ -7,6 +7,9 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1735 }]
 segment: haute
+makes: [mechanical-watches]
 ownership:
   - owner: swatch-group
     from: 1992
+sources:
+  - https://en.wikipedia.org/wiki/Blancpain

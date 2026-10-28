@@ -7,6 +7,7 @@ logoCredit:
 origin: United Kingdom
 periods: [{ from: 2004 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 revenue:
   - year: 2025
     amount: 51000000
@@ -14,3 +15,6 @@ revenue:
     basis: estimate
     sources:
       - https://www.thehourmarkers.com/articles/morgan-stanley-luxeconsult-ninth-annual-swiss-watcher-2025
+sources:
+  - https://en.wikipedia.org/wiki/Christopher_Ward_(watchmaker)
+  - https://www.fratellowatches.com/christopher-ward-introduces-the-c63-valour-a-quartz-chronograph-inspired-by-military-watches-from-the-1980s/

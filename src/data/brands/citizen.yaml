@@ -6,7 +6,9 @@ logoCredit:
 origin: Japan
 periods: [{ from: 1918 }]
 segment: broad
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: citizen
 sources:
   - https://en.wikipedia.org/wiki/Citizen_Watch
+  - https://www.citizenwatch.com/us/en/product/NJ0150-56W

@@ -14,6 +14,7 @@ logomarkOnDark: ../logos/tissot-logomark-on-dark.png
 origin: Switzerland
 periods: [{ from: 1853 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: ssih
     from: 1930
@@ -30,3 +31,5 @@ revenue:
     sources:
       - https://www.loupe.watch/watch-guides/morgan-stanley-watch-report-2025
       - https://www.thehourmarkers.com/articles/morgan-stanley-luxeconsult-ninth-annual-swiss-watcher-2025
+sources:
+  - https://www.tissotwatches.com/en-in/men/main-collections/tissot-prx.html

@@ -14,6 +14,10 @@ logomarkOnDark: ../logos/jaeger-lecoultre-logomark-on-dark.png
 origin: Switzerland
 periods: [{ from: 1833 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: richemont
     from: 2000
+sources:
+  - https://en.wikipedia.org/wiki/Jaeger-LeCoultre
+  - https://www.selfridges.com/US/en/product/jaeger-le-coultre-q3258470-reverso-stainless-steel-watch_757-10001-Q3258470/

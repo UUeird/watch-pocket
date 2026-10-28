@@ -7,6 +7,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1755 }]
 segment: haute
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: richemont
     from: 1996
@@ -18,3 +19,6 @@ revenue:
     sources:
       - https://www.loupe.watch/watch-guides/morgan-stanley-watch-report-2025
       - https://www.thehourmarkers.com/articles/morgan-stanley-luxeconsult-ninth-annual-swiss-watcher-2025
+sources:
+  - https://en.wikipedia.org/wiki/Vacheron_Constantin
+  - https://robbreport.com.sg/vacheron-constantin-overseas-quartz-watch/

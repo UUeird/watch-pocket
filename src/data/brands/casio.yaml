@@ -6,6 +6,7 @@ logoCredit:
 origin: Japan
 periods: [{ from: 1946 }]
 segment: broad
+makes: [quartz-watches]
 ownership:
   - owner: casio
 sources:

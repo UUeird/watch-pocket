@@ -7,9 +7,12 @@ origin: Switzerland
 control: family
 periods: [{ from: 1860 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 sources:
   - https://en.wikipedia.org/wiki/Chopard
   - https://www.wikidata.org/wiki/Q670112
+  - https://www.chopard.com/en-us/watch/295370-1005.html
+  - https://www.wempe.com/en-int/watches/chopard/happy-sport/happy-sport-30mm-quarz-278590-3012
 independent:
   sources:
     - https://en.wikipedia.org/wiki/Chopard

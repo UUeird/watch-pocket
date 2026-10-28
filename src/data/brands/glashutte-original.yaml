@@ -10,7 +10,9 @@ heritage:
   sources:
     - https://www.wikidata.org/wiki/Q651928
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: swatch-group
 sources:
   - https://en.wikipedia.org/wiki/Glash%C3%BCtte_Original
+  - https://www.glashuette-original.com/en/watches/ladies/1-03-02-05-05-31/

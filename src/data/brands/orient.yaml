@@ -2,7 +2,10 @@ name: Orient
 origin: Japan
 periods: [{ from: 1950 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: seiko-epson
 sources:
   - https://www.wikidata.org/wiki/Q1771114
+  - https://en.wikipedia.org/wiki/Orient_Watch
+  - https://www.orientwatchusa.com/collections/solar-quartz

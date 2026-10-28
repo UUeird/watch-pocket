@@ -7,8 +7,11 @@ origin: Switzerland
 control: family
 periods: [{ from: 1976 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 sources:
   - https://www.wikidata.org/wiki/Q676990
+  - https://en.wikipedia.org/wiki/Raymond_Weil
+  - https://www.raymond-weil.com/collections/quartz-watches
 independent:
   sources:
     - https://www.raymond-weil.com/en/watchmaking/

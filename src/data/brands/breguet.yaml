@@ -8,6 +8,9 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1775 }]
 segment: haute
+makes: [mechanical-watches]
 ownership:
   - owner: swatch-group
     from: 1999
+sources:
+  - https://www.breguet.com/fr/node/6627

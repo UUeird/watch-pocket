@@ -8,7 +8,9 @@ headquarters: United States
 manufacturing: [Switzerland]
 periods: [{ from: 1881 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: movado-group
 sources:
   - https://www.wikidata.org/wiki/Q939816
+  - https://www.movado.com/us/default/mens-designs/automatic-movement/

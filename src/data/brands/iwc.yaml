@@ -14,6 +14,9 @@ logomarkOnDark: ../logos/iwc-logomark-on-dark.png
 origin: Switzerland
 periods: [{ from: 1868 }]
 segment: luxury
+makes: [mechanical-watches]
 ownership:
   - owner: richemont
     from: 2000
+sources:
+  - https://en.wikipedia.org/wiki/IWC_Schaffhausen

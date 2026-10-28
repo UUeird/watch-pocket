@@ -14,6 +14,11 @@ logomarkOnDark: ../logos/hublot-logomark-on-dark.png
 origin: Switzerland
 periods: [{ from: 1980 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches, smartwatches]
 ownership:
   - owner: lvmh
     from: 2008
+sources:
+  - https://en.wikipedia.org/wiki/Hublot
+  - https://watches-of-switzerland.co.uk/Hublot-Classic-Fusion-Titanium-33mm-581.NX.1171.RX/p/17170419
+  - https://9to5google.com/2023/06/05/hublot-big-bang-gen-3-wear-os/

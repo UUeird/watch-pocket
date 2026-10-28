@@ -8,6 +8,7 @@ headquarters: France
 manufacturing: [Switzerland]
 periods: [{ from: 1847 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: richemont
     from: 1988
@@ -19,3 +20,6 @@ revenue:
     sources:
       - https://revolutionwatch.com/what-we-can-learn-from-morgan-stanleys-ninth-annual-swiss-watch-report/
       - https://www.loupe.watch/watch-guides/morgan-stanley-watch-report-2025
+sources:
+  - https://int.cartier.com/en/collections/gifts/holiday/cartier-icons/wsta0042-tank-must-watch.html
+  - https://watchesbysjx.com/2021/04/cartier-tank-must-de-cartier-colours.html
