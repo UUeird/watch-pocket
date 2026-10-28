@@ -6,7 +6,9 @@ logoCredit:
 origin: France
 periods: [{ from: 1780 }]
 segment: luxury
+makes: [mechanical-watches]
 ownership:
   - owner: lvmh
 sources:
   - https://www.wikidata.org/wiki/Q2961620
+  - https://en.wikipedia.org/wiki/Chaumet

@@ -8,6 +8,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 2005 }]
 segment: haute
+makes: [mechanical-watches]
 ownership:
   - owner: chanel
     stake: 25
@@ -18,4 +19,5 @@ ownership:
       - https://theimpression.com/chanel-expands-luxury-portfolio-with-25-stake-in-mbf/
 sources:
   - https://www.wikidata.org/wiki/Q6714650
+  - https://en.wikipedia.org/wiki/MB%26F
 logoBackground: '#000000'

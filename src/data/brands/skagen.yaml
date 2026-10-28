@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 periods: [{ from: 1989 }]
 segment: budget
+makes: [quartz-watches, smartwatches]
 tags:
   - fashion
 ownership:
@@ -12,3 +13,5 @@ ownership:
     from: 2012
 sources:
   - https://en.wikipedia.org/wiki/Skagen_Denmark
+  - https://watchdirect.shop/collections/skagen
+  - https://www.techradar.com/reviews/skagen-falster

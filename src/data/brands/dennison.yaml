@@ -1,8 +1,10 @@
 name: Dennison
 origin: United Kingdom
 segment: mid-range
+makes: [quartz-watches]
 website: https://dennisonwatch.com
 sources:
   - https://www.dialicious.com/en/dennison
   - https://en.wikipedia.org/wiki/Dennison_Watch
   - https://dennisonwatch.com/pages/about
+  - https://dennisonwatch.com/collections/all

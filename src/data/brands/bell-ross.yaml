@@ -6,6 +6,7 @@ logoCredit:
 origin: France
 periods: [{ from: 1992 }]
 segment: luxury
+makes: [mechanical-watches]
 ownership:
   - owner: chanel
     stake: 49
@@ -16,3 +17,4 @@ ownership:
       - https://therake.com/au/stories/chanel-and-MB&F-haute-horologerie
 sources:
   - https://en.wikipedia.org/wiki/Bell_&_Ross
+  - https://www.calibremagazine.com/news/explore-bell-ross-br-03-watch-collection/

@@ -8,6 +8,7 @@ logoCredit:
 origin: France
 periods: [{ from: 1946 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://nappey.co
 sources:
   - https://www.dialicious.com/en/nappey

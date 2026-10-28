@@ -8,8 +8,10 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1997 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://www.dialicious.com/en/urwerk
+  - https://www.watchtime.com/featured/urwerk-launches-ur-100v-magic-t-in-hunter-green/
 control: private
 independent:
   sources:

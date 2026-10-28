@@ -2,8 +2,10 @@ name: Minuteman
 origin: United States
 periods: [{ from: 2012 }]
 segment: mid-range
+makes: [quartz-watches]
 website: https://minutemanwatches.com
 sources:
   - https://www.dialicious.com/en/minuteman
   - https://minutemanwatches.com/
   - https://minutemanwatches.com/pages/about-us
+  - https://minutemanwatches.com/collections/all

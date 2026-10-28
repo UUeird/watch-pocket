@@ -2,10 +2,12 @@ name: Kobold
 origin: United States
 periods: [{ from: 1998 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://koboldwatch.com
 sources:
   - https://www.dialicious.com/en/kobold
   - https://koboldwatch.com/
+  - https://koboldwatch.com/collections/all
 control: family
 independent:
   sources:

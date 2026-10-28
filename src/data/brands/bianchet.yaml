@@ -1,6 +1,7 @@
 name: Bianchet
 origin: Switzerland
 periods: [{ from: 2017 }]
+makes: [mechanical-watches]
 website: https://www.bianchet.com
 sources:
   - https://www.dialicious.com/en/bianchet

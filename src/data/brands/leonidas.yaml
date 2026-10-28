@@ -8,8 +8,10 @@ logoCredit:
 origin: Switzerland
 status: active
 segment: luxury
+makes: [mechanical-watches]
 website: https://www.leonidaswatch.com
 sources:
   - https://www.dialicious.com/en/leonidas
   - https://www.leonidaswatch.com/
   - https://www.leonidaswatch.com/products
+  - https://www.leonidaswatch.com

@@ -7,6 +7,7 @@ origin: Switzerland
 control: foundation
 periods: [{ from: 1975 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://en.wikipedia.org/wiki/Parmigiani_Fleurier
   - https://www.wikidata.org/wiki/Q3365612

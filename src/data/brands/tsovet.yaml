@@ -2,6 +2,7 @@ name: Tsovet
 origin: United States
 periods: [{ from: 2008 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.tsovet.com
 sources:
   - https://www.dialicious.com/en/tsovet

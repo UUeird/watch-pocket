@@ -1,11 +1,13 @@
 name: Schofield
 origin: United Kingdom
 periods: [{ from: 2011 }]
+makes: [mechanical-watches]
 website: https://schofieldwatchcompany.com
 sources:
   - https://www.dialicious.com/en/schofield
   - https://schofieldwatchcompany.com/
   - https://usa.watchpro.com/?p=5726
+  - https://schofieldwatchcompany.com/shop/
 control: private
 independent:
   sources:

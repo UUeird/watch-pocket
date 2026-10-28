@@ -3,8 +3,10 @@ origin: Switzerland
 control: private
 periods: [{ from: 1929 }]
 segment: mid-range
+makes: [mechanical-watches]
 sources:
   - https://www.wikidata.org/wiki/Q17461916
+  - https://en.wikipedia.org/wiki/Louis_Erard
 independent:
   sources:
     - https://en.wikipedia.org/wiki/Louis_Erard

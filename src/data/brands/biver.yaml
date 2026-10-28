@@ -2,6 +2,7 @@ name: Biver
 origin: Switzerland
 periods: [{ from: 2022 }]
 segment: haute
+makes: [mechanical-watches]
 website: https://jcbiver.com
 sources:
   - https://www.dialicious.com/en/biver

@@ -2,6 +2,7 @@ name: Hawchester
 origin: United Kingdom
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://hawchester.com
 sources:
   - https://www.dialicious.com/en/hawchester

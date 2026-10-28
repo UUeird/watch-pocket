@@ -11,8 +11,11 @@ logoCredit:
 origin: United States
 periods: [{ from: 1932 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: swatch-group
     from: 2013
 sources:
   - https://www.wikidata.org/wiki/Q3127942
+  - https://www.timeandwatches.com/2015/11/harry-winston-avenue-dual-time-automatic.html
+  - https://essential-watches.com/Harry-Winston/Avenue/Avenue-C

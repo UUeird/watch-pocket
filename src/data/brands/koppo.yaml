@@ -2,6 +2,7 @@ name: Koppo
 origin: France
 status: active
 segment: mid-range
+makes: [quartz-watches]
 website: https://www.koppowatches.com
 sources:
   - https://www.dialicious.com/en/koppo

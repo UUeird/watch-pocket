@@ -2,6 +2,7 @@ name: Melbourne
 origin: Australia
 periods: [{ from: 2013 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.melbournewatch.com.au
 sources:
   - https://www.dialicious.com/en/melbourne

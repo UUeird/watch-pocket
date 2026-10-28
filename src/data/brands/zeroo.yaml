@@ -2,6 +2,7 @@ name: Zeroo
 origin: Japan
 periods: [{ from: 2017 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://zerootime.com
 sources:
   - https://www.dialicious.com/en/zeroo

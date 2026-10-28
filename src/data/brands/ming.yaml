@@ -1,6 +1,8 @@
 name: Ming
 periods: [{ from: 2017 }]
+makes: [mechanical-watches]
 website: https://www.ming.watch
 sources:
   - https://www.dialicious.com/en/ming
   - https://www.ming.watch/
+  - https://www.ming.watch/collections

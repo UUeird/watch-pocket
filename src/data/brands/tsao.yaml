@@ -2,6 +2,7 @@ name: Tsao
 origin: United States
 periods: [{ from: 2017 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://tsaobaltimore.com
 sources:
   - https://www.dialicious.com/en/tsao

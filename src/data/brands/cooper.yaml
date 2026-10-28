@@ -1,6 +1,7 @@
 name: Cooper
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.cooperwatches.co.uk
 sources:
   - https://www.dialicious.com/en/cooper

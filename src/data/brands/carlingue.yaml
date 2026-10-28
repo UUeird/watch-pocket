@@ -2,6 +2,7 @@ name: Carlingue
 origin: France
 periods: [{ from: 2024 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://carlingue-watches.com
 sources:
   - https://www.dialicious.com/en/carlingue

@@ -2,6 +2,7 @@ name: Wise
 origin: Thailand
 periods: [{ from: 2008 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://wisetimepiece.com
 sources:
   - https://www.dialicious.com/en/wise

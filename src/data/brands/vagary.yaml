@@ -2,6 +2,7 @@ name: Vagary
 origin: Italy
 status: active
 segment: budget
+makes: [mechanical-watches, smartwatches]
 website: https://www.vagary.it
 sources:
   - https://www.dialicious.com/en/vagary

@@ -1,5 +1,6 @@
 name: Svalbard
 status: active
+makes: [mechanical-watches]
 website: https://svalbard.watch
 sources:
   - https://www.dialicious.com/en/svalbard

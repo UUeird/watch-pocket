@@ -2,10 +2,12 @@ name: Aerowatch
 origin: Switzerland
 periods: [{ from: 1910 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.aerowatch.com
 sources:
   - https://www.dialicious.com/en/aerowatch
   - https://www.aerowatch.com/
+  - https://www.aerowatch.com/en/collection/
 control: family
 independent:
   sources:

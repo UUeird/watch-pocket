@@ -2,6 +2,7 @@ name: Monchard
 origin: Sweden
 status: active
 segment: mid-range
+makes: [quartz-watches]
 website: https://monchardwatches.com
 sources:
   - https://www.dialicious.com/en/monchard

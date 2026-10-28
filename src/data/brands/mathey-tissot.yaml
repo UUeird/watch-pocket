@@ -2,11 +2,13 @@ name: Mathey-Tissot
 origin: Switzerland
 periods: [{ from: 1886 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://matheytissot.com
 sources:
   - https://www.dialicious.com/en/mathey-tissot
   - https://www.wikidata.org/wiki/Q6787078
   - https://matheytissot.com/
+  - https://en.wikipedia.org/wiki/Mathey-Tissot
 control: family
 independent:
   sources:

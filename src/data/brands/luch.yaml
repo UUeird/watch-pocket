@@ -8,6 +8,7 @@ logoCredit:
 origin: Belarus
 periods: [{ from: 1953 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches, movements]
 sources:
   - https://en.wikipedia.org/wiki/Luch_(watchmaker)
 ownership:

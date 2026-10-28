@@ -6,12 +6,14 @@ logoCredit:
 origin: United States
 periods: [{ from: 1981 }]
 segment: budget
+makes: [quartz-watches, smartwatches]
 tags:
   - fashion
 licensees:
   - licensee: timex-group
 sources:
   - https://www.wikidata.org/wiki/Q2470307
+  - https://www.atimelyperspective.com/affordable-watches-smartwatch-meets-fashion-watch-introducing-guess-connect
 ownership:
   - owner: authentic-brands
     stake: 51

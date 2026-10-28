@@ -1,6 +1,7 @@
 name: Cyrus
 origin: Switzerland
 periods: [{ from: 2010 }]
+makes: [mechanical-watches]
 website: https://cyrus-watches.ch
 sources:
   - https://www.dialicious.com/en/cyrus

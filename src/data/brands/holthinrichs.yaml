@@ -2,11 +2,13 @@ name: Holthinrichs
 origin: Netherlands
 periods: [{ from: 2016 }]
 segment: luxury
+makes: [mechanical-watches]
 website: https://holthinrichs.com
 sources:
   - https://www.dialicious.com/en/holthinrichs
   - https://holthinrichs.com/
   - https://holthinrichs.com/shop
+  - https://holthinrichs.com/collection/lab-series-1-s-1-gmt/
 control: private
 independent:
   sources:

@@ -2,8 +2,10 @@ name: De Bethune
 origin: Switzerland
 periods: [{ from: 2002 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://www.wikidata.org/wiki/Q20731634
+  - https://en.wikipedia.org/wiki/De_Bethune
 ownership:
   - owner: the-1916-company
     stake: unknown

@@ -7,8 +7,10 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1853 }]
 segment: mid-range
+makes: [mechanical-watches]
 sources:
   - https://www.wikidata.org/wiki/Q663923
+  - https://en.wikipedia.org/wiki/Revue_Thommen
 ownership:
   - owner: gt-thommen-watch
     from: 2012

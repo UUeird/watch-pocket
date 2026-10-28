@@ -2,7 +2,9 @@ name: Geckota
 origin: United Kingdom
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.geckota.com
 sources:
   - https://www.dialicious.com/en/geckota
   - https://www.geckota.com/
+  - https://www.geckota.com/collections/all

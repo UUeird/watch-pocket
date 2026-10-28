@@ -2,6 +2,7 @@ name: Pinion
 origin: United Kingdom
 periods: [{ from: 2013 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.pinionwatches.com
 sources:
   - https://www.dialicious.com/en/pinion

@@ -2,8 +2,10 @@ name: Ernest Borel
 origin: Switzerland
 periods: [{ from: 1856 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 sources:
   - https://www.wikidata.org/wiki/Q1028719
+  - https://en.wikipedia.org/wiki/Ernest_Borel
 ownership:
   - owner: citychamp
     stake: unknown

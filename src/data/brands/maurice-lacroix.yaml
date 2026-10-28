@@ -7,8 +7,10 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1975 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 sources:
   - https://www.wikidata.org/wiki/Q177591
+  - https://en.wikipedia.org/wiki/Maurice_Lacroix
 ownership:
   - owner: dksh
     stake: unknown

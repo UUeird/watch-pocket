@@ -1,4 +1,9 @@
 name: Cadola
 status: active
+segment: budget
+makes: [mechanical-watches, quartz-watches]
 tags:
   - direct-to-consumer
+website: https://cadola1946.com
+sources:
+  - https://cadola1946.com/collections/all

@@ -1,6 +1,7 @@
 name: Zinvo
 periods: [{ from: 2014 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://zinvo.us
 sources:
   - https://www.dialicious.com/en/zinvo

@@ -2,10 +2,12 @@ name: Unimatic
 origin: Italy
 periods: [{ from: 2015 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.unimaticwatches.com
 sources:
   - https://www.dialicious.com/en/unimatic
   - https://www.unimaticwatches.com/
+  - https://www.unimaticwatches.com/collections/all
 control: private
 independent:
   sources:

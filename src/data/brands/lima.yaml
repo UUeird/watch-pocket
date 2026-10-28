@@ -2,6 +2,7 @@ name: Lima
 origin: Indonesia
 periods: [{ from: 2014 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://us.limawatch.com
 sources:
   - https://www.dialicious.com/en/lima

@@ -2,8 +2,10 @@ name: Vixa
 origin: Germany
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.vixa1935.com
 sources:
   - https://www.dialicious.com/en/vixa
   - https://www.wikidata.org/wiki/Q48937726
   - https://www.vixa1935.com/
+  - https://www.vixa1935.com/collections/all

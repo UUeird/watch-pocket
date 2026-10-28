@@ -1,7 +1,9 @@
 name: Villemont
 origin: Switzerland
 status: active
+makes: [mechanical-watches]
 website: https://www.villemont.ch
 sources:
   - https://www.dialicious.com/en/villemont
   - https://www.villemont.ch/
+  - https://www.villemont.ch

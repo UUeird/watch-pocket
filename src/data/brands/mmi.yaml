@@ -2,6 +2,7 @@ name: MMI
 origin: Singapore
 periods: [{ from: 2019 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.mmiwatches.com
 sources:
   - https://www.dialicious.com/en/mmi

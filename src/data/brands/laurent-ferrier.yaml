@@ -7,6 +7,7 @@ origin: Switzerland
 control: private
 periods: [{ from: 2009 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://en.wikipedia.org/wiki/Laurent_Ferrier
 independent:

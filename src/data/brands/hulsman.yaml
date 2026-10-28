@@ -1,6 +1,7 @@
 name: Hulsman
 origin: Netherlands
 periods: [{ from: 2014 }]
+makes: [mechanical-watches]
 website: https://hulsman-timepieces.com
 sources:
   - https://www.dialicious.com/en/hulsman

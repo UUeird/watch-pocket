@@ -2,6 +2,7 @@ name: Horage
 origin: Switzerland
 status: active
 segment: luxury
+makes: [mechanical-watches]
 website: https://www.horage.com
 sources:
   - https://www.dialicious.com/en/horage

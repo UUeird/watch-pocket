@@ -5,8 +5,10 @@ logoCredit:
   license: Public domain
 periods: [{ from: 1858 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://vulcain.ch
 sources:
   - https://www.dialicious.com/en/vulcain
   - https://www.wikidata.org/wiki/Q3563809
   - https://vulcain.ch/
+  - https://vulcain.ch/collections/all

@@ -2,6 +2,7 @@ name: Tockr
 origin: United States
 periods: [{ from: 2017 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://tockr.com
 sources:
   - https://www.dialicious.com/en/tockr

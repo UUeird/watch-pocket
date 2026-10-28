@@ -7,8 +7,11 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1883 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches, smartwatches]
 ownership:
   - owner: citizen
     from: 2016
 sources:
   - https://archive.horlogerie-suisse.com/marques/alpina.html
+  - https://gearpatrol.com/2018/03/30/baselworld-2018-alpina-alpiner-x/
+  - https://www.techradar.com/reviews/alpina-alpinerx-review/2

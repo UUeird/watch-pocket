@@ -1,6 +1,8 @@
 name: BSHQRF
 periods: [{ from: 2020 }]
+makes: [mechanical-watches]
 website: https://bshqrf.com
 sources:
   - https://www.dialicious.com/en/bshqrf
   - https://bshqrf.com/
+  - https://bshqrf.com/collections/all

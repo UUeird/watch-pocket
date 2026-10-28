@@ -1,4 +1,10 @@
 name: Henry Archer
 status: active
+segment: mid-range
+makes: [mechanical-watches]
 tags:
   - direct-to-consumer
+website: https://henryarcher.com
+sources:
+  - https://henryarcher.com/en/collections/all
+  - https://henryarcher.com/collections/all

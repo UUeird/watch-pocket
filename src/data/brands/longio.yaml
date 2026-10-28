@@ -1,6 +1,7 @@
 name: Longio
 status: active
 segment: luxury
+makes: [mechanical-watches]
 website: https://www.longiowatch.com
 sources:
   - https://www.dialicious.com/en/longio

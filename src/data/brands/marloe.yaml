@@ -2,6 +2,7 @@ name: Marloe
 origin: United Kingdom
 periods: [{ from: 2015 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.marloewatchcompany.com
 sources:
   - https://www.dialicious.com/en/marloe

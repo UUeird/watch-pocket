@@ -2,9 +2,11 @@ name: Cimier
 origin: Switzerland
 periods: [{ from: 1924 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.cimier.com
 sources:
   - https://www.dialicious.com/en/cimier
   - https://www.wikidata.org/wiki/Q1092114
   - https://www.cimier.com/
   - https://www.cimier.com/watches
+  - https://www.cimier.com/watches/47-north-off-white

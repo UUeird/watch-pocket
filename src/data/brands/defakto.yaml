@@ -1,6 +1,7 @@
 name: Defakto
 origin: Germany
 periods: [{ from: 2009 }]
+makes: [mechanical-watches, quartz-watches]
 website: https://www.defakto-watches.com
 sources:
   - https://www.dialicious.com/en/defakto

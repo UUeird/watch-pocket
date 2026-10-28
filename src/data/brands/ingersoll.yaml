@@ -6,6 +6,7 @@ logoCredit:
 origin: United Kingdom
 periods: [{ from: 1892 }]
 segment: budget
+makes: [mechanical-watches]
 sources:
   - https://en.wikipedia.org/wiki/Ingersoll_Watch_Company
 ownership:

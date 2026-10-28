@@ -80,7 +80,7 @@ try "model website that is not a web address" $D/models/richard-mille/rm-67/rm-6
 try "new brand missing a fact" $D/brands/rolex.yaml '/^segment: /d'
 try "listed gap that has been filled in" $D/brands/47zero.yaml 's/^origin: France$/&\
 segment: budget/'
-try "gap list naming a brand that does not exist" $D/known-gaps.json 's/"47zero"/"no-such-brand"/'
+try "gap list naming a brand that does not exist" $D/known-gaps.json '2s/^  "[^"]*"/  "no-such-brand"/'
 try "smartwatch under a brand without smartwatches" $D/brands/apple.yaml 's/^makes: \[smartwatches\]$/makes: [quartz-watches]/'
 try "mechanical reference under a brand without mechanical watches" $D/brands/rolex.yaml 's/^makes: .*/makes: [quartz-watches]/'
 try "quartz reference under a brand without quartz watches" $D/brands/seiko.yaml 's/^makes: .*/makes: [mechanical-watches]/'
@@ -89,7 +89,7 @@ try "line dated before its brand was founded" $D/lines/rolex/milgauss.yaml 's/{ 
 try "brand founded after one of its references" $D/brands/rolex.yaml 's/^periods: \[{ from: 1905 }\]$/periods: [{ from: 2030 }]/'
 try "core brand with a gap" $D/known-gaps.json 's/^{$/{\
   "rolex": {"segment": null},/'
-try "search date that is not a date" $D/known-gaps.json 's/"47zero": {"makes": null}/"47zero": {"makes": "last week"}/'
-try "gap list naming a fact that does not exist" $D/known-gaps.json 's/"47zero": {"makes": null}/"47zero": {"logo": null}/'
+try "search date that is not a date" $D/known-gaps.json '2s/{"\([a-z]*\)": [^,}]*/{"\1": "last week"/'
+try "gap list naming a fact that does not exist" $D/known-gaps.json '2s/{"[a-z]*":/{"logo":/'
 
 exit $failures

@@ -8,7 +8,10 @@ logoCredit:
 origin: France
 periods: [{ from: 1854 }]
 segment: luxury
+makes: [mechanical-watches, smartwatches]
 ownership:
   - owner: lvmh
 sources:
   - https://www.wikidata.org/wiki/Q191485
+  - https://watchesbysjx.com/2017/07/11
+  - https://us.louisvuitton.com/eng-us/watches/all-watches/tambour/_/N-t1d9ikj8-az6bubqn-cay1hwys

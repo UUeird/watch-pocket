@@ -2,7 +2,9 @@ name: Aviator
 origin: Switzerland
 periods: [{ from: 2000 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://aviatorwatch.swiss
 sources:
   - https://www.dialicious.com/en/aviator
   - https://aviatorwatch.swiss/
+  - https://aviatorwatch.swiss/en/us

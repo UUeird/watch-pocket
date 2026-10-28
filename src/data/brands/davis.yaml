@@ -1,7 +1,9 @@
 name: Davis
 origin: France
 periods: [{ from: 1987 }]
+makes: [mechanical-watches, quartz-watches]
 website: https://www.maison-davis.com
 sources:
   - https://www.dialicious.com/en/davis
   - https://www.maison-davis.com/
+  - https://www.maison-davis.com/collections/all

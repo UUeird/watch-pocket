@@ -1,6 +1,7 @@
 name: Asterisk
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://asteriskwatches.com
 sources:
   - https://www.dialicious.com/en/asterisk

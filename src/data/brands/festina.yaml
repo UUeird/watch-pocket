@@ -5,12 +5,15 @@ logoCredit:
   license: Public domain
 periods: [{ from: 1902 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.festinagroup.com:443
 sources:
   - https://www.dialicious.com/en/festina
   - https://www.wikidata.org/wiki/Q1408512
   - https://www.festinagroup.com:443/
   - https://en.wikipedia.org/wiki/Festina
+  - https://www.thewatchcompany.com/festina/
+  - https://www.helveti.eu/festina-swiss-made-20040-1
 ownership:
   - owner: festina-group
     from: 1984

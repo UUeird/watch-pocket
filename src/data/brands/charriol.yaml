@@ -2,11 +2,13 @@ name: Charriol
 origin: Switzerland
 periods: [{ from: 1983 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.charriol.com
 sources:
   - https://www.dialicious.com/en/charriol
   - https://www.wikidata.org/wiki/Q5086660
   - https://www.charriol.com/
+  - https://www.charriol.com/collections/all
 control: family
 independent:
   sources:

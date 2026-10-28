@@ -1,6 +1,7 @@
 name: Fludo
 periods: [{ from: 1934 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://fludowatch.com
 sources:
   - https://www.dialicious.com/en/fludo

@@ -2,6 +2,7 @@ name: Xezo
 origin: United States
 periods: [{ from: 2001 }]
 segment: budget
+makes: [mechanical-watches]
 website: https://xezo.com
 sources:
   - https://www.dialicious.com/en/xezo

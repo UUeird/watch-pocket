@@ -2,10 +2,12 @@ name: Guinand
 origin: Switzerland
 periods: [{ from: 1865 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.guinand-uhren.de
 sources:
   - https://www.dialicious.com/en/guinand
   - https://www.guinand-uhren.de/
+  - https://www.guinand-uhren.de/home-en.html
 control: private
 independent:
   sources:

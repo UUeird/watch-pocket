@@ -10,8 +10,10 @@ logomarkCredit:
 origin: Switzerland
 periods: [{ from: 1995 }]
 segment: haute
+makes: [mechanical-watches]
 ownership:
   - owner: richemont
     from: 2008
 sources:
   - https://www.wikidata.org/wiki/Q670160
+  - https://en.wikipedia.org/wiki/Roger_Dubuis

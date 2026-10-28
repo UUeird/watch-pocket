@@ -2,6 +2,7 @@ name: Nomadic
 origin: Ireland
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://nomadicwatches.com
 sources:
   - https://www.dialicious.com/en/nomadic

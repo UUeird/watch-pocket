@@ -2,8 +2,10 @@ name: Konstantin Chaykin
 origin: Russia
 periods: [{ from: 2003 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://konstantinchaykin.com/blog/20_years/
+  - https://en.wikipedia.org/wiki/Konstantin_Chaykin
 control: private
 independent:
   sources:

@@ -1,6 +1,7 @@
 name: ZRC
 status: active
 segment: luxury
+makes: [mechanical-watches]
 website: https://zrc1904.com
 sources:
   - https://www.dialicious.com/en/zrc

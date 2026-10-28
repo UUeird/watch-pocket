@@ -6,6 +6,7 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1930 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.rodania.com
 sources:
   - https://en.wikipedia.org/wiki/Rodania

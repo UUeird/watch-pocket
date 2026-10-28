@@ -1,6 +1,7 @@
 name: OLTO-8
 periods: [{ from: 2018 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://olto-8.com
 sources:
   - https://www.dialicious.com/en/olto-8

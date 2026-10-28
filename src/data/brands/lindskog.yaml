@@ -1,6 +1,7 @@
 name: Lindskog
 origin: Sweden
 periods: [{ from: 2015 }]
+makes: [mechanical-watches]
 website: https://www.lindskogsweden.com
 sources:
   - https://www.dialicious.com/en/lindskog

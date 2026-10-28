@@ -1,7 +1,9 @@
 name: Tzoumy
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://tzoumy.ch
 sources:
   - https://www.dialicious.com/en/tzoumy
   - https://tzoumy.ch/
+  - https://tzoumy.ch/shop/

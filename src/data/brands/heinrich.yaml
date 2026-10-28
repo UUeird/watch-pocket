@@ -2,6 +2,7 @@ name: Heinrich
 origin: Germany
 periods: [{ from: 2021 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://heinrich.watch
 sources:
   - https://www.dialicious.com/en/heinrich

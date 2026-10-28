@@ -1,6 +1,7 @@
 name: Valimor
 periods: [{ from: 2018 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.valimor.com
 sources:
   - https://www.dialicious.com/en/valimor

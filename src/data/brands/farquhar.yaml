@@ -1,6 +1,7 @@
 name: Farquhar
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.farquharwatchco.com
 sources:
   - https://www.dialicious.com/en/farquhar

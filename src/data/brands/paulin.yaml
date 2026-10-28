@@ -1,6 +1,7 @@
 name: Paulin
 periods: [{ from: 2013 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.paulinwatches.com
 sources:
   - https://www.dialicious.com/en/paulin

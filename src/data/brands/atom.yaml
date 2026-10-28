@@ -1,10 +1,13 @@
 name: Atom
 origin: United Kingdom
 status: active
+makes: [mechanical-watches, quartz-watches]
 website: https://atom-watch.com
 sources:
   - https://www.dialicious.com/en/atom
   - https://atom-watch.com/
+  - https://atom-watch.com/shop-watches
+  - https://atom-watch.com/watches-under-300-look-3000-guide
 control: private
 independent:
   sources:

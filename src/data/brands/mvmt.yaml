@@ -2,6 +2,7 @@ name: MVMT
 origin: United States
 periods: [{ from: 2013 }]
 segment: budget
+makes: [quartz-watches]
 tags:
   - direct-to-consumer
 ownership:
@@ -9,3 +10,4 @@ ownership:
     from: 2018
 sources:
   - https://www.wikidata.org/wiki/Q63992364
+  - https://en.wikipedia.org/wiki/MVMT_Watches

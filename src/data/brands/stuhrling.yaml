@@ -2,7 +2,9 @@ name: Stuhrling
 origin: United States
 status: active
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 website: https://stuhrling.com
 sources:
   - https://www.dialicious.com/en/stuhrling
   - https://stuhrling.com/
+  - https://stuhrling.com/collections/all

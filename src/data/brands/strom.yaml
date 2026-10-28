@@ -1,6 +1,7 @@
 name: Strom
 origin: Switzerland
 periods: [{ from: 2001 }]
+makes: [mechanical-watches]
 website: https://stromwatches.com
 sources:
   - https://www.dialicious.com/en/strom

@@ -10,8 +10,10 @@ origin: Switzerland
 control: private
 periods: [{ from: 2004 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://www.wikidata.org/wiki/Q3116546
+  - https://en.wikipedia.org/wiki/Greubel_Forsey
 ownership:
   - owner: richemont
     stake: 20

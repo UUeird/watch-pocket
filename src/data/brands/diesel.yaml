@@ -6,6 +6,7 @@ logoCredit:
 origin: Italy
 periods: [{ from: 1978 }]
 segment: budget
+makes: [smartwatches]
 tags:
   - fashion
 licensees:
@@ -13,6 +14,7 @@ licensees:
 logoBackground: '#e92d31'
 sources:
   - https://en.wikipedia.org/wiki/Diesel_(company)
+  - https://www.pocket-lint.com/smartwatches/reviews/139725-dieselon-time-preview-solid-stylish-smart
 ownership:
   - owner: otb
     sources:

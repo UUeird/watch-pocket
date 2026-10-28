@@ -7,9 +7,12 @@ origin: Switzerland
 control: family
 periods: [{ from: 1967 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches, smartwatches]
 sources:
   - https://en.wikipedia.org/wiki/Mondaine
   - https://www.wikidata.org/wiki/Q670962
+  - https://acquiremag.com/style/mondaine-helvetica-1-smartwatch-40mm
+  - https://www.walmart.com/ip/Mondaine-Helvetica-40mm-Steel-Silver-Dial-Automatic-Mens-Watch-MH1-R3610-LG/3093313430
 independent:
   sources:
     - https://en.wikipedia.org/wiki/Mondaine

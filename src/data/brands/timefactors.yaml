@@ -2,7 +2,9 @@ name: Timefactors
 origin: United Kingdom
 periods: [{ from: 1996 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.timefactors.com
 sources:
   - https://www.dialicious.com/en/timefactors
   - https://www.timefactors.com/
+  - https://www.timefactors.com/collections/all

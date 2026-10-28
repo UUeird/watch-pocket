@@ -7,8 +7,11 @@ logoCredit:
 origin: Italy
 periods: [{ from: 1921 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: kering
     from: 1999
 sources:
   - https://www.wikidata.org/wiki/Q178516
+  - https://www.fratellowatches.com/gucci-enters-serious-watchmaking-with-the-gucci-25h-collection/
+  - https://www.michaeljonesjeweller.co.uk/products/gucci-25h-38mm-quartz-watch-ya163407

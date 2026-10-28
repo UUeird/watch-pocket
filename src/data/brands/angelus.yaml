@@ -2,6 +2,7 @@ name: Angelus
 origin: Switzerland
 periods: [{ from: 1891 }]
 segment: luxury
+makes: [mechanical-watches]
 website: https://angelus-watches.com
 sources:
   - https://www.dialicious.com/en/angelus

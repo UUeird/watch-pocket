@@ -2,6 +2,7 @@ name: Dewitt
 origin: Switzerland
 periods: [{ from: 2003 }]
 segment: luxury
+makes: [mechanical-watches]
 website: https://dewitt.ch
 sources:
   - https://www.dialicious.com/en/dewitt

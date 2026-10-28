@@ -2,6 +2,7 @@ name: Audaz
 origin: Hong Kong
 periods: [{ from: 2016 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.audazwatches.com
 sources:
   - https://www.dialicious.com/en/audaz

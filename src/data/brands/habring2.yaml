@@ -2,5 +2,7 @@ name: Habring²
 origin: Austria
 periods: [{ from: 2004 }]
 segment: luxury
+makes: [mechanical-watches]
 sources:
   - https://www.exquisitetimepieces.com/blog/habring²-the-complete-brand-breakdown/
+  - https://professionalwatches.com/the-habring-felix-and-new-a11-movement/

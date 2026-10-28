@@ -2,10 +2,12 @@ name: Cornavin
 origin: Switzerland
 periods: [{ from: 1922 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.cornavin-watches.ch
 sources:
   - https://www.dialicious.com/en/cornavin
   - https://www.cornavin-watches.ch/
+  - https://www.cornavin-watches.ch/collections/all
 control: family
 independent:
   sources:

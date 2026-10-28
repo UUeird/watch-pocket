@@ -6,8 +6,10 @@ logoCredit:
 origin: France
 periods: [{ from: 1918 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.eskawatches.com
 sources:
   - https://www.dialicious.com/en/eska
   - https://www.eskawatches.com/
   - https://www.eskawatches.com/collections/all
+  - https://www.eskawatches.com

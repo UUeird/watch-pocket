@@ -1,6 +1,7 @@
 name: Atowak
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://atowak.com
 sources:
   - https://www.dialicious.com/en/atowak

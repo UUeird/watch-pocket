@@ -6,7 +6,9 @@ logoCredit:
 origin: France
 periods: [{ from: 1946 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: lvmh
 sources:
   - https://en.wikipedia.org/wiki/Dior
+  - https://en.worldtempus.com/article/dior-an-inventing-watchmaking-14122.html

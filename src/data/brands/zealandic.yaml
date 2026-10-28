@@ -2,6 +2,7 @@ name: Zealandic
 origin: New Zealand
 periods: [{ from: 2021 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.zealandic.co.nz
 sources:
   - https://www.dialicious.com/en/zealandic

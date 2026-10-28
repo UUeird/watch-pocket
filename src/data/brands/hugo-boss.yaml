@@ -6,6 +6,7 @@ logoCredit:
 origin: Germany
 periods: [{ from: 1924 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 tags:
   - fashion
 licensees:
@@ -13,6 +14,7 @@ licensees:
 sources:
   - https://en.wikipedia.org/wiki/Hugo_Boss
   - https://www.wikidata.org/wiki/Q491627
+  - https://www.odsjewellers.com/pages/hugo-boss-watches-guide
 ownership:
   - owner: frasers
     stake: 47.89

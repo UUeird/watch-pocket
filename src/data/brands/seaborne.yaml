@@ -1,6 +1,7 @@
 name: Seaborne
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://seabornewatch.com
 sources:
   - https://www.dialicious.com/en/seaborne

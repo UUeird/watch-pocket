@@ -1,6 +1,7 @@
 name: EMG
 periods: [{ from: 2016 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://emgwatches.com
 sources:
   - https://www.dialicious.com/en/emg

@@ -2,12 +2,14 @@ name: Leica
 origin: Germany
 periods: [{ from: 1869 }]
 segment: luxury
+makes: [mechanical-watches]
 website: https://leica-camera.com
 sources:
   - https://www.dialicious.com/en/leica
   - https://leica-camera.com/
   - https://en.wikipedia.org/wiki/Leica_Camera
   - https://leica-camera.com/sites/default/files/2023-10/press_release_leica_zm_11_october_2023_-_final.pdf
+  - https://leica-camera.com/en-US
 ownership:
   - owner: acm-projektentwicklung
     stake: 55

@@ -2,6 +2,7 @@ name: Lanco
 origin: Switzerland
 periods: [{ from: 1873, to: 1973 }]
 segment: mid-range
+makes: [mechanical-watches, movements]
 sources:
   - https://www.dialicious.com/en/lanco
   - https://en.wikipedia.org/wiki/Langendorf_Watch_Company_SA

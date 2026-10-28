@@ -2,11 +2,13 @@ name: Perseo
 origin: Italy
 periods: [{ from: 1927 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: http://www.perseo-watches.it
 sources:
   - https://www.dialicious.com/en/perseo
   - https://www.wikidata.org/wiki/Q97435657
   - http://www.perseo-watches.it/
+  - http://www.perseo-watches.it/shop/
 control: family
 independent:
   sources:

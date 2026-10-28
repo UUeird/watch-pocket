@@ -7,8 +7,10 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1914 }]
 segment: mid-range
+makes: [mechanical-watches]
 ownership:
   - owner: invicta-watch-group
     from: 2016
 sources:
   - https://www.wikidata.org/wiki/Q4039519
+  - https://en.wikipedia.org/wiki/Glycine_Watch

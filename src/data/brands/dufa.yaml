@@ -2,7 +2,9 @@ name: DuFa
 origin: Germany
 status: active
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 website: https://www.deutsche-uhrenfabrik.de
 sources:
   - https://www.dialicious.com/en/dufa
   - https://www.deutsche-uhrenfabrik.de/
+  - https://www.deutsche-uhrenfabrik.de/collections/all

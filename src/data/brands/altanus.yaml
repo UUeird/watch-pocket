@@ -2,8 +2,10 @@ name: Altanus
 origin: Switzerland
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://altanus.com
 sources:
   - https://www.dialicious.com/en/altanus
   - https://altanus.com/
   - https://altanus.com/en/shop/
+  - https://altanus.com/collection/master/

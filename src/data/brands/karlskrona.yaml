@@ -1,7 +1,9 @@
 name: Karlskrona
 origin: Sweden
 status: active
+makes: [mechanical-watches]
 website: https://www.karlskronawatch.com
 sources:
   - https://www.dialicious.com/en/karlskrona
   - https://www.karlskronawatch.com/
+  - https://www.karlskronawatch.com/watches

@@ -2,6 +2,7 @@ name: Detroit
 origin: United States
 periods: [{ from: 2013 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://detroitwatchco.com
 sources:
   - https://www.dialicious.com/en/detroit

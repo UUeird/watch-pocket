@@ -2,8 +2,10 @@ name: Nepto
 origin: France
 periods: [{ from: 2018 }]
 segment: mid-range
+makes: [quartz-watches]
 website: https://nepto.net
 sources:
   - https://www.dialicious.com/en/nepto
   - https://nepto.net/
   - https://nepto.net/story/
+  - https://nepto.net/shop/

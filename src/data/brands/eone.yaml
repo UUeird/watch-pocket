@@ -2,6 +2,7 @@ name: Eone
 origin: United States
 status: active
 segment: mid-range
+makes: [quartz-watches]
 website: https://www.eone-time.com
 sources:
   - https://www.dialicious.com/en/eone

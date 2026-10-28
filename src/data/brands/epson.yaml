@@ -6,6 +6,7 @@ logoCredit:
 origin: Japan
 periods: [{ from: 1942 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches, movements]
 ownership:
   - owner: seiko-epson
 sources:

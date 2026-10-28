@@ -2,6 +2,7 @@ name: Duward
 origin: Spain
 status: active
 segment: budget
+makes: [mechanical-watches]
 website: https://duward.com
 sources:
   - https://www.dialicious.com/en/duward

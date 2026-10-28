@@ -2,6 +2,7 @@ name: Holgar
 origin: Switzerland
 periods: [{ from: 2021 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://holgarswiss.com
 sources:
   - https://www.dialicious.com/en/holgar

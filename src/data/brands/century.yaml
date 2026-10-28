@@ -1,11 +1,13 @@
 name: Century
 status: active
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 website: https://www.century.ch
 sources:
   - https://www.dialicious.com/en/century
   - https://centuryaluminum.com/
   - https://europastar.com/magazine/features/2029239-century-perfection-and-exclusivity-for-the-ladies.html
+  - https://en.wikipedia.org/wiki/Century_Time_Gems
 control: family
 independent:
   sources:

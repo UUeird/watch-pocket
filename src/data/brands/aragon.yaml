@@ -1,5 +1,6 @@
 name: Aragon
 periods: [{ from: 1991 }]
+makes: [mechanical-watches]
 website: https://www.aragonwatch.com
 sources:
   - https://www.dialicious.com/en/aragon

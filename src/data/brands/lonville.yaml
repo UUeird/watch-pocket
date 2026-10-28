@@ -1,7 +1,9 @@
 name: Lonville
 origin: Switzerland
 status: active
+makes: [mechanical-watches]
 website: https://lonville.com
 sources:
   - https://www.dialicious.com/en/lonville
   - https://lonville.com/
+  - https://lonville.com/product/g24-superleggera/

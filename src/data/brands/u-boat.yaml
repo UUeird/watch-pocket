@@ -2,7 +2,9 @@ name: U-Boat
 origin: Italy
 periods: [{ from: 2000 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.uboatwatch.com
 sources:
   - https://www.dialicious.com/en/u-boat
   - https://www.uboatwatch.com/
+  - https://www.uboatwatch.com/shop/

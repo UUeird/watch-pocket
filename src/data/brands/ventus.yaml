@@ -1,6 +1,7 @@
 name: Ventus
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://ventuswatches.com
 sources:
   - https://www.dialicious.com/en/ventus

@@ -1,6 +1,7 @@
 name: SevenFriday
 periods: [{ from: 2012 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.sevenfriday.com
 sources:
   - https://www.dialicious.com/en/sevenfriday

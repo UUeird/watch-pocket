@@ -2,6 +2,7 @@ name: HGP
 origin: France
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.hgp-watches.com
 sources:
   - https://www.dialicious.com/en/hgp

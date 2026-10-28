@@ -1,6 +1,7 @@
 name: Margi
 status: active
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 website: https://www.margi.it
 sources:
   - https://www.dialicious.com/en/margi

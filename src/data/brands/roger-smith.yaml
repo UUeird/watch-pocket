@@ -2,6 +2,7 @@ name: Roger Smith
 origin: United Kingdom
 periods: [{ from: 2001 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://en.wikipedia.org/wiki/Roger_W._Smith
 control: private

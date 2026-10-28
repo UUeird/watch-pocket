@@ -9,8 +9,10 @@ logoCredit:
 origin: Switzerland
 status: revived
 segment: luxury
+makes: [mechanical-watches]
 ownership:
   - owner: breitling-sa
     from: 2025
 sources:
   - https://www.watchtime.com/brands/breitling/gallet-2026-relaunch-collections
+  - https://en.wikipedia.org/wiki/Gallet_%26_Company

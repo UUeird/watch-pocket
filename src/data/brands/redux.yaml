@@ -2,6 +2,7 @@ name: Redux
 origin: United States
 periods: [{ from: 2012 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://reduxwatch.com
 sources:
   - https://www.dialicious.com/en/redux

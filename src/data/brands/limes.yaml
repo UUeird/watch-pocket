@@ -1,6 +1,7 @@
 name: Limes
 origin: Germany
 periods: [{ from: 1924 }]
+makes: [mechanical-watches]
 website: https://www.limes-watches.com
 sources:
   - https://www.dialicious.com/en/limes

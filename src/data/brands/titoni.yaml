@@ -9,8 +9,10 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1919 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 sources:
   - https://www.wikidata.org/wiki/Q685001
+  - https://en.wikipedia.org/wiki/Titoni
 control: family
 independent:
   sources:

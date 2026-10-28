@@ -2,6 +2,7 @@ name: Maéstro
 origin: Canada
 periods: [{ from: 2015 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 website: https://www.maestrowatches.com
 sources:
   - https://www.dialicious.com/en/maestro

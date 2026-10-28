@@ -1,11 +1,13 @@
 name: Braun
 periods: [{ from: 1921 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 website: https://braun-clocks.com
 sources:
   - https://www.dialicious.com/en/braun
   - https://braun-clocks.com/
   - https://www.wikidata.org/wiki/Q631220
+  - https://braun-clocks.com/collections/all
 ownership:
   - owner: procter-gamble
     from: 2005

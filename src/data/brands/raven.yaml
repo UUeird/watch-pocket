@@ -2,10 +2,12 @@ name: Raven
 origin: United States
 periods: [{ from: 2008 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://ravenwatches.com
 sources:
   - https://www.dialicious.com/en/raven
   - https://ravenwatches.com/
+  - https://ravenwatches.com/collections/all
 control: private
 independent:
   sources:

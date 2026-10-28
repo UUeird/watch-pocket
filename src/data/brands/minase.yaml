@@ -2,6 +2,7 @@ name: Minase
 origin: Japan
 periods: [{ from: 2005 }]
 segment: luxury
+makes: [mechanical-watches]
 website: https://minasewatches.com
 sources:
   - https://www.dialicious.com/en/minase

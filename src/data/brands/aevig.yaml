@@ -2,6 +2,7 @@ name: Aevig
 origin: Netherlands
 periods: [{ from: 2013 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://aevig.com
 sources:
   - https://www.dialicious.com/en/aevig

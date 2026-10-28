@@ -1,5 +1,6 @@
 name: Collins
 periods: [{ from: 2016 }]
+makes: [mechanical-watches]
 website: https://collinswatch.com
 sources:
   - https://www.dialicious.com/en/collins

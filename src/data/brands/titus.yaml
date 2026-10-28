@@ -2,6 +2,7 @@ name: Titus
 origin: Switzerland
 periods: [{ from: 1887 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.solvil-et-titus.my
 sources:
   - https://www.dialicious.com/en/titus

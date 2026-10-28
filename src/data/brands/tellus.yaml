@@ -1,6 +1,7 @@
 name: Tellus
 periods: [{ from: 1926 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://www.maison-tellus.com
 sources:
   - https://www.dialicious.com/en/tellus

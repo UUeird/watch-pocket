@@ -2,6 +2,7 @@ name: Botta
 origin: Germany
 periods: [{ from: 1986 }]
 segment: mid-range
+makes: [quartz-watches]
 website: https://www.botta-design.de
 sources:
   - https://www.dialicious.com/en/botta

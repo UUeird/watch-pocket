@@ -1,7 +1,9 @@
 name: A-13A
 origin: Italy
 status: active
+makes: [mechanical-watches]
 website: https://www.a-13a.com
 sources:
   - https://www.dialicious.com/en/a-13a
   - https://www.a-13a.com/
+  - https://www.a-13a.com/shop/en/

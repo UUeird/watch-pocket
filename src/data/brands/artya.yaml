@@ -1,6 +1,7 @@
 name: Artya
 origin: Switzerland
 periods: [{ from: 2009 }]
+makes: [mechanical-watches]
 website: https://www.artya.com
 sources:
   - https://www.dialicious.com/en/artya

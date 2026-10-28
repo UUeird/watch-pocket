@@ -1,5 +1,6 @@
 name: Phantoms
 status: active
+makes: [mechanical-watches]
 website: https://phantomslab.com
 sources:
   - https://www.dialicious.com/en/phantoms

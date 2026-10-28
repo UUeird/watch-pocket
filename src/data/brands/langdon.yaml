@@ -1,8 +1,10 @@
 name: Langdon
 status: active
 segment: budget
+makes: [mechanical-watches]
 website: https://langdonwatch.com
 sources:
   - https://www.dialicious.com/en/langdon
   - https://langdonwatch.com/
   - https://langdonwatch.com/collections/all
+  - https://langdonwatch.com

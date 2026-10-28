@@ -2,6 +2,7 @@ name: MHD
 origin: United Kingdom
 periods: [{ from: 2014 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.mhdwatches.com
 sources:
   - https://www.dialicious.com/en/mhd

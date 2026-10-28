@@ -2,8 +2,11 @@ name: Heuer
 origin: Switzerland
 periods: [{ from: 1860, to: 1985 }]
 segment: luxury
+makes: [mechanical-watches]
 ownership:
   - owner: { brand: tag-heuer }
     from: 1999
     sources:
       - https://en.wikipedia.org/wiki/TAG_Heuer
+sources:
+  - https://en.wikipedia.org/wiki/TAG_Heuer

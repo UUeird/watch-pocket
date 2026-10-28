@@ -2,6 +2,7 @@ name: Chronofixe
 origin: France
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://chronofixewatches.com
 sources:
   - https://www.dialicious.com/en/chronofixe

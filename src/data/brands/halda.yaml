@@ -2,6 +2,7 @@ name: Halda
 origin: Sweden
 periods: [{ from: 1887 }]
 segment: luxury
+makes: [mechanical-watches]
 website: https://www.haldawatches.com
 sources:
   - https://www.dialicious.com/en/halda

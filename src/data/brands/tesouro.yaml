@@ -2,6 +2,7 @@ name: Tesouro
 origin: United Kingdom
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://tesourotimepiece.com
 sources:
   - https://www.dialicious.com/en/tesouro

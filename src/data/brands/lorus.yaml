@@ -2,7 +2,9 @@ name: Lorus
 origin: Japan
 periods: [{ from: 1982 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: seiko-group
 sources:
   - https://www.wikidata.org/wiki/Q139570165
+  - https://www.houseofwatches.co.uk/blog/the-ultimate-guide-to-lorus-watches

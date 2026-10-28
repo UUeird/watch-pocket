@@ -1,6 +1,7 @@
 name: Beuchat
 periods: [{ from: 1904 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 website: https://beuchat.com
 sources:
   - https://www.dialicious.com/en/beuchat

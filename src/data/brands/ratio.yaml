@@ -1,7 +1,9 @@
 name: Ratio
 periods: [{ from: 2017 }]
+makes: [mechanical-watches, quartz-watches]
 website: https://www.ratiowatches.com
 sources:
   - https://www.dialicious.com/en/ratio
   - https://www.ratiowatches.com/
   - https://www.ratiowatches.com/pages/about-us
+  - https://www.ratiowatches.com/collections/all

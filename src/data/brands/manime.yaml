@@ -2,6 +2,7 @@ name: Manime
 origin: France
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.manime-watches.com
 sources:
   - https://www.dialicious.com/en/manime

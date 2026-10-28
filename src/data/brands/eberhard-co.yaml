@@ -7,8 +7,10 @@ origin: Switzerland
 control: family
 periods: [{ from: 1887 }]
 segment: luxury
+makes: [mechanical-watches]
 sources:
   - https://www.wikidata.org/wiki/Q870335
+  - https://en.wikipedia.org/wiki/Eberhard_%26_Co.
 independent:
   sources:
     - https://www.europastar.com/1004114868.html

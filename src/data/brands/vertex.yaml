@@ -2,6 +2,7 @@ name: Vertex
 origin: Switzerland
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://vertex-watches.com
 sources:
   - https://www.dialicious.com/en/vertex

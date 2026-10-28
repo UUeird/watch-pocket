@@ -1,6 +1,7 @@
 name: Arethusa
 status: active
 segment: mid-range
+makes: [mechanical-watches]
 website: https://www.arethusawatch.com
 sources:
   - https://www.dialicious.com/en/arethusa

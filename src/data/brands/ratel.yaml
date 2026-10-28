@@ -1,10 +1,12 @@
 name: Ratel
 origin: Switzerland
 status: active
+makes: [mechanical-watches]
 website: https://ratelgeneve.com
 sources:
   - https://www.dialicious.com/en/ratel
   - https://ratelgeneve.com/
+  - https://ratelgeneve.com/product/white-chrono/
 control: private
 independent:
   sources:

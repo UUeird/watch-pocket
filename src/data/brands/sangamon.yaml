@@ -2,6 +2,7 @@ name: Sangamon
 origin: United States
 periods: [{ from: 2019 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://sangamonwatches.com
 sources:
   - https://www.dialicious.com/en/sangamon

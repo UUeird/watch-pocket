@@ -2,6 +2,7 @@ name: Cincinnati
 origin: United States
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://cincinnatiwatch.com
 sources:
   - https://www.dialicious.com/en/cincinnati

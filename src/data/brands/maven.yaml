@@ -1,6 +1,7 @@
 name: Maven
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://mavenwatches.com
 sources:
   - https://www.dialicious.com/en/maven

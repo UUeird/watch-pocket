@@ -2,3 +2,6 @@ name: George Daniels
 origin: United Kingdom
 status: active
 segment: haute
+makes: [mechanical-watches]
+sources:
+  - https://en.wikipedia.org/wiki/George_Daniels_%28watchmaker%29

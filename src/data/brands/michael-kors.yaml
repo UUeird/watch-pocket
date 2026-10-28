@@ -6,12 +6,15 @@ logoCredit:
 origin: United States
 periods: [{ from: 1981 }]
 segment: budget
+makes: [quartz-watches, smartwatches]
 tags:
   - fashion
 licensees:
   - licensee: fossil-group
 sources:
   - https://en.wikipedia.org/wiki/Capri_Holdings
+  - https://www.ablogtowatch.com/michael-kors-access-smart-watch/
+  - https://timepiece.com/michael-kors-watch-mkt5094.html
 ownership:
   - owner: capri
     sources:

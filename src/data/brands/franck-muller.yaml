@@ -6,8 +6,10 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1991 }]
 segment: luxury
+makes: [mechanical-watches]
 sources:
   - https://www.wikidata.org/wiki/Q21820020
+  - https://en.wikipedia.org/wiki/Franck_Muller
 control: family
 independent:
   sources:

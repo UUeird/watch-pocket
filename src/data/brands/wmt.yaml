@@ -1,6 +1,7 @@
 name: WMT
 status: active
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 website: https://wmtwatches.com
 sources:
   - https://www.dialicious.com/en/wmt

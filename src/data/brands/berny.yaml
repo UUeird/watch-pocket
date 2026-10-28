@@ -2,7 +2,9 @@ name: Berny
 origin: China
 periods: [{ from: 1995 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 website: https://www.bernywatch.com
 sources:
   - https://www.bernywatch.com/
   - https://www.dialicious.com/en/berny
+  - https://www.bernywatch.com/collections/all

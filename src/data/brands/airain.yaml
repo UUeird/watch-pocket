@@ -1,7 +1,9 @@
 name: Airain
 periods: [{ from: 1934 }]
 segment: luxury
+makes: [mechanical-watches]
 website: https://www.airain.com
 sources:
   - https://www.dialicious.com/en/airain
   - https://www.airain.com/
+  - https://www.airain.com/shop/

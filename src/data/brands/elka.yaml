@@ -1,10 +1,12 @@
 name: Elka
 origin: Switzerland
 status: active
+makes: [mechanical-watches]
 website: https://www.elkawatch.ch
 sources:
   - https://www.dialicious.com/en/elka
   - https://www.elkawatch.ch/
+  - https://www.elkawatch.ch/watches-straps/d-series
 control: private
 independent:
   sources:

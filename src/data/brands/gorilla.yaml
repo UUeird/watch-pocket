@@ -2,6 +2,7 @@ name: Gorilla
 origin: Switzerland
 periods: [{ from: 2016 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://gorilla-watches.com
 sources:
   - https://www.dialicious.com/en/gorilla
