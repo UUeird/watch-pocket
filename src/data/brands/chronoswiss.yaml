@@ -9,10 +9,12 @@ origin: Germany
 control: family
 periods: [{ from: 1983 }]
 segment: luxury
+makes: [mechanical-watches]
 website: https://chronoswiss.com
 sources:
   - https://www.dialicious.com/en/chronoswiss
   - https://chronoswiss.com/
+  - https://en.wikipedia.org/wiki/Chronoswiss
 independent:
   sources:
     - https://chronoswiss.com/en/team

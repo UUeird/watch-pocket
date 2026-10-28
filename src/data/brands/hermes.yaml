@@ -7,9 +7,12 @@ origin: France
 control: public
 periods: [{ from: 1837 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 sources:
   - https://en.wikipedia.org/wiki/Herm%C3%A8s
   - https://www.wikidata.org/wiki/Q843887
+  - https://www.watchonista.com/editorial/novelties/expect-the-unexpected-hermes-introduces-new-h08-and-cape-cod-models-at-watches-wonders-2023/
+  - https://www.analogshift.com/collections/0-inventory/products/hermes-cape-cod-as10229
 independent:
   sources:
     - https://en.wikipedia.org/wiki/Herm%C3%A8s

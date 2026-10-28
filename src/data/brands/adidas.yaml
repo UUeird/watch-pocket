@@ -9,6 +9,7 @@ logomarkCredit:
   license: Public domain
 origin: Germany
 segment: budget
+makes: [smartwatches]
 tags: [fashion]
 licensees:
   - licensee: timex-group
@@ -18,6 +19,7 @@ licensees:
 sources:
   - https://www.dialicious.com/en/adidas
   - https://ca.fashionnetwork.com/news/Timex-group-and-adidas-strike-global-licensing-deal,1300575.html
+  - https://en.wikipedia.org/wiki/Adidas_miCoach
 control: public
 independent:
   sources:

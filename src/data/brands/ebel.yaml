@@ -6,8 +6,10 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1911 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: movado-group
     from: 2004
 sources:
   - https://en.wikipedia.org/wiki/Ebel
+  - https://www.watchtime.com/brands/watches/ebels-115th-anniversary-collection

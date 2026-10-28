@@ -3,8 +3,10 @@ origin: Switzerland
 control: family
 periods: [{ from: 1967 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://monochrome-watches.com/armin-strom/
+  - https://professionalwatches.com/review-armin-strom-manual-earth/
 independent:
   sources:
     - https://www.europastar.com/1004114852.html

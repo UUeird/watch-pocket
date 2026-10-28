@@ -7,8 +7,11 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1884 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 sources:
   - https://www.edox.ch/edox-history/
+  - https://www.edox.ch/skydiver-date-automatic/
+  - https://edox.ch/product/skydiver-chronograph-10116-3-vidn
 control: family
 ownership:
   - owner: general-watch-co

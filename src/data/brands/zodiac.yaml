@@ -9,8 +9,10 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1882 }]
 segment: mid-range
+makes: [mechanical-watches]
 ownership:
   - owner: fossil-group
     from: 2001
 sources:
   - https://www.wikidata.org/wiki/Q8073235
+  - https://en.wikipedia.org/wiki/Zodiac_Watches

@@ -7,8 +7,10 @@ logoCredit:
 origin: United Kingdom
 periods: [{ from: 2002 }]
 segment: luxury
+makes: [mechanical-watches]
 sources:
   - https://www.wikidata.org/wiki/Q4960600
+  - https://watchbase.com/bremont/caliber/bwc-01
 ownership:
   - owner: hellcat
     stake: 63

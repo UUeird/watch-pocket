@@ -2,8 +2,11 @@ name: Luminox
 origin: United States
 periods: [{ from: 1989 }]
 segment: mid-range
+makes: [mechanical-watches, quartz-watches]
 sources:
   - https://www.wikidata.org/wiki/Q17109402
+  - https://uk.luminox.com/pages/automatic-movement
+  - https://righttime.com/rt/luminox/luminoxwatches_a.htm
 ownership:
   - owner: { brand: mondaine }
     stake: 50

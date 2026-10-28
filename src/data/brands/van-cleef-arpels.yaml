@@ -14,7 +14,10 @@ logomarkOnDarkCredit:
 origin: France
 periods: [{ from: 1896 }]
 segment: luxury
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: richemont
 sources:
   - https://www.wikidata.org/wiki/Q2708181
+  - https://www.vancleefarpels.com/en/collections/watches/poetic-complications.html
+  - https://www.vancleefarpels.com/qa/en/the-maison/newsroom/van-cleef-arpels-celebrates-love-at-the-2025-edition-of-watches-and-wonders.html

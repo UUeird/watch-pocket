@@ -7,8 +7,10 @@ logoCredit:
 origin: Switzerland
 periods: [{ from: 1856 }]
 segment: mid-range
+makes: [mechanical-watches]
 ownership:
   - owner: citychamp
     from: 2011
 sources:
   - https://www.wikidata.org/wiki/Q628813
+  - https://en.wikipedia.org/wiki/Eterna

@@ -6,6 +6,7 @@ logoCredit:
 origin: United States
 periods: [{ from: 1968 }]
 segment: budget
+makes: [quartz-watches]
 tags:
   - fashion
 licensees:
@@ -13,6 +14,8 @@ licensees:
 sources:
   - https://en.wikipedia.org/wiki/Calvin_Klein_(fashion_house)
   - https://www.wikidata.org/wiki/Q1068628
+  - https://en.worldtempus.com/article/calvin-klein-ck-post-minimal-chrono-5257.html
+  - https://www.selfridges.com/AE/en/product/calvin-klein-city-stainless-steel-chronograph-watch_759-10095-K2G27126/
 ownership:
   - owner: pvh
     from: 2003

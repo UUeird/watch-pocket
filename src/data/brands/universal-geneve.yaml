@@ -9,7 +9,10 @@ logoCredit:
 origin: Switzerland
 status: revived
 segment: luxury
+makes: [mechanical-watches]
 ownership:
   - owner: breitling-sa
     from: 2023
 logoBackground: '#013e51'
+sources:
+  - https://en.wikipedia.org/wiki/Universal_Gen%C3%A8ve

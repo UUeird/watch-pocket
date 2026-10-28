@@ -7,6 +7,7 @@ logoCredit:
 origin: Italy
 status: active
 segment: budget
+makes: [mechanical-watches, smartwatches]
 tags:
   - fashion
 licensees:
@@ -15,3 +16,6 @@ ownership:
   - owner: giorgio-armani
     sources:
       - https://en.wikipedia.org/wiki/Armani
+sources:
+  - https://www.watchtime.com/wristwatch-industry-news/watches/look-giorgio-armanis-mechanical-watch-armani-meccanico-video/
+  - https://www.wareable.com/smartwatches/emporio-armani-connected-release-date-price-specs-3416

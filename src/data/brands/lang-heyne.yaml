@@ -6,8 +6,10 @@ logoCredit:
 origin: Germany
 periods: [{ from: 2001 }]
 segment: haute
+makes: [mechanical-watches]
 sources:
   - https://www.wikidata.org/wiki/Q22032116
+  - https://en.wikipedia.org/wiki/Lang_%26_Heyne
 ownership:
   - owner: tempus-arte
     stake: unknown

@@ -6,7 +6,9 @@ logoCredit:
 origin: France
 periods: [{ from: 1910 }]
 segment: luxury
+makes: [mechanical-watches]
 ownership:
   - owner: chanel
 sources:
   - https://en.wikipedia.org/wiki/Chanel
+  - https://www.watchonista.com/node/482097

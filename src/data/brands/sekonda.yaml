@@ -6,7 +6,10 @@ logoCredit:
 origin: United Kingdom
 periods: [{ from: 1966 }]
 segment: budget
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: time-products
 sources:
   - https://www.wikidata.org/wiki/Q7447317
+  - https://sovietwatchstore.com/product/soviet-mechanical-sekonda-with-automatic-self-winding-movement/
+  - https://www.watchnation.com/de/collections/sekonda-watches

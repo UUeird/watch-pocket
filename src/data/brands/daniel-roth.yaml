@@ -6,7 +6,10 @@ logoCredit:
 origin: Switzerland
 status: revived
 segment: haute
+makes: [mechanical-watches]
 ownership:
   - owner: lvmh
     from: 2011
 logoBackground: '#00274b'
+sources:
+  - https://en.wikipedia.org/wiki/Daniel_Roth_%28watchmaker%29

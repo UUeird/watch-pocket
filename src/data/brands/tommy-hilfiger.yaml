@@ -10,6 +10,7 @@ logomarkCredit:
 origin: United States
 periods: [{ from: 1985 }]
 segment: budget
+makes: [quartz-watches, smartwatches]
 tags:
   - fashion
 licensees:
@@ -17,6 +18,8 @@ licensees:
 logoBackground: '#001c4b'
 sources:
   - https://en.wikipedia.org/wiki/Tommy_Hilfiger_(company)
+  - https://www.techradar.com/reviews/tommy-hilfiger-th247-you
+  - https://watch.co.uk/tommy-hilfiger-gents-quartz-watch-1710677.htm
 ownership:
   - owner: pvh
     from: 2010
