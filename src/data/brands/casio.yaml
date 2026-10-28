@@ -6,8 +6,9 @@ logoCredit:
 origin: Japan
 periods: [{ from: 1946 }]
 segment: broad
-makes: [quartz-watches]
+makes: [mechanical-watches, quartz-watches]
 ownership:
   - owner: casio
 sources:
   - https://en.wikipedia.org/wiki/Casio
+  - https://www.casio.com/europe/corporate/casio-corporate/news/2025/efk-100/
