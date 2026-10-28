@@ -5,6 +5,7 @@ logoCredit:
   license: Public domain
 origin: Germany
 status: active
+segment: mid-range
 control: family
 ownership:
   - owner: julius-epple
@@ -12,6 +13,8 @@ ownership:
     to: 1998
     sources:
       - https://de.wikipedia.org/wiki/Aristo_Vollmer
+sources:
+  - https://www.watchtime.net/brands/aristo/aristo-2021
 independent:
   sources:
     - https://de.wikipedia.org/wiki/Aristo_Vollmer

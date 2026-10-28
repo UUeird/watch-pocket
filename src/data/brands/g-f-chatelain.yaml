@@ -1,6 +1,7 @@
 name: G&F Châtelain
 origin: Switzerland
 periods: [{ from: 1947 }]
+segment: luxury
 makes: [cases]
 ownership:
   - owner: chanel
@@ -10,3 +11,4 @@ ownership:
       - https://www.luxurybazaar.com/grey-market/chanel-watch-brands/
 sources:
   - https://en.worldtempus.com/article/watches/trends-and-style/chanel-35-years-of-chanel-watchmaking-and-12-little-known-stories-31708.html
+  - https://www.michaud.ch/blogs/magazine/watchmakers-chronicles-chanel-little-known-watchmaking-expertise

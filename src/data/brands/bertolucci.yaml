@@ -1,10 +1,12 @@
 name: Bertolucci
 origin: Switzerland
 periods: [{ from: 1987 }]
+segment: luxury
 sources:
   - https://www.dialicious.com/en/bertolucci
   - https://www.europastar.com/magazine/highlights/1003569861-from-pebbles-to-prestige.html
   - https://wiki.grail-watch.com/index.php/Bertolucci
+  - https://www.mjewelry.com/products/bertolucci-vir-stainless-steel-with-mop-diamond-dial-28mm-quartz-final-sale-0935541p671-350398
 ownership:
   - owner: dickson-concepts-international
     from: 2005

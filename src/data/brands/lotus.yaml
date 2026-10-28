@@ -5,9 +5,11 @@ logoCredit:
   license: Public domain
 origin: Spain
 periods: [{ from: 1980 }]
+segment: budget
 sources:
   - https://www.dialicious.com/en/lotus
   - https://www.wikidata.org/wiki/Q16593585
+  - https://www.maty.com/en/Bijoux/7199180/montre-lotus-freedom-homme-acier.html
 ownership:
   - owner: festina-group
     sources:

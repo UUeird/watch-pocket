@@ -1,11 +1,13 @@
 name: Geovani
 origin: Switzerland
 periods: [{ from: 2003 }]
+segment: mid-range
 website: https://geovaniwatch.com
 sources:
   - https://www.dialicious.com/en/geovani
   - https://geovaniwatch.com/
   - https://geovaniwatch.com/la-maison/
+  - https://m.reach.dog/shop/chronoamerica/products/geovani-swiss-watch-stainless-steel-leather-quartz-42x31mm-3atm-gob501-1
 ownership:
   - owner: ribawatch
     basis: disclosed

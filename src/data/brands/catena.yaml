@@ -1,10 +1,12 @@
 name: Catena
 periods: [{ from: 1947 }]
+segment: mid-range
 website: http://www.catena.ch
 sources:
   - https://www.dialicious.com/en/catena
   - http://www.catena.ch/
   - http://www.catena.ch/en/index.php
+  - https://www.finn.no/445392089
 ownership:
   - owner: stelux
     stake: 88

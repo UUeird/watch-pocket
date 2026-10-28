@@ -5,11 +5,13 @@ logoCredit:
   license: Public domain
 origin: Japan
 periods: [{ from: 1936 }]
+segment: budget
 sources:
   - https://www.dialicious.com/en/ricoh
   - https://wiki.grail-watch.com/index.php/Ricoh
   - https://japanese-microbrands.com/en/blogs/japan-vintage-journal/ricoh-die-vergessene-schwester-von-seiko-citizen-und-orient
   - https://en.wikipedia.org/wiki/Ricoh
+  - https://www.yodobashi.com/maker/0000003313/p6/
 control: public
 independent:
   sources:

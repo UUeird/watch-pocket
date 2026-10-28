@@ -6,11 +6,13 @@ logoCredit:
   license: Public domain
 origin: Italy
 periods: [{ from: 1960 }]
+segment: mid-range
 website: https://www.valentino.com
 sources:
   - https://www.dialicious.com/en/valentino
   - https://www.valentino.com/
   - https://en.wikipedia.org/wiki/Valentino_(fashion_house)
+  - https://www.woot.com/offers/valentino-mens-chronograph-watch
 ownership:
   - owner: mayhoola
     stake: 70

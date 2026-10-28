@@ -5,8 +5,10 @@ logoCredit:
   license: Public domain
 origin: Germany
 periods: [{ from: 1878 }]
+segment: luxury
 sources:
   - https://www.wikidata.org/wiki/Q1483424
+  - https://www.watchtime.net/brands/promotion/special-deutsche-uhrenmarken-wempe
 control: family
 independent:
   sources:

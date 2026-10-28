@@ -6,9 +6,11 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: Revorm
 origin: Switzerland
+segment: luxury
 sources:
   - https://www.dialicious.com/en/minerva
   - https://en.wikipedia.org/wiki/Montblanc_(company)
+  - https://www.phillips.com/detail/minerva/206744
 ownership:
   - owner: richemont
     from: 2006

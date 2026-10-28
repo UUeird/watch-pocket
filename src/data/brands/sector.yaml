@@ -5,8 +5,10 @@ logoCredit:
   license: Public domain
 origin: Italy
 periods: [{ from: 1973 }]
+segment: budget
 ownership:
   - owner: morellato-group
     from: 2006
 sources:
   - https://en.wikipedia.org/wiki/Sector_No_Limits
+  - https://en.zalando.de/all/sector

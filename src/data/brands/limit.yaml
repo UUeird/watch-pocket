@@ -1,5 +1,8 @@
 name: Limit
 origin: United Kingdom
 status: active
+segment: budget
 ownership:
   - owner: time-products
+sources:
+  - https://www.argos.co.uk/product/3165674

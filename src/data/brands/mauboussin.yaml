@@ -1,11 +1,13 @@
 name: Mauboussin
 origin: France
 periods: [{ from: 1827 }]
+segment: mid-range
 website: https://www.mauboussin.com
 sources:
   - https://www.dialicious.com/en/mauboussin
   - https://www.mauboussin.com/
   - https://en.wikipedia.org/wiki/Mauboussin
+  - https://www.mauboussin.fr/en/watches/grandes-collections/montres-diamants.html
 ownership:
   - owner: galeries-lafayette
     stake: unknown
