@@ -1,9 +1,11 @@
 name: KHS
 status: active
+segment: mid-range
 website: https://www.khs.net
 sources:
   - https://www.dialicious.com/en/khs
   - https://www.khs.net/
+  - https://www.khs.net/collections/all
 control: private
 independent:
   sources:

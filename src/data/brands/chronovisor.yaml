@@ -1,7 +1,9 @@
 name: Chronovisor
 origin: Switzerland
 status: active
+segment: mid-range
 website: https://chronovisor.ch
 sources:
   - https://www.dialicious.com/en/chronovisor
   - https://chronovisor.ch/
+  - https://chronovisor.ch/collections/all

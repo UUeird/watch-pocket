@@ -1,10 +1,12 @@
 name: Timor
 origin: United Kingdom
 status: active
+segment: mid-range
 website: https://timorwatch.com
 sources:
   - https://www.dialicious.com/en/timor
   - https://timorwatch.com/
+  - https://timorwatch.com/collections/all
 control: private
 independent:
   sources:

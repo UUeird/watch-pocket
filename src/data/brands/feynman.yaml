@@ -1,10 +1,12 @@
 name: Feynman
 origin: Singapore
 status: active
+segment: mid-range
 website: https://feynman.watch
 sources:
   - https://www.dialicious.com/en/feynman
   - https://feynman.watch/
+  - https://feynman.watch/collections/all
 control: private
 independent:
   sources:

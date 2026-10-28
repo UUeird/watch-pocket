@@ -1,7 +1,9 @@
 name: JDRT
 origin: Australia
 periods: [{ from: 2012 }]
+segment: budget
 website: https://www.jdrt.com
 sources:
   - https://www.dialicious.com/en/jdrt
   - https://www.jdrt.com/
+  - https://www.jdrt.com/collections/all

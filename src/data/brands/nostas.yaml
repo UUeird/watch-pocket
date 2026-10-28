@@ -1,10 +1,12 @@
 name: Nostas
 origin: Italy
 status: active
+segment: mid-range
 website: https://nostasrome.com
 sources:
   - https://www.dialicious.com/en/nostas
   - https://nostasrome.com/
+  - https://nostasrome.com/collections/all
 control: family
 independent:
   sources:

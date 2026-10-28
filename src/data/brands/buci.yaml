@@ -1,7 +1,9 @@
 name: Buci
 origin: France
 periods: [{ from: 2022 }]
+segment: mid-range
 website: https://www.buci-paris.com
 sources:
   - https://www.dialicious.com/en/buci
   - https://www.buci-paris.com/
+  - https://www.buci-paris.com/collections/all

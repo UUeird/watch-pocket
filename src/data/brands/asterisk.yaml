@@ -1,9 +1,11 @@
 name: Asterisk
 status: active
+segment: mid-range
 website: https://asteriskwatches.com
 sources:
   - https://www.dialicious.com/en/asterisk
   - https://asteriskwatches.com/
+  - https://asteriskwatches.com/collections/all
 ownership:
   - owner: { brand: xeric }
     basis: disclosed

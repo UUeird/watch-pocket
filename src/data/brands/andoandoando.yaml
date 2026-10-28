@@ -1,10 +1,12 @@
 name: AndoAndoAndo
 origin: Finland
 status: active
+segment: mid-range
 website: https://andoandoando.com
 sources:
   - https://www.dialicious.com/en/andoandoando
   - https://andoandoando.com/
+  - https://andoandoando.com/collections/all
 control: private
 independent:
   sources:

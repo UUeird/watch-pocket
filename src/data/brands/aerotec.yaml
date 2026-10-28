@@ -1,6 +1,8 @@
 name: Aerotec
 status: active
+segment: mid-range
 website: https://aerotecwatches.com
 sources:
   - https://www.dialicious.com/en/aerotec
   - https://aerotecwatches.com/
+  - https://aerotecwatches.com/collections/all

@@ -1,6 +1,8 @@
 name: Hvilina
 status: active
+segment: mid-range
 website: https://hvilina.com
 sources:
   - https://www.dialicious.com/en/hvilina
   - https://hvilina.com/
+  - https://hvilina.com/collections/all

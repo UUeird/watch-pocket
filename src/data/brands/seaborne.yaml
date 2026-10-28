@@ -1,6 +1,8 @@
 name: Seaborne
 status: active
+segment: mid-range
 website: https://seabornewatch.com
 sources:
   - https://www.dialicious.com/en/seaborne
   - https://seabornewatch.com/
+  - https://seabornewatch.com/collections/all

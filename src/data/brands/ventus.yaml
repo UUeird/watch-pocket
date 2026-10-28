@@ -1,6 +1,8 @@
 name: Ventus
 status: active
+segment: mid-range
 website: https://ventuswatches.com
 sources:
   - https://www.dialicious.com/en/ventus
   - https://ventuswatches.com/
+  - https://ventuswatches.com/collections/all

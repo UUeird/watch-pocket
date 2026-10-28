@@ -1,11 +1,13 @@
 name: SWC
 origin: Switzerland
 periods: [{ from: 1996 }]
+segment: mid-range
 website: https://swcusa.com
 sources:
   - https://www.dialicious.com/en/swc
   - https://swcusa.com/
   - https://swcusa.com/pages/about-us
+  - https://swcusa.com/collections/all
 control: family
 independent:
   sources:

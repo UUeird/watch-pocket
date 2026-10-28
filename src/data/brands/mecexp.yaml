@@ -1,7 +1,9 @@
 name: MECEXP
 origin: United States
 status: active
+segment: mid-range
 website: https://mecexp.com
 sources:
   - https://www.dialicious.com/en/mecexp
   - https://mecexp.com/
+  - https://mecexp.com/collections/all

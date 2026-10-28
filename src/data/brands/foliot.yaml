@@ -1,10 +1,12 @@
 name: Foliot
 origin: United States
 status: active
+segment: mid-range
 website: https://www.foliotwatches.com
 sources:
   - https://www.dialicious.com/en/foliot
   - https://www.foliotwatches.com/
+  - https://www.foliotwatches.com/collections/all
 control: private
 independent:
   sources:

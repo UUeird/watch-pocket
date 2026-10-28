@@ -1,7 +1,9 @@
 name: Fathers
 origin: Italy
 status: active
+segment: mid-range
 website: https://fatherswatches.com
 sources:
   - https://www.dialicious.com/en/fathers
   - https://fatherswatches.com/
+  - https://fatherswatches.com/collections/all

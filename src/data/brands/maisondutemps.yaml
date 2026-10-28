@@ -1,10 +1,12 @@
 name: MaisonDuTemps
 origin: France
 status: active
+segment: mid-range
 website: https://maisondutemps-eu.com
 sources:
   - https://www.dialicious.com/en/maisondutemps
   - https://maisondutemps-eu.com/
+  - https://maisondutemps-eu.com/collections/all
 control: private
 independent:
   sources:

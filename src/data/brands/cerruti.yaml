@@ -5,11 +5,13 @@ logoCredit:
   license: Public domain
 origin: Italy
 periods: [{ from: 1967 }]
+segment: mid-range
 website: https://www.cerruti.com
 sources:
   - https://www.dialicious.com/en/cerruti
   - https://www.cerruti.com/
   - https://en.wikipedia.org/wiki/Cerruti_1881
+  - https://www.cerruti.com/collections/all
 ownership:
   - owner: matlinpatterson
     from: 2006

@@ -1,8 +1,10 @@
 name: Audaz
 origin: Hong Kong
 periods: [{ from: 2016 }]
+segment: mid-range
 website: https://www.audazwatches.com
 sources:
   - https://www.dialicious.com/en/audaz
   - https://www.audazwatches.com/
   - https://www.audazwatches.com/pages/about
+  - https://www.audazwatches.com/collections/all

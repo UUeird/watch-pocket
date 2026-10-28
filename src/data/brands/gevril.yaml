@@ -1,7 +1,9 @@
 name: Gevril
 origin: Switzerland
 status: active
+segment: mid-range
 website: https://www.gevril.com
 sources:
   - https://www.dialicious.com/en/gevril
   - https://www.gevril.com/
+  - https://www.gevril.com/collections/all

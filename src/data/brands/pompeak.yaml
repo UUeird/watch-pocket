@@ -1,7 +1,9 @@
 name: Pompeak
 origin: United Kingdom
 status: active
+segment: mid-range
 website: https://pompeak.com
 sources:
   - https://www.dialicious.com/en/pompeak
   - https://pompeak.com/
+  - https://pompeak.com/collections/all

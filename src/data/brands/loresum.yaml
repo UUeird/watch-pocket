@@ -1,6 +1,8 @@
 name: Loresum
 status: active
+segment: mid-range
 website: https://loresum.watch
 sources:
   - https://www.dialicious.com/en/loresum
   - https://loresum.watch/
+  - https://loresum.watch/collections/all

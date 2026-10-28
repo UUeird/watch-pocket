@@ -1,8 +1,10 @@
 name: Edma
 origin: Switzerland
 periods: [{ from: 1944 }]
+segment: mid-range
 website: https://edma-watches.com
 sources:
   - https://www.dialicious.com/en/edma
   - https://edma-watches.com/
   - https://edma-watches.com/pages/about-edma
+  - https://edma-watches.com/collections/all

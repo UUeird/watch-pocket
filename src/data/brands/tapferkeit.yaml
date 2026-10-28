@@ -1,7 +1,9 @@
 name: Tapferkeit
 origin: Germany
 status: active
+segment: budget
 website: https://tapferkeit.com
 sources:
   - https://www.dialicious.com/en/tapferkeit
   - https://tapferkeit.com/
+  - https://tapferkeit.com/collections/all

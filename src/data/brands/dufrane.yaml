@@ -1,10 +1,12 @@
 name: DuFrane
 origin: United States
 periods: [{ from: 2016 }]
+segment: mid-range
 website: https://www.dufranewatches.com
 sources:
   - https://www.dialicious.com/en/dufrane
   - https://www.dufranewatches.com/
+  - https://www.dufranewatches.com/collections/all
 control: family
 independent:
   sources:

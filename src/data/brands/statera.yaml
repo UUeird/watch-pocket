@@ -1,7 +1,9 @@
 name: Statera
 origin: Brazil
 periods: [{ from: 2021 }]
+segment: mid-range
 website: https://www.staterawatch.co
 sources:
   - https://www.dialicious.com/en/statera
   - https://www.staterawatch.co/
+  - https://www.staterawatch.co/collections/all

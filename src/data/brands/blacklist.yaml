@@ -1,6 +1,8 @@
 name: Blacklist
 periods: [{ from: 2013 }]
+segment: mid-range
 website: https://www.blacklistwatches.com
 sources:
   - https://www.dialicious.com/en/blacklist
   - https://www.blacklistwatches.com/
+  - https://www.blacklistwatches.com/collections/all

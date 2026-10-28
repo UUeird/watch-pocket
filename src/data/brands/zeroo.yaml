@@ -1,8 +1,10 @@
 name: Zeroo
 origin: Japan
 periods: [{ from: 2017 }]
+segment: mid-range
 website: https://zerootime.com
 sources:
   - https://www.dialicious.com/en/zeroo
   - https://zerootime.com/
   - https://zerootime.com/en-global/pages/company
+  - https://zerootime.com/collections/all

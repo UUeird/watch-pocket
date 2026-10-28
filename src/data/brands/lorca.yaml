@@ -1,7 +1,9 @@
 name: Lorca
 origin: United States
 periods: [{ from: 2022 }]
+segment: mid-range
 website: https://lorcawatches.com
 sources:
   - https://www.dialicious.com/en/lorca
   - https://lorcawatches.com/
+  - https://lorcawatches.com/collections/all

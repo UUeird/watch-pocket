@@ -1,7 +1,9 @@
 name: Mulco
 periods: [{ from: 1958 }]
+segment: budget
 website: https://mulco.com
 sources:
   - https://www.dialicious.com/en/mulco
   - https://mulco.com/
   - https://mulco.com/pages/about-us
+  - https://mulco.com/collections/all

@@ -1,7 +1,9 @@
 name: Boderry
 origin: China
 periods: [{ from: 2019 }]
+segment: budget
 website: https://www.boderry.com
 sources:
   - https://www.dialicious.com/en/boderry
   - https://www.boderry.com/
+  - https://www.boderry.com/collections/all

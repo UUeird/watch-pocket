@@ -1,7 +1,9 @@
 name: Arpiem
 origin: France
 periods: [{ from: 2018 }]
+segment: mid-range
 website: https://arpiem.fr
 sources:
   - https://www.dialicious.com/en/arpiem
   - https://arpiem.fr/
+  - https://arpiem.fr/collections/all

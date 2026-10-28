@@ -1,6 +1,8 @@
 name: Helgray
 status: active
+segment: budget
 website: https://www.helgray.com
 sources:
   - https://www.dialicious.com/en/helgray
   - https://www.helgray.com/
+  - https://www.helgray.com/collections/all

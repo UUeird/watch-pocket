@@ -1,7 +1,9 @@
 name: Wise
 origin: Thailand
 periods: [{ from: 2008 }]
+segment: mid-range
 website: https://wisetimepiece.com
 sources:
   - https://www.dialicious.com/en/wise
   - https://wisetimepiece.com/
+  - https://wisetimepiece.com/collections/all

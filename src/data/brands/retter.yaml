@@ -1,7 +1,9 @@
 name: Retter
 origin: United States
 status: active
+segment: mid-range
 website: https://retterwatches.com
 sources:
   - https://www.dialicious.com/en/retter
   - https://retterwatches.com/
+  - https://retterwatches.com/collections/all

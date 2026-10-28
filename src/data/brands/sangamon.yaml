@@ -1,8 +1,10 @@
 name: Sangamon
 origin: United States
 periods: [{ from: 2019 }]
+segment: mid-range
 website: https://sangamonwatches.com
 sources:
   - https://www.dialicious.com/en/sangamon
   - https://sangamonwatches.com/
   - https://sangamonwatches.com/pages/about-us
+  - https://sangamonwatches.com/collections/all

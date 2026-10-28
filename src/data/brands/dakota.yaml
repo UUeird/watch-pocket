@@ -1,7 +1,9 @@
 name: Dakota
 origin: United States
 status: active
+segment: budget
 website: https://dakotawatch.com
 sources:
   - https://www.dialicious.com/en/dakota
   - https://dakotawatch.com/
+  - https://dakotawatch.com/collections/all

@@ -1,7 +1,9 @@
 name: Prometheus
 origin: Portugal
 periods: [{ from: 2008 }]
+segment: mid-range
 website: https://www.prometheuswatch.com
 sources:
   - https://www.dialicious.com/en/prometheus
   - https://www.prometheuswatch.com/
+  - https://www.prometheuswatch.com/collections/all

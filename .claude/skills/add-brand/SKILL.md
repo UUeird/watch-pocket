@@ -32,10 +32,17 @@ Research each fact, then add every URL you relied on to the brand's `sources`
    past quartz lines (1970s–90s) and past smartwatches, not only the current
    catalog. Cite a page per kind (Wikipedia, the brand's collection pages, an
    authorized retailer or press).
-6. **Segment**: `haute`, `luxury`, `mid-range`, `budget`, or `broad` for a range
-   spanning several tiers. How to decide and source it is being worked out in
-   board task watch-pocket-10.2. Follow whatever has been settled there; until
-   then, ask Sam rather than choosing one.
+6. **Segment**: set by the typical new list price of the brand's watches (the
+   median of its current range, in USD), from its own shop or price list; cite
+   that page. For a Shopify store, `<site>/collections/all` lists every price.
+   - `budget`: under about $200
+   - `mid-range`: about $200 to $3,000
+   - `luxury`: above $3,000, and established luxury houses
+   - `haute`: high horology (hand-finished, small-series complications)
+   - `broad`: a range spanning three or more tiers (Seiko, Casio, Citizen)
+   Count watches only, not straps, boxes or jewelry. For a defunct brand, use
+   its tier while it traded, from press or auction records. Leave it blank if
+   the brand's prices can't be found.
 7. **Website**: the brand's current official site. Make sure it is the brand,
    not a namesake, parked domain or spam page.
 8. **Logo**: from Wikimedia Commons (public domain, CC BY or CC BY-SA with

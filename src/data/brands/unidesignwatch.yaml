@@ -1,6 +1,8 @@
 name: UniDesignWatch
 status: active
+segment: mid-range
 website: https://unidesignwatch.com
 sources:
   - https://www.dialicious.com/en/unidesignwatch
   - https://unidesignwatch.com/
+  - https://unidesignwatch.com/collections/all

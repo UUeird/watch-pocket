@@ -1,9 +1,11 @@
 name: Tellus
 periods: [{ from: 1926 }]
+segment: mid-range
 website: https://www.maison-tellus.com
 sources:
   - https://www.dialicious.com/en/tellus
   - https://www.maison-tellus.com/
+  - https://www.maison-tellus.com/collections/all
 control: family
 independent:
   sources:

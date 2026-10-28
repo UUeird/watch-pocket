@@ -1,6 +1,8 @@
 name: CCCP
 status: active
+segment: mid-range
 website: https://www.cccptime.com
 sources:
   - https://www.dialicious.com/en/cccp
   - https://www.cccptime.com/
+  - https://www.cccptime.com/collections/all

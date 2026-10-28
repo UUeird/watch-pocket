@@ -1,11 +1,13 @@
 name: Holzkern
 origin: Austria
 periods: [{ from: 2016 }]
+segment: mid-range
 website: https://holzkern.com
 sources:
   - https://www.dialicious.com/en/holzkern
   - https://holzkern.com/
   - https://holzkern.com/en-us/pages/reviews-about-holzkern
+  - https://holzkern.com/collections/all
 control: private
 independent:
   sources:

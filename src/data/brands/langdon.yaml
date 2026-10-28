@@ -1,6 +1,8 @@
 name: Langdon
 status: active
+segment: budget
 website: https://langdonwatch.com
 sources:
   - https://www.dialicious.com/en/langdon
   - https://langdonwatch.com/
+  - https://langdonwatch.com/collections/all

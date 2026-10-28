@@ -1,10 +1,12 @@
 name: Marchand
 origin: Switzerland
 periods: [{ from: 2015 }]
+segment: budget
 website: https://marchandwatches.com
 sources:
   - https://www.dialicious.com/en/marchand
   - https://marchandwatches.com/
+  - https://marchandwatches.com/collections/all
 control: private
 independent:
   sources:

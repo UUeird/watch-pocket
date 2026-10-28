@@ -1,6 +1,8 @@
 name: Dumoreau
 periods: [{ from: 2020 }]
+segment: mid-range
 website: https://dumoreau.com
 sources:
   - https://www.dialicious.com/en/dumoreau
   - https://dumoreau.com/
+  - https://dumoreau.com/collections/all

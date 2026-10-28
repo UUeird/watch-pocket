@@ -1,8 +1,10 @@
 name: Holgar
 origin: Switzerland
 periods: [{ from: 2021 }]
+segment: mid-range
 website: https://holgarswiss.com
 sources:
   - https://www.dialicious.com/en/holgar
   - https://holgarswiss.com/
   - https://holgarswiss.com/pages/about
+  - https://holgarswiss.com/collections/all

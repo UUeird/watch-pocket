@@ -1,11 +1,13 @@
 name: MMI
 origin: Singapore
 periods: [{ from: 2019 }]
+segment: mid-range
 website: https://www.mmiwatches.com
 sources:
   - https://www.dialicious.com/en/mmi
   - https://www.mmiwatches.com/
   - https://www.mmiwatches.com/pages/about-us
+  - https://www.mmiwatches.com/collections/all
 control: private
 independent:
   sources:

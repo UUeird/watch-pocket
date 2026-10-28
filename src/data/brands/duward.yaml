@@ -1,8 +1,10 @@
 name: Duward
 origin: Spain
 status: active
+segment: budget
 website: https://duward.com
 sources:
   - https://www.dialicious.com/en/duward
   - https://www.wikidata.org/wiki/Q5815320
   - https://duward.com/
+  - https://duward.com/collections/all

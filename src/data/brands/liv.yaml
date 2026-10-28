@@ -1,8 +1,10 @@
 name: LIV
 origin: United States
 status: active
+segment: mid-range
 website: https://www.livwatches.com
 sources:
   - https://www.dialicious.com/en/liv
   - https://www.wikidata.org/wiki/Q86726476
   - https://www.livwatches.com/
+  - https://www.livwatches.com/collections/all

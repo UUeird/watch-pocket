@@ -1,8 +1,10 @@
 name: MkII
 origin: United States
 periods: [{ from: 2002 }]
+segment: mid-range
 website: https://mkiiwatches.com
 sources:
   - https://www.dialicious.com/en/mkii
   - https://mkiiwatches.com/
   - https://mkiiwatches.com/pages/about-us
+  - https://mkiiwatches.com/collections/all

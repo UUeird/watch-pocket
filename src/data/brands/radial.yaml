@@ -1,9 +1,11 @@
 name: Radial
 status: active
+segment: mid-range
 website: https://radial-watch.com
 sources:
   - https://www.dialicious.com/en/radial
   - https://radial-watch.com/
+  - https://radial-watch.com/collections/all
 control: private
 independent:
   sources:

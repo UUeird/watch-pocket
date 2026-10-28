@@ -1,7 +1,9 @@
 name: Koppo
 origin: France
 status: active
+segment: mid-range
 website: https://www.koppowatches.com
 sources:
   - https://www.dialicious.com/en/koppo
   - https://www.koppowatches.com/
+  - https://www.koppowatches.com/collections/all

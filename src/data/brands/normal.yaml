@@ -1,6 +1,8 @@
 name: Normal
 status: active
+segment: budget
 website: https://normaltimepieces.com
 sources:
   - https://www.dialicious.com/en/normal
   - https://normaltimepieces.com/
+  - https://normaltimepieces.com/collections/all

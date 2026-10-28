@@ -1,11 +1,13 @@
 name: Gorilla
 origin: Switzerland
 periods: [{ from: 2016 }]
+segment: mid-range
 website: https://gorilla-watches.com
 sources:
   - https://www.dialicious.com/en/gorilla
   - https://gorilla-watches.com/
   - https://gorilla-watches.com/en-us/blogs/about-us
+  - https://gorilla-watches.com/collections/all
 control: family
 independent:
   sources:

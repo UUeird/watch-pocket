@@ -199,7 +199,8 @@ const brands = defineCollection({
           .optional(),
         // Only for brands with no periods recorded; otherwise status is derived from them.
         status: z.enum(['active', 'dormant', 'defunct', 'revived']).optional(),
-        // Market positioning. `broad` is for brands whose range spans several tiers.
+        // Market positioning, by the typical new list price of its watches: budget under ~$200, mid-range ~$200–3,000,
+        // luxury above that, haute for high horology, broad for a range spanning the tiers. See .claude/skills/add-brand.
         segment: z.enum(['haute', 'luxury', 'mid-range', 'budget', 'broad']).optional(),
         // What the brand makes or has made, past or present. A brand can make several; brands not yet looked
         // into have none. `movements` and `cases` are for brands that supply them to other brands.

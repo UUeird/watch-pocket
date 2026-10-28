@@ -7,10 +7,12 @@ logoCredit:
   author: Jelkulv90
 origin: Switzerland
 status: active
+segment: mid-range
 website: https://boegli.com
 sources:
   - https://www.dialicious.com/en/boegli
   - https://boegli.com/
+  - https://boegli.com/collections/all
 control: family
 independent:
   sources:

@@ -1,10 +1,12 @@
 name: SpaceOne
 origin: France
 status: active
+segment: mid-range
 website: https://spaceonewatches.com
 sources:
   - https://www.dialicious.com/en/spaceone
   - https://spaceonewatches.com/
+  - https://spaceonewatches.com/collections/all
 control: private
 independent:
   sources:

@@ -1,6 +1,8 @@
 name: Version
 periods: [{ from: 2024 }]
+segment: mid-range
 website: https://versionwatches.fr
 sources:
   - https://www.dialicious.com/en/version
   - https://versionwatches.fr/
+  - https://versionwatches.fr/collections/all

@@ -1,7 +1,9 @@
 name: Arcange
 origin: France
 status: active
+segment: mid-range
 website: https://arcange-watches.com
 sources:
   - https://www.dialicious.com/en/arcange
   - https://arcange-watches.com/
+  - https://arcange-watches.com/collections/all

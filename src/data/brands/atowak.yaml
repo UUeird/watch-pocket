@@ -1,6 +1,8 @@
 name: Atowak
 status: active
+segment: mid-range
 website: https://atowak.com
 sources:
   - https://www.dialicious.com/en/atowak
   - https://atowak.com/
+  - https://atowak.com/collections/all

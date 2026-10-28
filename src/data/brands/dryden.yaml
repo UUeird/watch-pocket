@@ -1,10 +1,12 @@
 name: Dryden
 origin: United States
 status: active
+segment: mid-range
 website: https://drydenwatchco.com
 sources:
   - https://www.dialicious.com/en/dryden
   - https://drydenwatchco.com/
+  - https://drydenwatchco.com/collections/all
 control: private
 independent:
   sources:

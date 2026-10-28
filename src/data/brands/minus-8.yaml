@@ -1,8 +1,10 @@
 name: Minus-8
 origin: United States
 periods: [{ from: 2013 }]
+segment: mid-range
 website: https://www.minus8watch.com
 sources:
   - https://www.dialicious.com/en/minus-8
   - https://www.minus8watch.com/
   - https://www.minus8watch.com/pages/ourstory
+  - https://www.minus8watch.com/collections/all

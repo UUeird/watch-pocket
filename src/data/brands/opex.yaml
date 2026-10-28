@@ -1,9 +1,11 @@
 name: Opex
 status: active
+segment: budget
 website: https://www.opex-paris.com
 sources:
   - https://www.dialicious.com/en/opex
   - https://www.opex-paris.com/
+  - https://www.opex-paris.com/collections/all
 ownership:
   - owner: timex-group
     sources:

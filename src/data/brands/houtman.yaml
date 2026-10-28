@@ -1,8 +1,10 @@
 name: Houtman
 origin: Australia
 periods: [{ from: 2019 }]
+segment: mid-range
 website: https://houtmanwatch.com
 sources:
   - https://www.dialicious.com/en/houtman
   - https://houtmanwatch.com/
   - https://houtmanwatch.com/pages/about-us
+  - https://houtmanwatch.com/collections/all

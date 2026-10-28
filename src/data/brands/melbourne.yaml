@@ -1,7 +1,9 @@
 name: Melbourne
 origin: Australia
 periods: [{ from: 2013 }]
+segment: mid-range
 website: https://www.melbournewatch.com.au
 sources:
   - https://www.dialicious.com/en/melbourne
   - https://www.melbournewatch.com.au/
+  - https://www.melbournewatch.com.au/collections/all

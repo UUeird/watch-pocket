@@ -1,7 +1,9 @@
 name: Etien
 origin: Singapore
 status: active
+segment: mid-range
 website: https://etien.watch
 sources:
   - https://www.dialicious.com/en/etien
   - https://etien.watch/
+  - https://etien.watch/collections/all

@@ -1,10 +1,12 @@
 name: Seals
 origin: United States
 periods: [{ from: 2014 }]
+segment: mid-range
 website: https://seals-watches.com
 sources:
   - https://www.dialicious.com/en/seals
   - https://seals-watches.com/
+  - https://seals-watches.com/collections/all
 control: private
 independent:
   sources:

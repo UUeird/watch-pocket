@@ -1,10 +1,12 @@
 name: Beaucroft
 origin: United Kingdom
 periods: [{ from: 2020 }]
+segment: mid-range
 website: https://beaucroftwatches.com
 sources:
   - https://www.dialicious.com/en/beaucroft
   - https://beaucroftwatches.com/
+  - https://beaucroftwatches.com/collections/all
 control: private
 independent:
   sources:

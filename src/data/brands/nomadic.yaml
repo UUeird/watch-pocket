@@ -1,10 +1,12 @@
 name: Nomadic
 origin: Ireland
 status: active
+segment: mid-range
 website: https://nomadicwatches.com
 sources:
   - https://www.dialicious.com/en/nomadic
   - https://nomadicwatches.com/
+  - https://nomadicwatches.com/collections/all
 control: private
 independent:
   sources:

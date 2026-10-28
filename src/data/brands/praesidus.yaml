@@ -1,11 +1,13 @@
 name: Praesidus
 origin: United States
 periods: [{ from: 2019 }]
+segment: mid-range
 website: https://praesidus.com
 sources:
   - https://www.dialicious.com/en/praesidus
   - https://praesidus.com/
   - https://praesidus.com/pages/who-we-are-1
+  - https://praesidus.com/collections/all
 ownership:
   - owner: montrichard
     basis: disclosed

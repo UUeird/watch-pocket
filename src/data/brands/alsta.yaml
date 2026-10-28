@@ -1,9 +1,11 @@
 name: Alsta
 status: active
+segment: mid-range
 website: https://alstawatch.com
 sources:
   - https://www.dialicious.com/en/alsta
   - https://alstawatch.com/
+  - https://alstawatch.com/collections/all
 control: private
 independent:
   sources:

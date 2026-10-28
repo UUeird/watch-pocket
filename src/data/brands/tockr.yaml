@@ -1,10 +1,12 @@
 name: Tockr
 origin: United States
 periods: [{ from: 2017 }]
+segment: mid-range
 website: https://tockr.com
 sources:
   - https://www.dialicious.com/en/tockr
   - https://tockr.com/
+  - https://tockr.com/collections/all
 control: private
 independent:
   sources:

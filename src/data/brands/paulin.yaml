@@ -1,10 +1,12 @@
 name: Paulin
 periods: [{ from: 2013 }]
+segment: mid-range
 website: https://www.paulinwatches.com
 sources:
   - https://www.dialicious.com/en/paulin
   - https://www.paulinwatches.com/
   - https://www.paulinwatches.com/pages/about-us
+  - https://www.paulinwatches.com/collections/all
 ownership:
   - owner: { brand: anordain }
     basis: disclosed

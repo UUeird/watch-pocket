@@ -1,7 +1,9 @@
 name: Tusenö
 origin: Sweden
 periods: [{ from: 2015 }]
+segment: mid-range
 website: https://tuseno.com
 sources:
   - https://www.dialicious.com/en/tuseno
   - https://tuseno.com/
+  - https://tuseno.com/collections/all

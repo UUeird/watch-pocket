@@ -1,7 +1,9 @@
 name: Ichnos
 origin: Italy
 status: active
+segment: mid-range
 website: https://www.ichnoswatches.com
 sources:
   - https://www.dialicious.com/en/ichnos
   - https://www.ichnoswatches.com/
+  - https://www.ichnoswatches.com/collections/all

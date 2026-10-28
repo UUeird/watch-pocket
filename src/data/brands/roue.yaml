@@ -1,10 +1,12 @@
 name: Roue
 origin: United States
 periods: [{ from: 2017 }]
+segment: mid-range
 website: https://rouewatch.com
 sources:
   - https://www.dialicious.com/en/roue
   - https://rouewatch.com/
+  - https://rouewatch.com/collections/all
 control: private
 independent:
   sources:

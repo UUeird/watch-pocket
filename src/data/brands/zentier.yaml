@@ -1,6 +1,8 @@
 name: Zentier
 status: active
+segment: mid-range
 website: https://zentier.com
 sources:
   - https://www.dialicious.com/en/zentier
   - https://zentier.com/
+  - https://zentier.com/collections/all

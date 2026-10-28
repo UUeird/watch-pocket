@@ -1,8 +1,10 @@
 name: Sea2see
 periods: [{ from: 2015 }]
+segment: mid-range
 website: https://www.sea2see.org
 sources:
   - https://www.dialicious.com/en/sea2see
   - https://www.wikidata.org/wiki/Q111426227
   - https://www.sea2see.org/
   - https://www.sea2see.org/pages/history
+  - https://www.sea2see.org/collections/all
