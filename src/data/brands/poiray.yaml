@@ -1,12 +1,14 @@
 name: Poiray
 origin: France
-status: active
+periods: [{ from: 1975 }]
 segment: mid-range
 website: https://poiray.com
 sources:
   - https://www.dialicious.com/en/poiray
   - https://poiray.com/
   - https://poiray.com/collections/all
+  - https://international.franceclat.fr/brands-timepieces/poiray-horlogerie/
+  - https://hancockslondon.com/makers/poiray
 ownership:
   - owner: ams
     from: 2013

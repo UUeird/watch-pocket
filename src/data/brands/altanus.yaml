@@ -1,6 +1,6 @@
 name: Altanus
 origin: Switzerland
-status: active
+periods: [{ from: 1914 }]
 segment: mid-range
 makes: [mechanical-watches]
 website: https://altanus.com
@@ -9,3 +9,4 @@ sources:
   - https://altanus.com/
   - https://altanus.com/en/shop/
   - https://altanus.com/collection/master/
+  - https://altanus.com/it/chi-siamo/

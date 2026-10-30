@@ -1,6 +1,6 @@
 name: Appella
 origin: Switzerland
-status: active
+periods: [{ from: 1943 }]
 segment: mid-range
 website: https://appellawatches.ch
 sources:

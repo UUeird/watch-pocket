@@ -4,7 +4,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Marc_Jacobs_logo.svg
   license: Public domain
 origin: United States
-status: active
+periods: [{ from: 1984 }]
 segment: budget
 tags:
   - fashion
@@ -25,3 +25,6 @@ ownership:
     from: 2026
     sources:
       - https://en.wikipedia.org/wiki/Marc_Jacobs
+sources:
+  - https://fashionbi.com/brands/marc-jacobs
+  - https://en.wikipedia.org/wiki/Robert_Duffy_(businessman)

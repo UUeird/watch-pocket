@@ -1,5 +1,5 @@
 name: ZRC
-status: active
+periods: [{ from: 1904 }]
 segment: luxury
 makes: [mechanical-watches]
 website: https://zrc1904.com

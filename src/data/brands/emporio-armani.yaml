@@ -5,7 +5,7 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Emporio_Armani_logo.svg
   license: Public domain
 origin: Italy
-status: active
+periods: [{ from: 1981 }]
 segment: budget
 makes: [mechanical-watches, smartwatches]
 tags:
@@ -19,3 +19,4 @@ ownership:
 sources:
   - https://www.watchtime.com/wristwatch-industry-news/watches/look-giorgio-armanis-mechanical-watch-armani-meccanico-video/
   - https://www.wareable.com/smartwatches/emporio-armani-connected-release-date-price-specs-3416
+  - https://www.armani.com/en-in/emporio-armani/experience/about-emporio-armani

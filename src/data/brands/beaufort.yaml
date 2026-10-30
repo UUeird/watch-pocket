@@ -1,9 +1,10 @@
 name: Beaufort
 origin: New Zealand
-status: active
+periods: [{ from: 2019 }]
 segment: mid-range
 website: https://www.beaufort-watches.com
 sources:
   - https://www.dialicious.com/en/beaufort
   - https://www.beaufort-watches.com/
   - https://www.beaufort-watches.com/collections/all
+  - https://www.beaufort-watches.com/pages/our-journey

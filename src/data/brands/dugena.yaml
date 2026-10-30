@@ -7,7 +7,7 @@ logoCredit:
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: Novatempora dugena
 origin: Germany
-status: active
+periods: [{ from: 1917 }]
 segment: budget
 control: family
 ownership:
@@ -20,3 +20,6 @@ independent:
   sources:
     - https://www.dugena.de/de/historie
     - https://www.dugena.de/de/impressum
+sources:
+  - https://www.stepstone.de/cmp/de/nova-tempora-uhren-und-schmuck-gmbh-107932/jobs
+  - https://wiki.grail-watch.com/index.php/Dugena

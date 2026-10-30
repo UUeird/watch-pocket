@@ -5,7 +5,7 @@ logoCredit:
   license: CC BY-SA 4.0
   licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
   author: Raisedbygeeks
-status: active
+periods: [{ from: 1842, to: 1918 }, { from: 2009 }]
 segment: luxury
 makes: [mechanical-watches]
 website: https://www.faberge.com
@@ -13,6 +13,7 @@ sources:
   - https://www.dialicious.com/en/faberge
   - https://www.faberge.com/
   - https://en.wikipedia.org/wiki/Faberg%C3%A9_(company)
+  - https://www.faberge.com/pages/history
 ownership:
   - owner: pallinghurst
     from: 2007
