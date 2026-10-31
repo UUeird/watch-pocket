@@ -1,0 +1,8 @@
+name: "BP-100"
+line: casio/casio-collection
+sources:
+  - https://world.casio.com/corporate/history/chapter03/
+references:
+  - ref: "BP-100"
+    periods: [{ from: 1992 }]
+    movementType: quartz

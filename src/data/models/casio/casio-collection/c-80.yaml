@@ -1,0 +1,9 @@
+name: "C-80"
+line: casio/casio-collection
+sources:
+  - https://world.casio.com/corporate/history/chapter02/
+  - https://en.wikipedia.org/wiki/Casio_Databank
+references:
+  - ref: "C-80"
+    periods: [{ from: 1980 }]
+    movementType: quartz

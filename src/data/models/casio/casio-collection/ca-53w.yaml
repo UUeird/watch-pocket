@@ -1,0 +1,18 @@
+name: "CA-53W"
+line: casio/casio-collection
+sources:
+  - https://en.wikipedia.org/wiki/Casio_CA-53W
+references:
+  - ref: "CA-53W"
+    photos:
+      - file: ../../../photos/casio/casio-collection/ca-53w-ca-53w.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Casio_Rechneruhr_CA-53W-1EZ_schraegseitlich_Hochformat_2022.jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: VSchagow
+    periods: [{ from: 1988 }]
+    caseSize: 34.4
+    crystal: acrylic
+    movementType: quartz
+    complications: [date, chronograph, alarm]

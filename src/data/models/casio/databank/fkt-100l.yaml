@@ -1,0 +1,9 @@
+name: "FKT-100L"
+line: casio/databank
+sources:
+  - https://world.casio.com/corporate/history/chapter03/
+  - https://world.casio.com/corporate/history/chapter04/
+references:
+  - ref: "FKT-100L"
+    periods: [{ from: 1995 }]
+    movementType: quartz

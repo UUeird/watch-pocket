@@ -1,0 +1,9 @@
+name: "DW-6100"
+line: casio/g-shock
+style: sport
+sources:
+  - https://en.wikipedia.org/wiki/G-Shock
+references:
+  - ref: "DW-6100"
+    periods: [{ from: 1992 }]
+    movementType: quartz

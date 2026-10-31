@@ -1,0 +1,15 @@
+name: "MR-G"
+line: casio/g-shock
+photos:
+  - file: ../../../photos/casio/g-shock/mr-g.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Casio_G-SHOCK_MR-G_The_G_MRG-7100BJ-1AJF02s5.jpg
+      license: CC BY 2.5
+      licenseUrl: https://creativecommons.org/licenses/by/2.5
+      author: 663highland
+style: sport
+sources:
+  - https://world.casio.com/corporate/history/chapter02/
+references:
+  - ref: "MRG-100"
+    movementType: quartz

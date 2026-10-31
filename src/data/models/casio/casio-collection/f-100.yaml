@@ -1,0 +1,8 @@
+name: "F-100"
+line: casio/casio-collection
+sources:
+  - https://world.casio.com/corporate/history/chapter01/
+references:
+  - ref: "F-100"
+    periods: [{ from: 1978 }]
+    movementType: quartz

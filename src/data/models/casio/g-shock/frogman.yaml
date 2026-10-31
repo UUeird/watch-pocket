@@ -1,0 +1,17 @@
+name: "Frogman"
+line: casio/g-shock
+photos:
+  - file: ../../../photos/casio/g-shock/frogman.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01a.JPG
+      license: CC BY-SA 3.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+      author: Kansai explorer
+style: dive
+sources:
+  - https://en.wikipedia.org/wiki/G-Shock
+  - https://en.wikipedia.org/wiki/Casio_G-Shock_Frogman
+references:
+  - ref: "DW-6300"
+    periods: [{ from: 1993 }]
+    movementType: quartz

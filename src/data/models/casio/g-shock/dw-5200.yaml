@@ -1,0 +1,8 @@
+name: "DW-5200"
+line: casio/g-shock
+style: sport
+sources:
+  - https://en.wikipedia.org/wiki/G-Shock
+references:
+  - ref: "DW-5200C"
+    movementType: quartz

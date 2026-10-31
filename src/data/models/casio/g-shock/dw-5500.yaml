@@ -1,0 +1,9 @@
+name: "DW-5500"
+line: casio/g-shock
+style: sport
+sources:
+  - https://en.wikipedia.org/wiki/G-Shock
+references:
+  - ref: "DW-5500C"
+    periods: [{ from: 1985 }]
+    movementType: quartz
