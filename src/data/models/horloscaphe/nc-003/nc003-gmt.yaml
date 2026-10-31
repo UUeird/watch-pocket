@@ -1,0 +1,20 @@
+name: "NC003 GMT"
+line: horloscaphe/nc-003
+style: dive
+sources:
+  - https://www.horloscaphe-watches-paris.com/product/dive-watch-nc003-gmt-300-m-toolwatch/
+references:
+  - ref: "NC003-GMT"
+    officialPhoto:
+      src: https://www.horloscaphe-watches-paris.com/wp-content/uploads/2026/05/IMG_1219.jpg
+      page: https://www.horloscaphe-watches-paris.com/product/dive-watch-nc003-gmt-300-m-toolwatch/
+    price: { amount: 3, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { material: steel, style: dive }
+    crystal: sapphire
+    movement: "Ronda 505.24"
+    movementType: quartz
+    complications: [gmt]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: fabric-strap }]
