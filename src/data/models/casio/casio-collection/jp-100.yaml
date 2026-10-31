@@ -1,0 +1,8 @@
+name: "JP-100"
+line: casio/casio-collection
+style: sport
+sources:
+  - https://world.casio.com/corporate/history/chapter05/
+references:
+  - ref: "JP-100"
+    movementType: quartz

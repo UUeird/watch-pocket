@@ -1,0 +1,17 @@
+name: "DW-5000"
+line: casio/g-shock
+style: sport
+sources:
+  - https://world.casio.com/corporate/history/chapter02/
+  - https://en.wikipedia.org/wiki/G-Shock
+references:
+  - ref: "DW-5000C"
+    photos:
+      - file: ../../../photos/casio/g-shock/dw-5000-dw-5000c.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:DW-5000.jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: Stollenbaeck
+    periods: [{ from: 1983 }]
+    movementType: quartz

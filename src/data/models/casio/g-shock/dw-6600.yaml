@@ -1,0 +1,9 @@
+name: "DW-6600"
+line: casio/g-shock
+style: sport
+sources:
+  - https://en.wikipedia.org/wiki/G-Shock
+references:
+  - ref: "DW-6600"
+    periods: [{ from: 1994 }]
+    movementType: quartz

@@ -1,0 +1,9 @@
+name: "WVA-300"
+line: casio/wave-ceptor
+sources:
+  - https://world.casio.com/corporate/history/chapter04/
+  - https://world.casio.com/corporate/history/chronology/
+references:
+  - ref: "WVA-300"
+    periods: [{ from: 2001 }]
+    movementType: quartz

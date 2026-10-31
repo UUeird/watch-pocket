@@ -1,0 +1,8 @@
+name: "PELA FS-10"
+line: casio/casio-collection
+sources:
+  - https://world.casio.com/corporate/history/chapter02/
+references:
+  - ref: "FS-10"
+    periods: [{ from: 1985 }]
+    movementType: quartz

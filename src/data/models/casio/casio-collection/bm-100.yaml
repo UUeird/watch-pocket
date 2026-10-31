@@ -1,0 +1,9 @@
+name: "BM-100"
+line: casio/casio-collection
+sources:
+  - https://world.casio.com/corporate/history/chapter02/
+  - https://world.casio.com/corporate/history/chapter05/
+references:
+  - ref: "BM-100WJ"
+    periods: [{ from: 1989 }]
+    movementType: quartz

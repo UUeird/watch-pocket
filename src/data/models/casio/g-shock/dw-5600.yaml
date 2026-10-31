@@ -1,0 +1,15 @@
+name: "DW-5600"
+line: casio/g-shock
+photos:
+  - file: ../../../photos/casio/g-shock/dw-5600.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:CASIO_G-Shock_GW-M5610U.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: Md. Rifat Hasan Jihan
+style: sport
+sources:
+  - https://en.wikipedia.org/wiki/G-Shock
+references:
+  - ref: "DW-5600C"
+    movementType: quartz
