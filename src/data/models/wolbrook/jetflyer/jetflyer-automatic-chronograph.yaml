@@ -1,0 +1,46 @@
+name: "JetFlyer Automatic Chronograph"
+line: wolbrook/jetflyer
+style: chronograph
+theme: aviation
+sources:
+  - https://wolbrook.com/products/jetflyer-automatic-chronograph
+  - https://wolbrook.com/products/jetflyer-automatic-chronograph-vintage
+  - https://wolbrook.com/products/jetflyer-automatic-chronograph-panda-vintage
+references:
+  - ref: "JFCA-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/JetFlyer-chronograph-automatic-black-dial-c7-x1-lume-black-leather-strap-front-26-JFCA-001-LR6-BLK-STL.jpg
+      page: https://wolbrook.com/products/jetflyer-automatic-chronograph
+    price: { amount: 845, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "Jeambrun PS6402"
+    movementType: mechanical
+    complications: [chronograph]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "JFCA-003"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/JetFlyer-chronograph-automatic-black-dial-old-radium-x1-lume-brown-leather-strap-front-26-JFCA-003-LR6-BRN-STL.jpg
+      page: https://wolbrook.com/products/jetflyer-automatic-chronograph-vintage
+    price: { amount: 845, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "Jeambrun PS6402"
+    movementType: mechanical
+    complications: [chronograph]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "JFCA-093"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/JetFlyer-chronograph-automatic-panda-black-and-white-dial-old-radium-x1-lume-camel-leather-strap-front-26-JFCA-093-LR6-CAM-STL.jpg
+      page: https://wolbrook.com/products/jetflyer-automatic-chronograph-panda-vintage
+    price: { amount: 845, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "Jeambrun PS6402"
+    movementType: mechanical
+    complications: [chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]

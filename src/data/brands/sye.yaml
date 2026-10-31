@@ -2,9 +2,15 @@ name: SYE
 origin: France
 periods: [{ from: 2020 }]
 segment: mid-range
-makes: [mechanical-watches]
+makes: [mechanical-watches, quartz-watches]
 website: https://www.syewatches.com
 sources:
   - https://www.dialicious.com/en/sye
   - https://www.syewatches.com/
   - https://www.syewatches.com/collections/all
+  - https://www.syewatches.com/products/mot1on-chronograph-estoril
+control: private
+independent:
+  sources:
+    - https://www.syewatches.com/pages/sye-start-your-engine-discover-our-team
+    - https://www.syewatches.com/policies/legal-notice

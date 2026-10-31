@@ -1,0 +1,62 @@
+name: "CARL-MIL-01"
+line: carlingue/military-heritage
+style: field
+sources:
+  - https://carlingue-watches.com/produit/ct-003-a/
+  - https://carlingue-watches.com/produit/ct-003-b/
+  - https://carlingue-watches.com/produit/ct-003-c/
+  - https://carlingue-watches.com/produit/ct-003-d/
+references:
+  - ref: "CT-003-A"
+    officialPhoto:
+      src: https://carlingue-watches.com/content/uploads/2024/07/CT-003-A_soldat_canvas-min.png
+      page: https://carlingue-watches.com/produit/ct-003-a/
+    price: { amount: 699, currency: EUR, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    caseColors: [{ color: gray, name: "Gunmetal PVD" }]
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]
+  - ref: "CT-003-B"
+    officialPhoto:
+      src: https://carlingue-watches.com/content/uploads/2024/07/CT-003-B_soldat_canvas-min.png
+      page: https://carlingue-watches.com/produit/ct-003-b/
+    price: { amount: 670, currency: EUR, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]
+  - ref: "CT-003-C"
+    officialPhoto:
+      src: https://carlingue-watches.com/content/uploads/2024/07/CT-003-C_soldat_canvas-min.png
+      page: https://carlingue-watches.com/produit/ct-003-c/
+    price: { amount: 670, currency: EUR, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]
+  - ref: "CT-003-D"
+    officialPhoto:
+      src: https://carlingue-watches.com/content/uploads/2024/06/CT-003-D_soldat_canvas-min.png
+      page: https://carlingue-watches.com/produit/ct-003-d/
+    price: { amount: 670, currency: EUR, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: green }]
+    bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]

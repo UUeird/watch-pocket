@@ -1,0 +1,33 @@
+name: "Skindiver WTD Chrono-Mecaquartz"
+line: wolbrook/skindiver-wt
+style: chronograph
+theme: aviation
+sources:
+  - https://wolbrook.com/products/skindiver-wt-chrono-mecaquartz-telemeter-decimeter-panda-chronograph-naca-edition
+  - https://wolbrook.com/products/skindiver-wt-chrono-mecaquartz-telemeter-decimeter-vintage-chronograph-naca-edition
+references:
+  - ref: "SWTDCM-101"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/vintage-telemeter-panda-chronograph-black-leather-strap-24-SWCM-101-LR3B-BLK-NACA.jpg
+      page: https://wolbrook.com/products/skindiver-wt-chrono-mecaquartz-telemeter-decimeter-panda-chronograph-naca-edition
+    price: { amount: 389, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Seiko VK64"
+    movementType: quartz
+    complications: [chronograph]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "SWTDCM-102"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/vintage-telemeter-chronograph-black-leather-strap-24-SWCM-102-LR3B-BRN-NACA.jpg
+      page: https://wolbrook.com/products/skindiver-wt-chrono-mecaquartz-telemeter-decimeter-vintage-chronograph-naca-edition
+    price: { amount: 389, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Seiko VK64"
+    movementType: quartz
+    complications: [chronograph]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]

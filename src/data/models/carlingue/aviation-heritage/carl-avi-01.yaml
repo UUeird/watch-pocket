@@ -1,0 +1,62 @@
+name: "CARL-AVI-01"
+line: carlingue/aviation-heritage
+style: pilot
+sources:
+  - https://carlingue-watches.com/produit/ct-002-a/
+  - https://carlingue-watches.com/produit/ct-002-b/
+  - https://carlingue-watches.com/produit/ct-002-c/
+  - https://carlingue-watches.com/produit/ct-002-d/
+references:
+  - ref: "CT-002-A"
+    officialPhoto:
+      src: https://carlingue-watches.com/content/uploads/2024/06/CT-002-A_soldat_nylon-min.png
+      page: https://carlingue-watches.com/produit/ct-002-a/
+    price: { amount: 780, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: black, name: "PVD" }]
+    crystal: sapphire
+    movement: "Miyota 9075"
+    movementType: mechanical
+    complications: [date, gmt]
+    dials: [{ color: green }]
+    bracelets: [{ type: fabric-strap }, { type: leather-strap }]
+  - ref: "CT-002-B"
+    officialPhoto:
+      src: https://carlingue-watches.com/content/uploads/2024/09/ct-002-c-soldat-strapless-square.png
+      page: https://carlingue-watches.com/produit/ct-002-b/
+    price: { amount: 750, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9075"
+    movementType: mechanical
+    complications: [date, gmt]
+    dials: [{ color: black }]
+    bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]
+  - ref: "CT-002-C"
+    officialPhoto:
+      src: https://carlingue-watches.com/content/uploads/2024/06/CT-002-C_soldat_nylon-min.png
+      page: https://carlingue-watches.com/produit/ct-002-c/
+    price: { amount: 750, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9075"
+    movementType: mechanical
+    complications: [date, gmt]
+    dials: [{ color: blue }]
+    bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]
+  - ref: "CT-002-D"
+    officialPhoto:
+      src: https://carlingue-watches.com/content/uploads/2024/07/CT-002-D_soldat_nylon-min.png
+      page: https://carlingue-watches.com/produit/ct-002-d/
+    price: { amount: 750, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9075"
+    movementType: mechanical
+    complications: [date, gmt]
+    dials: [{ color: green }]
+    bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]

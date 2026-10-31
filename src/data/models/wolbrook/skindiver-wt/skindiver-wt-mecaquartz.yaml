@@ -1,0 +1,148 @@
+name: "Skindiver WT Mecaquartz"
+line: wolbrook/skindiver-wt
+style: dive
+sources:
+  - https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-white-steel
+  - https://wolbrook.com/products/skindiver-wt-mecaquartz-watch
+  - https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-vintage-steel
+  - https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-blue-black-steel
+  - https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-airexpo-2025-special-edition
+  - https://wolbrook.com/products/skindiver-wt-mecaquartz-bracelet-watch-red-black-steel
+  - https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-green-lum-black-pvd
+  - https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-vintage-black-pvd-bezel
+  - https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-green-lum-steel-bezel-with-black-aluminum-insert
+  - https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-vintage-lum-steel-bezel-with-black-aluminum-insert
+references:
+  - ref: "SWM-002"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/Skindiver_Mecaquartz_Watch_White_Dial_Black_Nylon_Strap_21-SWM-002-NYL-BLK.jpg
+      page: https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-white-steel
+    price: { amount: 216, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Seiko VH31"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+  - ref: "SWM-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-mecaquartz-watch-black-dial-green-lum-black-nylon-strap-22-swm-001-nyl-blk.jpg
+      page: https://wolbrook.com/products/skindiver-wt-mecaquartz-watch
+    price: { amount: 248, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Seiko VH31"
+    movementType: quartz
+    complications: []
+    bracelets: [{ type: fabric-strap }, { type: bracelet }]
+  - ref: "SWM-003"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/Skindiver_WT_Mecaquartz_Watch_-_Vintage_Steel_22-SWM-003-NYL-GRN.jpg
+      page: https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-vintage-steel
+    price: { amount: 248, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Seiko VH31"
+    movementType: quartz
+    complications: []
+    bracelets: [{ type: fabric-strap }, { type: bracelet }]
+  - ref: "SWM-004"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-mecaquartz-watch-blue-bezel-black-dial-blue-nylon-strap-22-swm-004-nyl-blu.jpg
+      page: https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-blue-black-steel
+    price: { amount: 238, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Seiko VH31"
+    movementType: quartz
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: fabric-strap }]
+  - ref: "SWM-004-AE25"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-mecaquartz-watch-blue-bezel-black-dial-blue-nylon-strap-22-swm-004-nyl-blu.jpg
+      page: https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-airexpo-2025-special-edition
+    price: { amount: 238, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Seiko VH31"
+    movementType: quartz
+    complications: []
+    bracelets: [{ type: fabric-strap }]
+  - ref: "SWM-006"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-mecaquartz-watch-red-bezel-black-dial-green-nylon-strap-22-swm-005-nyl-grn.jpg
+      page: https://wolbrook.com/products/skindiver-wt-mecaquartz-bracelet-watch-red-black-steel
+    price: { amount: 238, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Seiko VH31"
+    movementType: quartz
+    complications: []
+    dials: [{ color: red }]
+    bracelets: [{ type: fabric-strap }, { type: bracelet }]
+  - ref: "SWM-021"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-mecaquartz-black-pvd-watch-black-dial-black-nylon-strap-22-swm-021-nyl-blk.jpg
+      page: https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-green-lum-black-pvd
+    price: { amount: 259, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: black, name: "Black PVD" }]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Seiko VH31"
+    movementType: quartz
+    complications: []
+    bracelets: [{ type: fabric-strap }, { type: bracelet }]
+  - ref: "SWM-203"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-worldtimer-mecaquartz-black-dial-vintage-lum-black-bezel-green-nylon-strap-front-22-SWM-203-NYL-GRN.jpg
+      page: https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-vintage-black-pvd-bezel
+    price: { amount: 238, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Seiko VH31"
+    movementType: quartz
+    complications: []
+    bracelets: [{ type: fabric-strap }, { type: bracelet }]
+  - ref: "SWM-301"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-wt-mecaquartz-black-dial-c7-lum-black-bezel-black-nylon-strap-22-SWM-301-BOR-STL.jpg
+      page: https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-green-lum-steel-bezel-with-black-aluminum-insert
+    price: { amount: 238, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Seiko VH31"
+    movementType: quartz
+    complications: []
+    bracelets: [{ type: fabric-strap }, { type: bracelet }]
+  - ref: "SWM-303"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-worldtimer-mecaquartz-black-dial-vintage-lum-black-bezel-aluminium-insert-green-nylon-strap-22-SWM-303-NYL-GRN.jpg
+      page: https://wolbrook.com/products/skindiver-wt-mecaquartz-watch-vintage-lum-steel-bezel-with-black-aluminum-insert
+    price: { amount: 238, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Seiko VH31"
+    movementType: quartz
+    complications: []
+    bracelets: [{ type: fabric-strap }, { type: bracelet }]

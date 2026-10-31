@@ -1,0 +1,49 @@
+name: "Skindiver II Automatic Jumbo Indices"
+line: wolbrook/skindiver-ii
+style: dive
+sources:
+  - https://wolbrook.com/products/skindiver-ii-automatic-dive-watch-jumbo-vintage-lum-black-dial
+  - https://wolbrook.com/products/skindiver-ii-automatic-dive-watch-jumbo-indices-green-dial
+  - https://wolbrook.com/products/skindiver-ii-automatic-dive-watch-jumbo-indices-smoked-blue
+references:
+  - ref: "S2AJ-003"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-ii-automatic-dive-watch-black-dial-jumbo-indicies-vintage-lum-black-rubber-strap-23-s2aj-003-rb1-blk-cxo.jpg
+      page: https://wolbrook.com/products/skindiver-ii-automatic-dive-watch-jumbo-vintage-lum-black-dial
+    price: { amount: 589, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "S2AJ-005"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-II-automatic-dive-watch-green-dial-jumbo-indicies-vintage-lum-green-rubber-strap-23-s2aJ-005-rb1-grn-cxo.jpg
+      page: https://wolbrook.com/products/skindiver-ii-automatic-dive-watch-jumbo-indices-green-dial
+    price: { amount: 589, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: green }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "S2AJ-034"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/23-S2AJ-004-RB1-BLU.jpg
+      page: https://wolbrook.com/products/skindiver-ii-automatic-dive-watch-jumbo-indices-smoked-blue
+    price: { amount: 589, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]

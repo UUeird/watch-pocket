@@ -1,0 +1,33 @@
+name: "Outrider Professional"
+line: wolbrook/outrider
+style: field
+sources:
+  - https://wolbrook.com/products/outrider-professional-tool-watch-black-white-lum
+  - https://wolbrook.com/products/outrider-professional-tool-watch-black-green-lum
+references:
+  - ref: "OP-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/Outrider_Professional_Automatic_Watch_Black_Dial_White_Lum_Black_Leather_Strap_21-OP-001-LR3-CAM-LAF.jpg
+      page: https://wolbrook.com/products/outrider-professional-tool-watch-black-white-lum
+    price: { amount: 487, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "OP-002"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/Outrider_Professional_Automatic_Watch_Black_Dial_Green_Lum_Black_Leather_Strap_21-OP-002-LR3-BLK-LAF.jpg
+      page: https://wolbrook.com/products/outrider-professional-tool-watch-black-green-lum
+    price: { amount: 487, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]

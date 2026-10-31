@@ -1,0 +1,91 @@
+name: "MOT1ON Automatic 24"
+line: sye/mot1on
+style: sport
+theme: motor-racing
+sources:
+  - https://www.syewatches.com/products/mot1on-automatic-24-estoril
+  - https://www.syewatches.com/products/mot1on-automatic-24-bullitt-titanium
+  - https://www.syewatches.com/products/mot1on-automatic-24-pebble
+  - https://www.syewatches.com/products/sye-mot1on-automatic-24-black-edition
+  - https://www.syewatches.com/products/sye-mot1on-automatic-24-silver-edition
+  - https://www.syewatches.com/products/automatic-24-cut-7-black-dlc-steel-watch
+references:
+  - ref: "MAFE-ES"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/files/SYE-Start-Your-engine-MOT1ON-Automatic-24-Estoril-Carbon_black-MAFE-ES-CB.webp
+      page: https://www.syewatches.com/products/mot1on-automatic-24-estoril
+    price: { amount: 799, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8217"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue, name: "Alpine Steel Blue" }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "MATI-BU"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/files/SYE-Start-Your-engine-MOT1ON-Automatic-24-Bullitt-Titanium-Shadow-MATI-BU-SH.webp
+      page: https://www.syewatches.com/products/mot1on-automatic-24-bullitt-titanium
+    price: { amount: 850, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [titanium]
+    crystal: sapphire
+    movement: "Miyota 8217"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green, name: "Bullitt" }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "MAFE-PE"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/products/SYE_Start_Your_engine_MOT1ON_Automatic_24_Pebble_Carbon_black_packshot_MAFE-PE-CB_1000px.jpg
+      page: https://www.syewatches.com/products/mot1on-automatic-24-pebble
+    price: { amount: 799, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8217"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: gray, name: "Pebble" }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "MAFE-BL"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/products/SYE_Start-Your-Engine_MOT1ON_Automatic_24_Black_edition_Carbon_black.jpg
+      page: https://www.syewatches.com/products/sye-mot1on-automatic-24-black-edition
+    price: { amount: 799, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8217"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "MAFE-SI"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/products/SYE_Start-Your-Engine_MOT1ON_Automatic_24_Silver_edition_Whiskey.jpg
+      page: https://www.syewatches.com/products/sye-mot1on-automatic-24-silver-edition
+    price: { amount: 799, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8217"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "MAFE-C7"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/files/SYE-Start-Your-engine-MOT1ON-Automatic_24-CUT_7-black-DLC-Shadow-MAFE-C7-SH-1200px.jpg
+      page: https://www.syewatches.com/products/automatic-24-cut-7-black-dlc-steel-watch
+    price: { amount: 850, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    caseColors: [{ color: black, name: "DLC" }]
+    crystal: sapphire
+    movement: "Miyota 8217"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green, name: "CUT 7" }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]

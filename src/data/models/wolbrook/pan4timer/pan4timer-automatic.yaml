@@ -1,0 +1,17 @@
+name: "Pan4Timer Automatic"
+line: wolbrook/pan4timer
+sources:
+  - https://wolbrook.com/products/pan4timer-automatic-watch
+references:
+  - ref: "PAN-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/Pan4Timer-black-dial-camel-leather-strap-front-25-PAN-001-LR6-CAM-STL.jpg
+      page: https://wolbrook.com/products/pan4timer-automatic-watch
+    price: { amount: 487, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: rubber-strap }, { type: bracelet }]

@@ -1,0 +1,34 @@
+name: "Skindiver Decompression Automatic"
+line: wolbrook/skindiver
+style: dive
+sources:
+  - https://wolbrook.com/products/skindiver-decompression-automatic-watch
+  - https://wolbrook.com/products/skindiver-decompression-automatic-watch-blue-dial
+references:
+  - ref: "SDA-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/24-SDA-001-RB1-BLK.jpg
+      page: https://wolbrook.com/products/skindiver-decompression-automatic-watch
+    price: { amount: 454, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SDA-004"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/24-SDA-004-RB1-BLE.jpg
+      page: https://wolbrook.com/products/skindiver-decompression-automatic-watch-blue-dial
+    price: { amount: 454, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]

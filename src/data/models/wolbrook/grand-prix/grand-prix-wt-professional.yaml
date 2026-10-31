@@ -1,0 +1,33 @@
+name: "Grand Prix WT Professional"
+line: wolbrook/grand-prix
+style: sport
+theme: motor-racing
+sources:
+  - https://wolbrook.com/products/douglas-grand-prix-wt-professional-racing-watch-rene-bonnet-djet-1962-limited-edition
+  - https://wolbrook.com/products/douglas-grand-prix-wt-professional-racing-watch-black-pvd-rene-bonnet-djet-1962-limited-edition
+references:
+  - ref: "SWGP-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/Grand_Prix_WT_Professional_Racing_Watch_Black_Dial_C3_Lum_Camel_Rally_Leather_Strap_22-SWGP-001-LR6-CAM-RBD.jpg
+      page: https://wolbrook.com/products/douglas-grand-prix-wt-professional-racing-watch-rene-bonnet-djet-1962-limited-edition
+    price: { amount: 422, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: rubber-strap }, { type: bracelet }]
+  - ref: "SWGP-002"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/Grand_Prix_WT_Professional_Black_PVD_Racing_Watch_Black_Dial_C3_Lum_Black_Rally_Leather_Strap_22-SWGP-002-LR6-BLK-RBD.jpg
+      page: https://wolbrook.com/products/douglas-grand-prix-wt-professional-racing-watch-black-pvd-rene-bonnet-djet-1962-limited-edition
+    price: { amount: 433, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: black, name: "Black PVD" }]
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: rubber-strap }, { type: bracelet }]

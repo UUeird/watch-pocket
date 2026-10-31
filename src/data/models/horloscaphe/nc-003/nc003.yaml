@@ -1,0 +1,65 @@
+name: "NC003"
+line: horloscaphe/nc-003
+style: dive
+sources:
+  - https://www.horloscaphe-watches-paris.com/product/dive-watch-made-in-france-military-nc003/
+  - https://www.horloscaphe-watches-paris.com/product/watch-nc-003-orange/
+  - https://www.horloscaphe-watches-paris.com/product/watch-nc-003-scaphtek/
+  - https://www.horloscaphe-watches-paris.com/product/watch-nc-003-fluide/
+references:
+  - ref: "NC003"
+    officialPhoto:
+      src: https://www.horloscaphe-watches-paris.com/wp-content/uploads/2023/11/IMG_0842-scaled.jpg
+      page: https://www.horloscaphe-watches-paris.com/product/dive-watch-made-in-france-military-nc003/
+    price: { amount: 3, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { material: steel, style: dive }
+    crystal: sapphire
+    movement: "Ronda 715 Li"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: fabric-strap }]
+  - ref: "NC003 Orange"
+    officialPhoto:
+      src: https://www.horloscaphe-watches-paris.com/wp-content/uploads/2026/05/IMG_1314.jpg
+      page: https://www.horloscaphe-watches-paris.com/product/watch-nc-003-orange/
+    price: { amount: 3, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { material: steel, style: dive }
+    crystal: sapphire
+    movement: "Ronda 715 Li"
+    movementType: quartz
+    complications: []
+    dials: [{ color: orange }]
+    bracelets: [{ type: rubber-strap }, { type: fabric-strap }]
+  - ref: "NC003-SCAPHTEK"
+    officialPhoto:
+      src: https://www.horloscaphe-watches-paris.com/wp-content/uploads/2023/11/IMG_0858-scaled.jpg
+      page: https://www.horloscaphe-watches-paris.com/product/watch-nc-003-scaphtek/
+    price: { amount: 3, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { material: steel, style: dive }
+    crystal: sapphire
+    movement: "Ronda 715 Li"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: fabric-strap }]
+  - ref: "NC003-FLUIDE"
+    officialPhoto:
+      src: https://www.horloscaphe-watches-paris.com/wp-content/uploads/2023/11/IMG_0824-scaled.jpg
+      page: https://www.horloscaphe-watches-paris.com/product/watch-nc-003-fluide/
+    price: { amount: 4, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { material: steel, style: dive }
+    crystal: sapphire
+    movement: "Ronda 715 Li"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: fabric-strap }]
