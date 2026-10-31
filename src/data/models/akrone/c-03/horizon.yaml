@@ -1,0 +1,41 @@
+name: "Horizon"
+line: akrone/c-03
+style: pilot
+sources:
+  - https://akrone.fr/products/c-03-horizon-austral-41mm
+  - https://akrone.fr/products/c-03-horizon-black-39mm
+  - https://akrone.fr/products/c-03-horizon-austral-gun
+references:
+  - ref: "Horizon Austral 41mm"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C03_41_horizon_austral_soldat_rubber.jpg
+      page: https://akrone.fr/products/c-03-horizon-austral-41mm
+    price: { amount: 649, currency: EUR, year: 2026 }
+    caseSize: 41
+    metals: [titanium]
+    crystal: sapphire
+    movement: "Soprod P024"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "Horizon Black 39mm"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C-03_HORIZON_BLACK_39_SOLDAT_RUBBER.jpg
+      page: https://akrone.fr/products/c-03-horizon-black-39mm
+    price: { amount: 599, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [titanium]
+    crystal: sapphire
+    movement: "Soprod P024"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "Horizon Austral Gun"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C-03_HORIZON_BLACK_39_SOLDAT_RUBBER_1.jpg
+      page: https://akrone.fr/products/c-03-horizon-austral-gun
+    price: { amount: 599, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [titanium]
+    crystal: sapphire
+    movement: "Soprod P024"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]

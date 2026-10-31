@@ -1,0 +1,150 @@
+name: "MN64"
+line: zrc/grands-fonds
+style: dive
+website: https://zrc1904.com/category/collections/watches-grands-fonds/gf-mn64/
+sources:
+  - https://zrc1904.com/product/gf4211121113-mn64-metal/
+  - https://zrc1904.com/product/gf4211121118-mn64-rubber/
+  - https://zrc1904.com/product/mn64-heterium-gf4216121213/
+  - https://zrc1904.com/product/mn64-heterium-gf4216121218/
+  - https://zrc1904.com/product/men-watch-gf4218221213-iridium/
+  - https://zrc1904.com/product/men-watch-gf4213121315-tropical/
+  - https://zrc1904.com/product/gf42168ph-edition-limitee/
+  - https://zrc1904.com/product/gf4226521118-mn64-titane-rubber/
+  - https://zrc1904.com/product/gf4221221113-mn64-full-titane/
+  - https://zrc1904.com/product/titane-limited-edition-wolrd-record-new/
+references:
+  - ref: "GF42163"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2024/03/GF42163-montre-homme-ZRC-Soldat.png
+      page: https://zrc1904.com/product/gf4211121113-mn64-metal/
+    price: { amount: 3690, currency: CHF, year: 2026 }
+    caseSize: 41.5
+    metals: [steel]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW300-1"
+    movementType: mechanical
+    bracelets: [{ type: bracelet }]
+  - ref: "GF42168"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2024/03/GF42168-men-watch-ZRC.png
+      page: https://zrc1904.com/product/gf4211121118-mn64-rubber/
+    price: { amount: 3290, currency: CHF, year: 2026 }
+    caseSize: 41.5
+    metals: [steel]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW300-1"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }]
+  - ref: "GF421613"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2025/03/GF421613-montre-homme-ZRC-MN64-HETERIUM-SOLDAT.png
+      page: https://zrc1904.com/product/mn64-heterium-gf4216121213/
+    price: { amount: 3690, currency: CHF, year: 2026 }
+    caseSize: 41.5
+    metals: [steel]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW300-1"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: "GF421618"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2025/03/GF421618-montre-homme-ZRC-MN64-HETERIUM-Soldat.png
+      page: https://zrc1904.com/product/mn64-heterium-gf4216121218/
+    price: { amount: 3290, currency: CHF, year: 2026 }
+    caseSize: 41.5
+    metals: [steel]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW300-1"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "GF42183"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2024/03/GF42183-men-watch-ZRC.png
+      page: https://zrc1904.com/product/men-watch-gf4218221213-iridium/
+    price: { amount: 3790, currency: CHF, year: 2026 }
+    caseSize: 41.5
+    metals: [steel]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW300-1"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: "GF42215"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2024/03/GF42215-men-watch-ZRC.png
+      page: https://zrc1904.com/product/men-watch-gf4213121315-tropical/
+    price: { amount: 3290, currency: CHF, year: 2026 }
+    caseSize: 41.5
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Sellita SW300-1"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: "GF42168PH"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2024/07/GF42168PH-Edition-limitee-Montre-Homme-ZRC-Soldat.png
+      page: https://zrc1904.com/product/gf42168ph-edition-limitee/
+    price: { amount: 3890, currency: CHF, year: 2026 }
+    caseSize: 41.5
+    metals: [steel]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW300-1"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "GF4226521118"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2026/04/ZRC-GF4226521118-ABYSS-Soldat.png
+      page: https://zrc1904.com/product/gf4226521118-mn64-titane-rubber/
+    price: { amount: 4090, currency: CHF, year: 2026 }
+    caseSize: 41.5
+    metals: [titanium]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW300-1"
+    movementType: mechanical
+    complications: []
+    bracelets: [{ type: rubber-strap }]
+  - ref: "GF4221221113"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2026/04/ZRC-GF4221221113-ABYSS-METAL-Soldat.png
+      page: https://zrc1904.com/product/gf4221221113-mn64-full-titane/
+    price: { amount: 4690, currency: CHF, year: 2026 }
+    caseSize: 41.5
+    metals: [titanium]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW300-1"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: bracelet }]
+  - ref: "GF4226121118WR"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2026/07/ZRC-GF4226121118WR-SOLDAT.png
+      page: https://zrc1904.com/product/titane-limited-edition-wolrd-record-new/
+    price: { amount: 4290, currency: CHF, year: 2026 }
+    caseSize: 41.5
+    metals: [titanium]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW300-1"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }]
