@@ -1,0 +1,53 @@
+name: "Ref. 7505"
+line: serica/field-chronometer
+style: field
+sources:
+  - https://serica-watches.com/en/products/7505-1-chronometre-etanche
+  - https://serica-watches.com/en/products/7505-2-chronometre-etanche
+  - https://serica-watches.com/en/products/7505-txd-chronometre-etanche
+  - https://serica-watches.com/en/pages/our-history
+references:
+  - ref: "7505-1"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/7505-1_noir_3h-packshot_02.jpg
+      page: https://serica-watches.com/en/products/7505-1-chronometre-etanche
+    periods: [{ from: 2026 }]
+    price: { amount: 1090, currency: EUR, year: 2026 }
+    caseSize: 35
+    metals: [steel]
+    bezel: { material: steel, style: smooth }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black, name: "Black Enamel" }]
+    bracelets: [{ type: bracelet, name: "Bonklip" }]
+  - ref: "7505-2"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/7505-2_olive_3h-packshot_02.jpg
+      page: https://serica-watches.com/en/products/7505-2-chronometre-etanche
+    periods: [{ from: 2026 }]
+    price: { amount: 1090, currency: EUR, year: 2026 }
+    caseSize: 35
+    metals: [steel]
+    bezel: { material: steel, style: smooth }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: green, name: "Olive Green" }]
+    bracelets: [{ type: bracelet, name: "Bonklip" }]
+  - ref: "7505 TXD"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/7505-txd_3h-packshot_02.jpg
+      page: https://serica-watches.com/en/products/7505-txd-chronometre-etanche
+    periods: [{ from: 2026 }]
+    price: { amount: 1190, currency: EUR, year: 2026 }
+    caseSize: 35
+    metals: [steel]
+    bezel: { material: steel, style: smooth }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    bracelets: [{ type: bracelet, name: "Bonklip" }]

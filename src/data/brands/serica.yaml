@@ -2,8 +2,16 @@ name: Serica
 origin: France
 periods: [{ from: 2019 }]
 segment: mid-range
+makes: [mechanical-watches]
 website: https://serica-watches.com
 sources:
   - https://www.dialicious.com/en/serica
   - https://serica-watches.com/
   - https://serica-watches.com/collections/all
+  - https://serica-watches.com/en/pages/our-history
+  - https://serica-watches.com/en/products/6190-1-msl-chronometre
+control: private
+independent:
+  sources:
+    - https://serica-watches.com/en/pages/our-history
+    - https://serica-watches.com/policies/legal-notice

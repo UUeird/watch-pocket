@@ -7,3 +7,8 @@ website: https://bnd-watches.com
 sources:
   - https://www.dialicious.com/en/bnd
   - https://bnd-watches.com/
+control: private
+independent:
+  sources:
+    - https://bnd-watches.com/?lang=en
+    - https://bnd-watches.com/mentions-legales/
