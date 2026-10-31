@@ -4,5 +4,12 @@ sources:
   - https://world.casio.com/corporate/history/chapter03/
 references:
   - ref: "DKW-100"
+    photos:
+      - file: ../../../photos/casio/databank/dkw-100-dkw-100.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Casio_Databank_watch_DKW-100_(edited).jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: U1Quattro
     periods: [{ from: 1991 }]
     movementType: quartz

@@ -4,6 +4,13 @@ sources:
   - https://en.wikipedia.org/wiki/Casio_AE-1000W
 references:
   - ref: "AE-1000W"
+    photos:
+      - file: ../../../photos/casio/casio-collection/ae-1000w-ae-1000w.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Casio-AE-1000W.jpg
+          license: CC BY 3.0
+          licenseUrl: https://creativecommons.org/licenses/by/3.0
+          author: FDV
     periods: [{ from: 2010 }]
     movementType: quartz
     complications: [date, chronograph, alarm, world-time]

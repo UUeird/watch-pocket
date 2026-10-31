@@ -4,4 +4,11 @@ sources:
   - https://en.wikipedia.org/wiki/Casio_Databank
 references:
   - ref: "DBC-32"
+    photos:
+      - file: ../../../photos/casio/databank/dbc-32-dbc-32.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Casio_DBC-32-1AES_mit_Resin_Armband.jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: Lebensanalyst Biogr. Herr Binjansen
     movementType: quartz
