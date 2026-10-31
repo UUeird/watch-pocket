@@ -1,0 +1,31 @@
+name: "GMT"
+line: akrone/c-03
+style: travel
+sources:
+  - https://akrone.fr/products/c-03-gmt-jaune
+  - https://akrone.fr/products/c-03-gmt-globetrotteur
+references:
+  - ref: "GMT Volt"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C03_GMT_acid_soldat_web.jpg
+      page: https://akrone.fr/products/c-03-gmt-jaune
+    price: { amount: 799, currency: EUR, year: 2026 }
+    caseSize: 42
+    metals: [carbon]
+    crystal: sapphire
+    movement: "Miyota 9075"
+    movementType: mechanical
+    complications: [gmt]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "GMT Globe-Trotteur"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C-03_Carbone_GMT_explorateur_Soldat_01.jpg
+      page: https://akrone.fr/products/c-03-gmt-globetrotteur
+    price: { amount: 799, currency: EUR, year: 2026 }
+    caseSize: 42
+    metals: [carbon]
+    crystal: sapphire
+    movement: "Miyota 9075"
+    movementType: mechanical
+    complications: [gmt]
+    bracelets: [{ type: rubber-strap }]

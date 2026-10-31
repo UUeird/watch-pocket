@@ -1,0 +1,54 @@
+name: "S-05 Chrono"
+line: akrone/s-05
+style: chronograph
+theme: motor-racing
+sources:
+  - https://akrone.fr/products/s-05-gris-bleu
+  - https://akrone.fr/products/s-05-noire-jaune
+  - https://akrone.fr/products/s-05-chrono-bleu
+  - https://akrone.fr/products/s-05-chrono-multicolore
+references:
+  - ref: "S-05 Bleu Tonnerre"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/S05_CHRONO_SOLDAT_04.jpg
+      page: https://akrone.fr/products/s-05-gris-bleu
+    price: { amount: 299, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [titanium]
+    crystal: sapphire
+    movement: "VK64"
+    movementType: quartz
+    complications: [chronograph]
+  - ref: "S-05 Jaune Trophy"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/S05_CHRONO_SOLDAT_01.jpg
+      page: https://akrone.fr/products/s-05-noire-jaune
+    price: { amount: 299, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [titanium]
+    crystal: sapphire
+    movement: "VK64"
+    movementType: quartz
+    complications: [chronograph]
+  - ref: "S-05 Orange Volcano"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/S05_CHRONO_SOLDAT_07bis.jpg
+      page: https://akrone.fr/products/s-05-chrono-bleu
+    price: { amount: 299, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [titanium]
+    crystal: sapphire
+    movement: "VK64"
+    movementType: quartz
+    complications: [chronograph]
+  - ref: "S-05 Rouge Apex"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/S05_CHRONO_SOLDAT_05bis.jpg
+      page: https://akrone.fr/products/s-05-chrono-multicolore
+    price: { amount: 299, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [titanium]
+    crystal: sapphire
+    movement: "VK64"
+    movementType: quartz
+    complications: [chronograph]

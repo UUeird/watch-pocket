@@ -1,4 +1,5 @@
 name: ZRC
+origin: Switzerland
 periods: [{ from: 1904 }]
 segment: luxury
 makes: [mechanical-watches]
@@ -7,6 +8,7 @@ sources:
   - https://www.dialicious.com/en/zrc
   - https://zrc1904.com/
   - https://zrc1904.com/shop/
+  - https://zrc1904.com/since-1904-a-brand-story/zrc-a-long-standing-family-history/
 control: family
 independent:
   sources:

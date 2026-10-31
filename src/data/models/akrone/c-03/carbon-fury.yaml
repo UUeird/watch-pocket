@@ -1,0 +1,41 @@
+name: "Carbon Fury"
+line: akrone/c-03
+style: sport
+sources:
+  - https://akrone.fr/products/c-03-carbon-fury-2
+  - https://akrone.fr/products/c-03-carbon-fury-3
+  - https://akrone.fr/products/c-03-carbon-fury-4
+references:
+  - ref: "Carbon Fury Rouge"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C03_CARBONFURY_ROUGE_SOLDAT_RUBBER.jpg
+      page: https://akrone.fr/products/c-03-carbon-fury-2
+    price: { amount: 599, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [titanium]
+    crystal: sapphire
+    movement: "Soprod P024"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "Carbon Fury Jaune"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C03_CARBONFURY_JAUNE_SOLDAT_RUBBER.jpg
+      page: https://akrone.fr/products/c-03-carbon-fury-3
+    price: { amount: 599, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [titanium]
+    crystal: sapphire
+    movement: "Soprod P024"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "Carbon Fury Lume"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C03_CARBONFURY_LUM_SOLDAT_RUBBER.jpg
+      page: https://akrone.fr/products/c-03-carbon-fury-4
+    price: { amount: 599, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [titanium]
+    crystal: sapphire
+    movement: "Soprod P024"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }]

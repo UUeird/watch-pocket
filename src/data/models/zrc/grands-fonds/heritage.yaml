@@ -1,0 +1,92 @@
+name: "Heritage"
+line: zrc/grands-fonds
+style: dive
+website: https://zrc1904.com/category/collections/watches-grands-fonds/gf-heritage/
+sources:
+  - https://zrc1904.com/product/gf3811121113-s2-metal/
+  - https://zrc1904.com/product/s2-rubber-new/
+  - https://zrc1904.com/product/gf3811231314-milanese/
+  - https://zrc1904.com/product/heritage-smoke-gf3813121318/
+  - https://zrc1904.com/product/gf3813231114-chestnut/
+  - https://zrc1904.com/product/crimson-gf3815235118/
+references:
+  - ref: "GF3811121113"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2022/07/ZRC-GF3811121113-HERITAGE-S2-METAL-SOLDAT.png
+      page: https://zrc1904.com/product/gf3811121113-s2-metal/
+    price: { amount: 3290, currency: CHF, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW200-1"
+    movementType: mechanical
+    complications: []
+    bracelets: [{ type: bracelet }]
+  - ref: "GF3811121118"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2026/05/ZRC-GF3811121118-HERITAGE-S2-RUBBER-SOLDAT.png
+      page: https://zrc1904.com/product/s2-rubber-new/
+    price: { amount: 3090, currency: CHF, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW200-1"
+    movementType: mechanical
+    complications: []
+    bracelets: [{ type: rubber-strap }]
+  - ref: "GF3811231314"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2024/01/ZRC-GF3811231314-HERITAGE-MILANESE-SOLDAT.png
+      page: https://zrc1904.com/product/gf3811231314-milanese/
+    price: { amount: 3290, currency: CHF, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive, material: aluminum }
+    crystal: sapphire
+    movement: "Sellita SW200-1"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: bracelet }]
+  - ref: "GF3813121318"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2025/03/ZRC-GF3813121318-HERITAGE-SMOKE-SOLDAT.png
+      page: https://zrc1904.com/product/heritage-smoke-gf3813121318/
+    price: { amount: 3090, currency: CHF, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW200-1"
+    movementType: mechanical
+    complications: []
+    bracelets: [{ type: rubber-strap }]
+  - ref: "GF3813231114"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2026/04/ZRC-HERITAGE-GF3813231114-CHESNUT-SOLDAT.png
+      page: https://zrc1904.com/product/gf3813231114-chestnut/
+    price: { amount: 3290, currency: CHF, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive, material: aluminum }
+    crystal: sapphire
+    movement: "Sellita SW200-1"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: brown }]
+    bracelets: [{ type: bracelet }]
+  - ref: "GF3815235118"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2026/04/ZRC-GF3815235118-CRIMSON-SOLDAT.png
+      page: https://zrc1904.com/product/crimson-gf3815235118/
+    price: { amount: 3090, currency: CHF, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive, material: aluminum }
+    crystal: sapphire
+    movement: "Sellita SW200-1"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: red }]
+    bracelets: [{ type: rubber-strap }]

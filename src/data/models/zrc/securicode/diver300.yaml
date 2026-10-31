@@ -1,0 +1,80 @@
+name: "Diver300"
+line: zrc/securicode
+style: dive
+website: https://zrc1904.com/category/collections/watches-securicode/
+sources:
+  - https://zrc1904.com/product/securicode-diver300-sc39163/
+  - https://zrc1904.com/product/securicode-diver300-sc39208/
+  - https://zrc1904.com/product/securicode-diver300-sc39463/
+  - https://zrc1904.com/product/sc3916221118-securicode-diver300/
+  - https://zrc1904.com/product/sc3948521328ot-securicode-torch-limited-edition/
+references:
+  - ref: "SC39163"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2024/08/SC39163-montre-homme-ZRC-vue-Soldat.png
+      page: https://zrc1904.com/product/securicode-diver300-sc39163/
+    price: { amount: 2490, currency: CHF, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive, material: steel }
+    crystal: sapphire
+    movement: "Sellita SW200-1"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: "SC39208"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2024/08/SC39208-montre-homme-ZRC-vue-Soldat-V2.png
+      page: https://zrc1904.com/product/securicode-diver300-sc39208/
+    price: { amount: 2690, currency: CHF, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW200-1"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "SC39463"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2024/08/SC39463-montre-homme-ZRC-vue-Soldat.png
+      page: https://zrc1904.com/product/securicode-diver300-sc39463/
+    price: { amount: 3290, currency: CHF, year: 2026 }
+    caseSize: 39
+    metals: [bronze]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW200-1"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: "SC3916221118"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2026/04/ZRC-SC3916221118-SECURICODE-DIVER300-soldat.png
+      page: https://zrc1904.com/product/sc3916221118-securicode-diver300/
+    price: { amount: 2790, currency: CHF, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive, material: ceramic }
+    crystal: sapphire
+    movement: "Sellita SW200-1"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "SC3948521328"
+    officialPhoto:
+      src: https://zrc1904.com/wp-content/uploads/2026/04/ZRC-Operation-Torch-SC3948521318-soldat.png
+      page: https://zrc1904.com/product/sc3948521328ot-securicode-torch-limited-edition/
+    price: { amount: 3490, currency: CHF, year: 2026 }
+    caseSize: 39
+    metals: [bronze]
+    bezel: { style: dive, material: steel }
+    movement: "Sellita SW200-1"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: rubber-strap }]

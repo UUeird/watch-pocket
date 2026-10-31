@@ -1,0 +1,109 @@
+name: "Nérée"
+line: akrone/c-02
+style: dive
+sources:
+  - https://akrone.fr/products/c-02-atlantique
+  - https://akrone.fr/products/c-02-arctique
+  - https://akrone.fr/products/c-02-antarctique
+  - https://akrone.fr/products/c-02-pacifique
+  - https://akrone.fr/products/c-02-neree-sunrise
+  - https://akrone.fr/products/c-02-neree-sunset
+  - https://akrone.fr/products/c-02-neree-passion
+  - https://akrone.fr/products/c-02-neree-pasteque
+references:
+  - ref: "Nérée Atlantique"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C02_NEREE_ATLANTIQUE_SOLDAT_RUBBER1.jpg
+      page: https://akrone.fr/products/c-02-atlantique
+    price: { amount: 699, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Sellita SW200"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "Nérée Arctique"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C02_NEREE_ARCTIQUE_SOLDAT_RUBBER1.jpg
+      page: https://akrone.fr/products/c-02-arctique
+    price: { amount: 699, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Sellita SW200"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "Nérée Antarctique"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C02_NEREE_ANTARCTIQUE_SOLDAT_RUBBER1.jpg
+      page: https://akrone.fr/products/c-02-antarctique
+    price: { amount: 699, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Sellita SW200"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "Nérée Pacifique"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C02_NEREE_PACIFIQUE_SOLDAT_RUBBER1.jpg
+      page: https://akrone.fr/products/c-02-pacifique
+    price: { amount: 699, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Sellita SW200"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "Nérée Sunrise"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C02_NEREE_SUNRISE_SOLDAT_RUBBER1.jpg
+      page: https://akrone.fr/products/c-02-neree-sunrise
+    price: { amount: 699, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Sellita SW200"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "Nérée Sunset"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C02_NEREE_SUNSET_SOLDAT_RUBBER1.jpg
+      page: https://akrone.fr/products/c-02-neree-sunset
+    price: { amount: 699, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Sellita SW200"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "Nérée Passion"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C02_NEREE_PASSION_SOLDAT_RUBBER1.jpg
+      page: https://akrone.fr/products/c-02-neree-passion
+    price: { amount: 699, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Sellita SW200"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "Nérée Pastèque"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C02_NEREE_PASTEQUE_SOLDAT_RUBBER1.jpg
+      page: https://akrone.fr/products/c-02-neree-pasteque
+    price: { amount: 699, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Sellita SW200"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]

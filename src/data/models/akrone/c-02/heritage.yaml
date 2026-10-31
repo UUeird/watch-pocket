@@ -1,0 +1,31 @@
+name: "Héritage"
+line: akrone/c-02
+style: dive
+sources:
+  - https://akrone.fr/products/c-02-heritage-bourbon
+  - https://akrone.fr/products/c-02-baby-heritage-bourbon
+references:
+  - ref: "Héritage Bourbon"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C02_heritage_bourbon_soldat_rubber_web.jpg
+      page: https://akrone.fr/products/c-02-heritage-bourbon
+    price: { amount: 1190, currency: EUR, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "France Ébauches"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap, name: Tropic }, { type: bracelet }]
+  - ref: "Baby Héritage Bourbon"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C02_baby_bourbon_soldat_web.jpg
+      page: https://akrone.fr/products/c-02-baby-heritage-bourbon
+    price: { amount: 799, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "France Ébauches"
+    movementType: mechanical
+    bracelets: [{ type: rubber-strap, name: Tropic }, { type: bracelet }]
