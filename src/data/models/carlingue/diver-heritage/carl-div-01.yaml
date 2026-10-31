@@ -1,0 +1,65 @@
+name: "CARL-DIV-01"
+line: carlingue/diver-heritage
+style: dive
+sources:
+  - https://carlingue-watches.com/produit/ct-001-a/
+  - https://carlingue-watches.com/produit/ct-001-b/
+  - https://carlingue-watches.com/produit/ct-001-c/
+  - https://carlingue-watches.com/produit/ct-001-d/
+references:
+  - ref: "CT-001-A"
+    officialPhoto:
+      src: https://carlingue-watches.com/content/uploads/2024/09/CT-001-A_soldat_rubber-min.png
+      page: https://carlingue-watches.com/produit/ct-001-a/
+    price: { amount: 840, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [bronze]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: green }]
+    bracelets: [{ type: rubber-strap }, { type: leather-strap }]
+  - ref: "CT-001-B"
+    officialPhoto:
+      src: https://carlingue-watches.com/content/uploads/2024/06/CT-001-B_soldat_rubber-min.png
+      page: https://carlingue-watches.com/produit/ct-001-b/
+    price: { amount: 680, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: leather-strap }, { type: bracelet }]
+  - ref: "CT-001-C"
+    officialPhoto:
+      src: https://carlingue-watches.com/content/uploads/2024/06/CT-001-C_soldat_rubber-min.png
+      page: https://carlingue-watches.com/produit/ct-001-c/
+    price: { amount: 680, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }, { type: leather-strap }, { type: bracelet }]
+  - ref: "CT-001-D"
+    officialPhoto:
+      src: https://carlingue-watches.com/content/uploads/2024/06/CT-001-D_soldat_rubber-min.png
+      page: https://carlingue-watches.com/produit/ct-001-d/
+    price: { amount: 680, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: green }]
+    bracelets: [{ type: rubber-strap }, { type: leather-strap }, { type: bracelet }]

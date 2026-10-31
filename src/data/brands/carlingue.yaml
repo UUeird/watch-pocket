@@ -8,3 +8,7 @@ sources:
   - https://www.dialicious.com/en/carlingue
   - https://carlingue-watches.com/
   - https://carlingue-watches.com/shop/
+control: private
+independent:
+  sources:
+    - https://carlingue-watches.com/mentions-legales/
