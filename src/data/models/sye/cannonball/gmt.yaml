@@ -1,0 +1,34 @@
+name: "Cannonball GMT"
+line: sye/cannonball
+style: travel
+theme: motor-racing
+sources:
+  - https://www.syewatches.com/products/cannonball-gmt-columbus
+  - https://www.syewatches.com/products/cannonball-gmt-tulsa
+references:
+  - ref: "MGFE-CO"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/files/SYE-Start-Your-engine-Cannonball-GMT-Columbus-MGFE-CO-WH.jpg
+      page: https://www.syewatches.com/products/cannonball-gmt-columbus
+    price: { amount: 990, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9075"
+    movementType: mechanical
+    complications: [date, gmt]
+    dials: [{ color: gray, name: "Columbus" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: "MGFE-TU"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/files/SYE-Start-Your-engine-Cannonball-GMT-Tulsa-MGFE-TU-CB.jpg
+      page: https://www.syewatches.com/products/cannonball-gmt-tulsa
+    price: { amount: 990, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9075"
+    movementType: mechanical
+    complications: [date, gmt]
+    dials: [{ color: blue, name: "Tulsa" }]
+    bracelets: [{ type: leather-strap }]

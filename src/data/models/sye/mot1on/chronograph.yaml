@@ -1,0 +1,91 @@
+name: "MOT1ON Chronograph"
+line: sye/mot1on
+style: chronograph
+theme: motor-racing
+sources:
+  - https://www.syewatches.com/products/mot1on-chronograph-estoril
+  - https://www.syewatches.com/products/mot1on-chronograph-titanium-bullitt
+  - https://www.syewatches.com/products/mot1on-chronograph-panda
+  - https://www.syewatches.com/products/sye-mot1on-chronograph-black-edition
+  - https://www.syewatches.com/products/sye-mot1on-chronograph-silver-edition
+  - https://www.syewatches.com/products/chronograph-cut-7-steel-watch-in-black-dlc
+references:
+  - ref: "MCFE-ES"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/files/SYE-Start-Your-engine-MOT1ON-Chronograph-Estoril-Chain_Steel-MCFE-ES-CH.webp
+      page: https://www.syewatches.com/products/mot1on-chronograph-estoril
+    price: { amount: 599, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Seiko VK64"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: blue, name: "Alpine Steel Blue" }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "MCTI-BU"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/products/SYE-Start-Your-engine-MOT1ON-Chronograph-Bullitt-Titanium-Shadow-MCTI-BU-SH.jpg
+      page: https://www.syewatches.com/products/mot1on-chronograph-titanium-bullitt
+    price: { amount: 699, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [titanium]
+    crystal: sapphire
+    movement: "Seiko VK64"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: green, name: "Bullitt" }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "MCFE-PA"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/products/SYE_Start_Your_engine_MOT1ON_Chronograph_Panda_Racing_black_MCFE-PA-RB_1000px.jpg
+      page: https://www.syewatches.com/products/mot1on-chronograph-panda
+    price: { amount: 660, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Seiko VK64"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: silver, name: "Panda" }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "MCFE-BL"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/products/SYE_Start-Your-Engine_MOT1ON_Chronograph_Black_edition_Carbon_black.jpg
+      page: https://www.syewatches.com/products/sye-mot1on-chronograph-black-edition
+    price: { amount: 650, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Seiko VK64"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "MCFE-SI"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/products/SYE_Start-Your-Engine_MOT1ON_Chronograph_Silver_edition_SYE_blue.jpg
+      page: https://www.syewatches.com/products/sye-mot1on-chronograph-silver-edition
+    price: { amount: 650, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Seiko VK64"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "MCFE-C7"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0096/7540/7426/files/SYE-Start-Your-engine-MOT1ON-Chronograph-CUT_7-black-DLC-Wax_navy-MCFE-C7-WN-1200px_5756c457-7e15-4702-a15f-605c3c54ecf3.jpg
+      page: https://www.syewatches.com/products/chronograph-cut-7-steel-watch-in-black-dlc
+    price: { amount: 750, currency: EUR, year: 2026 }
+    caseSize: 40.5
+    metals: [steel]
+    caseColors: [{ color: black, name: "DLC" }]
+    crystal: sapphire
+    movement: "Seiko VK64"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: green, name: "CUT 7" }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
