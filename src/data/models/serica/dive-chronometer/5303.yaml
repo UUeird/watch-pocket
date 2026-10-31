@@ -1,0 +1,68 @@
+name: "Ref. 5303"
+line: serica/dive-chronometer
+style: dive
+sources:
+  - https://serica-watches.com/en/products/5303-1-chronometre-plongee
+  - https://serica-watches.com/en/products/5303-2-chronometre-plongee
+  - https://serica-watches.com/en/products/5303-3-chronometre-plongee
+  - https://serica-watches.com/en/products/ref-5303-pld
+  - https://serica-watches.com/en/pages/our-history
+references:
+  - ref: "5303-1"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/5303-black-3h-packshot-01.jpg
+      page: https://serica-watches.com/en/products/5303-1-chronometre-plongee
+    price: { amount: 1590, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { material: ceramic, style: dive }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black, name: "Black Enamel" }]
+    bracelets: [{ type: bracelet }]
+  - ref: "5303-2"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/5303-white-3h-packshot-01.jpg
+      page: https://serica-watches.com/en/products/5303-2-chronometre-plongee
+    price: { amount: 1590, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { material: ceramic, style: dive }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white, name: "Porcelain White" }]
+    bracelets: [{ type: bracelet }]
+  - ref: "5303-3"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/5303-blue-3h-packshot-01.jpg
+      page: https://serica-watches.com/en/products/5303-3-chronometre-plongee
+    periods: [{ from: 2022 }]
+    price: { amount: 1590, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { material: ceramic, style: dive }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue, name: "Crystal Blue" }]
+    bracelets: [{ type: bracelet }]
+  - ref: "5303 PLD"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/5303-pld-3h-packshot-ok_1.jpg
+      page: https://serica-watches.com/en/products/ref-5303-pld
+    periods: [{ from: 2025 }]
+    price: { amount: 1690, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { material: ceramic, style: dive }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black, name: "Black Enamel" }]
+    bracelets: [{ type: bracelet }]

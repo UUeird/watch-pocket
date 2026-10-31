@@ -1,0 +1,115 @@
+name: "Ref. 6190"
+line: serica/field-chronometer
+style: field
+sources:
+  - https://serica-watches.com/en/products/6190-1-msl-chronometre
+  - https://serica-watches.com/en/products/6190-2-msl-chronometre
+  - https://serica-watches.com/en/products/6190-3-msl-chronometre
+  - https://serica-watches.com/en/products/6190-commando-chronometre
+  - https://serica-watches.com/en/products/6190-denali-chronometre
+  - https://serica-watches.com/en/products/6190-california-chronometre
+  - https://serica-watches.com/en/products/ref-6190-txd
+  - https://serica-watches.com/en/pages/our-history
+references:
+  - ref: "6190-1 M.S.L."
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/6190-msl-black-3h-packshot-01.jpg
+      page: https://serica-watches.com/en/products/6190-1-msl-chronometre
+    periods: [{ from: 2024 }]
+    price: { amount: 1190, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { material: steel, style: smooth }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black, name: "Black Enamel" }]
+    bracelets: [{ type: bracelet, name: "Bonklip" }]
+  - ref: "6190-2 M.S.L."
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/6190-msl-white-3h-packshot-01.jpg
+      page: https://serica-watches.com/en/products/6190-2-msl-chronometre
+    periods: [{ from: 2024 }]
+    price: { amount: 1190, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { material: steel, style: smooth }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white, name: "Polar White" }]
+    bracelets: [{ type: bracelet, name: "Bonklip" }]
+  - ref: "6190-3 M.S.L."
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/6190-msl-grey-3h-packshot-01.jpg
+      page: https://serica-watches.com/en/products/6190-3-msl-chronometre
+    periods: [{ from: 2024 }]
+    price: { amount: 1190, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { material: steel, style: smooth }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: gray, name: "Storm Grey" }]
+    bracelets: [{ type: bracelet, name: "Bonklip" }]
+  - ref: "6190 Commando"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/6190-commando-3h-packshot-01.jpg
+      page: https://serica-watches.com/en/products/6190-commando-chronometre
+    price: { amount: 1090, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { material: steel, style: smooth }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black, name: "Commando" }]
+    bracelets: [{ type: bracelet, name: "Bonklip" }]
+  - ref: "6190 Denali"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/6190-denali-3h-packshot-01.jpg
+      page: https://serica-watches.com/en/products/6190-denali-chronometre
+    periods: [{ from: 2023 }]
+    price: { amount: 1090, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { material: steel, style: smooth }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black, name: "Denali" }]
+    bracelets: [{ type: bracelet, name: "Bonklip" }]
+  - ref: "6190 California"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/6190-california-3h-packshot-01.jpg
+      page: https://serica-watches.com/en/products/6190-california-chronometre
+    price: { amount: 1090, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { material: steel, style: smooth }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black, name: "California" }]
+    bracelets: [{ type: bracelet, name: "Bonklip" }]
+  - ref: "6190 TXD"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/6190-tuxedo-3h-packshot_01.jpg
+      page: https://serica-watches.com/en/products/ref-6190-txd
+    periods: [{ from: 2025 }]
+    price: { amount: 1190, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { material: steel, style: smooth }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    bracelets: [{ type: bracelet, name: "Bonklip" }]
