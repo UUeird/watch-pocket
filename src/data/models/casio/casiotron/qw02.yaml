@@ -1,0 +1,10 @@
+name: "Casiotron QW02"
+line: casio/casiotron
+sources:
+  - https://world.casio.com/corporate/history/chapter01/
+  - https://world.casio.com/corporate/history/chronology/
+references:
+  - ref: "QW02"
+    periods: [{ from: 1974 }]
+    movementType: quartz
+    complications: [date]

@@ -1,0 +1,9 @@
+name: "DW-520"
+line: casio/baby-g
+style: sport
+sources:
+  - https://world.casio.com/corporate/history/chapter03/
+references:
+  - ref: "DW-520"
+    periods: [{ from: 1994 }]
+    movementType: quartz

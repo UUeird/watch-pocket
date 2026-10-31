@@ -1,0 +1,10 @@
+name: "Frogman"
+line: casio/g-shock
+style: dive
+sources:
+  - https://en.wikipedia.org/wiki/G-Shock
+  - https://en.wikipedia.org/wiki/Casio_G-Shock_Frogman
+references:
+  - ref: "DW-6300"
+    periods: [{ from: 1993 }]
+    movementType: quartz

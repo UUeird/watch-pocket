@@ -1,0 +1,8 @@
+name: "MR-G"
+line: casio/g-shock
+style: sport
+sources:
+  - https://world.casio.com/corporate/history/chapter02/
+references:
+  - ref: "MRG-100"
+    movementType: quartz

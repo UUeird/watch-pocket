@@ -1,0 +1,10 @@
+name: "DW-5000"
+line: casio/g-shock
+style: sport
+sources:
+  - https://world.casio.com/corporate/history/chapter02/
+  - https://en.wikipedia.org/wiki/G-Shock
+references:
+  - ref: "DW-5000C"
+    periods: [{ from: 1983 }]
+    movementType: quartz

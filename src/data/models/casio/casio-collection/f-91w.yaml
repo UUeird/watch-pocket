@@ -1,0 +1,11 @@
+name: "F-91W"
+line: casio/casio-collection
+sources:
+  - https://en.wikipedia.org/wiki/Casio_F-91W
+references:
+  - ref: "F-91W"
+    periods: [{ from: 1989 }]
+    caseSize: 35.2
+    movement: "Module 593"
+    movementType: quartz
+    complications: [date, chronograph, alarm]

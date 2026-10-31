@@ -1,0 +1,9 @@
+name: "AE-1000W"
+line: casio/casio-collection
+sources:
+  - https://en.wikipedia.org/wiki/Casio_AE-1000W
+references:
+  - ref: "AE-1000W"
+    periods: [{ from: 2010 }]
+    movementType: quartz
+    complications: [date, chronograph, alarm, world-time]

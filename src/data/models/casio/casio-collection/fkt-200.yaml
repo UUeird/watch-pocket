@@ -1,0 +1,8 @@
+name: "FKT-200"
+line: casio/casio-collection
+sources:
+  - https://world.casio.com/corporate/history/chapter03/
+references:
+  - ref: "FKT-200LJ"
+    periods: [{ from: 1997 }]
+    movementType: quartz

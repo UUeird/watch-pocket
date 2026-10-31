@@ -1,0 +1,11 @@
+name: "CA-53W"
+line: casio/casio-collection
+sources:
+  - https://en.wikipedia.org/wiki/Casio_CA-53W
+references:
+  - ref: "CA-53W"
+    periods: [{ from: 1988 }]
+    caseSize: 34.4
+    crystal: acrylic
+    movementType: quartz
+    complications: [date, chronograph, alarm]

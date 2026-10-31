@@ -1,0 +1,8 @@
+name: "DKW-100"
+line: casio/databank
+sources:
+  - https://world.casio.com/corporate/history/chapter03/
+references:
+  - ref: "DKW-100"
+    periods: [{ from: 1991 }]
+    movementType: quartz

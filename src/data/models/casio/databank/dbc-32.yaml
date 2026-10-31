@@ -1,0 +1,7 @@
+name: "DBC-32"
+line: casio/databank
+sources:
+  - https://en.wikipedia.org/wiki/Casio_Databank
+references:
+  - ref: "DBC-32"
+    movementType: quartz

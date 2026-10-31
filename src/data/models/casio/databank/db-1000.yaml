@@ -1,0 +1,8 @@
+name: "DB-1000"
+line: casio/databank
+sources:
+  - https://world.casio.com/corporate/history/chapter02/
+references:
+  - ref: "DB-1000"
+    periods: [{ from: 1984 }]
+    movementType: quartz

@@ -1,0 +1,10 @@
+name: "CD-40"
+line: casio/databank
+sources:
+  - https://world.casio.com/corporate/history/chapter02/
+  - https://world.casio.com/corporate/history/chapter03/
+  - https://en.wikipedia.org/wiki/Casio_Databank
+references:
+  - ref: "CD-40"
+    periods: [{ from: 1984 }]
+    movementType: quartz

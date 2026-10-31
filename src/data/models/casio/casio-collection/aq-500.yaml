@@ -1,0 +1,8 @@
+name: "AQ-500"
+line: casio/casio-collection
+sources:
+  - https://world.casio.com/corporate/history/chapter02/
+references:
+  - ref: "AQ-500"
+    periods: [{ from: 1982 }]
+    movementType: quartz

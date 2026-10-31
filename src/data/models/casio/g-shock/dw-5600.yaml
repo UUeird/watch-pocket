@@ -1,0 +1,8 @@
+name: "DW-5600"
+line: casio/g-shock
+style: sport
+sources:
+  - https://en.wikipedia.org/wiki/G-Shock
+references:
+  - ref: "DW-5600C"
+    movementType: quartz
