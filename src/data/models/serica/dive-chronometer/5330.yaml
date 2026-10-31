@@ -1,0 +1,23 @@
+name: "5330"
+line: serica/dive-chronometer
+style: dive
+website: https://serica-watches.com/en/collections/collection-5303
+sources:
+  - https://serica-watches.com/en/pages/our-history
+  - https://serica-watches.com/en/products/5330-chronometre-plongee-date
+references:
+  - ref: "5330"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/5330-3h-packshot_01.jpg
+      page: https://serica-watches.com/en/products/5330-chronometre-plongee-date
+    periods: [{ from: 2026 }]
+    price: { amount: 1690, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { material: ceramic, colors: [gray], style: dive }
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: "Vesper Mesh" }, { type: fabric-strap, name: PLD }]

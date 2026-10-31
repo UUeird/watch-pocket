@@ -1,0 +1,67 @@
+name: "1174"
+line: serica/parade
+style: dress
+website: https://serica-watches.com/en/collections/collection-1174
+sources:
+  - https://serica-watches.com/en/pages/our-history
+  - https://serica-watches.com/en/products/1174-1-parade
+  - https://serica-watches.com/en/products/1174-2-parade
+  - https://serica-watches.com/en/products/1174-3-parade
+  - https://serica-watches.com/en/products/1174-4-parade
+references:
+  - ref: "1174-1"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/1174-parade-gold_packshot_web_03.jpg
+      page: https://serica-watches.com/en/products/1174-1-parade
+    periods: [{ from: 2024 }]
+    price: { amount: 1490, currency: EUR, year: 2026 }
+    caseSize: 35
+    metals: [steel]
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: gold, name: Brass }]
+    bracelets: [{ type: leather-strap }]
+  - ref: "1174-2"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/1174-parade-black_packshot_web_03.jpg
+      page: https://serica-watches.com/en/products/1174-2-parade
+    periods: [{ from: 2024 }]
+    price: { amount: 1490, currency: EUR, year: 2026 }
+    caseSize: 35
+    metals: [steel]
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black, name: "Satin Black" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: "1174-3"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/1174-parade-linen-brown_packshot_web_02.jpg
+      page: https://serica-watches.com/en/products/1174-3-parade
+    periods: [{ from: 2025 }]
+    price: { amount: 1490, currency: EUR, year: 2026 }
+    caseSize: 35
+    metals: [steel]
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: brown, name: Tobacco }]
+    bracelets: [{ type: leather-strap }]
+  - ref: "1174-4"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/1174-parade-linen_packshot_blue_web_02.jpg
+      page: https://serica-watches.com/en/products/1174-4-parade
+    periods: [{ from: 2025 }]
+    price: { amount: 1490, currency: EUR, year: 2026 }
+    caseSize: 35
+    metals: [steel]
+    crystal: sapphire
+    movement: "Soprod M100"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: gray, name: Slate }]
+    bracelets: [{ type: leather-strap }]

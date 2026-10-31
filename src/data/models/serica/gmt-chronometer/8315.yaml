@@ -1,0 +1,39 @@
+name: "8315"
+line: serica/gmt-chronometer
+style: travel
+website: https://serica-watches.com/en/collections/collection-8315
+sources:
+  - https://serica-watches.com/en/pages/our-history
+  - https://serica-watches.com/en/products/8315-1-chronometre-voyage
+  - https://serica-watches.com/en/products/8315-2-chronometre-voyage
+references:
+  - ref: "8315-1"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/8315-1-expediton-packshot_web_01.jpg
+      page: https://serica-watches.com/en/products/8315-1-chronometre-voyage
+    periods: [{ from: 2022 }]
+    price: { amount: 2090, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black, white], style: gmt }
+    crystal: sapphire
+    movement: "Soprod C125"
+    movementType: mechanical
+    complications: [gmt]
+    dials: [{ color: black, name: "Black Enamel" }]
+    bracelets: [{ type: bracelet, name: Expedition }]
+  - ref: "8315-2"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/8315-2-3h-expediton-packshot_web_01.jpg
+      page: https://serica-watches.com/en/products/8315-2-chronometre-voyage
+    periods: [{ from: 2023 }]
+    price: { amount: 2090, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    bezel: { material: ceramic, colors: [red, white], style: gmt }
+    crystal: sapphire
+    movement: "Soprod C125"
+    movementType: mechanical
+    complications: [gmt]
+    dials: [{ color: brown }]
+    bracelets: [{ type: bracelet, name: Expedition }]

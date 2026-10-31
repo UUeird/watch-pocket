@@ -1,0 +1,54 @@
+name: "MN"
+line: bnd/mn
+style: dive
+website: https://bnd-watches.com/
+sources:
+  - https://bnd-watches.com/
+  - https://www.dialicious.com/en/bnd
+  - https://www.fratellowatches.com/meet-the-third-iteration-of-the-bnd-dive-watch/
+  - https://bnd-watches.com/produit/mnkha/
+  - https://bnd-watches.com/produit/mnwhi/
+  - https://bnd-watches.com/produit/mngra/
+references:
+  - ref: "MNKHA"
+    officialPhoto:
+      src: https://bnd-watches.com/wp-content/uploads/2025/11/BND-Watches-Vue-de-face-VERT.webp
+      page: https://bnd-watches.com/produit/mnkha/
+    price: { amount: 495, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Seiko NH38A"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: green, name: Kaki }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "MNWHI"
+    officialPhoto:
+      src: https://bnd-watches.com/wp-content/uploads/2025/11/BND-Watches-Vue-de-face-BLANC.webp
+      page: https://bnd-watches.com/produit/mnwhi/
+    price: { amount: 495, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Seiko NH38A"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white, name: Blanc }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "MNGRA"
+    officialPhoto:
+      src: https://bnd-watches.com/wp-content/uploads/2025/11/BND-Watches-Vue-de-face-GRIS.webp
+      page: https://bnd-watches.com/produit/mngra/
+    price: { amount: 495, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Seiko NH38A"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: gray, name: Gris }]
+    bracelets: [{ type: rubber-strap }]

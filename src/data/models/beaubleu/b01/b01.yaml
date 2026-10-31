@@ -1,0 +1,50 @@
+name: "B01"
+line: beaubleu/b01
+style: everyday
+sources:
+  - https://beaubleu-paris.com/products/b01-le-dynamique
+  - https://beaubleu-paris.com/products/b01-le-lumineux
+  - https://beaubleu-paris.com/products/b01-le-mysterieux
+  - https://beaubleu-paris.com/products/b01-le-survolte
+references:
+  - ref: "B01 Le Dynamique"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_B01_dynamique.webp
+      page: https://beaubleu-paris.com/products/b01-le-dynamique
+    price: { amount: 595, currency: EUR, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+  - ref: "B01 Le Lumineux"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_B01_lumineux.webp
+      page: https://beaubleu-paris.com/products/b01-le-lumineux
+    price: { amount: 595, currency: EUR, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    dials: [{ color: black }]
+  - ref: "B01 Le Mystérieux"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_B01_mysterieux.webp
+      page: https://beaubleu-paris.com/products/b01-le-mysterieux
+    price: { amount: 595, currency: EUR, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+  - ref: "B01 Le Survolté"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_B01_survolte.webp
+      page: https://beaubleu-paris.com/products/b01-le-survolte
+    price: { amount: 595, currency: EUR, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
