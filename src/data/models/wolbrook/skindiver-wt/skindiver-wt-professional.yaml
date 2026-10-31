@@ -1,0 +1,61 @@
+name: "Skindiver WT Professional"
+line: wolbrook/skindiver-wt
+style: dive
+sources:
+  - https://wolbrook.com/products/skindiver-wt-professional-tool-watch
+  - https://wolbrook.com/products/skindiver-wt-professional-tool-watch-x-15-edition
+  - https://wolbrook.com/products/skindiver-wt-professional-tool-watch-black-steel
+  - https://wolbrook.com/products/skindiver-wt-professional-tool-watch-black-pvd
+references:
+  - ref: "SWP-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-wt-professional-tool-watch-black-dial-steel-case-black-nylon-strap-23-swp-001-nyb-blk.jpg
+      page: https://wolbrook.com/products/skindiver-wt-professional-tool-watch
+    price: { amount: 454, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: fabric-strap }, { type: bracelet }]
+  - ref: "SWP-001-X15"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/limited-edition-skindiver-wt-professional-tool-watch-black-dial-steel-case-black-nylon-strap-23-swp-001-nyb-blk-X15.jpg
+      page: https://wolbrook.com/products/skindiver-wt-professional-tool-watch-x-15-edition
+    price: { amount: 487, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+  - ref: "SWP-002"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/Skindiver-wt-professional-tool-watch-black-dial-steel-case-green-nylon-strap-23-swp-002-nyb-grn.jpg
+      page: https://wolbrook.com/products/skindiver-wt-professional-tool-watch-black-steel
+    price: { amount: 454, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: fabric-strap }, { type: bracelet }]
+  - ref: "SWP-003"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-wt-professional-tool-watch-black-dial-black-pvd-case-black-nylon-strap-23-swp-003-nyb-blk.jpg
+      page: https://wolbrook.com/products/skindiver-wt-professional-tool-watch-black-pvd
+    price: { amount: 465, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: black, name: "Black PVD" }]
+    bezel: { style: dive }
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: fabric-strap }, { type: bracelet }]

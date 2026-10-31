@@ -1,0 +1,47 @@
+name: "Skindiver Automatic 38 Even Numerals"
+line: wolbrook/skindiver
+style: dive
+sources:
+  - https://wolbrook.com/products/skindiver-automatic-38-mm-even-numerals-dive-watch-c7
+  - https://wolbrook.com/products/skindiver-automatic-38-mm-even-numerals-dive-watch-bgw9
+  - https://wolbrook.com/products/dodane-cedric-skindiver-automatic-38mm-dive-watch-special-edition
+references:
+  - ref: "SA38E-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-automatic-38-even-numerals-c7-black-rubber-strap-26-SA38E-001-RB1-BLK-STL-LE1.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-38-mm-even-numerals-dive-watch-c7
+    price: { amount: 579, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA38E-002"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-automatic-38-even-numerals-bgw9-black-rubber-strap-26-SA38E-002-RB1-BLK-STL-LE1.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-38-mm-even-numerals-dive-watch-bgw9
+    price: { amount: 579, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA38E-003"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-38-automatic-even-numerals-old-radium-lume-cedric-dodane-edition-front-view-black-rubber-strap-SA38E-003-RB1-BLK-CDOD.jpg
+      page: https://wolbrook.com/products/dodane-cedric-skindiver-automatic-38mm-dive-watch-special-edition
+    price: { amount: 589, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]

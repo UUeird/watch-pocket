@@ -1,0 +1,45 @@
+name: "Grand Prix WT Automatic"
+line: wolbrook/grand-prix
+style: sport
+theme: motor-racing
+sources:
+  - https://wolbrook.com/products/wolbrook-grand-prix-wt-automatic-racing-watch-charles-deutsch-cd-dyna-1962-limited-edition
+  - https://wolbrook.com/products/wolbrook-grand-prix-wt-automatic-racing-watch-blue-bezel-charles-deutsch-cd-dyna-1962-limited-edition
+  - https://wolbrook.com/products/wolbrook-grand-prix-wt-automatic-racing-watch-red-bezel-charles-deutsch-cd-dyna-1962-limited-edition
+references:
+  - ref: "SWGA-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/grand-prix-wt-automatic-racing-watch-blue-dial-c3-lum-camel-rally-leather-strap-22-SWGA-001-LR6-CAM-CDH.jpg
+      page: https://wolbrook.com/products/wolbrook-grand-prix-wt-automatic-racing-watch-charles-deutsch-cd-dyna-1962-limited-edition
+    price: { amount: 465, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "SWGA-041"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/22-SWGA-041-LR6-CAM-CDH.jpg
+      page: https://wolbrook.com/products/wolbrook-grand-prix-wt-automatic-racing-watch-blue-bezel-charles-deutsch-cd-dyna-1962-limited-edition
+    price: { amount: 465, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "SWGA-061"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/22-SWGA-061-LR6-CAM-CDH.jpg
+      page: https://wolbrook.com/products/wolbrook-grand-prix-wt-automatic-racing-watch-red-bezel-charles-deutsch-cd-dyna-1962-limited-edition
+    price: { amount: 465, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]

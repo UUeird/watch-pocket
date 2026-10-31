@@ -1,0 +1,184 @@
+name: "Skindiver Automatic"
+line: wolbrook/skindiver
+style: dive
+sources:
+  - https://wolbrook.com/products/skindiver-automatic-watch-hop-air-france
+  - https://wolbrook.com/products/skindiver-automatic-watch-french-army-green
+  - https://wolbrook.com/products/skindiver-automatic-watch-celadon-green
+  - https://wolbrook.com/products/skindiver-automatic-watch-yellow
+  - https://wolbrook.com/products/skindiver-automatic-watch-sky-blue
+  - https://wolbrook.com/products/skindiver-automatic-watch-green-lum-black-pvd
+  - https://wolbrook.com/products/skindiver-automatic-watch-two-tone-grey-sunray
+  - https://wolbrook.com/products/skindiver-automatic-watch-two-tone-blue-sunray
+  - https://wolbrook.com/products/skindiver-automatic-watch-two-tone-green-sunray
+  - https://wolbrook.com/products/skindiver-automatic-watch-green-lum-black-dial
+  - https://wolbrook.com/products/skindiver-automatic-watch-black-dial
+  - https://wolbrook.com/products/skindiver-automatic-watch
+references:
+  - ref: "SA-005"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/22-SA-005-LR3-BLU-_HOP.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-watch-hop-air-france
+    price: { amount: 527, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: bracelet }, { type: rubber-strap }]
+  - ref: "SA-006"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-automatic-french-military-green-dial-green-rubber-strap-22-sa-006-rb1-grn-le1.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-watch-french-army-green
+    price: { amount: 443, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA-007"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-automatic-celadon-green-dial-white-rubber-strap-22-SA-007-RB1-WIT-LE1.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-watch-celadon-green
+    price: { amount: 433, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA-009"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-automatic-150m-yellow-rubber-strap-front.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-watch-yellow
+    price: { amount: 443, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: yellow }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA-014"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-automatic-watch-sky-blue-dial-white-lum-sky-blue-rubber-strap-22-sa-014-rb1-ble.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-watch-sky-blue
+    price: { amount: 443, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA-021"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/22-SA-021-RB1-BLK.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-watch-green-lum-black-pvd
+    price: { amount: 443, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: black, name: "Black PVD" }]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA-031"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-automatic-two-tone-watch-grey-sunray-dial-grey-rubber-strap-22-sa-031-rb1-gry.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-watch-two-tone-grey-sunray
+    price: { amount: 454, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: gray }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA-034"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-automatic-two-tone-blue-sunray-dial-blue-rubber-strap-22-sa-034-rb1-blu.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-watch-two-tone-blue-sunray
+    price: { amount: 443, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA-035"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-automatic-two-tone-green-sunray-dial-black-rubber-strap-22-sa-035-rb1-blk.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-watch-two-tone-green-sunray
+    price: { amount: 443, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-automatic-watch-black-dial-green-lum-black-rubber-strap-22-sa-001-rb1-blk-le1.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-watch-green-lum-black-dial
+    price: { amount: 433, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 82S0"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA-002"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-automatic-watch-black-dial-white-lum-black-rubber-strap-22-sa-002-rb1-blk.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-watch-black-dial
+    price: { amount: 433, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 82S0"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA-003"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-automatic-watch-black-dial-vintage-lum-military-green-rubber-strap-22-sa-003-rb1-grn-le1.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-watch
+    price: { amount: 433, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 82S0"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]

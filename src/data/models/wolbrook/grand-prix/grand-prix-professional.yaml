@@ -1,0 +1,72 @@
+name: "Grand Prix Professional"
+line: wolbrook/grand-prix
+style: sport
+theme: motor-racing
+sources:
+  - https://wolbrook.com/products/douglas-grand-prix-professional-racing-watch-rene-bonnet-djet-1962-limited-edition
+  - https://wolbrook.com/products/douglas-grand-prix-professional-racing-watch-black-pvd-rene-bonnet-djet-1962-limited-edition
+  - https://wolbrook.com/products/douglas-grand-prix-professional-racing-watch-cunningham-c4-r-1952-limited-edition
+  - https://wolbrook.com/products/douglas-grand-prix-professional-racing-watch-siata-208s-1953-limited-edition
+  - https://wolbrook.com/products/douglas-grand-prix-professional-racing-watch-veritas-rsii-coupe-limited-edition
+references:
+  - ref: "SGP-002"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/Grand_Prix_Professional_Racing_Watch_Black_Dial_C3_Lum_Brown_Rally_Leather_Strap_22-SGP-002-LR6-BRN-RBD.jpg
+      page: https://wolbrook.com/products/douglas-grand-prix-professional-racing-watch-rene-bonnet-djet-1962-limited-edition
+    price: { amount: 389, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: rubber-strap }, { type: bracelet }]
+  - ref: "SGP-003"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/grand-prix-professional-black-pvd-racing-watch-black-dial-c3-lum-black-rally-leather-strap-22-SGP-003-LR6-BLK-RBD.jpg
+      page: https://wolbrook.com/products/douglas-grand-prix-professional-racing-watch-black-pvd-rene-bonnet-djet-1962-limited-edition
+    price: { amount: 400, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: black, name: "Black PVD" }]
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: rubber-strap }, { type: bracelet }]
+  - ref: "SGP-004"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/Grand_Prix_Professional_Racing_Watch_Blue_Dial_C3_Lum_Camel_Leather_Strap_22-SGP-004-LR6-CAM-CM4.jpg
+      page: https://wolbrook.com/products/douglas-grand-prix-professional-racing-watch-cunningham-c4-r-1952-limited-edition
+    price: { amount: 389, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: rubber-strap }, { type: bracelet }]
+  - ref: "SGP-006"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/grand-prix-professional-racing-watch-black-gilt-dial-bgw9-lum-brown-rally-leather-strap-22-sgp-006-lr6-brn-sia.jpg
+      page: https://wolbrook.com/products/douglas-grand-prix-professional-racing-watch-siata-208s-1953-limited-edition
+    price: { amount: 389, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: rubber-strap }, { type: bracelet }]
+  - ref: "SGP-007"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/grand-prix-professional-racing-watch-grey-sunray-dial-bgw9-lum-black-rally-leather-strap-22-sgp-007-lr6-blk-sia.jpg
+      page: https://wolbrook.com/products/douglas-grand-prix-professional-racing-watch-veritas-rsii-coupe-limited-edition
+    price: { amount: 389, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: rubber-strap }, { type: bracelet }]

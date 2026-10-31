@@ -1,0 +1,131 @@
+name: "Outrider Automatic"
+line: wolbrook/outrider
+style: field
+sources:
+  - https://wolbrook.com/products/outrider-automatic-watch-black-gilt-21
+  - https://wolbrook.com/products/outrider-automatic-watch-black-gilt-on-black
+  - https://wolbrook.com/products/outrider-automatic-bracelet-watch-french-army-green
+  - https://wolbrook.com/products/outrider-automatic-watch-black-vintage
+  - https://wolbrook.com/products/outrider-automatic-watch-blue
+  - https://wolbrook.com/products/outrider-automatic-watch-french-army-green
+  - https://wolbrook.com/products/outrider-automatic-watch-black-dial-no-date
+  - https://wolbrook.com/products/outrider-automatic-no-date-watch-black-vintage
+  - https://wolbrook.com/products/outrider-automatic-no-date-watch-blue
+references:
+  - ref: "OA-001-LAF"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/automatic-watch-outrider-black-dial-gilt-white-lum-black-leather-strap-21-oa-001-lr4-blk-laf.jpg
+      page: https://wolbrook.com/products/outrider-automatic-watch-black-gilt-21
+    price: { amount: 530, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "OA-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/outrider-automatic-watch-black-dial-gilt-white-lum-black-leather-strap-23-oa-001-lr4-blk.jpg
+      page: https://wolbrook.com/products/outrider-automatic-watch-black-gilt-on-black
+    price: { amount: 530, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "OA-004"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/automatic-watch-outrider-french-army-green-dial-green-lum-brown-leather-strap-21-oa-005-lr4-brn-laf.jpg
+      page: https://wolbrook.com/products/outrider-automatic-bracelet-watch-french-army-green
+    price: { amount: 422, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "OA-002"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/Outrider_Automatic_Watch_Black_Dial_Vintage_Lum_Camel_Leather_Strap_21-OA-002-LR4-CAM-LAF.jpg
+      page: https://wolbrook.com/products/outrider-automatic-watch-black-vintage
+    price: { amount: 530, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "OA-003"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/Outrider_Automatic_Watch_Blue_Dial_White_Lum_Blue_Leather_Strap_21-OA-003-LR4-BLU-LAF.jpg
+      page: https://wolbrook.com/products/outrider-automatic-watch-blue
+    price: { amount: 530, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "OA-005"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/outrider-automatic-watch-french-army-green-dial-green-lum-brown-leather-strap-23-oa-005-lr4-brn.jpg
+      page: https://wolbrook.com/products/outrider-automatic-watch-french-army-green
+    price: { amount: 530, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "OA-012"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/outrider-automatic-watch-no-date-black-dial-green-lum-brown-leather-strap-23-oa-012-lr4-brn.jpg
+      page: https://wolbrook.com/products/outrider-automatic-watch-black-dial-no-date
+    price: { amount: 508, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 82S0"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "OA-013"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/outrider-automatic-watch-black-dial-no-date-vintage-lum-camel-leather-strap-23-oa-013-lr4-cam.jpg
+      page: https://wolbrook.com/products/outrider-automatic-no-date-watch-black-vintage
+    price: { amount: 508, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 82S0"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "OA-014"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/outrider-automatic-watch-blue-dial-no-date-white-lum-blue-leather-strap-23-oa-014-lr4-blu.jpg
+      page: https://wolbrook.com/products/outrider-automatic-no-date-watch-blue
+    price: { amount: 508, currency: EUR, year: 2026 }
+    caseSize: 39.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 82S0"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]

@@ -1,0 +1,19 @@
+name: "Flight Computer Automatic"
+line: wolbrook/flight-computer
+style: pilot
+theme: aviation
+sources:
+  - https://wolbrook.com/products/flight-computer-automatic-watch-blue-enac-special-edition
+references:
+  - ref: "FCA-005"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/enac-special-edition-fligt-computer-automatic-watch-blue-dial-blue-leather-strap-25-fca-005-lr4-blu-enac.jpg
+      page: https://wolbrook.com/products/flight-computer-automatic-watch-blue-enac-special-edition
+    price: { amount: 555, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: bracelet }, { type: rubber-strap }]

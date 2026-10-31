@@ -1,0 +1,90 @@
+name: "Skindiver WT Automatic"
+line: wolbrook/skindiver-wt
+style: dive
+sources:
+  - https://wolbrook.com/products/skindiver-wt-automatic-watch-original
+  - https://wolbrook.com/products/skindiver-wt-automatic-blue-watch
+  - https://wolbrook.com/products/skindiver-wt-automatic-watch-vintage-steel
+  - https://wolbrook.com/products/skindiver-wt-automatic-watch-black-bezel-vintage
+  - https://wolbrook.com/products/blue-skindiver-wt-automatic-watch-aero-club-de-france-special-edition
+  - https://wolbrook.com/products/skindiver-wt-automatic-watch-special-edition-aeroclub-dinan
+references:
+  - ref: "SWA-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-wt-automatic-watch-black-dial-green-lum-black-leather-strap-22-swa-001-LR3-blk.jpg
+      page: https://wolbrook.com/products/skindiver-wt-automatic-watch-original
+    price: { amount: 476, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "SWA-002"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-wt-automatic-watch-blue-dial-blue-leather-strap-22-swa-002-lr3-blu.jpg
+      page: https://wolbrook.com/products/skindiver-wt-automatic-blue-watch
+    price: { amount: 476, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "SWA-003"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-wt-automatic-watch-black-dial-vintage-lum-camel-leather-strap-22-swa-003-LR3-cam.jpg
+      page: https://wolbrook.com/products/skindiver-wt-automatic-watch-vintage-steel
+    price: { amount: 476, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "SWA-023"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-wt-automatic-watch-black-dial-vintage-lum-black-pvd-bezel-22-SWA-023-lr3-brn.jpg
+      page: https://wolbrook.com/products/skindiver-wt-automatic-watch-black-bezel-vintage
+    price: { amount: 476, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: bracelet }]
+  - ref: "SWA-004-ACF"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-worldtimer-automatic-blue-dial-aeroclubdefrance-blue-leather-strap-25-SWA-004-LR3-BLU-STL-ACF.jpg
+      page: https://wolbrook.com/products/blue-skindiver-wt-automatic-watch-aero-club-de-france-special-edition
+    price: { amount: 508, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: rubber-strap }, { type: bracelet }]
+  - ref: "SWA-004-ADN"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/aeroclub-dinan-special-edition-skindiver-wt-automatic-watch-blue-dial-blue-leather-strap-25-swa-004-lr3-blu-adn.jpg
+      page: https://wolbrook.com/products/skindiver-wt-automatic-watch-special-edition-aeroclub-dinan
+    price: { amount: 527, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: leather-strap }, { type: bracelet }, { type: rubber-strap }]

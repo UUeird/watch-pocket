@@ -1,0 +1,66 @@
+name: "Skindiver Professional"
+line: wolbrook/skindiver
+style: dive
+sources:
+  - https://wolbrook.com/products/skindiver-professional-tool-watch-green-lum-black-dial
+  - https://wolbrook.com/products/skindiver-professional-tool-watch-white-lum-black-dial
+  - https://wolbrook.com/products/skindiver-professional-tool-watch-orange-dial
+  - https://wolbrook.com/products/skindiver-professional-tool-watch-orange-dial-black-pvd
+references:
+  - ref: "SP-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-professional-watch-black-dial-green-lum-black-rubber-strap-22-sp-001-rb1-stl-le1.jpg
+      page: https://wolbrook.com/products/skindiver-professional-tool-watch-green-lum-black-dial
+    price: { amount: 411, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SP-002"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/products/skindiver-professional-watch-black-dial-white-lum-green-rubber-strap-22-sp-002-rb1-grn-le1.jpg
+      page: https://wolbrook.com/products/skindiver-professional-tool-watch-white-lum-black-dial
+    price: { amount: 411, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SP-003"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/Skindiver-Professional-Watch-Orange-Dial-White-Lum-Black-Rubber-Strap-23-SP-003-RB1-BLK.jpg
+      page: https://wolbrook.com/products/skindiver-professional-tool-watch-orange-dial
+    price: { amount: 411, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: orange }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SP-004"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/Skindiver-Professional-Watch-Black-PVD-Orange-Dial-White-Lum-Black-Rubber-Strap-23-SP-004-RB1-BLK.jpg
+      page: https://wolbrook.com/products/skindiver-professional-tool-watch-orange-dial-black-pvd
+    price: { amount: 422, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: black, name: "Black PVD" }]
+    bezel: { style: dive }
+    crystal: acrylic
+    movement: "Miyota 8315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: orange }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]

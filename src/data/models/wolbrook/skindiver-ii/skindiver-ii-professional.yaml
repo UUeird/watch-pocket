@@ -1,0 +1,49 @@
+name: "Skindiver II Professional"
+line: wolbrook/skindiver-ii
+style: dive
+sources:
+  - https://wolbrook.com/products/skindiver-ii-professional-diving-watch-green-lum-black-dial
+  - https://wolbrook.com/products/skindiver-ii-professional-diving-watch-white-lum-black-dial
+  - https://wolbrook.com/products/skindiver-ii-professional-diving-watch-orange-hand
+references:
+  - ref: "S2P-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-ii-professional-diving-watch-black-dial-green-lum-black-rubber-strap-23-S2P-001-RB1-BLK-LE1.jpg
+      page: https://wolbrook.com/products/skindiver-ii-professional-diving-watch-green-lum-black-dial
+    price: { amount: 549, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: acrylic
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "S2P-002"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-ii-professional-divin-watch-black-dial-white-lum-green-rubber-strap-23-s2p-002-rb1-grn-le1.jpg
+      page: https://wolbrook.com/products/skindiver-ii-professional-diving-watch-white-lum-black-dial
+    price: { amount: 549, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: acrylic
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "S2P-003"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-ii-professional-watch-orange-hand-white-lum-orange-rubber-strap-23-s2p-003-rb1-ora.jpg
+      page: https://wolbrook.com/products/skindiver-ii-professional-diving-watch-orange-hand
+    price: { amount: 549, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: acrylic
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]

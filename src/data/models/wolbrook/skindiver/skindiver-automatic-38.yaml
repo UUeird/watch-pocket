@@ -1,0 +1,63 @@
+name: "Skindiver Automatic 38"
+line: wolbrook/skindiver
+style: dive
+sources:
+  - https://wolbrook.com/products/skindiver-automatic-dive-watch-38-mm-c3-lum
+  - https://wolbrook.com/products/skindiver-automatic-38mm-dive-watch-vintage
+  - https://wolbrook.com/products/skindiver-automatic-dive-watch-38-mm-orange
+  - https://wolbrook.com/products/skindiver-automatic-38-mm-dive-watch-pink-october-edition
+references:
+  - ref: "SA38-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/24-SA38-001-RB1-GRN_74ef8a8a-fc6e-4ecb-a130-aecc02b6ef52.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-dive-watch-38-mm-c3-lum
+    price: { amount: 559, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA38-003"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/24-SA38-003-RB1-BLK_484ba36d-62da-4df0-bdea-6ca606a956c6.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-38mm-dive-watch-vintage
+    price: { amount: 559, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA38-006"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-automatic-38mm-black-strap-front.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-dive-watch-38-mm-orange
+    price: { amount: 559, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: orange }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA38-016"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-38-automatic-pink-jacques-bianchi-special-edition-destro-black-rubber-strap-front-view-26-SA38-016-RB1-BLK-STL-JB.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-38-mm-dive-watch-pink-october-edition
+    price: { amount: 589, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: pink }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]

@@ -1,0 +1,35 @@
+name: "Skindiver Automatic 38 Jumbo"
+line: wolbrook/skindiver
+style: dive
+sources:
+  - https://wolbrook.com/products/white-skindiver-automatic-dive-watch-38-mm-arctic
+  - https://wolbrook.com/products/skindiver-automatic-38-mm-jumbo-dive-watch-yellow
+references:
+  - ref: "SA38J-002"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-automatic-jumbo-38-arctic-white-dial-black-rubber-strap-26-SA38J-002-RB1-BLK-STL.jpg
+      page: https://wolbrook.com/products/white-skindiver-automatic-dive-watch-38-mm-arctic
+    price: { amount: 559, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "SA38J-007"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/26-SAJ38-007-RB1-BLK-STL.jpg
+      page: https://wolbrook.com/products/skindiver-automatic-38-mm-jumbo-dive-watch-yellow
+    price: { amount: 559, currency: EUR, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9039"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: yellow }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]

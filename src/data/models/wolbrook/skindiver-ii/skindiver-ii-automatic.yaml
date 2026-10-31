@@ -1,0 +1,50 @@
+name: "Skindiver II Automatic"
+line: wolbrook/skindiver-ii
+style: dive
+sources:
+  - https://wolbrook.com/products/skindiver-ii-automatic-dive-watch-green-lum-black-dial
+  - https://wolbrook.com/products/skindiver-ii-automatic-dive-watch-white-lum-black-dial
+  - https://wolbrook.com/products/skindiver-ii-automatic-dive-watch-blue
+references:
+  - ref: "S2A-001"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-ii-automatic-dive-watch-black-dial-green-lum-black-rubber-strap-23-sa-001-rb1-blk-le1.jpg
+      page: https://wolbrook.com/products/skindiver-ii-automatic-dive-watch-green-lum-black-dial
+    price: { amount: 619, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "S2A-002"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-II-automatic-black-dial-white-lum-front-view-23-S2A-002-RB1-GRN-LE1.jpg
+      page: https://wolbrook.com/products/skindiver-ii-automatic-dive-watch-white-lum-black-dial
+    price: { amount: 619, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
+  - ref: "S2A-004"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0270/7495/3268/files/skindiver-ii-automatic-dive-watch-blue-dial-white-lum-blue-rubber-strap-23-s2a-004-rb1-blu-le1.jpg
+      page: https://wolbrook.com/products/skindiver-ii-automatic-dive-watch-blue
+    price: { amount: 619, currency: EUR, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }, { type: bracelet }]
