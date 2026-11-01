@@ -1,5 +1,5 @@
 name: Margi
-status: active
+periods: [{ from: 1964 }]
 segment: budget
 makes: [mechanical-watches, quartz-watches]
 website: https://www.margi.it

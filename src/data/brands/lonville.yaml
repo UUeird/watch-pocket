@@ -1,6 +1,6 @@
 name: Lonville
 origin: Switzerland
-status: active
+periods: [{ from: 2009 }]
 makes: [mechanical-watches]
 website: https://lonville.com
 sources:

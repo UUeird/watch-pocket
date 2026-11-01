@@ -1,7 +1,8 @@
 name: Sila
 origin: France
-status: active
+periods: [{ from: 2016 }]
 website: https://sila-paris.com
 sources:
   - https://www.dialicious.com/en/sila
   - https://sila-paris.com/
+  - https://sila-paris.com/pages/histoire-de-la-marque-sila

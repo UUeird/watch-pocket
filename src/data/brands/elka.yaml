@@ -1,6 +1,10 @@
 name: Elka
 origin: Switzerland
-status: active
+periods: [{ from: 2022 }]
+heritage:
+  from: 1877
+  sources:
+    - https://www.elkawatch.ch/
 makes: [mechanical-watches]
 website: https://www.elkawatch.ch
 sources:

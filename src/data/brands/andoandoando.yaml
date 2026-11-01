@@ -1,6 +1,6 @@
 name: AndoAndoAndo
 origin: Finland
-status: active
+periods: [{ from: 2020 }]
 segment: mid-range
 makes: [mechanical-watches, quartz-watches]
 website: https://andoandoando.com
@@ -8,6 +8,7 @@ sources:
   - https://www.dialicious.com/en/andoandoando
   - https://andoandoando.com/
   - https://andoandoando.com/collections/all
+  - https://andoandoando.com/en-us/pages/history
 control: private
 independent:
   sources:
