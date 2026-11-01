@@ -1,0 +1,33 @@
+name: "20.24"
+line: beaubleu/seconde-francaise
+style: dress
+sources:
+  - https://beaubleu-paris.com/products/seconde-francaise-saumon
+  - https://beaubleu-paris.com/products/seconde-francaise-gris-perle
+references:
+  - ref: "20.24 Saumon"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/SF_20.24_Saumon_vbleu_0c7b0c82-f611-4302-9aa8-3d3d86700966.webp
+      page: https://beaubleu-paris.com/products/seconde-francaise-saumon
+    price: { amount: 1490, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "France Ébauches FE"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: pink, name: Saumon }]
+    bracelets: [{ type: bracelet }, { type: leather-strap }]
+  - ref: "20.24 Gris Perle"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/SF_20.24_Gris_vnoir_17da3160-a6b8-4787-afb2-87cfe18e92ce.webp
+      page: https://beaubleu-paris.com/products/seconde-francaise-gris-perle
+    price: { amount: 1490, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "France Ébauches FE"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: gray, name: "Gris Perle" }]
+    bracelets: [{ type: bracelet }, { type: leather-strap }]

@@ -1,0 +1,89 @@
+name: "Ecce Figura"
+line: beaubleu/ecce
+style: dress
+sources:
+  - https://beaubleu-paris.com/products/ecce-figura-alba
+  - https://beaubleu-paris.com/products/ecce-figura-lys
+  - https://beaubleu-paris.com/products/ecce-figura-onyx
+  - https://beaubleu-paris.com/products/ecce-figura-sienna
+  - https://beaubleu-paris.com/products/ecce-figura-smalt
+  - https://beaubleu-paris.com/products/ecce-figura-vesperal
+references:
+  - ref: "Figura Alba"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/BB2Alba-Acier.webp
+      page: https://beaubleu-paris.com/products/ecce-figura-alba
+    price: { amount: 1090, currency: EUR, year: 2026 }
+    caseSize: 30
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white, name: Alba }]
+    bracelets: [{ type: bracelet }, { type: leather-strap }]
+  - ref: "Figura Lys"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/BB2Lys-RG_ed6ca85e-09e1-4fd4-91b3-c61b35cd7d2f.webp
+      page: https://beaubleu-paris.com/products/ecce-figura-lys
+    price: { amount: 1090, currency: EUR, year: 2026 }
+    caseSize: 30
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white, name: Lys }]
+    bracelets: [{ type: bracelet }, { type: leather-strap }]
+  - ref: "Figura Onyx"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/BB2Onyx-noir.webp
+      page: https://beaubleu-paris.com/products/ecce-figura-onyx
+    price: { amount: 990, currency: EUR, year: 2026 }
+    caseSize: 30
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black, name: Onyx }]
+    bracelets: [{ type: bracelet }, { type: leather-strap }]
+  - ref: "Figura Sienna"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/BB2Sienna-RG.webp
+      page: https://beaubleu-paris.com/products/ecce-figura-sienna
+    price: { amount: 1090, currency: EUR, year: 2026 }
+    caseSize: 30
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: rose-gold, name: Sienna }]
+    bracelets: [{ type: bracelet }, { type: leather-strap }]
+  - ref: "Figura Smalt"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/BB2Smalt-Bleu.webp
+      page: https://beaubleu-paris.com/products/ecce-figura-smalt
+    price: { amount: 990, currency: EUR, year: 2026 }
+    caseSize: 30
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue, name: Smalt }]
+    bracelets: [{ type: bracelet }, { type: leather-strap }]
+  - ref: "Figura Vesperal"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/BB2Vesperal-Acier_72327125-640d-479e-b813-2f4b2b34ac75.webp
+      page: https://beaubleu-paris.com/products/ecce-figura-vesperal
+    price: { amount: 1090, currency: EUR, year: 2026 }
+    caseSize: 30
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: silver, name: Vesperal }]
+    bracelets: [{ type: bracelet }, { type: leather-strap }]

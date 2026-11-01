@@ -1,7 +1,20 @@
 name: Beaubleu
 origin: France
 periods: [{ from: 2017 }]
+segment: mid-range
+makes: [mechanical-watches]
+website: https://beaubleu-paris.com
 sources:
+  - https://beaubleu-paris.com/
+  - https://beaubleu-paris.com/products/la-piece-n-1-graphite
+  - https://beaubleu-paris.com/collections/all
   - https://www.dialicious.com/en/beaubleu
   - https://verygoodlord.com/meilleures-marques-montre-homme/beaubleu
   - https://ocarat.com/montre-beaubleu/
+control: private
+independent:
+  sources:
+    - https://beaubleu-paris.com/pages/histoire
+    - https://beaubleu-paris.com/pages/mentions-legales
+    - https://annuaire-entreprises.data.gouv.fr/entreprise/832046866
+    - https://annuaire-entreprises.data.gouv.fr/entreprise/949616759

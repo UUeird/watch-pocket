@@ -1,0 +1,33 @@
+name: "Vitruve Origine"
+line: beaubleu/vitruve
+style: dress
+sources:
+  - https://beaubleu-paris.com/products/vitruve-origine-bleu
+  - https://beaubleu-paris.com/products/vitruve-origine-cognac
+references:
+  - ref: "Origine Bleu"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/vitruve_origine_bleu_bleu.webp
+      page: https://beaubleu-paris.com/products/vitruve-origine-bleu
+    price: { amount: 820, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }, { type: leather-strap }]
+  - ref: "Origine Cognac"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/vitruve_origine_cognac_cognac.webp
+      page: https://beaubleu-paris.com/products/vitruve-origine-cognac
+    price: { amount: 820, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: brown, name: Cognac }]
+    bracelets: [{ type: bracelet }, { type: leather-strap }]
