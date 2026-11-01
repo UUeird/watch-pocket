@@ -1,5 +1,5 @@
 name: Pryngeps
-status: active
+periods: [{ from: 1953 }]
 segment: mid-range
 website: https://www.pryngeps.it
 sources:

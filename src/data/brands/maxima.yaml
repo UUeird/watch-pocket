@@ -1,6 +1,6 @@
 name: Maxima
 origin: India
-status: active
+periods: [{ from: 1996 }]
 segment: budget
 makes: [mechanical-watches, smartwatches]
 website: https://www.maximawatches.com

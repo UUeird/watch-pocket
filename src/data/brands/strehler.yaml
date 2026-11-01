@@ -1,10 +1,11 @@
 name: Strehler
 origin: Switzerland
-status: active
+periods: [{ from: 2023 }]
 website: https://strehler.watch
 sources:
   - https://www.dialicious.com/en/strehler
   - https://strehler.watch/
+  - https://strehler.watch/the-story/
 control: family
 independent:
   sources:

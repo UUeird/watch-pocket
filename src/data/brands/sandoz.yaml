@@ -1,5 +1,5 @@
 name: Sandoz
-status: active
+periods: [{ from: 1870 }]
 makes: [quartz-watches]
 website: https://www.sandoz.es
 sources:

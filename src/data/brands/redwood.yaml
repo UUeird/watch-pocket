@@ -1,6 +1,6 @@
 name: Redwood
 origin: Canada
-status: active
+periods: [{ from: 2014 }]
 segment: mid-range
 makes: [mechanical-watches, quartz-watches]
 website: https://www.redwoodwatches.com
@@ -8,6 +8,7 @@ sources:
   - https://www.dialicious.com/en/redwood
   - https://www.redwoodwatches.com/
   - https://www.redwoodwatches.com/collections/all
+  - https://www.redwoodwatches.com/pages/about-us
 control: family
 independent:
   sources:

@@ -1,7 +1,8 @@
 name: Vogard
 origin: Switzerland
-status: active
+periods: [{ from: 2001 }]
 website: https://vogard.com
 sources:
   - https://www.dialicious.com/en/vogard
   - https://vogard.com/
+  - https://vogard.com/all-about/le-createur/

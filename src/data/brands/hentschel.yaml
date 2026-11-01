@@ -1,6 +1,6 @@
 name: Hentschel
 origin: Germany
-status: active
+periods: [{ from: 1987 }]
 website: https://hentschel-hamburg.com
 sources:
   - https://www.dialicious.com/en/hentschel

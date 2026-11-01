@@ -1,6 +1,6 @@
 name: Revelot
 origin: United States
-status: active
+periods: [{ from: 2017 }]
 segment: mid-range
 makes: [mechanical-watches, quartz-watches]
 website: https://www.revelot.com
@@ -8,3 +8,4 @@ sources:
   - https://www.dialicious.com/en/revelot
   - https://www.revelot.com/
   - https://www.revelot.com/collections/all
+  - https://www.revelot.com/pages/about-us
