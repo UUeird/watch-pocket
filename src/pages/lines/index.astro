@@ -1,0 +1,74 @@
+---
+import Filters from '../../components/Filters.astro';
+import Base from '../../layouts/Base.astro';
+import { formatPeriods, href, lineHref, loadCatalog } from '../../lib/catalog';
+
+const { brands, lines, modelsOf } = await loadCatalog();
+const brandOf = (line: (typeof lines)[number]) => brands.find((brand) => brand.id === line.data.brand.id)!;
+const status = (line: (typeof lines)[number]) =>
+  line.data.periods.length === 0 ? undefined : line.data.periods.at(-1)!.to === undefined ? 'current' : 'discontinued';
+// Grouped by brand, then by line name, with numbers in number order (RM 07 before RM 032).
+const rows = lines
+  .map((line) => {
+    const models = modelsOf(line.id);
+    return { line, brand: brandOf(line), models: models.length, references: models.reduce((sum, model) => sum + model.data.references.length, 0) };
+  })
+  .sort(
+    (a, b) =>
+      a.brand.data.name.localeCompare(b.brand.data.name) || a.line.data.name.localeCompare(b.line.data.name, 'en', { numeric: true }),
+  );
+const brandNames = [...new Set(rows.map(({ brand }) => brand.data.name))];
+---
+
+<Base title="Lines">
+  <h1>Lines</h1>
+  <p class="lede">Every product line on record, the collections a brand sells under one name.</p>
+
+  <Filters
+    target="lines"
+    noun="lines"
+    placeholder="Search lines"
+    filters={[
+      { name: 'brand', label: 'Brand', options: brandNames.map((name) => ({ value: name, label: name })) },
+      {
+        name: 'status',
+        label: 'Status',
+        options: [
+          { value: 'current', label: 'On sale' },
+          { value: 'discontinued', label: 'Discontinued' },
+        ],
+      },
+    ]}
+  />
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Line</th>
+          <th>Brand</th>
+          <th>On sale</th>
+          <th>Models</th>
+          <th>References</th>
+        </tr>
+      </thead>
+      <tbody id="lines">
+        {
+          rows.map(({ line, brand, models, references }) => (
+            <tr data-q={`${line.data.name} ${brand.data.name}`.toLowerCase()} data-brand={brand.data.name} data-status={status(line)}>
+              <td>
+                <a href={lineHref(line)}>{line.data.name}</a>
+              </td>
+              <td>
+                <a href={href(`/brands/${brand.id}/`)}>{brand.data.name}</a>
+              </td>
+              <td class="num">{formatPeriods(line.data.periods)}</td>
+              <td class="num">{models}</td>
+              <td class="num">{references}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</Base>
