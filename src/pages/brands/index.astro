@@ -6,8 +6,7 @@ import FoundingChart from '../../components/FoundingChart.astro';
 import Owners from '../../components/Owners.astro';
 import Base from '../../layouts/Base.astro';
 import { activeGroups, brandYears, controlNames, currentOwners, href, label, loadCatalog } from '../../lib/catalog';
-import { measuresOf } from '../../lib/chart-data';
-import { metrics } from '../../lib/metrics';
+import { measuresOf, metrics } from '../../lib/metrics';
 
 const catalog = await loadCatalog();
 const { brands, groups, linesOf, brandControl } = catalog;
@@ -146,7 +145,7 @@ const options = (values: string[]) => values.map((value) => ({ value, label: lab
 <script is:inline type="application/json" id="measure-values" set:html={JSON.stringify(columnValues).replace(/</g, '\\u003c')} />
 
 <script>
-  import { metricById } from '../../lib/treemap';
+  import { metricById } from '../../lib/metrics';
 
   // The measure column: a bar and figure for the chosen measure, and an optional sort by it, largest first.
   const values: Record<string, Record<string, number>> = JSON.parse(document.getElementById('measure-values')!.textContent!);

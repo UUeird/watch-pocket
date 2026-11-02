@@ -1,5 +1,7 @@
 import type { Brand, Group, Reference } from './catalog';
 
+type Catalog = { brands: Brand[]; references: { reference: Reference; brand: Brand }[] };
+
 type Currency = NonNullable<Reference['price']>['currency'];
 type Revenue = Brand['data']['revenue'][number];
 
@@ -150,3 +152,24 @@ export const metrics: Metric[] = [
     additive: false,
   },
 ];
+
+export const metricById = (id: string) => metrics.find((metric) => metric.id === id) ?? metrics[0];
+
+// Each brand's figure for every measure, keyed by measure id, with the short caption some measures give.
+export function measuresOf({ brands, references }: Catalog) {
+  const referencesOf = Map.groupBy(references, ({ brand }) => brand.id);
+  return new Map(
+    brands.map((brand) => {
+      const facts = { brand, references: (referencesOf.get(brand.id) ?? []).map(({ reference }) => reference) };
+      const values: Record<string, number> = {};
+      const captions: Record<string, string> = {};
+      for (const metric of metrics) {
+        const value = metric.value(facts);
+        if (value !== undefined && value > 0) values[metric.id] = value;
+        const caption = metric.caption?.(facts);
+        if (caption) captions[metric.id] = caption;
+      }
+      return [brand.id, { values, captions }];
+    }),
+  );
+}

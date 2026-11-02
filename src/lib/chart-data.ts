@@ -1,108 +1,98 @@
-import { countryHref, currentOwners, href, label, type Brand, type Group, type Owner, type Reference } from './catalog';
-import { metrics } from './metrics';
+import { brandStatus, currentOwners, href, lineHref, refHref, type Brand, type Group, type Line, type Model, type Owner, type Reference } from './catalog';
+import type { ChartGroup, ChartPayload } from './chart-payload';
+import { countries } from './countries';
 import { logoSetOf } from './logo-set';
-import type { Bucket, ChartData, Grouping, Point } from './treemap';
+import { measuresOf, metricById, toUsd } from './metrics';
 
 type Catalog = {
   brands: Brand[];
   groups: Group[];
+  lines: Line[];
+  models: Model[];
   references: { reference: Reference; brand: Brand }[];
 };
 
-// Where a brand with no group owner sits when grouped by owner.
-const independent: Bucket = { key: 'independent', name: 'Independent', aside: 'with no owning group on record' };
-
-// A brand's current owners as owner-grouping keys: a group's id, or `brand:<id>` for a brand held by another brand.
 const ownerKey = (owner: Owner) => (owner.collection === 'groups' ? owner.id : `brand:${owner.id}`);
-const ownerKeys = (brand: Brand) => {
-  const keys = currentOwners(brand).map(ownerKey);
-  return keys.length > 0 ? keys : [independent.key];
-};
-// The stakes of a brand's current part-owners, by owner-grouping key. Owners of the whole brand are left out.
-const stakesOf = (brand: Brand) => {
-  const stakes = brand.data.ownership.flatMap((record) =>
-    record.to === undefined && record.stake !== undefined ? [[ownerKey(record.owner), record.stake] as const] : [],
-  );
-  return stakes.length > 0 ? Object.fromEntries(stakes) : undefined;
-};
 
-// Each brand's figure for every measure, keyed by measure id, for the treemap and the measure column.
-export function measuresOf({ brands, references }: Catalog) {
-  const referencesOf = Map.groupBy(references, ({ brand }) => brand.id);
-  return new Map(
-    brands.map((brand) => {
-      const facts = { brand, references: (referencesOf.get(brand.id) ?? []).map(({ reference }) => reference) };
-      const values: Record<string, number> = {};
-      const captions: Record<string, string> = {};
-      for (const metric of metrics) {
-        const value = metric.value(facts);
-        if (value !== undefined && value > 0) values[metric.id] = value;
-        const caption = metric.caption?.(facts);
-        if (caption) captions[metric.id] = caption;
-      }
-      return [brand.id, { values, captions }];
-    }),
-  );
-}
+// The Chart page's data: every brand with its current owners, the groups above them, and every line, model and
+// reference recorded. A brand's facts are sent once however many owners it has, so the page counts it once.
+export async function chartPayload({ brands, groups, lines, models, references }: Catalog): Promise<ChartPayload> {
+  const measures = measuresOf({ brands, references });
+  const groupsById = new Map(groups.map((group) => [group.id, group]));
+  const groupRevenue = metricById('annual-revenue').groupValue!;
 
-// The ways the chart page can group brands. Category and status are left out: nearly every brand is an
-// active watch brand, so either would draw one huge box and a few specks.
-export async function chartData(catalog: Catalog): Promise<ChartData> {
-  const { brands, groups } = catalog;
-  const measures = measuresOf(catalog);
-  const brandsById = new Map(brands.map((brand) => [brand.id, brand]));
+  // Only groups that own a brand now, and the groups above them, appear on the chart.
+  const shown = new Set<string>();
+  const keep = (id: string) => {
+    if (shown.has(id)) return;
+    shown.add(id);
+    const parent = groupsById.get(id)?.data.parent;
+    if (parent) keep(parent.id);
+  };
+  for (const brand of brands) for (const owner of currentOwners(brand)) if (owner.collection === 'groups') keep(owner.id);
 
-  const points: Point[] = await Promise.all(brands.map(async (brand) => ({
-    id: brand.id,
-    name: brand.data.name,
-    href: href(`/brands/${brand.id}/`),
-    logos: await logoSetOf(brand),
-    buckets: {
-      owner: ownerKeys(brand),
-      origin: [brand.data.origin ?? 'unrecorded'],
-      segment: [brand.data.segment ?? 'unrecorded'],
-      none: ['all'],
-    },
-    stakes: stakesOf(brand),
-    licensee: brand.data.licensees.find((record) => record.to === undefined)?.licensee.id,
-    ...measures.get(brand.id)!,
-  })));
-
-  const groupBuckets: Bucket[] = await Promise.all(groups.map(async (group) => {
-    const values: Record<string, number> = {};
-    for (const metric of metrics) {
-      const value = metric.groupValue?.(group);
-      if (value !== undefined) values[metric.id] = value;
-    }
-    return { key: group.id, name: group.data.name, href: href(`/ownership-groups/${group.id}/`), logos: await logoSetOf(group), values };
-  }));
-  const owner: Grouping = { id: 'owner', label: 'Owner', buckets: groupBuckets, licensing: true, stakes: true };
-
-  // Brands held by another brand sit under that brand.
-  const brandOwners = await Promise.all(
-    [...new Set(points.flatMap((point) => point.buckets.owner).filter((key) => key.startsWith('brand:')))].map(async (key): Promise<Bucket> => {
-      const brand = brandsById.get(key.slice('brand:'.length))!;
-      return { key, name: brand.data.name, href: href(`/brands/${brand.id}/`), logos: await logoSetOf(brand) };
-    }),
-  );
-  const notRecorded = (what: string): Bucket => ({ key: 'unrecorded', name: `${what} not recorded`, aside: `with no ${what.toLowerCase()} recorded` });
-  const distinct = (values: (string | undefined)[]) => [...new Set(values.filter((value) => value !== undefined))].sort();
-  const named = (values: string[]) =>
-    values.map((value): Bucket => ({ key: value, name: label(value).replace(/^./, (first) => first.toUpperCase()) }));
   return {
-    points,
-    groupings: [
-      { ...owner, buckets: [...groupBuckets, ...brandOwners, independent] },
-      {
-        id: 'origin',
-        label: 'Nation of origin',
-        buckets: [
-          ...distinct(brands.map((brand) => brand.data.origin)).map((country): Bucket => ({ key: country, name: country, href: countryHref(country) })),
-          notRecorded('Nation of origin'),
-        ],
-      },
-      { id: 'segment', label: 'Segment', buckets: [...named(['haute', 'luxury', 'mid-range', 'budget', 'broad']), notRecorded('Segment')] },
-      { id: 'none', label: 'Nothing', buckets: [{ key: 'all', name: '' }] },
-    ],
+    groups: groups
+      .filter((group) => shown.has(group.id))
+      .map(
+        (group): ChartGroup => ({
+          id: group.id,
+          name: group.data.name,
+          href: href(`/ownership-groups/${group.id}/`),
+          country: group.data.country,
+          control: group.data.control,
+          parent: group.data.parent?.id,
+          revenue: groupRevenue(group),
+        }),
+      ),
+    brands: await Promise.all(
+      brands.map(async (brand) => {
+        const current = brand.data.ownership.filter((record) => record.to === undefined);
+        const stakes = current.map((record) => (typeof record.stake === 'number' ? record.stake : null));
+        const logo = await logoSetOf(brand);
+        const { values } = measures.get(brand.id)!;
+        const status = brandStatus(brand);
+        return {
+          id: brand.id,
+          name: brand.data.name,
+          href: href(`/brands/${brand.id}/`),
+          owners: current.map((record) => ownerKey(record.owner)),
+          stakes: stakes.some((stake) => stake !== null) ? stakes : undefined,
+          origin: brand.data.origin,
+          headquarters: brand.data.headquarters,
+          madeIn: brand.data.manufacturing,
+          segment: brand.data.segment,
+          founded: brand.data.periods[0]?.from,
+          trading: status === 'active' || status === 'revived',
+          revenue: values['annual-revenue'],
+          production: values.production,
+          logo: logo.whole ? logo : undefined,
+        };
+      }),
+    ),
+    lines: lines.map((line) => ({
+      id: line.id,
+      brand: line.data.brand.id,
+      name: line.data.name,
+      href: lineHref(line),
+      since: line.data.periods[0]?.from,
+    })),
+    models: models.map((model) => ({
+      id: model.id,
+      line: model.data.line.id,
+      name: model.data.name,
+      href: href(`/brands/${model.id}/`),
+      style: model.data.style,
+      references: model.data.references.map((reference) => ({
+        ref: reference.ref,
+        href: refHref(model, reference),
+        since: reference.periods[0]?.from,
+        until: reference.periods.at(-1)?.to,
+        caseSize: reference.caseSize,
+        metals: reference.metals,
+        price: reference.price && toUsd(reference.price.amount, reference.price.currency),
+      })),
+    })),
+    flags: Object.fromEntries(Object.entries(countries).flatMap(([name, { flag }]) => (flag ? [[name, flag]] : []))),
   };
 }

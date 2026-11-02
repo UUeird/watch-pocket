@@ -1,65 +1,901 @@
 ---
-import Filters from '../../components/Filters.astro';
-import Treemap from '../../components/Treemap.astro';
 import Base from '../../layouts/Base.astro';
-import { activeGroups, currentOwners, label, loadCatalog } from '../../lib/catalog';
-import { chartData } from '../../lib/chart-data';
+import { loadCatalog } from '../../lib/catalog';
+import { chartPayload } from '../../lib/chart-data';
+import { SORTS } from '../../scripts/chart/tree';
 
 const catalog = await loadCatalog();
-const { brands, groups, linesOf } = catalog;
-const data = await chartData(catalog);
-const distinct = (values: (string | undefined)[]) => [...new Set(values.filter((value) => value !== undefined))].sort();
-const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));
-// The Owner filter lists groups, so a brand held by another brand matches none of its options.
-// An independent brand matches the Independent option instead.
-const groupOwnerIds = (brand: (typeof brands)[number]) =>
-  brand.data.independent
-    ? ['independent']
-    : currentOwners(brand)
-        .filter((owner) => owner.collection === 'groups')
-        .map((owner) => owner.id);
+const payload = await chartPayload(catalog);
 ---
 
 <Base title="Chart">
-  <h1>Brands and their owners</h1>
-  <p class="lede">Every brand as a circle inside the group that owns it. Regroup, resize or filter to compare.</p>
+  <h1>Owners, brands, lines, models, references</h1>
+  <p class="lede">The whole catalog as one tree. Filter which brands to show, group them, pick the levels to see, and click any box to zoom in.</p>
 
-  <Filters
-    target="chart-brands"
-    noun="brands"
-    placeholder="Search brands and product lines"
-    filters={[
-      {
-        name: 'owner',
-        label: 'Owner',
-        options: [
-          { value: 'independent', label: 'Independent' },
-          ...activeGroups(groups).map((group) => ({ value: group.id, label: group.data.name })),
-        ],
-      },
-      { name: 'origin', label: 'Nation of origin', options: options(distinct(brands.map((brand) => brand.data.origin))) },
-      { name: 'segment', label: 'Segment', options: options(distinct(brands.map((brand) => brand.data.segment))) },
-      { name: 'makes', label: 'Makes', options: options(distinct(brands.flatMap((brand) => brand.data.makes))) },
-      { name: 'tags', label: 'Type', options: options(distinct(brands.flatMap((brand) => brand.data.tags))) },
-    ]}
-  />
-
-  <Treemap id="chart" title="Brands" data={data} follow="chart-brands" initial={{ grouping: 'owner', shape: 'circles' }} />
-
-  <!-- What the filters work on: one item per brand, never shown. The chart draws those left in. -->
-  <ul id="chart-brands" hidden>
-    {
-      brands.map((brand) => (
-        <li
-          data-id={brand.id}
-          data-q={[brand.data.name, ...linesOf(brand.id).map((line) => line.data.name)].join(' ').toLowerCase()}
-          data-owner={groupOwnerIds(brand).join('|')}
-          data-segment={brand.data.segment}
-          data-origin={brand.data.origin}
-          data-makes={brand.data.makes.join('|')}
-          data-tags={brand.data.tags.join('|')}
+  <div class="chart">
+    <div class="bar">
+      <div class="ctl search">
+        <label for="q">Search every level</label>
+        <input
+          type="search"
+          id="q"
+          placeholder="Omega, Submariner, 126610LN, Swatch Group…"
+          autocomplete="off"
+          role="combobox"
+          aria-controls="results"
+          aria-expanded="false"
+          aria-autocomplete="list"
         />
-      ))
-    }
-  </ul>
+        <div class="results" id="results" role="listbox" aria-label="Search results" hidden></div>
+      </div>
+      <div class="ctl">
+        <span class="lab" id="countries-label">Countries</span>
+        <details class="pop">
+          <summary id="csum" aria-describedby="countries-label">All countries</summary>
+          <div class="panel">
+            <div class="modes" id="cmodes"></div>
+            <div class="presets" id="presets"></div>
+            <div class="clist" id="clist"></div>
+          </div>
+        </details>
+      </div>
+      <div class="ctl">
+        <span class="lab" id="more-label">More filters</span>
+        <details class="pop">
+          <summary id="msum" aria-describedby="more-label">Segment, status</summary>
+          <div class="panel modes" id="mpanel"></div>
+        </details>
+      </div>
+      <div class="ctl">
+        <label for="groupby">Group by</label>
+        <select id="groupby">
+          <option value="none">Ownership only</option>
+          <option value="country">Country, then owner</option>
+          <option value="segment">Segment, then owner</option>
+          <option value="era">Era founded, then owner</option>
+        </select>
+      </div>
+      <div class="ctl">
+        <span class="lab">Levels shown</span>
+        <div class="lvl">
+          <select id="lvfrom" aria-label="Start at level"></select>
+          <span aria-hidden="true">→</span>
+          <select id="lvto" aria-label="Go down to level"></select>
+        </div>
+        <div class="track" id="track" aria-hidden="true"></div>
+      </div>
+      <div class="ctl">
+        <label for="sort">Sort by</label>
+        <select id="sort">
+          {SORTS.map((sort) => <option value={sort.id}>{sort.label}</option>)}
+        </select>
+      </div>
+      <div class="ctl">
+        <label for="indep">Independent brands</label>
+        <select id="indep">
+          <option value="show">Each is its own owner</option>
+          <option value="hide">Hide</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="status" id="status" aria-live="polite"></div>
+
+    <div class="viewrow">
+      <nav class="crumbs" id="crumbs" aria-label="Zoom"></nav>
+      <div class="seg" id="views" role="group" aria-label="View">
+        <button type="button" data-v="columns" aria-pressed="true">Columns</button>
+        <button type="button" data-v="outline" aria-pressed="false">Outline</button>
+      </div>
+    </div>
+
+    <section class="info" id="info" aria-label="Selected item"></section>
+    <div class="viz" id="viz"></div>
+    <div class="legend" id="legend"></div>
+  </div>
 </Base>
+
+<script is:inline type="application/json" id="chart-data" set:html={JSON.stringify(payload).replace(/</g, '\\u003c')} />
+
+<script>
+  import '../../scripts/chart/page';
+</script>
+
+<style>
+  .chart {
+    --sunk: color-mix(in srgb, var(--text) 5%, var(--bg));
+    --accent-soft: color-mix(in srgb, var(--accent) 18%, var(--surface));
+    --on-accent: #ffffff;
+    --l-lens: #ece8df;
+    --l-owner: #e9e4d8;
+    --l-brand: #ddd5c3;
+    --l-line: #cfc4ad;
+    --l-model: #c2b496;
+    --l-ref: #b3a27f;
+    --hatch: #c9c2b2;
+    --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    font-size: 0.9375rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .chart {
+      --on-accent: #1c1b19;
+      --l-lens: #24221f;
+      --l-owner: #2a2824;
+      --l-brand: #34312b;
+      --l-line: #3f3a32;
+      --l-model: #4b453a;
+      --l-ref: #585041;
+      --hatch: #4a463e;
+    }
+  }
+
+  .chart :global(button),
+  .chart select,
+  .chart input {
+    font: inherit;
+    color: inherit;
+  }
+
+  .chart :global(:focus-visible) {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .chart :global(.lv-lens) { background: var(--l-lens); }
+  .chart :global(.lv-root) { background: var(--sunk); }
+  .chart :global(.lv-owner) { background: var(--l-owner); }
+  .chart :global(.lv-brand) { background: var(--l-brand); }
+  .chart :global(.lv-line) { background: var(--l-line); }
+  .chart :global(.lv-model) { background: var(--l-model); }
+  .chart :global(.lv-ref) { background: var(--l-ref); }
+
+  .chart :global(.tag) {
+    display: inline-block;
+    font: 500 0.66rem var(--mono);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: var(--sunk);
+    color: var(--muted);
+    border: 1px solid var(--line);
+    white-space: nowrap;
+  }
+
+  /* Controls */
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    align-items: end;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 12px;
+  }
+
+  .ctl {
+    display: grid;
+    gap: 4px;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .ctl > label,
+  .ctl > .lab,
+  .chart :global(.modes .lab),
+  .chart :global(.modes legend) {
+    font: 500 0.68rem var(--mono);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .ctl select,
+  .ctl input[type='search'] {
+    border: 1px solid var(--line);
+    background: var(--bg);
+    border-radius: 6px;
+    padding: 6px 8px;
+    min-width: 0;
+  }
+
+  .search {
+    position: relative;
+    flex: 1 1 260px;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .results {
+    position: absolute;
+    z-index: 20;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 4px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 0.12);
+    max-height: 340px;
+    overflow: auto;
+  }
+
+  .results :global(button) {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    gap: 8px;
+    width: 100%;
+    text-align: left;
+    border: 0;
+    background: none;
+    padding: 7px 10px;
+    cursor: pointer;
+    align-items: baseline;
+  }
+
+  .results :global(button:hover),
+  .results :global(button.on) {
+    background: var(--accent-soft);
+  }
+
+  .results :global(small) {
+    color: var(--muted);
+    display: block;
+    font-size: 0.78rem;
+  }
+
+  details.pop {
+    position: relative;
+  }
+
+  details.pop > summary {
+    list-style: none;
+    border: 1px solid var(--line);
+    background: var(--bg);
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  details.pop > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details.pop > summary::after {
+    content: ' ▾';
+    color: var(--muted);
+  }
+
+  details.pop[open] > summary {
+    border-color: var(--accent);
+  }
+
+  .panel {
+    position: absolute;
+    z-index: 30;
+    top: calc(100% + 6px);
+    left: 0;
+    width: min(340px, calc(100vw - 32px));
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 0.15);
+    padding: 12px;
+    display: grid;
+    gap: 10px;
+  }
+
+  .presets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .presets :global(button) {
+    border: 1px solid var(--line);
+    background: var(--bg);
+    border-radius: 999px;
+    padding: 2px 10px;
+    font-size: 0.82rem;
+    cursor: pointer;
+  }
+
+  .presets :global(button:hover) {
+    border-color: var(--accent);
+  }
+
+  .clist {
+    max-height: 300px;
+    overflow: auto;
+    display: grid;
+    border-top: 1px solid var(--line);
+    padding-top: 6px;
+  }
+
+  .clist :global(label) {
+    display: grid;
+    grid-template-columns: 18px 22px 1fr auto;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 2px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  .clist :global(label span:last-child) {
+    font: 0.78rem var(--mono);
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .clist :global(.zero) {
+    opacity: 0.45;
+  }
+
+  .modes,
+  .chart :global(.modes fieldset) {
+    display: grid;
+    gap: 4px;
+    font-size: 0.88rem;
+  }
+
+  .chart :global(.modes fieldset) {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .chart :global(.modes label) {
+    display: flex;
+    gap: 6px;
+    align-items: baseline;
+    cursor: pointer;
+  }
+
+  .chart :global(.modes small) {
+    color: var(--muted);
+    font: 0.72rem var(--mono);
+  }
+
+  .lvl {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .lvl span {
+    color: var(--muted);
+  }
+
+  .track {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+  }
+
+  .track :global(i) {
+    height: 4px;
+    border-radius: 2px;
+    background: var(--line);
+  }
+
+  .track :global(i.on) {
+    background: var(--accent);
+  }
+
+  @media (max-width: 560px) {
+    .bar .ctl {
+      flex: 1 1 100%;
+    }
+
+    .ctl select {
+      width: 100%;
+    }
+
+    .lvl select {
+      width: auto;
+      flex: 1;
+    }
+
+    details.pop > summary {
+      display: block;
+    }
+  }
+
+  /* Status line */
+  .status {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+
+  .status :global(b) {
+    color: var(--text);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .status :global(.fchip) {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--accent-soft);
+    color: var(--text);
+    border-radius: 999px;
+    padding: 2px 4px 2px 10px;
+    font-size: 0.82rem;
+  }
+
+  .status :global(.fchip button) {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    color: var(--muted);
+    padding: 0 6px;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .status :global(.link) {
+    border: 0;
+    background: none;
+    color: var(--accent);
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+  }
+
+  .status :global(.warn) {
+    color: var(--accent);
+  }
+
+  /* View row */
+  .viewrow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .seg {
+    display: flex;
+    gap: 4px;
+  }
+
+  .seg button {
+    border: 1px solid var(--line);
+    background: var(--surface);
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .seg button[aria-pressed='true'] {
+    background: var(--text);
+    color: var(--bg);
+    border-color: var(--text);
+  }
+
+  .crumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;
+    font-size: 0.9rem;
+    min-width: 0;
+  }
+
+  .crumbs :global(button) {
+    border: 0;
+    background: none;
+    color: var(--accent);
+    cursor: pointer;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+
+  .crumbs :global(button:hover) {
+    background: var(--accent-soft);
+  }
+
+  .crumbs :global(.sep) {
+    color: var(--muted);
+  }
+
+  .crumbs :global(.here) {
+    font-weight: 600;
+    padding: 2px 4px;
+  }
+
+  /* Info strip */
+  .info {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 24px;
+    min-height: 64px;
+  }
+
+  .info :global(.who) {
+    display: grid;
+    gap: 1px;
+    min-width: 0;
+    flex: 0 1 260px;
+  }
+
+  .info :global(.eyebrow),
+  .info :global(dt) {
+    font: 500 0.66rem var(--mono);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .info :global(h2) {
+    font-size: 1.15rem;
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .info :global(.path) {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .info :global(.note) {
+    flex-basis: 100%;
+  }
+
+  .info :global(dl) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 20px;
+    margin: 0;
+    font-size: 0.88rem;
+    flex: 1 1 320px;
+    min-width: 0;
+  }
+
+  .info :global(dl > div) {
+    display: grid;
+  }
+
+  .info :global(dd) {
+    margin: 0;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .info :global(.act) {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .info :global(.act button) {
+    border: 1px solid var(--line);
+    background: var(--bg);
+    border-radius: 6px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+
+  /* The chart */
+  .viz {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    min-height: 120px;
+    overflow: hidden;
+  }
+
+  .viz :global(.empty) {
+    padding: 48px 24px;
+    margin: 0;
+    text-align: center;
+    color: var(--muted);
+  }
+
+  .viz :global(.columns) {
+    position: relative;
+    font-size: 12px;
+  }
+
+  .viz :global(.colhead) {
+    position: absolute;
+    top: 5px;
+    font: 500 10px var(--mono);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .viz :global(.columns > button),
+  .viz :global(.columns > .gap) {
+    position: absolute;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 2px;
+    padding: 0 7px;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  .viz :global(.columns > button) {
+    cursor: pointer;
+  }
+
+  .viz :global(.frame) {
+    left: 0;
+    width: 27px;
+    padding: 8px 0 !important;
+    font-weight: 600;
+  }
+
+  .viz :global(.frame span) {
+    display: block;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    margin: 0 auto;
+    max-height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .viz :global(.frame:disabled) {
+    cursor: default;
+    color: inherit;
+  }
+
+  .viz :global(.cell) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5px !important;
+    gap: 2px;
+  }
+
+  .viz :global(.cell.one) {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .viz :global(.cell.one .nm) {
+    flex: 1 1 auto;
+  }
+
+  .viz :global(.cell .nm) {
+    flex: 0 0 auto;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .viz :global(.cell.lv-brand .nm) {
+    font-weight: 600;
+  }
+
+  .viz :global(.cell .pre) {
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .viz :global(.cell .cnt) {
+    font: 10px var(--mono);
+    color: var(--muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .viz :global(.cell.one .cnt) {
+    flex: 0 1 auto;
+    max-width: 45%;
+  }
+
+  .viz :global(.cell:has(.plate)) {
+    padding-left: 48px !important;
+  }
+
+  .viz :global(.plate) {
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    width: 38px;
+    height: 18px;
+    padding: 2px;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .viz :global(.plate img),
+  .viz :global(.lg img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .viz :global(.cell:hover),
+  .viz :global(.chip-ref:hover) {
+    filter: brightness(0.94);
+  }
+
+  .viz :global(.ghost) {
+    background: var(--bg) !important;
+    outline: 1px dashed var(--hatch);
+    outline-offset: -1px;
+  }
+
+  .viz :global(.match),
+  .legend :global(i.match) {
+    background: var(--accent) !important;
+    color: var(--on-accent);
+  }
+
+  .viz :global(.match .cnt),
+  .viz :global(.match .pre) {
+    color: var(--on-accent);
+  }
+
+  .viz :global(.sel) {
+    box-shadow: inset 0 0 0 2px var(--text);
+  }
+
+  .viz :global(.chip-ref) {
+    background: var(--l-ref);
+    font: 11px var(--mono);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-radius: 3px !important;
+  }
+
+  .viz :global(.gap),
+  .legend :global(i.gap) {
+    background: repeating-linear-gradient(45deg, color-mix(in srgb, var(--hatch) 60%, transparent) 0 2px, transparent 2px 6px);
+  }
+
+  .viz :global(.gap) {
+    pointer-events: none;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 24px;
+  }
+
+  .viz :global(.more) {
+    background: var(--sunk);
+    color: var(--accent);
+    text-decoration: underline;
+    font-size: 11.5px;
+  }
+
+  /* Outline */
+  .viz :global(.outline) {
+    max-height: 680px;
+    overflow: auto;
+    font-size: 0.9rem;
+  }
+
+  .viz :global(.row) {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 8px;
+    align-items: center;
+    padding: 4px 12px;
+    border-bottom: 1px solid var(--line);
+    cursor: pointer;
+  }
+
+  .viz :global(.row:hover) {
+    background: var(--sunk);
+  }
+
+  .viz :global(.row.sel) {
+    background: var(--accent-soft);
+    box-shadow: none;
+  }
+
+  .viz :global(.row .tw) {
+    width: 16px;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .viz :global(.row .nm) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .viz :global(.row .pre) {
+    color: var(--muted);
+  }
+
+  .viz :global(.row .lg) {
+    display: inline-block;
+    overflow: hidden;
+    height: 18px;
+    width: 38px;
+    padding: 2px;
+    border-radius: 2px;
+    vertical-align: -4px;
+    margin-right: 6px;
+  }
+
+  .viz :global(.row mark) {
+    background: var(--accent);
+    color: var(--on-accent);
+    border-radius: 2px;
+    padding: 0 1px;
+  }
+
+  .viz :global(.row.ghost) {
+    background: none !important;
+    outline: none;
+  }
+
+  .viz :global(.row.ghost .nm) {
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .viz :global(.row .meta) {
+    font: 0.74rem var(--mono);
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 560px) {
+    .viz :global(.row) {
+      grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .viz :global(.row .meta) {
+      display: none;
+    }
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    font-size: 0.8rem;
+    color: var(--muted);
+    align-items: center;
+  }
+
+  .legend :global(i) {
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    border-radius: 2px;
+    vertical-align: -1px;
+    margin-right: 4px;
+  }
+
+  .legend :global(i.ghost) {
+    background: var(--bg);
+    outline: 1px dashed var(--hatch);
+  }
+</style>
