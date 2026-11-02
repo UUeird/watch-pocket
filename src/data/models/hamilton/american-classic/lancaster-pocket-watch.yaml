@@ -1,0 +1,19 @@
+name: Lancaster Pocket Watch
+line: hamilton/american-classic
+style: dress
+website: https://www.hamiltonwatch.com/en-us/h89819120-american-classic-mechanical-pocket-watch-lancaster.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h89819120-american-classic-mechanical-pocket-watch-lancaster.html
+references:
+  - ref: H89819120
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h89819120.png
+      page: https://www.hamiltonwatch.com/en-us/h89819120-american-classic-mechanical-pocket-watch-lancaster.html
+    price: { amount: 1395, currency: USD, year: 2026 }
+    caseSize: 50
+    metals: [steel]
+    crystal: sapphire
+    movement: "6497-1"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white }]

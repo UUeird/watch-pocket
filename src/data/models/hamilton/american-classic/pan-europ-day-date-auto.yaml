@@ -1,0 +1,28 @@
+name: Pan Europ Day Date Auto
+line: hamilton/american-classic
+style: sport
+theme: motor-racing
+website: https://www.hamiltonwatch.com/en-us/h35405741-american-classic-pan-europ-day-date-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h35405741-american-classic-pan-europ-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h35455730-american-classic-day-date-auto-pan-europ-resident-evil-requiem-limited-edition.html
+references:
+  - ref: H35405741
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h35405741.png
+      page: https://www.hamiltonwatch.com/en-us/h35405741-american-classic-pan-europ-day-date-auto.html
+    price: { amount: 1345, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-30"
+    movementType: mechanical
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H35455730
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h35455730.png
+      page: https://www.hamiltonwatch.com/en-us/h35455730-american-classic-day-date-auto-pan-europ-resident-evil-requiem-limited-edition.html
+    price: { amount: 1475, currency: USD, year: 2026 }
+    movementType: mechanical

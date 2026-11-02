@@ -111,11 +111,13 @@ test.describe('Chart', () => {
     // Most models is the default, so the link needs no sort.
     await page.goto('chart/?levels=brand');
     await expect(page.locator('#sort')).toHaveValue('models');
-    const names = await page.locator(`${cells} .nm`).allTextContents();
-    // Richard Mille has the most models recorded but few references, so it leads here and not under Most references.
-    expect(names[0]).toBe('Richard Mille');
+    const byModels = await page.locator(`${cells} .nm`).allTextContents();
+    // Richard Mille has many models recorded but few references, so it ranks higher here than under Most references.
     await page.locator('#sort').selectOption('count');
-    await expect(page.locator(`${cells} .nm`).first()).not.toHaveText('Richard Mille');
+    expect(byModels.indexOf('Richard Mille')).toBeGreaterThanOrEqual(0);
+    await expect
+      .poll(async () => (await page.locator(`${cells} .nm`).allTextContents()).indexOf('Richard Mille'))
+      .toBeGreaterThan(byModels.indexOf('Richard Mille'));
   });
 
   test('finds a reference typed with spaces and zooms to its model', async ({ page }) => {

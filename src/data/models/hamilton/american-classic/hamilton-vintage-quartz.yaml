@@ -1,0 +1,34 @@
+name: Hamilton Vintage Quartz
+line: hamilton/american-classic
+style: jewelry
+website: https://www.hamiltonwatch.com/en-us/h31231113-hamilton.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h31231113-hamilton.html
+  - https://www.hamiltonwatch.com/en-us/h31241113-hamilton.html
+  - https://www.hamiltonwatch.com/en-us/h31271113-hamilton.html
+references:
+  - ref: H31231113
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h31231113.png
+      page: https://www.hamiltonwatch.com/en-us/h31231113-hamilton.html
+    price: { amount: 745, currency: USD, year: 2026 }
+    caseSize: 15
+    metals: [steel]
+    crystal: sapphire
+    movement: "280.002"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white, name: Mother of pearl }]
+    bracelets: [{ type: bracelet }]
+  - ref: H31241113
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h31241113.png
+      page: https://www.hamiltonwatch.com/en-us/h31241113-hamilton.html
+    price: { amount: 745, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H31271113
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h31271113.png
+      page: https://www.hamiltonwatch.com/en-us/h31271113-hamilton.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    movementType: quartz

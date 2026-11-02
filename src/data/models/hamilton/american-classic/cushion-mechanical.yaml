@@ -1,0 +1,58 @@
+name: Cushion Mechanical
+line: hamilton/american-classic
+style: dress
+website: https://www.hamiltonwatch.com/en-us/h36109720-american-classic-cushion-small-second-mechanical.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h36109710-american-classic-cushion-small-second-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h36109720-american-classic-cushion-small-second-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h36119520-american-classic-cushion-small-second-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h36129730-american-classic-cushion-small-second-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h36139520-american-classic-cushion-small-second-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h36149710-american-classic-cushion-small-second-mechanical.html
+references:
+  - ref: H36109710
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h36109710.png
+      page: https://www.hamiltonwatch.com/en-us/h36109710-american-classic-cushion-small-second-mechanical.html
+    price: { amount: 995, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H36109720
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h36109720.png
+      page: https://www.hamiltonwatch.com/en-us/h36109720-american-classic-cushion-small-second-mechanical.html
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 30
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-42"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: champagne, name: Beige }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H36119520
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h36119520.png
+      page: https://www.hamiltonwatch.com/en-us/h36119520-american-classic-cushion-small-second-mechanical.html
+    price: { amount: 1095, currency: USD, year: 2026 }
+    caseSize: 30
+    movementType: mechanical
+  - ref: H36129730
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h36129730.png
+      page: https://www.hamiltonwatch.com/en-us/h36129730-american-classic-cushion-small-second-mechanical.html
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 34
+    movementType: mechanical
+  - ref: H36139520
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h36139520.png
+      page: https://www.hamiltonwatch.com/en-us/h36139520-american-classic-cushion-small-second-mechanical.html
+    price: { amount: 1095, currency: USD, year: 2026 }
+    caseSize: 34
+    movementType: mechanical
+  - ref: H36149710
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h36149710.png
+      page: https://www.hamiltonwatch.com/en-us/h36149710-american-classic-cushion-small-second-mechanical.html
+    price: { amount: 995, currency: USD, year: 2026 }
+    movementType: mechanical

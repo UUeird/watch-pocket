@@ -1,0 +1,69 @@
+name: Jazzmaster Skeleton Auto
+line: hamilton/jazzmaster
+style: dress
+website: https://www.hamiltonwatch.com/en-us/h32405111-jazzmaster-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h32405111-jazzmaster-auto.html
+  - https://www.hamiltonwatch.com/en-us/h32405811-jazzmaster-viewmatic-skeleton-auto.html
+  - https://www.hamiltonwatch.com/en-us/h42535141-jazzmaster-skeleton-auto.html
+  - https://www.hamiltonwatch.com/en-us/h42535160-jazzmaster-skeleton-auto.html
+  - https://www.hamiltonwatch.com/en-us/h42535541-jazzmaster-skeleton-auto.html
+  - https://www.hamiltonwatch.com/en-us/h42535560-jazzmaster-skeleton-auto.html
+  - https://www.hamiltonwatch.com/en-us/h42535810-jazzmaster-skeleton-auto.html
+references:
+  - ref: H32405111
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32405111.png
+      page: https://www.hamiltonwatch.com/en-us/h32405111-jazzmaster-auto.html
+    price: { amount: 1475, currency: USD, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-10-S"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: H32405811
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32405811.png
+      page: https://www.hamiltonwatch.com/en-us/h32405811-jazzmaster-viewmatic-skeleton-auto.html
+    price: { amount: 1395, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H42535141
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/4/h42535141.png
+      page: https://www.hamiltonwatch.com/en-us/h42535141-jazzmaster-skeleton-auto.html
+    price: { amount: 1545, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H42535160
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/4/h42535160.png
+      page: https://www.hamiltonwatch.com/en-us/h42535160-jazzmaster-skeleton-auto.html
+    price: { amount: 1545, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H42535541
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/4/h42535541.png
+      page: https://www.hamiltonwatch.com/en-us/h42535541-jazzmaster-skeleton-auto.html
+    price: { amount: 1495, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H42535560
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/4/h42535560.png
+      page: https://www.hamiltonwatch.com/en-us/h42535560-jazzmaster-skeleton-auto.html
+    price: { amount: 1495, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-10-S"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H42535810
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/4/h42535810.png
+      page: https://www.hamiltonwatch.com/en-us/h42535810-jazzmaster-skeleton-auto.html
+    price: { amount: 1495, currency: USD, year: 2026 }
+    movementType: mechanical

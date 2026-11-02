@@ -1,0 +1,27 @@
+name: Ventura Edge Skeleton
+line: hamilton/ventura
+style: showpiece
+website: https://www.hamiltonwatch.com/en-us/h24635330-ventura-skeleton-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h24635330-ventura-skeleton-auto.html
+  - https://www.hamiltonwatch.com/en-us/h24645330-ventura-skeleton-auto.html
+references:
+  - ref: H24635330
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24635330.png
+      page: https://www.hamiltonwatch.com/en-us/h24635330-ventura-skeleton-auto.html
+    price: { amount: 1925, currency: USD, year: 2026 }
+    caseSize: 51
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-10-S"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: H24645330
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24645330.png
+      page: https://www.hamiltonwatch.com/en-us/h24645330-ventura-skeleton-auto.html
+    price: { amount: 2025, currency: USD, year: 2026 }
+    movementType: mechanical

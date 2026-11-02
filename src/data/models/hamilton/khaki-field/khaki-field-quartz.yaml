@@ -1,0 +1,114 @@
+name: Khaki Field Quartz
+line: hamilton/khaki-field
+style: field
+website: https://www.hamiltonwatch.com/en-us/h69401930-khaki-field-quartz.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h68401735-khaki-field-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h68551933-khaki-field-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h69301430-khaki-field-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h69301910-khaki-field-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h69301930-khaki-field-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h69301940-khaki-field-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h69301960-khaki-field-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h69401130-khaki-field-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h69401131-khaki-field-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h69401430-khaki-field-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h69401910-khaki-field-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h69401930-khaki-field-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h69401940-khaki-field-quartz.html
+references:
+  - ref: H68401735
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h68401735.png
+      page: https://www.hamiltonwatch.com/en-us/h68401735-khaki-field-quartz.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H68551933
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h68551933.png
+      page: https://www.hamiltonwatch.com/en-us/h68551933-khaki-field-quartz.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H69301430
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69301430.png
+      page: https://www.hamiltonwatch.com/en-us/h69301430-khaki-field-quartz.html
+    price: { amount: 445, currency: USD, year: 2026 }
+    caseSize: 33
+    movementType: quartz
+  - ref: H69301910
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69301910.png
+      page: https://www.hamiltonwatch.com/en-us/h69301910-khaki-field-quartz.html
+    price: { amount: 445, currency: USD, year: 2026 }
+    caseSize: 33
+    movementType: quartz
+  - ref: H69301930
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69301930.png
+      page: https://www.hamiltonwatch.com/en-us/h69301930-khaki-field-quartz.html
+    price: { amount: 445, currency: USD, year: 2026 }
+    caseSize: 33
+    movementType: quartz
+  - ref: H69301940
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69301940.png
+      page: https://www.hamiltonwatch.com/en-us/h69301940-khaki-field-quartz.html
+    price: { amount: 445, currency: USD, year: 2026 }
+    caseSize: 33
+    movementType: quartz
+  - ref: H69301960
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69301960.png
+      page: https://www.hamiltonwatch.com/en-us/h69301960-khaki-field-quartz.html
+    price: { amount: 445, currency: USD, year: 2026 }
+    caseSize: 33
+    movementType: quartz
+  - ref: H69401130
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69401130.png
+      page: https://www.hamiltonwatch.com/en-us/h69401130-khaki-field-quartz.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: quartz
+  - ref: H69401131
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69401131.png
+      page: https://www.hamiltonwatch.com/en-us/h69401131-khaki-field-quartz.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: quartz
+  - ref: H69401430
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69401430.png
+      page: https://www.hamiltonwatch.com/en-us/h69401430-khaki-field-quartz.html
+    price: { amount: 445, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: quartz
+  - ref: H69401910
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69401910.png
+      page: https://www.hamiltonwatch.com/en-us/h69401910-khaki-field-quartz.html
+    price: { amount: 445, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: quartz
+  - ref: H69401930
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69401930.png
+      page: https://www.hamiltonwatch.com/en-us/h69401930-khaki-field-quartz.html
+    price: { amount: 445, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "F06.105"
+    movementType: quartz
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: fabric-strap }]
+  - ref: H69401940
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69401940.png
+      page: https://www.hamiltonwatch.com/en-us/h69401940-khaki-field-quartz.html
+    price: { amount: 445, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: quartz

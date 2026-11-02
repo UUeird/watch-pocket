@@ -1,0 +1,30 @@
+name: Khaki Pilot Pioneer Mechanical Bronze
+line: hamilton/khaki-aviation
+style: pilot
+theme: aviation
+website: https://www.hamiltonwatch.com/en-us/h76709510-khaki-aviation-pioneer-small-second-mechanical.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h76709510-khaki-aviation-pioneer-small-second-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h76709530-khaki-aviation-pilot-pioneer.html
+references:
+  - ref: H76709510
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76709510.png
+      page: https://www.hamiltonwatch.com/en-us/h76709510-khaki-aviation-pioneer-small-second-mechanical.html
+    price: { amount: 1795, currency: USD, year: 2026 }
+    caseSize: 43
+    metals: [bronze, titanium]
+    crystal: sapphire
+    movement: "ETA 6498-1"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H76709530
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76709530.png
+      page: https://www.hamiltonwatch.com/en-us/h76709530-khaki-aviation-pilot-pioneer.html
+    price: { amount: 1795, currency: USD, year: 2026 }
+    caseSize: 43
+    metals: [bronze]
+    movementType: mechanical

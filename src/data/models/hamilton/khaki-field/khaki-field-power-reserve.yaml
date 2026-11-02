@@ -1,0 +1,72 @@
+name: Khaki Field Power Reserve
+line: hamilton/khaki-field
+style: field
+website: https://www.hamiltonwatch.com/en-us/h69509930-khaki-field-power-reserve-mechanical.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h69509110-khaki-field-power-reserve-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69509130-khaki-field-power-reserve-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69509140-khaki-field-power-reserve-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69509160-khaki-field-power-reserve-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69509910-khaki-field-power-reserve-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69509930-khaki-field-power-reserve-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69509940-khaki-field-power-reserve-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69509960-khaki-field-power-reserve-mechanical.html
+references:
+  - ref: H69509110
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69509110.png
+      page: https://www.hamiltonwatch.com/en-us/h69509110-khaki-field-power-reserve-mechanical.html
+    price: { amount: 1025, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: mechanical
+  - ref: H69509130
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69509130.png
+      page: https://www.hamiltonwatch.com/en-us/h69509130-khaki-field-power-reserve-mechanical.html
+    price: { amount: 1025, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: mechanical
+  - ref: H69509140
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69509140.png
+      page: https://www.hamiltonwatch.com/en-us/h69509140-khaki-field-power-reserve-mechanical.html
+    price: { amount: 1025, currency: USD, year: 2026 }
+    caseSize: 40
+  - ref: H69509160
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69509160.png
+      page: https://www.hamiltonwatch.com/en-us/h69509160-khaki-field-power-reserve-mechanical.html
+    price: { amount: 1025, currency: USD, year: 2026 }
+    caseSize: 40
+  - ref: H69509910
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69509910.png
+      page: https://www.hamiltonwatch.com/en-us/h69509910-khaki-field-power-reserve-mechanical.html
+    price: { amount: 945, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: mechanical
+  - ref: H69509930
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69509930.png
+      page: https://www.hamiltonwatch.com/en-us/h69509930-khaki-field-power-reserve-mechanical.html
+    price: { amount: 945, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-23"
+    movementType: mechanical
+    complications: [power-reserve]
+    dials: [{ color: black }]
+    bracelets: [{ type: fabric-strap }]
+  - ref: H69509940
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69509940.png
+      page: https://www.hamiltonwatch.com/en-us/h69509940-khaki-field-power-reserve-mechanical.html
+    price: { amount: 945, currency: USD, year: 2026 }
+    caseSize: 40
+  - ref: H69509960
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69509960.png
+      page: https://www.hamiltonwatch.com/en-us/h69509960-khaki-field-power-reserve-mechanical.html
+    price: { amount: 945, currency: USD, year: 2026 }
+    caseSize: 40

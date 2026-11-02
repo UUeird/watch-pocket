@@ -1,0 +1,57 @@
+name: Ardmore
+line: hamilton/american-classic
+style: dress
+website: https://www.hamiltonwatch.com/en-us/h11221114-american-classic-ardmore-quartz.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h11221114-american-classic-ardmore-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h11221150-american-classic-small-second-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h11221514-american-classic-ardmore-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h11221550-american-classic-small-second-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h11221750-american-classic-small-second-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h11221914-american-classic-ardmore-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h11261760-american-classic-small-second-quartz.html
+references:
+  - ref: H11221114
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/1/h11221114.png
+      page: https://www.hamiltonwatch.com/en-us/h11221114-american-classic-ardmore-quartz.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 19
+    metals: [steel]
+    crystal: mineral
+    movement: "980.163"
+    movementType: quartz
+    complications: []
+    dials: [{ color: silver }]
+  - ref: H11221150
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/1/h11221150.png
+      page: https://www.hamiltonwatch.com/en-us/h11221150-american-classic-small-second-quartz.html
+    price: { amount: 625, currency: USD, year: 2026 }
+  - ref: H11221514
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/1/h11221514.png
+      page: https://www.hamiltonwatch.com/en-us/h11221514-american-classic-ardmore-quartz.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H11221550
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/1/h11221550.png
+      page: https://www.hamiltonwatch.com/en-us/h11221550-american-classic-small-second-quartz.html
+    price: { amount: 575, currency: USD, year: 2026 }
+  - ref: H11221750
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/1/h11221750.png
+      page: https://www.hamiltonwatch.com/en-us/h11221750-american-classic-small-second-quartz.html
+    price: { amount: 575, currency: USD, year: 2026 }
+  - ref: H11221914
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/1/h11221914.png
+      page: https://www.hamiltonwatch.com/en-us/h11221914-american-classic-ardmore-quartz.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H11261760
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/1/h11261760.png
+      page: https://www.hamiltonwatch.com/en-us/h11261760-american-classic-small-second-quartz.html
+    price: { amount: 625, currency: USD, year: 2026 }

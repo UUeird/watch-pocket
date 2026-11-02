@@ -1,0 +1,34 @@
+name: Intra-Matic Chronograph H
+line: hamilton/american-classic
+style: chronograph
+website: https://www.hamiltonwatch.com/en-us/h38429541-american-classic-chronograph-h-mechanical-chrono.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h38429541-american-classic-chronograph-h-mechanical-chrono.html
+  - https://www.hamiltonwatch.com/en-us/h38429591-american-classic-chronograph-h-mechanical-chrono.html
+  - https://www.hamiltonwatch.com/en-us/h38429861-american-classic-chronograph-h-mechanical-chrono.html
+references:
+  - ref: H38429541
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38429541.png
+      page: https://www.hamiltonwatch.com/en-us/h38429541-american-classic-chronograph-h-mechanical-chrono.html
+    price: { amount: 2445, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-51"
+    movementType: mechanical
+    complications: [chronograph]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H38429591
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38429591.png
+      page: https://www.hamiltonwatch.com/en-us/h38429591-american-classic-chronograph-h-mechanical-chrono.html
+    price: { amount: 2445, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H38429861
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38429861.png
+      page: https://www.hamiltonwatch.com/en-us/h38429861-american-classic-chronograph-h-mechanical-chrono.html
+    price: { amount: 2445, currency: USD, year: 2026 }
+    movementType: mechanical

@@ -1,0 +1,35 @@
+name: Khaki Pilot Pioneer Mechanical Chrono
+line: hamilton/khaki-aviation
+style: chronograph
+theme: aviation
+website: https://www.hamiltonwatch.com/en-us/h76409530-khaki-aviation-pioneer-mechanical-chrono.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h76409140-khaki-aviation-pioneer-mechanical-chrono.html
+  - https://www.hamiltonwatch.com/en-us/h76409530-khaki-aviation-pioneer-mechanical-chrono.html
+  - https://www.hamiltonwatch.com/en-us/h76409540-khaki-aviation-pioneer-mechanical-chrono.html
+references:
+  - ref: H76409140
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76409140.png
+      page: https://www.hamiltonwatch.com/en-us/h76409140-khaki-aviation-pioneer-mechanical-chrono.html
+    price: { amount: 2445, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H76409530
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76409530.png
+      page: https://www.hamiltonwatch.com/en-us/h76409530-khaki-aviation-pioneer-mechanical-chrono.html
+    price: { amount: 2395, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-51-Si"
+    movementType: mechanical
+    complications: [chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H76409540
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76409540.png
+      page: https://www.hamiltonwatch.com/en-us/h76409540-khaki-aviation-pioneer-mechanical-chrono.html
+    price: { amount: 2395, currency: USD, year: 2026 }
+    movementType: mechanical

@@ -1,0 +1,34 @@
+name: Jazzmaster Day Date Auto
+line: hamilton/jazzmaster
+style: dress
+website: https://www.hamiltonwatch.com/en-us/h32505131-jazzmaster-day-date-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h32505131-jazzmaster-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h32505141-jazzmaster-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h32505511-jazzmaster-day-date-auto.html
+references:
+  - ref: H32505131
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32505131.png
+      page: https://www.hamiltonwatch.com/en-us/h32505131-jazzmaster-day-date-auto.html
+    price: { amount: 1045, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-40"
+    movementType: mechanical
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: H32505141
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32505141.png
+      page: https://www.hamiltonwatch.com/en-us/h32505141-jazzmaster-day-date-auto.html
+    price: { amount: 1045, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H32505511
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32505511.png
+      page: https://www.hamiltonwatch.com/en-us/h32505511-jazzmaster-day-date-auto.html
+    price: { amount: 995, currency: USD, year: 2026 }
+    movementType: mechanical

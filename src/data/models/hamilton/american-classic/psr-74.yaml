@@ -1,0 +1,34 @@
+name: PSR 74
+line: hamilton/american-classic
+style: everyday
+website: https://www.hamiltonwatch.com/en-us/h52314130-american-classic-psr-74-digital-quartz.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h52304130-american-classic-psr-74-digital-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h52314130-american-classic-psr-74-digital-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h52314530-american-classic-74-quartz.html
+references:
+  - ref: H52304130
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/5/h52304130.png
+      page: https://www.hamiltonwatch.com/en-us/h52304130-american-classic-psr-74-digital-quartz.html
+    price: { amount: 875, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H52314130
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/5/h52314130.png
+      page: https://www.hamiltonwatch.com/en-us/h52314130-american-classic-psr-74-digital-quartz.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    caseSize: 26
+    metals: [steel]
+    caseColors: [{ color: gold, name: Yellow gold PVD }]
+    crystal: sapphire
+    movement: "H-40e"
+    movementType: quartz
+    complications: [date]
+    bracelets: [{ type: bracelet }]
+  - ref: H52314530
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/5/h52314530.png
+      page: https://www.hamiltonwatch.com/en-us/h52314530-american-classic-74-quartz.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    movementType: quartz

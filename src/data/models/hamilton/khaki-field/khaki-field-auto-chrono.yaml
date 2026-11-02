@@ -1,0 +1,26 @@
+name: Khaki Field Auto Chrono
+line: hamilton/khaki-field
+style: chronograph
+website: https://www.hamiltonwatch.com/en-us/h71626735-khaki-field-auto-chrono.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h71626735-khaki-field-auto-chrono.html
+  - https://www.hamiltonwatch.com/en-us/h71636330-khaki-field-day-date-auto-chrono-resident-evil-requiem-limited-edition.html
+references:
+  - ref: H71626735
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h71626735.png
+      page: https://www.hamiltonwatch.com/en-us/h71626735-khaki-field-auto-chrono.html
+    price: { amount: 2175, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    caseColors: [{ color: black, name: Black PVD }]
+    crystal: sapphire
+    movement: "H-21"
+    movementType: mechanical
+    complications: [date, day, chronograph]
+  - ref: H71636330
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h71636330.png
+      page: https://www.hamiltonwatch.com/en-us/h71636330-khaki-field-day-date-auto-chrono-resident-evil-requiem-limited-edition.html
+    price: { amount: 2175, currency: USD, year: 2026 }
+    movementType: mechanical

@@ -1,0 +1,76 @@
+name: Jazzmaster Quartz
+line: hamilton/jazzmaster
+style: dress
+website: https://www.hamiltonwatch.com/en-us/h32461131-jazzmaster-quartz.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h32301141-jazzmaster-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h32301161-jazzmaster-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h32301171-jazzmaster-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h32301181-jazzmaster-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h32461121-jazzmaster-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h32461131-jazzmaster-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h32461141-jazzmaster-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h32461161-jazzmaster-quartz.html
+references:
+  - ref: H32301141
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32301141.png
+      page: https://www.hamiltonwatch.com/en-us/h32301141-jazzmaster-quartz.html
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 32
+    movementType: quartz
+  - ref: H32301161
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32301161.png
+      page: https://www.hamiltonwatch.com/en-us/h32301161-jazzmaster-quartz.html
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 32
+    movementType: quartz
+  - ref: H32301171
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32301171.png
+      page: https://www.hamiltonwatch.com/en-us/h32301171-jazzmaster-quartz.html
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 32
+    movementType: quartz
+  - ref: H32301181
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32301181.png
+      page: https://www.hamiltonwatch.com/en-us/h32301181-jazzmaster-quartz.html
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 32
+    movementType: quartz
+  - ref: H32461121
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32461121.png
+      page: https://www.hamiltonwatch.com/en-us/h32461121-jazzmaster-quartz.html
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: quartz
+  - ref: H32461131
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32461131.png
+      page: https://www.hamiltonwatch.com/en-us/h32461131-jazzmaster-quartz.html
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "F06.105"
+    movementType: quartz
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: H32461141
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32461141.png
+      page: https://www.hamiltonwatch.com/en-us/h32461141-jazzmaster-quartz.html
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: quartz
+  - ref: H32461161
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32461161.png
+      page: https://www.hamiltonwatch.com/en-us/h32461161-jazzmaster-quartz.html
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: quartz

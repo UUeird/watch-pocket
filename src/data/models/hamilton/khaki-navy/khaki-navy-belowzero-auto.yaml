@@ -1,0 +1,34 @@
+name: Khaki Navy BeLOWZERO Auto
+line: hamilton/khaki-navy
+style: dive
+website: https://www.hamiltonwatch.com/en-us/h78505330-khaki-navy-belowzero-1000m-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h78505330-khaki-navy-belowzero-1000m-auto.html
+  - https://www.hamiltonwatch.com/en-us/h78505332-khaki-navy-belowzero-auto-limited-edition.html
+  - https://www.hamiltonwatch.com/en-us/h78535380-khaki-navy-belowzero-auto-titanium.html
+references:
+  - ref: H78505330
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h78505330.png
+      page: https://www.hamiltonwatch.com/en-us/h78505330-khaki-navy-belowzero-1000m-auto.html
+    price: { amount: 2175, currency: USD, year: 2026 }
+    caseSize: 46
+    metals: [titanium]
+    crystal: sapphire
+    movement: "H-10"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+  - ref: H78505332
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h78505332.png
+      page: https://www.hamiltonwatch.com/en-us/h78505332-khaki-navy-belowzero-auto-limited-edition.html
+    price: { amount: 2095, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H78535380
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h78535380.png
+      page: https://www.hamiltonwatch.com/en-us/h78535380-khaki-navy-belowzero-auto-titanium.html
+    price: { amount: 1995, currency: USD, year: 2026 }
+    metals: [titanium]
+    movementType: mechanical

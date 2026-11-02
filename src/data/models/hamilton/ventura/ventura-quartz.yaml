@@ -3,9 +3,69 @@ line: hamilton/ventura
 style: dress
 website: https://www.hamiltonwatch.com/en-us/h24411732-ventura-quartz.html
 sources:
+  - https://www.hamiltonwatch.com/en-us/h24211732-ventura-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h24301131-ventura.html
+  - https://www.hamiltonwatch.com/en-us/h24301141-ventura-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h24301731-ventura.html
+  - https://www.hamiltonwatch.com/en-us/h24301941-ventura-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h24411142-ventura-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h24411143-ventura-l-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h24411232-ventura-quartz.html
   - https://www.hamiltonwatch.com/en-us/h24411732-ventura-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h24411942-ventura-quartz.html
 references:
+  - ref: H24211732
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24211732.png
+      page: https://www.hamiltonwatch.com/en-us/h24211732-ventura-quartz.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H24301131
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24301131.png
+      page: https://www.hamiltonwatch.com/en-us/h24301131-ventura.html
+    price: { amount: 1145, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H24301141
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24301141.png
+      page: https://www.hamiltonwatch.com/en-us/h24301141-ventura-quartz.html
+    price: { amount: 1145, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H24301731
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24301731.png
+      page: https://www.hamiltonwatch.com/en-us/h24301731-ventura.html
+    price: { amount: 1145, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H24301941
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24301941.png
+      page: https://www.hamiltonwatch.com/en-us/h24301941-ventura-quartz.html
+    price: { amount: 1125, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H24411142
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24411142.png
+      page: https://www.hamiltonwatch.com/en-us/h24411142-ventura-quartz.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H24411143
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24411143.png
+      page: https://www.hamiltonwatch.com/en-us/h24411143-ventura-l-quartz.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H24411232
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24411232.png
+      page: https://www.hamiltonwatch.com/en-us/h24411232-ventura-quartz.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    movementType: quartz
   - ref: H24411732
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24411732.png
+      page: https://www.hamiltonwatch.com/en-us/h24411732-ventura-quartz.html
     price: { amount: 1075, currency: USD, year: 2026 }
     caseSize: 32
     metals: [steel]
@@ -14,3 +74,9 @@ references:
     movementType: quartz
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
+  - ref: H24411942
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24411942.png
+      page: https://www.hamiltonwatch.com/en-us/h24411942-ventura-quartz.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    movementType: quartz

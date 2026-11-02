@@ -10,6 +10,7 @@ manufacturing: [Switzerland]
 periods: [{ from: 1892 }]
 segment: mid-range
 makes: [mechanical-watches, quartz-watches]
+website: https://www.hamiltonwatch.com
 ownership:
   - owner: swatch-group
     from: 1983

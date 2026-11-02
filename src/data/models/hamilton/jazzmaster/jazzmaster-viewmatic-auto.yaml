@@ -1,0 +1,34 @@
+name: Jazzmaster Viewmatic Auto
+line: hamilton/jazzmaster
+style: dress
+website: https://www.hamiltonwatch.com/en-us/h32515145-jazzmaster-viewmatic-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h32515145-jazzmaster-viewmatic-auto.html
+  - https://www.hamiltonwatch.com/en-us/h32515155-jazzmaster-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h32515555-jazzmaster-day-date-auto.html
+references:
+  - ref: H32515145
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32515145.png
+      page: https://www.hamiltonwatch.com/en-us/h32515145-jazzmaster-viewmatic-auto.html
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-10"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: H32515155
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32515155.png
+      page: https://www.hamiltonwatch.com/en-us/h32515155-jazzmaster-day-date-auto.html
+    price: { amount: 995, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H32515555
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32515555.png
+      page: https://www.hamiltonwatch.com/en-us/h32515555-jazzmaster-day-date-auto.html
+    price: { amount: 945, currency: USD, year: 2026 }
+    movementType: mechanical

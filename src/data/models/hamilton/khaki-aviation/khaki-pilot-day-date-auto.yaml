@@ -1,0 +1,49 @@
+name: Khaki Pilot Day Date Auto
+line: hamilton/khaki-aviation
+style: pilot
+theme: aviation
+website: https://www.hamiltonwatch.com/en-us/h64615135-khaki-aviation-pilot-day-date-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h64615135-khaki-aviation-pilot-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h64615735-khaki-aviation-pilot-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h64635140-khaki-aviation-auto.html
+  - https://www.hamiltonwatch.com/en-us/h64635560-khaki-aviation-auto.html
+  - https://www.hamiltonwatch.com/en-us/h64655941-khaki-aviation-day-date-auto.html
+references:
+  - ref: H64615135
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64615135.png
+      page: https://www.hamiltonwatch.com/en-us/h64615135-khaki-aviation-pilot-day-date-auto.html
+    price: { amount: 1125, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-40"
+    movementType: mechanical
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: H64615735
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64615735.png
+      page: https://www.hamiltonwatch.com/en-us/h64615735-khaki-aviation-pilot-day-date-auto.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H64635140
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64635140.png
+      page: https://www.hamiltonwatch.com/en-us/h64635140-khaki-aviation-auto.html
+    price: { amount: 1125, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H64635560
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64635560.png
+      page: https://www.hamiltonwatch.com/en-us/h64635560-khaki-aviation-auto.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H64655941
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64655941.png
+      page: https://www.hamiltonwatch.com/en-us/h64655941-khaki-aviation-day-date-auto.html
+    price: { amount: 1575, currency: USD, year: 2026 }
+    movementType: mechanical

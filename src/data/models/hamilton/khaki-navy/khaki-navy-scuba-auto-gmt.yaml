@@ -1,0 +1,53 @@
+name: Khaki Navy Scuba Auto GMT
+line: hamilton/khaki-navy
+style: dive
+website: https://www.hamiltonwatch.com/en-us/h82555130-khaki-navy-gmt-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h82535140-khaki-navy-gmt-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82555130-khaki-navy-gmt-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82555150-khaki-navy-scuba-gmt-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82555330-khaki-navy-gmt-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82565930-khaki-navy-scuba-gmt-auto-bronze.html
+references:
+  - ref: H82535140
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82535140.png
+      page: https://www.hamiltonwatch.com/en-us/h82535140-khaki-navy-gmt-auto.html
+    price: { amount: 1525, currency: USD, year: 2026 }
+    caseSize: 43
+    movementType: mechanical
+  - ref: H82555130
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82555130.png
+      page: https://www.hamiltonwatch.com/en-us/h82555130-khaki-navy-gmt-auto.html
+    price: { amount: 1525, currency: USD, year: 2026 }
+    caseSize: 43
+    metals: [steel]
+    bezel: { material: ceramic }
+    crystal: sapphire
+    movement: "H-14"
+    movementType: mechanical
+    complications: [date, gmt]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: H82555150
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82555150.png
+      page: https://www.hamiltonwatch.com/en-us/h82555150-khaki-navy-scuba-gmt-auto.html
+    price: { amount: 1525, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H82555330
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82555330.png
+      page: https://www.hamiltonwatch.com/en-us/h82555330-khaki-navy-gmt-auto.html
+    price: { amount: 1525, currency: USD, year: 2026 }
+    caseSize: 43
+    movementType: mechanical
+  - ref: H82565930
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82565930.png
+      page: https://www.hamiltonwatch.com/en-us/h82565930-khaki-navy-scuba-gmt-auto-bronze.html
+    price: { amount: 1675, currency: USD, year: 2026 }
+    caseSize: 43
+    metals: [bronze]
+    movementType: mechanical
