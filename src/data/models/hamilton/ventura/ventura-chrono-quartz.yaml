@@ -1,0 +1,34 @@
+name: Ventura Chrono Quartz
+line: hamilton/ventura
+style: chronograph
+website: https://www.hamiltonwatch.com/en-us/h24432141-ventura-chrono-quartz.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h24412732-ventura-chrono-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h24432141-ventura-chrono-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h24432941-ventura-chrono-quartz.html
+references:
+  - ref: H24412732
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24412732.png
+      page: https://www.hamiltonwatch.com/en-us/h24412732-ventura-chrono-quartz.html
+    price: { amount: 1245, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H24432141
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24432141.png
+      page: https://www.hamiltonwatch.com/en-us/h24432141-ventura-chrono-quartz.html
+    price: { amount: 1245, currency: USD, year: 2026 }
+    caseSize: 32
+    metals: [steel]
+    crystal: sapphire
+    movement: "251.474"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: H24432941
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24432941.png
+      page: https://www.hamiltonwatch.com/en-us/h24432941-ventura-chrono-quartz.html
+    price: { amount: 1245, currency: USD, year: 2026 }
+    movementType: quartz

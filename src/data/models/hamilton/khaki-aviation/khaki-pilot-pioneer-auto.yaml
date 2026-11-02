@@ -1,0 +1,43 @@
+name: Khaki Pilot Pioneer Auto
+line: hamilton/khaki-aviation
+style: pilot
+theme: aviation
+website: https://www.hamiltonwatch.com/en-us/h76205530-khaki-aviation-pilot-pioneer.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h76205530-khaki-aviation-pilot-pioneer.html
+  - https://www.hamiltonwatch.com/en-us/h76255810-khaki-aviation-pioneer-auto.html
+  - https://www.hamiltonwatch.com/en-us/h76265810-khaki-aviation-pioneer-auto.html
+references:
+  - ref: H76205530
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76205530_lowresweb.png
+      page: https://www.hamiltonwatch.com/en-us/h76205530-khaki-aviation-pilot-pioneer.html
+    price: { amount: 1095, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-10"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H76255810
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76255810.png
+      page: https://www.hamiltonwatch.com/en-us/h76255810-khaki-aviation-pioneer-auto.html
+    price: { amount: 1095, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: mechanical
+  - ref: H76265810
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76265810.png
+      page: https://www.hamiltonwatch.com/en-us/h76265810-khaki-aviation-pioneer-auto.html
+    price: { amount: 1095, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-10"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white, name: Eggshell white }]
+    bracelets: [{ type: leather-strap }]

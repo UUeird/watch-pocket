@@ -1,0 +1,36 @@
+name: Khaki Pilot Pioneer Mechanical
+line: hamilton/khaki-aviation
+style: pilot
+theme: aviation
+website: https://www.hamiltonwatch.com/en-us/h76419951-khaki-aviation-pioneer-mechanical.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h76419931-khaki-pilot.html
+  - https://www.hamiltonwatch.com/en-us/h76419951-khaki-aviation-pioneer-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h76719530-khaki-aviation-pilot-pioneer.html
+references:
+  - ref: H76419931
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76419931.png
+      page: https://www.hamiltonwatch.com/en-us/h76419931-khaki-pilot.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H76419951
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76419951.png
+      page: https://www.hamiltonwatch.com/en-us/h76419951-khaki-aviation-pioneer-mechanical.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    crystal: mineral
+    movement: "H-50"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: fabric-strap }]
+  - ref: H76719530
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76719530_lowresweb.png
+      page: https://www.hamiltonwatch.com/en-us/h76719530-khaki-aviation-pilot-pioneer.html
+    price: { amount: 1495, currency: USD, year: 2026 }
+    caseSize: 43
+    movementType: mechanical

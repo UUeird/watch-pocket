@@ -1,0 +1,55 @@
+name: Boulton
+line: hamilton/american-classic
+style: dress
+website: https://www.hamiltonwatch.com/en-us/h13321611-boulton.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h13321611-boulton.html
+  - https://www.hamiltonwatch.com/en-us/h13321811-boulton.html
+  - https://www.hamiltonwatch.com/en-us/h13421611-boulton.html
+  - https://www.hamiltonwatch.com/en-us/h13431553-boulton-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h13519711-boulton-mechanical.html
+references:
+  - ref: H13321611
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/1/h13321611.png
+      page: https://www.hamiltonwatch.com/en-us/h13321611-boulton.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 24
+    metals: [steel]
+    crystal: sapphire
+    movement: "980.163"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H13321811
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/1/h13321811.png
+      page: https://www.hamiltonwatch.com/en-us/h13321811-boulton.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H13421611
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/1/h13421611.png
+      page: https://www.hamiltonwatch.com/en-us/h13421611-boulton.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H13431553
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/1/h13431553_1.png
+      page: https://www.hamiltonwatch.com/en-us/h13431553-boulton-quartz.html
+    price: { amount: 845, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H13519711
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/1/h13519711.png
+      page: https://www.hamiltonwatch.com/en-us/h13519711-boulton-mechanical.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-50"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]

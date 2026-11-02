@@ -1,0 +1,49 @@
+name: Khaki X-Wind Day Date Auto
+line: hamilton/khaki-aviation
+style: pilot
+theme: aviation
+website: https://www.hamiltonwatch.com/en-us/h77735560-khaki-aviation-day-date-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h77735560-khaki-aviation-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h77755133-khaki-aviation-x-wind-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h77755533-khaki-aviation-x-wind-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h77765141-khaki-x-wind.html
+  - https://www.hamiltonwatch.com/en-us/h77765541-khaki-x-wind.html
+references:
+  - ref: H77735560
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77735560_1.png
+      page: https://www.hamiltonwatch.com/en-us/h77735560-khaki-aviation-day-date-auto.html
+    price: { amount: 1375, currency: USD, year: 2026 }
+    caseSize: 45
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-30"
+    movementType: mechanical
+    complications: [date, day]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H77755133
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77755133.png
+      page: https://www.hamiltonwatch.com/en-us/h77755133-khaki-aviation-x-wind-day-date-auto.html
+    price: { amount: 1425, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H77755533
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77755533.png
+      page: https://www.hamiltonwatch.com/en-us/h77755533-khaki-aviation-x-wind-day-date-auto.html
+    price: { amount: 1375, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H77765141
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77765141.png
+      page: https://www.hamiltonwatch.com/en-us/h77765141-khaki-x-wind.html
+    price: { amount: 1425, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H77765541
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77765541.png
+      page: https://www.hamiltonwatch.com/en-us/h77765541-khaki-x-wind.html
+    price: { amount: 1375, currency: USD, year: 2026 }
+    movementType: mechanical

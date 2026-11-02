@@ -1,0 +1,28 @@
+name: Ventura Elvis80 Auto
+line: hamilton/ventura
+style: dress
+theme: music
+website: https://www.hamiltonwatch.com/en-us/h24555331-ventura-elvis80-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h24555331-ventura-elvis80-auto.html
+  - https://www.hamiltonwatch.com/en-us/h24585331-ventura-elvis80-auto.html
+references:
+  - ref: H24555331
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24555331.png
+      page: https://www.hamiltonwatch.com/en-us/h24555331-ventura-elvis80-auto.html
+    price: { amount: 1945, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-10"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: H24585331
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24585331.png
+      page: https://www.hamiltonwatch.com/en-us/h24585331-ventura-elvis80-auto.html
+    price: { amount: 1995, currency: USD, year: 2026 }
+    movementType: mechanical

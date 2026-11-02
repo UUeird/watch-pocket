@@ -1,0 +1,35 @@
+name: Khaki X-Wind Auto Chrono
+line: hamilton/khaki-aviation
+style: chronograph
+theme: aviation
+website: https://www.hamiltonwatch.com/en-us/h77616533-khaki-aviation-x-wind-auto-chrono.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h77506540-khaki-aviation-day-date-auto-chrono.html
+  - https://www.hamiltonwatch.com/en-us/h77616533-khaki-aviation-x-wind-auto-chrono.html
+  - https://www.hamiltonwatch.com/en-us/h77916920-khaki-x-wind-auto-chrono-45mm.html
+references:
+  - ref: H77506540
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77506540.png
+      page: https://www.hamiltonwatch.com/en-us/h77506540-khaki-aviation-day-date-auto-chrono.html
+    price: { amount: 2095, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H77616533
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77616533.png
+      page: https://www.hamiltonwatch.com/en-us/h77616533-khaki-aviation-x-wind-auto-chrono.html
+    price: { amount: 2095, currency: USD, year: 2026 }
+    caseSize: 44
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-21"
+    movementType: mechanical
+    complications: [date, day, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H77916920
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77916920.png
+      page: https://www.hamiltonwatch.com/en-us/h77916920-khaki-x-wind-auto-chrono-45mm.html
+    price: { amount: 2595, currency: USD, year: 2026 }
+    movementType: mechanical

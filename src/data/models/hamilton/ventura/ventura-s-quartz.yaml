@@ -1,0 +1,34 @@
+name: Ventura S Quartz
+line: hamilton/ventura
+style: dress
+website: https://www.hamiltonwatch.com/en-us/h24211130-ventura-quartz.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h24211130-ventura-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h24211142-ventura-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h24211170-ventura-quartz.html
+references:
+  - ref: H24211130
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24211130.png
+      page: https://www.hamiltonwatch.com/en-us/h24211130-ventura-quartz.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    caseSize: 24
+    metals: [steel]
+    crystal: mineral
+    movement: "F03.105"
+    movementType: quartz
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: H24211142
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24211142.png
+      page: https://www.hamiltonwatch.com/en-us/h24211142-ventura-quartz.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H24211170
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24211170.png
+      page: https://www.hamiltonwatch.com/en-us/h24211170-ventura-quartz.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    movementType: quartz

@@ -1,0 +1,64 @@
+name: Intra-Matic Auto Chrono
+line: hamilton/american-classic
+style: chronograph
+website: https://www.hamiltonwatch.com/en-us/h38446730-american-classic-auto-chrono.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h38416111-american-classic-intra-matic-auto-chrono.html
+  - https://www.hamiltonwatch.com/en-us/h38416541-intra-matic.html
+  - https://www.hamiltonwatch.com/en-us/h38416560-american-classic-intra-matic-auto-chrono-40mm.html
+  - https://www.hamiltonwatch.com/en-us/h38416711-intramatic-auto-chrono.html
+  - https://www.hamiltonwatch.com/en-us/h38446730-american-classic-auto-chrono.html
+  - https://www.hamiltonwatch.com/en-us/h38446731-american-classic-auto-chrono.html
+  - https://www.hamiltonwatch.com/en-us/h38446732-american-classic-auto-chrono.html
+references:
+  - ref: H38416111
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38416111.png
+      page: https://www.hamiltonwatch.com/en-us/h38416111-american-classic-intra-matic-auto-chrono.html
+    price: { amount: 2645, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H38416541
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38416541.png
+      page: https://www.hamiltonwatch.com/en-us/h38416541-intra-matic.html
+    price: { amount: 2595, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H38416560
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38416560.png
+      page: https://www.hamiltonwatch.com/en-us/h38416560-american-classic-intra-matic-auto-chrono-40mm.html
+    price: { amount: 2595, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: mechanical
+  - ref: H38416711
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38416711.png
+      page: https://www.hamiltonwatch.com/en-us/h38416711-intramatic-auto-chrono.html
+    price: { amount: 2595, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H38446730
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38446730.png
+      page: https://www.hamiltonwatch.com/en-us/h38446730-american-classic-auto-chrono.html
+    price: { amount: 2625, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: black, name: Black PVD }]
+    crystal: sapphire
+    movement: "H-31"
+    movementType: mechanical
+    complications: [date, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H38446731
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38446731.png
+      page: https://www.hamiltonwatch.com/en-us/h38446731-american-classic-auto-chrono.html
+    price: { amount: 2625, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H38446732
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38446732.png
+      page: https://www.hamiltonwatch.com/en-us/h38446732-american-classic-auto-chrono.html
+    price: { amount: 2625, currency: USD, year: 2026 }
+    movementType: mechanical

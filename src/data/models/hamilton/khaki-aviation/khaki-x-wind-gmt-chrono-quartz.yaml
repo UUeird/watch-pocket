@@ -1,0 +1,42 @@
+name: Khaki X-Wind GMT Chrono Quartz
+line: hamilton/khaki-aviation
+style: travel
+theme: aviation
+website: https://www.hamiltonwatch.com/en-us/h77912135-khaki-aviation-x-wind-gmt-chrono-quartz.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h77912135-khaki-aviation-x-wind-gmt-chrono-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h77912335-khaki-aviation-x-wind-gmt-chrono-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h77922141-khaki-x-wind.html
+  - https://www.hamiltonwatch.com/en-us/h77922541-khaki-x-wind.html
+references:
+  - ref: H77912135
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77912135.png
+      page: https://www.hamiltonwatch.com/en-us/h77912135-khaki-aviation-x-wind-gmt-chrono-quartz.html
+    price: { amount: 1245, currency: USD, year: 2026 }
+    caseSize: 46
+    metals: [steel]
+    crystal: sapphire
+    movement: "G10.962"
+    movementType: quartz
+    complications: [date, chronograph, gmt]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: H77912335
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77912335.png
+      page: https://www.hamiltonwatch.com/en-us/h77912335-khaki-aviation-x-wind-gmt-chrono-quartz.html
+    price: { amount: 1245, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H77922141
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77922141.png
+      page: https://www.hamiltonwatch.com/en-us/h77922141-khaki-x-wind.html
+    price: { amount: 1245, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H77922541
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77922541.png
+      page: https://www.hamiltonwatch.com/en-us/h77922541-khaki-x-wind.html
+    price: { amount: 1195, currency: USD, year: 2026 }
+    movementType: quartz

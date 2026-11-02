@@ -1,0 +1,20 @@
+name: Jazzmaster Gent Quartz
+line: hamilton/jazzmaster
+style: dress
+website: https://www.hamiltonwatch.com/en-us/h32451141-jazzmaster-gent-quartz.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h32451141-jazzmaster-gent-quartz.html
+references:
+  - ref: H32451141
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32451141.png
+      page: https://www.hamiltonwatch.com/en-us/h32451141-jazzmaster-gent-quartz.html
+    price: { amount: 745, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "F06.111"
+    movementType: quartz
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]

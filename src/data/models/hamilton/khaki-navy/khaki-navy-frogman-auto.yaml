@@ -1,0 +1,41 @@
+name: Khaki Navy Frogman Auto
+line: hamilton/khaki-navy
+style: dive
+website: https://www.hamiltonwatch.com/en-us/h77825330-khaki-navy-frogman-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h77825330-khaki-navy-frogman-auto.html
+  - https://www.hamiltonwatch.com/en-us/h77825331-khaki-navy-frogman-auto.html
+  - https://www.hamiltonwatch.com/en-us/h77845330-khaki-navy-frogman-auto.html
+  - https://www.hamiltonwatch.com/en-us/h77855330-khaki-navy-frogman-auto.html
+references:
+  - ref: H77825330
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77825330_lowresweb.png
+      page: https://www.hamiltonwatch.com/en-us/h77825330-khaki-navy-frogman-auto.html
+    price: { amount: 1395, currency: USD, year: 2026 }
+    caseSize: 46
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-10"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: H77825331
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77825331_lowres.png
+      page: https://www.hamiltonwatch.com/en-us/h77825331-khaki-navy-frogman-auto.html
+    price: { amount: 1395, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H77845330
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77845330_lowresweb.png
+      page: https://www.hamiltonwatch.com/en-us/h77845330-khaki-navy-frogman-auto.html
+    price: { amount: 1545, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H77855330
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77855330.png
+      page: https://www.hamiltonwatch.com/en-us/h77855330-khaki-navy-frogman-auto.html
+    price: { amount: 1545, currency: USD, year: 2026 }
+    movementType: mechanical

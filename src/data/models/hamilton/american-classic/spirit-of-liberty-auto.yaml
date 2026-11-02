@@ -1,0 +1,27 @@
+name: Spirit of Liberty Auto
+line: hamilton/american-classic
+style: dress
+website: https://www.hamiltonwatch.com/en-us/h42415541-american-classic-spirit-of-liberty-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h42415541-american-classic-spirit-of-liberty-auto.html
+  - https://www.hamiltonwatch.com/en-us/h42415551-american-classic-spirit-of-liberty-auto.html
+references:
+  - ref: H42415541
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/4/h42415541.png
+      page: https://www.hamiltonwatch.com/en-us/h42415541-american-classic-spirit-of-liberty-auto.html
+    price: { amount: 1195, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-10"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H42415551
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/4/h42415551.png
+      page: https://www.hamiltonwatch.com/en-us/h42415551-american-classic-spirit-of-liberty-auto.html
+    price: { amount: 1195, currency: USD, year: 2026 }
+    movementType: mechanical

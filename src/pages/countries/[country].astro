@@ -5,7 +5,7 @@ import { countries, type CountryName } from '../../lib/countries';
 import { brandYears, countryHref, countrySlug, href, loadCatalog, plural, type Brand } from '../../lib/catalog';
 
 export async function getStaticPaths() {
-  const { brands } = await loadCatalog();
+  const { brands } = await loadCatalog(null);
   const countries = new Set(
     brands.flatMap(({ data }) => [data.origin, data.headquarters, ...data.manufacturing].filter((name) => name !== undefined)),
   );
@@ -21,7 +21,7 @@ interface Props {
 
 const { country } = Astro.props;
 const { flag } = countries[country];
-const { brands } = await loadCatalog();
+const { brands } = await loadCatalog(Astro.request);
 const founded = brands.filter((brand) => brand.data.origin === country);
 // Brands from elsewhere that are run from, or made in, this country.
 const elsewhere = (brand: Brand) => brand.data.origin !== country;

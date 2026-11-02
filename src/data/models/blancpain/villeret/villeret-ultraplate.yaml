@@ -1,0 +1,30 @@
+name: "Villeret Ultraplate"
+line: blancpain/villeret
+style: dress
+website: https://www.blancpain.com/en/villeret/villeret-ultraplate-6224n-1135-55b
+sources:
+  - https://www.blancpain.com/en/villeret/villeret-ultraplate-6224n-1135-55b
+  - https://www.blancpain.com/en/villeret/villeret-ultraplate-6224n-1142-55b-0
+references:
+  - ref: "6224N 1135 55B"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/e35e9884-ede5-47db-9849-f5ae8bde0939/Villeret_Ultraplate_6224N_1135_55B_Soldier_Face_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/villeret/villeret-ultraplate-6224n-1135-55b
+    caseSize: 38
+    metals: [steel]
+    movement: "1150"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: pink }]
+    bracelets: [{ type: leather-strap }]
+  - ref: "6224N A 1142 55B"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/fa0beb6f-e4b1-4f30-bb02-1d6c17c3f1a3/Villeret_Ultraplate_6224N_A_1142_55B_Soldier_Face_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/villeret/villeret-ultraplate-6224n-1142-55b-0
+    caseSize: 38
+    metals: [steel]
+    movement: "1150"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: white, name: "Opaline" }]
+    bracelets: [{ type: leather-strap }]

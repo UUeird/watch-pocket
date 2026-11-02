@@ -1,0 +1,95 @@
+name: Khaki Field King
+line: hamilton/khaki-field
+style: field
+website: https://www.hamiltonwatch.com/en-us/h64455533-khaki-field-kingauto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h64455133-khaki-field-king-auto.html
+  - https://www.hamiltonwatch.com/en-us/h64455523-khaki-field-king-auto.html
+  - https://www.hamiltonwatch.com/en-us/h64455533-khaki-field-kingauto.html
+  - https://www.hamiltonwatch.com/en-us/h64465733-khaki-field-king.html
+  - https://www.hamiltonwatch.com/en-us/h64475131-khaki-field-king-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h64475140-khaki-field-king-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h64475160-khaki-field-king-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h64475531-khaki-field-king-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h64475540-khaki-field-king-day-date-auto.html
+  - https://www.hamiltonwatch.com/en-us/h64475560-khaki-field-king-day-date-auto.html
+references:
+  - ref: H64455133
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64455133.png
+      page: https://www.hamiltonwatch.com/en-us/h64455133-khaki-field-king-auto.html
+    price: { amount: 845, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H64455523
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64455523.png
+      page: https://www.hamiltonwatch.com/en-us/h64455523-khaki-field-king-auto.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H64455533
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64455533.png
+      page: https://www.hamiltonwatch.com/en-us/h64455533-khaki-field-kingauto.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-40"
+    movementType: mechanical
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H64465733
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64465733.png
+      page: https://www.hamiltonwatch.com/en-us/h64465733-khaki-field-king.html
+    price: { amount: 925, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H64475131
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64475131.png
+      page: https://www.hamiltonwatch.com/en-us/h64475131-khaki-field-king-day-date-auto.html
+    price: { amount: 845, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: mechanical
+  - ref: H64475140
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64475140.png
+      page: https://www.hamiltonwatch.com/en-us/h64475140-khaki-field-king-day-date-auto.html
+    price: { amount: 845, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: mechanical
+  - ref: H64475160
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64475160.png
+      page: https://www.hamiltonwatch.com/en-us/h64475160-khaki-field-king-day-date-auto.html
+    price: { amount: 845, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: mechanical
+  - ref: H64475531
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64475531.png
+      page: https://www.hamiltonwatch.com/en-us/h64475531-khaki-field-king-day-date-auto.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: mechanical
+  - ref: H64475540
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64475540.png
+      page: https://www.hamiltonwatch.com/en-us/h64475540-khaki-field-king-day-date-auto.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-40"
+    movementType: mechanical
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H64475560
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64475560.png
+      page: https://www.hamiltonwatch.com/en-us/h64475560-khaki-field-king-day-date-auto.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: mechanical

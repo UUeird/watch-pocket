@@ -3,7 +3,7 @@ import Filters from '../../components/Filters.astro';
 import Base from '../../layouts/Base.astro';
 import { href, label, lineHref, loadCatalog } from '../../lib/catalog';
 
-const { brands, lines, models } = await loadCatalog();
+const { brands, lines, models } = await loadCatalog(Astro.request);
 // Grouped by brand, then line, then model name, with numbers in number order.
 const rows = models
   .map((model) => {

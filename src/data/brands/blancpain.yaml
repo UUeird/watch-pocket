@@ -5,11 +5,28 @@ logoCredit:
   source: https://commons.wikimedia.org/wiki/File:Blancpain_logo.svg
   license: Public domain
 origin: Switzerland
+headquarters: Switzerland
+manufacturing: [Switzerland]
 periods: [{ from: 1735 }]
 segment: haute
 makes: [mechanical-watches, movements]
+website: https://www.blancpain.com
+pressKit: https://www.blancpain.com/en/press-lounge
 ownership:
+  - owner: ssih
+    from: 1961
+    to: 1983
+    sources:
+      - https://www.blancpain.com/en/brand/history
+  - owner: frederic-piguet
+    from: 1983
+    to: 1992
+    sources:
+      - https://www.blancpain.com/en/brand/history
   - owner: swatch-group
     from: 1992
+    sources:
+      - https://www.blancpain.com/en/brand/history
 sources:
   - https://en.wikipedia.org/wiki/Blancpain
+  - https://www.blancpain.com/en/brand/history

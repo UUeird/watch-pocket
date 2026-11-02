@@ -1,0 +1,17 @@
+name: "Métiers d'Art 8 Jours Manuelle"
+line: blancpain/metiers-d-art
+style: showpiece
+website: https://www.blancpain.com/en/metiers-dart/metiers-dart-8-jours-manuelle-6612-3433-63ab
+sources:
+  - https://www.blancpain.com/en/metiers-dart/metiers-dart-8-jours-manuelle-6612-3433-63ab
+references:
+  - ref: "6612 3433 63AB"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/fb95d860-fce4-4410-a59d-be39801ed043/6612_3433_63A0B_Metiers_D-Art_Shakudo_Soldier_Front_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/metiers-dart/metiers-dart-8-jours-manuelle-6612-3433-63ab
+    caseSize: 42
+    metals: [platinum]
+    movement: "13R3A"
+    movementType: mechanical
+    complications: [power-reserve]
+    bracelets: [{ type: leather-strap }]

@@ -3,7 +3,7 @@ import Filters from '../../components/Filters.astro';
 import Base from '../../layouts/Base.astro';
 import { formatPeriods, href, lineHref, loadCatalog } from '../../lib/catalog';
 
-const { brands, lines, modelsOf } = await loadCatalog();
+const { brands, lines, modelsOf } = await loadCatalog(Astro.request);
 const brandOf = (line: (typeof lines)[number]) => brands.find((brand) => brand.id === line.data.brand.id)!;
 const status = (line: (typeof lines)[number]) =>
   line.data.periods.length === 0 ? undefined : line.data.periods.at(-1)!.to === undefined ? 'current' : 'discontinued';

@@ -1,0 +1,33 @@
+name: PSR Digital Quartz
+line: hamilton/american-classic
+style: everyday
+website: https://www.hamiltonwatch.com/en-us/h52414130-american-classic-psr-digital-quartz.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h52404131-american-classic-psr-digital-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h52414130-american-classic-psr-digital-quartz.html
+  - https://www.hamiltonwatch.com/en-us/h52414131-american-classic-psr-digital-quartz.html
+references:
+  - ref: H52404131
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/5/h52404131.png
+      page: https://www.hamiltonwatch.com/en-us/h52404131-american-classic-psr-digital-quartz.html
+    price: { amount: 1225, currency: USD, year: 2026 }
+    movementType: quartz
+  - ref: H52414130
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/5/h52414130_silver.png
+      page: https://www.hamiltonwatch.com/en-us/h52414130-american-classic-psr-digital-quartz.html
+    price: { amount: 925, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-10e"
+    movementType: quartz
+    complications: []
+    bracelets: [{ type: bracelet }]
+  - ref: H52414131
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/5/h52414131.png
+      page: https://www.hamiltonwatch.com/en-us/h52414131-american-classic-psr-digital-quartz.html
+    price: { amount: 925, currency: USD, year: 2026 }
+    movementType: quartz

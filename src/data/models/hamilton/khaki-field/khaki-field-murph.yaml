@@ -1,0 +1,74 @@
+name: Khaki Field Murph
+line: hamilton/khaki-field
+style: field
+website: https://www.hamiltonwatch.com/en-us/h70405730-khaki-field-murph-38mm.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h70405130-khaki-field-murph-auto.html
+  - https://www.hamiltonwatch.com/en-us/h70405140-khaki-field-murph-auto.html
+  - https://www.hamiltonwatch.com/en-us/h70405710-khaki-field-murph-auto.html
+  - https://www.hamiltonwatch.com/en-us/h70405730-khaki-field-murph-38mm.html
+  - https://www.hamiltonwatch.com/en-us/h70405740-khaki-field-murph-auto.html
+  - https://www.hamiltonwatch.com/en-us/h70605731-khaki-field-murph-auto.html
+  - https://www.hamiltonwatch.com/en-us/h70605732-khaki-field-murph-auto-bundle.html
+references:
+  - ref: H70405130
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70405130.png
+      page: https://www.hamiltonwatch.com/en-us/h70405130-khaki-field-murph-auto.html
+    price: { amount: 1045, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: mechanical
+  - ref: H70405140
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70405140_soldier.png
+      page: https://www.hamiltonwatch.com/en-us/h70405140-khaki-field-murph-auto.html
+    price: { amount: 1045, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: mechanical
+  - ref: H70405710
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70405710.png
+      page: https://www.hamiltonwatch.com/en-us/h70405710-khaki-field-murph-auto.html
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: mechanical
+  - ref: H70405730
+    photos:
+      - file: ../../../photos/hamilton/khaki-field/khaki-field-murph-h70405730.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Hamilton_Khaki_Field_Murph_38mm.jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: EMore98
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70405730_1.png
+      page: https://www.hamiltonwatch.com/en-us/h70405730-khaki-field-murph-38mm.html
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-10"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H70405740
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70405740_soldier.png
+      page: https://www.hamiltonwatch.com/en-us/h70405740-khaki-field-murph-auto.html
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: mechanical
+  - ref: H70605731
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70605731_new_3_1.png
+      page: https://www.hamiltonwatch.com/en-us/h70605731-khaki-field-murph-auto.html
+    price: { amount: 1095, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H70605732
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/k/f/kf_murph_bundle_final.png
+      page: https://www.hamiltonwatch.com/en-us/h70605732-khaki-field-murph-auto-bundle.html
+    price: { amount: 1195, currency: USD, year: 2026 }
+    caseSize: 42
+    movementType: mechanical

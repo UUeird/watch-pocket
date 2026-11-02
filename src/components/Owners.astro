@@ -5,7 +5,7 @@ interface Props {
   brand: Brand;
 }
 
-const { ownerName } = await loadCatalog();
+const { ownerName } = await loadCatalog(Astro.request);
 const owners = currentOwners(Astro.props.brand);
 ---
 

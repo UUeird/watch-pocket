@@ -1,0 +1,75 @@
+name: Khaki Field Titanium Auto
+line: hamilton/khaki-field
+style: field
+website: https://www.hamiltonwatch.com/en-us/h70205830-khaki-field-titanium-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h70205140-khaki-field-titanium-auto.html
+  - https://www.hamiltonwatch.com/en-us/h70205830-khaki-field-titanium-auto.html
+  - https://www.hamiltonwatch.com/en-us/h70545140-khaki-field-auto.html
+  - https://www.hamiltonwatch.com/en-us/h70545540-khaki-field-titanium-auto.html
+  - https://www.hamiltonwatch.com/en-us/h70545550-khaki-field-auto.html
+  - https://www.hamiltonwatch.com/en-us/h70575733-khaki-field-titanium-auto.html
+  - https://www.hamiltonwatch.com/en-us/h70645533-khaki-field-titanium-far-cry-6.html
+  - https://www.hamiltonwatch.com/en-us/h70665533-khaki-field-auto.html
+references:
+  - ref: H70205140
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70205140.png
+      page: https://www.hamiltonwatch.com/en-us/h70205140-khaki-field-titanium-auto.html
+    price: { amount: 1295, currency: USD, year: 2026 }
+    metals: [titanium]
+    movementType: mechanical
+  - ref: H70205830
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70205830.png
+      page: https://www.hamiltonwatch.com/en-us/h70205830-khaki-field-titanium-auto.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [titanium]
+    crystal: sapphire
+    movement: "H-10"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: H70545140
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70545140.png
+      page: https://www.hamiltonwatch.com/en-us/h70545140-khaki-field-auto.html
+    price: { amount: 1345, currency: USD, year: 2026 }
+    metals: [titanium]
+    movementType: mechanical
+  - ref: H70545540
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70545540_lowresweb.png
+      page: https://www.hamiltonwatch.com/en-us/h70545540-khaki-field-titanium-auto.html
+    price: { amount: 1195, currency: USD, year: 2026 }
+    metals: [titanium]
+    movementType: mechanical
+  - ref: H70545550
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70545550.png
+      page: https://www.hamiltonwatch.com/en-us/h70545550-khaki-field-auto.html
+    price: { amount: 1195, currency: USD, year: 2026 }
+    metals: [titanium]
+    movementType: mechanical
+  - ref: H70575733
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70575733.png
+      page: https://www.hamiltonwatch.com/en-us/h70575733-khaki-field-titanium-auto.html
+    price: { amount: 1245, currency: USD, year: 2026 }
+    metals: [titanium]
+    movementType: mechanical
+  - ref: H70645533
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70645533.png
+      page: https://www.hamiltonwatch.com/en-us/h70645533-khaki-field-titanium-far-cry-6.html
+    price: { amount: 1195, currency: USD, year: 2026 }
+    metals: [titanium]
+  - ref: H70665533
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70665533.png
+      page: https://www.hamiltonwatch.com/en-us/h70665533-khaki-field-auto.html
+    price: { amount: 1245, currency: USD, year: 2026 }
+    metals: [titanium]
+    movementType: mechanical

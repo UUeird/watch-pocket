@@ -1,0 +1,83 @@
+name: "Fifty Fathoms Automatique"
+line: blancpain/fifty-fathoms
+style: dive
+website: https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5007-36b40-o64b
+sources:
+  - https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5007-36b40-o64b
+  - https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5010-12b40-o64b
+  - https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5010-1130-71s
+  - https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5007-12b44r-nafa
+  - https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5007-1130-71s
+  - https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5015-1130-71s
+references:
+  - ref: "5007 36B40 O64B"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/adb1a1d9-f60d-44be-abc0-e82d6d49db4d/5007_36B40_O64_Fifty_Fathoms_Automatique_Soldier_Front_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5007-36b40-o64b
+    caseSize: 38.2
+    metals: [rose-gold]
+    bezel: { style: dive }
+    movement: "1150"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "5010 12B40 O64B"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/31227405-c9eb-44d0-8fc6-86215e49d5ae/5010_12B40_064_Fifty_Fathoms_Automatic_Date_And_Seconds_Soldier_Front_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5010-12b40-o64b
+    caseSize: 42.3
+    metals: [titanium]
+    bezel: { style: dive }
+    movement: "1315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "5010 1130 71S"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/7d970e67-116d-4f36-b1a5-717fab17e6bf/5010_1130_71S_Fifty_Fathoms_Automatique_Soldier_Front_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5010-1130-71s
+    caseSize: 42.3
+    metals: [steel]
+    bezel: { style: dive }
+    movement: "1315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: "5007 12B44R NAFA"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/e414fbe1-9234-4b56-9a0c-4a6a2055df9f/5007_12B44R_NAFA_Fifty_Fathoms_Automatique_Soldier_Front_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5007-12b44r-nafa
+    caseSize: 38.2
+    metals: [titanium]
+    bezel: { style: dive }
+    movement: "1153"
+    movementType: mechanical
+    dials: [{ color: pink, name: "Pink mother-of-pearl" }]
+    bracelets: [{ type: fabric-strap }]
+  - ref: "5007 1130 71S"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/0de23671-dc02-4729-8e4e-781b12789034/5007_1130_71S_Fifty_Fathoms_Automatique_Soldier_Front_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5007-1130-71s
+    caseSize: 38.2
+    metals: [steel]
+    bezel: { style: dive }
+    movement: "1150"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: "5015 1130 71S"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/3b06c317-8d4a-4886-90d1-0f752e52e864/5015_1130_71S_Fifty_Fathoms_Automatique_Date_And_Seconds_Soldier_Front_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5015-1130-71s
+    caseSize: 45
+    metals: [steel]
+    bezel: { style: dive }
+    movement: "1315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

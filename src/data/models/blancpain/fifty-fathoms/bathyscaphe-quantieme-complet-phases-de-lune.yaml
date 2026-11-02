@@ -1,0 +1,19 @@
+name: "Fifty Fathoms Bathyscaphe Quantième Complet Phases de Lune"
+line: blancpain/fifty-fathoms
+style: dive
+website: https://www.blancpain.com/en/fifty-fathoms/bathyscaphe-quantieme-complet-phases-lune-5054-0153-01s
+sources:
+  - https://www.blancpain.com/en/fifty-fathoms/bathyscaphe-quantieme-complet-phases-lune-5054-0153-01s
+references:
+  - ref: "5054 0153 01S"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/a850ca5f-9d8c-4a85-80d8-7ab3eabb76f8/5054_0153_01S_Fifty_Fathoms_Bathyscaphe_Complete_Calendar_Soldier_Front_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/fifty-fathoms/bathyscaphe-quantieme-complet-phases-lune-5054-0153-01s
+    caseSize: 43.6
+    metals: [ceramic]
+    bezel: { material: ceramic, colors: [green], style: dive }
+    movement: "6654.P.4"
+    movementType: mechanical
+    complications: [date, day, moonphase]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]

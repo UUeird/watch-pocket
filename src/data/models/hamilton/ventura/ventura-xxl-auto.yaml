@@ -1,0 +1,27 @@
+name: Ventura XXL Auto
+line: hamilton/ventura
+style: showpiece
+website: https://www.hamiltonwatch.com/en-us/h24655331-ventura-xxl-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h24625330-ventura-xxl-auto.html
+  - https://www.hamiltonwatch.com/en-us/h24655331-ventura-xxl-auto.html
+references:
+  - ref: H24625330
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24625330_lowresweb.png
+      page: https://www.hamiltonwatch.com/en-us/h24625330-ventura-xxl-auto.html
+    price: { amount: 2175, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H24655331
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24655331.png
+      page: https://www.hamiltonwatch.com/en-us/h24655331-ventura-xxl-auto.html
+    price: { amount: 1845, currency: USD, year: 2026 }
+    caseSize: 46
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-10"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]

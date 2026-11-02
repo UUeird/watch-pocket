@@ -6,7 +6,7 @@ import { modelPhotos } from '../../../lib/tile-photos';
 import { formatPeriods, href, loadCatalog, plural, type Brand, type Line, type Model } from '../../../lib/catalog';
 
 export async function getStaticPaths() {
-  const { brands, lines, modelsOf } = await loadCatalog();
+  const { brands, lines, modelsOf } = await loadCatalog(null);
   return lines.map((line) => {
     const brand = brands.find((candidate) => candidate.id === line.data.brand.id)!;
     return { params: { id: brand.id, line: line.id.split('/')[1] }, props: { line, brand, models: modelsOf(line.id) } };

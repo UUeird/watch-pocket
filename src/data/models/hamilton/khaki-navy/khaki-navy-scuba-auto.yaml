@@ -1,0 +1,101 @@
+name: Khaki Navy Scuba Auto
+line: hamilton/khaki-navy
+style: dive
+website: https://www.hamiltonwatch.com/en-us/h82425110-khaki-navy-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h82315131-khaki-navy-scuba-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82335131-khaki-navy-scuba-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82395331-khaki-navy-scuba-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82395332-khaki-navy-scuba-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82415130-khaki-navy-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82415330-khaki-navy-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82415331-khaki-navy-scuba.html
+  - https://www.hamiltonwatch.com/en-us/h82425110-khaki-navy-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82425140-khaki-navy-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82505140-khaki-navy-scuba-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82515130-khaki-navy-scuba-auto.html
+  - https://www.hamiltonwatch.com/en-us/h82525160-khaki-navy-scuba-auto.html
+references:
+  - ref: H82315131
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82315131.png
+      page: https://www.hamiltonwatch.com/en-us/h82315131-khaki-navy-scuba-auto.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H82335131
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82335131.png
+      page: https://www.hamiltonwatch.com/en-us/h82335131-khaki-navy-scuba-auto.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H82395331
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82395331.png
+      page: https://www.hamiltonwatch.com/en-us/h82395331-khaki-navy-scuba-auto.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H82395332
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82395332_1.png
+      page: https://www.hamiltonwatch.com/en-us/h82395332-khaki-navy-scuba-auto.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H82415130
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82415130.png
+      page: https://www.hamiltonwatch.com/en-us/h82415130-khaki-navy-auto.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: mechanical
+  - ref: H82415330
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82415330.png
+      page: https://www.hamiltonwatch.com/en-us/h82415330-khaki-navy-auto.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: mechanical
+  - ref: H82415331
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82415331_1.png
+      page: https://www.hamiltonwatch.com/en-us/h82415331-khaki-navy-scuba.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    caseSize: 40
+  - ref: H82425110
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82425110.png
+      page: https://www.hamiltonwatch.com/en-us/h82425110-khaki-navy-auto.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    bezel: { style: dive }
+    crystal: sapphire
+    movement: "H-10"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: H82425140
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82425140.png
+      page: https://www.hamiltonwatch.com/en-us/h82425140-khaki-navy-auto.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    caseSize: 40
+    movementType: mechanical
+  - ref: H82505140
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82505140.png
+      page: https://www.hamiltonwatch.com/en-us/h82505140-khaki-navy-scuba-auto.html
+    price: { amount: 1225, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H82515130
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82515130.png
+      page: https://www.hamiltonwatch.com/en-us/h82515130-khaki-navy-scuba-auto.html
+    price: { amount: 1225, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H82525160
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82525160.png
+      page: https://www.hamiltonwatch.com/en-us/h82525160-khaki-navy-scuba-auto.html
+    price: { amount: 1225, currency: USD, year: 2026 }
+    movementType: mechanical

@@ -1,0 +1,43 @@
+name: Ventura Elvis80 Skeleton Auto
+line: hamilton/ventura
+style: showpiece
+theme: music
+website: https://www.hamiltonwatch.com/en-us/h24525331-ventura-elvis80-skeleton-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h24525331-ventura-elvis80-skeleton-auto.html
+  - https://www.hamiltonwatch.com/en-us/h24525332-ventura-elvis80-skeleton-auto.html
+  - https://www.hamiltonwatch.com/en-us/h24535331-ventura-elvis80-skeleton-auto.html
+  - https://www.hamiltonwatch.com/en-us/h24535332-ventura-elvis80-skeleton-auto.html
+references:
+  - ref: H24525331
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24525331.png
+      page: https://www.hamiltonwatch.com/en-us/h24525331-ventura-elvis80-skeleton-auto.html
+    price: { amount: 2275, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: Rose gold PVD }]
+    crystal: sapphire
+    movement: "H-10-S"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: H24525332
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24525332.png
+      page: https://www.hamiltonwatch.com/en-us/h24525332-ventura-elvis80-skeleton-auto.html
+    price: { amount: 2275, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H24535331
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24535331.png
+      page: https://www.hamiltonwatch.com/en-us/h24535331-ventura-elvis80-skeleton-auto.html
+    price: { amount: 2275, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H24535332
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24535332_1.png
+      page: https://www.hamiltonwatch.com/en-us/h24535332-ventura-elvis80-skeleton-auto.html
+    price: { amount: 2275, currency: USD, year: 2026 }
+    movementType: mechanical

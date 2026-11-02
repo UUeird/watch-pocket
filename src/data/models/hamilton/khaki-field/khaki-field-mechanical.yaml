@@ -1,0 +1,146 @@
+name: Khaki Field Mechanical
+line: hamilton/khaki-field
+style: field
+website: https://www.hamiltonwatch.com/en-us/h69439931-khaki-field-mechanical.html
+photos:
+  - file: ../../../photos/hamilton/khaki-field/khaki-field-mechanical.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Hamilton_Khaki_Field_Mechanical_39.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: Giordano Tonelli
+sources:
+  - https://www.hamiltonwatch.com/en-us/h69399930-khaki-field-mechanical-36mm.html
+  - https://www.hamiltonwatch.com/en-us/h69409930-khaki-field.html
+  - https://www.hamiltonwatch.com/en-us/h69439131-khaki-field-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69439363-khaki-field-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69439411-khaki-field.html
+  - https://www.hamiltonwatch.com/en-us/h69439511-khaki-field.html
+  - https://www.hamiltonwatch.com/en-us/h69439531-khaki-field.html
+  - https://www.hamiltonwatch.com/en-us/h69439910-khaki-field-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69439931-khaki-field-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69439933-khaki-field-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69439940-khaki-field-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69449961-khaki-field.html
+  - https://www.hamiltonwatch.com/en-us/h69469930-khaki-field-mechanical-38mm-call-of-duty-modern-warfare-4.html
+  - https://www.hamiltonwatch.com/en-us/h69529913-khaki-field-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h69529933-khaki-field-mechanical.html
+  - https://www.hamiltonwatch.com/en-us/h89399930-khaki-field-mechanical-36mm-america-250-anniversary-us-edition.html
+  - https://www.hamiltonwatch.com/en-us/h89479970-khaki-field-mechanical-lancaster.html
+references:
+  - ref: H69399930
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69399930.png
+      page: https://www.hamiltonwatch.com/en-us/h69399930-khaki-field-mechanical-36mm.html
+    price: { amount: 725, currency: USD, year: 2026 }
+    caseSize: 36
+    movementType: mechanical
+  - ref: H69409930
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69409930.png
+      page: https://www.hamiltonwatch.com/en-us/h69409930-khaki-field.html
+    price: { amount: 745, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H69439131
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439131.png
+      page: https://www.hamiltonwatch.com/en-us/h69439131-khaki-field-mechanical.html
+    price: { amount: 745, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: mechanical
+  - ref: H69439363
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439363_1.png
+      page: https://www.hamiltonwatch.com/en-us/h69439363-khaki-field-mechanical.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H69439411
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439411.png
+      page: https://www.hamiltonwatch.com/en-us/h69439411-khaki-field.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: mechanical
+  - ref: H69439511
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439511.png
+      page: https://www.hamiltonwatch.com/en-us/h69439511-khaki-field.html
+    price: { amount: 695, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H69439531
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439531.png
+      page: https://www.hamiltonwatch.com/en-us/h69439531-khaki-field.html
+    price: { amount: 695, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H69439910
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439910.png
+      page: https://www.hamiltonwatch.com/en-us/h69439910-khaki-field-mechanical.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H69439931
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439931.png
+      page: https://www.hamiltonwatch.com/en-us/h69439931-khaki-field-mechanical.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "H-50"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: fabric-strap }]
+  - ref: H69439933
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439933_1.png
+      page: https://www.hamiltonwatch.com/en-us/h69439933-khaki-field-mechanical.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H69439940
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439940.png
+      page: https://www.hamiltonwatch.com/en-us/h69439940-khaki-field-mechanical.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H69449961
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69449961.png
+      page: https://www.hamiltonwatch.com/en-us/h69449961-khaki-field.html
+    price: { amount: 745, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H69469930
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69469930_soldier.png
+      page: https://www.hamiltonwatch.com/en-us/h69469930-khaki-field-mechanical-38mm-call-of-duty-modern-warfare-4.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: mechanical
+  - ref: H69529913
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69529913.png
+      page: https://www.hamiltonwatch.com/en-us/h69529913-khaki-field-mechanical.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 42
+    movementType: mechanical
+  - ref: H69529933
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69529933.png
+      page: https://www.hamiltonwatch.com/en-us/h69529933-khaki-field-mechanical.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 42
+    movementType: mechanical
+  - ref: H89399930
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h89399930.png
+      page: https://www.hamiltonwatch.com/en-us/h89399930-khaki-field-mechanical-36mm-america-250-anniversary-us-edition.html
+    price: { amount: 725, currency: USD, year: 2026 }
+    movementType: mechanical
+  - ref: H89479970
+    officialPhoto:
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h89479970.png
+      page: https://www.hamiltonwatch.com/en-us/h89479970-khaki-field-mechanical-lancaster.html
+    price: { amount: 745, currency: USD, year: 2026 }
+    caseSize: 38
+    movementType: mechanical
