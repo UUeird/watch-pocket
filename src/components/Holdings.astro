@@ -10,7 +10,7 @@ interface Props {
 }
 
 const { owner, only } = Astro.props;
-const { holdingsOf } = await loadCatalog();
+const { holdingsOf } = await loadCatalog(Astro.request);
 const holdings = holdingsOf(owner).filter(
   (record) => only === undefined || (only === 'current') === (record.to === undefined),
 );

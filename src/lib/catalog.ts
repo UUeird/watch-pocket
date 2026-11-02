@@ -86,9 +86,20 @@ export const describeModelNumber = ({ number, connectivity, regions }: Reference
 export const describeBracelet = (bracelet: Reference['bracelets'][number]) => bracelet.name ?? label(bracelet.type);
 
 // Every page asks for the catalog, so a build makes it once rather than once per page.
-// The dev server rebuilds it each time instead, so edits to data show up and a failed load is not remembered.
+// The dev server rebuilds it for each page request instead, so edits to data show up and a failed load is not
+// remembered. Components drawn once per row pass the request (Astro.request) so the rows share one catalog.
 let catalog: ReturnType<typeof buildCatalog> | undefined;
-export const loadCatalog = () => (import.meta.env.DEV ? buildCatalog() : (catalog ??= buildCatalog()));
+const perRequest = new WeakMap<Request, ReturnType<typeof buildCatalog>>();
+export const loadCatalog = (request?: Request) => {
+  if (!import.meta.env.DEV) return (catalog ??= buildCatalog());
+  if (!request) return buildCatalog();
+  let shared = perRequest.get(request);
+  if (!shared) {
+    shared = buildCatalog();
+    perRequest.set(request, shared);
+  }
+  return shared;
+};
 
 async function buildCatalog() {
   const byName = (a: Brand | Group | Model, b: Brand | Group | Model) => a.data.name.localeCompare(b.data.name);
