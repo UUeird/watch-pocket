@@ -87,6 +87,16 @@ test.describe('Chart', () => {
     await expect(page.locator('#sort')).toHaveValue('count');
   });
 
+  test('sorts by most models, ties broken by references', async ({ page }) => {
+    await page.goto('chart/?levels=brand&sort=models');
+    await expect(page.locator('#sort')).toHaveValue('models');
+    const names = await page.locator(`${cells} .nm`).allTextContents();
+    // Richard Mille has the most models recorded but few references, so it leads here and not under Most references.
+    expect(names[0]).toBe('Richard Mille');
+    await page.locator('#sort').selectOption('count');
+    await expect(page.locator(`${cells} .nm`).first()).not.toHaveText('Richard Mille');
+  });
+
   test('finds a reference typed with spaces and zooms to its model', async ({ page }) => {
     await page.goto('chart/');
     await page.locator('#q').fill('126610 ln');

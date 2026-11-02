@@ -23,7 +23,7 @@ const eraOf = (year?: number) =>
 
 export type CountryMeaning = 'origin' | 'owner' | 'hq' | 'made';
 export type GroupBy = 'none' | 'country' | 'segment' | 'era';
-export type Sort = 'count' | 'brands' | 'age' | 'revenue' | 'production' | 'price' | 'name';
+export type Sort = 'count' | 'models' | 'brands' | 'age' | 'revenue' | 'production' | 'price' | 'name';
 export type View = 'columns' | 'outline';
 
 export type State = {
@@ -353,6 +353,7 @@ function trim(node: Node, from: number, to: number, keep: string | null): Node[]
 
 export const SORTS: { id: Sort; label: string }[] = [
   { id: 'count', label: 'Most references' },
+  { id: 'models', label: 'Most models' },
   { id: 'brands', label: 'Most brands' },
   { id: 'age', label: 'Oldest first' },
   { id: 'revenue', label: 'Highest revenue' },
@@ -439,8 +440,10 @@ export function compare(a: Node, b: Node, state: State) {
     if (b.name === NOT_RECORDED) return -1;
   }
   if (state.sort === 'name') return a.name.localeCompare(b.name);
-  if (state.sort === 'count') {
-    for (const level of ['ref', 'model', 'line', 'brand'] as const) {
+  // How much is catalogued under each box: by references or by models first, the other levels breaking ties.
+  if (state.sort === 'count' || state.sort === 'models') {
+    const order = state.sort === 'count' ? (['ref', 'model', 'line', 'brand'] as const) : (['model', 'ref', 'line', 'brand'] as const);
+    for (const level of order) {
       const diff = b.counts[level] - a.counts[level];
       if (diff) return diff;
     }
