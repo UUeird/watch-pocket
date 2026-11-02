@@ -1,130 +1,76 @@
 import { test, type Page } from '@playwright/test';
 import { glide, glideAndClick, record, still, viewport } from './capture';
 
-// Captures for the Docs page on reading the charts (src/pages/docs/charts.astro). Each test writes the files named in
-// it; the page refers to them by those names.
-
-const chart = '[data-treemap]';
+// Captures for the Docs page on reading the chart (src/pages/docs/charts.astro). Each test writes the files named in
+// it; the page refers to them by those names. Each view is opened by its link, since the chart keeps its state there.
 
 test.use({ viewport, colorScheme: 'light', deviceScaleFactor: 2 });
 
 const settle = (page: Page) => page.waitForTimeout(600);
 
-// The chart page opens on circles grouped by owner. Each capture sets the view it shows.
-const setUp = async (page: Page, { grouping, shape }: { grouping: string; shape: string }) => {
-  await page.locator(`${chart} select[name="grouping"]`).selectOption(grouping);
-  await page.locator(`${chart} select[name="shape"]`).selectOption(shape);
-  await settle(page);
-};
-
-test('the chart as it opens: brands in circles inside their owners', async ({ page }) => {
+test('the chart as it opens, and its controls', async ({ page }) => {
   await page.goto('chart/');
   await settle(page);
-  await still(page.locator(`${chart} .frame`), 'chart-overview');
+  await still(page.locator('.chart .bar'), 'controls');
+  await still(page.locator('#viz'), 'chart-overview');
+  await page.goto('chart/?levels=owner-brand');
+  await settle(page);
+  await still(page.locator('#viz'), 'chart-owners');
 });
 
-test('brands overview, zoomed box, and the note', async ({ page }) => {
-  await page.goto('chart/');
-  await setUp(page, { grouping: 'origin', shape: 'rects' });
-  await still(page.locator(chart), 'brands-overview');
-
-  await page.locator(`${chart} .tile[data-zoom="Switzerland"]`).click();
+test('levels down to lines and to references', async ({ page }) => {
+  await page.goto('chart/?c=Japan&levels=owner-line');
   await settle(page);
-  await still(page.locator(`${chart} .frame`), 'brands-zoomed');
-
-  await page.locator(`${chart} .unsized summary`).first().click();
-  await still(page.locator(`${chart} .note`), 'brands-note');
-  await still(page.locator(`${chart} .unsized`), 'brands-unsized');
+  await still(page.locator('#viz'), 'chart-levels');
+  await page.goto('chart/?levels=line-ref&focus=b:rolex');
+  await settle(page);
+  await still(page.locator('#viz'), 'chart-references');
 });
 
-test('ownership groups sized by revenue, as rectangles and circles', async ({ page }) => {
-  await page.goto('chart/');
-  await setUp(page, { grouping: 'owner', shape: 'rects' });
-  await still(page.locator(`${chart} .controls`), 'controls');
-  await page.locator(`${chart} select[name="size"]`).selectOption('annual-revenue');
+test('the outline', async ({ page }) => {
+  await page.goto('chart/?view=outline');
   await settle(page);
-  await still(page.locator(`${chart} .frame`), 'groups-revenue');
-
-  await page.locator(`${chart} select[name="shape"]`).selectOption('circles');
-  await settle(page);
-  await still(page.locator(`${chart} .frame`), 'groups-revenue-circles');
-
-  await page.locator(`${chart} select[name="size"]`).selectOption('brands');
-  await settle(page);
-  await still(page.locator(`${chart} .frame`), 'groups-circles');
+  await still(page.locator('#viz'), 'chart-outline');
 });
 
-test('recording: zooming into a box and back out', async ({ browser, baseURL }) => {
+test('recording: zooming in and back out', async ({ browser, baseURL }) => {
   await record(
     browser,
     'zoom',
     async (page, ready) => {
-      await page.goto('chart/', { waitUntil: 'networkidle' });
-      await setUp(page, { grouping: 'origin', shape: 'rects' });
-      await page.locator(chart).scrollIntoViewIfNeeded();
+      await page.goto('chart/?levels=owner-line&indep=hide', { waitUntil: 'networkidle' });
+      await page.locator('#viz').scrollIntoViewIfNeeded();
       ready();
       await page.waitForTimeout(900);
-      const switzerland = page.locator(`${chart} .tile[data-zoom="Switzerland"]`);
-      await glide(page, switzerland);
-      await page.waitForTimeout(900);
-      await glideAndClick(page, switzerland);
+      // Each box is scrolled into view before the pointer moves to it.
+      const visit = async (target: ReturnType<Page['locator']>) => {
+        await target.scrollIntoViewIfNeeded();
+        await glideAndClick(page, target);
+        await page.waitForTimeout(1400);
+      };
+      await visit(page.locator('.columns .cell', { hasText: 'Swatch Group' }).first());
+      await visit(page.locator('.columns .cell', { hasText: 'Omega' }).first());
+      await visit(page.locator('#crumbs button').first());
       await page.waitForTimeout(1000);
-      // A couple of brands, to show their tooltips.
-      for (const name of ['Rolex', 'Omega']) {
-        await glide(page, page.locator(`${chart} .brand`, { has: page.locator(`[aria-label^="${name},"]`) }).or(page.locator(`${chart} .brand[aria-label^="${name},"]`)).first());
-        await page.waitForTimeout(1100);
-      }
-      await glideAndClick(page, page.locator(`${chart} [data-unzoom]`));
-      await page.waitForTimeout(800);
     },
     baseURL,
   );
 });
 
-test('recording: changing what sizes the chart, then drawing it as circles', async ({ browser, baseURL }) => {
+test('recording: finding a reference', async ({ browser, baseURL }) => {
   await record(
     browser,
-    'size-and-shape',
-    async (page, ready) => {
-      await page.goto('chart/', { waitUntil: 'networkidle' });
-      await setUp(page, { grouping: 'owner', shape: 'rects' });
-      ready();
-      await page.waitForTimeout(900);
-      const size = page.locator(`${chart} select[name="size"]`);
-      await glide(page, size);
-      await size.selectOption('annual-revenue');
-      await page.waitForTimeout(1600);
-      const shape = page.locator(`${chart} select[name="shape"]`);
-      await glide(page, shape);
-      await shape.selectOption('circles');
-      await page.waitForTimeout(1600);
-      await size.selectOption('brands');
-      await glide(page, size);
-      await page.waitForTimeout(1600);
-    },
-    baseURL,
-  );
-});
-
-test('recording: the chart following the filters', async ({ browser, baseURL }) => {
-  await record(
-    browser,
-    'follow-filters',
+    'search',
     async (page, ready) => {
       await page.goto('chart/', { waitUntil: 'networkidle' });
       ready();
       await page.waitForTimeout(900);
-      const owner = page.locator('select[name="owner"]');
-      await glide(page, owner);
-      await owner.selectOption('richemont');
-      await page.waitForTimeout(800);
-      await glide(page, page.locator(chart));
-      await page.waitForTimeout(1600);
-      await glide(page, owner);
-      await owner.selectOption('swatch-group');
-      await page.waitForTimeout(800);
-      await glide(page, page.locator(chart));
-      await page.waitForTimeout(1600);
+      const search = page.locator('#q');
+      await glide(page, search);
+      await search.pressSequentially('126610 ln', { delay: 120 });
+      await page.waitForTimeout(900);
+      await glideAndClick(page, page.locator('#results button').first());
+      await page.waitForTimeout(1800);
     },
     baseURL,
   );

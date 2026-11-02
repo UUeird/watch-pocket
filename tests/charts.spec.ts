@@ -1,72 +1,164 @@
-import { expect, test, type Page } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
-const treemap = '[data-treemap]';
-const brandCells = `${treemap} .canvas .brand`;
+const crumbs = '#crumbs';
+const cells = '.columns .cell';
 
 test.describe('Chart', () => {
-  const tiles = `${treemap} .canvas .tile`;
-  const select = (page: Page, name: string) => page.locator(`${treemap} select[name="${name}"]`);
-  // The brands counted across all the tiles of the overview.
-  const tileTotal = async (page: Page) =>
-    (await page.locator(`${tiles} .tile-badge`).allTextContents()).reduce((total, text) => total + Number(text), 0);
-
-  test.beforeEach(async ({ page }) => {
+  test('opens on brands and their lines', async ({ page }) => {
     await page.goto('chart/');
+    await expect(page.locator('.columns .colhead')).toHaveText(['Brand', 'Line']);
+    await expect(page.locator('#lvfrom')).toHaveValue('1');
+    await expect(page.locator('#lvto')).toHaveValue('2');
+    await expect(page.locator(cells, { hasText: 'Seiko' }).first()).toBeVisible();
+    await expect(page.locator(cells, { hasText: 'Prospex' }).first()).toBeVisible();
+    await expect(page).not.toHaveURL(/levels=/);
   });
 
-  test('starts with brands as circles inside their owners, with logos', async ({ page }) => {
-    await expect(page.locator(`${treemap} .bucket.round[data-zoom="swatch-group"]`)).toBeVisible();
-    expect(await page.locator(`${brandCells}.round`).count()).toBeGreaterThan(50);
-    expect(await page.locator(`${brandCells}.round img`).count()).toBeGreaterThan(20);
-    await expect(page.locator(`${treemap} .bucket-name.logo`).first()).toBeVisible();
-    // Brands with no owning group are listed under the chart, not drawn as a circle.
-    await expect(page.locator(`${treemap} [data-zoom="independent"]`)).toHaveCount(0);
-    await expect(page.locator(`${treemap} .unsized summary`)).toContainText('with no owning group on record');
+  test('shows owners and their brands, in columns, with logos', async ({ page }) => {
+    await page.goto('chart/?levels=owner-brand');
+    await expect(page.locator('.columns .colhead')).toHaveText(['Owner', 'Brand']);
+    await expect(page.locator(cells, { hasText: 'Swatch Group' }).first()).toBeVisible();
+    expect(await page.locator(`${cells} .plate img`).count()).toBeGreaterThan(10);
+    // Independent brands are folded behind one row, each its own owner when opened.
+    const fold = page.locator('.columns .more[data-toggle]');
+    await expect(fold).toContainText('independent brands · show');
+    await fold.click();
+    await expect(page.locator('.columns .more[data-toggle]')).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.locator(cells, { hasText: 'Independent' }).first()).toBeVisible();
   });
 
-  test('zooms into a group and back out', async ({ page }) => {
-    await page.locator(`${treemap} .bucket-name[data-zoom="swatch-group"]`).click();
-    await expect(page.locator(`${treemap} .crumb-current`)).toHaveText('Swatch Group');
-    expect(await page.locator(brandCells).count()).toBeGreaterThan(10);
-    // Inside a group, brands can be sized by a figure that does not add up across groups.
-    await expect(select(page, 'size')).toHaveValue('age');
-    await page.getByRole('button', { name: /All by owner/ }).click();
-    await expect(page.locator(`${treemap} button[data-zoom="swatch-group"]`)).toBeFocused();
+  test('filters by country, and keeps owners as context', async ({ page }) => {
+    await page.goto('chart/?levels=owner-brand');
+    await page.locator('summary#csum').click();
+    await page.locator('#presets button', { hasText: 'Japan' }).click();
+    await expect(page).toHaveURL(/[?&]c=Japan/);
+    await expect(page.locator('#status')).toContainText('Japan');
+    await expect(page.locator(cells, { hasText: 'Seiko Group' }).first()).toBeVisible();
+    await expect(page.locator(cells, { hasText: 'Swatch Group' })).toHaveCount(0);
+    // Citizen owns brands from other countries too, so it says how many of them are shown.
+    await expect(page.locator(cells, { hasText: 'Citizen Watch' }).first()).toContainText(/\d+ of \d+ brands/);
   });
 
-  test('follows the filters', async ({ page }) => {
-    await page.locator('select[name="owner"]').selectOption('richemont');
-    await expect(page.locator('[data-count]')).toContainText(' of ');
-    const shown = Number((await page.locator('[data-count]').textContent())!.split(' ')[0]);
-    await expect(page.locator(`${treemap} .note`)).toContainText('matching the filters');
-    await expect(page.locator(brandCells)).toHaveCount(shown);
+  test('shows the levels asked for, and steps back from an empty one', async ({ page }) => {
+    await page.goto('chart/?c=Japan&levels=owner-brand');
+    await page.locator('#lvto').selectOption('2');
+    await expect(page.locator('.columns .colhead')).toHaveText(['Owner', 'Brand', 'Line']);
+    await expect(page).toHaveURL(/levels=owner-line/);
+    // No Swedish brand has lines recorded yet, so asked for lines, the chart stops at brands.
+    await page.goto('chart/?c=Sweden&levels=owner-line');
+    await expect(page.locator('#status')).toContainText('so the chart stops at brands');
+    await expect(page.locator('#lvto option[value="2"]')).toHaveJSProperty('disabled', true);
   });
 
-  test('regroups by nation as rectangles and remembers the choice', async ({ page }) => {
-    await select(page, 'grouping').selectOption('origin');
-    await select(page, 'shape').selectOption('rects');
-    await expect(page.locator(`${tiles}[data-zoom="Switzerland"]`)).toBeVisible();
-    await expect(page.locator(brandCells)).toHaveCount(0);
-    // Brands with no nation recorded are listed under the chart, not drawn as a box.
-    await expect(page.locator(`${tiles}[data-zoom="unrecorded"]`)).toHaveCount(0);
-    expect(await tileTotal(page)).toBeGreaterThan(100);
-    await page.reload();
-    await expect(select(page, 'shape')).toHaveValue('rects');
-    await expect(select(page, 'grouping')).toHaveValue('origin');
+  test('zooms in with a click, and Back zooms out', async ({ page }) => {
+    await page.goto('chart/?levels=owner-brand');
+    await page.locator(cells, { hasText: 'Swatch Group' }).first().click();
+    await expect(page).toHaveURL(/focus=g:swatch-group/);
+    await expect(page.locator(crumbs)).toContainText('Swatch Group');
+    await page.goBack();
+    await expect(page).not.toHaveURL(/focus=/);
+    await expect(page.locator(`${crumbs} .here`)).toHaveText('All');
   });
 
-  test('sizes the overview only by measures that add up', async ({ page }) => {
-    await expect(page.locator(`${treemap} select[name="size"] option[value="age"]`)).toHaveJSProperty('disabled', true);
-    await expect(page.locator(`${treemap} select[name="size"] option[value="brands"]`)).toHaveJSProperty('disabled', false);
+  test('opens a line at the deepest level shown into its models', async ({ page }) => {
+    await page.goto('chart/');
+    await page.locator(cells, { hasText: 'Prospex' }).first().click();
+    await expect(page.locator(`${crumbs} .here`)).toHaveText('Prospex');
+    await expect(page.locator('.columns .colhead')).toContainText(['Model']);
+    await expect(page).toHaveURL(/levels=brand-model/);
+    await page.goBack();
+    await expect(page.locator(`${crumbs} .here`)).toHaveText('All');
+    await expect(page.locator('#lvto')).toHaveValue('2');
   });
-});
 
-test.describe('Lists', () => {
-  test('brands and groups pages have no treemap', async ({ page }) => {
-    for (const path of ['brands/', 'ownership-groups/']) {
-      await page.goto(path);
-      await expect(page.locator(treemap)).toHaveCount(0);
-    }
+  test('opens a line in the outline onto its models', async ({ page }) => {
+    await page.goto('chart/?view=outline&q=Prospex');
+    const line = page.locator('.outline .row', { hasText: 'Prospex' }).first();
+    await expect(line).toHaveAttribute('aria-expanded', 'false');
+    await line.click();
+    await expect(page.locator('.outline .row', { hasText: 'Model' }).first()).toBeVisible();
+    await expect(page).toHaveURL(/levels=brand-model/);
+  });
+
+  test('keeps the item zoomed into when the grouping and levels change', async ({ page }) => {
+    await page.goto('chart/?levels=owner-model&focus=b:omega');
+    await expect(page.locator(`${crumbs} .here`)).toHaveText('Omega');
+    await page.locator('#groupby').selectOption('country');
+    await expect(page.locator(crumbs)).toContainText('Switzerland');
+    await expect(page.locator(`${crumbs} .here`)).toHaveText('Omega');
+    await page.locator('#lvfrom').selectOption('2');
+    await expect(page.locator(`${crumbs} .here`)).toHaveText('Omega');
+    await expect(page).toHaveURL(/focus=b:omega/);
+  });
+
+  test('restores every control from the link, and drops what it does not know', async ({ page }) => {
+    await page.goto('chart/?c=Switzerland&cby=owner&seg=luxury&by=segment&levels=brand-line&sort=age&view=outline&sort2=x&indep=hide');
+    await expect(page.locator('#groupby')).toHaveValue('segment');
+    await expect(page.locator('#sort')).toHaveValue('age');
+    await expect(page.locator('#indep')).toHaveValue('hide');
+    await expect(page.locator('#lvfrom')).toHaveValue('1');
+    await expect(page.locator('#lvto')).toHaveValue('2');
+    await expect(page.locator('#views [aria-pressed="true"]')).toHaveText('Outline');
+    await expect(page.locator('#status')).toContainText("Switzerland");
+    await expect(page.locator('#status')).toContainText('Luxury');
+    await page.goto('chart/?sort=biggest&levels=nowhere');
+    await expect(page.locator('#status')).toContainText('sort=biggest');
+    await expect(page.locator('#status')).toContainText('levels=nowhere');
+    await expect(page.locator('#sort')).toHaveValue('models');
+  });
+
+  test('sorts by most models, ties broken by references', async ({ page }) => {
+    // Most models is the default, so the link needs no sort.
+    await page.goto('chart/?levels=brand');
+    await expect(page.locator('#sort')).toHaveValue('models');
+    const names = await page.locator(`${cells} .nm`).allTextContents();
+    // Richard Mille has the most models recorded but few references, so it leads here and not under Most references.
+    expect(names[0]).toBe('Richard Mille');
+    await page.locator('#sort').selectOption('count');
+    await expect(page.locator(`${cells} .nm`).first()).not.toHaveText('Richard Mille');
+  });
+
+  test('finds a reference typed with spaces and zooms to its model', async ({ page }) => {
+    await page.goto('chart/');
+    await page.locator('#q').fill('126610 ln');
+    await expect(page.locator('#results')).toContainText('126610LN');
+    await page.locator('#q').press('Enter');
+    await expect(page.locator(`${crumbs} .here`)).toHaveText('Submariner Date');
+    await expect(page.locator('#info h2')).toHaveText('126610LN');
+    await expect(page.locator('#info a', { hasText: 'Open page' })).toHaveAttribute('href', /\/brands\/rolex\/submariner\/submariner-date\/126610ln\//);
+  });
+
+  test('moves between boxes with the arrow keys and zooms with Enter', async ({ page }) => {
+    await page.goto('chart/?c=Japan&levels=owner-brand');
+    const first = page.locator(`${cells}[tabindex="0"]`);
+    await expect(first).toHaveCount(1);
+    await first.focus();
+    await page.keyboard.press('ArrowRight');
+    await expect(page.locator(`${cells}:focus`)).toHaveClass(/lv-brand/);
+    await page.keyboard.press('ArrowLeft');
+    await expect(page.locator(`${cells}:focus`)).toHaveClass(/lv-owner/);
+    await page.keyboard.press('Enter');
+    await expect(page).toHaveURL(/focus=g:/);
+    await page.keyboard.press('Escape');
+    await expect(page).not.toHaveURL(/focus=/);
+  });
+
+  test('leaves out the "not catalogued" marks on the published site', async ({ page }) => {
+    await page.goto('chart/?levels=owner-line');
+    await expect(page.locator('.columns .cell').first()).toBeVisible();
+    await expect(page.locator('.columns .gap')).toHaveCount(0);
+    await expect(page.locator('#legend')).not.toContainText('Not catalogued');
+  });
+
+  test.describe('on a phone', () => {
+    test.use({ viewport: { width: 390, height: 844 } });
+
+    test('opens as an outline that fits the screen', async ({ page }) => {
+      await page.goto('chart/');
+      await expect(page.locator('#views [aria-pressed="true"]')).toHaveText('Outline');
+      await expect(page.locator('.outline .row').first()).toBeVisible();
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
+    });
   });
 });
 
