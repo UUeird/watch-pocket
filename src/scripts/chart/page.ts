@@ -117,12 +117,13 @@ const context = (): Context => ({
   showGaps,
   select: (box, zoom) => {
     state.selected = box.data.eid;
-    const zooming = zoom && !!box.children && box !== focus;
+    const zooming = zoom && box !== focus && (!!box.children || openDeeper(box));
     if (zooming) state.focus = box.data.eid;
     keepFocus = true;
     update({ push: zooming });
   },
   zoomTo: (box) => {
+    openDeeper(box);
     state.focus = box === built.top ? null : box.data.eid;
     state.selected = box.data.eid;
     keepFocus = true;
@@ -137,12 +138,23 @@ const context = (): Context => ({
     render();
   },
   toggleRow: (box) => {
-    if (!expanded.delete(box.data.id)) expanded.add(box.data.id);
+    if (openDeeper(box)) expanded.add(box.data.id);
+    else if (!expanded.delete(box.data.id)) expanded.add(box.data.id);
     state.selected = box.data.eid;
     keepFocus = true;
     update();
   },
 });
+
+// A box at the deepest level shown can still hold more, such as a line's models. Zooming into it shows the next
+// level down, so every box with something under it opens the same way.
+function openDeeper(box: Box) {
+  if (box.children || box.data.kids.size === 0) return false;
+  const at = LEVELS.indexOf(box.data.level as (typeof LEVELS)[number]);
+  if (at < 0 || at >= LEVELS.length - 1) return false;
+  state.to = Math.max(state.to, at + 1);
+  return true;
+}
 
 // After a click or key press redraws the chart, the box acted on takes the focus again.
 let keepFocus = false;

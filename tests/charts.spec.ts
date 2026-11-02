@@ -60,6 +60,26 @@ test.describe('Chart', () => {
     await expect(page.locator(`${crumbs} .here`)).toHaveText('All');
   });
 
+  test('opens a line at the deepest level shown into its models', async ({ page }) => {
+    await page.goto('chart/');
+    await page.locator(cells, { hasText: 'Prospex' }).first().click();
+    await expect(page.locator(`${crumbs} .here`)).toHaveText('Prospex');
+    await expect(page.locator('.columns .colhead')).toContainText(['Model']);
+    await expect(page).toHaveURL(/levels=brand-model/);
+    await page.goBack();
+    await expect(page.locator(`${crumbs} .here`)).toHaveText('All');
+    await expect(page.locator('#lvto')).toHaveValue('2');
+  });
+
+  test('opens a line in the outline onto its models', async ({ page }) => {
+    await page.goto('chart/?view=outline&q=Prospex');
+    const line = page.locator('.outline .row', { hasText: 'Prospex' }).first();
+    await expect(line).toHaveAttribute('aria-expanded', 'false');
+    await line.click();
+    await expect(page.locator('.outline .row', { hasText: 'Model' }).first()).toBeVisible();
+    await expect(page).toHaveURL(/levels=brand-model/);
+  });
+
   test('keeps the item zoomed into when the grouping and levels change', async ({ page }) => {
     await page.goto('chart/?levels=owner-model&focus=b:omega');
     await expect(page.locator(`${crumbs} .here`)).toHaveText('Omega');

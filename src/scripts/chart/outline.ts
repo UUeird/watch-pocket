@@ -40,14 +40,16 @@ export function renderOutline(host: HTMLElement, ctx: Context) {
   tree.innerHTML =
     rows
       .map(({ box, depth, merged }, i) => {
-        const open = ctx.expanded.has(box.data.id);
+        const open = ctx.expanded.has(box.data.id) && !!box.children;
+        // A row at the deepest level shown can still open, onto the next level down.
+        const opens = !!box.children || (box.data.kids.size > 0 && box.data.level !== 'ref');
         const brand = box.data.level === 'brand' ? box.data.brand : undefined;
         const before = prefixed ? brandOfBox(ctx, box)?.name : undefined;
         const meta = [measureText(box.data, state.sort), describe(box.data)].filter(Boolean).join(' · ');
         return `<div class="row${isContext(box) ? ' ghost' : ''}${box.data.eid === state.selected ? ' sel' : ''}" data-i="${i}" role="treeitem" aria-level="${depth + 1}" ${
-          box.children ? `aria-expanded="${open}"` : ''
+          opens ? `aria-expanded="${open}"` : ''
         } tabindex="${i === 0 ? 0 : -1}" style="padding-left:${12 + depth * 18}px">
-          <span class="tw" aria-hidden="true">${box.children ? (open ? '▾' : '▸') : '·'}</span>
+          <span class="tw" aria-hidden="true">${opens ? (open ? '▾' : '▸') : '·'}</span>
           <span class="nm">${logoHtml(brand, 30, 14, 'lg')}${before ? `<span class="pre">${escape(before)} · </span>` : ''}${highlight(labelOf(ctx, box))} <span class="tag">${
             merged ? 'Independent brand' : LEVEL_NAMES[box.data.level]
           }</span></span>
@@ -74,7 +76,7 @@ export function renderOutline(host: HTMLElement, ctx: Context) {
     if (event.key === 'ArrowDown') go(at + 1);
     else if (event.key === 'ArrowUp') go(at - 1);
     else if (event.key === 'Enter' || event.key === ' ') ctx.toggleRow(box);
-    else if (event.key === 'ArrowRight' && box.children && !ctx.expanded.has(box.data.id)) ctx.toggleRow(box);
+    else if (event.key === 'ArrowRight' && (box.children || box.data.kids.size > 0) && !(box.children && ctx.expanded.has(box.data.id))) ctx.toggleRow(box);
     else if (event.key === 'ArrowLeft' && box.children && ctx.expanded.has(box.data.id)) ctx.toggleRow(box);
     else return;
     event.preventDefault();
@@ -121,7 +123,7 @@ export function renderInfo(host: HTMLElement, ctx: Context, box: Box) {
 
   const path = pathOf(box).slice(1, -1).map((item) => labelOf(ctx, item)).join(' › ');
   const page = pageOf(box);
-  const zoomIn = box.children && state.focus !== node.eid && box !== ctx.focus;
+  const zoomIn = (box.children || node.kids.size > 0) && box !== ctx.focus;
   host.innerHTML = `<div class="who"><div class="eyebrow">${LEVEL_NAMES[node.level]}${isContext(box) ? ' · context only' : ''}</div>
     <h2>${escape(labelOf(ctx, box))}</h2>${path ? `<div class="path">${escape(path)}</div>` : ''}</div>
     <dl>${facts.map(([term, value]) => `<div><dt>${term}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl>
