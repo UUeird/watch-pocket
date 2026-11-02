@@ -5,7 +5,7 @@ import Base from '../../layouts/Base.astro';
 import { activeGroups, href, label, loadCatalog, plural, type Brand } from '../../lib/catalog';
 import { sectionsOf } from '../../lib/timeline';
 
-const { brands, groups, ownerName, holdingsOf } = await loadCatalog();
+const { brands, groups, ownerName, holdingsOf } = await loadCatalog(Astro.request);
 const sections = sectionsOf(brands, groups, ownerName, (group) => href(`/ownership-groups/${group.id}/`));
 const purchases = new Map(
   groups.map((group) => [

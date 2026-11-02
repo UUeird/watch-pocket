@@ -4,7 +4,7 @@ import { loadCatalog } from '../../lib/catalog';
 import { chartPayload } from '../../lib/chart-data';
 import { SORTS } from '../../scripts/chart/tree';
 
-const catalog = await loadCatalog();
+const catalog = await loadCatalog(Astro.request);
 const payload = await chartPayload(catalog);
 ---
 

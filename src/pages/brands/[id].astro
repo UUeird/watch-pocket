@@ -10,7 +10,7 @@ import Sources from '../../components/Sources.astro';
 import { brandStatus, controlNames, formatPeriods, formatStake, href, label, lineHref, loadCatalog, ownerHref, plural, type Brand } from '../../lib/catalog';
 
 export async function getStaticPaths() {
-  const { brands } = await loadCatalog();
+  const { brands } = await loadCatalog(null);
   return brands.map((brand) => ({ params: { id: brand.id }, props: { brand } }));
 }
 
@@ -19,7 +19,7 @@ interface Props {
 }
 
 const { brand } = Astro.props;
-const { brands, groupsById, ownerName, brandControl, holdingsOf, linesOf, modelsOf, collaborationsOf } = await loadCatalog();
+const { brands, groupsById, ownerName, brandControl, holdingsOf, linesOf, modelsOf, collaborationsOf } = await loadCatalog(Astro.request);
 const self = { collection: 'brands' as const, id: brand.id };
 const holdings = holdingsOf(self);
 const collaborations = collaborationsOf(brand.id);

@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { href, loadCatalog } from '../lib/catalog';
 
-const { brands, groups, lines, models, references } = await loadCatalog();
+const { brands, groups, lines, models, references } = await loadCatalog(Astro.request);
 // Counts with thousands separators.
 const count = (n: number) => n.toLocaleString('en-US');
 const countries = new Set(brands.map((brand) => brand.data.origin).filter(Boolean));

@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { countryHref, loadCatalog } from '../../lib/catalog';
 import { countries as countryInfo } from '../../lib/countries';
 
-const { brands } = await loadCatalog();
+const { brands } = await loadCatalog(Astro.request);
 const counts = new Map<keyof typeof countryInfo, number>();
 for (const brand of brands) {
   if (brand.data.origin) counts.set(brand.data.origin, (counts.get(brand.data.origin) ?? 0) + 1);

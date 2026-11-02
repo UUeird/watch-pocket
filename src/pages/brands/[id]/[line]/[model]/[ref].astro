@@ -15,7 +15,7 @@ import {
 } from '../../../../../lib/catalog';
 
 export async function getStaticPaths() {
-  const { references } = await loadCatalog();
+  const { references } = await loadCatalog(null);
   return references.map((entry) => {
     const [id, line, model] = entry.model.id.split('/');
     return { params: { id, line, model, ref: refSlug(entry.reference.ref) }, props: entry };

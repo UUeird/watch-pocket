@@ -3,7 +3,7 @@ import Filters from '../../components/Filters.astro';
 import Base from '../../layouts/Base.astro';
 import { describeBezel, formatPeriods, href, label, loadCatalog, refHref } from '../../lib/catalog';
 
-const { references } = await loadCatalog();
+const { references } = await loadCatalog(Astro.request);
 const distinct = (values: (string | undefined)[]) =>
   [...new Set(values.filter((value) => value !== undefined))].sort();
 const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));

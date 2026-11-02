@@ -5,7 +5,7 @@ import FlagBadge from '../../components/FlagBadge.astro';
 import Base from '../../layouts/Base.astro';
 import { activeGroups, describeControl, formatStake, href, label, loadCatalog, plural, type Brand, type Group } from '../../lib/catalog';
 
-const catalog = await loadCatalog();
+const catalog = await loadCatalog(Astro.request);
 const { brandsOf, licensesOf } = catalog;
 // Dissolved groups own nothing now, so they get no card; they're listed by name under the cards for their past holdings.
 const groups = activeGroups(catalog.groups);

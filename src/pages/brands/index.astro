@@ -8,7 +8,7 @@ import Base from '../../layouts/Base.astro';
 import { activeGroups, brandYears, controlNames, currentOwners, href, label, loadCatalog } from '../../lib/catalog';
 import { measuresOf, metrics } from '../../lib/metrics';
 
-const catalog = await loadCatalog();
+const catalog = await loadCatalog(Astro.request);
 const { brands, groups, linesOf, brandControl } = catalog;
 // The table's measure column can show any per-brand figure; a count of one brand each says nothing.
 const measures = measuresOf(catalog);

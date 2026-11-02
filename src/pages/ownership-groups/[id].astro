@@ -7,7 +7,7 @@ import { describeControl, href, loadCatalog, type Group } from '../../lib/catalo
 import { countries } from '../../lib/countries';
 
 export async function getStaticPaths() {
-  const { groups } = await loadCatalog();
+  const { groups } = await loadCatalog(null);
   return groups.map((group) => ({ params: { id: group.id }, props: { group } }));
 }
 
@@ -16,7 +16,7 @@ interface Props {
 }
 
 const { group } = Astro.props;
-const { groups, groupsById, holdingsOf, licensesOf } = await loadCatalog();
+const { groups, groupsById, holdingsOf, licensesOf } = await loadCatalog(Astro.request);
 const subsidiaries = groups.filter((other) => other.data.parent?.id === group.id);
 const { name, country, founded, dissolved, website, parent, sources } = group.data;
 const { flag } = countries[country];

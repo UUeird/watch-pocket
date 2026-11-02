@@ -25,7 +25,7 @@ import {
 } from '../../../../lib/catalog';
 
 export async function getStaticPaths() {
-  const { brands, lines, models } = await loadCatalog();
+  const { brands, lines, models } = await loadCatalog(null);
   const byId = new Map(brands.map((brand) => [brand.id, brand]));
   return models.map((model) => {
     const [id, lineSlug, modelSlug] = model.id.split('/');
