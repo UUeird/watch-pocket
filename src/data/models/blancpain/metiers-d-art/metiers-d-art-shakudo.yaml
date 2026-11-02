@@ -1,0 +1,28 @@
+name: "Métiers d'Art Shakudō"
+line: blancpain/metiers-d-art
+style: showpiece
+website: https://www.blancpain.com/en/metiers-dart/metiers-dart-shakudo-6615-3616-55b
+sources:
+  - https://www.blancpain.com/en/metiers-dart/metiers-dart-shakudo-6615-3616-55b
+  - https://www.blancpain.com/en/metiers-dart/metiers-dart-shakudo-6615-3615-55b
+references:
+  - ref: "6615 3616 55B"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/d4c04688-3718-4a87-ad1c-0507e2c52d58/6615_3616_55B_Metiers_D-Art_Shakudo_Soldier_Front_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/metiers-dart/metiers-dart-shakudo-6615-3616-55b
+    caseSize: 45
+    metals: [rose-gold]
+    movement: "15B"
+    movementType: mechanical
+    complications: []
+    bracelets: [{ type: leather-strap }]
+  - ref: "6615 3615 55B"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/92986aa6-065a-419a-a5b5-fe9191f9f73f/6616_3615_55B_Shakudo?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/metiers-dart/metiers-dart-shakudo-6615-3615-55b
+    caseSize: 45
+    metals: [rose-gold]
+    movement: "15B"
+    movementType: mechanical
+    complications: []
+    bracelets: [{ type: leather-strap }]

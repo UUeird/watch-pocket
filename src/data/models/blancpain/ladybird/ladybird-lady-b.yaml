@@ -1,0 +1,30 @@
+name: "Ladybird Lady B"
+line: blancpain/ladybird
+style: dress
+website: https://www.blancpain.com/en/ladybird/ladybird-lady-b-0064-3642-e17
+sources:
+  - https://www.blancpain.com/en/ladybird/ladybird-lady-b-0064-3642-e17
+  - https://www.blancpain.com/en/ladybird/ladybird-lady-b-0064-1142-b24
+references:
+  - ref: "0064 3642 E17"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/06b00a82-8866-47b8-a961-030a1756f0b7/Ladybird_Lady_B_0064_3642_63A_Moka_Soldier_Front_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/ladybird/ladybird-lady-b-0064-3642-e17
+    caseSize: 19
+    metals: [rose-gold]
+    movement: "615"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white, name: "Opaline" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: "0064 1142 B24"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/e9fb0d78-3edb-4948-b5b9-0791ee8778aa/Ladybird_Lady_B_0064_1142_63A_Blue_Soldier_Front_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/ladybird/ladybird-lady-b-0064-1142-b24
+    caseSize: 19
+    metals: [steel]
+    movement: "615"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white, name: "Opaline" }]
+    bracelets: [{ type: leather-strap }]

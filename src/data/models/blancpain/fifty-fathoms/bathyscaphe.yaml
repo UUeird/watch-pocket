@@ -1,0 +1,19 @@
+name: "Fifty Fathoms Bathyscaphe"
+line: blancpain/fifty-fathoms
+style: dive
+website: https://www.blancpain.com/en/fifty-fathoms/bathyscaphe-5000a-0640-o52a
+sources:
+  - https://www.blancpain.com/en/fifty-fathoms/bathyscaphe-5000a-0640-o52a
+references:
+  - ref: "5000A 0640 O52A"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/7a3962dd-f5c9-4f9f-8b93-53e5c66880b4/Fifty_Fathoms_Bathyscaphe_5000A_0640_O52A_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/fifty-fathoms/bathyscaphe-5000a-0640-o52a
+    caseSize: 43.6
+    metals: [ceramic]
+    bezel: { material: ceramic, colors: [blue], style: dive }
+    movement: "1315"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: fabric-strap }]

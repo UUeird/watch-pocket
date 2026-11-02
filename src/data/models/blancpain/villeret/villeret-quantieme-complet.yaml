@@ -1,0 +1,18 @@
+name: "Villeret Quantième Complet"
+line: blancpain/villeret
+style: dress
+website: https://www.blancpain.com/en/villeret/villeret-quantieme-complet-6654n-1142-55b
+sources:
+  - https://www.blancpain.com/en/villeret/villeret-quantieme-complet-6654n-1142-55b
+references:
+  - ref: "6654N 1142 55B"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/424ce726-0943-49ff-92be-278ccf92cb11/6654N_1142_55B_Villeret_Complete_Calendar_Soldier_Front_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/villeret/villeret-quantieme-complet-6654n-1142-55b
+    caseSize: 40.2
+    metals: [steel]
+    movement: "6654.4"
+    movementType: mechanical
+    complications: [date, day, moonphase]
+    dials: [{ color: white, name: "Opaline" }]
+    bracelets: [{ type: leather-strap }]

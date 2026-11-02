@@ -1,0 +1,18 @@
+name: "Fifty Fathoms Tech"
+line: blancpain/fifty-fathoms
+style: dive
+website: https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-tech-5019a-12b30-94a
+sources:
+  - https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-tech-5019a-12b30-94a
+references:
+  - ref: "5019A 12B30 94A"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/cd89ea5b-0a41-4053-8b79-db6549faaf93/5019A_12B30_94A_orange_Soldier_Face_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-tech-5019a-12b30-94a
+    caseSize: 47
+    metals: [titanium]
+    bezel: { material: ceramic, colors: [black], style: dive }
+    movement: "13P5A"
+    movementType: mechanical
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]

@@ -1,0 +1,18 @@
+name: "Villeret Tourbillon Carrousel"
+line: blancpain/villeret
+style: showpiece
+website: https://www.blancpain.com/en/villeret/villeret-tourbillon-carrousel-2322-3653-55b
+sources:
+  - https://www.blancpain.com/en/villeret/villeret-tourbillon-carrousel-2322-3653-55b
+references:
+  - ref: "2322 3653 55B"
+    officialPhoto:
+      src: https://prestigedam.swatchgroup.biz/transform/8b16af92-5b8c-453b-bfcd-7e259789aeda/2322_3653_55B_Villeret_Tourbillon_Carrousel_Soldier_Front_RGB?io=transform:fill,width:700
+      page: https://www.blancpain.com/en/villeret/villeret-tourbillon-carrousel-2322-3653-55b
+    caseSize: 44.6
+    metals: [rose-gold]
+    movement: "2322"
+    movementType: mechanical
+    complications: [tourbillon, power-reserve]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]
