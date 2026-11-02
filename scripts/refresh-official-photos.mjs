@@ -12,7 +12,10 @@ import { eachPolitely, headersFor, load, officialPhotosFile, readOfficialPhotos 
 
 const today = new Date().toISOString().slice(0, 10);
 const previous = readOfficialPhotos();
-const models = load('models').filter((model) => model.data.website && !model.data.photos?.length);
+// A model whose references each carry the maker's own image needs no lookup: the site shows those before the model's
+// (see src/lib/tile-photos.ts), so the model's image would never appear.
+const refsHaveOwn = (model) => model.data.references?.length > 0 && model.data.references.every((ref) => ref.officialPhoto);
+const models = load('models').filter((model) => model.data.website && !model.data.photos?.length && !refsHaveOwn(model));
 
 const decode = (text) => text.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
 // The share image a page names in its head, in either attribute order.
