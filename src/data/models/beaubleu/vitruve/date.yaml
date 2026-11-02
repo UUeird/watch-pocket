@@ -1,0 +1,32 @@
+name: "Vitruve Date"
+line: beaubleu/vitruve
+style: dress
+sources:
+  - https://beaubleu-paris.com/products/vitruve-date-acier
+  - https://beaubleu-paris.com/products/vitruve-date-noir
+references:
+  - ref: "Date Acier"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_date_acier_bleu.webp
+      page: https://beaubleu-paris.com/products/vitruve-date-acier
+    price: { amount: 950, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: bracelet }, { type: leather-strap }]
+  - ref: "Date Noir"
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_date_noir_noir.webp
+      page: https://beaubleu-paris.com/products/vitruve-date-noir
+    price: { amount: 950, currency: EUR, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "Miyota 9015"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }, { type: leather-strap }]
