@@ -352,8 +352,8 @@ function trim(node: Node, from: number, to: number, keep: string | null): Node[]
 // ---------- measures and sorting ----------
 
 export const SORTS: { id: Sort; label: string }[] = [
-  { id: 'count', label: 'Most references' },
   { id: 'models', label: 'Most models' },
+  { id: 'count', label: 'Most references' },
   { id: 'brands', label: 'Most brands' },
   { id: 'age', label: 'Oldest first' },
   { id: 'revenue', label: 'Highest revenue' },

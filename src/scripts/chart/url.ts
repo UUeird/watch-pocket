@@ -15,7 +15,7 @@ export const defaults = (): State => ({
   from: 1,
   to: 2,
   independents: 'show',
-  sort: 'count',
+  sort: 'models',
   view: 'columns',
   focus: null,
   selected: null,

@@ -104,11 +104,12 @@ test.describe('Chart', () => {
     await page.goto('chart/?sort=biggest&levels=nowhere');
     await expect(page.locator('#status')).toContainText('sort=biggest');
     await expect(page.locator('#status')).toContainText('levels=nowhere');
-    await expect(page.locator('#sort')).toHaveValue('count');
+    await expect(page.locator('#sort')).toHaveValue('models');
   });
 
   test('sorts by most models, ties broken by references', async ({ page }) => {
-    await page.goto('chart/?levels=brand&sort=models');
+    // Most models is the default, so the link needs no sort.
+    await page.goto('chart/?levels=brand');
     await expect(page.locator('#sort')).toHaveValue('models');
     const names = await page.locator(`${cells} .nm`).allTextContents();
     // Richard Mille has the most models recorded but few references, so it leads here and not under Most references.
