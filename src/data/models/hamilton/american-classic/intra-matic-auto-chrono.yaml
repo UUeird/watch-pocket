@@ -1,0 +1,18 @@
+name: Intra-Matic Auto Chrono
+line: hamilton/american-classic
+style: chronograph
+website: https://www.hamiltonwatch.com/en-us/h38446730-american-classic-auto-chrono.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h38446730-american-classic-auto-chrono.html
+references:
+  - ref: H38446730
+    price: { amount: 2625, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: black, name: Black PVD }]
+    crystal: sapphire
+    movement: H-31
+    movementType: mechanical
+    complications: [date, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]

@@ -1,0 +1,17 @@
+name: Jazzmaster Open Heart Auto
+line: hamilton/jazzmaster
+style: dress
+website: https://www.hamiltonwatch.com/en-us/h32705140-jazzmaster-open-heart-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h32705140-jazzmaster-open-heart-auto.html
+references:
+  - ref: H32705140
+    price: { amount: 1295, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: H-10
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue, name: Blue aventurine }]
+    bracelets: [{ type: bracelet }]

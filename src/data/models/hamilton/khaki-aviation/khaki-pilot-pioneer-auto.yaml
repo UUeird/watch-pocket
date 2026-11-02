@@ -1,0 +1,18 @@
+name: Khaki Pilot Pioneer Auto
+line: hamilton/khaki-aviation
+style: pilot
+theme: aviation
+website: https://www.hamiltonwatch.com/en-us/h76265810-khaki-aviation-pioneer-auto.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h76265810-khaki-aviation-pioneer-auto.html
+references:
+  - ref: H76265810
+    price: { amount: 1095, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: H-10
+    movementType: mechanical
+    complications: []
+    dials: [{ color: white, name: Eggshell white }]
+    bracelets: [{ type: leather-strap }]

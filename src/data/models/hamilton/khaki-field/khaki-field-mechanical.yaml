@@ -1,0 +1,17 @@
+name: Khaki Field Mechanical
+line: hamilton/khaki-field
+style: field
+website: https://www.hamiltonwatch.com/en-us/h69439931-khaki-field-mechanical.html
+sources:
+  - https://www.hamiltonwatch.com/en-us/h69439931-khaki-field-mechanical.html
+references:
+  - ref: H69439931
+    price: { amount: 675, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: H-50
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: fabric-strap }]
