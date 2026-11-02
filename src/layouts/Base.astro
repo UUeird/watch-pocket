@@ -66,7 +66,8 @@ const current = (path: string) => {
     for (const wrap of wraps) {
       if (wrap.classList.contains('fits')) continue;
       const table = wrap.querySelector('table')!;
-      const start = table.getBoundingClientRect().top + scrollY - header.offsetHeight;
+      // Measured from the labels, not the table: the table's collapsed top border puts them half a pixel lower.
+      const start = table.tHead!.getBoundingClientRect().top + scrollY - header.offsetHeight;
       const room = table.offsetHeight - table.tHead!.offsetHeight;
       wrap.style.setProperty('--lift-start', `${start}px`);
       wrap.style.setProperty('--lift-end', `${start + room}px`);
