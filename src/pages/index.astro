@@ -2,17 +2,17 @@
 import Base from '../layouts/Base.astro';
 import { href, loadCatalog } from '../lib/catalog';
 
-const { brands, groups, references } = await loadCatalog();
+const { brands, groups, lines, models, references } = await loadCatalog();
 // Counts with thousands separators.
 const count = (n: number) => n.toLocaleString('en-US');
 const countries = new Set(brands.map((brand) => brand.data.origin).filter(Boolean));
-// The site's sections, each with what it holds and how big it is.
+// The catalog's levels, broadest first, each with what it holds and how big it is.
 const sections = [
   {
-    title: 'Brands',
-    path: '/brands/',
-    count: count(brands.length),
-    text: 'Every brand with its owner, origin and founding.',
+    title: 'Countries',
+    path: '/countries/',
+    count: count(countries.size),
+    text: 'Brands by the country they were founded in, whoever owns them today.',
   },
   {
     title: 'Ownership Groups',
@@ -21,16 +21,22 @@ const sections = [
     text: 'The corporations and families that hold the brands, and how much each holds.',
   },
   {
-    title: 'Chart',
-    path: '/chart/',
+    title: 'Brands',
+    path: '/brands/',
     count: count(brands.length),
-    text: 'Every brand as a circle inside the group that owns it, sized by a figure you choose.',
+    text: 'Every brand with its owner, origin and founding.',
   },
   {
-    title: 'Countries',
-    path: '/countries/',
-    count: count(countries.size),
-    text: 'Brands by the country they were founded in, whoever owns them today.',
+    title: 'Lines',
+    path: '/lines/',
+    count: count(lines.length),
+    text: 'The collections each brand sells under one name, like the Submariner or the Speedmaster.',
+  },
+  {
+    title: 'Models',
+    path: '/models/',
+    count: count(models.length),
+    text: 'Each named design within a line, with its style and the references made of it.',
   },
   {
     title: 'References',

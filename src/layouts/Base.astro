@@ -8,12 +8,14 @@ interface Props {
 const { title } = Astro.props;
 const pageTitle = title ? `${title} · WatchPocket` : 'WatchPocket';
 const sections = [
-  { path: '/brands/', name: 'Brands' },
+  { path: '/countries/', name: 'Countries' },
   { path: '/ownership-groups/', name: 'Ownership Groups' },
+  { path: '/brands/', name: 'Brands' },
+  { path: '/lines/', name: 'Lines' },
+  { path: '/models/', name: 'Models' },
+  { path: '/references/', name: 'References' },
   { path: '/chart/', name: 'Chart' },
   { path: '/timeline/', name: 'Timeline' },
-  { path: '/countries/', name: 'Countries' },
-  { path: '/references/', name: 'References' },
   // The Docs stay off the published site (see astro.config.mjs), so they're only linked where they're built.
   ...(import.meta.env.SHOW_DOCS ? [{ path: '/docs/', name: 'Docs' }] : []),
 ];
