@@ -11,8 +11,9 @@ export const defaults = (): State => ({
   segments: new Set(),
   status: new Set(),
   groupBy: 'none',
-  from: 0,
-  to: 1,
+  // Opens on brands and their lines; owners are a level up.
+  from: 1,
+  to: 2,
   independents: 'show',
   sort: 'count',
   view: 'columns',

@@ -4,8 +4,18 @@ const crumbs = '#crumbs';
 const cells = '.columns .cell';
 
 test.describe('Chart', () => {
-  test('opens on owners and their brands, in columns, with logos', async ({ page }) => {
+  test('opens on brands and their lines', async ({ page }) => {
     await page.goto('chart/');
+    await expect(page.locator('.columns .colhead')).toHaveText(['Brand', 'Line']);
+    await expect(page.locator('#lvfrom')).toHaveValue('1');
+    await expect(page.locator('#lvto')).toHaveValue('2');
+    await expect(page.locator(cells, { hasText: 'Seiko' }).first()).toBeVisible();
+    await expect(page.locator(cells, { hasText: 'Prospex' }).first()).toBeVisible();
+    await expect(page).not.toHaveURL(/levels=/);
+  });
+
+  test('shows owners and their brands, in columns, with logos', async ({ page }) => {
+    await page.goto('chart/?levels=owner-brand');
     await expect(page.locator('.columns .colhead')).toHaveText(['Owner', 'Brand']);
     await expect(page.locator(cells, { hasText: 'Swatch Group' }).first()).toBeVisible();
     expect(await page.locator(`${cells} .plate img`).count()).toBeGreaterThan(10);
@@ -18,7 +28,7 @@ test.describe('Chart', () => {
   });
 
   test('filters by country, and keeps owners as context', async ({ page }) => {
-    await page.goto('chart/');
+    await page.goto('chart/?levels=owner-brand');
     await page.locator('summary#csum').click();
     await page.locator('#presets button', { hasText: 'Japan' }).click();
     await expect(page).toHaveURL(/[?&]c=Japan/);
@@ -30,7 +40,7 @@ test.describe('Chart', () => {
   });
 
   test('shows the levels asked for, and steps back from an empty one', async ({ page }) => {
-    await page.goto('chart/?c=Japan');
+    await page.goto('chart/?c=Japan&levels=owner-brand');
     await page.locator('#lvto').selectOption('2');
     await expect(page.locator('.columns .colhead')).toHaveText(['Owner', 'Brand', 'Line']);
     await expect(page).toHaveURL(/levels=owner-line/);
@@ -41,7 +51,7 @@ test.describe('Chart', () => {
   });
 
   test('zooms in with a click, and Back zooms out', async ({ page }) => {
-    await page.goto('chart/');
+    await page.goto('chart/?levels=owner-brand');
     await page.locator(cells, { hasText: 'Swatch Group' }).first().click();
     await expect(page).toHaveURL(/focus=g:swatch-group/);
     await expect(page.locator(crumbs)).toContainText('Swatch Group');
@@ -88,7 +98,7 @@ test.describe('Chart', () => {
   });
 
   test('moves between boxes with the arrow keys and zooms with Enter', async ({ page }) => {
-    await page.goto('chart/?c=Japan');
+    await page.goto('chart/?c=Japan&levels=owner-brand');
     const first = page.locator(`${cells}[tabindex="0"]`);
     await expect(first).toHaveCount(1);
     await first.focus();

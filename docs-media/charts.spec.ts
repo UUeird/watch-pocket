@@ -13,6 +13,9 @@ test('the chart as it opens, and its controls', async ({ page }) => {
   await settle(page);
   await still(page.locator('.chart .bar'), 'controls');
   await still(page.locator('#viz'), 'chart-overview');
+  await page.goto('chart/?levels=owner-brand');
+  await settle(page);
+  await still(page.locator('#viz'), 'chart-owners');
 });
 
 test('levels down to lines and to references', async ({ page }) => {

@@ -16,11 +16,14 @@ import { SORTS } from '../../scripts/chart/tree';
     Submariner Date), and a model has <strong>references</strong>, the individual reference numbers (126610LN).
   </p>
   <p>
-    The page opens on owners and their brands. Each level is a column, so a column only ever holds one kind of thing. Each box prints
-    what it holds, such as "6 brands · 11 lines · 29 models · 169 refs".
+    The page opens on brands and their lines. Each level is a column, so a column only ever holds one kind of thing. Each box prints
+    what it holds, such as "11 lines · 29 models · 169 refs". To see who owns each brand, start <strong>Levels shown</strong> at Owners.
   </p>
-  <DocsFigure src="chart-overview.png" alt="The chart as it opens: a column of owners, each box beside a column of the brands it owns, with logos on the brands." wide>
-    The chart as it opens: owners, and the brands they own.
+  <DocsFigure src="chart-overview.png" alt="The chart as it opens: a column of brands with their logos, each beside a column of its lines." wide>
+    The chart as it opens: brands, and their lines.
+  </DocsFigure>
+  <DocsFigure src="chart-owners.png" alt="Owners and their brands: a column of owning groups, each box beside a column of the brands it owns." wide>
+    Started at Owners: each group beside the brands it owns.
   </DocsFigure>
   <ul>
     <li>
@@ -62,8 +65,8 @@ import { SORTS } from '../../scripts/chart/tree';
 
   <h3 id="levels">Levels shown</h3>
   <p>
-    <strong>Levels shown</strong> takes two picks: where to start and how deep to go. Owners → Brands is the opening view. Brands → Models
-    leaves out the owners. Lines → References lists every reference by line. Each level in the menus says how many there are under the
+    <strong>Levels shown</strong> takes two picks: where to start and how deep to go. Brands → Lines is the opening view. Owners → Brands
+    shows who owns what. Lines → References lists every reference by line. Each level in the menus says how many there are under the
     current filters. A level with none can't be picked, and if one empties, the chart stops at the deepest level that still has
     something in it.
   </p>
