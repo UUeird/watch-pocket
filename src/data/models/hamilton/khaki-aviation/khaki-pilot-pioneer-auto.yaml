@@ -10,7 +10,7 @@ sources:
 references:
   - ref: H76205530
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76205530.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76205530_lowresweb.png
       page: https://www.hamiltonwatch.com/en-us/h76205530-khaki-aviation-pilot-pioneer.html
     price: { amount: 1095, currency: USD, year: 2026 }
     caseSize: 38

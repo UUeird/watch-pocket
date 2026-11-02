@@ -50,7 +50,7 @@ references:
     movementType: mechanical
   - ref: H69439363
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439363.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439363_1.png
       page: https://www.hamiltonwatch.com/en-us/h69439363-khaki-field-mechanical.html
     price: { amount: 675, currency: USD, year: 2026 }
     movementType: mechanical
@@ -94,7 +94,7 @@ references:
     bracelets: [{ type: fabric-strap }]
   - ref: H69439933
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439933.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439933_1.png
       page: https://www.hamiltonwatch.com/en-us/h69439933-khaki-field-mechanical.html
     price: { amount: 675, currency: USD, year: 2026 }
     movementType: mechanical
@@ -112,7 +112,7 @@ references:
     movementType: mechanical
   - ref: H69469930
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69469930.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69469930_soldier.png
       page: https://www.hamiltonwatch.com/en-us/h69469930-khaki-field-mechanical-38mm-call-of-duty-modern-warfare-4.html
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 38

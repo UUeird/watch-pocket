@@ -15,7 +15,7 @@ references:
     movementType: quartz
   - ref: H52414130
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/5/h52414130.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/5/h52414130_silver.png
       page: https://www.hamiltonwatch.com/en-us/h52414130-american-classic-psr-digital-quartz.html
     price: { amount: 925, currency: USD, year: 2026 }
     caseSize: 41

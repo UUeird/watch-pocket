@@ -37,7 +37,7 @@ references:
     movementType: mechanical
   - ref: H70455160
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70455160.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70455160_1.png
       page: https://www.hamiltonwatch.com/en-us/h70455160-khaki-field-auto.html
     price: { amount: 845, currency: USD, year: 2026 }
     caseSize: 38
@@ -70,7 +70,7 @@ references:
     movementType: mechanical
   - ref: H70455733
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70455733.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70455733_new.png
       page: https://www.hamiltonwatch.com/en-us/h70455733-khaki-field-auto.html
     price: { amount: 795, currency: USD, year: 2026 }
     movementType: mechanical
@@ -83,7 +83,7 @@ references:
     movementType: mechanical
   - ref: H70455960
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70455960.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70455960_1.png
       page: https://www.hamiltonwatch.com/en-us/h70455960-khaki-field-auto.html
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 38
@@ -97,13 +97,13 @@ references:
     movementType: mechanical
   - ref: H70515137
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70515137.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70515137_1.png
       page: https://www.hamiltonwatch.com/en-us/h70515137-khaki-field-auto.html
     price: { amount: 845, currency: USD, year: 2026 }
     movementType: mechanical
   - ref: H70555533
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70555533.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70555533_1.png
       page: https://www.hamiltonwatch.com/en-us/h70555533-khaki-field-auto.html
     price: { amount: 795, currency: USD, year: 2026 }
     movementType: mechanical
@@ -144,7 +144,7 @@ references:
     movementType: mechanical
   - ref: H70675530
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70675530.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70675530_soldier_1.png
       page: https://www.hamiltonwatch.com/en-us/h70675530-khaki-field-auto-odyssey-limited-edition.html
     price: { amount: 1495, currency: USD, year: 2026 }
     movementType: mechanical

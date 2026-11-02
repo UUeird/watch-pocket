@@ -8,7 +8,7 @@ sources:
 references:
   - ref: H24625330
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24625330.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/2/h24625330_lowresweb.png
       page: https://www.hamiltonwatch.com/en-us/h24625330-ventura-xxl-auto.html
     price: { amount: 2175, currency: USD, year: 2026 }
     movementType: mechanical

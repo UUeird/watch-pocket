@@ -42,14 +42,14 @@ references:
     movementType: quartz
   - ref: H32461121
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32461121.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32461121_1.png
       page: https://www.hamiltonwatch.com/en-us/h32461121-jazzmaster-quartz.html
     price: { amount: 475, currency: USD, year: 2026 }
     caseSize: 40
     movementType: quartz
   - ref: H32461131
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32461131.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32461131_1.png
       page: https://www.hamiltonwatch.com/en-us/h32461131-jazzmaster-quartz.html
     price: { amount: 475, currency: USD, year: 2026 }
     caseSize: 40

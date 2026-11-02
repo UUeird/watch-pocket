@@ -43,7 +43,7 @@ references:
     movementType: mechanical
   - ref: H64655941
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64655941.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64655941_1.png
       page: https://www.hamiltonwatch.com/en-us/h64655941-khaki-aviation-day-date-auto.html
     price: { amount: 1575, currency: USD, year: 2026 }
     movementType: mechanical

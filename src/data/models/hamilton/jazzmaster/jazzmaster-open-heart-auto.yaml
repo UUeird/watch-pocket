@@ -96,7 +96,7 @@ references:
     movementType: mechanical
   - ref: H32675140
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32675140.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32675140_lowresweb.png
       page: https://www.hamiltonwatch.com/en-us/h32675140-jazzmaster-open-heart-auto.html
     price: { amount: 1295, currency: USD, year: 2026 }
     movementType: mechanical
@@ -115,7 +115,7 @@ references:
     movementType: mechanical
   - ref: H32675160
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32675160.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32675160_lowresweb.png
       page: https://www.hamiltonwatch.com/en-us/h32675160-jazzmaster-open-heart-auto.html
     price: { amount: 1295, currency: USD, year: 2026 }
     movementType: mechanical
@@ -153,7 +153,7 @@ references:
     movementType: mechanical
   - ref: H32675560
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32675560.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32675560_lowresweb.png
       page: https://www.hamiltonwatch.com/en-us/h32675560-jazzmaster-open-heart-auto.html
     price: { amount: 1245, currency: USD, year: 2026 }
     movementType: mechanical

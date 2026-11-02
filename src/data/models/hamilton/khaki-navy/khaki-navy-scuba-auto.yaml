@@ -36,7 +36,7 @@ references:
     movementType: mechanical
   - ref: H82395332
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82395332.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82395332_1.png
       page: https://www.hamiltonwatch.com/en-us/h82395332-khaki-navy-scuba-auto.html
     price: { amount: 975, currency: USD, year: 2026 }
     movementType: mechanical
@@ -56,7 +56,7 @@ references:
     movementType: mechanical
   - ref: H82415331
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82415331.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h82415331_1.png
       page: https://www.hamiltonwatch.com/en-us/h82415331-khaki-navy-scuba.html
     price: { amount: 975, currency: USD, year: 2026 }
     caseSize: 40

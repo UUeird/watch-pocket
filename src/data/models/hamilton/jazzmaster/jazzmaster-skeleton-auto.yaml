@@ -44,7 +44,7 @@ references:
     movementType: mechanical
   - ref: H42535541
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/4/h42535541.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/4/h42535541_1.png
       page: https://www.hamiltonwatch.com/en-us/h42535541-jazzmaster-skeleton-auto.html
     price: { amount: 1495, currency: USD, year: 2026 }
     movementType: mechanical

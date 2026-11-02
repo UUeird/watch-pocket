@@ -22,7 +22,7 @@ references:
     bracelets: [{ type: leather-strap }]
   - ref: H76709530
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76709530.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76709530_lowresweb.png
       page: https://www.hamiltonwatch.com/en-us/h76709530-khaki-aviation-pilot-pioneer.html
     price: { amount: 1795, currency: USD, year: 2026 }
     caseSize: 43

@@ -8,7 +8,7 @@ sources:
 references:
   - ref: H69459510
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69459510.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69459510_1.png
       page: https://www.hamiltonwatch.com/en-us/h69459510-khaki-field-mechanical-bronze.html
     price: { amount: 1025, currency: USD, year: 2026 }
     metals: [bronze]

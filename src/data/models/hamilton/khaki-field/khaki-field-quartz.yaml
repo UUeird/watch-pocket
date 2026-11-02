@@ -31,7 +31,7 @@ references:
     movementType: quartz
   - ref: H69301430
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69301430.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69301430_2.png
       page: https://www.hamiltonwatch.com/en-us/h69301430-khaki-field-quartz.html
     price: { amount: 445, currency: USD, year: 2026 }
     caseSize: 33
@@ -107,7 +107,7 @@ references:
     bracelets: [{ type: fabric-strap }]
   - ref: H69401940
     officialPhoto:
-      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69401940.png
+      src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69401940_2.png
       page: https://www.hamiltonwatch.com/en-us/h69401940-khaki-field-quartz.html
     price: { amount: 445, currency: USD, year: 2026 }
     caseSize: 38
