@@ -13,7 +13,6 @@ import {
   loadCatalog,
   referenceName,
   refSlug,
-  sourceHost,
 } from '../../../../../lib/catalog';
 
 export async function getStaticPaths() {
@@ -25,7 +24,7 @@ export async function getStaticPaths() {
 }
 
 const { reference, model, line, brand } = Astro.props;
-const { ref, website, periods, price, caseSize, metals, caseColors, modelNumbers, bezel, crystal, movement, complications, dials, bracelets } = reference;
+const { ref, periods, price, caseSize, metals, caseColors, modelNumbers, bezel, crystal, movement, complications, dials, bracelets } = reference;
 const discontinued = periods.at(-1)?.to !== undefined;
 // Each fact with whether it reads from a fixed vocabulary (`rose-gold`), which is capitalized for display.
 const facts: [string, string | undefined, boolean?][] = [
@@ -50,16 +49,6 @@ const shown = facts.filter(([, value]) => value);
     <div>
       <h1>{ref}</h1>
       <p class="lede">{[referenceName(reference, model.data.references), 'Reference'].filter(Boolean).join(' · ')}{periods.length > 0 && (discontinued ? ' · discontinued' : ' · current')}</p>
-      {
-        website && (
-          <p class="maker">
-            <a href={website} target="_blank" rel="noopener">
-              See it on {sourceHost(website)} <span aria-hidden="true">↗</span>
-              <span class="visually-hidden">(opens in a new tab)</span>
-            </a>
-          </p>
-        )
-      }
     </div>
     <ModelPhoto model={model} brandName={brand.data.name} reference={reference} />
   </div>
@@ -97,19 +86,5 @@ const shown = facts.filter(([, value]) => value);
     justify-content: space-between;
     gap: 16px 32px;
     margin-bottom: 24px;
-  }
-
-  .maker {
-    margin: 8px 0 0;
-    font-size: 0.875rem;
-  }
-
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
   }
 </style>

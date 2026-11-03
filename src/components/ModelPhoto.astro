@@ -19,7 +19,9 @@ interface Props {
 }
 
 const { model, brandName, reference } = Astro.props;
-const { name, website } = model.data;
+const { name } = model.data;
+// On a reference's page, the maker's page for that reference where there is one.
+const website = reference?.website ?? model.data.website;
 const ofModel = model.data.photos.map((photo) => ({ ...photo, ref: undefined as string | undefined }));
 const ofReferences = model.data.references.flatMap(({ ref, photos }) => photos.map((photo) => ({ ...photo, ref })));
 const own = reference ? reference.photos.map((photo) => ({ ...photo, ref: undefined })) : [];
