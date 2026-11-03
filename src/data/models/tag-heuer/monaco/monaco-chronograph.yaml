@@ -11,6 +11,7 @@ photos:
       licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
       author: EMore98
 sources:
+  - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-th20-00/CBL2115.FC6494.html
   - https://watchbase.com/tag-heuer/monaco/cw2118-fc6207
   - https://www.wewatches.com/encyclopedie/tag-heuer/monaco/cw2118-fc6207
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-th20-00/CBL2111.FC6453.html
@@ -38,6 +39,13 @@ references:
     movementType: mechanical
     complications: [chronograph]
     dials: [{ color: blue }]
+  - ref: "CBL2115.FC6494"
+    name: "Gulf"
+    caseSize: 39
+    movement: "TH20-00"
+    movementType: mechanical
+    complications: [chronograph]
+    bracelets: [{ type: leather-strap }]
   - ref: "CW2118"
     name: "Steve McQueen"
     photos:
