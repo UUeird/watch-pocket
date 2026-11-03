@@ -1,0 +1,8 @@
+name: "LTP-V002"
+line: casio/casio-collection
+website: https://www.casio.com/intl/watches/casio/product.LTP-V002L-1B/
+sources:
+  - https://www.casio.com/intl/watches/casio/product.LTP-V002L-1B/
+references:
+  - ref: "LTP-V002L-1B"
+    movementType: quartz

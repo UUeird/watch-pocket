@@ -1,0 +1,8 @@
+name: "MRW-200H"
+line: casio/casio-collection
+website: https://www.casio.com/europe/watches/casio/product.MRW-200H-1BV/
+sources:
+  - https://www.casio.com/europe/watches/casio/product.MRW-200H-1BV/
+references:
+  - ref: "MRW-200H-1BV"
+    movementType: quartz

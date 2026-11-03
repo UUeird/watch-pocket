@@ -1,0 +1,8 @@
+name: "W-217H"
+line: casio/casio-collection
+website: https://www.casio.com/ca-en/watches/casio/product.W-217H-1AV/
+sources:
+  - https://www.casio.com/ca-en/watches/casio/product.W-217H-1AV/
+references:
+  - ref: "W-217H-1AV"
+    movementType: quartz
