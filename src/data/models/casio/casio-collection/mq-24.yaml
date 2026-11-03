@@ -1,6 +1,13 @@
 name: "MQ-24"
 line: casio/casio-collection
 website: https://www.casio.com/us/watches/casio/product.MQ-24-7B2LL/
+photos:
+  - file: ../../../photos/casio/casio-collection/mq-24.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Casio_watch_MQ-24_black_and_white_in_201804.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: Mc681
 sources:
   - https://www.casio.com/us/watches/casio/product.MQ-24-7B2LL/
 references:

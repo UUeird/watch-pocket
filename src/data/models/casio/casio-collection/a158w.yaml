@@ -1,6 +1,13 @@
 name: "A158W"
 line: casio/casio-collection
 website: https://www.casio.com/intl/watches/casio/product.A158WA-1/
+photos:
+  - file: ../../../photos/casio/casio-collection/a158w.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:A158W.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: Casiolink
 sources:
   - https://www.casio.com/intl/watches/casio/product.A158WA-1/
 references:

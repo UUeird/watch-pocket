@@ -1,6 +1,13 @@
 name: "MRW-200H"
 line: casio/casio-collection
 website: https://www.casio.com/europe/watches/casio/product.MRW-200H-1BV/
+photos:
+  - file: ../../../photos/casio/casio-collection/mrw-200h.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Casio_watch_MRW-200H_in_201804.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: Mc681
 sources:
   - https://www.casio.com/europe/watches/casio/product.MRW-200H-1BV/
 references:

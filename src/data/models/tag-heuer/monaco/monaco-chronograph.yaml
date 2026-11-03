@@ -3,6 +3,25 @@ line: tag-heuer/monaco
 style: chronograph
 theme: motor-racing
 website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-th20-00/CBL2111.FC6453.html
+photos:
+  - file: ../../../photos/tag-heuer/monaco/monaco-chronograph.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:TAG_Heuer_Monaco_24_(cropped,_turned,_colours).jpg
+      license: CC BY-SA 3.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+      author: "File:TAG Heuer Monaco 24.JPG (original image): Ferengi Derivative work above: Pittigrilli"
+  - file: ../../../photos/tag-heuer/monaco/monaco-chronograph-2.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:TAG_Heuer_Monaco,_2020.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: EMore98
+  - file: ../../../photos/tag-heuer/monaco/monaco-chronograph-3.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Steve_McQueen_Monaco_White_face_CW2118.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: DavidBSV12
 sources:
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-th20-00/CBL2111.FC6453.html
   - https://www.tagheuer.com/nl/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-heuer02-automatic/CBL2111.BA0644.html
