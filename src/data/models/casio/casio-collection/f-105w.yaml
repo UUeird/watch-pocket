@@ -1,0 +1,8 @@
+name: "F-105W"
+line: casio/casio-collection
+website: https://www.casio.com/intl/watches/casio/product.F-105W-1A/
+sources:
+  - https://www.casio.com/intl/watches/casio/product.F-105W-1A/
+references:
+  - ref: "F-105W-1A"
+    movementType: quartz

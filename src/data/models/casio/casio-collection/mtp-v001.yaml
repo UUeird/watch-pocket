@@ -1,0 +1,8 @@
+name: "MTP-V001"
+line: casio/casio-collection
+website: https://www.casio.com/intl/watches/casio/product.MTP-V001L-1B/
+sources:
+  - https://www.casio.com/intl/watches/casio/product.MTP-V001L-1B/
+references:
+  - ref: "MTP-V001L-1B"
+    movementType: quartz

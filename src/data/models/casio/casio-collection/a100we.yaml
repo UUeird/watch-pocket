@@ -1,0 +1,8 @@
+name: "A100WE"
+line: casio/casio-collection
+website: https://www.casio.com/us/watches/casio/product.A100WE-1A/
+sources:
+  - https://www.casio.com/us/watches/casio/product.A100WE-1A/
+references:
+  - ref: "A100WE-1A"
+    movementType: quartz

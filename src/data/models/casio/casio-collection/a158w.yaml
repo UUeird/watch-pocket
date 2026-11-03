@@ -1,0 +1,8 @@
+name: "A158W"
+line: casio/casio-collection
+website: https://www.casio.com/intl/watches/casio/product.A158WA-1/
+sources:
+  - https://www.casio.com/intl/watches/casio/product.A158WA-1/
+references:
+  - ref: "A158WA-1"
+    movementType: quartz

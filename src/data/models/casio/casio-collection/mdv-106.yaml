@@ -1,0 +1,9 @@
+name: "MDV-106"
+line: casio/casio-collection
+style: dive
+website: https://www.casio.com/us/watches/casio/product.MDV-106DD-1A1V/
+sources:
+  - https://www.casio.com/us/watches/casio/product.MDV-106DD-1A1V/
+references:
+  - ref: "MDV-106DD-1A1V"
+    movementType: quartz

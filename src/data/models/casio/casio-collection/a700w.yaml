@@ -1,0 +1,8 @@
+name: "A700W"
+line: casio/casio-collection
+website: https://www.casio.com/us/watches/casio/product.A700W-1A/
+sources:
+  - https://www.casio.com/us/watches/casio/product.A700W-1A/
+references:
+  - ref: "A700W-1A"
+    movementType: quartz
