@@ -38,12 +38,14 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: "CAW218C.FC6548"
+    name: "French Racing Blue"
     caseSize: 39
     movement: "Calibre 11"
     movementType: mechanical
     complications: [chronograph]
-    dials: [{ color: blue, name: "French Racing Blue" }]
+    dials: [{ color: blue }]
   - ref: "CW2118"
+    name: "Steve McQueen"
     photos:
       - file: ../../../photos/tag-heuer/monaco/monaco-chronograph-3.jpg
         credit:
@@ -55,4 +57,4 @@ references:
     movement: "Calibre 17"
     movementType: mechanical
     complications: [chronograph]
-    dials: [{ color: white, name: "Steve McQueen" }]
+    dials: [{ color: white }]

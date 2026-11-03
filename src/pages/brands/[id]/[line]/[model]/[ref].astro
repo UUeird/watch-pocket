@@ -11,6 +11,7 @@ import {
   formatPeriods,
   label,
   loadCatalog,
+  referenceName,
   refSlug,
 } from '../../../../../lib/catalog';
 
@@ -47,7 +48,7 @@ const shown = facts.filter(([, value]) => value);
   <div class="head">
     <div>
       <h1>{ref}</h1>
-      <p class="lede">Reference{periods.length > 0 && (discontinued ? ' · discontinued' : ' · current')}</p>
+      <p class="lede">{[referenceName(reference, model.data.references), 'Reference'].filter(Boolean).join(' · ')}{periods.length > 0 && (discontinued ? ' · discontinued' : ' · current')}</p>
     </div>
     <ModelPhoto model={model} brandName={brand.data.name} reference={reference} />
   </div>

@@ -16,6 +16,7 @@ import {
   label,
   loadCatalog,
   plural,
+  referenceName,
   refHref,
   sourceHost,
   type Brand,
@@ -49,6 +50,7 @@ const capitalize = (value: string) => value.charAt(0).toUpperCase() + value.slic
 // vocabulary (`rose-gold`). A column no reference here has a value for is left out.
 const columns = (
   [
+    { name: 'Name', kind: '', value: (reference: Reference) => referenceName(reference, references) ?? '' },
     { name: 'On sale', kind: 'num', value: (reference: Reference) => formatPeriods(reference.periods) },
     { name: 'Case', kind: 'num', value: (reference: Reference) => (reference.caseSize ? `${reference.caseSize} mm` : '') },
     { name: 'Metals', kind: 'cap', value: (reference: Reference) => reference.metals.map(label).join(', ') },
@@ -108,7 +110,11 @@ const showThumbs = references.some((reference) => thumbOf(reference));
         tiles={references.map((reference) => ({
           href: refHref(model, reference),
           title: reference.ref,
-          detail: [formatPeriods(reference.periods), reference.caseSize && `${reference.caseSize} mm`].filter(Boolean).join(' · '),
+          detail: (() => {
+            const named = referenceName(reference, references);
+            const size = reference.caseSize && `${reference.caseSize} mm`;
+            return [named, formatPeriods(reference.periods), size && !named?.includes(size) && size].filter(Boolean).join(' · ');
+          })(),
           photos: referencePhotos(model, reference, brand.data.name),
         }))}
       />
