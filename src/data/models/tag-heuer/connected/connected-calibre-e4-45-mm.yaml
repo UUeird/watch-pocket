@@ -1,0 +1,16 @@
+name: "Connected Calibre E4 45 mm"
+line: tag-heuer/connected
+style: smartwatch
+website: https://www.tagheuer.com/us/en/smartwatches/collections/tag-heuer-connected/45-mm/SBR8A10.BT6265.html
+sources:
+  - https://www.tagheuer.com/us/en/smartwatches/collections/tag-heuer-connected/45-mm/SBR8A10.BT6265.html
+  - https://www.tagheuer.com/us/en/smartwatches/collections/tag-heuer-connected/45-mm/SBR8A80.EB0259.html
+references:
+  - ref: "SBR8A10.BT6265"
+    caseSize: 45
+    metals: [steel]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "SBR8A80.EB0259"
+    caseSize: 45
+    metals: [titanium]
+    bracelets: [{ type: rubber-strap }]

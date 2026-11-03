@@ -1,0 +1,29 @@
+name: "Monaco Chronograph"
+line: tag-heuer/monaco
+style: chronograph
+theme: motor-racing
+website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-th20-00/CBL2111.FC6453.html
+sources:
+  - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-th20-00/CBL2111.FC6453.html
+  - https://www.tagheuer.com/nl/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-heuer02-automatic/CBL2111.BA0644.html
+  - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW218C.FC6548.html
+references:
+  - ref: "CBL2111.FC6453"
+    caseSize: 39
+    metals: [steel]
+    movementType: mechanical
+    complications: [chronograph]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: "CBL2111.BA0644"
+    caseSize: 39
+    metals: [steel]
+    movementType: mechanical
+    complications: [chronograph]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: "CAW218C.FC6548"
+    caseSize: 39
+    movement: "Calibre 11"
+    movementType: mechanical
+    complications: [chronograph]

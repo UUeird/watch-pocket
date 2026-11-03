@@ -1,0 +1,33 @@
+name: "Aquaracer Professional 300 Date"
+line: tag-heuer/aquaracer
+style: dive
+website: https://www.tagheuer.com/int/en/timepieces/collections/tag-heuer-aquaracer/42-mm-th31-00-cosc/WBP5111.FT6259.html
+sources:
+  - https://www.tagheuer.com/int/en/timepieces/collections/tag-heuer-aquaracer/42-mm-th31-00-cosc/WBP5111.FT6259.html
+  - https://www.tagheuer.com/int/en/timepieces/collections/tag-heuer-aquaracer/43-mm-calibre-5-automatic/WBP201B.BA0632.html
+  - https://www.tagheuer.com/int/en/timepieces/collections/tag-heuer-aquaracer/43-mm-calibre-5-automatic/WBP208B.BF0631.html
+references:
+  - ref: "WBP5111.FT6259"
+    caseSize: 42
+    metals: [steel]
+    movement: "TH31-00"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+  - ref: "WBP201B.BA0632"
+    caseSize: 43
+    metals: [steel]
+    bezel: { material: ceramic, style: dive }
+    movement: "Calibre 5"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: "WBP208B.BF0631"
+    caseSize: 43
+    metals: [titanium]
+    movement: "Calibre 5"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
