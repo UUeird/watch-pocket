@@ -12,4 +12,5 @@ sources:
   - https://www.casio.com/us/watches/casio/product.MQ-24-7B2LL/
 references:
   - ref: "MQ-24-7B2LL"
+    website: https://www.casio.com/us/watches/casio/product.MQ-24-7B2LL/
     movementType: quartz

@@ -7,6 +7,7 @@ sources:
   - https://beaubleu-paris.com/products/ecce-lys
 references:
   - ref: "Ecce Smalt"
+    website: https://beaubleu-paris.com/products/ecce-smalt
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/sBB_BLUE_-_Vblue.webp
       page: https://beaubleu-paris.com/products/ecce-smalt
@@ -20,6 +21,7 @@ references:
     dials: [{ color: blue, name: Smalt }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
   - ref: "Ecce Vesperal"
+    website: https://beaubleu-paris.com/products/ecce-vesperal
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_vesperal_acier.webp
       page: https://beaubleu-paris.com/products/ecce-vesperal
@@ -32,6 +34,7 @@ references:
     complications: [date]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
   - ref: "Ecce Lys"
+    website: https://beaubleu-paris.com/products/ecce-lys
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/BBGOLD-NEWCOGNAC.webp
       page: https://beaubleu-paris.com/products/ecce-lys

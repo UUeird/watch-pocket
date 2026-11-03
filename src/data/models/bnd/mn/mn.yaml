@@ -8,6 +8,7 @@ sources:
   - https://bnd-watches.com/?lang=en
 references:
   - ref: "MNKHA"
+    website: https://bnd-watches.com/produit/mnkha/
     officialPhoto:
       src: https://bnd-watches.com/wp-content/uploads/2025/11/BND-Watches-Vue-de-face-VERT.webp
       page: https://bnd-watches.com/produit/mnkha/
@@ -22,6 +23,7 @@ references:
     dials: [{ color: green, name: "Khaki" }]
     bracelets: [{ type: rubber-strap }]
   - ref: "MNWHI"
+    website: https://bnd-watches.com/produit/mnwhi/
     officialPhoto:
       src: https://bnd-watches.com/wp-content/uploads/2025/11/BND-Watches-Vue-de-face-BLANC.webp
       page: https://bnd-watches.com/produit/mnwhi/
@@ -36,6 +38,7 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: rubber-strap }]
   - ref: "MNGRA"
+    website: https://bnd-watches.com/produit/mngra/
     officialPhoto:
       src: https://bnd-watches.com/wp-content/uploads/2025/11/BND-Watches-Vue-de-face-GRIS.webp
       page: https://bnd-watches.com/produit/mngra/

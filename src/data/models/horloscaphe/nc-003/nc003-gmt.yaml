@@ -5,6 +5,7 @@ sources:
   - https://www.horloscaphe-watches-paris.com/product/dive-watch-nc003-gmt-300-m-toolwatch/
 references:
   - ref: "NC003-GMT"
+    website: https://www.horloscaphe-watches-paris.com/product/dive-watch-nc003-gmt-300-m-toolwatch/
     officialPhoto:
       src: https://www.horloscaphe-watches-paris.com/wp-content/uploads/2026/05/IMG_1219.jpg
       page: https://www.horloscaphe-watches-paris.com/product/dive-watch-nc003-gmt-300-m-toolwatch/

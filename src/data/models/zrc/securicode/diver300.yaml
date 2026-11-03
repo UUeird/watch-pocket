@@ -10,6 +10,7 @@ sources:
   - https://zrc1904.com/product/sc3948521328ot-securicode-torch-limited-edition/
 references:
   - ref: "SC39163"
+    website: https://zrc1904.com/product/securicode-diver300-sc39163/
     officialPhoto:
       src: https://zrc1904.com/wp-content/uploads/2024/08/SC39163-montre-homme-ZRC-vue-Soldat.png
       page: https://zrc1904.com/product/securicode-diver300-sc39163/
@@ -24,6 +25,7 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: "SC39208"
+    website: https://zrc1904.com/product/securicode-diver300-sc39208/
     officialPhoto:
       src: https://zrc1904.com/wp-content/uploads/2024/08/SC39208-montre-homme-ZRC-vue-Soldat-V2.png
       page: https://zrc1904.com/product/securicode-diver300-sc39208/
@@ -38,6 +40,7 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
   - ref: "SC39463"
+    website: https://zrc1904.com/product/securicode-diver300-sc39463/
     officialPhoto:
       src: https://zrc1904.com/wp-content/uploads/2024/08/SC39463-montre-homme-ZRC-vue-Soldat.png
       page: https://zrc1904.com/product/securicode-diver300-sc39463/
@@ -52,6 +55,7 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
   - ref: "SC3916221118"
+    website: https://zrc1904.com/product/sc3916221118-securicode-diver300/
     officialPhoto:
       src: https://zrc1904.com/wp-content/uploads/2026/04/ZRC-SC3916221118-SECURICODE-DIVER300-soldat.png
       page: https://zrc1904.com/product/sc3916221118-securicode-diver300/
@@ -66,6 +70,7 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
   - ref: "SC3948521328"
+    website: https://zrc1904.com/product/sc3948521328ot-securicode-torch-limited-edition/
     officialPhoto:
       src: https://zrc1904.com/wp-content/uploads/2026/04/ZRC-Operation-Torch-SC3948521318-soldat.png
       page: https://zrc1904.com/product/sc3948521328ot-securicode-torch-limited-edition/

@@ -7,6 +7,7 @@ sources:
   - https://serica-watches.com/en/pages/our-history
 references:
   - ref: "8315-1"
+    website: https://serica-watches.com/en/products/8315-1-chronometre-voyage
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/8315-1-expediton-packshot_web_01.jpg
       page: https://serica-watches.com/en/products/8315-1-chronometre-voyage
@@ -22,6 +23,7 @@ references:
     dials: [{ color: black, name: "Black Enamel" }]
     bracelets: [{ type: bracelet, name: "Expedition" }]
   - ref: "8315-2"
+    website: https://serica-watches.com/en/products/8315-2-chronometre-voyage
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/8315-2-3h-expediton-packshot_web_01.jpg
       page: https://serica-watches.com/en/products/8315-2-chronometre-voyage

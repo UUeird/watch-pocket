@@ -5,4 +5,5 @@ sources:
   - https://www.casio.com/us/watches/casio/product.AE-1200WH-1AV/
 references:
   - ref: "AE-1200WH-1AV"
+    website: https://www.casio.com/us/watches/casio/product.AE-1200WH-1AV/
     movementType: quartz

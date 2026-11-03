@@ -5,4 +5,5 @@ sources:
   - https://www.casio.com/us/watches/casio/product.LA670WA-1/
 references:
   - ref: "LA670WA-1"
+    website: https://www.casio.com/us/watches/casio/product.LA670WA-1/
     movementType: quartz

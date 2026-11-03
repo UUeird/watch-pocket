@@ -16,18 +16,21 @@ sources:
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ101AM.BA0842.html
 references:
   - ref: "CAZ1011.BA0842"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1011.BA0842.html
     caseSize: 43
     metals: [steel]
     movementType: quartz
     complications: [chronograph, date]
     bracelets: [{ type: bracelet }]
   - ref: "CAZ1010.BA0842"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1010.BA0842.html
     caseSize: 43
     metals: [steel]
     movementType: quartz
     complications: [chronograph]
     bracelets: [{ type: bracelet }]
   - ref: "CAZ1014.FT8099"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1014.FT8099.html
     caseSize: 43
     metals: [steel]
     movementType: quartz
@@ -35,6 +38,7 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
   - ref: "CAZ101AM.BA0842"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ101AM.BA0842.html
     caseSize: 43
     movementType: quartz
     complications: [chronograph]

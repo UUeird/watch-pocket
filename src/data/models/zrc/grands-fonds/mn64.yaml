@@ -27,6 +27,7 @@ references:
     movementType: mechanical
     bracelets: [{ type: bracelet }]
   - ref: "GF42168"
+    website: https://zrc1904.com/product/gf42168ph-edition-limitee/
     officialPhoto:
       src: https://zrc1904.com/wp-content/uploads/2024/03/GF42168-men-watch-ZRC.png
       page: https://zrc1904.com/product/gf4211121118-mn64-rubber/
@@ -95,6 +96,7 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
   - ref: "GF42168PH"
+    website: https://zrc1904.com/product/gf42168ph-edition-limitee/
     officialPhoto:
       src: https://zrc1904.com/wp-content/uploads/2024/07/GF42168PH-Edition-limitee-Montre-Homme-ZRC-Soldat.png
       page: https://zrc1904.com/product/gf42168ph-edition-limitee/
@@ -109,6 +111,7 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
   - ref: "GF4226521118"
+    website: https://zrc1904.com/product/gf4226521118-mn64-titane-rubber/
     officialPhoto:
       src: https://zrc1904.com/wp-content/uploads/2026/04/ZRC-GF4226521118-ABYSS-Soldat.png
       page: https://zrc1904.com/product/gf4226521118-mn64-titane-rubber/
@@ -122,6 +125,7 @@ references:
     complications: []
     bracelets: [{ type: rubber-strap }]
   - ref: "GF4221221113"
+    website: https://zrc1904.com/product/gf4221221113-mn64-full-titane/
     officialPhoto:
       src: https://zrc1904.com/wp-content/uploads/2026/04/ZRC-GF4221221113-ABYSS-METAL-Soldat.png
       page: https://zrc1904.com/product/gf4221221113-mn64-full-titane/

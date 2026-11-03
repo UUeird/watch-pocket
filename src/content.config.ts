@@ -323,6 +323,8 @@ const models = defineCollection({
             // A short name telling this reference apart from the model's others: "Steve McQueen", "Blue dial", "Titanium".
             // Without one, the site describes it from what differs between them (see referenceName in src/lib/catalog.ts).
             name: z.string().optional(),
+            // The maker's own page for this reference, linked from the reference's page.
+            website: z.url().optional(),
             // Photos of this reference in particular, where it looks unlike the model's others (a different bezel or
             // dial), in the same form as the model's. Its page shows these, or the model's when it has none.
             photos: photos(image),

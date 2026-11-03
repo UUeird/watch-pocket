@@ -19,6 +19,7 @@ sources:
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW218C.FC6548.html
 references:
   - ref: "CBL2111.FC6453"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-th20-00/CBL2111.FC6453.html
     caseSize: 39
     metals: [steel]
     movementType: mechanical
@@ -26,6 +27,7 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
   - ref: "CBL2111.BA0644"
+    website: https://www.tagheuer.com/nl/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-heuer02-automatic/CBL2111.BA0644.html
     caseSize: 39
     metals: [steel]
     movementType: mechanical
@@ -34,6 +36,7 @@ references:
     bracelets: [{ type: bracelet }]
   - ref: "CAW218C.FC6548"
     name: "French Racing Blue"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW218C.FC6548.html
     caseSize: 39
     movement: "Calibre 11"
     movementType: mechanical
@@ -41,6 +44,7 @@ references:
     dials: [{ color: blue }]
   - ref: "CBL2115.FC6494"
     name: "Gulf"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-th20-00/CBL2115.FC6494.html
     caseSize: 39
     movement: "TH20-00"
     movementType: mechanical

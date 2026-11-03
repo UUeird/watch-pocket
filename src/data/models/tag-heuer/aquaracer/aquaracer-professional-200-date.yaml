@@ -7,6 +7,7 @@ sources:
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-aquaracer/30-mm-calibre-9-automatic/WBP2414.BA0622.html
 references:
   - ref: "WBP2111.BA0627"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-aquaracer/40-mm-calibre-5-automatic/WBP2111.BA0627.html
     caseSize: 40
     metals: [steel]
     movement: "Calibre 5"
@@ -15,6 +16,7 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: "WBP2414.BA0622"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-aquaracer/30-mm-calibre-9-automatic/WBP2414.BA0622.html
     caseSize: 30
     metals: [steel]
     movement: "Calibre 9"

@@ -5,4 +5,5 @@ sources:
   - https://www.casio.com/intl/watches/casio/product.F-105W-1A/
 references:
   - ref: "F-105W-1A"
+    website: https://www.casio.com/intl/watches/casio/product.F-105W-1A/
     movementType: quartz

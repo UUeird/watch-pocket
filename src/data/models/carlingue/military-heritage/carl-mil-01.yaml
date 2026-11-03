@@ -8,6 +8,7 @@ sources:
   - https://carlingue-watches.com/produit/ct-003-d/
 references:
   - ref: "CT-003-A"
+    website: https://carlingue-watches.com/produit/ct-003-a/
     officialPhoto:
       src: https://carlingue-watches.com/content/uploads/2024/07/CT-003-A_soldat_canvas-min.png
       page: https://carlingue-watches.com/produit/ct-003-a/
@@ -22,6 +23,7 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]
   - ref: "CT-003-B"
+    website: https://carlingue-watches.com/produit/ct-003-b/
     officialPhoto:
       src: https://carlingue-watches.com/content/uploads/2024/07/CT-003-B_soldat_canvas-min.png
       page: https://carlingue-watches.com/produit/ct-003-b/
@@ -35,6 +37,7 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]
   - ref: "CT-003-C"
+    website: https://carlingue-watches.com/produit/ct-003-c/
     officialPhoto:
       src: https://carlingue-watches.com/content/uploads/2024/07/CT-003-C_soldat_canvas-min.png
       page: https://carlingue-watches.com/produit/ct-003-c/
@@ -48,6 +51,7 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]
   - ref: "CT-003-D"
+    website: https://carlingue-watches.com/produit/ct-003-d/
     officialPhoto:
       src: https://carlingue-watches.com/content/uploads/2024/06/CT-003-D_soldat_canvas-min.png
       page: https://carlingue-watches.com/produit/ct-003-d/

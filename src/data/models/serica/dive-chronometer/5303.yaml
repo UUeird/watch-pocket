@@ -9,6 +9,7 @@ sources:
   - https://serica-watches.com/en/pages/our-history
 references:
   - ref: "5303-1"
+    website: https://serica-watches.com/en/products/5303-1-chronometre-plongee
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/5303-black-3h-packshot-01.jpg
       page: https://serica-watches.com/en/products/5303-1-chronometre-plongee
@@ -23,6 +24,7 @@ references:
     dials: [{ color: black, name: "Black Enamel" }]
     bracelets: [{ type: bracelet }]
   - ref: "5303-2"
+    website: https://serica-watches.com/en/products/5303-2-chronometre-plongee
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/5303-white-3h-packshot-01.jpg
       page: https://serica-watches.com/en/products/5303-2-chronometre-plongee
@@ -37,6 +39,7 @@ references:
     dials: [{ color: white, name: "Porcelain White" }]
     bracelets: [{ type: bracelet }]
   - ref: "5303-3"
+    website: https://serica-watches.com/en/products/5303-3-chronometre-plongee
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/5303-blue-3h-packshot-01.jpg
       page: https://serica-watches.com/en/products/5303-3-chronometre-plongee
@@ -52,6 +55,7 @@ references:
     dials: [{ color: blue, name: "Crystal Blue" }]
     bracelets: [{ type: bracelet }]
   - ref: "5303 PLD"
+    website: https://serica-watches.com/en/products/ref-5303-pld
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/5303-pld-3h-packshot-ok_1.jpg
       page: https://serica-watches.com/en/products/ref-5303-pld
