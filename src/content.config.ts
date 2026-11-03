@@ -271,6 +271,8 @@ const lines = defineCollection({
   schema: z.object({
     name: z.string(),
     brand: reference('brands'),
+    // The maker's own page for this line, linked from the line's page.
+    website: z.url().optional(),
     // The periods the line was on sale, so a retired and revived line has several.
     // A last period with no `to` is still running; no periods means the dates are not recorded.
     periods,

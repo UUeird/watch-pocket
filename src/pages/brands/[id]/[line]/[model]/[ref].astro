@@ -46,45 +46,69 @@ const shown = facts.filter(([, value]) => value);
 <Base title={`${brand.data.name} ${ref}`}>
   <Breadcrumb brand={brand} line={line} model={model} />
   <div class="head">
-    <div>
+    <div class="title">
       <h1>{ref}</h1>
       <p class="lede">{[referenceName(reference, model.data.references), 'Reference'].filter(Boolean).join(' · ')}{periods.length > 0 && (discontinued ? ' · discontinued' : ' · current')}</p>
     </div>
-    <ModelPhoto model={model} brandName={brand.data.name} reference={reference} />
+    <div class="photo">
+      <ModelPhoto model={model} brandName={brand.data.name} reference={reference} />
+    </div>
+    <div class="details">
+      <dl class="facts">
+        {
+          shown.map(([term, value, vocabulary]) => (
+            <>
+              <dt>{term}</dt>
+              <dd class:list={{ cap: vocabulary }}>{value}</dd>
+            </>
+          ))
+        }
+      </dl>
+
+      {
+        modelNumbers.length > 0 && (
+          <>
+            <h2>Model numbers</h2>
+            <ul>
+              {modelNumbers.map((modelNumber) => (
+                <li>{describeModelNumber(modelNumber)}</li>
+              ))}
+            </ul>
+          </>
+        )
+      }
+    </div>
   </div>
-
-  <dl class="facts">
-    {
-      shown.map(([term, value, vocabulary]) => (
-        <>
-          <dt>{term}</dt>
-          <dd class:list={{ cap: vocabulary }}>{value}</dd>
-        </>
-      ))
-    }
-  </dl>
-
-  {
-    modelNumbers.length > 0 && (
-      <>
-        <h2>Model numbers</h2>
-        <ul>
-          {modelNumbers.map((modelNumber) => (
-            <li>{describeModelNumber(modelNumber)}</li>
-          ))}
-        </ul>
-      </>
-    )
-  }
 </Base>
 
 <style>
-  /* The photo sits beside the reference number on a wide screen, and under it on a narrow one. */
+  /* On a wide screen the facts sit beside the photo, under the reference number; on a narrow one the photo comes
+     between the two. */
   .head {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 16px 32px;
-    margin-bottom: 24px;
+    display: grid;
+    grid-template-areas: 'title' 'photo' 'details';
+    gap: 16px;
+  }
+
+  .title {
+    grid-area: title;
+  }
+
+  .photo {
+    grid-area: photo;
+  }
+
+  .details {
+    grid-area: details;
+    min-width: 0;
+  }
+
+  @media (min-width: 720px) {
+    .head {
+      grid-template-columns: minmax(0, 1fr) auto;
+      grid-template-areas: 'title photo' 'details photo';
+      grid-template-rows: auto 1fr;
+      column-gap: 32px;
+    }
   }
 </style>
