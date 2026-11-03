@@ -1,0 +1,8 @@
+name: "W-96H"
+line: casio/casio-collection
+website: https://www.casio.com/us/watches/casio/product.W-96H-1AV/
+sources:
+  - https://www.casio.com/us/watches/casio/product.W-96H-1AV/
+references:
+  - ref: "W-96H-1AV"
+    movementType: quartz

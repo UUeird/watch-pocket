@@ -1,0 +1,8 @@
+name: "A159W"
+line: casio/casio-collection
+website: https://www.casio.com/intl/watches/casio/product.A159WA-N1/
+sources:
+  - https://www.casio.com/intl/watches/casio/product.A159WA-N1/
+references:
+  - ref: "A159WA-N1"
+    movementType: quartz

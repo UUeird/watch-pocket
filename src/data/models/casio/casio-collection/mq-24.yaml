@@ -1,0 +1,8 @@
+name: "MQ-24"
+line: casio/casio-collection
+website: https://www.casio.com/us/watches/casio/product.MQ-24-7B2LL/
+sources:
+  - https://www.casio.com/us/watches/casio/product.MQ-24-7B2LL/
+references:
+  - ref: "MQ-24-7B2LL"
+    movementType: quartz

@@ -1,0 +1,8 @@
+name: "F-94WA"
+line: casio/casio-collection
+website: https://www.casio.com/intl/watches/casio/product.F-94WA-9/
+sources:
+  - https://www.casio.com/intl/watches/casio/product.F-94WA-9/
+references:
+  - ref: "F-94WA-9"
+    movementType: quartz

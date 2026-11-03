@@ -1,0 +1,8 @@
+name: "W-59"
+line: casio/casio-collection
+website: https://www.casio.com/intl/watches/casio/product.W-59-1VQ/
+sources:
+  - https://www.casio.com/intl/watches/casio/product.W-59-1VQ/
+references:
+  - ref: "W-59-1VQ"
+    movementType: quartz
