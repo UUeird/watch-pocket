@@ -1,0 +1,15 @@
+name: "Monaco French Racing Blue"
+line: tag-heuer/monaco
+style: chronograph
+theme: motor-racing
+website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW218C.FC6548.html
+sources:
+  - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW218C.FC6548.html
+references:
+  - ref: "CAW218C.FC6548"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW218C.FC6548.html
+    caseSize: 39
+    movement: "Calibre 11"
+    movementType: mechanical
+    complications: [chronograph]
+    dials: [{ color: blue }]
