@@ -1,0 +1,35 @@
+name: "Formula 1 Chronograph"
+line: tag-heuer/formula-1
+style: chronograph
+theme: motor-racing
+website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1011.BA0842.html
+sources:
+  - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1011.BA0842.html
+  - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1010.BA0842.html
+  - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1014.FT8099.html
+  - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ101AM.BA0842.html
+references:
+  - ref: "CAZ1011.BA0842"
+    caseSize: 43
+    metals: [steel]
+    movementType: quartz
+    complications: [chronograph, date]
+    bracelets: [{ type: bracelet }]
+  - ref: "CAZ1010.BA0842"
+    caseSize: 43
+    metals: [steel]
+    movementType: quartz
+    complications: [chronograph]
+    bracelets: [{ type: bracelet }]
+  - ref: "CAZ1014.FT8099"
+    caseSize: 43
+    metals: [steel]
+    movementType: quartz
+    complications: [chronograph]
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "CAZ101AM.BA0842"
+    caseSize: 43
+    movementType: quartz
+    complications: [chronograph]
+    bracelets: [{ type: bracelet }]

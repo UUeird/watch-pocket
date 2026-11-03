@@ -1,0 +1,21 @@
+name: "Carrera Chronograph"
+line: tag-heuer/carrera
+style: chronograph
+theme: motor-racing
+website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/39-mm-calibre-heuer02-automatic/CBK221A.EB0171.html
+sources:
+  - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/39-mm-calibre-heuer02-automatic/CBK221A.EB0171.html
+  - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/39-mm-th20-00/CBS2212.FC6535.html
+references:
+  - ref: "CBK221A.EB0171"
+    caseSize: 39
+    metals: [steel]
+    movement: "Heuer 02"
+    movementType: mechanical
+    complications: [chronograph]
+    bracelets: [{ type: leather-strap }]
+  - ref: "CBS2212.FC6535"
+    caseSize: 39
+    movement: "TH20-00"
+    movementType: mechanical
+    complications: [chronograph]

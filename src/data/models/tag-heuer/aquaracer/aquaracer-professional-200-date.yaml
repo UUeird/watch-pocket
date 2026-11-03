@@ -1,0 +1,23 @@
+name: "Aquaracer Professional 200 Date"
+line: tag-heuer/aquaracer
+style: dive
+website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-aquaracer/40-mm-calibre-5-automatic/WBP2111.BA0627.html
+sources:
+  - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-aquaracer/40-mm-calibre-5-automatic/WBP2111.BA0627.html
+  - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-aquaracer/30-mm-calibre-9-automatic/WBP2414.BA0622.html
+references:
+  - ref: "WBP2111.BA0627"
+    caseSize: 40
+    metals: [steel]
+    movement: "Calibre 5"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: "WBP2414.BA0622"
+    caseSize: 30
+    metals: [steel]
+    movement: "Calibre 9"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: bracelet }]
