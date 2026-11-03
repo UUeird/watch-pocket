@@ -3,6 +3,18 @@ line: tag-heuer/carrera
 style: chronograph
 theme: motor-racing
 website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/39-mm-calibre-heuer02-automatic/CBK221A.EB0171.html
+photos:
+  - file: ../../../photos/tag-heuer/carrera/carrera-chronograph.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:TAG_Heuer_Carrera_chronograph_CV2010_retusche.jpg
+      license: CC BY-SA 3.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+      author: Pinback66, derivative work Lämpel
+  - file: ../../../photos/tag-heuer/carrera/carrera-chronograph-2.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:TAG_Heuer_Carrera_blue.jpg
+      license: CC BY-SA 3.0
+      licenseUrl: http://creativecommons.org/licenses/by-sa/3.0/
 sources:
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/39-mm-calibre-heuer02-automatic/CBK221A.EB0171.html
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/39-mm-th20-00/CBS2212.FC6535.html

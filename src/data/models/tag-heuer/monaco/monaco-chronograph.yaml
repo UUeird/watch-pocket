@@ -16,13 +16,9 @@ photos:
       license: CC BY-SA 4.0
       licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
       author: EMore98
-  - file: ../../../photos/tag-heuer/monaco/monaco-chronograph-3.jpg
-    credit:
-      source: https://commons.wikimedia.org/wiki/File:Steve_McQueen_Monaco_White_face_CW2118.jpg
-      license: CC BY-SA 4.0
-      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
-      author: DavidBSV12
 sources:
+  - https://watchbase.com/tag-heuer/monaco/cw2118-fc6207
+  - https://www.wewatches.com/encyclopedie/tag-heuer/monaco/cw2118-fc6207
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-th20-00/CBL2111.FC6453.html
   - https://www.tagheuer.com/nl/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-heuer02-automatic/CBL2111.BA0644.html
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-11-automatic/CAW218C.FC6548.html
@@ -46,3 +42,17 @@ references:
     movement: "Calibre 11"
     movementType: mechanical
     complications: [chronograph]
+    dials: [{ color: blue, name: "French Racing Blue" }]
+  - ref: "CW2118"
+    photos:
+      - file: ../../../photos/tag-heuer/monaco/monaco-chronograph-3.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Steve_McQueen_Monaco_White_face_CW2118.jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: DavidBSV12
+    metals: [steel]
+    movement: "Calibre 17"
+    movementType: mechanical
+    complications: [chronograph]
+    dials: [{ color: white, name: "Steve McQueen" }]

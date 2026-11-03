@@ -3,6 +3,12 @@ line: tag-heuer/formula-1
 style: chronograph
 theme: motor-racing
 website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1011.BA0842.html
+photos:
+  - file: ../../../photos/tag-heuer/formula-1/formula-1-chronograph.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:TAG_Heuer_26_January_2025_luxury_Formula_1_Chronograph_Indy_500_Philippines4.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
 sources:
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1011.BA0842.html
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-formula-1/43-mm-quartz/CAZ1010.BA0842.html
