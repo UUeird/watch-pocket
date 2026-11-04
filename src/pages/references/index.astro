@@ -1,9 +1,13 @@
 ---
 import Filters from '../../components/Filters.astro';
+import ListThumb from '../../components/ListThumb.astro';
+import PhotoCredits from '../../components/PhotoCredits.astro';
 import Base from '../../layouts/Base.astro';
 import { describeBezel, formatPeriods, href, label, loadCatalog, refHref } from '../../lib/catalog';
+import { referencePhotos } from '../../lib/tile-photos';
 
-const { references } = await loadCatalog(Astro.request);
+const { references: all } = await loadCatalog(Astro.request);
+const references = all.map((entry) => ({ ...entry, photos: referencePhotos(entry.model, entry.reference, entry.brand.data.name) }));
 const distinct = (values: (string | undefined)[]) =>
   [...new Set(values.filter((value) => value !== undefined))].sort();
 const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));
@@ -39,6 +43,7 @@ const filters = [
     <table>
       <thead>
         <tr>
+          <th class="photo"><span class="visually-hidden">Photo</span></th>
           <th>Reference</th>
           <th>Brand</th>
           <th>Model</th>
@@ -50,7 +55,7 @@ const filters = [
       </thead>
       <tbody id="references">
         {
-          references.map(({ reference, model, brand }) => (
+          references.map(({ reference, model, brand, photos }) => (
             <tr
               data-q={[reference.ref, reference.name ?? '', ...reference.modelNumbers.map(({ number }) => number)].join(' ').toLowerCase()}
               data-brand={brand.data.name}
@@ -60,6 +65,9 @@ const filters = [
               data-bracelet={reference.bracelets.map((bracelet) => bracelet.type).join('|')}
               data-crystal={reference.crystal}
             >
+              <td class="photo">
+                <ListThumb href={refHref(model, reference)} photos={photos} />
+              </td>
               <td class="num">
                 <a href={refHref(model, reference)}>{reference.ref}</a>
               </td>
@@ -77,4 +85,8 @@ const filters = [
       </tbody>
     </table>
   </div>
+  <PhotoCredits
+    underTable
+    items={references.map(({ reference, model, brand, photos }) => ({ title: `${brand.data.name} ${model.data.name} ${reference.ref}`, brandName: brand.data.name, photos: photos.slice(0, 1) }))}
+  />
 </Base>

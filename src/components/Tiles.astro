@@ -2,7 +2,8 @@
 // A grid of tiles for lines, models or references: a photo on top and a label that is always shown under it.
 // A tile with several photos cycles through them while pointed at or focused. One with none shows a plain watch.
 import { Image } from 'astro:assets';
-import { creditOf, type TilePhoto } from '../lib/tile-photos';
+import type { TilePhoto } from '../lib/tile-photos';
+import PhotoCredits from './PhotoCredits.astro';
 
 interface Props {
   label: string;
@@ -12,16 +13,6 @@ interface Props {
 }
 
 const { label, brandName, tiles } = Astro.props;
-// Every photo the grid can show, once each, credited under it as its license asks.
-const seen = new Set<string>();
-const credits = tiles.flatMap(({ title, photos }) =>
-  photos.flatMap((photo) => {
-    const credit = creditOf(photo, brandName);
-    if (seen.has(credit.source)) return [];
-    seen.add(credit.source);
-    return [{ title: photo.general ? 'Model photo' : title, ...credit }];
-  }),
-);
 ---
 
 <ul class="tiles" aria-label={label}>
@@ -60,37 +51,9 @@ const credits = tiles.flatMap(({ title, photos }) =>
     ))
   }
 </ul>
-{
-  credits.length > 0 && (
-    <details class="credits">
-      <summary>Photo credits</summary>
-      <ul>
-        {credits.map(({ title, by, license, licenseUrl, source, host }) => (
-          <li>
-            <strong>{title}</strong>: {host ? <>Image {license}, shown from <a href={source}>{host}</a></> : <>Photo{by && ` by ${by}`} · {licenseUrl ? <a href={licenseUrl}>{license}</a> : license} · <a href={source}>Source</a></>}
-          </li>
-        ))}
-      </ul>
-    </details>
-  )
-}
+<PhotoCredits items={tiles.map(({ title, photos }) => ({ title, brandName, photos }))} />
 
 <style>
-  .credits {
-    margin: -20px 0 32px;
-    color: var(--muted);
-    font-size: 0.75rem;
-  }
-
-  .credits summary {
-    cursor: pointer;
-  }
-
-  .credits ul {
-    margin: 6px 0 0;
-    padding-left: 18px;
-  }
-
   .tiles {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

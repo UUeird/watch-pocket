@@ -1,18 +1,16 @@
 ---
-import { href, plural, type Brand, type Group } from '../lib/catalog';
+import { href, plural, type Brand } from '../lib/catalog';
 import { describe, describeHolding, type Section } from '../lib/timeline';
 
 interface Props {
-  sections: Section[];
-  // Every dated purchase each group made, by group id, including brands it has since sold.
-  purchases: Map<string, { brand: Brand; from: number; to?: number }[]>;
-  // Fields the page's filters match on, for each brand.
-  filterData: (brand: Brand) => Record<string, string | undefined>;
-  // The id the page's filters target.
-  id: string;
+  // The owner and the brands it has held.
+  section: Section;
+  // Every dated purchase the owner made, including brands it has since sold.
+  purchases: { brand: Brand; from: number; to?: number }[];
 }
 
-const { sections, purchases, filterData, id } = Astro.props;
+const { section, purchases } = Astro.props;
+const sections = [section];
 const thisYear = new Date().getFullYear();
 // The axis runs to the end of this year, so a current holding reaches the right edge.
 const end = thisYear + 1;
@@ -26,18 +24,23 @@ const span = (from: number, to?: number) => ({ '--from': from, '--to': to ?? end
 ---
 
 <section class="timeline" data-timeline style={{ '--start': start, '--end': end }} data-scale="all">
-  <div class="scale" role="group" aria-label="Years shown">
-    <button type="button" data-scale-to="all" aria-pressed="true">Since {start}</button>
-    <button type="button" data-scale-to="recent" aria-pressed="false">Since 1950</button>
-  </div>
+  {
+    // A timeline that starts in 1950 or later has no closer view to switch to.
+    start < 1950 && (
+      <div class="scale" role="group" aria-label="Years shown">
+        <button type="button" data-scale-to="all" aria-pressed="true">Since {start}</button>
+        <button type="button" data-scale-to="recent" aria-pressed="false">Since 1950</button>
+      </div>
+    )
+  }
 
   <ul class="key" aria-label="Key">
     <li><span class="key-life" /> Trading</li>
     <li><span class="key-heritage" /> Claimed heritage</li>
-    <li><span class="key-band" /> Held by a group</li>
+    <li><span class="key-band" /> Held by an owner</li>
     <li><span class="key-band past" /> Held, since sold</li>
     <li><span class="key-band part" /> Part-owned</li>
-    <li><span class="key-buy" /> A group's purchase, on its own row</li>
+    {purchases.length > 0 && <li><span class="key-buy" /> A purchase, on the owner's row</li>}
   </ul>
 
   <div class="axis" aria-hidden="true">
@@ -47,15 +50,15 @@ const span = (from: number, to?: number) => ({ '--from': from, '--to': to ?? end
     </span>
   </div>
 
-  <div id={id}>
+  <div>
     {
-      sections.map(({ key, name, href: sectionHref, group, rows, undated }) => {
-        const bought = group ? (purchases.get(group.id) ?? []) : [];
+      sections.map(({ name, rows, undated }) => {
+        const bought = purchases;
         return (
-          <section class="owner" data-filter-group aria-label={name}>
+          <section class="owner" aria-label={name}>
             <div class="row head">
               <span class="name">
-                {sectionHref ? <a href={sectionHref}>{name}</a> : name}
+                {name}
                 <span class="count">
                   {plural(rows.length, 'brand')}
                   {undated > 0 && ` · ${undated} more undated`}
@@ -69,14 +72,14 @@ const span = (from: number, to?: number) => ({ '--from': from, '--to': to ?? end
                     style={{ '--from': purchase.from }}
                     href={href(`/brands/${purchase.brand.id}/`)}
                     aria-label={`${purchase.brand.data.name}, bought ${purchase.from}${purchase.to ? `, sold ${purchase.to}` : ''}`}
-                    data-tip={`${purchase.brand.data.name}\nBought by ${group!.data.name} in ${purchase.from}${purchase.to ? `\nHeld until ${purchase.to}` : ''}`}
+                    data-tip={`${purchase.brand.data.name}\nBought by ${name} in ${purchase.from}${purchase.to ? `\nHeld until ${purchase.to}` : ''}`}
                   />
                 ))}
               </span>
             </div>
             <ul class="rows">
               {rows.map((line) => (
-                <li class="row" {...filterData(line.brand)} data-tip={describe(line).join('\n')} style={{ '--lanes': line.lanes }}>
+                <li class="row" data-id={line.brand.id} data-tip={describe(line).join('\n')} style={{ '--lanes': line.lanes }}>
                   <a class="name" href={href(`/brands/${line.brand.id}/`)}>
                     {line.brand.data.name}
                   </a>
@@ -494,7 +497,7 @@ const span = (from: number, to?: number) => ({ '--from': from, '--to': to ?? end
       });
     }
 
-    // One tooltip, beside the pointer: a purchase on a group's row, or a brand's whole story on its own.
+    // One tooltip, beside the pointer: a purchase on the owner's row, or a brand's whole story on its own.
     const tip = section.querySelector<HTMLElement>('.tip')!;
     const place = (x: number, y: number) => {
       const bounds = section.getBoundingClientRect();
