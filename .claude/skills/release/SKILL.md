@@ -1,11 +1,26 @@
 ---
 name: release
-description: "Ship open work: commit, push, open/merge the PR, clean up the branch, restart the dev server, confirm the GitHub Pages deploy, move the board ticket. Use when the user says 'release', 'ship it', 'land this'. There is no CI: the checks run locally (`npm run verify`, plus `npm run test:rules` for schema changes) on the branch with main merged in, before merging; the gate for moving the board ticket to done is the merge and the Deploy run publishing that commit."
+description: "Ship open work: with no args, every open PR in turn, one at a time; pass a branch or PR number for just that one. Commit, push, open/merge the PR, clean up the branch, restart the dev server, confirm the GitHub Pages deploy, move the board ticket. Use when the user says 'release', 'ship it', 'land this'. There is no CI: the checks run locally (`npm run verify`, plus `npm run test:rules` for schema changes) on the branch with main merged in, before merging; the gate for moving the board ticket to done is the merge and the Deploy run publishing that commit."
 ---
 
-Take one piece of open work from branch to merged and cleaned up. There is no
+Take open work from branch to merged, deployed and cleaned up. There is no
 CI: the checks and tests run here, locally, before the merge, which is much
-faster. This is a single-PR flow with no batching.
+faster.
+
+### 0. Work out the scope
+
+- **`/release <branch>` or `/release <PR#>`**: just that one.
+- **No args**: every open PR (`gh pr list`), oldest first, unless one is
+  stacked on another (release its base first). Skip bot PRs unless the user
+  names them. Don't ask which one; release them all.
+- Also check the current branch (`git status`, `git log main..HEAD`). If it has
+  commits but no PR, open one first; it's in scope. If it has uncommitted
+  work, commit it before starting.
+
+Release them **one at a time**: run steps 1 to 6 for a PR, including waiting for
+its deploy, before starting the next. Each PR merges `main` in at step 1, so its
+checks cover every PR released before it. If a deploy fails, stop: don't
+release the rest on top of a broken `main`.
 
 ### 1. Finish, check and push
 
@@ -66,6 +81,10 @@ curl -s -o /dev/null -w '%{http_code}\n' https://www.watchpocket.app/
 
 The run's `headSha` (`gh run view <id> --json headSha`) should be the merge
 commit. If the deploy fails or the site doesn't return 200, stop and report.
+If the Build job passed and only the Deploy step failed (a Pages timeout or
+"Deployment cancelled", often during a GitHub outage), retry with a fresh run,
+`gh workflow run Deploy --ref main`, once the user agrees. `gh run rerun` reuses
+the canceled deployment's ID and gets canceled again.
 This, not the merge, is the real "done" signal. Releasing several PRs, wait for
 each one's deploy before merging the next.
 
@@ -79,6 +98,7 @@ story, or `mcp__tada__set_subtask_status` for just the subtask.
 
 ## After the release
 
-Report what shipped: PR number, checks run, merged, deployed, branch cleaned
-up, dev server restarted. Don't claim a branch is done unless it's actually
+Report what shipped, one line per PR: number, checks run, merged, deployed,
+branch cleaned up, board ticket moved. Then say the dev server was restarted,
+and list anything left open and why. Don't claim a branch is done unless it's actually
 merged and gone, and don't move the board ticket until step 5's check passes.
