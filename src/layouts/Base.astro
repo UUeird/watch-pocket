@@ -269,6 +269,22 @@ const current = (path: string) => {
     border-bottom: 1px solid var(--line);
   }
 
+  /* A row's photo preview sits snug at its start. */
+  th.photo,
+  td.photo {
+    width: 48px;
+    padding: 6px 0 6px 12px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
   /* Names wrap so a table fits the window; figures, and anything marked to stay whole, don't. */
   td.num,
   .nowrap {
