@@ -101,19 +101,19 @@ test.describe('References filters', () => {
     await page.getByPlaceholder('Search reference and model numbers').fill('A2999');
     const rows = visibleRows(page, 'references');
     expect(await rows.count()).toBeGreaterThan(0);
-    for (const reference of await column(rows, 1)) expect(reference).toContain('Series 10, 46 mm');
+    for (const reference of await column(rows, 2)) expect(reference).toContain('Series 10, 46 mm');
   });
 
   test('brand filter matches a whole brand name', async ({ page }) => {
     await filter(page, 'brand').selectOption('Rolex');
     const rows = visibleRows(page, 'references');
     expect(await rows.count()).toBeGreaterThan(0);
-    expect(new Set(await column(rows, 2))).toEqual(new Set(['Rolex']));
+    expect(new Set(await column(rows, 3))).toEqual(new Set(['Rolex']));
   });
 
   test('metal filter matches a reference made of several metals', async ({ page }) => {
     await filter(page, 'metal').selectOption('yellow-gold');
-    const metals = await column(visibleRows(page, 'references'), 6);
+    const metals = await column(visibleRows(page, 'references'), 7);
     expect(metals.length).toBeGreaterThan(0);
     for (const metal of metals) expect(metal).toContain('yellow gold');
     // The two-tone Submariner is steel and yellow gold, so it must be among them.

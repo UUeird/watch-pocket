@@ -1,0 +1,59 @@
+---
+// The credits for every photo a grid or list shows, once each, as their licenses ask. Folded away under the photos.
+import { creditOf, type TilePhoto } from '../lib/tile-photos';
+
+interface Props {
+  // The brand whose watches these are, which the maker's own images are credited to; or, for a list across brands,
+  // each item's own brand.
+  items: { title: string; brandName: string; photos: TilePhoto[] }[];
+  // Under a table, which has no gap below it to tuck into, as a grid of tiles has.
+  underTable?: boolean;
+}
+
+const { items, underTable = false } = Astro.props;
+const seen = new Set<string>();
+const credits = items.flatMap(({ title, brandName, photos }) =>
+  photos.flatMap((photo) => {
+    const credit = creditOf(photo, brandName);
+    if (seen.has(credit.source)) return [];
+    seen.add(credit.source);
+    return [{ title: photo.general ? 'Model photo' : title, ...credit }];
+  }),
+);
+---
+
+{
+  credits.length > 0 && (
+    <details class:list={['credits', { 'under-table': underTable }]}>
+      <summary>Photo credits</summary>
+      <ul>
+        {credits.map(({ title, by, license, licenseUrl, source, host }) => (
+          <li>
+            <strong>{title}</strong>: {host ? <>Image {license}, shown from <a href={source}>{host}</a></> : <>Photo{by && ` by ${by}`} · {licenseUrl ? <a href={licenseUrl}>{license}</a> : license} · <a href={source}>Source</a></>}
+          </li>
+        ))}
+      </ul>
+    </details>
+  )
+}
+
+<style>
+  .credits {
+    margin: -20px 0 32px;
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+
+  .credits.under-table {
+    margin: 8px 0 32px;
+  }
+
+  .credits summary {
+    cursor: pointer;
+  }
+
+  .credits ul {
+    margin: 6px 0 0;
+    padding-left: 18px;
+  }
+</style>
