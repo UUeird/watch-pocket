@@ -89,3 +89,10 @@ export function sectionsOf(
     .filter((entry) => entry.rows.length > 0)
     .sort((a, b) => rank(a.key) - rank(b.key) || b.rows.length - a.rows.length || a.name.localeCompare(b.name));
 }
+
+// One group's section for its own page: every brand it has held, now or before, oldest first.
+export function groupSection(group: Group, held: Brand[], ownerName: (owner: Owner) => string | undefined): Section {
+  const lines = [...new Map(held.map((brand) => [brand.id, brand])).values()].map((brand) => lifelineOf(brand, ownerName));
+  const rows = lines.filter((line) => line !== undefined).sort((a, b) => a.first - b.first || a.brand.data.name.localeCompare(b.brand.data.name));
+  return { key: group.id, name: group.data.name, group, rows, undated: lines.length - rows.length };
+}

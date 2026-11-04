@@ -228,6 +228,11 @@ test.describe('Group timeline', () => {
     await expect(bought.first()).toHaveAttribute('href', /\/brands\//);
     await expect(lvmh.locator('.head a')).toHaveCount(await bought.count());
   });
+
+  test('a dissolved group still draws the brands it once held', async ({ page }) => {
+    await page.goto('ownership-groups/ssih/');
+    await expect(page.locator('section.owner[aria-label="SSIH"] li.row', { hasText: 'Lanco' })).toBeVisible();
+  });
 });
 
 test.describe('Control', () => {

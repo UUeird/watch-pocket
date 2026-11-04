@@ -6,7 +6,7 @@ import Sources from '../../components/Sources.astro';
 import Timeline from '../../components/Timeline.astro';
 import { describeControl, href, loadCatalog, type Group } from '../../lib/catalog';
 import { countries } from '../../lib/countries';
-import { sectionsOf } from '../../lib/timeline';
+import { groupSection } from '../../lib/timeline';
 
 export async function getStaticPaths() {
   const { groups } = await loadCatalog(null);
@@ -18,7 +18,7 @@ interface Props {
 }
 
 const { group } = Astro.props;
-const { brands, groups, groupsById, holdingsOf, licensesOf, ownerName } = await loadCatalog(Astro.request);
+const { groups, groupsById, holdingsOf, licensesOf, ownerName } = await loadCatalog(Astro.request);
 const subsidiaries = groups.filter((other) => other.data.parent?.id === group.id);
 const { name, country, founded, dissolved, website, parent, sources } = group.data;
 const { flag } = countries[country];
@@ -27,11 +27,10 @@ const holdings = holdingsOf(owner);
 const current = holdings.filter((record) => record.to === undefined);
 const former = holdings.filter((record) => record.to !== undefined);
 const licenses = licensesOf(group.id);
-// The group's own section of the timeline: the brands it holds now, with a row marking every dated purchase it made.
-// Its heading row isn't linked, as it would only lead back here.
-const timeline = sectionsOf(brands, groups, ownerName, () => '')
-  .filter((section) => section.key === group.id)
-  .map((section) => ({ ...section, href: undefined }));
+// The group's own section of the timeline: every brand it has held, now or before, with a row marking each dated
+// purchase. Its heading row isn't linked, as it would only lead back here.
+const section = groupSection(group, holdings.map((record) => record.brand), ownerName);
+const timeline = section.rows.length > 0 ? [section] : [];
 const purchases = new Map([
   [group.id, holdings.filter((record) => record.from !== undefined).map(({ brand, from, to }) => ({ brand, from: from!, to }))],
 ]);
