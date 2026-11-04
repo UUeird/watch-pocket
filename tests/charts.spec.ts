@@ -188,10 +188,9 @@ test.describe('Timeline', () => {
     await page.goto('timeline/');
   });
 
-  test('keeps only brands no group owns, independents last', async ({ page }) => {
-    await expect(page.locator('section.owner[aria-label="LVMH"]')).toHaveCount(0);
-    await expect(page.locator('section.owner[aria-label="Held by another brand"]')).toBeVisible();
-    await expect(page.locator('section.owner').last()).toHaveAttribute('aria-label', 'Independent');
+  test('keeps only brands held by another brand', async ({ page }) => {
+    await expect(page.locator('section.owner')).toHaveCount(1);
+    await expect(page.locator('section.owner')).toHaveAttribute('aria-label', 'Held by another brand');
     await expect(page.locator('.key')).not.toContainText("A group's purchase");
   });
 
@@ -203,10 +202,9 @@ test.describe('Timeline', () => {
     expect(a.y + a.height).toBeLessThanOrEqual(b.y + 1);
   });
 
-  test('filters hide owners with no matching brands, and the years shown are remembered', async ({ page }) => {
+  test('search hides brands that do not match, and the years shown are remembered', async ({ page }) => {
     await page.getByPlaceholder('Search brands').fill('kenissi');
-    await expect(page.locator('section.owner[aria-label="Held by another brand"]')).toBeVisible();
-    await expect(page.locator('section.owner[aria-label="Independent"]')).toBeHidden();
+    await expect(page.locator('li.row:not([hidden])')).toHaveCount(1);
     await page.getByRole('button', { name: 'Since 1950' }).click();
     await page.reload();
     await expect(page.locator('[data-timeline]')).toHaveAttribute('data-scale', 'recent');
