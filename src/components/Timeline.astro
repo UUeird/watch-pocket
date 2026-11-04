@@ -6,13 +6,15 @@ interface Props {
   sections: Section[];
   // Every dated purchase each group made, by group id, including brands it has since sold.
   purchases: Map<string, { brand: Brand; from: number; to?: number }[]>;
-  // Fields the page's filters match on, for each brand.
-  filterData: (brand: Brand) => Record<string, string | undefined>;
+  // Fields the page's filters match on, for each brand, where the page has filters.
+  filterData?: (brand: Brand) => Record<string, string | undefined>;
   // The id the page's filters target.
-  id: string;
+  id?: string;
 }
 
-const { sections, purchases, filterData, id } = Astro.props;
+const { sections, purchases, filterData = (brand: Brand) => ({ 'data-id': brand.id }), id } = Astro.props;
+// Only a group's section has a row of its purchases, so the key names them only where one is shown.
+const anyPurchases = sections.some(({ group }) => group && (purchases.get(group.id)?.length ?? 0) > 0);
 const thisYear = new Date().getFullYear();
 // The axis runs to the end of this year, so a current holding reaches the right edge.
 const end = thisYear + 1;
@@ -37,7 +39,7 @@ const span = (from: number, to?: number) => ({ '--from': from, '--to': to ?? end
     <li><span class="key-band" /> Held by a group</li>
     <li><span class="key-band past" /> Held, since sold</li>
     <li><span class="key-band part" /> Part-owned</li>
-    <li><span class="key-buy" /> A group's purchase, on its own row</li>
+    {anyPurchases && <li><span class="key-buy" /> A group's purchase, on its own row</li>}
   </ul>
 
   <div class="axis" aria-hidden="true">

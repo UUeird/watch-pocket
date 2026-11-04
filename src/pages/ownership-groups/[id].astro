@@ -3,8 +3,10 @@ import Base from '../../layouts/Base.astro';
 import Holdings from '../../components/Holdings.astro';
 import Logo from '../../components/Logo.astro';
 import Sources from '../../components/Sources.astro';
+import Timeline from '../../components/Timeline.astro';
 import { describeControl, href, loadCatalog, type Group } from '../../lib/catalog';
 import { countries } from '../../lib/countries';
+import { sectionsOf } from '../../lib/timeline';
 
 export async function getStaticPaths() {
   const { groups } = await loadCatalog(null);
@@ -16,7 +18,7 @@ interface Props {
 }
 
 const { group } = Astro.props;
-const { groups, groupsById, holdingsOf, licensesOf } = await loadCatalog(Astro.request);
+const { brands, groups, groupsById, holdingsOf, licensesOf, ownerName } = await loadCatalog(Astro.request);
 const subsidiaries = groups.filter((other) => other.data.parent?.id === group.id);
 const { name, country, founded, dissolved, website, parent, sources } = group.data;
 const { flag } = countries[country];
@@ -25,6 +27,14 @@ const holdings = holdingsOf(owner);
 const current = holdings.filter((record) => record.to === undefined);
 const former = holdings.filter((record) => record.to !== undefined);
 const licenses = licensesOf(group.id);
+// The group's own section of the timeline: the brands it holds now, with a row marking every dated purchase it made.
+// Its heading row isn't linked, as it would only lead back here.
+const timeline = sectionsOf(brands, groups, ownerName, () => '')
+  .filter((section) => section.key === group.id)
+  .map((section) => ({ ...section, href: undefined }));
+const purchases = new Map([
+  [group.id, holdings.filter((record) => record.from !== undefined).map(({ brand, from, to }) => ({ brand, from: from!, to }))],
+]);
 ---
 
 <Base title={name}>
@@ -112,6 +122,19 @@ const licenses = licensesOf(group.id);
             : `Brands ${name} once held and has since sold, closed or lost, and the years it held each.`}
         </p>
         <Holdings owner={owner} only="former" />
+      </>
+    )
+  }
+
+  {
+    timeline.length > 0 && (
+      <>
+        <h2>Timeline</h2>
+        <p class="section-note">
+          Each brand's life from its founding to today. A band runs for as long as each owner held it; hover a band for its
+          owner and years.
+        </p>
+        <Timeline sections={timeline} purchases={purchases} />
       </>
     )
   }

@@ -188,18 +188,11 @@ test.describe('Timeline', () => {
     await page.goto('timeline/');
   });
 
-  test('groups brands under their current owner, each purchase marked', async ({ page }) => {
-    const lvmh = page.locator('section.owner[aria-label="LVMH"]');
-    const zenith = lvmh.locator('li.row', { hasText: 'Zenith' });
-    const band = zenith.locator('.band');
-    await expect(band).toContainText('LVMH');
-    await expect(band).toHaveAttribute('href', /\/ownership-groups\/lvmh\//);
-    await expect(zenith.locator('.buy')).toHaveCount(0);
-    // The group's own row marks every purchase, linked to the brand bought.
-    const bought = lvmh.locator('.head .buy');
-    expect(await bought.count()).toBeGreaterThan(2);
-    await expect(bought.first()).toHaveAttribute('href', /\/brands\//);
+  test('keeps only brands no group owns, independents last', async ({ page }) => {
+    await expect(page.locator('section.owner[aria-label="LVMH"]')).toHaveCount(0);
+    await expect(page.locator('section.owner[aria-label="Held by another brand"]')).toBeVisible();
     await expect(page.locator('section.owner').last()).toHaveAttribute('aria-label', 'Independent');
+    await expect(page.locator('.key')).not.toContainText("A group's purchase");
   });
 
   test('stacks part-owners held at the same time', async ({ page }) => {
@@ -211,12 +204,29 @@ test.describe('Timeline', () => {
   });
 
   test('filters hide owners with no matching brands, and the years shown are remembered', async ({ page }) => {
-    await page.getByPlaceholder('Search brands').fill('zenith');
-    await expect(page.locator('section.owner[aria-label="LVMH"]')).toBeVisible();
-    await expect(page.locator('section.owner[aria-label="Swatch Group"]')).toBeHidden();
+    await page.getByPlaceholder('Search brands').fill('kenissi');
+    await expect(page.locator('section.owner[aria-label="Held by another brand"]')).toBeVisible();
+    await expect(page.locator('section.owner[aria-label="Independent"]')).toBeHidden();
     await page.getByRole('button', { name: 'Since 1950' }).click();
     await page.reload();
     await expect(page.locator('[data-timeline]')).toHaveAttribute('data-scale', 'recent');
+  });
+});
+
+test.describe('Group timeline', () => {
+  test("a group's page draws its brands, each purchase marked", async ({ page }) => {
+    await page.goto('ownership-groups/lvmh/');
+    const lvmh = page.locator('section.owner[aria-label="LVMH"]');
+    const zenith = lvmh.locator('li.row', { hasText: 'Zenith' });
+    const band = zenith.locator('.band');
+    await expect(band).toContainText('LVMH');
+    await expect(band).toHaveAttribute('href', /\/ownership-groups\/lvmh\//);
+    await expect(zenith.locator('.buy')).toHaveCount(0);
+    // The group's own row marks every purchase, linked to the brand bought.
+    const bought = lvmh.locator('.head .buy');
+    expect(await bought.count()).toBeGreaterThan(2);
+    await expect(bought.first()).toHaveAttribute('href', /\/brands\//);
+    await expect(lvmh.locator('.head a')).toHaveCount(await bought.count());
   });
 });
 
