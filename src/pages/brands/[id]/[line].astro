@@ -20,7 +20,7 @@ interface Props {
 }
 
 const { line, brand, models } = Astro.props;
-const { name, periods } = line.data;
+const { name, periods, website } = line.data;
 const discontinued = periods.at(-1)?.to !== undefined;
 ---
 
@@ -36,6 +36,16 @@ const discontinued = periods.at(-1)?.to !== undefined;
     </dd>
     <dt>On sale</dt>
     <dd>{formatPeriods(periods) || 'Not recorded'}</dd>
+    {
+      website && (
+        <>
+          <dt>Website</dt>
+          <dd>
+            <a href={website}>{website}</a>
+          </dd>
+        </>
+      )
+    }
   </dl>
 
   <h2>Models</h2>

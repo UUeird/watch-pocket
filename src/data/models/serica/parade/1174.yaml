@@ -9,6 +9,7 @@ sources:
   - https://serica-watches.com/en/pages/our-history
 references:
   - ref: "1174-1"
+    website: https://serica-watches.com/en/products/1174-1-parade
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/1174-parade-gold_packshot_web_03.jpg
       page: https://serica-watches.com/en/products/1174-1-parade
@@ -24,6 +25,7 @@ references:
     dials: [{ color: gold, name: "Brass" }]
     bracelets: [{ type: leather-strap }]
   - ref: "1174-2"
+    website: https://serica-watches.com/en/products/1174-2-parade
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/1174-parade-black_packshot_web_03.jpg
       page: https://serica-watches.com/en/products/1174-2-parade
@@ -39,6 +41,7 @@ references:
     dials: [{ color: black, name: "Satin Black" }]
     bracelets: [{ type: leather-strap }]
   - ref: "1174-3"
+    website: https://serica-watches.com/en/products/1174-3-parade
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/1174-parade-linen-brown_packshot_web_02.jpg
       page: https://serica-watches.com/en/products/1174-3-parade
@@ -54,6 +57,7 @@ references:
     dials: [{ color: brown, name: "Tobacco" }]
     bracelets: [{ type: leather-strap }]
   - ref: "1174-4"
+    website: https://serica-watches.com/en/products/1174-4-parade
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/1174-parade-linen_packshot_blue_web_02.jpg
       page: https://serica-watches.com/en/products/1174-4-parade

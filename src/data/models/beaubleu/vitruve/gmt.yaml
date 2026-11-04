@@ -6,6 +6,7 @@ sources:
   - https://beaubleu-paris.com/products/vitruve-gmt-vert
 references:
   - ref: "GMT Bleu"
+    website: https://beaubleu-paris.com/products/vitruve-gmt-bleu
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_gmt_bleu_bleu.webp
       page: https://beaubleu-paris.com/products/vitruve-gmt-bleu
@@ -18,6 +19,7 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
   - ref: "GMT Vert"
+    website: https://beaubleu-paris.com/products/vitruve-gmt-vert
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_gmt_vert_noir.webp
       page: https://beaubleu-paris.com/products/vitruve-gmt-vert

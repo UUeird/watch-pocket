@@ -5,4 +5,12 @@ sources:
   - https://www.casio.com/us/watches/casio/product.A100WE-1A/
 references:
   - ref: "A100WE-1A"
+    website: https://www.casio.com/us/watches/casio/product.A100WE-1A/
+    photos:
+      - file: ../../../photos/casio/casio-collection/a100we-a100we-1a.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Casio_A100WE-1A.jpg
+          license: CC BY-SA 4.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+          author: Clyde94
     movementType: quartz

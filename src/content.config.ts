@@ -271,6 +271,8 @@ const lines = defineCollection({
   schema: z.object({
     name: z.string(),
     brand: reference('brands'),
+    // The maker's own page for this line, linked from the line's page.
+    website: z.url().optional(),
     // The periods the line was on sale, so a retired and revived line has several.
     // A last period with no `to` is still running; no periods means the dates are not recorded.
     periods,
@@ -320,6 +322,11 @@ const models = defineCollection({
         .array(
           z.object({
             ref: z.string(),
+            // A short name telling this reference apart from the model's others: "Steve McQueen", "Blue dial", "Titanium".
+            // Without one, the site describes it from what differs between them (see referenceName in src/lib/catalog.ts).
+            name: z.string().optional(),
+            // The maker's own page for this reference, linked from the reference's page.
+            website: z.url().optional(),
             // Photos of this reference in particular, where it looks unlike the model's others (a different bezel or
             // dial), in the same form as the model's. Its page shows these, or the model's when it has none.
             photos: photos(image),

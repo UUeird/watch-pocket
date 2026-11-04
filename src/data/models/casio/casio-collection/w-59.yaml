@@ -1,8 +1,15 @@
 name: "W-59"
 line: casio/casio-collection
 website: https://www.casio.com/intl/watches/casio/product.W-59-1VQ/
+photos:
+  - file: ../../../photos/casio/casio-collection/w-59.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Casio_W-59_digital_watch.jpg
+      license: Public domain
+      author: Ricce
 sources:
   - https://www.casio.com/intl/watches/casio/product.W-59-1VQ/
 references:
   - ref: "W-59-1VQ"
+    website: https://www.casio.com/intl/watches/casio/product.W-59-1VQ/
     movementType: quartz

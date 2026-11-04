@@ -8,6 +8,7 @@ sources:
   - https://beaubleu-paris.com/products/b01-le-survolte
 references:
   - ref: "B01 Le Dynamique"
+    website: https://beaubleu-paris.com/products/b01-le-dynamique
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_B01_dynamique.webp
       page: https://beaubleu-paris.com/products/b01-le-dynamique
@@ -18,6 +19,7 @@ references:
     movement: "Miyota 9015"
     movementType: mechanical
   - ref: "B01 Le Lumineux"
+    website: https://beaubleu-paris.com/products/b01-le-lumineux
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_B01_lumineux.webp
       page: https://beaubleu-paris.com/products/b01-le-lumineux

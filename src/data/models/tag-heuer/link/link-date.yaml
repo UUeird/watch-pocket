@@ -6,6 +6,7 @@ sources:
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-link/41-mm-calibre-5-automatic/WBC2112.BA0603.html
 references:
   - ref: "WBC2110.BA0603"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-link/41-mm-calibre-5-automatic/WBC2110.BA0603.html
     caseSize: 41
     metals: [steel]
     movement: "Calibre 5"
@@ -14,6 +15,7 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: "WBC2112.BA0603"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-link/41-mm-calibre-5-automatic/WBC2112.BA0603.html
     caseSize: 41
     metals: [steel]
     movement: "Calibre 5"

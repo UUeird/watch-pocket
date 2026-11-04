@@ -7,6 +7,7 @@ sources:
   - https://akrone.fr/products/c-03-horizon-austral-gun
 references:
   - ref: "Horizon Austral 41mm"
+    website: https://akrone.fr/products/c-03-horizon-austral-41mm
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C03_41_horizon_austral_soldat_rubber.jpg
       page: https://akrone.fr/products/c-03-horizon-austral-41mm
@@ -18,6 +19,7 @@ references:
     movementType: mechanical
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "Horizon Black 39mm"
+    website: https://akrone.fr/products/c-03-horizon-black-39mm
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C-03_HORIZON_BLACK_39_SOLDAT_RUBBER.jpg
       page: https://akrone.fr/products/c-03-horizon-black-39mm
@@ -29,6 +31,7 @@ references:
     movementType: mechanical
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "Horizon Austral Gun"
+    website: https://akrone.fr/products/c-03-horizon-austral-gun
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0708/7813/4492/files/C-03_HORIZON_BLACK_39_SOLDAT_RUBBER_1.jpg
       page: https://akrone.fr/products/c-03-horizon-austral-gun

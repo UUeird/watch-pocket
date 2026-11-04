@@ -1,0 +1,14 @@
+name: "Monaco Twenty Four"
+line: tag-heuer/monaco
+photos:
+  - file: ../../../photos/tag-heuer/monaco/monaco-twenty-four.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:TAG_Heuer_Monaco_24_(cropped,_turned,_colours).jpg
+      license: CC BY-SA 3.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+      author: "File:TAG Heuer Monaco 24.JPG (original image): Ferengi Derivative work above: Pittigrilli"
+style: chronograph
+theme: motor-racing
+sources:
+  - https://en.wikipedia.org/wiki/TAG_Heuer_Monaco
+  - https://commons.wikimedia.org/wiki/File:TAG_Heuer_Monaco_24.JPG

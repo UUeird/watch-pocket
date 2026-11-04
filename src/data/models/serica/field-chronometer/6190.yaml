@@ -57,6 +57,7 @@ references:
     dials: [{ color: gray, name: "Storm Grey" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
   - ref: "6190 Commando"
+    website: https://serica-watches.com/en/products/6190-commando-chronometre
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/6190-commando-3h-packshot-01.jpg
       page: https://serica-watches.com/en/products/6190-commando-chronometre
@@ -71,6 +72,7 @@ references:
     dials: [{ color: black, name: "Commando" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
   - ref: "6190 Denali"
+    website: https://serica-watches.com/en/products/6190-denali-chronometre
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/6190-denali-3h-packshot-01.jpg
       page: https://serica-watches.com/en/products/6190-denali-chronometre
@@ -86,6 +88,7 @@ references:
     dials: [{ color: black, name: "Denali" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
   - ref: "6190 California"
+    website: https://serica-watches.com/en/products/6190-california-chronometre
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/6190-california-3h-packshot-01.jpg
       page: https://serica-watches.com/en/products/6190-california-chronometre
@@ -100,6 +103,7 @@ references:
     dials: [{ color: black, name: "California" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
   - ref: "6190 TXD"
+    website: https://serica-watches.com/en/products/ref-6190-txd
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/6190-tuxedo-3h-packshot_01.jpg
       page: https://serica-watches.com/en/products/ref-6190-txd

@@ -5,4 +5,5 @@ sources:
   - https://www.casio.com/intl/watches/casio/product.B640WD-1AV/
 references:
   - ref: "B640WD-1AV"
+    website: https://www.casio.com/intl/watches/casio/product.B640WD-1AV/
     movementType: quartz

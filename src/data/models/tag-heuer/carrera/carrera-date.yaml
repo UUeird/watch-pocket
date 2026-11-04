@@ -1,12 +1,20 @@
 name: "Carrera Date"
 line: tag-heuer/carrera
 website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/39-mm-calibre-5-automatic/WBN2110.BA0639.html
+photos:
+  - file: ../../../photos/tag-heuer/carrera/carrera-date.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:TAG_Heuer_Carrera_Calibre_5,_anni_2010.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: Clyde94
 sources:
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/39-mm-calibre-5-automatic/WBN2110.BA0639.html
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/39-mm-calibre-5-automatic/WBN2112.BA0639.html
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/36-mm-calibre-7-automatic/WBN2311.BA0001.html
 references:
   - ref: "WBN2110.BA0639"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/39-mm-calibre-5-automatic/WBN2110.BA0639.html
     caseSize: 39
     metals: [steel]
     movement: "Calibre 5"
@@ -15,6 +23,7 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: "WBN2112.BA0639"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/39-mm-calibre-5-automatic/WBN2112.BA0639.html
     caseSize: 39
     metals: [steel]
     movement: "Calibre 5"
@@ -23,6 +32,7 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: "WBN2311.BA0001"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-carrera/36-mm-calibre-7-automatic/WBN2311.BA0001.html
     caseSize: 36
     metals: [steel]
     movement: "Calibre 7"

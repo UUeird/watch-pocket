@@ -6,6 +6,7 @@ sources:
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-aquaracer/40-mm-quartz/WBP1111.BA0627.html
 references:
   - ref: "WBP1111.BA0627"
+    website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-aquaracer/40-mm-quartz/WBP1111.BA0627.html
     caseSize: 40
     metals: [steel]
     movementType: quartz

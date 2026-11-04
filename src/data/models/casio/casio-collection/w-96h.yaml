@@ -1,8 +1,16 @@
 name: "W-96H"
 line: casio/casio-collection
 website: https://www.casio.com/us/watches/casio/product.W-96H-1AV/
+photos:
+  - file: ../../../photos/casio/casio-collection/w-96h.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Casio_W-96H-4A2V.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: Petar Milošević
 sources:
   - https://www.casio.com/us/watches/casio/product.W-96H-1AV/
 references:
   - ref: "W-96H-1AV"
+    website: https://www.casio.com/us/watches/casio/product.W-96H-1AV/
     movementType: quartz

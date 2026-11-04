@@ -85,6 +85,24 @@ export const describeModelNumber = ({ number, connectivity, regions }: Reference
 };
 export const describeBracelet = (bracelet: Reference['bracelets'][number]) => bracelet.name ?? label(bracelet.type);
 
+// What tells a reference apart from the model's others (`siblings`, itself included): its own `name`, or else its dial,
+// metals, case size and bracelet, each only where the references that record it differ in it. Undefined when nothing does.
+export const referenceName = (reference: Reference, siblings: Reference[]) => {
+  if (reference.name) return reference.name;
+  const parts = [
+    (r: Reference) => (r.dials.length ? `${r.dials.map(describeDial).join(', ')} dial` : ''),
+    (r: Reference) => r.metals.map(label).join(' and '),
+    (r: Reference) => (r.caseSize ? `${r.caseSize} mm` : ''),
+    (r: Reference) => r.bracelets.map(describeBracelet).join(' or '),
+  ];
+  const text = parts
+    .filter((part) => new Set(siblings.map(part).filter(Boolean)).size > 1)
+    .map((part) => part(reference))
+    .filter(Boolean)
+    .join(', ');
+  return text ? text.charAt(0).toUpperCase() + text.slice(1) : undefined;
+};
+
 // Every page asks for the catalog, so a build makes it once rather than once per page.
 // The dev server builds it once per page request instead, so edits to data show up on reload and a failed load is not
 // remembered. Every caller passes Astro.request, so a page and every component it draws (one per row, say) share one

@@ -6,6 +6,7 @@ sources:
   - https://beaubleu-paris.com/products/vitruve-date-noir
 references:
   - ref: "Date Acier"
+    website: https://beaubleu-paris.com/products/vitruve-date-acier
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_date_acier_bleu.webp
       page: https://beaubleu-paris.com/products/vitruve-date-acier
@@ -18,6 +19,7 @@ references:
     complications: [date]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
   - ref: "Date Noir"
+    website: https://beaubleu-paris.com/products/vitruve-date-noir
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_date_noir_noir.webp
       page: https://beaubleu-paris.com/products/vitruve-date-noir

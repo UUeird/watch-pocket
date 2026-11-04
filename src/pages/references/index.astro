@@ -52,7 +52,7 @@ const filters = [
         {
           references.map(({ reference, model, brand }) => (
             <tr
-              data-q={[reference.ref, ...reference.modelNumbers.map(({ number }) => number)].join(' ').toLowerCase()}
+              data-q={[reference.ref, reference.name ?? '', ...reference.modelNumbers.map(({ number }) => number)].join(' ').toLowerCase()}
               data-brand={brand.data.name}
               data-metal={reference.metals.join('|')}
               data-case={reference.caseColors.map((finish) => finish.color).join('|')}

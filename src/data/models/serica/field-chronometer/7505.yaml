@@ -8,6 +8,7 @@ sources:
   - https://serica-watches.com/en/pages/our-history
 references:
   - ref: "7505-1"
+    website: https://serica-watches.com/en/products/7505-1-chronometre-etanche
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/7505-1_noir_3h-packshot_02.jpg
       page: https://serica-watches.com/en/products/7505-1-chronometre-etanche
@@ -23,6 +24,7 @@ references:
     dials: [{ color: black, name: "Black Enamel" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
   - ref: "7505-2"
+    website: https://serica-watches.com/en/products/7505-2-chronometre-etanche
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/7505-2_olive_3h-packshot_02.jpg
       page: https://serica-watches.com/en/products/7505-2-chronometre-etanche
@@ -38,6 +40,7 @@ references:
     dials: [{ color: green, name: "Olive Green" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
   - ref: "7505 TXD"
+    website: https://serica-watches.com/en/products/7505-txd-chronometre-etanche
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0933/3194/7784/files/7505-txd_3h-packshot_02.jpg
       page: https://serica-watches.com/en/products/7505-txd-chronometre-etanche

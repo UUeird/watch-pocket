@@ -6,6 +6,7 @@ sources:
   - https://beaubleu-paris.com/products/vitruve-origine-cognac
 references:
   - ref: "Origine Bleu"
+    website: https://beaubleu-paris.com/products/vitruve-origine-bleu
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/vitruve_origine_bleu_bleu.webp
       page: https://beaubleu-paris.com/products/vitruve-origine-bleu
@@ -19,6 +20,7 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
   - ref: "Origine Cognac"
+    website: https://beaubleu-paris.com/products/vitruve-origine-cognac
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/vitruve_origine_cognac_cognac.webp
       page: https://beaubleu-paris.com/products/vitruve-origine-cognac
