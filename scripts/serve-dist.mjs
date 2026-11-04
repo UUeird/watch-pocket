@@ -26,8 +26,11 @@ createServer((request, response) => {
   }
   let path = join('dist', normalize(url.slice(base.length)));
   if (existsSync(path) && statSync(path).isDirectory()) path = join(path, 'index.html');
+  // A missing page gets the site's own 404 page, as GitHub Pages serves it.
   if (!path.startsWith('dist') || !existsSync(path)) {
-    response.writeHead(404).end('Not found');
+    const notFound = join('dist', '404.html');
+    if (existsSync(notFound)) createReadStream(notFound).pipe(response.writeHead(404, { 'content-type': types['.html'] }));
+    else response.writeHead(404).end('Not found');
     return;
   }
   const type = types[extname(path)] ?? 'application/octet-stream';
