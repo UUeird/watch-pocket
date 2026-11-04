@@ -15,7 +15,6 @@ const sections = [
   { path: '/models/', name: 'Models' },
   { path: '/references/', name: 'References' },
   { path: '/chart/', name: 'Chart' },
-  { path: '/timeline/', name: 'Timeline' },
   // The Docs stay off the published site (see astro.config.mjs), so they're only linked where they're built.
   ...(import.meta.env.SHOW_DOCS ? [{ path: '/docs/', name: 'Docs' }] : []),
 ];

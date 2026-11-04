@@ -1,4 +1,4 @@
-import { currentOwners, formatStake, type Brand, type Group, type Owner } from './catalog';
+import { currentOwners, formatStake, type Brand, type Owner } from './catalog';
 
 // A brand's life as the timeline draws it: the years it traded, any heritage it claims, and who has owned it.
 // `lane` stacks holdings that overlap, as part-owners at the same time do.
@@ -17,8 +17,8 @@ export type Lifeline = {
   first: number;
 };
 
-// A section of the page: one owner and the brands it holds now.
-export type Section = { key: string; name: string; href?: string; group?: Group; rows: Lifeline[]; undated: number };
+// One owner's timeline: the brands it has held, and how many of them have no years to draw.
+export type Section = { name: string; rows: Lifeline[]; undated: number };
 
 export function lifelineOf(brand: Brand, ownerName: (owner: Owner) => string | undefined): Lifeline | undefined {
   const periods = brand.data.periods;
@@ -54,38 +54,27 @@ export const describeHolding = ({ name, from, to, stake }: Holding) => {
   return to === undefined ? `${name}${share} since ${from}` : `${name}${share} ${from}–${to}`;
 };
 
-// Brands sorted into sections by who owns them now: each group, largest first, then brands held by another
-// brand, then independents. A brand with several part-owners sits under each.
-export function sectionsOf(
-  brands: Brand[],
-  groups: Group[],
-  ownerName: (owner: Owner) => string | undefined,
-  groupHref: (group: Group) => string,
-): Section[] {
-  const sections = new Map<string, Section>();
-  const section = (key: string, make: () => Omit<Section, 'rows' | 'undated'>) => {
-    if (!sections.has(key)) sections.set(key, { ...make(), rows: [], undated: 0 });
-    return sections.get(key)!;
-  };
-  const groupsById = new Map(groups.map((group) => [group.id, group]));
-  for (const brand of brands) {
-    const owners = currentOwners(brand);
-    const keys = owners.length === 0 ? ['independent'] : owners.map((owner) => (owner.collection === 'groups' ? owner.id : 'brands'));
-    const line = lifelineOf(brand, ownerName);
-    for (const key of new Set(keys)) {
-      const target = section(key, () => {
-        if (key === 'independent') return { key, name: 'Independent' };
-        if (key === 'brands') return { key, name: 'Held by another brand' };
-        const group = groupsById.get(key)!;
-        return { key, name: group.data.name, href: groupHref(group), group };
-      });
-      if (line) target.rows.push(line);
-      else target.undated++;
+const holds = (brand: Brand, owner: Owner) => brand.data.ownership.some((record) => record.owner.collection === owner.collection && record.owner.id === owner.id);
+const holdsNow = (brand: Brand, owner: Owner) => currentOwners(brand).some((other) => other.collection === owner.collection && other.id === owner.id);
+
+// Every brand an owner has held, now or before, and every brand held now by one it holds now, down the chain: a
+// group that owns Bulova also has Caravelle, which Bulova owns.
+export function heldBy(owner: Owner, brands: Brand[]): Brand[] {
+  const found = new Map(brands.filter((brand) => holds(brand, owner)).map((brand) => [brand.id, brand]));
+  const queue = brands.filter((brand) => holdsNow(brand, owner));
+  for (let parent = queue.shift(); parent; parent = queue.shift()) {
+    for (const brand of brands) {
+      if (found.has(brand.id) || !holdsNow(brand, { collection: 'brands', id: parent.id })) continue;
+      found.set(brand.id, brand);
+      queue.push(brand);
     }
   }
-  for (const { rows } of sections.values()) rows.sort((a, b) => a.first - b.first || a.brand.data.name.localeCompare(b.brand.data.name));
-  const rank = (key: string) => (key === 'independent' ? 2 : key === 'brands' ? 1 : 0);
-  return [...sections.values()]
-    .filter((entry) => entry.rows.length > 0)
-    .sort((a, b) => rank(a.key) - rank(b.key) || b.rows.length - a.rows.length || a.name.localeCompare(b.name));
+  return [...found.values()];
+}
+
+// An owner's timeline, for its own page: the brands it has held, oldest first.
+export function ownerSection(name: string, held: Brand[], ownerName: (owner: Owner) => string | undefined): Section {
+  const lines = [...new Map(held.map((brand) => [brand.id, brand])).values()].map((brand) => lifelineOf(brand, ownerName));
+  const rows = lines.filter((line) => line !== undefined).sort((a, b) => a.first - b.first || a.brand.data.name.localeCompare(b.brand.data.name));
+  return { name, rows, undated: lines.length - rows.length };
 }
