@@ -1,7 +1,10 @@
 ---
 import Filters from '../../components/Filters.astro';
+import ListThumb from '../../components/ListThumb.astro';
+import PhotoCredits from '../../components/PhotoCredits.astro';
 import Base from '../../layouts/Base.astro';
 import { href, label, lineHref, loadCatalog } from '../../lib/catalog';
+import { modelPhotos } from '../../lib/tile-photos';
 
 const { brands, lines, models } = await loadCatalog(Astro.request);
 // Grouped by brand, then line, then model name, with numbers in number order.
@@ -9,7 +12,7 @@ const rows = models
   .map((model) => {
     const line = lines.find((candidate) => candidate.id === model.data.line.id)!;
     const brand = brands.find((candidate) => candidate.id === line.data.brand.id)!;
-    return { model, line, brand };
+    return { model, line, brand, photos: modelPhotos(model, brand.data.name) };
   })
   .sort(
     (a, b) =>
@@ -48,6 +51,7 @@ const years = (model: (typeof models)[number]) => {
     <table>
       <thead>
         <tr>
+          <th class="photo"><span class="visually-hidden">Photo</span></th>
           <th>Model</th>
           <th>Brand</th>
           <th>Line</th>
@@ -59,13 +63,16 @@ const years = (model: (typeof models)[number]) => {
       </thead>
       <tbody id="models">
         {
-          rows.map(({ model, line, brand }) => (
+          rows.map(({ model, line, brand, photos }) => (
             <tr
               data-q={`${model.data.name} ${line.data.name} ${brand.data.name}`.toLowerCase()}
               data-brand={brand.data.name}
               data-style={model.data.style}
               data-theme={model.data.theme}
             >
+              <td class="photo">
+                <ListThumb href={href(`/brands/${model.id}/`)} photos={photos} />
+              </td>
               <td>
                 <a href={href(`/brands/${model.id}/`)}>{model.data.name}</a>
               </td>
@@ -85,4 +92,5 @@ const years = (model: (typeof models)[number]) => {
       </tbody>
     </table>
   </div>
+  <PhotoCredits underTable items={rows.map(({ model, brand, photos }) => ({ title: `${brand.data.name} ${model.data.name}`, brandName: brand.data.name, photos: photos.slice(0, 1) }))} />
 </Base>
