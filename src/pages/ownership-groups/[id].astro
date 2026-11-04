@@ -6,7 +6,7 @@ import Sources from '../../components/Sources.astro';
 import Timeline from '../../components/Timeline.astro';
 import { describeControl, href, loadCatalog, type Group } from '../../lib/catalog';
 import { countries } from '../../lib/countries';
-import { groupSection } from '../../lib/timeline';
+import { heldBy, ownerSection } from '../../lib/timeline';
 
 export async function getStaticPaths() {
   const { groups } = await loadCatalog(null);
@@ -18,7 +18,7 @@ interface Props {
 }
 
 const { group } = Astro.props;
-const { groups, groupsById, holdingsOf, licensesOf, ownerName } = await loadCatalog(Astro.request);
+const { brands, groups, groupsById, holdingsOf, licensesOf, ownerName } = await loadCatalog(Astro.request);
 const subsidiaries = groups.filter((other) => other.data.parent?.id === group.id);
 const { name, country, founded, dissolved, website, parent, sources } = group.data;
 const { flag } = countries[country];
@@ -27,13 +27,10 @@ const holdings = holdingsOf(owner);
 const current = holdings.filter((record) => record.to === undefined);
 const former = holdings.filter((record) => record.to !== undefined);
 const licenses = licensesOf(group.id);
-// The group's own section of the timeline: every brand it has held, now or before, with a row marking each dated
-// purchase. Its heading row isn't linked, as it would only lead back here.
-const section = groupSection(group, holdings.map((record) => record.brand), ownerName);
-const timeline = section.rows.length > 0 ? [section] : [];
-const purchases = new Map([
-  [group.id, holdings.filter((record) => record.from !== undefined).map(({ brand, from, to }) => ({ brand, from: from!, to }))],
-]);
+// The group's timeline: every brand it has held, now or before, and those held through its brands, with a row
+// marking each dated purchase it made itself.
+const timeline = ownerSection(name, heldBy(owner, brands), ownerName);
+const purchases = holdings.filter((record) => record.from !== undefined).map(({ brand, from, to }) => ({ brand, from: from!, to }));
 ---
 
 <Base title={name}>
@@ -126,14 +123,14 @@ const purchases = new Map([
   }
 
   {
-    timeline.length > 0 && (
+    timeline.rows.length > 0 && (
       <>
         <h2>Timeline</h2>
         <p class="section-note">
           Each brand's life from its founding to today. A band runs for as long as each owner held it; hover a band for its
           owner and years.
         </p>
-        <Timeline sections={timeline} purchases={purchases} />
+        <Timeline section={timeline} purchases={purchases} />
       </>
     )
   }

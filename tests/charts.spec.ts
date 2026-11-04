@@ -183,34 +183,6 @@ test.describe('Ownership groups', () => {
   });
 });
 
-test.describe('Timeline', () => {
-  test.beforeEach(async ({ page }) => {
-    await page.goto('timeline/');
-  });
-
-  test('keeps only brands held by another brand', async ({ page }) => {
-    await expect(page.locator('section.owner')).toHaveCount(1);
-    await expect(page.locator('section.owner')).toHaveAttribute('aria-label', 'Held by another brand');
-    await expect(page.locator('.key')).not.toContainText("A group's purchase");
-  });
-
-  test('stacks part-owners held at the same time', async ({ page }) => {
-    const kenissi = page.locator('li.row[data-id="kenissi"]').first();
-    const [first, second] = await kenissi.locator('.band').all();
-    const a = (await first.boundingBox())!;
-    const b = (await second.boundingBox())!;
-    expect(a.y + a.height).toBeLessThanOrEqual(b.y + 1);
-  });
-
-  test('search hides brands that do not match, and the years shown are remembered', async ({ page }) => {
-    await page.getByPlaceholder('Search brands').fill('kenissi');
-    await expect(page.locator('li.row:not([hidden])')).toHaveCount(1);
-    await page.getByRole('button', { name: 'Since 1950' }).click();
-    await page.reload();
-    await expect(page.locator('[data-timeline]')).toHaveAttribute('data-scale', 'recent');
-  });
-});
-
 test.describe('Group timeline', () => {
   test("a group's page draws its brands, each purchase marked", async ({ page }) => {
     await page.goto('ownership-groups/lvmh/');
@@ -225,6 +197,33 @@ test.describe('Group timeline', () => {
     expect(await bought.count()).toBeGreaterThan(2);
     await expect(bought.first()).toHaveAttribute('href', /\/brands\//);
     await expect(lvmh.locator('.head a')).toHaveCount(await bought.count());
+  });
+
+  test('stacks part-owners held at the same time', async ({ page }) => {
+    await page.goto('ownership-groups/chanel/');
+    const kenissi = page.locator('li.row[data-id="kenissi"]');
+    const [first, second] = await kenissi.locator('.band').all();
+    const a = (await first.boundingBox())!;
+    const b = (await second.boundingBox())!;
+    expect(a.y + a.height).toBeLessThanOrEqual(b.y + 1);
+  });
+
+  test('draws brands held through a brand the group owns, and remembers the years shown', async ({ page }) => {
+    await page.goto('ownership-groups/citizen/');
+    const caravelle = page.locator('li.row[data-id="caravelle"]');
+    await expect(caravelle.locator('.band')).toContainText('Bulova');
+    // Citizen bought Bulova, not Caravelle, so only Bulova is marked on the group's row.
+    await expect(page.locator('.head .buy[href$="/brands/caravelle/"]')).toHaveCount(0);
+    await page.getByRole('button', { name: 'Since 1950' }).click();
+    await page.reload();
+    await expect(page.locator('[data-timeline]')).toHaveAttribute('data-scale', 'recent');
+  });
+
+  test('a brand that owns others draws them on its page', async ({ page }) => {
+    await page.goto('brands/mondaine/');
+    await expect(page.locator('section.owner[aria-label="Mondaine"] li.row[data-id="luminox"]')).toBeVisible();
+    await page.goto('brands/luminox/');
+    await expect(page.locator('[data-timeline]')).toHaveCount(0);
   });
 
   test('a dissolved group still draws the brands it once held', async ({ page }) => {
