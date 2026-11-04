@@ -81,6 +81,10 @@ curl -s -o /dev/null -w '%{http_code}\n' https://www.watchpocket.app/
 
 The run's `headSha` (`gh run view <id> --json headSha`) should be the merge
 commit. If the deploy fails or the site doesn't return 200, stop and report.
+If the Build job passed and only the Deploy step failed (a Pages timeout or
+"Deployment cancelled", often during a GitHub outage), retry with a fresh run,
+`gh workflow run Deploy --ref main`, once the user agrees. `gh run rerun` reuses
+the canceled deployment's ID and gets canceled again.
 This, not the merge, is the real "done" signal. Releasing several PRs, wait for
 each one's deploy before merging the next.
 
