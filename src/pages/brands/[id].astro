@@ -5,6 +5,8 @@ import Holdings from '../../components/Holdings.astro';
 import Logo from '../../components/Logo.astro';
 import SourceLinks from '../../components/SourceLinks.astro';
 import Tiles from '../../components/Tiles.astro';
+import Timeline from '../../components/Timeline.astro';
+import { heldBy, ownerSection } from '../../lib/timeline';
 import { linePhotos } from '../../lib/tile-photos';
 import Sources from '../../components/Sources.astro';
 import { brandStatus, controlNames, formatPeriods, formatStake, href, label, lineHref, loadCatalog, ownerHref, plural, type Brand } from '../../lib/catalog';
@@ -22,6 +24,9 @@ const { brand } = Astro.props;
 const { brands, groupsById, ownerName, brandControl, holdingsOf, linesOf, modelsOf, collaborationsOf } = await loadCatalog(Astro.request);
 const self = { collection: 'brands' as const, id: brand.id };
 const holdings = holdingsOf(self);
+// The brands this one has held, and those held through them, drawn as on a group's page.
+const timeline = ownerSection(brand.data.name, heldBy(self, brands), ownerName);
+const purchases = holdings.filter((record) => record.from !== undefined).map(({ brand: held, from, to }) => ({ brand: held, from: from!, to }));
 const collaborations = collaborationsOf(brand.id);
 const brandName = (modelId: string) => brands.find((other) => other.id === modelId.split('/')[0])?.data.name;
 const lines = linesOf(brand.id);
@@ -228,6 +233,19 @@ const descriptors = [segment, ...tags, copycat && 'copycat', brandStatus(brand)]
   }
 
   {
+    timeline.rows.length > 0 && (
+      <>
+        <h2>Timeline</h2>
+        <p class="timeline-note">
+          Each brand's life from its founding to today. A band runs for as long as each owner held it; hover a band for its
+          owner and years.
+        </p>
+        <Timeline section={timeline} purchases={purchases} />
+      </>
+    )
+  }
+
+  {
     licensees.length > 0 && (
       <>
         <h2>Watches made under license by</h2>
@@ -265,3 +283,11 @@ const descriptors = [segment, ...tags, copycat && 'copycat', brandStatus(brand)]
 
   <Sources sources={sources} />
 </Base>
+
+<style>
+  .timeline-note {
+    margin: -4px 0 12px;
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+</style>
