@@ -1,0 +1,12 @@
+name: "DWE-5657"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/0418-remasterblack/
+sources:
+  - https://www.casio.com/intl/news/2023/0418-remasterblack/
+references:
+  - ref: "DWE-5657RE"
+    name: "Remaster Black"
+    periods: [{ from: 2023 }]
+    caseColors: [{ color: black }]
+    movementType: quartz

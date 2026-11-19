@@ -1,0 +1,12 @@
+name: "G-5600"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2024/0515-g5600srf/
+sources:
+  - https://www.casio.com/intl/news/2024/0515-g5600srf/
+references:
+  - ref: "G-5600SRF"
+    name: "Surfrider Foundation"
+    periods: [{ from: 2024 }]
+    movementType: quartz
+    complications: [world-time, chronograph, alarm]

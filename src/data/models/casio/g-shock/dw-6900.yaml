@@ -1,0 +1,19 @@
+name: "DW-6900"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2025/0129-dw6900tr/
+sources:
+  - https://www.casio.com/intl/news/2025/0129-dw6900tr/
+references:
+  - ref: "DW-6900TR-1"
+    name: "30th anniversary"
+    periods: [{ from: 2025 }]
+    movementType: quartz
+  - ref: "DW-6900TR-4"
+    name: "30th anniversary"
+    periods: [{ from: 2025 }]
+    movementType: quartz
+  - ref: "DW-6900TR-9"
+    name: "30th anniversary"
+    periods: [{ from: 2025 }]
+    movementType: quartz

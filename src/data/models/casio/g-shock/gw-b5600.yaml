@@ -1,0 +1,22 @@
+name: "GW-B5600"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/1115-gw-b5600cd/
+sources:
+  - https://www.casio.com/intl/news/2023/1115-gw-b5600cd/
+references:
+  - ref: "GW-B5600CD-1A2"
+    name: "Charles Darwin Foundation, hammerhead shark"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [world-time, chronograph, alarm]
+  - ref: "GW-B5600CD-1A3"
+    name: "Charles Darwin Foundation, Darwin's finch"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [world-time, chronograph, alarm]
+  - ref: "GW-B5600CD-9"
+    name: "Charles Darwin Foundation, giant tortoise"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [world-time, chronograph, alarm]

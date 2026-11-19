@@ -1,0 +1,19 @@
+name: "G-STEEL GST-B1000"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2025/1028-gst-b1000d/
+sources:
+  - https://www.casio.com/intl/news/2025/1028-gst-b1000d/
+references:
+  - ref: "GST-B1000D-1A"
+    periods: [{ from: 2025 }]
+    movementType: quartz
+    dials: [{ color: black }]
+  - ref: "GST-B1000D-2A"
+    periods: [{ from: 2025 }]
+    movementType: quartz
+    dials: [{ color: blue }]
+  - ref: "GST-B1000D-3A"
+    periods: [{ from: 2025 }]
+    movementType: quartz
+    dials: [{ color: green }]

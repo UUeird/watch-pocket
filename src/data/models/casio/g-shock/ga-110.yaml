@@ -1,0 +1,19 @@
+name: "GA-110"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/1016-seasonalcollection/
+sources:
+  - https://www.casio.com/intl/news/2023/1016-seasonalcollection/
+  - https://www.casio.com/intl/news/2023/0925-leagueoflegends/
+references:
+  - ref: "GA-110WS"
+    name: "Seasonal Collection 2023"
+    periods: [{ from: 2023 }]
+    caseColors: [{ color: purple }]
+    movementType: quartz
+    complications: [chronograph, alarm]
+  - ref: "GA-110LL"
+    name: "League of Legends"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [world-time, chronograph, alarm]

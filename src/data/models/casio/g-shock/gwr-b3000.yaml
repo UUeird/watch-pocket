@@ -1,0 +1,17 @@
+name: "GRAVITYMASTER GWR-B3000"
+line: casio/g-shock
+style: pilot
+theme: aviation
+website: https://www.casio.com/intl/news/2026/0604-gwr-b3000/
+sources:
+  - https://www.casio.com/intl/news/2026/0604-gwr-b3000/
+references:
+  - ref: "GWR-B3000-1A"
+    periods: [{ from: 2026 }]
+    movementType: quartz
+  - ref: "GWR-B3000A-2A"
+    periods: [{ from: 2026 }]
+    movementType: quartz
+  - ref: "GWR-B3000B-8A"
+    periods: [{ from: 2026 }]
+    movementType: quartz

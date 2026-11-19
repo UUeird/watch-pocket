@@ -1,0 +1,13 @@
+name: "G-LIDE GBX-H5600"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2026/0423-g-lide/
+sources:
+  - https://www.casio.com/intl/news/2026/0423-g-lide/
+references:
+  - ref: "GBX-H5600-1"
+    periods: [{ from: 2026 }]
+    movementType: quartz
+  - ref: "GBX-H5600-2"
+    periods: [{ from: 2026 }]
+    movementType: quartz

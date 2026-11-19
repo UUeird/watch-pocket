@@ -1,0 +1,12 @@
+name: "G-LIDE GLX-5600"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2024/0828-glx5600kb/
+sources:
+  - https://www.casio.com/intl/news/2024/0828-glx5600kb/
+references:
+  - ref: "GLX-5600KB"
+    name: "Kanoa Igarashi signature"
+    periods: [{ from: 2024 }]
+    caseColors: [{ color: black }]
+    movementType: quartz

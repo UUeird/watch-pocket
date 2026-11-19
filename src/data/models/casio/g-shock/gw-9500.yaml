@@ -1,0 +1,19 @@
+name: "MUDMAN GW-9500"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/0629-gw-9500/
+sources:
+  - https://www.casio.com/intl/news/2023/0629-gw-9500/
+references:
+  - ref: "GW-9500-1"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [world-time]
+  - ref: "GW-9500-1A4"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [world-time]
+  - ref: "GW-9500-3"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [world-time]

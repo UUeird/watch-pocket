@@ -1,0 +1,11 @@
+name: "GM-6900"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2026/1112-gm-6900xg/
+sources:
+  - https://www.casio.com/intl/news/2026/1112-gm-6900xg/
+references:
+  - ref: "GM-6900XG"
+    name: "XG collaboration"
+    periods: [{ from: 2026 }]
+    movementType: quartz

@@ -1,0 +1,12 @@
+name: "DWE-5640"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/0615-clearremix/
+sources:
+  - https://www.casio.com/intl/news/2023/0615-clearremix/
+references:
+  - ref: "DWE-5640RX"
+    name: "Clear Remix"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [date, chronograph, alarm]

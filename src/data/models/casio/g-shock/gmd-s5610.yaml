@@ -1,0 +1,32 @@
+name: "GMD-S5610"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2024/1003-gmds5610it/
+sources:
+  - https://www.casio.com/intl/news/2024/1003-gmds5610it/
+references:
+  - ref: "GMD-S5610IT-1"
+    name: "ITZY collaboration"
+    periods: [{ from: 2024 }]
+    caseColors: [{ color: black }]
+    movementType: quartz
+  - ref: "GMD-S5610IT-3"
+    name: "ITZY collaboration"
+    periods: [{ from: 2024 }]
+    caseColors: [{ color: green, name: "Lime green" }]
+    movementType: quartz
+  - ref: "GMD-S5610IT-4A"
+    name: "ITZY collaboration"
+    periods: [{ from: 2024 }]
+    caseColors: [{ color: pink, name: "Fuchsia pink" }]
+    movementType: quartz
+  - ref: "GMD-S5610IT-4B"
+    name: "ITZY collaboration"
+    periods: [{ from: 2024 }]
+    caseColors: [{ color: pink, name: "Light pink" }]
+    movementType: quartz
+  - ref: "GMD-S5610IT-6"
+    name: "ITZY collaboration"
+    periods: [{ from: 2024 }]
+    caseColors: [{ color: purple, name: "Violet" }]
+    movementType: quartz

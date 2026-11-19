@@ -1,0 +1,24 @@
+name: "G-SQUAD GBD-H2000"
+line: casio/g-shock
+style: sport
+theme: running
+website: https://www.casio.com/intl/news/2023/0228-gbd-h2000/
+sources:
+  - https://www.casio.com/intl/news/2023/0228-gbd-h2000/
+references:
+  - ref: "GBD-H2000-1A"
+    name: "Black and orange"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+  - ref: "GBD-H2000-1A9"
+    name: "Black and yellow"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+  - ref: "GBD-H2000-1B"
+    name: "All black"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+  - ref: "GBD-H2000-2"
+    name: "Blue and orange"
+    periods: [{ from: 2023 }]
+    movementType: quartz

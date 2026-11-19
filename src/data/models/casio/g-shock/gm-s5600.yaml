@@ -1,0 +1,12 @@
+name: "GM-S5600"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2026/0528-xg/
+sources:
+  - https://www.casio.com/intl/news/2026/0528-xg/
+references:
+  - ref: "GM-S5600XG"
+    name: "XG collaboration"
+    periods: [{ from: 2026 }]
+    caseColors: [{ color: black }]
+    movementType: quartz

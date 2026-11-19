@@ -1,0 +1,23 @@
+name: "G-SQUAD GBD-300"
+line: casio/g-shock
+style: sport
+theme: running
+website: https://www.casio.com/intl/news/2024/0617-gbd300/
+sources:
+  - https://www.casio.com/intl/news/2024/0617-gbd300/
+references:
+  - ref: "GBD-300-1"
+    periods: [{ from: 2024 }]
+    movementType: quartz
+    complications: [world-time]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "GBD-300-7"
+    periods: [{ from: 2024 }]
+    movementType: quartz
+    complications: [world-time]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "GBD-300-9"
+    periods: [{ from: 2024 }]
+    movementType: quartz
+    complications: [world-time]
+    bracelets: [{ type: rubber-strap }]

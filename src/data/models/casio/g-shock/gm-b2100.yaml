@@ -1,0 +1,31 @@
+name: "GM-B2100"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/0221-gm-b2100gd/
+sources:
+  - https://www.casio.com/intl/news/2023/0221-gm-b2100gd/
+  - https://www.casio.com/intl/news/2023/0912-g-shock/
+  - https://www.casio.com/intl/news/2023/0925-leagueoflegends/
+references:
+  - ref: "GM-B2100GD-9A"
+    periods: [{ from: 2023 }]
+    caseColors: [{ color: gold, name: "Yellow gold IP" }]
+    movementType: quartz
+    complications: [world-time, alarm]
+    bracelets: [{ type: bracelet }]
+  - ref: "GM-B2100PC"
+    name: "Multicolor"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [world-time, alarm]
+  - ref: "GM-B2100BPC"
+    name: "Multicolor"
+    periods: [{ from: 2023 }]
+    caseColors: [{ color: black }]
+    movementType: quartz
+    complications: [world-time, alarm]
+  - ref: "GM-B2100LL"
+    name: "League of Legends"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [world-time, chronograph, alarm]
