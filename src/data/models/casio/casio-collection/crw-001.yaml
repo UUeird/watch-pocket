@@ -1,0 +1,12 @@
+name: "CRW-001 Ring Watch"
+line: casio/casio-collection
+style: everyday
+website: https://www.casio.com/us/watches/casio/casio-ring-watch/
+sources:
+  - https://prnewswire.com/news-releases/celebrate-casios-50th-anniversary-with-innovative-crw-001-ring-watch-302336573.html
+references:
+  - ref: "CRW-001-1"
+    periods: [{ from: 2024 }]
+    price: { amount: 120, currency: USD, year: 2024 }
+    movementType: quartz
+    complications: [date, chronograph, gmt, alarm]

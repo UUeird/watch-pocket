@@ -1,0 +1,33 @@
+name: "DWN-5600 (G-SHOCK nano)"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2025/1021-dwn-5600/
+sources:
+  - https://www.casio.com/intl/news/2025/1021-dwn-5600/
+  - https://www.prnewswire.com/news-releases/casio-to-release-ring-sized-g-shock-302583164.html
+  - https://www.prnewswire.com/news-releases/g-shock-shrinks-its-most-iconic-watch-to-ring-size-with-the-new-dwn5600-302625011.html
+references:
+  - ref: "DWN-5600-1"
+    name: "Black"
+    periods: [{ from: 2025 }]
+    price: { amount: 110, currency: USD, year: 2025 }
+    caseSize: 20
+    movementType: quartz
+    complications: [date, chronograph, gmt, alarm]
+    caseColors: [{ color: black }]
+  - ref: "DWN-5600-4"
+    name: "Red"
+    periods: [{ from: 2025 }]
+    price: { amount: 110, currency: USD, year: 2025 }
+    caseSize: 20
+    movementType: quartz
+    complications: [date, chronograph, gmt, alarm]
+    caseColors: [{ color: red }]
+  - ref: "DWN-5600-9"
+    name: "Yellow"
+    periods: [{ from: 2025 }]
+    price: { amount: 110, currency: USD, year: 2025 }
+    caseSize: 20
+    movementType: quartz
+    complications: [date, chronograph, gmt, alarm]
+    caseColors: [{ color: yellow }]
