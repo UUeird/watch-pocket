@@ -89,6 +89,17 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
       }
       <dialog class="lightbox" data-lightbox aria-label="Enlarged photo">
         <img alt="" referrerpolicy="no-referrer" />
+        <p class="caption" data-caption aria-live="polite"></p>
+        {photos.length > 1 && (
+          <>
+            <button type="button" class="nav prev" data-step="-1" aria-label="Previous photo">
+              <span aria-hidden="true">‹</span>
+            </button>
+            <button type="button" class="nav next" data-step="1" aria-label="Next photo">
+              <span aria-hidden="true">›</span>
+            </button>
+          </>
+        )}
         <button type="button" class="close" data-close aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
@@ -98,29 +109,54 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
 }
 
 <script>
-  // Picking a thumbnail shows that photo, with its credit, in place of the one shown.
   for (const gallery of document.querySelectorAll<HTMLElement>('[data-gallery]')) {
+    // Picking a thumbnail shows that photo, with its credit, in place of the one shown.
     const buttons = [...gallery.querySelectorAll<HTMLButtonElement>('[data-show]')];
-    for (const button of buttons) {
-      button.addEventListener('click', () => {
-        for (const figure of gallery.querySelectorAll<HTMLElement>('[data-photo]')) figure.hidden = figure.dataset.photo !== button.dataset.show;
-        for (const other of buttons) other.setAttribute('aria-pressed', String(other === button));
-      });
-    }
+    const figures = [...gallery.querySelectorAll<HTMLElement>('[data-photo]')];
+    const select = (index: number) => {
+      for (const figure of figures) figure.hidden = figure.dataset.photo !== String(index);
+      for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.show === String(index)));
+    };
+    for (const button of buttons) button.addEventListener('click', () => select(Number(button.dataset.show)));
 
-    // Picking a photo opens a larger copy over the page. Escape, the close button or a click outside the photo closes it.
+    // Picking a photo opens a larger copy over the page, with its credit. Where there are several, the arrows (or the
+    // arrow keys) step through them, and the page is left showing the last one seen. Escape, the close button or a
+    // click outside the photo closes it.
     const lightbox = gallery.querySelector<HTMLDialogElement>('[data-lightbox]');
     const large = lightbox?.querySelector('img');
-    if (!lightbox || !large) continue;
-    for (const zoom of gallery.querySelectorAll<HTMLButtonElement>('[data-zoom]')) {
+    const caption = lightbox?.querySelector<HTMLElement>('[data-caption]');
+    if (!lightbox || !large || !caption) continue;
+    const zooms = [...gallery.querySelectorAll<HTMLButtonElement>('[data-zoom]')];
+    let current = 0;
+    const show = (index: number) => {
+      current = (index + zooms.length) % zooms.length;
+      const zoom = zooms[current];
+      large.src = zoom.dataset.zoom ?? '';
+      large.alt = zoom.dataset.alt ?? '';
+      const credit = zoom.closest('figure')?.querySelector('figcaption')?.innerHTML ?? '';
+      caption.innerHTML = zooms.length > 1 ? `<span class="count">${current + 1} of ${zooms.length}</span> · ${credit}` : credit;
+      if (figures.length > 0) select(current);
+    };
+    zooms.forEach((zoom, index) =>
       zoom.addEventListener('click', () => {
-        large.src = zoom.dataset.zoom ?? '';
-        large.alt = zoom.dataset.alt ?? '';
+        show(index);
         lightbox.showModal();
-      });
+      }),
+    );
+    for (const step of lightbox.querySelectorAll<HTMLButtonElement>('[data-step]')) {
+      step.addEventListener('click', () => show(current + Number(step.dataset.step)));
     }
+    lightbox.addEventListener('keydown', (event) => {
+      if (zooms.length < 2) return;
+      if (event.key === 'ArrowRight') show(current + 1);
+      else if (event.key === 'ArrowLeft') show(current - 1);
+      else return;
+      event.preventDefault();
+    });
+    lightbox.querySelector('[data-close]')?.addEventListener('click', () => lightbox.close());
+    // A click on the dialog itself, not on anything in it, landed on the backdrop.
     lightbox.addEventListener('click', (event) => {
-      if (event.target !== large) lightbox.close();
+      if (event.target === lightbox) lightbox.close();
     });
     lightbox.addEventListener('close', () => large.removeAttribute('src'));
   }
@@ -205,31 +241,59 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
     background: #ffffff;
     border: 0;
     border-radius: 8px;
-    cursor: zoom-out;
+  }
+
+  .lightbox[open] {
+    display: flex;
+    flex-direction: column;
   }
 
   .lightbox::backdrop {
     background: rgba(0, 0, 0, 0.8);
+    cursor: zoom-out;
   }
 
   .lightbox img {
     display: block;
     max-width: min(95vw, 1200px);
-    max-height: 95vh;
+    max-height: calc(95vh - 3.5rem);
     width: auto;
     height: auto;
+    margin: 0 auto;
     object-fit: contain;
-    border-radius: 8px;
-    cursor: default;
+    border-radius: 8px 8px 0 0;
   }
 
+  /* The credit sits on a dark strip under the photo, so its fixed colors read the same in both color schemes. */
+  .caption {
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 0.8125rem;
+    color: #e6e6e6;
+    background: #1f1f1f;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .caption :global(a) {
+    color: #ffffff;
+  }
+
+  .caption :global(.ref),
+  .caption :global(.count) {
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  .nav,
   .close {
     position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 36px;
-    height: 36px;
-    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0 0 3px;
+    font-size: 1.75rem;
     line-height: 1;
     color: #ffffff;
     background: rgba(0, 0, 0, 0.65);
@@ -238,6 +302,31 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
     cursor: pointer;
   }
 
+  .nav {
+    top: calc(50% - 1.75rem);
+    transform: translateY(-50%);
+  }
+
+  .prev {
+    left: 8px;
+  }
+
+  .next {
+    right: 8px;
+  }
+
+  .close {
+    top: 8px;
+    right: 8px;
+    font-size: 1.5rem;
+  }
+
+  .nav:hover,
+  .close:hover {
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  .nav:focus-visible,
   .close:focus-visible {
     outline: 2px solid #ffffff;
     outline-offset: 2px;
