@@ -7,7 +7,7 @@
 //    model's, saying so;
 // 2. otherwise the brand's own image from its page (see scripts/refresh-official-photos.mjs), loaded from their site
 //    and credited to them. If it fails to load, the figure removes itself and the link stands alone.
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import officialPhotos from '../data/official-photos.json';
 import { sourceHost, type Model, type Reference } from '../lib/catalog';
 
@@ -35,6 +35,11 @@ const general = reference !== undefined && own.length === 0 && !refOfficial && p
 const official = refOfficial ?? (photos.length > 0 ? undefined : (officialPhotos as Record<string, { src: string; page: string }>)[model.id]);
 const alt = `${brandName} ${name}${reference ? ` ${reference.ref}` : ''}`;
 const altOf = (ref: string | undefined) => (ref ? `${brandName} ${name} ${ref}` : alt);
+// A magnifier with a plus, the usual sign that a photo can be enlarged.
+const zoomIcon =
+  '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>';
+// A larger copy of each photo for the enlarged view, no wider than the original.
+const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file, width: Math.min(file.width, 1600) })));
 ---
 
 {
@@ -42,7 +47,10 @@ const altOf = (ref: string | undefined) => (ref ? `${brandName} ${name} ${ref}` 
     <aside class="model-photo" data-gallery>
       {photos.map(({ file, credit, ref }, index) => (
         <figure data-photo={index} hidden={index > 0}>
-          <Image src={file} alt={photos.length > 1 ? `${altOf(ref)}, photo ${index + 1} of ${photos.length}` : altOf(ref)} widths={[360, 720]} sizes="(min-width: 720px) 360px, 100vw" />
+          <button type="button" class="zoom" data-zoom={enlarged[index].src} data-alt={altOf(ref)} aria-label={`Enlarge photo: ${altOf(ref)}`}>
+            <Image src={file} alt={photos.length > 1 ? `${altOf(ref)}, photo ${index + 1} of ${photos.length}` : altOf(ref)} widths={[360, 720]} sizes="(min-width: 720px) 360px, 100vw" />
+            <span class="zoom-icon" aria-hidden="true"><Fragment set:html={zoomIcon} /></span>
+          </button>
           <figcaption>
             {ref && <span class="ref">{ref} · </span>}
             Photo{credit.author && ` by ${credit.author}`} · {credit.licenseUrl ? <a href={credit.licenseUrl}>{credit.license}</a> : credit.license} ·{' '}
@@ -62,7 +70,10 @@ const altOf = (ref: string | undefined) => (ref ? `${brandName} ${name} ${ref}` 
       )}
       {official && (
         <figure data-official-photo>
-          <img src={official.src} alt={alt} loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()" />
+          <button type="button" class="zoom" data-zoom={official.src} data-alt={alt} aria-label={`Enlarge photo: ${alt}`}>
+            <img src={official.src} alt={alt} loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()" />
+            <span class="zoom-icon" aria-hidden="true"><Fragment set:html={zoomIcon} /></span>
+          </button>
           <figcaption>
             Image © {brandName}, shown from <a href={official.page}>{sourceHost(official.page)}</a>
           </figcaption>
@@ -76,20 +87,78 @@ const altOf = (ref: string | undefined) => (ref ? `${brandName} ${name} ${ref}` 
           </a>
         )
       }
+      <dialog class="lightbox" data-lightbox aria-label="Enlarged photo">
+        <img alt="" referrerpolicy="no-referrer" />
+        <p class="caption" data-caption aria-live="polite"></p>
+        {photos.length > 1 && (
+          <>
+            <button type="button" class="nav prev" data-step="-1" aria-label="Previous photo">
+              <span aria-hidden="true">‹</span>
+            </button>
+            <button type="button" class="nav next" data-step="1" aria-label="Next photo">
+              <span aria-hidden="true">›</span>
+            </button>
+          </>
+        )}
+        <button type="button" class="close" data-close aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </dialog>
     </aside>
   )
 }
 
 <script>
-  // Picking a thumbnail shows that photo, with its credit, in place of the one shown.
   for (const gallery of document.querySelectorAll<HTMLElement>('[data-gallery]')) {
+    // Picking a thumbnail shows that photo, with its credit, in place of the one shown.
     const buttons = [...gallery.querySelectorAll<HTMLButtonElement>('[data-show]')];
-    for (const button of buttons) {
-      button.addEventListener('click', () => {
-        for (const figure of gallery.querySelectorAll<HTMLElement>('[data-photo]')) figure.hidden = figure.dataset.photo !== button.dataset.show;
-        for (const other of buttons) other.setAttribute('aria-pressed', String(other === button));
-      });
+    const figures = [...gallery.querySelectorAll<HTMLElement>('[data-photo]')];
+    const select = (index: number) => {
+      for (const figure of figures) figure.hidden = figure.dataset.photo !== String(index);
+      for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.show === String(index)));
+    };
+    for (const button of buttons) button.addEventListener('click', () => select(Number(button.dataset.show)));
+
+    // Picking a photo opens a larger copy over the page, with its credit. Where there are several, the arrows (or the
+    // arrow keys) step through them, and the page is left showing the last one seen. Escape, the close button or a
+    // click outside the photo closes it.
+    const lightbox = gallery.querySelector<HTMLDialogElement>('[data-lightbox]');
+    const large = lightbox?.querySelector('img');
+    const caption = lightbox?.querySelector<HTMLElement>('[data-caption]');
+    if (!lightbox || !large || !caption) continue;
+    const zooms = [...gallery.querySelectorAll<HTMLButtonElement>('[data-zoom]')];
+    let current = 0;
+    const show = (index: number) => {
+      current = (index + zooms.length) % zooms.length;
+      const zoom = zooms[current];
+      large.src = zoom.dataset.zoom ?? '';
+      large.alt = zoom.dataset.alt ?? '';
+      const credit = zoom.closest('figure')?.querySelector('figcaption')?.innerHTML ?? '';
+      caption.innerHTML = zooms.length > 1 ? `<span class="count">${current + 1} of ${zooms.length}</span> · ${credit}` : credit;
+      if (figures.length > 0) select(current);
+    };
+    zooms.forEach((zoom, index) =>
+      zoom.addEventListener('click', () => {
+        show(index);
+        lightbox.showModal();
+      }),
+    );
+    for (const step of lightbox.querySelectorAll<HTMLButtonElement>('[data-step]')) {
+      step.addEventListener('click', () => show(current + Number(step.dataset.step)));
     }
+    lightbox.addEventListener('keydown', (event) => {
+      if (zooms.length < 2) return;
+      if (event.key === 'ArrowRight') show(current + 1);
+      else if (event.key === 'ArrowLeft') show(current - 1);
+      else return;
+      event.preventDefault();
+    });
+    lightbox.querySelector('[data-close]')?.addEventListener('click', () => lightbox.close());
+    // A click on the dialog itself, not on anything in it, landed on the backdrop.
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) lightbox.close();
+    });
+    lightbox.addEventListener('close', () => large.removeAttribute('src'));
   }
 </script>
 
@@ -116,15 +185,155 @@ const altOf = (ref: string | undefined) => (ref ? `${brandName} ${name} ${ref}` 
   }
 
   /* Product shots are made for a light page, so each sits on a white plate in both color schemes. */
+  /* Sized to the photo's own shape, so a tall photo gets a narrower frame rather than white bars beside it. */
   figure img {
     display: block;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     height: auto;
     max-height: 420px;
     object-fit: contain;
     background: #ffffff;
     border: 1px solid var(--line);
     border-radius: 6px;
+  }
+
+  /* Shrinks to the photo, so the magnifier sits on the photo's own corner. */
+  .zoom {
+    position: relative;
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    padding: 0;
+    background: none;
+    border: 0;
+    border-radius: 6px;
+    cursor: zoom-in;
+  }
+
+  .zoom:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .zoom-icon {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 999px;
+    opacity: 0.8;
+    transition: opacity 120ms;
+  }
+
+  .zoom:hover .zoom-icon,
+  .zoom:focus-visible .zoom-icon {
+    opacity: 1;
+  }
+
+  .lightbox {
+    max-width: min(95vw, 1200px);
+    max-height: 95vh;
+    padding: 0;
+    overflow: visible;
+    background: #ffffff;
+    border: 0;
+    border-radius: 8px;
+  }
+
+  .lightbox[open] {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lightbox::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+    cursor: zoom-out;
+  }
+
+  .lightbox img {
+    display: block;
+    max-width: min(95vw, 1200px);
+    max-height: calc(95vh - 3.5rem);
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 8px 8px 0 0;
+  }
+
+  /* The credit sits on a dark strip under the photo, so its fixed colors read the same in both color schemes. */
+  .caption {
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 0.8125rem;
+    color: #e6e6e6;
+    background: #1f1f1f;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .caption :global(a) {
+    color: #ffffff;
+  }
+
+  .caption :global(.ref),
+  .caption :global(.count) {
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  .nav,
+  .close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0 0 3px;
+    font-size: 1.75rem;
+    line-height: 1;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.65);
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+
+  .nav {
+    top: calc(50% - 1.75rem);
+    transform: translateY(-50%);
+  }
+
+  .prev {
+    left: 8px;
+  }
+
+  .next {
+    right: 8px;
+  }
+
+  .close {
+    top: 8px;
+    right: 8px;
+    font-size: 1.5rem;
+  }
+
+  .nav:hover,
+  .close:hover {
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  .nav:focus-visible,
+  .close:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
   }
 
   figcaption {
