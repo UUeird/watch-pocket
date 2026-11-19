@@ -1,0 +1,79 @@
+name: "Lovely Square"
+line: tissot/lovely
+style: dress
+website: https://www.tissotwatches.com/en-us/women/main-collections/tissot-lovely.html
+sources:
+  - https://www.tissotwatches.com/en-us/women/main-collections/tissot-lovely.html
+  - https://www.tissotwatches.com/en-us/T0581091103600.html
+  - https://www.tissotwatches.com/en-us/T0581091103601.html
+  - https://www.tissotwatches.com/en-us/T0581091104101.html
+  - https://www.tissotwatches.com/en-us/T0581093303100.html
+  - https://www.tissotwatches.com/en-us/T0581093345600.html
+references:
+  - ref: T058.109.11.036.00
+    website: https://www.tissotwatches.com/en-us/T0581091103600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw009423dc/product-pictures/acd154cb-8228-4c89-b2de-76d583abc822_T058-109-11-036-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0581091103600.html
+    price: { amount: 425, currency: USD, year: 2026 }
+    caseSize: 20
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: silver, name: "Silver, diamond-set" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T058.109.11.036.01
+    website: https://www.tissotwatches.com/en-us/T0581091103601.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwba6cc624/product-pictures/7b7e0263-7b45-4e00-a429-eee868b60795_T058-109-11-036-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0581091103601.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 20
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: silver, name: "Silver, diamond-set" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T058.109.11.041.01
+    website: https://www.tissotwatches.com/en-us/T0581091104101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw67655894/product-pictures/e39b1603-4e91-433a-a7c6-7c7030d70bc2_T058-109-11-041-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0581091104101.html
+    price: { amount: 400, currency: USD, year: 2026 }
+    caseSize: 20
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T058.109.33.031.00
+    website: https://www.tissotwatches.com/en-us/T0581093303100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwbfeb75d4/product-pictures/4dce9439-c1f0-45be-b2ef-bf7d6acc94e9_T058-109-33-031-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0581093303100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 20
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Gold PVD" }]
+  - ref: T058.109.33.456.00
+    website: https://www.tissotwatches.com/en-us/T0581093345600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw92ee7eaa/product-pictures/1c8d9321-cf84-4223-b9b6-e00f977f6bd8_T058-109-33-456-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0581093345600.html
+    price: { amount: 515, currency: USD, year: 2026 }
+    caseSize: 20
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: champagne, name: "Champagne, diamond-set" }]
+    bracelets: [{ type: bracelet, name: "Gold PVD" }]

@@ -1,0 +1,146 @@
+name: "Lovely Round"
+line: tissot/lovely
+style: dress
+website: https://www.tissotwatches.com/en-us/women/main-collections/tissot-lovely.html
+sources:
+  - https://www.tissotwatches.com/en-us/women/main-collections/tissot-lovely.html
+  - https://www.tissotwatches.com/en-us/T0580091103100.html
+  - https://www.tissotwatches.com/en-us/T0580093303100.html
+  - https://www.tissotwatches.com/en-us/T1400091111100.html
+  - https://www.tissotwatches.com/en-us/T1400092211100.html
+  - https://www.tissotwatches.com/en-us/T1400092211101.html
+  - https://www.tissotwatches.com/en-us/T1400093604100.html
+  - https://www.tissotwatches.com/en-us/T1400093609100.html
+  - https://www.tissotwatches.com/en-us/T1400093637100.html
+  - https://www.tissotwatches.com/en-us/T1400096111600.html
+  - https://www.tissotwatches.com/en-us/T1400096302600.html
+references:
+  - ref: T058.009.11.031.00
+    website: https://www.tissotwatches.com/en-us/T0580091103100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw01c25ef9/product-pictures/903ddf4a-a5b7-45c6-ad60-7436359e9b48_T058-009-11-031-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0580091103100.html
+    price: { amount: 400, currency: USD, year: 2026 }
+    caseSize: 19.5
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T058.009.33.031.00
+    website: https://www.tissotwatches.com/en-us/T0580093303100.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 19.5
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T140.009.11.111.00
+    website: https://www.tissotwatches.com/en-us/T1400091111100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw2cde2a2b/product-pictures/8028383e-9244-4b79-af63-87955251dc93_T140-009-11-111-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1400091111100.html
+    price: { amount: 400, currency: USD, year: 2026 }
+    caseSize: 19.5
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: white, name: "Mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T140.009.22.111.00
+    website: https://www.tissotwatches.com/en-us/T1400092211100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf1894625/product-pictures/5e136660-8ec8-4b18-8669-1298c68189c5_T140-009-22-111-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1400092211100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 19.5
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Two-tone, yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: white, name: "Mother-of-pearl" }]
+    bracelets: [{ type: bracelet, name: "Two-tone" }]
+  - ref: T140.009.22.111.01
+    website: https://www.tissotwatches.com/en-us/T1400092211101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw8a6d4fb5/product-pictures/d5b02d5c-b7db-43fc-aa38-fc6132a345d8_T140-009-22-111-01_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1400092211101.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 19.5
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Two-tone, rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: white, name: "Mother-of-pearl" }]
+    bracelets: [{ type: bracelet, name: "Two-tone" }]
+  - ref: T140.009.36.041.00
+    website: https://www.tissotwatches.com/en-us/T1400093604100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw116239b9/product-pictures/90f81cee-d390-487f-a5aa-eb537eed5f2e_T140-009-36-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1400093604100.html
+    price: { amount: 395, currency: USD, year: 2026 }
+    caseSize: 19.5
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T140.009.36.091.00
+    website: https://www.tissotwatches.com/en-us/T1400093609100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwc70ec713/product-pictures/4fc7a4dc-28b3-4d32-857e-162075fab5cd_T140-009-36-091-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1400093609100.html
+    price: { amount: 395, currency: USD, year: 2026 }
+    caseSize: 19.5
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T140.009.36.371.00
+    website: https://www.tissotwatches.com/en-us/T1400093637100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw5763c5e7/product-pictures/42a176f6-271a-47d7-8c6c-cb08dd71a464_T140-009-36-371-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1400093637100.html
+    price: { amount: 395, currency: USD, year: 2026 }
+    caseSize: 19.5
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: red, name: "Burgundy" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T140.009.61.116.00
+    website: https://www.tissotwatches.com/en-us/T1400096111600.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    caseSize: 19.5
+    metals: [steel]
+    bezel: { style: gem-set }
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: white, name: "Mother-of-pearl, diamond-set" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T140.009.63.026.00
+    website: https://www.tissotwatches.com/en-us/T1400096302600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw2581e767/product-pictures/fa3d08fa-b0aa-4f35-8416-caef67e0dfd1_T140-009-63-026-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1400096302600.html
+    price: { amount: 770, currency: USD, year: 2026 }
+    caseSize: 19.5
+    metals: [steel]
+    bezel: { style: gem-set }
+    crystal: sapphire
+    movementType: quartz
+    complications: []
+    dials: [{ color: champagne, name: "Champagne, diamond-set" }]
+    bracelets: [{ type: bracelet, name: "Gold PVD" }]
