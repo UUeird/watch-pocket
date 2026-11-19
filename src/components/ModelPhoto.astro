@@ -185,9 +185,11 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
   }
 
   /* Product shots are made for a light page, so each sits on a white plate in both color schemes. */
+  /* Sized to the photo's own shape, so a tall photo gets a narrower frame rather than white bars beside it. */
   figure img {
     display: block;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     height: auto;
     max-height: 420px;
     object-fit: contain;
@@ -196,10 +198,12 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
     border-radius: 6px;
   }
 
+  /* Shrinks to the photo, so the magnifier sits on the photo's own corner. */
   .zoom {
     position: relative;
     display: block;
-    width: 100%;
+    width: fit-content;
+    max-width: 100%;
     padding: 0;
     background: none;
     border: 0;
