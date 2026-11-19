@@ -1,0 +1,12 @@
+name: "GM-S110"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/0725-pinkgold/
+sources:
+  - https://www.casio.com/intl/news/2023/0725-pinkgold/
+references:
+  - ref: "GM-S110PG-4A"
+    periods: [{ from: 2023 }]
+    caseColors: [{ color: rose-gold, name: "Pink gold" }]
+    movementType: quartz
+    complications: [date, world-time, chronograph, alarm]

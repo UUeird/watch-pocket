@@ -2,6 +2,7 @@ name: "DW-5000"
 line: casio/g-shock
 style: sport
 sources:
+  - https://www.casio.com/intl/news/2024/1128-dw5000r/
   - https://world.casio.com/corporate/history/chapter02/
   - https://en.wikipedia.org/wiki/G-Shock
 references:
@@ -14,4 +15,9 @@ references:
           licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
           author: Stollenbaeck
     periods: [{ from: 1983 }]
+    movementType: quartz
+  - ref: "DW-5000R"
+    name: "Re-creation of the first G-Shock"
+    periods: [{ from: 2024 }]
+    metals: [steel]
     movementType: quartz

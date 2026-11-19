@@ -1,0 +1,22 @@
+name: "GMW-BZ5000"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2025/1104-gmw-bz5000/
+sources:
+  - https://www.casio.com/intl/news/2025/1104-gmw-bz5000/
+references:
+  - ref: "GMW-BZ5000D-1"
+    periods: [{ from: 2025 }]
+    caseColors: [{ color: silver }]
+    movementType: quartz
+    complications: [date, day, gmt]
+  - ref: "GMW-BZ5000BD-1"
+    periods: [{ from: 2025 }]
+    caseColors: [{ color: black }]
+    movementType: quartz
+    complications: [date, day, gmt]
+  - ref: "GMW-BZ5000GD-9"
+    periods: [{ from: 2025 }]
+    caseColors: [{ color: gold }]
+    movementType: quartz
+    complications: [date, day, gmt]

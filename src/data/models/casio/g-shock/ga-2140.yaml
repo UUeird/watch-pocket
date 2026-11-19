@@ -1,0 +1,19 @@
+name: "GA-2140"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/0615-clearremix/
+sources:
+  - https://www.casio.com/intl/news/2023/0615-clearremix/
+  - https://www.casio.com/intl/news/2023/0418-remasterblack/
+references:
+  - ref: "GA-2140RX"
+    name: "Clear Remix"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [world-time, chronograph, alarm]
+  - ref: "GA-2140RE"
+    name: "Remaster Black"
+    periods: [{ from: 2023 }]
+    caseColors: [{ color: black }]
+    movementType: quartz
+    complications: [world-time, alarm]

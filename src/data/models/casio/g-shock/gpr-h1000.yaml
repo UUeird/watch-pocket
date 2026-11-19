@@ -1,0 +1,14 @@
+name: "RANGEMAN GPR-H1000"
+line: casio/g-shock
+style: sport
+theme: exploration
+website: https://www.casio.com/intl/news/2024/0105-gprh1000/
+sources:
+  - https://www.casio.com/intl/news/2024/0105-gprh1000/
+references:
+  - ref: "GPR-H1000-1"
+    periods: [{ from: 2024 }]
+    movementType: quartz
+  - ref: "GPR-H1000-9"
+    periods: [{ from: 2024 }]
+    movementType: quartz

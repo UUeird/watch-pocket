@@ -1,0 +1,13 @@
+name: "GA-2100"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/1016-seasonalcollection/
+sources:
+  - https://www.casio.com/intl/news/2023/1016-seasonalcollection/
+references:
+  - ref: "GA-2100WS"
+    name: "Seasonal Collection 2023"
+    periods: [{ from: 2023 }]
+    caseColors: [{ color: blue }]
+    movementType: quartz
+    complications: [date, world-time, chronograph, alarm]

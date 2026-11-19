@@ -1,0 +1,19 @@
+name: "GCW-B5000"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/1110-gcw-b5000/
+sources:
+  - https://www.casio.com/intl/news/2023/1110-gcw-b5000/
+references:
+  - ref: "GCW-B5000UN-1"
+    name: "40th anniversary"
+    periods: [{ from: 2023 }]
+    metals: [carbon]
+    movementType: quartz
+    complications: [world-time, chronograph, alarm]
+  - ref: "GCW-B5000UN-6"
+    name: "40th anniversary"
+    periods: [{ from: 2023 }]
+    metals: [carbon]
+    movementType: quartz
+    complications: [world-time, chronograph, alarm]

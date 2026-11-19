@@ -1,0 +1,12 @@
+name: "GMA-S114"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/0615-clearremix/
+sources:
+  - https://www.casio.com/intl/news/2023/0615-clearremix/
+references:
+  - ref: "GMA-S114RX"
+    name: "Clear Remix"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [world-time, chronograph, alarm]

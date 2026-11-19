@@ -1,0 +1,12 @@
+name: "GBM-2100"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2024/0821-gbm2100rh/
+sources:
+  - https://www.casio.com/intl/news/2024/0821-gbm2100rh/
+references:
+  - ref: "GBM-2100RH"
+    name: "Rui Hachimura signature"
+    periods: [{ from: 2024 }]
+    movementType: quartz
+    dials: [{ color: gold, name: "Gold-toned" }]

@@ -1,0 +1,28 @@
+name: "GAC-2500"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2026/1022-gac-2500gmc-2500/
+sources:
+  - https://www.casio.com/intl/news/2026/1022-gac-2500gmc-2500/
+references:
+  - ref: "GAC-2500-1A"
+    periods: [{ from: 2026 }]
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: "GAC-2500-3A"
+    periods: [{ from: 2026 }]
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: green }]
+  - ref: "GAC-2500-7A"
+    periods: [{ from: 2026 }]
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: white }]
+  - ref: "GAC-2500-9A"
+    periods: [{ from: 2026 }]
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: yellow }]

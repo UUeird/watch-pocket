@@ -1,0 +1,19 @@
+name: "DW-5040"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/0615-clearremix/
+sources:
+  - https://www.casio.com/intl/news/2023/0615-clearremix/
+  - https://www.casio.com/intl/news/2023/0315-recrystallized/
+references:
+  - ref: "DW-5040RX"
+    name: "Clear Remix"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [date, chronograph, alarm]
+  - ref: "DW-5040PG"
+    name: "Recrystallized"
+    periods: [{ from: 2023 }]
+    caseColors: [{ color: black }]
+    movementType: quartz
+    complications: [alarm]

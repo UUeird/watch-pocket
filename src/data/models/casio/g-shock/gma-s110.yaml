@@ -1,0 +1,12 @@
+name: "GMA-S110"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2026/0528-xg/
+sources:
+  - https://www.casio.com/intl/news/2026/0528-xg/
+references:
+  - ref: "GMA-S110XG"
+    name: "XG collaboration"
+    periods: [{ from: 2026 }]
+    caseColors: [{ color: pink }]
+    movementType: quartz

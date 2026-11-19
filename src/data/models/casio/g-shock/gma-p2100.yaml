@@ -1,0 +1,41 @@
+name: "GMA-P2100"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2024/0111-gma-p2100/
+sources:
+  - https://www.casio.com/intl/news/2024/0111-gma-p2100/
+  - https://www.casio.com/intl/news/2024/0220-gma-p2100/
+references:
+  - ref: "GMA-P2100-2A"
+    periods: [{ from: 2024 }]
+    caseColors: [{ color: blue, name: "Turquoise blue" }]
+    movementType: quartz
+    complications: [date, world-time, chronograph, alarm]
+  - ref: "GMA-P2100-4A"
+    periods: [{ from: 2024 }]
+    caseColors: [{ color: pink, name: "Bright pink" }]
+    movementType: quartz
+    complications: [date, world-time, chronograph, alarm]
+  - ref: "GMA-P2100-7A"
+    periods: [{ from: 2024 }]
+    caseColors: [{ color: white }]
+    movementType: quartz
+    complications: [date, world-time, chronograph, alarm]
+  - ref: "GMA-P2100IT-4A"
+    name: "ITZY collaboration"
+    periods: [{ from: 2024 }]
+    caseColors: [{ color: pink, name: "Beige pink" }]
+    movementType: quartz
+    complications: [date, world-time, chronograph, alarm]
+  - ref: "GMA-P2100IT-7A"
+    name: "ITZY collaboration"
+    periods: [{ from: 2024 }]
+    caseColors: [{ color: white }]
+    movementType: quartz
+    complications: [date, world-time, chronograph, alarm]
+  - ref: "GMA-P2100ZY-1A"
+    name: "ITZY collaboration"
+    periods: [{ from: 2024 }]
+    caseColors: [{ color: black, name: "Translucent black" }]
+    movementType: quartz
+    complications: [date, world-time, chronograph, alarm]

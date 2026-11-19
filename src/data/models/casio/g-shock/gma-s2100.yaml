@@ -1,0 +1,32 @@
+name: "GMA-S2100"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/1016-seasonalcollection/
+sources:
+  - https://www.casio.com/intl/news/2023/1016-seasonalcollection/
+  - https://www.casio.com/intl/news/2023/0725-pinkgold/
+references:
+  - ref: "GMA-S2100WS"
+    name: "Seasonal Collection 2023"
+    periods: [{ from: 2023 }]
+    caseColors: [{ color: orange }]
+    movementType: quartz
+    complications: [date, world-time, chronograph, alarm]
+  - ref: "GMA-S2100MD-1A"
+    periods: [{ from: 2023 }]
+    caseColors: [{ color: black }]
+    movementType: quartz
+    complications: [date, world-time, chronograph, alarm]
+    dials: [{ color: rose-gold, name: "Pink gold" }]
+  - ref: "GMA-S2100MD-4A"
+    periods: [{ from: 2023 }]
+    caseColors: [{ color: pink }]
+    movementType: quartz
+    complications: [date, world-time, chronograph, alarm]
+    dials: [{ color: rose-gold, name: "Pink gold" }]
+  - ref: "GMA-S2100MD-7A"
+    periods: [{ from: 2023 }]
+    caseColors: [{ color: white }]
+    movementType: quartz
+    complications: [date, world-time, chronograph, alarm]
+    dials: [{ color: rose-gold, name: "Pink gold" }]

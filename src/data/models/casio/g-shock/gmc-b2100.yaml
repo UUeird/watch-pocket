@@ -1,0 +1,15 @@
+name: "GMC-B2100"
+line: casio/g-shock
+style: chronograph
+website: https://www.casio.com/intl/news/2024/0930-gmcb2100/
+sources:
+  - https://www.casio.com/intl/news/2024/0930-gmcb2100/
+references:
+  - ref: "GMC-B2100D"
+    periods: [{ from: 2024 }]
+    movementType: quartz
+    complications: [chronograph, world-time, alarm]
+    bracelets: [{ type: bracelet }]
+  - ref: "GMC-B2100AD"
+    periods: [{ from: 2024 }]
+    movementType: quartz

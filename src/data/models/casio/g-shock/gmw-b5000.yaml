@@ -1,0 +1,34 @@
+name: "GMW-B5000"
+line: casio/g-shock
+style: sport
+website: https://www.casio.com/intl/news/2023/0315-recrystallized/
+sources:
+  - https://www.casio.com/intl/news/2023/0315-recrystallized/
+  - https://www.casio.com/intl/news/2023/0912-g-shock/
+references:
+  - ref: "GMW-B5000PS"
+    name: "Recrystallized"
+    periods: [{ from: 2023 }]
+    metals: [steel]
+    caseColors: [{ color: silver }]
+    movementType: quartz
+    complications: [world-time, chronograph, alarm]
+    bracelets: [{ type: bracelet }]
+  - ref: "GMW-B5000PG"
+    name: "Recrystallized"
+    periods: [{ from: 2023 }]
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Gold IP" }]
+    movementType: quartz
+    complications: [world-time, chronograph, alarm]
+    bracelets: [{ type: bracelet }]
+  - ref: "GMW-B5000PC"
+    name: "Multicolor"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [world-time, alarm]
+  - ref: "GMW-B5000BPC"
+    name: "Multicolor"
+    periods: [{ from: 2023 }]
+    movementType: quartz
+    complications: [world-time, alarm]
