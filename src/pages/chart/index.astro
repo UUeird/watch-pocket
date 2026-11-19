@@ -368,6 +368,7 @@ const payload = await chartPayload(catalog);
 
   .lvl {
     display: flex;
+    min-width: 0;
     align-items: center;
     gap: 6px;
   }
@@ -404,6 +405,8 @@ const payload = await chartPayload(catalog);
     .lvl select {
       width: auto;
       flex: 1;
+      /* A flex item keeps its content's width unless told it may shrink, and the option labels carry counts that grow. */
+      min-width: 0;
     }
 
     details.pop > summary {
