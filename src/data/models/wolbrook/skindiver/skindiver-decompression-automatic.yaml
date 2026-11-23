@@ -16,6 +16,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "SDA-004"
@@ -29,6 +30,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]

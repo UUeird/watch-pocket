@@ -15,6 +15,7 @@ references:
     bezel: { material: ceramic, colors: [green], style: dive }
     movement: "6654.P.4"
     movementType: mechanical
+    winding: automatic
     complications: [date, day, moonphase]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]

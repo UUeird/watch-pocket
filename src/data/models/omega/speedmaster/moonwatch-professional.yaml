@@ -2,6 +2,9 @@ name: Moonwatch Professional
 line: omega/speedmaster
 style: chronograph
 theme: space
+sources:
+  - https://en.wikipedia.org/wiki/Omega_Speedmaster
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001002
 references:
   - ref: 311.30.42.30.01.005
     photos:
@@ -47,6 +50,7 @@ references:
     bezel: { material: aluminum, colors: [black], style: tachymeter }
     movement: "1861"
     movementType: mechanical
+    winding: manual
     complications: [chronograph]
     crystal: acrylic
     dials: [{ color: black }]
@@ -58,6 +62,7 @@ references:
     bezel: { material: aluminum, colors: [black], style: tachymeter }
     movement: "3861"
     movementType: mechanical
+    winding: manual
     complications: [chronograph]
     crystal: acrylic
     dials: [{ color: black }]
@@ -69,6 +74,7 @@ references:
     bezel: { material: aluminum, colors: [black], style: tachymeter }
     movement: "3861"
     movementType: mechanical
+    winding: manual
     complications: [chronograph]
     crystal: sapphire
     dials: [{ color: black }]
@@ -80,6 +86,7 @@ references:
     bezel: { material: aluminum, colors: [black], style: tachymeter }
     movement: "3861"
     movementType: mechanical
+    winding: manual
     complications: [chronograph]
     crystal: acrylic
     dials: [{ color: black }]
@@ -91,6 +98,7 @@ references:
     bezel: { material: aluminum, colors: [black], style: tachymeter }
     movement: "3861"
     movementType: mechanical
+    winding: manual
     complications: [chronograph]
     crystal: sapphire
     dials: [{ color: black }]

@@ -20,12 +20,14 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h64455133-khaki-field-king-auto.html
     price: { amount: 845, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H64455523
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64455523.png
       page: https://www.hamiltonwatch.com/en-us/h64455523-khaki-field-king-auto.html
     price: { amount: 795, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H64455533
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64455533.png
@@ -36,6 +38,7 @@ references:
     crystal: sapphire
     movement: "H-40"
     movementType: mechanical
+    winding: automatic
     complications: [date, day]
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -45,6 +48,7 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h64465733-khaki-field-king.html
     price: { amount: 925, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H64475131
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64475131.png
@@ -52,6 +56,7 @@ references:
     price: { amount: 845, currency: USD, year: 2026 }
     caseSize: 40
     movementType: mechanical
+    winding: automatic
   - ref: H64475140
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64475140.png
@@ -59,6 +64,7 @@ references:
     price: { amount: 845, currency: USD, year: 2026 }
     caseSize: 40
     movementType: mechanical
+    winding: automatic
   - ref: H64475160
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64475160.png
@@ -66,6 +72,7 @@ references:
     price: { amount: 845, currency: USD, year: 2026 }
     caseSize: 40
     movementType: mechanical
+    winding: automatic
   - ref: H64475531
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64475531.png
@@ -73,6 +80,7 @@ references:
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 40
     movementType: mechanical
+    winding: automatic
   - ref: H64475540
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64475540.png
@@ -83,6 +91,7 @@ references:
     crystal: sapphire
     movement: "H-40"
     movementType: mechanical
+    winding: automatic
     complications: [date, day]
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
@@ -93,3 +102,4 @@ references:
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 40
     movementType: mechanical
+    winding: automatic

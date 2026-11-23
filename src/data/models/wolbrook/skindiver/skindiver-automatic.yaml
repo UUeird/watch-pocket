@@ -26,6 +26,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: leather-strap }, { type: bracelet }, { type: rubber-strap }]
   - ref: "SA-006"
@@ -39,6 +40,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
@@ -53,6 +55,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
@@ -67,6 +70,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: yellow }]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
@@ -81,6 +85,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
@@ -96,6 +101,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "SA-031"
@@ -109,6 +115,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: gray }]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
@@ -123,6 +130,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
@@ -137,6 +145,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
@@ -151,6 +160,7 @@ references:
     crystal: sapphire
     movement: "Miyota 82S0"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
@@ -165,6 +175,7 @@ references:
     crystal: sapphire
     movement: "Miyota 82S0"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
@@ -179,6 +190,7 @@ references:
     crystal: sapphire
     movement: "Miyota 82S0"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]

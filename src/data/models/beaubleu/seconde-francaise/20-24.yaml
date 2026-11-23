@@ -15,6 +15,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: pink, name: Saumon }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -28,6 +29,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: gray, name: "Gris Perle" }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]

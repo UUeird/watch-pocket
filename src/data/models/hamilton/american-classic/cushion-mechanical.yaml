@@ -16,6 +16,7 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h36109710-american-classic-cushion-small-second-mechanical.html
     price: { amount: 995, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual
   - ref: H36109720
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h36109710_soldier.png
@@ -26,6 +27,7 @@ references:
     crystal: sapphire
     movement: "H-42"
     movementType: mechanical
+    winding: manual
     complications: []
     dials: [{ color: champagne, name: Beige }]
     bracelets: [{ type: leather-strap }]
@@ -36,6 +38,7 @@ references:
     price: { amount: 1095, currency: USD, year: 2026 }
     caseSize: 30
     movementType: mechanical
+    winding: manual
   - ref: H36129730
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h36129730_soldier_1.png
@@ -43,6 +46,7 @@ references:
     price: { amount: 995, currency: USD, year: 2026 }
     caseSize: 34
     movementType: mechanical
+    winding: manual
   - ref: H36139520
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h36139520_soldier.png
@@ -50,9 +54,11 @@ references:
     price: { amount: 1095, currency: USD, year: 2026 }
     caseSize: 34
     movementType: mechanical
+    winding: manual
   - ref: H36149710
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h36149710_soldier.png
       page: https://www.hamiltonwatch.com/en-us/h36149710-american-classic-cushion-small-second-mechanical.html
     price: { amount: 995, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual

@@ -20,6 +20,7 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black, name: "Black Enamel" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
@@ -36,6 +37,7 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: green, name: "Olive Green" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
@@ -52,5 +54,6 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     bracelets: [{ type: bracelet, name: "Bonklip" }]

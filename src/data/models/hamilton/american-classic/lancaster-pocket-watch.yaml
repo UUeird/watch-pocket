@@ -15,5 +15,6 @@ references:
     crystal: sapphire
     movement: "6497-1"
     movementType: mechanical
+    winding: manual
     complications: []
     dials: [{ color: white }]

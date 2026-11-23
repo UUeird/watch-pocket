@@ -20,6 +20,7 @@ references:
     crystal: sapphire
     movement: "H-40"
     movementType: mechanical
+    winding: automatic
     complications: [date, day]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -29,21 +30,25 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h64615735-khaki-aviation-pilot-day-date-auto.html
     price: { amount: 1075, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H64635140
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64635140.png
       page: https://www.hamiltonwatch.com/en-us/h64635140-khaki-aviation-auto.html
     price: { amount: 1125, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H64635560
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64635560.png
       page: https://www.hamiltonwatch.com/en-us/h64635560-khaki-aviation-auto.html
     price: { amount: 1075, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H64655941
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h64655941_1.png
       page: https://www.hamiltonwatch.com/en-us/h64655941-khaki-aviation-day-date-auto.html
     price: { amount: 1575, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic

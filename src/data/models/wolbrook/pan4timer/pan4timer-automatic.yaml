@@ -13,5 +13,6 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: leather-strap }, { type: rubber-strap }, { type: bracelet }]

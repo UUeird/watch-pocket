@@ -14,6 +14,7 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h76419931-khaki-pilot.html
     price: { amount: 975, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual
   - ref: H76419951
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76419951.png
@@ -24,6 +25,7 @@ references:
     crystal: mineral
     movement: "H-50"
     movementType: mechanical
+    winding: manual
     complications: []
     dials: [{ color: silver }]
     bracelets: [{ type: fabric-strap }]
@@ -34,3 +36,4 @@ references:
     price: { amount: 1495, currency: USD, year: 2026 }
     caseSize: 43
     movementType: mechanical
+    winding: manual

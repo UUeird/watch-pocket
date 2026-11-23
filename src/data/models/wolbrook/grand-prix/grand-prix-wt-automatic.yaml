@@ -17,6 +17,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: leather-strap }, { type: bracelet }]
   - ref: "SWGA-041"
@@ -29,6 +30,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: leather-strap }, { type: bracelet }]
   - ref: "SWGA-061"
@@ -41,5 +43,6 @@ references:
     crystal: sapphire
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: leather-strap }, { type: bracelet }]

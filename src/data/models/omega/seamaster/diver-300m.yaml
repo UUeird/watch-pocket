@@ -1,6 +1,8 @@
 name: Diver 300M
 line: omega/seamaster
 style: dive
+sources:
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001001
 references:
   - ref: 210.30.42.20.01.001
     periods: [{ from: 2018 }]
@@ -9,6 +11,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "8800"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     crystal: sapphire
     dials: [{ color: black }]
@@ -20,6 +23,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "8800"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     crystal: sapphire
     dials: [{ color: black }]
@@ -31,6 +35,7 @@ references:
     bezel: { material: ceramic, colors: [blue], style: dive }
     movement: "8800"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     crystal: sapphire
     dials: [{ color: blue }]
@@ -42,6 +47,7 @@ references:
     bezel: { material: ceramic, colors: [blue], style: dive }
     movement: "8800"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     crystal: sapphire
     dials: [{ color: blue }]
@@ -52,6 +58,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "8800"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     crystal: sapphire
     dials: [{ color: white }]

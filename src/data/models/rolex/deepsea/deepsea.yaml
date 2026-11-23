@@ -2,6 +2,7 @@ name: Deepsea
 line: rolex/deepsea
 style: dive
 sources:
+  - https://en.wikipedia.org/wiki/Rolex_Submariner
   - https://phillips.com/detail/rolex/HK080122/805/zh
   - https://commit-watch.co.jp/en/blogs/column/comparison-7
   - https://rubberb.com/blog/rolex-oyster-perpetual-deepsea-136660-2022
@@ -32,6 +33,7 @@ references:
     crystal: sapphire
     movement: "3235"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }, { color: blue, name: D-Blue }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -43,5 +45,6 @@ references:
     crystal: sapphire
     movement: "3235"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: bracelet, name: Oyster }]

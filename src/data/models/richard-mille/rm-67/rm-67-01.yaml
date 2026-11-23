@@ -18,5 +18,6 @@ references:
     crystal: sapphire
     movement: CRMA6
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: rubber-strap }]

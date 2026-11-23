@@ -19,6 +19,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: gray, name: Graphite }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -32,6 +33,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: champagne, name: Champagne }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -45,6 +47,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: brown, name: Moka }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -58,6 +61,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: blue, name: "Bleu Empire" }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -71,6 +75,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: green, name: "Vert Olive" }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -84,6 +89,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: red, name: "Lie de Vin" }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]

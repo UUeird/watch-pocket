@@ -16,6 +16,7 @@ photos:
       licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
       author: Clyde94
 sources:
+  - https://en.wikipedia.org/wiki/Rolex_Explorer_II
   - https://www.uhren2000.de/en/blogs/news/rolex-is-releasing-the-new-explorer-ii-reference-226570
   - https://5dwatches.com/blog/rolex-explorer-vs-explorer-ii
 references:
@@ -27,6 +28,7 @@ references:
     crystal: sapphire
     movement: "3285"
     movementType: mechanical
+    winding: automatic
     complications: [date, gmt]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]

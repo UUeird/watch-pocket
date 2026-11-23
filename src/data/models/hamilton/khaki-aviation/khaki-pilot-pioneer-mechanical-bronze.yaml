@@ -17,6 +17,7 @@ references:
     crystal: sapphire
     movement: "ETA 6498-1"
     movementType: mechanical
+    winding: manual
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]
@@ -28,3 +29,4 @@ references:
     caseSize: 43
     metals: [bronze]
     movementType: mechanical
+    winding: manual

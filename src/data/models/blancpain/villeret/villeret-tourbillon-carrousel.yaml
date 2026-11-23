@@ -14,6 +14,7 @@ references:
     metals: [rose-gold]
     movement: "2322"
     movementType: mechanical
+    winding: manual
     complications: [tourbillon, power-reserve]
     dials: [{ color: green }]
     bracelets: [{ type: leather-strap }]

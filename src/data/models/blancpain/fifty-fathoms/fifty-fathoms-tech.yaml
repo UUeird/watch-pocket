@@ -15,5 +15,6 @@ references:
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "13P5A"
     movementType: mechanical
+    winding: automatic
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]

@@ -16,6 +16,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap, name: Tropic }, { type: bracelet }]
   - ref: "Baby Héritage Bourbon"
     officialPhoto:
@@ -28,4 +29,5 @@ references:
     crystal: sapphire
     movement: "France Ébauches"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap, name: Tropic }, { type: bracelet }]

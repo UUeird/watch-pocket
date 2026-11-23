@@ -17,6 +17,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: white, name: "Blanc Ivoire" }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -30,6 +31,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: blue, name: "Bleu de Minuit" }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -43,6 +45,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: gray, name: "Gris Anthracite" }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -56,6 +59,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: green, name: "Vert Impérial" }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]

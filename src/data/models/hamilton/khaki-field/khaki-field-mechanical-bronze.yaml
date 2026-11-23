@@ -13,6 +13,7 @@ references:
     price: { amount: 1025, currency: USD, year: 2026 }
     metals: [bronze]
     movementType: mechanical
+    winding: manual
   - ref: H69459530
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69459530.png
@@ -23,6 +24,7 @@ references:
     crystal: sapphire
     movement: "H-50"
     movementType: mechanical
+    winding: manual
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]

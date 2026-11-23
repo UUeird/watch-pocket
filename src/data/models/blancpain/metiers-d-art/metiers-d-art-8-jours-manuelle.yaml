@@ -14,5 +14,6 @@ references:
     metals: [platinum]
     movement: "13R3A"
     movementType: mechanical
+    winding: manual
     complications: [power-reserve]
     bracelets: [{ type: leather-strap }]

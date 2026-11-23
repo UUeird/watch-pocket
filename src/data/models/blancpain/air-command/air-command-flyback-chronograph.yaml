@@ -20,6 +20,7 @@ references:
     metals: [titanium]
     movement: "F388B"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph, flyback]
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
@@ -32,6 +33,7 @@ references:
     metals: [rose-gold]
     movement: "F388B"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph, flyback]
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
@@ -44,6 +46,7 @@ references:
     metals: [titanium]
     movement: "F388B"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph, flyback]
     dials: [{ color: green }]
     bracelets: [{ type: leather-strap }]
@@ -56,6 +59,7 @@ references:
     metals: [titanium]
     movement: "F188B"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph, flyback]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -68,6 +72,7 @@ references:
     metals: [titanium]
     movement: "F388B"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph, flyback]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -80,6 +85,7 @@ references:
     metals: [steel]
     movement: "F388B"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph, flyback]
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]

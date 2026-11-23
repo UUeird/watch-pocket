@@ -17,6 +17,7 @@ references:
     crystal: acrylic
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
@@ -31,6 +32,7 @@ references:
     crystal: acrylic
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
@@ -45,5 +47,6 @@ references:
     crystal: acrylic
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]

@@ -21,6 +21,7 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: gold, name: "Brass" }]
     bracelets: [{ type: leather-strap }]
@@ -37,6 +38,7 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black, name: "Satin Black" }]
     bracelets: [{ type: leather-strap }]
@@ -53,6 +55,7 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: brown, name: "Tobacco" }]
     bracelets: [{ type: leather-strap }]
@@ -69,6 +72,7 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: gray, name: "Slate" }]
     bracelets: [{ type: leather-strap }]

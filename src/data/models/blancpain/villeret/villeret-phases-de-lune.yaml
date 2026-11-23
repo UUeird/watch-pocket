@@ -14,6 +14,7 @@ references:
     metals: [rose-gold]
     movement: "913QL"
     movementType: mechanical
+    winding: automatic
     complications: [date, moonphase]
     dials: [{ color: white, name: "Opaline, diamond-set" }]
     bracelets: [{ type: leather-strap }]

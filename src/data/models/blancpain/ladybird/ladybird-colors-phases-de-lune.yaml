@@ -16,6 +16,7 @@ references:
     metals: [rose-gold]
     movement: "1163L"
     movementType: mechanical
+    winding: automatic
     complications: [moonphase]
     dials: [{ color: white, name: "Mother-of-pearl, diamond-set" }]
     bracelets: [{ type: leather-strap }]
@@ -28,6 +29,7 @@ references:
     metals: [rose-gold]
     movement: "1163L"
     movementType: mechanical
+    winding: automatic
     complications: [moonphase]
     dials: [{ color: white, name: "Mother-of-pearl, diamond-set" }]
     bracelets: [{ type: leather-strap }]
@@ -40,6 +42,7 @@ references:
     metals: [rose-gold]
     movement: "1163L"
     movementType: mechanical
+    winding: automatic
     complications: [moonphase]
     dials: [{ color: white, name: "Mother-of-pearl, diamond-set" }]
     bracelets: [{ type: leather-strap }]

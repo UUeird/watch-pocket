@@ -14,5 +14,6 @@ references:
     metals: [platinum]
     movement: "242"
     movementType: mechanical
+    winding: automatic
     complications: [tourbillon, power-reserve]
     bracelets: [{ type: leather-strap }]

@@ -37,6 +37,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -48,6 +49,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: rubber-strap }]
@@ -59,6 +61,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -70,6 +73,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: leather-strap }]
@@ -81,6 +85,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -92,6 +97,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue, name: "Turquoise" }]
     bracelets: [{ type: rubber-strap }]
@@ -103,6 +109,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue, name: "Turquoise" }]
     bracelets: [{ type: bracelet }]
@@ -114,6 +121,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
@@ -125,6 +133,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
@@ -136,6 +145,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -147,6 +157,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
@@ -158,6 +169,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue, name: "Summer Blue" }]
     bracelets: [{ type: rubber-strap }]
@@ -169,6 +181,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue, name: "Summer Blue" }]
     bracelets: [{ type: bracelet }]
@@ -180,6 +193,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
@@ -191,6 +205,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -202,6 +217,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: gray }]
     bracelets: [{ type: rubber-strap }]
@@ -224,6 +240,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: rubber-strap }]
@@ -235,6 +252,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
@@ -246,6 +264,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Steel and Sedna gold" }]
@@ -257,6 +276,7 @@ references:
     crystal: sapphire
     movement: "8900"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: "Steel and Moonshine gold" }]

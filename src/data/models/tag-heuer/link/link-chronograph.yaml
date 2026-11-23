@@ -11,5 +11,6 @@ references:
     metals: [steel]
     movement: "Calibre 17"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     bracelets: [{ type: bracelet }]

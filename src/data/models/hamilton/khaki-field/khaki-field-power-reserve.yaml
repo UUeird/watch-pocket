@@ -19,6 +19,7 @@ references:
     price: { amount: 1025, currency: USD, year: 2026 }
     caseSize: 40
     movementType: mechanical
+    winding: manual
   - ref: H69509130
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69509130_1.png
@@ -26,6 +27,7 @@ references:
     price: { amount: 1025, currency: USD, year: 2026 }
     caseSize: 40
     movementType: mechanical
+    winding: manual
   - ref: H69509140
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69509140.png
@@ -45,6 +47,7 @@ references:
     price: { amount: 945, currency: USD, year: 2026 }
     caseSize: 40
     movementType: mechanical
+    winding: manual
   - ref: H69509930
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69509930_2.png
@@ -55,6 +58,7 @@ references:
     crystal: sapphire
     movement: "H-23"
     movementType: mechanical
+    winding: manual
     complications: [power-reserve]
     dials: [{ color: black }]
     bracelets: [{ type: fabric-strap }]

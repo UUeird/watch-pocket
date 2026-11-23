@@ -19,6 +19,7 @@ references:
     metals: [steel]
     movement: "Calibre 5"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -28,6 +29,7 @@ references:
     metals: [steel]
     movement: "Calibre 5"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -37,6 +39,7 @@ references:
     metals: [steel]
     movement: "Calibre 7"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]

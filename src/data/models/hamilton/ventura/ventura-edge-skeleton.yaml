@@ -16,6 +16,7 @@ references:
     crystal: sapphire
     movement: "H-10-S"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
@@ -25,3 +26,4 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h24645330-ventura-skeleton-auto.html
     price: { amount: 2025, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic

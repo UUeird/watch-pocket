@@ -21,6 +21,7 @@ references:
     metals: [steel]
     movement: "Calibre 17"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     dials: [{ color: white }]
   - ref: "CW211A"
@@ -39,6 +40,7 @@ references:
     name: "Gulf IV"
     movement: "Calibre 11"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     dials: [{ color: blue }]
   - ref: "CBL2115.FC6494"

@@ -16,6 +16,7 @@ references:
     crystal: sapphire
     movement: "6R35"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]

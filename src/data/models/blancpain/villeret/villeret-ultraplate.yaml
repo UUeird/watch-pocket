@@ -15,6 +15,7 @@ references:
     metals: [steel]
     movement: "1150"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: pink }]
     bracelets: [{ type: leather-strap }]
@@ -26,6 +27,7 @@ references:
     metals: [steel]
     movement: "1150"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: white, name: "Opaline" }]
     bracelets: [{ type: leather-strap }]

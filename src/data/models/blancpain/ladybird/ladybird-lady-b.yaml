@@ -15,6 +15,7 @@ references:
     metals: [rose-gold]
     movement: "615"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: white, name: "Opaline" }]
     bracelets: [{ type: leather-strap }]
@@ -27,6 +28,7 @@ references:
     metals: [steel]
     movement: "615"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: white, name: "Opaline" }]
     bracelets: [{ type: leather-strap }]

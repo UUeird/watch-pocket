@@ -20,6 +20,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8217"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue, name: "Alpine Steel Blue" }]
     bracelets: [{ type: leather-strap }, { type: bracelet }]
@@ -33,6 +34,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8217"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green, name: "Bullitt" }]
     bracelets: [{ type: leather-strap }, { type: bracelet }]
@@ -46,6 +48,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8217"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: gray, name: "Pebble" }]
     bracelets: [{ type: leather-strap }, { type: bracelet }]
@@ -59,6 +62,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8217"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }, { type: bracelet }]
@@ -72,6 +76,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8217"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }, { type: bracelet }]
@@ -86,6 +91,7 @@ references:
     crystal: sapphire
     movement: "Miyota 8217"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green, name: "CUT 7" }]
     bracelets: [{ type: leather-strap }, { type: bracelet }]
