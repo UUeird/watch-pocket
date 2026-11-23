@@ -7,6 +7,9 @@ sources:
   - https://www.casio.com/intl/news/2024/0105-gprh1000/
 references:
   - ref: "GPR-H1000-1"
+    officialPhoto:
+      src: https://gshock.casio.com/content/experience-fragments/casio/locales/intl/en/common/header/g-shock-brand/_jcr_content/root/responsivegrid/visual_header_copy_c/globalContainer/globalItem1/tab/nav_tab_item/content_panel_list/content_panel_202204201244273263/image.casiocoreimg.png/1718173444512/gpr-h1000-1.png
+      page: https://gshock.casio.com/intl/products/
     periods: [{ from: 2024 }]
     movementType: quartz
   - ref: "GPR-H1000-9"

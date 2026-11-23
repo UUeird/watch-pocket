@@ -6,6 +6,9 @@ sources:
   - https://www.casio.com/intl/news/2026/0528-xg/
 references:
   - ref: "GMA-S110XG"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2026/0528-xg/img03.jpg
+      page: https://www.casio.com/intl/news/2026/0528-xg/
     name: "XG collaboration"
     periods: [{ from: 2026 }]
     caseColors: [{ color: pink }]

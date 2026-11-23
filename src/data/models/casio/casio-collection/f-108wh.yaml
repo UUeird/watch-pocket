@@ -5,5 +5,8 @@ sources:
   - https://www.casio.com/us/watches/casio/product.F-108WH-1A/
 references:
   - ref: "F-108WH-1A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/F/F1/F10/f-108wh-1a/assets/F-108WH-1A_01.png
+      page: https://www.casio.com/us/watches/casio/product.F-108WH-1A/
     website: https://www.casio.com/us/watches/casio/product.F-108WH-1A/
     movementType: quartz

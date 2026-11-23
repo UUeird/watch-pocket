@@ -8,17 +8,26 @@ sources:
   - https://www.casio.com/intl/news/2023/0925-leagueoflegends/
 references:
   - ref: "GM-B2100GD-9A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0221-gm-b2100gd-9a/img02.jpg
+      page: https://www.casio.com/intl/news/2023/0221-gm-b2100gd/
     periods: [{ from: 2023 }]
     caseColors: [{ color: gold, name: "Yellow gold IP" }]
     movementType: quartz
     complications: [world-time, alarm]
     bracelets: [{ type: bracelet }]
   - ref: "GM-B2100PC"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0912-g-shock/img04.jpg
+      page: https://www.casio.com/intl/news/2023/0912-g-shock/
     name: "Multicolor"
     periods: [{ from: 2023 }]
     movementType: quartz
     complications: [world-time, alarm]
   - ref: "GM-B2100BPC"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0912-g-shock/img05.jpg
+      page: https://www.casio.com/intl/news/2023/0912-g-shock/
     name: "Multicolor"
     periods: [{ from: 2023 }]
     caseColors: [{ color: black }]

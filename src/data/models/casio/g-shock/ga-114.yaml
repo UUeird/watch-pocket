@@ -7,11 +7,17 @@ sources:
   - https://www.casio.com/intl/news/2023/0418-remasterblack/
 references:
   - ref: "GA-114RX"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0615-clearremix/img06.jpg
+      page: https://www.casio.com/intl/news/2023/0615-clearremix/
     name: "Clear Remix"
     periods: [{ from: 2023 }]
     movementType: quartz
     complications: [world-time, chronograph, alarm]
   - ref: "GA-114RE"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0418-remasterblack/img07.jpg
+      page: https://www.casio.com/intl/news/2023/0418-remasterblack/
     name: "Remaster Black"
     periods: [{ from: 2023 }]
     caseColors: [{ color: black }]

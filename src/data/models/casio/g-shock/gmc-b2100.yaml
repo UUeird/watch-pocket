@@ -6,10 +6,16 @@ sources:
   - https://www.casio.com/intl/news/2024/0930-gmcb2100/
 references:
   - ref: "GMC-B2100D"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2024/0930-gmcb2100/img02.jpg
+      page: https://www.casio.com/intl/news/2024/0930-gmcb2100/
     periods: [{ from: 2024 }]
     movementType: quartz
     complications: [chronograph, world-time, alarm]
     bracelets: [{ type: bracelet }]
   - ref: "GMC-B2100AD"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2024/0930-gmcb2100/img03.jpg
+      page: https://www.casio.com/intl/news/2024/0930-gmcb2100/
     periods: [{ from: 2024 }]
     movementType: quartz

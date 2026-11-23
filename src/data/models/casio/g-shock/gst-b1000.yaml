@@ -6,14 +6,23 @@ sources:
   - https://www.casio.com/intl/news/2025/1028-gst-b1000d/
 references:
   - ref: "GST-B1000D-1A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2025/1028-gst-b1000d/img02.jpg
+      page: https://www.casio.com/intl/news/2025/1028-gst-b1000d/
     periods: [{ from: 2025 }]
     movementType: quartz
     dials: [{ color: black }]
   - ref: "GST-B1000D-2A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2025/1028-gst-b1000d/img03.jpg
+      page: https://www.casio.com/intl/news/2025/1028-gst-b1000d/
     periods: [{ from: 2025 }]
     movementType: quartz
     dials: [{ color: blue }]
   - ref: "GST-B1000D-3A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2025/1028-gst-b1000d/img04.jpg
+      page: https://www.casio.com/intl/news/2025/1028-gst-b1000d/
     periods: [{ from: 2025 }]
     movementType: quartz
     dials: [{ color: green }]

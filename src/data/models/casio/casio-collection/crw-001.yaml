@@ -6,6 +6,9 @@ sources:
   - https://prnewswire.com/news-releases/celebrate-casios-50th-anniversary-with-innovative-crw-001-ring-watch-302336573.html
 references:
   - ref: "CRW-001-1"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/C/cr/crw/crw-001-1/assets/CRW-001-1.png
+      page: https://www.casio.com/us/watches/casio/product.CRW-001-1/
     periods: [{ from: 2024 }]
     price: { amount: 120, currency: USD, year: 2024 }
     movementType: quartz

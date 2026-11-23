@@ -6,12 +6,18 @@ sources:
   - https://www.casio.com/intl/news/2023/1110-gcw-b5000/
 references:
   - ref: "GCW-B5000UN-1"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/1110-gcw-b5000/img02-l.jpg
+      page: https://www.casio.com/intl/news/2023/1110-gcw-b5000/
     name: "40th anniversary"
     periods: [{ from: 2023 }]
     metals: [carbon]
     movementType: quartz
     complications: [world-time, chronograph, alarm]
   - ref: "GCW-B5000UN-6"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/1110-gcw-b5000/img03-l.jpg
+      page: https://www.casio.com/intl/news/2023/1110-gcw-b5000/
     name: "40th anniversary"
     periods: [{ from: 2023 }]
     metals: [carbon]

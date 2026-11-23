@@ -6,14 +6,23 @@ sources:
   - https://www.casio.com/intl/news/2023/0629-gw-9500/
 references:
   - ref: "GW-9500-1"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0629-gw-9500/img02.jpg
+      page: https://www.casio.com/intl/news/2023/0629-gw-9500/
     periods: [{ from: 2023 }]
     movementType: quartz
     complications: [world-time]
   - ref: "GW-9500-1A4"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0629-gw-9500/img04.jpg
+      page: https://www.casio.com/intl/news/2023/0629-gw-9500/
     periods: [{ from: 2023 }]
     movementType: quartz
     complications: [world-time]
   - ref: "GW-9500-3"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0629-gw-9500/img03.jpg
+      page: https://www.casio.com/intl/news/2023/0629-gw-9500/
     periods: [{ from: 2023 }]
     movementType: quartz
     complications: [world-time]

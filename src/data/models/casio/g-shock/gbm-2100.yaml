@@ -6,6 +6,9 @@ sources:
   - https://www.casio.com/intl/news/2024/0821-gbm2100rh/
 references:
   - ref: "GBM-2100RH"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2024/0821-gbm2100rh/img02.jpg
+      page: https://www.casio.com/intl/news/2024/0821-gbm2100rh/
     name: "Rui Hachimura signature"
     periods: [{ from: 2024 }]
     movementType: quartz

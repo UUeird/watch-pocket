@@ -6,5 +6,8 @@ sources:
   - https://www.casio.com/us/watches/casio/product.MDV-106DD-1A1V/
 references:
   - ref: "MDV-106DD-1A1V"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/M/md/mdv/mdv-106dd-1a1v/assets/MDV-106DD-1A1V.png
+      page: https://www.casio.com/us/watches/casio/product.MDV-106DD-1A1V/
     website: https://www.casio.com/us/watches/casio/product.MDV-106DD-1A1V/
     movementType: quartz

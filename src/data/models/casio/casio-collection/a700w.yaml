@@ -5,5 +5,8 @@ sources:
   - https://www.casio.com/us/watches/casio/product.A700W-1A/
 references:
   - ref: "A700W-1A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/A/A7/A70/A700W-1A/us-assets/Untitled-1.png
+      page: https://www.casio.com/us/watches/casio/product.A700W-1A/
     website: https://www.casio.com/us/watches/casio/product.A700W-1A/
     movementType: quartz

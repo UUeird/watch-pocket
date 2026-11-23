@@ -6,6 +6,9 @@ sources:
   - https://www.casio.com/intl/news/2023/0418-remasterblack/
 references:
   - ref: "DWE-5657RE"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0418-remasterblack/img03.jpg
+      page: https://www.casio.com/intl/news/2023/0418-remasterblack/
     name: "Remaster Black"
     periods: [{ from: 2023 }]
     caseColors: [{ color: black }]

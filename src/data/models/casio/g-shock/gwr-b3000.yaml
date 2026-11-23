@@ -7,11 +7,20 @@ sources:
   - https://www.casio.com/intl/news/2026/0604-gwr-b3000/
 references:
   - ref: "GWR-B3000-1A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2026/0604-gwr-b3000/img02.jpg
+      page: https://www.casio.com/intl/news/2026/0604-gwr-b3000/
     periods: [{ from: 2026 }]
     movementType: quartz
   - ref: "GWR-B3000A-2A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2026/0604-gwr-b3000/img03.jpg
+      page: https://www.casio.com/intl/news/2026/0604-gwr-b3000/
     periods: [{ from: 2026 }]
     movementType: quartz
   - ref: "GWR-B3000B-8A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2026/0604-gwr-b3000/img04.jpg
+      page: https://www.casio.com/intl/news/2026/0604-gwr-b3000/
     periods: [{ from: 2026 }]
     movementType: quartz

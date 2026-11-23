@@ -6,6 +6,9 @@ sources:
   - https://www.casio.com/intl/news/2026/1112-gm-6900xg/
 references:
   - ref: "GM-6900XG"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2026/1112-gm-6900xg/img-02.jpg
+      page: https://www.casio.com/intl/news/2026/1112-gm-6900xg/
     name: "XG collaboration"
     periods: [{ from: 2026 }]
     movementType: quartz

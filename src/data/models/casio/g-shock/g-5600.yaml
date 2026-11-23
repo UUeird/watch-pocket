@@ -6,6 +6,9 @@ sources:
   - https://www.casio.com/intl/news/2024/0515-g5600srf/
 references:
   - ref: "G-5600SRF"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2024/0515-g5600srf/img01.jpg
+      page: https://www.casio.com/intl/news/2024/0515-g5600srf/
     name: "Surfrider Foundation"
     periods: [{ from: 2024 }]
     movementType: quartz

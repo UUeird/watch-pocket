@@ -6,8 +6,14 @@ sources:
   - https://www.casio.com/intl/news/2026/0423-g-lide/
 references:
   - ref: "GBX-H5600-1"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2026/0423-g-lide/img03.jpg
+      page: https://www.casio.com/intl/news/2026/0423-g-lide/
     periods: [{ from: 2026 }]
     movementType: quartz
   - ref: "GBX-H5600-2"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2026/0423-g-lide/img02.jpg
+      page: https://www.casio.com/intl/news/2026/0423-g-lide/
     periods: [{ from: 2026 }]
     movementType: quartz

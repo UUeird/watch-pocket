@@ -5,5 +5,8 @@ sources:
   - https://www.casio.com/intl/watches/casio/product.A159WA-N1/
 references:
   - ref: "A159WA-N1"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/intl/en/timepiece/product/watch/A/A1/A15/A159WA-N1/assets/A159WA-N1.png
+      page: https://www.casio.com/intl/watches/casio/product.A159WA-N1/
     website: https://www.casio.com/intl/watches/casio/product.A159WA-N1/
     movementType: quartz

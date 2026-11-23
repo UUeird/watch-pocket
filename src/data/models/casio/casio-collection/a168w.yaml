@@ -5,5 +5,8 @@ sources:
   - https://www.casio.com/us/watches/casio/product.A168WA-1/
 references:
   - ref: "A168WA-1"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/A/A1/A16/A168WA-1/us-assets/A168W-1.png
+      page: https://www.casio.com/us/watches/casio/product.A168WA-1/
     website: https://www.casio.com/us/watches/casio/product.A168WA-1/
     movementType: quartz
