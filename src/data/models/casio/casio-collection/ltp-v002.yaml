@@ -5,5 +5,8 @@ sources:
   - https://www.casio.com/intl/watches/casio/product.LTP-V002L-1B/
 references:
   - ref: "LTP-V002L-1B"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/intl/en/timepiece/product/watch/L/LT/LTP/LTP-V002L-1B/assets/LTP-V002L-1B_Seq1.jpg
+      page: https://www.casio.com/intl/watches/casio/product.LTP-V002L-1B/
     website: https://www.casio.com/intl/watches/casio/product.LTP-V002L-1B/
     movementType: quartz

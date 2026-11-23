@@ -5,5 +5,8 @@ sources:
   - https://www.casio.com/intl/watches/casio/product.MTP-V001L-1B/
 references:
   - ref: "MTP-V001L-1B"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/intl/en/timepiece/product/watch/M/MT/MTP/MTP-V001L-1B/assets/MTP-V001L-1B.png
+      page: https://www.casio.com/intl/watches/casio/product.MTP-V001L-1B/
     website: https://www.casio.com/intl/watches/casio/product.MTP-V001L-1B/
     movementType: quartz

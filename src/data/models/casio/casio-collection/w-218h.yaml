@@ -5,5 +5,8 @@ sources:
   - https://www.casio.com/europe/watches/casio/product.W-218H-1AV/
 references:
   - ref: "W-218H-1AV"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/europe/en-gb/timepiece/product/watch/W/W2/W21/W-218H-1AV/local-assets/W-218H-1AV_2000x2000.png
+      page: https://www.casio.com/europe/watches/casio/product.W-218H-1AV/
     website: https://www.casio.com/europe/watches/casio/product.W-218H-1AV/
     movementType: quartz

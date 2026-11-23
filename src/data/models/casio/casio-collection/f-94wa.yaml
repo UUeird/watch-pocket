@@ -5,5 +5,8 @@ sources:
   - https://www.casio.com/intl/watches/casio/product.F-94WA-9/
 references:
   - ref: "F-94WA-9"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/intl/en/timepiece/product/watch/F/F9/F94/F-94WA-9/assets/F-94WA-9.png
+      page: https://www.casio.com/intl/watches/casio/product.F-94WA-9/
     website: https://www.casio.com/intl/watches/casio/product.F-94WA-9/
     movementType: quartz

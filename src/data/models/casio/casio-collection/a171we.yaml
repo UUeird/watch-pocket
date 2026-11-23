@@ -5,5 +5,8 @@ sources:
   - https://www.casio.com/intl/watches/casio/product.A171WE-1A/
 references:
   - ref: "A171WE-1A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/intl/en/timepiece/product/watch/A/A1/A17/A171WE-1A/assets/A171WE-1A.png
+      page: https://www.casio.com/intl/watches/casio/product.A171WE-1A/
     website: https://www.casio.com/intl/watches/casio/product.A171WE-1A/
     movementType: quartz

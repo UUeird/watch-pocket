@@ -5,5 +5,8 @@ sources:
   - https://www.casio.com/us/watches/casio/product.AE-1500WH-1AV/
 references:
   - ref: "AE-1500WH-1AV"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/A/AE/AE1/AE-1500WH-1AV/us-assets/AE-1500WH-1AV_Seq1.png
+      page: https://www.casio.com/us/watches/casio/product.AE-1500WH-1AV/
     website: https://www.casio.com/us/watches/casio/product.AE-1500WH-1AV/
     movementType: quartz

@@ -5,5 +5,8 @@ sources:
   - https://www.casio.com/us/watches/casio/product.LA-20WH-1A/
 references:
   - ref: "LA-20WH-1A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/L/LA/LA2/LA-20WH-1A/us-assets/LA-20WH-1A_01.png
+      page: https://www.casio.com/us/watches/casio/product.LA-20WH-1A/
     website: https://www.casio.com/us/watches/casio/product.LA-20WH-1A/
     movementType: quartz

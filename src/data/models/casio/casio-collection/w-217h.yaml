@@ -5,5 +5,8 @@ sources:
   - https://www.casio.com/ca-en/watches/casio/product.W-217H-1AV/
 references:
   - ref: "W-217H-1AV"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/ca/en/timepiece/product/watch/W/W2/W21/w-217h-1av/assets/W-217H-1AV_l.jpg
+      page: https://www.casio.com/ca-en/watches/casio/product.W-217H-1AV/
     website: https://www.casio.com/ca-en/watches/casio/product.W-217H-1AV/
     movementType: quartz

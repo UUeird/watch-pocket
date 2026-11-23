@@ -5,5 +5,8 @@ sources:
   - https://www.casio.com/us/watches/casio/product.W-800H-1AV/
 references:
   - ref: "W-800H-1AV"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/W/w8/w80/w-800h-1av/us-assets/W800H-1AV.png
+      page: https://www.casio.com/us/watches/casio/product.W-800H-1AV/
     website: https://www.casio.com/us/watches/casio/product.W-800H-1AV/
     movementType: quartz
