@@ -76,7 +76,7 @@ const showThumbs = references.some((reference) => thumbOf(reference));
     <div>
       <h1>{name}</h1>
       <p class="lede">
-        {['Model', style, theme, sharedMovementType(references)].filter(Boolean).map((part) => capitalize(label(part!))).join(' · ')} ·{' '}
+        {[...['Model', style, theme].filter(Boolean).map((part) => capitalize(label(part!))), sharedMovementType(references)].filter(Boolean).join(' · ')} ·{' '}
         {plural(references.length, 'reference')}
         {
           collaborators.map((collaborator) => (

@@ -84,6 +84,8 @@ try "gap list naming a brand that does not exist" $D/known-gaps.json '2s/^  "[^"
 try "smartwatch under a brand without smartwatches" $D/brands/apple.yaml 's/^makes: \[smartwatches\]$/makes: [quartz-watches]/'
 try "mechanical reference under a brand without mechanical watches" $D/brands/rolex.yaml 's/^makes: .*/makes: [quartz-watches]/'
 try "quartz reference under a brand without quartz watches" $D/brands/seiko.yaml 's/^makes: .*/makes: [mechanical-watches]/'
+try "winding on a quartz reference" $D/models/casio/g-shock/dwn-5600.yaml 's/movementType: quartz/&\
+    winding: automatic/'
 try "movement type outside the list" $D/models/rolex/submariner/submariner.yaml 's/movementType: mechanical/movementType: automatic/'
 try "line description with no source" $D/lines/rolex/milgauss.yaml '$a\
 description: A watch for scientists.'

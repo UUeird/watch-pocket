@@ -83,12 +83,16 @@ export const describeModelNumber = ({ number, connectivity, regions }: Reference
   const detail = [connectivity === 'gps' ? 'GPS' : connectivity && 'GPS + Cellular', regions].filter(Boolean).join(', ');
   return detail ? `${number} (${detail})` : number;
 };
-// The movement as shown: its type, then the calibre where one is recorded ("Mechanical · 3235", or "Quartz").
-export const describeMovement = ({ movementType, movement }: Pick<Reference, 'movementType' | 'movement'>) =>
-  [movementType && movementType.charAt(0).toUpperCase() + movementType.slice(1), movement].filter(Boolean).join(' · ');
-// The movement type every reference of a model shares, if they all record the same one.
+// A reference's kind of movement in words: Automatic or Hand-wound where the winding is recorded, otherwise
+// Mechanical or Quartz.
+const movementKind = ({ movementType, winding }: Pick<Reference, 'movementType' | 'winding'>) =>
+  winding === 'automatic' ? 'Automatic' : winding === 'manual' ? 'Hand-wound' : movementType === 'mechanical' ? 'Mechanical' : movementType === 'quartz' ? 'Quartz' : undefined;
+// The movement as shown: its kind, then the calibre where one is recorded ("Automatic · 3235", or "Quartz").
+export const describeMovement = (reference: Pick<Reference, 'movementType' | 'winding' | 'movement'>) =>
+  [movementKind(reference), reference.movement].filter(Boolean).join(' · ');
+// The kind of movement every reference of a model shares, if they all have the same one.
 export const sharedMovementType = (references: Reference[]) => {
-  const types = new Set(references.map((reference) => reference.movementType));
+  const types = new Set(references.map(movementKind));
   const [only] = types;
   return types.size === 1 ? only : undefined;
 };
