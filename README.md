@@ -52,7 +52,7 @@ Check each Commons candidate shows the right watch before adding it: searches tu
 
 ### External links
 
-`npm run check:external` checks every web address in the data and every brand photo the site loads, and lists those that are gone, moved, or couldn't be checked (sites that turn scripts away, such as rolex.com, show up there rather than as broken). `--host <domain>` limits it to one site. The External links workflow runs it each Monday and keeps one issue, labeled `external-links`, up to date with what needs fixing.
+`npm run check:external` checks every web address in the data and every brand photo the site loads, and lists those that are gone, moved, or couldn't be checked (sites that turn scripts away, such as rolex.com, show up there rather than as broken). A redirect to a different site counts as gone, since it usually means the domain lapsed; real moves to a new domain are listed in `knownMoves` in the script. `--host <domain>` limits it to one site. The External links workflow runs it each Monday and keeps one issue, labeled `external-links`, up to date with what needs fixing.
 
 The schemas live in `src/content.config.ts` and are checked at build time, so bad data fails the build with a message. `npm run test:rules` confirms each rule still fires; stop the dev server first, since it breaks data files temporarily.
 
