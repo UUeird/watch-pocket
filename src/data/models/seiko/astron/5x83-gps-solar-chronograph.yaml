@@ -1,0 +1,269 @@
+name: "5X83 GPS Solar Chronograph"
+line: seiko/astron
+style: travel
+website: https://www.seikowatches.com/us-en/products/astron/lineup
+sources:
+  - https://www.seikowatches.com/us-en/products/astron/lineup
+  - https://www.seikowatches.com/us-en/products/astron/hab007j1
+  - https://www.seikowatches.com/us-en/products/astron/hab008j1
+  - https://www.seikowatches.com/us-en/products/astron/hab011j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh180j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh183j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh185j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh175j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh177j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh179j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh159j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh161j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh163j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh151j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh153j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh155j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh186j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh187j1
+references:
+  - ref: HAB007
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/05/14/21/09/HAB007J1/HAB007J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/hab007j1
+    price: { amount: 2900, currency: USD, year: 2026 }
+    caseSize: 43.2
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: HAB008
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/05/14/21/09/HAB008J1/HAB008J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/hab008j1
+    price: { amount: 3100, currency: USD, year: 2026 }
+    caseSize: 43.2
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: HAB011
+    name: "Seiko 145th Anniversary Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/06/23/21/13/HAB011J1/HAB011J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/hab011j1
+    price: { amount: 2900, currency: USD, year: 2026 }
+    caseSize: 43.3
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH180
+    name: "GPS Solar Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/02/18/21/12/SSH180J1/SSH180J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh180j1
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 44.3
+    gender: men
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH183
+    name: "GPS Solar 2025 Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/15/21/12/SSH183J1/SSH183J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh183j1
+    price: { amount: 2900, currency: USD, year: 2026 }
+    caseSize: 43.4
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH185
+    name: "GPS Solar 2025 Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/15/21/12/SSH185J1/SSH185J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh185j1
+    price: { amount: 3100, currency: USD, year: 2026 }
+    caseSize: 43.4
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH175
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/02/18/21/11/SSH175J1/SSH175J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh175j1
+    price: { amount: 3100, currency: USD, year: 2026 }
+    caseSize: 44.1
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH177
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/02/18/21/12/SSH177J1/SSH177J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh177j1
+    price: { amount: 3100, currency: USD, year: 2026 }
+    caseSize: 44.1
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH179
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/02/18/21/12/SSH179J1/SSH179J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh179j1
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 44.1
+    gender: men
+    metals: [titanium]
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH159
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/08/19/21/15/SSH159J1/SSH159J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh159j1
+    price: { amount: 2500, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH161
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/08/20/21/17/SSH161J1/SSH161J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh161j1
+    price: { amount: 2500, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH163
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/08/20/21/17/SSH163J1/SSH163J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh163j1
+    price: { amount: 2500, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH151
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/03/11/21/15/SSH151J1/SSH151J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh151j1
+    price: { amount: 2700, currency: USD, year: 2026 }
+    caseSize: 43.3
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH153
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/03/11/21/15/SSH153J1/SSH153J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh153j1
+    price: { amount: 2700, currency: USD, year: 2026 }
+    caseSize: 43.3
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH155
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/03/11/21/15/SSH155J1/SSH155J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh155j1
+    price: { amount: 2900, currency: USD, year: 2026 }
+    caseSize: 43.3
+    gender: men
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH186
+    name: "Seiko 145th Anniversary Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/11/19/21/19/SSH186J1/SSH186J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh186j1
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 44.1
+    gender: men
+    metals: [titanium]
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH187
+    name: "GPS Solar 2026 Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/10/23/21/06/SSH187J1/SSH187J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh187j1
+    price: { amount: 2900, currency: USD, year: 2026 }
+    caseSize: 43.3
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "5X83"
+    movementType: quartz
+    complications: [date, day, chronograph, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]

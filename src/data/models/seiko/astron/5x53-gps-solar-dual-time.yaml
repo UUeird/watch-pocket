@@ -1,0 +1,40 @@
+name: "5X53 GPS Solar Dual-Time"
+line: seiko/astron
+style: travel
+website: https://www.seikowatches.com/us-en/products/astron/lineup
+sources:
+  - https://www.seikowatches.com/us-en/products/astron/lineup
+  - https://www.seikowatches.com/us-en/products/astron/ssh137j1
+  - https://www.seikowatches.com/us-en/products/astron/ssh139j1
+references:
+  - ref: SSH137
+    name: "2023 Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/05/26/11/44/SSH137J1/SSH137J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh137j1
+    price: { amount: 2900, currency: USD, year: 2026 }
+    caseSize: 42.7
+    gender: men
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "5X53"
+    movementType: quartz
+    complications: [date, day, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSH139
+    name: "2023 Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/05/26/11/44/SSH139J1/SSH139J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssh139j1
+    price: { amount: 2800, currency: USD, year: 2026 }
+    caseSize: 42.7
+    gender: men
+    metals: [titanium]
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "5X53"
+    movementType: quartz
+    complications: [date, day, gmt, world-time, perpetual-calendar, power-reserve]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

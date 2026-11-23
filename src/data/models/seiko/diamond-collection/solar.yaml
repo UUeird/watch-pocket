@@ -1,0 +1,23 @@
+name: "Solar"
+line: seiko/diamond-collection
+style: jewelry
+website: https://www.seikowatches.com/us-en/products/diamondcollection/lineup
+sources:
+  - https://www.seikowatches.com/us-en/products/diamondcollection/lineup
+  - https://www.seikowatches.com/us-en/products/diamondcollection/sut068p9
+references:
+  - ref: SUT068
+    name: " "
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/diamondcollection/SUT068P9/SUT068P9.png
+      page: https://www.seikowatches.com/us-en/products/diamondcollection/sut068p9
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 27
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "V137"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "Mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]

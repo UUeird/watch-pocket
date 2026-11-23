@@ -1,0 +1,35 @@
+name: "Collection 2"
+line: seiko/seiko-power-design-project
+style: chronograph
+website: https://www.seikowatches.com/us-en/products/seiko-power-design-project/collection-2
+sources:
+  - https://www.seikowatches.com/us-en/products/seiko-power-design-project/collection-2
+  - https://www.seikowatches.com/us-en/products/seiko-power-design-project/hhk001
+  - https://www.seikowatches.com/us-en/products/seiko-power-design-project/hhk002
+references:
+  - ref: HHK001
+    name: "collection 2 Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/09/01/21/08/HHK001P1/HHK001P1.png
+      page: https://www.seikowatches.com/us-en/products/seiko-power-design-project/hhk001
+    price: { amount: 540, currency: USD, year: 2026 }
+    caseSize: 43
+    crystal: mineral
+    movement: "8T61"
+    movementType: quartz
+    complications: [chronograph]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HHK002
+    name: "collection 2 Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/09/03/21/06/HHK002P1/HHK002P1.png
+      page: https://www.seikowatches.com/us-en/products/seiko-power-design-project/hhk002
+    price: { amount: 540, currency: USD, year: 2026 }
+    caseSize: 43
+    crystal: mineral
+    movement: "8T61"
+    movementType: quartz
+    complications: [chronograph]
+    dials: [{ color: pink }]
+    bracelets: [{ type: leather-strap }]

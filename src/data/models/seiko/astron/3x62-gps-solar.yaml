@@ -1,0 +1,100 @@
+name: "3X62 GPS Solar"
+line: seiko/astron
+style: travel
+website: https://www.seikowatches.com/us-en/products/astron/lineup
+sources:
+  - https://www.seikowatches.com/us-en/products/astron/lineup
+  - https://www.seikowatches.com/us-en/products/astron/ssj037j1
+  - https://www.seikowatches.com/us-en/products/astron/ssj023j1
+  - https://www.seikowatches.com/us-en/products/astron/ssj025j1
+  - https://www.seikowatches.com/us-en/products/astron/ssj013j1
+  - https://www.seikowatches.com/us-en/products/astron/ssj014j1
+  - https://www.seikowatches.com/us-en/products/astron/ssj039j1
+references:
+  - ref: SSJ037
+    name: "GPS Solar 2025 Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/15/21/12/SSJ037J1/SSJ037J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssj037j1
+    price: { amount: 2400, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "3X62"
+    movementType: quartz
+    complications: [date, perpetual-calendar, power-reserve]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSJ023
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/08/19/21/15/SSJ023J1/SSJ023J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssj023j1
+    price: { amount: 2400, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "3X62"
+    movementType: quartz
+    complications: [date, perpetual-calendar, power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSJ025
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/08/19/21/15/SSJ025J1/SSJ025J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssj025j1
+    price: { amount: 2400, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "3X62"
+    movementType: quartz
+    complications: [date, perpetual-calendar, power-reserve]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSJ013
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/01/31/11/37/SSJ013J1/SSJ013J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssj013j1
+    price: { amount: 2200, currency: USD, year: 2026 }
+    caseSize: 41.2
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "3X62"
+    movementType: quartz
+    complications: [date, perpetual-calendar, power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSJ014
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/05/02/11/46/SSJ014J1/SSJ014J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssj014j1
+    price: { amount: 2300, currency: USD, year: 2026 }
+    caseSize: 41.2
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "3X62"
+    movementType: quartz
+    complications: [date, perpetual-calendar, power-reserve]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSJ039
+    name: "GPS Solar 2026 Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/10/23/21/07/SSJ039J1/SSJ039J1.png
+      page: https://www.seikowatches.com/us-en/products/astron/ssj039j1
+    price: { amount: 2400, currency: USD, year: 2026 }
+    caseSize: 41.2
+    gender: men
+    metals: [titanium]
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "3X62"
+    movementType: quartz
+    complications: [date, perpetual-calendar, power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
