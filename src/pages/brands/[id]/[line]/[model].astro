@@ -8,6 +8,8 @@ import { Image } from 'astro:assets';
 import { referencePhotos } from '../../../../lib/tile-photos';
 import {
   describeBezel,
+  describeMovement,
+  sharedMovementType,
   describeComplications,
   describeBracelet,
   describeDial,
@@ -57,7 +59,7 @@ const columns = (
     { name: 'Case colors', kind: 'cap', value: (reference: Reference) => reference.caseColors.map(describeDial).join(', ') },
     { name: 'Bezel', kind: 'cap', value: (reference: Reference) => describeBezel(reference.bezel) },
     { name: 'Crystal', kind: 'cap', value: (reference: Reference) => reference.crystal },
-    { name: 'Movement', kind: 'num', value: (reference: Reference) => reference.movement },
+    { name: 'Movement', kind: 'num', value: (reference: Reference) => describeMovement(reference) },
     { name: 'Complications', kind: 'cap', value: (reference: Reference) => describeComplications(reference.complications) },
     { name: 'Dials', kind: 'cap', value: (reference: Reference) => reference.dials.map(describeDial).join(', ') },
     { name: 'Bracelets', kind: 'cap', value: (reference: Reference) => reference.bracelets.map(describeBracelet).join(', ') },
@@ -74,7 +76,7 @@ const showThumbs = references.some((reference) => thumbOf(reference));
     <div>
       <h1>{name}</h1>
       <p class="lede">
-        {['Model', style, theme].filter(Boolean).map((part) => capitalize(label(part!))).join(' · ')} ·{' '}
+        {[...['Model', style, theme].filter(Boolean).map((part) => capitalize(label(part!))), sharedMovementType(references)].filter(Boolean).join(' · ')} ·{' '}
         {plural(references.length, 'reference')}
         {
           collaborators.map((collaborator) => (
