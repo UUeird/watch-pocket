@@ -3,7 +3,7 @@ import Filters from '../../components/Filters.astro';
 import ListThumb from '../../components/ListThumb.astro';
 import PhotoCredits from '../../components/PhotoCredits.astro';
 import Base from '../../layouts/Base.astro';
-import { describeBezel, formatPeriods, href, label, loadCatalog, refHref } from '../../lib/catalog';
+import { describeBezel, formatPeriods, genderLabel, genderMatches, href, label, loadCatalog, refHref } from '../../lib/catalog';
 import { referencePhotos } from '../../lib/tile-photos';
 
 const { references: all } = await loadCatalog(Astro.request);
@@ -13,6 +13,13 @@ const distinct = (values: (string | undefined)[]) =>
 const options = (values: string[]) => values.map((value) => ({ value, label: label(value) }));
 const filters = [
   { name: 'brand', label: 'Brand', options: options(distinct(references.map(({ brand }) => brand.data.name))) },
+  {
+    name: 'gender',
+    label: 'Gender',
+    options: (['men', 'women', 'unisex'] as const)
+      .filter((gender) => references.some(({ reference }) => genderMatches(reference.gender).includes(gender)))
+      .map((gender) => ({ value: gender, label: genderLabel(gender) })),
+  },
   { name: 'metal', label: 'Metal', options: options(distinct(references.flatMap(({ reference }) => reference.metals))) },
   {
     name: 'case',
@@ -59,6 +66,7 @@ const filters = [
             <tr
               data-q={[reference.ref, reference.name ?? '', ...reference.modelNumbers.map(({ number }) => number)].join(' ').toLowerCase()}
               data-brand={brand.data.name}
+              data-gender={genderMatches(reference.gender).join('|')}
               data-metal={reference.metals.join('|')}
               data-case={reference.caseColors.map((finish) => finish.color).join('|')}
               data-dial={reference.dials.map((dial) => dial.color).join('|')}

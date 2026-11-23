@@ -347,6 +347,9 @@ const models = defineCollection({
             // The maker's list price in a given year, in its home currency where it publishes one.
             price: z.object({ amount: z.number().positive(), currency, year: z.number().int() }).optional(),
             caseSize: z.number().optional(),
+            // Who the maker sells it to: its men's or women's range, or both (`unisex`), as the maker itself files it.
+            // Left out where the maker doesn't say; never inferred from case size.
+            gender: z.enum(['men', 'women', 'unisex']).optional(),
             // The fields below use fixed vocabularies so references can be filtered and compared across brands.
             // Where a brand has its own name for an option (Jubilee, Slate), it goes in `name` for display only.
 
