@@ -33,7 +33,7 @@ const { target, noun, placeholder, filters } = Astro.props;
 
   <div class="fields">
     {
-      filters.map((filter) => (
+      filters.filter((filter) => filter.options.length > 0).map((filter) => (
         <label class="field">
           <span>{filter.label}</span>
           <select name={filter.name}>

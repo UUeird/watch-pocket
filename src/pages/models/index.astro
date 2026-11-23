@@ -3,7 +3,7 @@ import Filters from '../../components/Filters.astro';
 import ListThumb from '../../components/ListThumb.astro';
 import PhotoCredits from '../../components/PhotoCredits.astro';
 import Base from '../../layouts/Base.astro';
-import { href, label, lineHref, loadCatalog } from '../../lib/catalog';
+import { genderLabel, genderMatches, href, label, lineHref, loadCatalog } from '../../lib/catalog';
 import { modelPhotos } from '../../lib/tile-photos';
 
 const { brands, lines, models } = await loadCatalog(Astro.request);
@@ -42,6 +42,13 @@ const years = (model: (typeof models)[number]) => {
     placeholder="Search models"
     filters={[
       { name: 'brand', label: 'Brand', options: distinct(rows.map(({ brand }) => brand.data.name)).map((name) => ({ value: name, label: name })) },
+      {
+        name: 'gender',
+        label: 'Gender',
+        options: (['men', 'women', 'unisex'] as const)
+          .filter((gender) => models.some((model) => model.data.references.some((reference) => genderMatches(reference.gender).includes(gender))))
+          .map((gender) => ({ value: gender, label: genderLabel(gender) })),
+      },
       { name: 'style', label: 'Style', options: options(distinct(models.map((model) => model.data.style))) },
       { name: 'theme', label: 'Theme', options: options(distinct(models.map((model) => model.data.theme))) },
     ]}
@@ -67,6 +74,7 @@ const years = (model: (typeof models)[number]) => {
             <tr
               data-q={`${model.data.name} ${line.data.name} ${brand.data.name}`.toLowerCase()}
               data-brand={brand.data.name}
+              data-gender={[...new Set(model.data.references.flatMap((reference) => genderMatches(reference.gender)))].join('|')}
               data-style={model.data.style}
               data-theme={model.data.theme}
             >
