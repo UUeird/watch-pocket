@@ -16,6 +16,9 @@ sources:
   - https://web.archive.org/web/20220118203515/https://www.tissotwatches.com/en-us/t1224073603300.html
 references:
   - ref: T122.407.11.031.00
+    officialPhoto:
+      src: https://web.archive.org/web/20240312045442im_/https://www.tissotwatches.com/media/catalog/product/cache/08bb556fb186a1d87d603dff4b7131da/T/1/T122.407.11.031.00.png
+      page: https://web.archive.org/web/20210723201435/https://www.tissotwatches.com/en-us/t1224071103100.html
     price: { amount: 650, currency: USD, year: 2021 }
     caseSize: 40
     metals: [steel]
@@ -27,6 +30,9 @@ references:
     bracelets: [{ type: bracelet }]
   - ref: T122.407.11.033.00
     name: "Roman numerals"
+    officialPhoto:
+      src: https://web.archive.org/web/20240510052046im_/https://www.tissotwatches.com/media/catalog/product/T/1/T122.407.11.033.00.png
+      page: https://web.archive.org/web/20200803204524/https://www.tissotwatches.com/en-us/t1224071103300.html
     caseSize: 40
     metals: [steel]
     crystal: sapphire
@@ -36,6 +42,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
   - ref: T122.407.11.051.00
+    officialPhoto:
+      src: https://web.archive.org/web/20240327003940im_/https://www.tissotwatches.com/media/catalog/product/cache/aaadd316e453df5b08f7f4246fad1a9c/T/1/T122.407.11.051.00.png
+      page: https://web.archive.org/web/20210729030127/https://www.tissotwatches.com/en-us/t1224071105100.html
     price: { amount: 650, currency: USD, year: 2021 }
     caseSize: 40
     metals: [steel]
@@ -46,6 +55,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: T122.407.16.031.00
+    officialPhoto:
+      src: https://web.archive.org/web/20211220034954im_/https://www.tissotwatches.com/media/catalog/product/cache/08bb556fb186a1d87d603dff4b7131da/T/1/T122.407.16.031.00_R_1.png
+      page: https://web.archive.org/web/20230107094028/https://www.tissotwatches.com/en-us/t1224071603100.html
     price: { amount: 595, currency: USD, year: 2023 }
     caseSize: 40
     metals: [steel]
@@ -57,6 +69,9 @@ references:
     bracelets: [{ type: leather-strap }]
   - ref: T122.407.16.043.00
     name: "Roman numerals"
+    officialPhoto:
+      src: https://web.archive.org/web/20200428183938im_/https://www.tissotwatches.com/media/shop/catalog/product/cache/all/image/550x/17f82f742ffe127f42dca9de82fb58b1/T/1/T122.407.16.043.00.png
+      page: https://web.archive.org/web/20220618180210/https://www.tissotwatches.com/en-us/t1224071604300.html
     price: { amount: 595, currency: USD, year: 2022 }
     caseSize: 40
     metals: [steel]
@@ -67,6 +82,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
   - ref: T122.407.16.051.00
+    officialPhoto:
+      src: https://web.archive.org/web/20220315015642im_/https://www.tissotwatches.com/media/catalog/product/T/1/T122.407.16.051.00.png
+      page: https://web.archive.org/web/20210802003435/https://www.tissotwatches.com/en-us/t1224071605100.html
     price: { amount: 595, currency: USD, year: 2021 }
     caseSize: 40
     metals: [steel]
@@ -77,6 +95,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
   - ref: T122.407.22.031.00
+    officialPhoto:
+      src: https://web.archive.org/web/20211221033423im_/https://www.tissotwatches.com/media/catalog/product/cache/08bb556fb186a1d87d603dff4b7131da/T/1/T122.407.22.031.00_R_1.png
+      page: https://web.archive.org/web/20201127082406/https://www.tissotwatches.com/en-us/t1224072203100.html
     price: { amount: 750, currency: USD, year: 2020 }
     caseSize: 40
     metals: [steel]
@@ -88,6 +109,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Two-tone" }]
   - ref: T122.407.22.031.01
+    officialPhoto:
+      src: https://web.archive.org/web/20220610152926im_/https://www.tissotwatches.com/media/catalog/product/T/1/T122.407.22.031.01_R_1.png
+      page: https://web.archive.org/web/20210802152240/https://www.tissotwatches.com/en-us/t1224072203101.html
     price: { amount: 750, currency: USD, year: 2021 }
     caseSize: 40
     metals: [steel]
@@ -100,6 +124,9 @@ references:
     bracelets: [{ type: bracelet, name: "Two-tone" }]
   - ref: T122.407.22.033.00
     name: "Roman numerals"
+    officialPhoto:
+      src: https://web.archive.org/web/20200428170603im_/https://www.tissotwatches.com/media/shop/catalog/product/cache/all/image/550x/17f82f742ffe127f42dca9de82fb58b1/T/1/T122.407.22.033.00.png
+      page: https://web.archive.org/web/20210618214454/https://www.tissotwatches.com/en-us/t1224072203300.html
     price: { amount: 750, currency: USD, year: 2021 }
     caseSize: 40
     metals: [steel]
@@ -111,6 +138,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Two-tone" }]
   - ref: T122.407.33.031.00
+    officialPhoto:
+      src: https://web.archive.org/web/20240513003257im_/https://www.tissotwatches.com/media/catalog/product/T/1/T122.407.33.031.00_R.png
+      page: https://web.archive.org/web/20210802162722/https://www.tissotwatches.com/en-us/t1224073303100.html
     price: { amount: 775, currency: USD, year: 2021 }
     caseSize: 40
     metals: [steel]
@@ -122,6 +152,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Rose gold PVD" }]
   - ref: T122.407.36.031.00
+    officialPhoto:
+      src: https://web.archive.org/web/20240312045055im_/https://www.tissotwatches.com/media/catalog/product/cache/08bb556fb186a1d87d603dff4b7131da/T/1/T122.407.36.031.00.png
+      page: https://web.archive.org/web/20220128193642/https://www.tissotwatches.com/en-us/t1224073603100.html
     price: { amount: 695, currency: USD, year: 2022 }
     caseSize: 40
     metals: [steel]
@@ -134,6 +167,9 @@ references:
     bracelets: [{ type: leather-strap }]
   - ref: T122.407.36.033.00
     name: "Roman numerals"
+    officialPhoto:
+      src: https://web.archive.org/web/20200428161034im_/https://www.tissotwatches.com/media/shop/catalog/product/cache/all/image/550x/17f82f742ffe127f42dca9de82fb58b1/T/1/T122.407.36.033.00.png
+      page: https://web.archive.org/web/20220118203515/https://www.tissotwatches.com/en-us/t1224073603300.html
     price: { amount: 695, currency: USD, year: 2022 }
     caseSize: 40
     metals: [steel]
