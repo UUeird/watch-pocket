@@ -1,0 +1,88 @@
+name: "Digital Quartz"
+line: seiko/seiko-selection
+style: sport
+website: https://www.seikowatches.com/jp-ja/products/seikoselection/digital-quartz
+sources:
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/digital-quartz
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfl001p
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfl002p
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfl003p
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbjg017
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbjg019
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbjg021
+references:
+  - ref: HFL001P
+    name: "Seiko 145th Anniversary International Line Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/02/21/12/HFL001P/HFL001P.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfl001p
+    price: { amount: 83600, currency: JPY, year: 2026 }
+    caseSize: 37
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: mineral
+    movement: "A824"
+    movementType: quartz
+    complications: [date, chronograph, gmt, perpetual-calendar, alarm]
+    bracelets: [{ type: bracelet }]
+  - ref: HFL002P
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/06/16/21/10/HFL002P/HFL002P.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfl002p
+    price: { amount: 77000, currency: JPY, year: 2026 }
+    caseSize: 37
+    metals: [steel]
+    crystal: mineral
+    movement: "A824"
+    movementType: quartz
+    complications: [date, chronograph, gmt, perpetual-calendar, alarm]
+    bracelets: [{ type: bracelet }]
+  - ref: HFL003P
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/06/16/21/10/HFL003P/HFL003P.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfl003p
+    price: { amount: 81400, currency: JPY, year: 2026 }
+    caseSize: 37
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "A824"
+    movementType: quartz
+    complications: [date, chronograph, gmt, perpetual-calendar, alarm]
+    bracelets: [{ type: bracelet }]
+  - ref: SBJG017
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/09/24/21/05/SBJG017/SBJG017.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbjg017
+    price: { amount: 75900, currency: JPY, year: 2026 }
+    caseSize: 37
+    metals: [steel]
+    crystal: mineral
+    movement: "A824"
+    movementType: quartz
+    complications: [date, chronograph, gmt, perpetual-calendar, alarm]
+    bracelets: [{ type: bracelet }]
+  - ref: SBJG019
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/09/24/21/05/SBJG019/SBJG019.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbjg019
+    price: { amount: 75900, currency: JPY, year: 2026 }
+    caseSize: 37
+    metals: [steel]
+    crystal: mineral
+    movement: "A824"
+    movementType: quartz
+    complications: [date, chronograph, gmt, perpetual-calendar, alarm]
+    bracelets: [{ type: bracelet }]
+  - ref: SBJG021
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/09/24/21/05/SBJG021/SBJG021.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbjg021
+    price: { amount: 75900, currency: JPY, year: 2026 }
+    caseSize: 37
+    metals: [steel]
+    crystal: mineral
+    movement: "A824"
+    movementType: quartz
+    complications: [date, chronograph, gmt, perpetual-calendar, alarm]
+    bracelets: [{ type: bracelet }]

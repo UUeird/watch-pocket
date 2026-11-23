@@ -1,0 +1,234 @@
+name: "Men's Radio-Sync Solar"
+line: seiko/seiko-selection
+style: everyday
+website: https://www.seikowatches.com/jp-ja/products/seikoselection/mens-radiosyncsolar
+sources:
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/mens-radiosyncsolar
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm357
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm359
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm361
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm349
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm337
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm339
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm341
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm343
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm317
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm319
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm321
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm323
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm325
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm287
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm291
+references:
+  - ref: SBTM357
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/05/13/21/07/SBTM357/SBTM357.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm357
+    price: { amount: 62700, currency: JPY, year: 2026 }
+    caseSize: 37
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "7B62"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM359
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/05/13/21/08/SBTM359/SBTM359.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm359
+    price: { amount: 62700, currency: JPY, year: 2026 }
+    caseSize: 37
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "7B62"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM361
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/05/13/21/08/SBTM361/SBTM361.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm361
+    price: { amount: 62700, currency: JPY, year: 2026 }
+    caseSize: 37
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "7B62"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM349
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/01/15/21/11/SBTM349/SBTM349.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm349
+    price: { amount: 70400, currency: JPY, year: 2026 }
+    caseSize: 39.8
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "7B72"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM337
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/04/04/11/43/SBTM337/SBTM337.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm337
+    price: { amount: 90200, currency: JPY, year: 2026 }
+    caseSize: 39.5
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "7B72"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM339
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/04/04/11/43/SBTM339/SBTM339.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm339
+    price: { amount: 90200, currency: JPY, year: 2026 }
+    caseSize: 39.5
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "7B72"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM341
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/04/06/11/45/SBTM341/SBTM341.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm341
+    price: { amount: 90200, currency: JPY, year: 2026 }
+    caseSize: 39.5
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "7B72"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM343
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/04/04/11/43/SBTM343/SBTM343.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm343
+    price: { amount: 90200, currency: JPY, year: 2026 }
+    caseSize: 39.5
+    gender: men
+    metals: [titanium]
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "7B72"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM317
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/14/19/SBTM317/SBTM317.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm317
+    price: { amount: 55000, currency: JPY, year: 2026 }
+    caseSize: 39.5
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "7B72"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM319
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/14/19/SBTM319/SBTM319.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm319
+    price: { amount: 55000, currency: JPY, year: 2026 }
+    caseSize: 39.5
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "7B72"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM321
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/14/20/SBTM321/SBTM321.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm321
+    price: { amount: 55000, currency: JPY, year: 2026 }
+    caseSize: 39.5
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "7B72"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM323
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/14/20/SBTM323/SBTM323.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm323
+    price: { amount: 55000, currency: JPY, year: 2026 }
+    caseSize: 39.5
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "7B72"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM325
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/14/20/SBTM325/SBTM325.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm325
+    price: { amount: 60500, currency: JPY, year: 2026 }
+    caseSize: 39.5
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "7B72"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM287
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/14/15/SBTM287/SBTM287.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm287
+    price: { amount: 72600, currency: JPY, year: 2026 }
+    caseSize: 39.5
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "7B75"
+    movementType: quartz
+    complications: [date, world-time, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTM291
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/14/15/SBTM291/SBTM291.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtm291
+    price: { amount: 72600, currency: JPY, year: 2026 }
+    caseSize: 39.5
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "7B75"
+    movementType: quartz
+    complications: [date, world-time, perpetual-calendar]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

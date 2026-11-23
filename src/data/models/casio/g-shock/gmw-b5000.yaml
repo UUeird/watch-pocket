@@ -2,6 +2,13 @@ name: "GMW-B5000"
 line: casio/g-shock
 style: sport
 website: https://www.casio.com/intl/news/2023/0315-recrystallized/
+photos:
+  - file: ../../../photos/casio/g-shock/gmw-b5000.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Wikipedia-Casio-G-Shock-Edelstahl-800.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: Minzoblate
 sources:
   - https://www.casio.com/intl/news/2023/0315-recrystallized/
   - https://www.casio.com/intl/news/2023/0912-g-shock/

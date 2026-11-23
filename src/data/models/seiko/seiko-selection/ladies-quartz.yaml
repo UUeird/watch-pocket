@@ -1,0 +1,312 @@
+name: "Ladies' Quartz"
+line: seiko/seiko-selection
+style: everyday
+website: https://www.seikowatches.com/jp-ja/products/seikoselection/ladies-quartz
+sources:
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/ladies-quartz
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfh006p
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfh007p
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfh001p
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfh002p
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfh003p
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh027
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh029
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh031
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh032
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh025
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh026
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh015
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh016
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh017
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh018
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh001
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh002
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh004
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sttc005
+references:
+  - ref: HFH006P
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/09/01/21/07/HFH006P/HFH006P.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfh006p
+    price: { amount: 34100, currency: JPY, year: 2026 }
+    caseSize: 31
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "6N01"
+    movementType: quartz
+    complications: []
+    dials: [{ color: brown }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HFH007P
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/09/01/21/08/HFH007P/HFH007P.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfh007p
+    price: { amount: 34100, currency: JPY, year: 2026 }
+    caseSize: 31
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold }]
+    crystal: mineral
+    movement: "6N01"
+    movementType: quartz
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HFH001P
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/02/21/11/HFH001P/HFH001P.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfh001p
+    price: { amount: 33000, currency: JPY, year: 2026 }
+    caseSize: 27.9
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N22"
+    movementType: quartz
+    complications: []
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]
+  - ref: HFH002P
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/02/21/11/HFH002P/HFH002P.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfh002p
+    price: { amount: 37400, currency: JPY, year: 2026 }
+    caseSize: 27.9
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N22"
+    movementType: quartz
+    complications: []
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: HFH003P
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/02/21/11/HFH003P/HFH003P.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfh003p
+    price: { amount: 37400, currency: JPY, year: 2026 }
+    caseSize: 27.9
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N22"
+    movementType: quartz
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSEH027
+    name: "The Steady"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/09/16/21/11/SSEH027/SSEH027.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh027
+    price: { amount: 31900, currency: JPY, year: 2026 }
+    caseSize: 31
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "6N01"
+    movementType: quartz
+    complications: []
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSEH029
+    name: "The Steady"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/09/16/21/11/SSEH029/SSEH029.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh029
+    price: { amount: 31900, currency: JPY, year: 2026 }
+    caseSize: 31
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "6N01"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSEH031
+    name: "The Steady"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/09/16/21/11/SSEH031/SSEH031.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh031
+    price: { amount: 31900, currency: JPY, year: 2026 }
+    caseSize: 31
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "6N01"
+    movementType: quartz
+    complications: []
+    dials: [{ color: gray }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSEH032
+    name: "The Steady"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/09/16/21/11/SSEH032/SSEH032.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh032
+    price: { amount: 34100, currency: JPY, year: 2026 }
+    caseSize: 31
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "6N01"
+    movementType: quartz
+    complications: []
+    dials: [{ color: champagne }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSEH025
+    name: "nano・universe Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/08/20/21/05/SSEH025/SSEH025.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh025
+    price: { amount: 33000, currency: JPY, year: 2026 }
+    caseSize: 18.9
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSEH026
+    name: "nano・universe Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/08/20/21/05/SSEH026/SSEH026.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh026
+    price: { amount: 33000, currency: JPY, year: 2026 }
+    caseSize: 18.9
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSEH015
+    name: "nano・universe Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/07/30/21/12/SSEH015/SSEH015.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh015
+    price: { amount: 36300, currency: JPY, year: 2026 }
+    caseSize: 22.7
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSEH016
+    name: "nano・universe Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/07/30/21/12/SSEH016/SSEH016.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh016
+    price: { amount: 39600, currency: JPY, year: 2026 }
+    caseSize: 22.7
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSEH017
+    name: "nano・universe Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/09/18/21/11/SSEH017/SSEH017.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh017
+    price: { amount: 29700, currency: JPY, year: 2026 }
+    caseSize: 22.7
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSEH018
+    name: "nano・universe Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/07/30/21/12/SSEH018/SSEH018.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh018
+    price: { amount: 33000, currency: JPY, year: 2026 }
+    caseSize: 22.7
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: champagne }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSEH001
+    name: "nano・universe Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/08/26/11/47/SSEH001/SSEH001.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh001
+    price: { amount: 28600, currency: JPY, year: 2026 }
+    caseSize: 18.9
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSEH002
+    name: "nano・universe Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/08/26/11/47/SSEH002/SSEH002.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh002
+    price: { amount: 28600, currency: JPY, year: 2026 }
+    caseSize: 18.9
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: champagne }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSEH004
+    name: "nano・universe Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/08/26/11/48/SSEH004/SSEH004.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh004
+    price: { amount: 28600, currency: JPY, year: 2026 }
+    caseSize: 18.9
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: champagne }]
+    bracelets: [{ type: leather-strap }]
+  - ref: STTC005
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/18/53/STTC005/STTC005.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sttc005
+    price: { amount: 22000, currency: JPY, year: 2026 }
+    caseSize: 23.9
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "7N01"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]

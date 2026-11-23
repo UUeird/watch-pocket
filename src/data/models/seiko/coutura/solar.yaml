@@ -1,0 +1,24 @@
+name: "Solar"
+line: seiko/coutura
+style: everyday
+website: https://www.seikowatches.com/us-en/products/coutura
+sources:
+  - https://www.seikowatches.com/us-en/products/coutura
+  - https://www.seikowatches.com/us-en/products/coutura/sne506p9
+references:
+  - ref: SNE506
+    name: " "
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/discovermore/SNE506P9/SNE506P9.png
+      page: https://www.seikowatches.com/us-en/products/coutura/sne506p9
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "V157"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

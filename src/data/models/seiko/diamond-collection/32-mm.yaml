@@ -1,0 +1,21 @@
+name: "32 mm"
+line: seiko/diamond-collection
+style: jewelry
+website: https://www.seikowatches.com/us-en/products/diamondcollection/lineup
+sources:
+  - https://www.seikowatches.com/us-en/products/diamondcollection/lineup
+  - https://www.seikowatches.com/us-en/products/diamondcollection/sur579
+references:
+  - ref: SUR579
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/05/31/21/22/SUR579P1/SUR579P1.png
+      page: https://www.seikowatches.com/us-en/products/diamondcollection/sur579
+    price: { amount: 525, currency: USD, year: 2026 }
+    caseSize: 32
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N32"
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]

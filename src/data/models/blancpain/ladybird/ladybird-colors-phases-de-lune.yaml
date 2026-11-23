@@ -2,6 +2,13 @@ name: "Ladybird Colors Phases de Lune"
 line: blancpain/ladybird
 style: jewelry
 website: https://www.blancpain.com/en/ladybird/ladybird-colors-phases-lune-3662f-2954-55a
+photos:
+  - file: ../../../photos/blancpain/ladybird/ladybird-colors-phases-de-lune.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Blancpain_Ladybird_Colors_Phase_de_Lune_ref._3662A-2954-55B.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: EMore98
 sources:
   - https://www.blancpain.com/en/ladybird/ladybird-colors-phases-lune-3662f-2954-55a
   - https://www.blancpain.com/en/ladybird/ladybird-colors-phases-lune-3662a-9696-99a

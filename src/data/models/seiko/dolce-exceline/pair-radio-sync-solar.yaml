@@ -1,0 +1,231 @@
+name: "Pair Radio-Sync Solar"
+line: seiko/dolce-exceline
+style: dress
+website: https://www.seikowatches.com/jp-ja/products/dolceandexceline/pair-radiosyncsolar
+sources:
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/pair-radiosyncsolar
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz201
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz202
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw161
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw162
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz197
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz200
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw145
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw147
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw150
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz185
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz187
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz188
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sada039
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw109
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz123
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw023
+references:
+  - ref: SADZ201
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/36/SADZ201/SADZ201.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz201
+    price: { amount: 165000, currency: JPY, year: 2026 }
+    caseSize: 39.1
+    metals: [titanium]
+    crystal: sapphire
+    movement: "7B27"
+    movementType: quartz
+    complications: [date, world-time, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SADZ202
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/36/SADZ202/SADZ202.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz202
+    price: { amount: 179300, currency: JPY, year: 2026 }
+    caseSize: 39.1
+    metals: [titanium]
+    crystal: sapphire
+    movement: "7B27"
+    movementType: quartz
+    complications: [date, world-time, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWCW161
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/22/SWCW161/SWCW161.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw161
+    price: { amount: 165000, currency: JPY, year: 2026 }
+    caseSize: 28
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B35"
+    movementType: quartz
+    complications: [date, world-time, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWCW162
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/23/SWCW162/SWCW162.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw162
+    price: { amount: 179300, currency: JPY, year: 2026 }
+    caseSize: 28
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B35"
+    movementType: quartz
+    complications: [date, world-time, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SADZ197
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/36/SADZ197/SADZ197.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz197
+    price: { amount: 137500, currency: JPY, year: 2026 }
+    caseSize: 39.2
+    metals: [titanium]
+    crystal: sapphire
+    movement: "7B24"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SADZ200
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/36/SADZ200/SADZ200.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz200
+    price: { amount: 133100, currency: JPY, year: 2026 }
+    caseSize: 39.2
+    metals: [titanium]
+    crystal: sapphire
+    movement: "7B24"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWCW145
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/21/SWCW145/SWCW145.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw145
+    price: { amount: 137500, currency: JPY, year: 2026 }
+    caseSize: 28.3
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWCW147
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/21/SWCW147/SWCW147.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw147
+    price: { amount: 137500, currency: JPY, year: 2026 }
+    caseSize: 28.3
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWCW150
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/22/SWCW150/SWCW150.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw150
+    price: { amount: 133100, currency: JPY, year: 2026 }
+    caseSize: 28.3
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SADZ185
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/35/SADZ185/SADZ185.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz185
+    price: { amount: 137500, currency: JPY, year: 2026 }
+    caseSize: 39.2
+    metals: [titanium]
+    crystal: sapphire
+    movement: "7B24"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SADZ187
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/35/SADZ187/SADZ187.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz187
+    price: { amount: 133100, currency: JPY, year: 2026 }
+    caseSize: 39.2
+    metals: [titanium]
+    crystal: sapphire
+    movement: "7B24"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SADZ188
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/35/SADZ188/SADZ188.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz188
+    price: { amount: 133100, currency: JPY, year: 2026 }
+    caseSize: 39.2
+    metals: [titanium]
+    crystal: sapphire
+    movement: "7B24"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SADA039
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/28/SADA039/SADA039.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sada039
+    price: { amount: 165000, currency: JPY, year: 2026 }
+    caseSize: 41.7
+    metals: [steel]
+    crystal: sapphire
+    movement: "8B92"
+    movementType: quartz
+    complications: [date, chronograph, world-time, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SWCW109
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/14/SWCW109/SWCW109.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw109
+    price: { amount: 165000, currency: JPY, year: 2026 }
+    caseSize: 28.6
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B25"
+    movementType: quartz
+    complications: [date, world-time, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SADZ123
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/31/SADZ123/SADZ123.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sadz123
+    price: { amount: 106700, currency: JPY, year: 2026 }
+    caseSize: 38.8
+    metals: [steel]
+    crystal: sapphire
+    movement: "7B24"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWCW023
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/07/SWCW023/SWCW023.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw023
+    price: { amount: 106700, currency: JPY, year: 2026 }
+    caseSize: 25.3
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B22"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]

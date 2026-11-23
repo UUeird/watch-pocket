@@ -1,0 +1,71 @@
+name: "KSK"
+line: seiko/king-seiko
+style: dress
+website: https://www.seikowatches.com/us-en/products/kingseiko/ksk
+sources:
+  - https://www.seikowatches.com/us-en/products/kingseiko/ksk
+  - https://www.seikowatches.com/us-en/products/kingseiko/sje105j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/sje107j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/sje089j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/sje103j1
+references:
+  - ref: SJE105
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/08/19/21/13/SJE105J1/SJE105J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sje105j1
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 38.6
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "6L35"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SJE107
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/08/19/21/13/SJE107J1/SJE107J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sje107j1
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 38.6
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "6L35"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SJE089
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/05/01/11/39/SJE089J1/SJE089J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sje089j1
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 38.6
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "6L35"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SJE103
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/08/19/21/13/SJE103J1/SJE103J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sje103j1
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 38.6
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "6L35"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: red }]
+    bracelets: [{ type: bracelet }]

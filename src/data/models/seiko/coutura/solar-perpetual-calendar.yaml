@@ -1,0 +1,39 @@
+name: "Solar Perpetual Calendar"
+line: seiko/coutura
+style: everyday
+website: https://www.seikowatches.com/us-en/products/coutura
+sources:
+  - https://www.seikowatches.com/us-en/products/coutura
+  - https://www.seikowatches.com/us-en/products/coutura/ssc376p9
+  - https://www.seikowatches.com/us-en/products/coutura/ssc700p9
+references:
+  - ref: SSC376
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/coutura/SSC376P9/SSC376P9.png
+      page: https://www.seikowatches.com/us-en/products/coutura/ssc376p9
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 44
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "V198"
+    movementType: quartz
+    complications: [date, day, perpetual-calendar, power-reserve, alarm]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSC700
+    name: " "
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/coutura/SSC700P9/SSC700P9.png
+      page: https://www.seikowatches.com/us-en/products/coutura/ssc700p9
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 44
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: sapphire
+    movement: "V198"
+    movementType: quartz
+    complications: [date, day, perpetual-calendar, power-reserve, alarm]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

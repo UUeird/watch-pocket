@@ -23,6 +23,9 @@ sources:
   - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13150412199001
 references:
   - ref: 131.30.41.21.04.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13130412104001-149276.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412104001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412104001
     price: { amount: 8200, currency: USD, year: 2026 }
     caseSize: 41
@@ -36,6 +39,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
   - ref: 131.33.41.21.04.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13133412104001-fb4d16.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412104001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412104001
     price: { amount: 8000, currency: USD, year: 2026 }
     caseSize: 41
@@ -49,6 +55,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.30.41.21.99.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13130412199001-76628d.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412199001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412199001
     price: { amount: 10900, currency: USD, year: 2026 }
     caseSize: 41
@@ -62,6 +71,9 @@ references:
     dials: [{ color: gray }]
     bracelets: [{ type: bracelet }]
   - ref: 131.12.41.21.06.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13112412106001-86db49.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13112412106001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13112412106001
     price: { amount: 7200, currency: USD, year: 2026 }
     caseSize: 41
@@ -74,6 +86,9 @@ references:
     dials: [{ color: gray, name: "Rhodium-grey" }]
     bracelets: [{ type: rubber-strap }]
   - ref: 131.33.41.21.06.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13133412106001-b4c957.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412106001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412106001
     price: { amount: 8000, currency: USD, year: 2026 }
     caseSize: 41
@@ -87,6 +102,9 @@ references:
     dials: [{ color: gray }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.30.41.21.99.003
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13130412199003-a69e0e.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412199003
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412199003
     price: { amount: 10500, currency: USD, year: 2026 }
     caseSize: 41
@@ -100,6 +118,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: 131.33.41.21.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13133412103001-dd38b9.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412103001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412103001
     price: { amount: 8000, currency: USD, year: 2026 }
     caseSize: 41
@@ -113,6 +134,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.30.41.21.99.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13130412199002-271230.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412199002
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412199002
     price: { amount: 10900, currency: USD, year: 2026 }
     caseSize: 41
@@ -126,6 +150,9 @@ references:
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
   - ref: 131.30.41.21.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13130412101001-edc6ff.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412101001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412101001
     price: { amount: 8200, currency: USD, year: 2026 }
     caseSize: 41
@@ -139,6 +166,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: 131.33.41.21.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13133412101001-1a3594.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412101001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412101001
     price: { amount: 8000, currency: USD, year: 2026 }
     caseSize: 41
@@ -152,6 +182,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.23.41.21.06.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13123412106001-cebe6d.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412106001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412106001
     price: { amount: 11600, currency: USD, year: 2026 }
     caseSize: 41
@@ -165,6 +198,9 @@ references:
     dials: [{ color: gray, name: "Rhodium-grey" }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.23.41.21.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13123412103001-f0c67c.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412103001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412103001
     price: { amount: 11600, currency: USD, year: 2026 }
     caseSize: 41
@@ -178,6 +214,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.23.41.21.11.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13123412111001-e7aced.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412111001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412111001
     price: { amount: 11600, currency: USD, year: 2026 }
     caseSize: 41
@@ -191,6 +230,9 @@ references:
     dials: [{ color: red, name: "Burgundy-to-black gradient" }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.23.41.21.06.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13123412106002-afc716.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412106002
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412106002
     price: { amount: 11600, currency: USD, year: 2026 }
     caseSize: 41
@@ -204,6 +246,9 @@ references:
     dials: [{ color: gray, name: "Rhodium-grey" }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.23.41.21.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13123412110001-b466c6.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412110001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412110001
     price: { amount: 11600, currency: USD, year: 2026 }
     caseSize: 41
@@ -217,6 +262,9 @@ references:
     dials: [{ color: green, name: "Green gradient" }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.63.41.21.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13163412101001-a68521.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13163412101001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13163412101001
     price: { amount: 30100, currency: USD, year: 2026 }
     caseSize: 41
@@ -229,6 +277,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.50.41.21.99.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-41-mm-13150412199001-722593.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13150412199001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13150412199001
     price: { amount: 50700, currency: USD, year: 2026 }
     caseSize: 41

@@ -1,0 +1,51 @@
+name: "Collection 1"
+line: seiko/seiko-power-design-project
+style: jewelry
+website: https://www.seikowatches.com/us-en/products/seiko-power-design-project/collection-1
+sources:
+  - https://www.seikowatches.com/us-en/products/seiko-power-design-project/collection-1
+  - https://www.seikowatches.com/us-en/products/seiko-power-design-project/sseh021j
+  - https://www.seikowatches.com/us-en/products/seiko-power-design-project/sseh023j
+  - https://www.seikowatches.com/us-en/products/seiko-power-design-project/sseh024j
+references:
+  - ref: SSEH021
+    name: "collection 1 Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/19/21/10/SSEH021J/SSEH021J.png
+      page: https://www.seikowatches.com/us-en/products/seiko-power-design-project/sseh021j
+    caseSize: 20.2
+    metals: [steel]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSEH023
+    name: "collection 1 Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/19/21/11/SSEH023J/SSEH023J.png
+      page: https://www.seikowatches.com/us-en/products/seiko-power-design-project/sseh023j
+    caseSize: 20.2
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSEH024
+    name: "collection 1 Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/08/19/21/11/SSEH024J/SSEH024J.png
+      page: https://www.seikowatches.com/us-en/products/seiko-power-design-project/sseh024j
+    caseSize: 20.2
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: gold }]
+    bracelets: [{ type: bracelet }]

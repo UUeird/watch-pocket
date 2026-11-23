@@ -1,5 +1,12 @@
 name: Deepsea
 line: rolex/deepsea
+photos:
+  - file: ../../../photos/rolex/deepsea/deepsea.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:He_release_valve_seadweller.jpg
+      license: CC BY-SA 3.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+      author: Rruegger at English Wikipedia - Picture provided by www.rruegger.ch
 style: dive
 sources:
   - https://en.wikipedia.org/wiki/Rolex_Submariner
@@ -9,12 +16,18 @@ sources:
 references:
   - ref: "116660"
     photos:
-      - file: ../../../photos/rolex/deepsea/deepsea-116660.jpg
+      - file: ../../../photos/rolex/deepsea/deepsea-116660-3.jpg
         credit:
-          source: https://commons.wikimedia.org/wiki/File:Rolex_Deepsea_Sea-Dweller_116660_Blue_Dial_%27James_Cameron%27_(cropped_and_turned).jpg
+          source: https://commons.wikimedia.org/wiki/File:Rolex_Deepsea_Sea-Dweller_116660_Blue_Dial_%27James_Cameron%27_(without_background,_upright).jpg
           license: CC0
           licenseUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
-          author: amh1988
+          author: "File:Rolex Deepsea Sea-Dweller 116660 Blue Dial 'James Cameron'.jpg: amh1988 derivative work: Pittigrilli"
+      - file: ../../../photos/rolex/deepsea/deepsea-116660-2.jpg
+        credit:
+          source: https://commons.wikimedia.org/wiki/File:Rolex_deepsea.jpg
+          license: CC BY-SA 3.0
+          licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+          author: Original uploader was Rruegger at en.wikipedia
     periods: [{ from: 2008, to: 2018 }]
     caseSize: 44
     metals: [steel]

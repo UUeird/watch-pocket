@@ -1,0 +1,52 @@
+name: "Exceline Solar"
+line: seiko/dolce-exceline
+style: dress
+website: https://www.seikowatches.com/jp-ja/products/dolceandexceline/ladies-solar
+sources:
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/ladies-solar
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcq089
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcq047
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcq051
+references:
+  - ref: SWCQ089
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/04/SWCQ089/SWCQ089.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcq089
+    price: { amount: 117700, currency: JPY, year: 2026 }
+    caseSize: 19.8
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "V117"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWCQ047
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/03/SWCQ047/SWCQ047.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcq047
+    price: { amount: 137500, currency: JPY, year: 2026 }
+    caseSize: 20
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "V117"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWCQ051
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/04/SWCQ051/SWCQ051.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcq051
+    price: { amount: 137500, currency: JPY, year: 2026 }
+    caseSize: 20
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "V117"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]

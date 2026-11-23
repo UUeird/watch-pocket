@@ -16,6 +16,9 @@ sources:
   - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412010001
 references:
   - ref: 434.53.41.20.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43453412003001-4672df.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43453412003001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43453412003001
     price: { amount: 16500, currency: USD, year: 2026 }
     caseSize: 41
@@ -28,6 +31,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.53.41.20.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43453412002001-b1fa98.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43453412002001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43453412002001
     price: { amount: 16500, currency: USD, year: 2026 }
     caseSize: 41
@@ -40,6 +46,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.20.41.20.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43420412002001-05d152.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43420412002001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43420412002001
     price: { amount: 11500, currency: USD, year: 2026 }
     caseSize: 41
@@ -51,6 +60,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
   - ref: 434.23.41.20.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43423412002001-d70df5.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43423412002001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43423412002001
     price: { amount: 9400, currency: USD, year: 2026 }
     caseSize: 41
@@ -62,6 +74,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.10.41.20.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412002001-0eeab4.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412002001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412002001
     price: { amount: 6200, currency: USD, year: 2026 }
     caseSize: 41
@@ -73,6 +88,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
   - ref: 434.13.41.20.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412002001-195e1a.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412002001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412002001
     price: { amount: 5800, currency: USD, year: 2026 }
     caseSize: 41
@@ -84,6 +102,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.10.41.20.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412003001-6f31bd.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412003001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412003001
     price: { amount: 6200, currency: USD, year: 2026 }
     caseSize: 41
@@ -95,6 +116,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: 434.13.41.20.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412003001-fcf70a.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412003001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412003001
     price: { amount: 5800, currency: USD, year: 2026 }
     caseSize: 41
@@ -106,6 +130,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.10.41.20.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412010001-dabe60.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412010001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412010001
     price: { amount: 6200, currency: USD, year: 2026 }
     caseSize: 41
@@ -117,6 +144,9 @@ references:
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
   - ref: 434.13.41.20.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412010001-1038d3.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412010001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412010001
     price: { amount: 5800, currency: USD, year: 2026 }
     caseSize: 41

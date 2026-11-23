@@ -1,0 +1,70 @@
+name: "Radio Sync Solar Chronograph"
+line: seiko/coutura
+style: chronograph
+website: https://www.seikowatches.com/us-en/products/coutura
+sources:
+  - https://www.seikowatches.com/us-en/products/coutura
+  - https://www.seikowatches.com/us-en/products/coutura/ssg009p9
+  - https://www.seikowatches.com/us-en/products/coutura/ssg010p9
+  - https://www.seikowatches.com/us-en/products/coutura/ssg021p9
+  - https://www.seikowatches.com/us-en/products/coutura/ssg022p9
+references:
+  - ref: SSG009
+    name: " "
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/coutura/SSG009P9/SSG009P9.png
+      page: https://www.seikowatches.com/us-en/products/coutura/ssg009p9
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 45.3
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "8B92"
+    movementType: quartz
+    complications: [date, chronograph, world-time, perpetual-calendar]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSG010
+    name: " "
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/coutura/SSG010P9/SSG010P9.png
+      page: https://www.seikowatches.com/us-en/products/coutura/ssg010p9
+    price: { amount: 725, currency: USD, year: 2026 }
+    caseSize: 45.3
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "8B92"
+    movementType: quartz
+    complications: [date, chronograph, world-time, perpetual-calendar]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSG021
+    name: " "
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/coutura/SSG021P9/SSG021P9.png
+      page: https://www.seikowatches.com/us-en/products/coutura/ssg021p9
+    price: { amount: 750, currency: USD, year: 2026 }
+    caseSize: 44.6
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "8B92"
+    movementType: quartz
+    complications: [date, chronograph, world-time, perpetual-calendar]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSG022
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/coutura/SSG022P9/SSG022P9.png
+      page: https://www.seikowatches.com/us-en/products/coutura/ssg022p9
+    price: { amount: 725, currency: USD, year: 2026 }
+    caseSize: 45.5
+    gender: men
+    crystal: sapphire
+    movement: "8B92"
+    movementType: quartz
+    complications: [date, chronograph, world-time, perpetual-calendar]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]

@@ -1,0 +1,22 @@
+name: "Chronograph"
+line: seiko/coutura
+style: chronograph
+website: https://www.seikowatches.com/us-en/products/coutura
+sources:
+  - https://www.seikowatches.com/us-en/products/coutura
+  - https://www.seikowatches.com/us-en/products/coutura/srwz24p9
+references:
+  - ref: SRWZ24
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/07/06/11/45/SRWZ24P9/SRWZ24P9.png
+      page: https://www.seikowatches.com/us-en/products/coutura/srwz24p9
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 45.6
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "7T12"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]

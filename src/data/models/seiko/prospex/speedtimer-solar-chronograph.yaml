@@ -2,6 +2,13 @@ name: "Speedtimer Solar Chronograph"
 line: seiko/prospex
 style: chronograph
 website: https://www.seikowatches.com/us-en/products/prospex/speedtimer
+photos:
+  - file: ../../../photos/seiko/prospex/speedtimer-solar-chronograph.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Watch_2026-11-14_Seiko_Blue_Ice_Panda_02.jpg
+      license: CC BY 4.0
+      licenseUrl: https://creativecommons.org/licenses/by/4.0
+      author: P1898
 sources:
   - https://www.seikowatches.com/us-en/products/prospex/speedtimer
   - https://www.seikowatches.com/us-en/products/prospex/hbj001

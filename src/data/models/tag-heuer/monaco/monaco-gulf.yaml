@@ -6,24 +6,7 @@ website: https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/
 sources:
   - https://en.wikipedia.org/wiki/TAG_Heuer_Monaco
   - https://www.tagheuer.com/us/en/timepieces/collections/tag-heuer-monaco/39-mm-th20-00/CBL2115.FC6494.html
-  - https://watchbase.com/tag-heuer/monaco/cw2118-fc6207
-  - https://www.wewatches.com/encyclopedie/tag-heuer/monaco/cw2118-fc6207
 references:
-  - ref: "CW2118"
-    name: "Steve McQueen"
-    photos:
-      - file: ../../../photos/tag-heuer/monaco/monaco-gulf-cw2118.jpg
-        credit:
-          source: https://commons.wikimedia.org/wiki/File:Steve_McQueen_Monaco_White_face_CW2118.jpg
-          license: CC BY-SA 4.0
-          licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
-          author: DavidBSV12
-    metals: [steel]
-    movement: "Calibre 17"
-    movementType: mechanical
-    winding: automatic
-    complications: [chronograph]
-    dials: [{ color: white }]
   - ref: "CW211A"
     name: "Gulf II"
     movementType: mechanical

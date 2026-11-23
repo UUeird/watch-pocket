@@ -1,0 +1,281 @@
+name: "Men's Quartz"
+line: seiko/seiko-selection
+style: everyday
+website: https://www.seikowatches.com/jp-ja/products/seikoselection/mens-quartz
+sources:
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/mens-quartz
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr053
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr055
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr057
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh019
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sseh020
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbth007
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbth009
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbth011
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr045
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr047
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr039
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr041
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbth001
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbth003
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbth005
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr033
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr037
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbtb005
+references:
+  - ref: SBTR053
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/04/12/21/08/SBTR053/SBTR053.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr053
+    price: { amount: 63800, currency: JPY, year: 2026 }
+    caseSize: 38.7
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "8T63"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTR055
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/04/12/21/09/SBTR055/SBTR055.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr055
+    price: { amount: 63800, currency: JPY, year: 2026 }
+    caseSize: 38.7
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "8T63"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTR057
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/04/12/21/09/SBTR057/SBTR057.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr057
+    price: { amount: 63800, currency: JPY, year: 2026 }
+    caseSize: 38.7
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "8T63"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSEH019
+    name: "nano・universe Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/04/28/21/17/SSEH019/SSEH019.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh019
+    price: { amount: 30800, currency: JPY, year: 2026 }
+    caseSize: 27.9
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSEH020
+    name: "nano・universe Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/04/28/21/18/SSEH020/SSEH020.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sseh020
+    price: { amount: 30800, currency: JPY, year: 2026 }
+    caseSize: 27.9
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SBTH007
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/09/18/21/10/SBTH007/SBTH007.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbth007
+    price: { amount: 33000, currency: JPY, year: 2026 }
+    caseSize: 37.4
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N53"
+    movementType: quartz
+    complications: []
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTH009
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/09/18/21/10/SBTH009/SBTH009.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbth009
+    price: { amount: 33000, currency: JPY, year: 2026 }
+    caseSize: 37.4
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N53"
+    movementType: quartz
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTH011
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/09/18/21/10/SBTH011/SBTH011.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbth011
+    price: { amount: 33000, currency: JPY, year: 2026 }
+    caseSize: 37.4
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "6N53"
+    movementType: quartz
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTR045
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/01/10/21/07/SBTR045/SBTR045.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr045
+    price: { amount: 35200, currency: JPY, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "8T63"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTR047
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/01/10/21/07/SBTR047/SBTR047.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr047
+    price: { amount: 33000, currency: JPY, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "8T63"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTR039
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/10/06/01/16/SWFH137/SBTR039.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr039
+    price: { amount: 33000, currency: JPY, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "8T67"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTR041
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/10/06/01/15/SBTR041/SBTR041.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr041
+    price: { amount: 35200, currency: JPY, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "8T67"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTH001
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/07/06/11/47/SBTH001/SBTH001.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbth001
+    price: { amount: 26400, currency: JPY, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "6N52"
+    movementType: quartz
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTH003
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/07/06/11/47/SBTH003/SBTH003.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbth003
+    price: { amount: 26400, currency: JPY, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "6N52"
+    movementType: quartz
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTH005
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/07/06/11/47/SBTH005/SBTH005.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbth005
+    price: { amount: 26400, currency: JPY, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "6N52"
+    movementType: quartz
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTR033
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/07/06/11/48/SBTR033/SBTR033.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr033
+    price: { amount: 33000, currency: JPY, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "8T63"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTR037
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/07/06/11/48/SBTR037/SBTR037.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtr037
+    price: { amount: 38500, currency: JPY, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: mineral
+    movement: "8T63"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBTB005
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/14/04/SBTB005/SBTB005.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbtb005
+    price: { amount: 22000, currency: JPY, year: 2026 }
+    caseSize: 32.8
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "7N01"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]

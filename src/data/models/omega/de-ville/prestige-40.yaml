@@ -24,6 +24,9 @@ sources:
   - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43453402002001
 references:
   - ref: 434.10.40.20.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402010001-99709b.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402010001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402010001
     price: { amount: 5500, currency: USD, year: 2026 }
     caseSize: 40
@@ -36,6 +39,9 @@ references:
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
   - ref: 434.13.40.20.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43413402003001-a8885a.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43413402003001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43413402003001
     price: { amount: 5100, currency: USD, year: 2026 }
     caseSize: 40
@@ -48,6 +54,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.10.40.20.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402003001-02b240.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402003001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402003001
     price: { amount: 5500, currency: USD, year: 2026 }
     caseSize: 40
@@ -60,6 +69,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: 434.13.40.20.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43413402001001-6e6004.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43413402001001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43413402001001
     price: { amount: 5100, currency: USD, year: 2026 }
     caseSize: 40
@@ -72,6 +84,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.10.40.20.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402001001-a68dea.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402001001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402001001
     price: { amount: 5500, currency: USD, year: 2026 }
     caseSize: 40
@@ -84,6 +99,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: 434.13.40.20.06.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43413402006001-1b4dc7.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43413402006001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43413402006001
     price: { amount: 5100, currency: USD, year: 2026 }
     caseSize: 40
@@ -96,6 +114,9 @@ references:
     dials: [{ color: gray }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.10.40.20.06.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402006001-0aeb6a.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402006001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402006001
     price: { amount: 5500, currency: USD, year: 2026 }
     caseSize: 40
@@ -108,6 +129,9 @@ references:
     dials: [{ color: gray }]
     bracelets: [{ type: bracelet }]
   - ref: 434.13.40.20.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43413402002001-dd8bd1.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43413402002001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43413402002001
     price: { amount: 5100, currency: USD, year: 2026 }
     caseSize: 40
@@ -120,6 +144,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.10.40.20.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402002001-cf78cc.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402002001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43410402002001
     price: { amount: 5500, currency: USD, year: 2026 }
     caseSize: 40
@@ -132,6 +159,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
   - ref: 434.20.40.20.08.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43420402008001-f8a66e.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43420402008001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43420402008001
     price: { amount: 10600, currency: USD, year: 2026 }
     caseSize: 40
@@ -144,6 +174,9 @@ references:
     dials: [{ color: yellow }]
     bracelets: [{ type: bracelet, name: "Yellow gold" }]
   - ref: 434.23.40.20.02.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43423402002002-643305.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43423402002002
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43423402002002
     price: { amount: 8300, currency: USD, year: 2026 }
     caseSize: 40
@@ -156,6 +189,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.20.40.20.02.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43420402002002-dd3557.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43420402002002
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43420402002002
     price: { amount: 10600, currency: USD, year: 2026 }
     caseSize: 40
@@ -168,6 +204,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Steel and yellow gold" }]
   - ref: 434.23.40.20.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43423402002001-836218.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43423402002001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43423402002001
     price: { amount: 8300, currency: USD, year: 2026 }
     caseSize: 40
@@ -179,6 +218,9 @@ references:
     complications: [date]
     dials: [{ color: silver }]
   - ref: 434.20.40.20.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43420402002001-1bb1ee.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43420402002001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43420402002001
     price: { amount: 10600, currency: USD, year: 2026 }
     caseSize: 40
@@ -191,6 +233,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
   - ref: 434.23.40.20.52.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43423402052001-6a97c9.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43423402052001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43423402052001
     price: { amount: 9000, currency: USD, year: 2026 }
     caseSize: 40
@@ -203,6 +248,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.20.40.20.52.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43420402052001-521d71.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43420402052001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43420402052001
     price: { amount: 11200, currency: USD, year: 2026 }
     caseSize: 40
@@ -215,6 +263,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Yellow gold" }]
   - ref: 434.53.40.20.02.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43453402002002-5c10b4.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43453402002002
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43453402002002
     price: { amount: 15400, currency: USD, year: 2026 }
     caseSize: 40
@@ -227,6 +278,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.53.40.20.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43453402002001-fb3de0.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43453402002001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-40-mm-43453402002001
     price: { amount: 15400, currency: USD, year: 2026 }
     caseSize: 40

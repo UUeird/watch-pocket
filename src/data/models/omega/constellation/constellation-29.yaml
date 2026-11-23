@@ -21,6 +21,9 @@ sources:
   - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13128292099001
 references:
   - ref: 131.15.29.20.60.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13115292060001-38f7a1.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13115292060001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13115292060001
     price: { amount: 13100, currency: USD, year: 2026 }
     caseSize: 29
@@ -34,6 +37,9 @@ references:
     dials: [{ color: purple, name: "Lilac" }]
     bracelets: [{ type: bracelet }]
   - ref: 131.18.29.20.60.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13118292060001-0c5586.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13118292060001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13118292060001
     price: { amount: 12800, currency: USD, year: 2026 }
     caseSize: 29
@@ -47,6 +53,9 @@ references:
     dials: [{ color: purple, name: "Lilac" }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.25.29.20.58.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13125292058002-d74203.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13125292058002
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13125292058002
     price: { amount: 17600, currency: USD, year: 2026 }
     caseSize: 29
@@ -60,6 +69,9 @@ references:
     dials: [{ color: yellow }]
     bracelets: [{ type: bracelet, name: "Steel and moonshine gold" }]
   - ref: 131.28.29.20.58.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13128292058001-050faa.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13128292058001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13128292058001
     price: { amount: 15100, currency: USD, year: 2026 }
     caseSize: 29
@@ -73,6 +85,9 @@ references:
     dials: [{ color: yellow }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.25.29.20.52.003
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13125292052003-7d5d43.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13125292052003
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13125292052003
     price: { amount: 17600, currency: USD, year: 2026 }
     caseSize: 29
@@ -86,6 +101,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
   - ref: 131.28.29.20.52.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13128292052001-f0a240.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13128292052001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13128292052001
     price: { amount: 15100, currency: USD, year: 2026 }
     caseSize: 29
@@ -99,6 +117,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.55.29.20.55.003
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13155292055003-550661.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13155292055003
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13155292055003
     price: { amount: 41200, currency: USD, year: 2026 }
     caseSize: 29
@@ -112,6 +133,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: bracelet, name: "Moonshine gold" }]
   - ref: 131.58.29.20.55.003
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13158292055003-69d106.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13158292055003
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13158292055003
     price: { amount: 25300, currency: USD, year: 2026 }
     caseSize: 29
@@ -125,6 +149,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.55.29.20.60.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13155292060001-249407.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13155292060001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13155292060001
     price: { amount: 40800, currency: USD, year: 2026 }
     caseSize: 29
@@ -138,6 +165,9 @@ references:
     dials: [{ color: purple }]
     bracelets: [{ type: bracelet, name: "Sedna gold" }]
   - ref: 131.58.29.20.60.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13158292060002-5ad7ba.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13158292060002
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13158292060002
     price: { amount: 24900, currency: USD, year: 2026 }
     caseSize: 29
@@ -151,6 +181,9 @@ references:
     dials: [{ color: purple }]
     bracelets: [{ type: leather-strap }]
   - ref: 131.15.29.20.99.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13115292099001-91c64c.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13115292099001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13115292099001
     price: { amount: 14600, currency: USD, year: 2026 }
     caseSize: 29
@@ -164,6 +197,9 @@ references:
     dials: [{ color: purple }]
     bracelets: [{ type: bracelet }]
   - ref: 131.25.29.20.99.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13125292099001-0cc2bf.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13125292099001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13125292099001
     price: { amount: 18600, currency: USD, year: 2026 }
     caseSize: 29
@@ -177,6 +213,9 @@ references:
     dials: [{ color: gray }]
     bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
   - ref: 131.25.29.20.99.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13125292099002-55fd5c.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13125292099002
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13125292099002
     price: { amount: 18600, currency: USD, year: 2026 }
     caseSize: 29
@@ -190,6 +229,9 @@ references:
     dials: [{ color: yellow }]
     bracelets: [{ type: bracelet, name: "Steel and yellow gold" }]
   - ref: 131.55.29.20.99.006
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13155292099006-d679ae.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13155292099006
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13155292099006
     price: { amount: 40300, currency: USD, year: 2026 }
     caseSize: 29
@@ -203,6 +245,9 @@ references:
     dials: [{ color: pink }]
     bracelets: [{ type: bracelet, name: "Sedna gold" }]
   - ref: 131.28.29.20.99.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-constellation-co-axial-master-chronometer-29-mm-13128292099001-f6fa14.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13128292099001
     website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-29-mm-13128292099001
     price: { amount: 17600, currency: USD, year: 2026 }
     caseSize: 29

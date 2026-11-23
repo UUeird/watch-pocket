@@ -1,0 +1,72 @@
+name: "KS1969"
+line: seiko/king-seiko
+style: dress
+website: https://www.seikowatches.com/us-en/products/kingseiko/ks1969
+sources:
+  - https://www.seikowatches.com/us-en/products/kingseiko/ks1969
+  - https://www.seikowatches.com/us-en/products/kingseiko/sje109j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/sje111j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/sje113j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/sje121j1
+references:
+  - ref: SJE109
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/05/20/21/10/SJE109J1/SJE109J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sje109j1
+    price: { amount: 3100, currency: USD, year: 2026 }
+    caseSize: 39.4
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "6L35"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SJE111
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/05/20/21/10/SJE111J1/SJE111J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sje111j1
+    price: { amount: 3100, currency: USD, year: 2026 }
+    caseSize: 39.4
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "6L35"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: purple }]
+    bracelets: [{ type: bracelet }]
+  - ref: SJE113
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/05/20/21/10/SJE113J1/SJE113J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sje113j1
+    price: { amount: 3100, currency: USD, year: 2026 }
+    caseSize: 39.4
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "6L35"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SJE121
+    name: "Seiko 145th Anniversary Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/11/18/21/18/SJE121J1/SJE121J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sje121j1
+    price: { amount: 3100, currency: USD, year: 2026 }
+    caseSize: 39.4
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "6L35"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: brown }]
+    bracelets: [{ type: bracelet }]

@@ -1,0 +1,657 @@
+name: "SKX Series"
+line: seiko/seiko-5
+style: sport
+website: https://www.seikowatches.com/us-en/products/5sports/skx-series
+sources:
+  - https://www.seikowatches.com/us-en/products/5sports/skx-series
+  - https://www.seikowatches.com/us-en/products/5sports/hdb003
+  - https://www.seikowatches.com/us-en/products/5sports/hdb004
+  - https://www.seikowatches.com/us-en/products/5sports/hdb005
+  - https://www.seikowatches.com/us-en/products/5sports/hdb011j8
+  - https://www.seikowatches.com/us-en/products/5sports/hdb012j8
+  - https://www.seikowatches.com/us-en/products/5sports/sbsa315
+  - https://www.seikowatches.com/us-en/products/5sports/srpl79
+  - https://www.seikowatches.com/us-en/products/5sports/srpl93
+  - https://www.seikowatches.com/us-en/products/5sports/srpl83
+  - https://www.seikowatches.com/us-en/products/5sports/srpl85
+  - https://www.seikowatches.com/us-en/products/5sports/srpl87
+  - https://www.seikowatches.com/us-en/products/5sports/srpl89
+  - https://www.seikowatches.com/us-en/products/5sports/sbsa281
+  - https://www.seikowatches.com/us-en/products/5sports/ssk033
+  - https://www.seikowatches.com/us-en/products/5sports/ssk035
+  - https://www.seikowatches.com/us-en/products/5sports/ssk036
+  - https://www.seikowatches.com/us-en/products/5sports/srpk97
+  - https://www.seikowatches.com/us-en/products/5sports/srpk99
+  - https://www.seikowatches.com/us-en/products/5sports/sre003
+  - https://www.seikowatches.com/us-en/products/5sports/sre004
+  - https://www.seikowatches.com/us-en/products/5sports/srpd51
+  - https://www.seikowatches.com/us-en/products/5sports/srpd53
+  - https://www.seikowatches.com/us-en/products/5sports/srpd55
+  - https://www.seikowatches.com/us-en/products/5sports/srpd59
+  - https://www.seikowatches.com/us-en/products/5sports/srpd63
+  - https://www.seikowatches.com/us-en/products/5sports/srpd65
+  - https://www.seikowatches.com/us-en/products/5sports/srpd79
+  - https://www.seikowatches.com/us-en/products/5sports/srpd91p9
+  - https://www.seikowatches.com/us-en/products/5sports/srpd93p9
+  - https://www.seikowatches.com/us-en/products/5sports/srpd95p9
+  - https://www.seikowatches.com/us-en/products/5sports/srpe57
+  - https://www.seikowatches.com/us-en/products/5sports/srpj45
+  - https://www.seikowatches.com/us-en/products/5sports/srpk29
+  - https://www.seikowatches.com/us-en/products/5sports/srpk31
+  - https://www.seikowatches.com/us-en/products/5sports/srpk33
+  - https://www.seikowatches.com/us-en/products/5sports/srpl77
+  - https://www.seikowatches.com/us-en/products/5sports/srpm07
+  - https://www.seikowatches.com/us-en/products/5sports/ssk001
+  - https://www.seikowatches.com/us-en/products/5sports/ssk003
+  - https://www.seikowatches.com/us-en/products/5sports/ssk005
+references:
+  - ref: HDB003
+    name: "Seiko 145th Anniversary Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/31/21/09/HDB003K1/HDB003K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/hdb003
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: purple }]
+    bracelets: [{ type: bracelet }]
+  - ref: HDB004
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/31/21/09/HDB004K1/HDB004K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/hdb004
+    price: { amount: 400, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HDB005
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/31/21/09/HDB005K1/HDB005K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/hdb005
+    price: { amount: 400, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: HDB011J8
+    name: "FTC Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/05/22/21/03/HDB011J8/HDB011J8.png
+      page: https://www.seikowatches.com/us-en/products/5sports/hdb011j8
+    price: { amount: 460, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: HDB012J8
+    name: "FTC Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/05/22/21/03/HDB012J8/HDB012J8.png
+      page: https://www.seikowatches.com/us-en/products/5sports/hdb012j8
+    price: { amount: 500, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: orange }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL95
+    name: "BAMFORD Limited Edition, Seiko Boutique exclusive model"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/07/08/21/04/SRPL95K1/SRPL95K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/sbsa315
+    price: { amount: 460, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: fabric-strap }]
+  - ref: SRPL79
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/06/24/21/05/SRPL79K1/SRPL79K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpl79
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL93
+    name: "Heritage Design Re-creation Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/05/07/21/11/SRPL93K1/SRPL93K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpl93
+    price: { amount: 440, currency: USD, year: 2026 }
+    caseSize: 38.2
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL83
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/04/11/21/08/SRPL83K1/SRPL83K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpl83
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL85
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/04/11/21/09/SRPL85K1/SRPL85K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpl85
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL87
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/04/11/21/10/SRPL87K1/SRPL87K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpl87
+    price: { amount: 400, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: yellow }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: SRPL89
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/04/11/21/10/SRPL89K1/SRPL89K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpl89
+    price: { amount: 400, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: orange }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: SRPL35
+    name: "DENHAM Limited Edition, Seiko Boutique exclusive model"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/10/07/21/19/SRPL35K1/SRPL35K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/sbsa281
+    price: { amount: 430, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: fabric-strap }]
+  - ref: SSK033
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/08/16/21/22/SSK033K1/SSK033K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/ssk033
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R34"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, gmt]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSK035
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/08/16/21/22/SSK035K1/SSK035K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/ssk035
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R34"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, gmt]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSK036
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/08/16/21/22/SSK036K1/SSK036K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/ssk036
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R34"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, gmt]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SRPK97
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/04/30/21/15/SRPK97K1/SRPK97K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpk97
+    price: { amount: 400, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPK99
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2024/05/01/21/12/SRPK99K1/SRPK99K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpk99
+    price: { amount: 400, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRE003
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/01/25/SRE003K1/SRE003K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/sre003
+    price: { amount: 315, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "2R06"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRE004
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/01/26/SRE004K1/SRE004K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/sre004
+    price: { amount: 365, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "2R06"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPD51
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/14/SRPD51K1/SRPD51K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpd51
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPD53
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/14/SRPD53K1/SRPD53K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpd53
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPD55
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/14/SRPD55K1/SRPD55K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpd55
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPD59
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/15/SRPD59K1/SRPD59K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpd59
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: orange }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPD63
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/16/SRPD63K1/SRPD63K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpd63
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPD65
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/16/SRPD65K1/SRPD65K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpd65
+    price: { amount: 395, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPD79
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/18/SRPD79K1/SRPD79K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpd79
+    price: { amount: 375, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: fabric-strap }]
+  - ref: SRPD91
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/5sports/SRPD91P9/SRPD91P9.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpd91p9
+    price: { amount: 375, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: fabric-strap }]
+  - ref: SRPD93
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/5sports/SRPD93P9/SRPD93P9.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpd93p9
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: SRPD95
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/America/Seiko/5sports/SRPD95P9/SRPD95P9.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpd95p9
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: SRPE57
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/02/20/02/24/SRPE57K1/SRPE57K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpe57
+    price: { amount: 315, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPJ45
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/08/20/11/43/SRPJ45K1/SRPJ45K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpj45
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPK29
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/03/30/11/57/SRPK29K1/SRPK29K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpk29
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPK31
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/03/30/11/57/SRPK31K1/SRPK31K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpk31
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: white, name: "Cream" }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPK33
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2023/03/30/11/57/SRPK33K1/SRPK33K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpk33
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPL77
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/06/24/21/05/SRPL77K1/SRPL77K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpl77
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SRPM07
+    name: "Pink Panther Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/10/31/21/05/SRPM07K1/SRPM07K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/srpm07
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R36"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, day]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSK001
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/06/02/11/39/SSK001K1/SSK001K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/ssk001
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R34"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, gmt]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSK003
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/06/02/11/39/SSK003K1/SSK003K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/ssk003
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R34"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, gmt]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSK005
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2022/06/02/11/39/SSK005K1/SSK005K1.png
+      page: https://www.seikowatches.com/us-en/products/5sports/ssk005
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 42.5
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R34"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, gmt]
+    dials: [{ color: orange }]
+    bracelets: [{ type: bracelet }]

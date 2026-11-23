@@ -1,0 +1,185 @@
+name: "VANAC"
+line: seiko/king-seiko
+style: everyday
+website: https://www.seikowatches.com/us-en/products/kingseiko/vanac
+sources:
+  - https://www.seikowatches.com/us-en/products/kingseiko/vanac
+  - https://www.seikowatches.com/us-en/products/kingseiko/hkf005j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/hkf004j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/hkf002j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/hkf003j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/hkf001j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/sla093j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/sla095j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/sla083j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/sla085j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/sla087j1
+  - https://www.seikowatches.com/us-en/products/kingseiko/sla091j1
+references:
+  - ref: HKF005
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/26/21/09/HKF005J1/HKF005J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/hkf005j1
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "8L45"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: HKF004
+    name: "Seiko 145th Anniversary Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/26/21/09/HKF004J1/HKF004J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/hkf004j1
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "8L45"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: HKF002
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/05/21/15/HKF002J1/HKF002J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/hkf002j1
+    price: { amount: 3850, currency: USD, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "8L45"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: HKF003
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/05/21/15/HKF003J1/HKF003J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/hkf003j1
+    price: { amount: 3850, currency: USD, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "8L45"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: HKF001
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2026/03/05/21/15/HKF001J1/HKF001J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/hkf001j1
+    price: { amount: 3850, currency: USD, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "8L45"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: purple }]
+    bracelets: [{ type: bracelet }]
+  - ref: SLA093
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/10/23/21/05/SLA093J1/SLA093J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sla093j1
+    price: { amount: 3200, currency: USD, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "8L45"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: brown }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SLA095
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/10/23/21/05/SLA095J1/SLA095J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sla095j1
+    price: { amount: 3200, currency: USD, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "8L45"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SLA083
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/02/19/21/17/SLA083J1/SLA083J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sla083j1
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "8L45"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SLA085
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/02/19/21/17/SLA085J1/SLA085J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sla085j1
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "8L45"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SLA087
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/02/19/21/17/SLA087J1/SLA087J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sla087j1
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "8L45"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SLA091
+    name: "Seiko Boutique Exclusive Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/us-en/-/media/Images/Product--Image/All/Seiko/2025/02/19/21/17/SLA091J1/SLA091J1.png
+      page: https://www.seikowatches.com/us-en/products/kingseiko/sla091j1
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "8L45"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]

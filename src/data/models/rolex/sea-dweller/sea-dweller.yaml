@@ -1,5 +1,30 @@
 name: Sea-Dweller
 line: rolex/sea-dweller
+photos:
+  - file: ../../../photos/rolex/sea-dweller/sea-dweller.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_Sea_Dweller_16600.jpg
+      license: CC BY-SA 3.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+      author: John Torcasio
+  - file: ../../../photos/rolex/sea-dweller/sea-dweller-2.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_Sea-Dweller_ref._16600_di_fine_anni_Ottanta,_privo_della_lente_magnificatrice..jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: EMore98
+  - file: ../../../photos/rolex/sea-dweller/sea-dweller-3.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Rolex_Comex_Sea_Dweller.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: Verygoodlord
+  - file: ../../../photos/rolex/sea-dweller/sea-dweller-4.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Particolare_della_valvola_di_sfogo_dell%27elio_del_Rolex_Sea-Dweller_ref._1665,_met%C3%A0_anni_Settanta_circa.jpg
+      license: CC BY-SA 4.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+      author: EMore98
 style: dive
 sources:
   - https://en.wikipedia.org/wiki/Rolex_Submariner
