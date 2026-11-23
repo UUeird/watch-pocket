@@ -1,0 +1,189 @@
+name: "Ladies' Radio-Sync Solar"
+line: seiko/seiko-selection
+style: everyday
+website: https://www.seikowatches.com/jp-ja/products/seikoselection/ladies-radiosyncsolar
+sources:
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/ladies-radiosyncsolar
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfe001j
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfe002j
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfe003j
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfe004j
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/ssdy047
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/ssdy049
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/swfh145
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/swfh146
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/swfh148
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/swfh143
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/swfh125
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/swfh126
+references:
+  - ref: HFE001J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/02/21/11/HFE001J/HFE001J.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfe001j
+    price: { amount: 50600, currency: JPY, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "1B22"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HFE002J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/02/21/11/HFE002J/HFE002J.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfe002j
+    price: { amount: 53900, currency: JPY, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "1B22"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HFE003J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/02/21/11/HFE003J/HFE003J.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfe003j
+    price: { amount: 50600, currency: JPY, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "1B22"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: HFE004J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/02/21/11/HFE004J/HFE004J.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfe004j
+    price: { amount: 53900, currency: JPY, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "1B22"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSDY047
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/05/22/21/08/SSDY047/SSDY047.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/ssdy047
+    price: { amount: 62700, currency: JPY, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B21"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSDY049
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/05/22/21/08/SSDY049/SSDY049.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/ssdy049
+    price: { amount: 62700, currency: JPY, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B21"
+    movementType: quartz
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWFH145
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/03/17/21/14/SWFH145/SWFH145.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/swfh145
+    price: { amount: 49500, currency: JPY, year: 2026 }
+    caseSize: 25.2
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "1B21"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWFH146
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/03/17/21/14/SWFH146/SWFH146.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/swfh146
+    price: { amount: 51700, currency: JPY, year: 2026 }
+    caseSize: 25.2
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "1B21"
+    movementType: quartz
+    complications: []
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWFH148
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/03/17/21/14/SWFH148/SWFH148.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/swfh148
+    price: { amount: 52800, currency: JPY, year: 2026 }
+    caseSize: 25.2
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "1B21"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWFH143
+    name: "S Series 2025 Raise the Future Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/12/06/21/15/SWFH143/SWFH143.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/swfh143
+    price: { amount: 52800, currency: JPY, year: 2026 }
+    caseSize: 25
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "1B22"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWFH125
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/10/05/11/43/SWFH125/SWFH125.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/swfh125
+    price: { amount: 49500, currency: JPY, year: 2026 }
+    caseSize: 25
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "1B22"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWFH126
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/08/20/11/42/SWFH126/SWFH126.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/swfh126
+    price: { amount: 52800, currency: JPY, year: 2026 }
+    caseSize: 25
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "1B22"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]

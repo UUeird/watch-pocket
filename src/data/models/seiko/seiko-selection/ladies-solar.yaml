@@ -1,0 +1,303 @@
+name: "Ladies' Solar"
+line: seiko/seiko-selection
+style: everyday
+website: https://www.seikowatches.com/jp-ja/products/seikoselection/ladies-solar
+sources:
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/ladies-solar
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfj001p
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfj002p
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfj003p
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfj004p
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/stpx103
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/stpx104
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/stpx105
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/stpx107
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/swfa209
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/swfa210
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/swfa212
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/stpx093
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/stpx095
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/stpx096
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/stpr068
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/stpx041
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/stpx031
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/stpx033
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/swfa148
+references:
+  - ref: HFJ001P
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/08/13/21/04/HFJ001P/HFJ001P.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfj001p
+    price: { amount: 38500, currency: JPY, year: 2026 }
+    caseSize: 18
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "V115"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HFJ002P
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/08/13/21/04/HFJ002P/HFJ002P.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfj002p
+    price: { amount: 41800, currency: JPY, year: 2026 }
+    caseSize: 18
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "V115"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HFJ003P
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/08/18/21/11/HFJ003P/HFJ003P.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfj003p
+    price: { amount: 35200, currency: JPY, year: 2026 }
+    caseSize: 18
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold }]
+    crystal: mineral
+    movement: "V115"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HFJ004P
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/08/13/21/04/HFJ004P/HFJ004P.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfj004p
+    price: { amount: 35200, currency: JPY, year: 2026 }
+    caseSize: 18
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "V115"
+    movementType: quartz
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: STPX103
+    name: "The Steady"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/09/11/21/13/STPX103/STPX103.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/stpx103
+    price: { amount: 37400, currency: JPY, year: 2026 }
+    caseSize: 30.2
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "V131"
+    movementType: quartz
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: STPX104
+    name: "The Steady"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/09/11/21/13/STPX104/STPX104.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/stpx104
+    price: { amount: 39600, currency: JPY, year: 2026 }
+    caseSize: 30.2
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "V131"
+    movementType: quartz
+    complications: []
+    dials: [{ color: champagne }]
+    bracelets: [{ type: leather-strap }]
+  - ref: STPX105
+    name: "The Steady"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/09/11/21/13/STPX105/STPX105.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/stpx105
+    price: { amount: 39600, currency: JPY, year: 2026 }
+    caseSize: 30.2
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: mineral
+    movement: "V131"
+    movementType: quartz
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: STPX107
+    name: "The Steady"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/09/11/21/13/STPX107/STPX107.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/stpx107
+    price: { amount: 44000, currency: JPY, year: 2026 }
+    caseSize: 30.2
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "V131"
+    movementType: quartz
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWFA209
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/03/13/21/17/SWFA209/SWFA209.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/swfa209
+    price: { amount: 34100, currency: JPY, year: 2026 }
+    caseSize: 23
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "V117"
+    movementType: quartz
+    complications: []
+    dials: [{ color: purple }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWFA210
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/03/13/21/17/SWFA210/SWFA210.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/swfa210
+    price: { amount: 36300, currency: JPY, year: 2026 }
+    caseSize: 23
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "V117"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWFA212
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/03/13/21/17/SWFA212/SWFA212.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/swfa212
+    price: { amount: 37400, currency: JPY, year: 2026 }
+    caseSize: 23
+    gender: women
+    crystal: mineral
+    movement: "V117"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: STPX093
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/08/20/11/41/STPX093/STPX093.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/stpx093
+    price: { amount: 35200, currency: JPY, year: 2026 }
+    caseSize: 27.8
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "V137"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: STPX095
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/08/20/11/41/STPX095/STPX095.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/stpx095
+    price: { amount: 35200, currency: JPY, year: 2026 }
+    caseSize: 27.8
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "V137"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: STPX096
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/08/20/11/41/STPX096/STPX096.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/stpx096
+    price: { amount: 38500, currency: JPY, year: 2026 }
+    caseSize: 27.8
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "V137"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: STPR068
+    name: "nano・universe Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/18/40/STPR068/STPR068.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/stpr068
+    price: { amount: 30800, currency: JPY, year: 2026 }
+    caseSize: 18
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "V115"
+    movementType: quartz
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: STPX041
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/18/46/STPX041/STPX041.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/stpx041
+    price: { amount: 38500, currency: JPY, year: 2026 }
+    caseSize: 29.1
+    gender: women
+    metals: [titanium]
+    crystal: sapphire
+    movement: "V137"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: STPX031
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/18/44/STPX031/STPX031.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/stpx031
+    price: { amount: 29700, currency: JPY, year: 2026 }
+    caseSize: 29.3
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "V138"
+    movementType: quartz
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: STPX033
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/18/45/STPX033/STPX033.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/stpx033
+    price: { amount: 30800, currency: JPY, year: 2026 }
+    caseSize: 29.3
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "V138"
+    movementType: quartz
+    complications: [date, day]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWFA148
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/26/SWFA148/SWFA148.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/swfa148
+    price: { amount: 35200, currency: JPY, year: 2026 }
+    caseSize: 20.3
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold }]
+    crystal: mineral
+    movement: "V117"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]

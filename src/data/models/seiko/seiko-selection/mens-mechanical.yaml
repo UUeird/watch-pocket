@@ -1,0 +1,120 @@
+name: "Men's Mechanical"
+line: seiko/seiko-selection
+style: everyday
+website: https://www.seikowatches.com/jp-ja/products/seikoselection/mens-mechanical
+sources:
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/mens-mechanical
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfb001j
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfb002j
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfb003j
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfb004j
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/scve059
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/scve061
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/scve062
+references:
+  - ref: HFB001J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/02/21/11/HFB001J/HFB001J.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfb001j
+    price: { amount: 40700, currency: JPY, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R38"
+    movementType: mechanical
+    winding: automatic
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HFB002J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/02/21/11/HFB002J/HFB002J.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfb002j
+    price: { amount: 40700, currency: JPY, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R38"
+    movementType: mechanical
+    winding: automatic
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: HFB003J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/02/21/11/HFB003J/HFB003J.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfb003j
+    price: { amount: 40700, currency: JPY, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R38"
+    movementType: mechanical
+    winding: automatic
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: HFB004J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/11/21/06/HFB004J/HFB004J.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfb004j
+    price: { amount: 42900, currency: JPY, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R38"
+    movementType: mechanical
+    winding: automatic
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SCVE059
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/12/25/21/14/SCVE059/SCVE059.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/scve059
+    price: { amount: 44000, currency: JPY, year: 2026 }
+    caseSize: 41.2
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SCVE061
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/12/25/21/14/SCVE061/SCVE061.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/scve061
+    price: { amount: 44000, currency: JPY, year: 2026 }
+    caseSize: 41.2
+    gender: men
+    metals: [steel]
+    crystal: mineral
+    movement: "4R35"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SCVE062
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/12/25/21/14/SCVE062/SCVE062.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/scve062
+    price: { amount: 47300, currency: JPY, year: 2026 }
+    caseSize: 41.2
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "4R35"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: gold }]
+    bracelets: [{ type: bracelet }]

@@ -1,0 +1,234 @@
+name: "Men's Solar"
+line: seiko/seiko-selection
+style: everyday
+website: https://www.seikowatches.com/jp-ja/products/seikoselection/mens-solar
+sources:
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/mens-solar
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpy181
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpy183
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpy185
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpy187
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpy179
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx153
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx155
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx157
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx143
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx145
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx147
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx101
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx103
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx083
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx085
+references:
+  - ref: SBPY181
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/01/15/21/10/SBPY181/SBPY181.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpy181
+    price: { amount: 49500, currency: JPY, year: 2026 }
+    caseSize: 42.2
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "V175"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBPY183
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/01/15/21/10/SBPY183/SBPY183.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpy183
+    price: { amount: 49500, currency: JPY, year: 2026 }
+    caseSize: 42.2
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "V175"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBPY185
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/01/15/21/10/SBPY185/SBPY185.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpy185
+    price: { amount: 49500, currency: JPY, year: 2026 }
+    caseSize: 42.2
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "V175"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBPY187
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/01/15/21/10/SBPY187/SBPY187.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpy187
+    price: { amount: 55000, currency: JPY, year: 2026 }
+    caseSize: 42.2
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "V175"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBPY179
+    name: "S Series 2025 Raise the Future Special Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/12/06/21/14/SBPY179/SBPY179.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpy179
+    price: { amount: 49500, currency: JPY, year: 2026 }
+    caseSize: 42.2
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "V175"
+    movementType: quartz
+    complications: [date, chronograph]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBPX153
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/09/18/21/10/SBPX153/SBPX153.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx153
+    price: { amount: 35200, currency: JPY, year: 2026 }
+    caseSize: 38.7
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "V157"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBPX155
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/09/18/21/10/SBPX155/SBPX155.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx155
+    price: { amount: 35200, currency: JPY, year: 2026 }
+    caseSize: 38.7
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "V157"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBPX157
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/09/18/21/10/SBPX157/SBPX157.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx157
+    price: { amount: 37400, currency: JPY, year: 2026 }
+    caseSize: 38.7
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "V157"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "Cream" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SBPX143
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/08/20/11/40/SBPX143/SBPX143.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx143
+    price: { amount: 35200, currency: JPY, year: 2026 }
+    caseSize: 38.7
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "V157"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBPX145
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/08/20/11/40/SBPX145/SBPX145.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx145
+    price: { amount: 35200, currency: JPY, year: 2026 }
+    caseSize: 38.7
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "V157"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBPX147
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/08/20/11/40/SBPX147/SBPX147.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx147
+    price: { amount: 35200, currency: JPY, year: 2026 }
+    caseSize: 38.7
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "V157"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBPX101
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/13/34/SBPX101/SBPX101.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx101
+    price: { amount: 40700, currency: JPY, year: 2026 }
+    caseSize: 39.5
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "V157"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBPX103
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/13/34/SBPX103/SBPX103.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx103
+    price: { amount: 40700, currency: JPY, year: 2026 }
+    caseSize: 39.5
+    gender: men
+    metals: [titanium]
+    crystal: sapphire
+    movement: "V157"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBPX083
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/13/33/SBPX083/SBPX083.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx083
+    price: { amount: 29700, currency: JPY, year: 2026 }
+    caseSize: 37.4
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "V158"
+    movementType: quartz
+    complications: [date, day]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SBPX085
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/13/33/SBPX085/SBPX085.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/sbpx085
+    price: { amount: 30800, currency: JPY, year: 2026 }
+    caseSize: 37.4
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "V158"
+    movementType: quartz
+    complications: [date, day]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]

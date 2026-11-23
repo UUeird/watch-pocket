@@ -1,0 +1,67 @@
+name: "Exceline Radio-Sync Solar"
+line: seiko/dolce-exceline
+style: dress
+website: https://www.seikowatches.com/jp-ja/products/dolceandexceline/ladies-radiosyncsolar
+sources:
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/ladies-radiosyncsolar
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw083
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw085
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw007
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw008
+references:
+  - ref: SWCW083
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/10/SWCW083/SWCW083.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw083
+    price: { amount: 266200, currency: JPY, year: 2026 }
+    caseSize: 25.8
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B22"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWCW085
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/11/SWCW085/SWCW085.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw085
+    price: { amount: 275000, currency: JPY, year: 2026 }
+    caseSize: 25.8
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B22"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWCW007
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/06/SWCW007/SWCW007.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw007
+    price: { amount: 199650, currency: JPY, year: 2026 }
+    caseSize: 25.8
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B22"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWCW008
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/06/SWCW008/SWCW008.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swcw008
+    price: { amount: 199650, currency: JPY, year: 2026 }
+    caseSize: 25.8
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B22"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]

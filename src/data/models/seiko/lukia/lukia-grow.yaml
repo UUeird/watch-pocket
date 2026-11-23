@@ -1,0 +1,487 @@
+name: "LUKIA Grow"
+line: seiko/lukia
+style: everyday
+website: https://www.seikowatches.com/jp-ja/products/lukia/lukiagrow
+sources:
+  - https://www.seikowatches.com/jp-ja/products/lukia/lukiagrow
+  - https://www.seikowatches.com/jp-ja/products/lukia/hea006j
+  - https://www.seikowatches.com/jp-ja/products/lukia/hea005j
+  - https://www.seikowatches.com/jp-ja/products/lukia/hee004j
+  - https://www.seikowatches.com/jp-ja/products/lukia/hee005j
+  - https://www.seikowatches.com/jp-ja/products/lukia/hee006j
+  - https://www.seikowatches.com/jp-ja/products/lukia/hee007j
+  - https://www.seikowatches.com/jp-ja/products/lukia/heg001j
+  - https://www.seikowatches.com/jp-ja/products/lukia/heg002j
+  - https://www.seikowatches.com/jp-ja/products/lukia/heg003j
+  - https://www.seikowatches.com/jp-ja/products/lukia/heg004j
+  - https://www.seikowatches.com/jp-ja/products/lukia/hea001j
+  - https://www.seikowatches.com/jp-ja/products/lukia/hea002j
+  - https://www.seikowatches.com/jp-ja/products/lukia/hea003j
+  - https://www.seikowatches.com/jp-ja/products/lukia/hea004j
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssvw239
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssqw096
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssqw098
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssqw091
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssqw092
+  - https://www.seikowatches.com/jp-ja/products/lukia/sswa001
+  - https://www.seikowatches.com/jp-ja/products/lukia/sswa002
+  - https://www.seikowatches.com/jp-ja/products/lukia/sswa006
+  - https://www.seikowatches.com/jp-ja/products/lukia/sswa008
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssqw086
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssqw081
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssqw082
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssvw230
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssqw076
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssvw209
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssvw210
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssvw212
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssqw071
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssqw072
+references:
+  - ref: HEA006J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/08/13/21/04/HEA006J/HEA006J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/hea006j
+    price: { amount: 75900, currency: JPY, year: 2026 }
+    caseSize: 28.6
+    crystal: sapphire
+    movement: "2R05"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]
+  - ref: HEA005J
+    name: "Made With Liberty Fabric Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/08/12/21/07/HEA005J/HEA005J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/hea005j
+    price: { amount: 102300, currency: JPY, year: 2026 }
+    caseSize: 28.6
+    crystal: sapphire
+    movement: "2R05"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HEE004J
+    name: "Seiko 145th Anniversary Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/07/17/21/08/HEE004J/HEE004J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/hee004j
+    price: { amount: 130900, currency: JPY, year: 2026 }
+    caseSize: 27.9
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: HEE005J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/08/06/21/06/HEE005J/HEE005J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/hee005j
+    price: { amount: 103400, currency: JPY, year: 2026 }
+    caseSize: 24.6
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HEE006J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/08/06/21/06/HEE006J/HEE006J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/hee006j
+    price: { amount: 103400, currency: JPY, year: 2026 }
+    caseSize: 24.6
+    metals: [titanium]
+    caseColors: [{ color: gold }]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HEE007J
+    name: "Made With Liberty Fabric Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/08/07/21/09/HEE007J/HEE007J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/hee007j
+    price: { amount: 141900, currency: JPY, year: 2026 }
+    caseSize: 24.6
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HEG001J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/08/12/21/07/HEG001J/HEG001J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/heg001j
+    price: { amount: 63800, currency: JPY, year: 2026 }
+    caseSize: 20
+    metals: [steel]
+    crystal: sapphire
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HEG002J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/08/12/21/07/HEG002J/HEG002J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/heg002j
+    price: { amount: 67100, currency: JPY, year: 2026 }
+    caseSize: 20
+    metals: [steel]
+    crystal: sapphire
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HEG003J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/08/12/21/07/HEG003J/HEG003J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/heg003j
+    price: { amount: 67100, currency: JPY, year: 2026 }
+    caseSize: 20
+    metals: [steel]
+    crystal: sapphire
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: HEG004J
+    name: "Made With Liberty Fabric Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/08/12/21/07/HEG004J/HEG004J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/heg004j
+    price: { amount: 102300, currency: JPY, year: 2026 }
+    caseSize: 20
+    metals: [steel]
+    crystal: sapphire
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HEA001J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/04/24/21/10/HEA001J/HEA001J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/hea001j
+    price: { amount: 72600, currency: JPY, year: 2026 }
+    caseSize: 28.6
+    metals: [steel]
+    crystal: sapphire
+    movement: "2R05"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: HEA002J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/04/24/21/10/HEA002J/HEA002J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/hea002j
+    price: { amount: 75900, currency: JPY, year: 2026 }
+    caseSize: 28.6
+    metals: [steel]
+    crystal: sapphire
+    movement: "2R05"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: HEA003J
+    name: "LUKIA Grow with DAICHI MIURA Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/04/24/21/10/HEA003J/HEA003J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/hea003j
+    price: { amount: 96800, currency: JPY, year: 2026 }
+    caseSize: 28.6
+    metals: [steel]
+    caseColors: [{ color: rose-gold }]
+    crystal: sapphire
+    movement: "2R05"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HEA004J
+    name: "LUKIA Grow with DAICHI MIURA Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/04/24/21/10/HEA004J/HEA004J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/hea004j
+    price: { amount: 96800, currency: JPY, year: 2026 }
+    caseSize: 28.6
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "2R05"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSVW239
+    name: "2025 Holiday Season Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/08/05/21/10/SSVW239/SSVW239.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssvw239
+    price: { amount: 83600, currency: JPY, year: 2026 }
+    caseSize: 24.6
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSQW096
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/08/05/21/10/SSQW096/SSQW096.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssqw096
+    price: { amount: 103400, currency: JPY, year: 2026 }
+    caseSize: 28
+    metals: [titanium]
+    caseColors: [{ color: rose-gold }]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSQW098
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/08/05/21/10/SSQW098/SSQW098.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssqw098
+    price: { amount: 103400, currency: JPY, year: 2026 }
+    caseSize: 28
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSQW091
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/12/18/21/15/SSQW091/SSQW091.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssqw091
+    price: { amount: 101200, currency: JPY, year: 2026 }
+    caseSize: 28
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSQW092
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/12/18/21/15/SSQW092/SSQW092.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssqw092
+    price: { amount: 104500, currency: JPY, year: 2026 }
+    caseSize: 28
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSWA001
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/07/16/21/09/SSWA001/SSWA001.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/sswa001
+    price: { amount: 92400, currency: JPY, year: 2026 }
+    caseSize: 23.1
+    metals: [steel]
+    crystal: sapphire
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSWA002
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/07/16/21/09/SSWA002/SSWA002.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/sswa002
+    price: { amount: 96800, currency: JPY, year: 2026 }
+    caseSize: 23.1
+    metals: [steel]
+    crystal: sapphire
+    movement: "4N30"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSWA006
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/07/03/21/12/SSWA006/SSWA006.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/sswa006
+    price: { amount: 67100, currency: JPY, year: 2026 }
+    caseSize: 22.8
+    metals: [steel]
+    crystal: sapphire
+    movement: "4N31"
+    movementType: quartz
+    complications: []
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSWA008
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/07/03/21/12/SSWA008/SSWA008.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/sswa008
+    price: { amount: 67100, currency: JPY, year: 2026 }
+    caseSize: 22.8
+    metals: [steel]
+    caseColors: [{ color: rose-gold }]
+    crystal: sapphire
+    movement: "4N31"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSQW086
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/07/16/21/09/SSQW086/SSQW086.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssqw086
+    price: { amount: 104500, currency: JPY, year: 2026 }
+    caseSize: 27.9
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSQW081
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/01/31/21/10/SSQW081/SSQW081.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssqw081
+    price: { amount: 101200, currency: JPY, year: 2026 }
+    caseSize: 27.9
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSQW082
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/01/31/21/11/SSQW082/SSQW082.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssqw082
+    price: { amount: 104500, currency: JPY, year: 2026 }
+    caseSize: 27.9
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSVW230
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/01/31/21/11/SSVW230/SSVW230.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssvw230
+    price: { amount: 79200, currency: JPY, year: 2026 }
+    caseSize: 24.6
+    metals: [steel]
+    caseColors: [{ color: rose-gold }]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSQW076
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/07/06/11/48/SSQW076/SSQW076.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssqw076
+    price: { amount: 101200, currency: JPY, year: 2026 }
+    caseSize: 24.6
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSVW209
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/04/04/11/45/SSVW209/SSVW209.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssvw209
+    price: { amount: 74800, currency: JPY, year: 2026 }
+    caseSize: 23.9
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSVW210
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/04/04/11/45/SSVW210/SSVW210.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssvw210
+    price: { amount: 78100, currency: JPY, year: 2026 }
+    caseSize: 23.9
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSVW212
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/04/04/11/45/SSVW212/SSVW212.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssvw212
+    price: { amount: 78100, currency: JPY, year: 2026 }
+    caseSize: 23.9
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SSQW071
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/01/16/11/42/SSQW071/SSQW071.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssqw071
+    price: { amount: 100100, currency: JPY, year: 2026 }
+    caseSize: 24.6
+    metals: [titanium]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSQW072
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/01/16/11/42/SSQW072/SSQW072.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssqw072
+    price: { amount: 101200, currency: JPY, year: 2026 }
+    caseSize: 24.6
+    metals: [titanium]
+    caseColors: [{ color: rose-gold }]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]

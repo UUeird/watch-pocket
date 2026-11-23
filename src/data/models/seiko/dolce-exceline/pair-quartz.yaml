@@ -1,0 +1,151 @@
+name: "Pair Quartz"
+line: seiko/dolce-exceline
+style: dress
+website: https://www.seikowatches.com/jp-ja/products/dolceandexceline/pair-quartz
+sources:
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/pair-quartz
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sacm171
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swdl209
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sacm150
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sacm152
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swdl160
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swdl162
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sack015
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swdl147
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/sacl009
+  - https://www.seikowatches.com/jp-ja/products/dolceandexceline/swdl099
+references:
+  - ref: SACM171
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/24/SACM171/SACM171.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sacm171
+    price: { amount: 70400, currency: JPY, year: 2026 }
+    caseSize: 33.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "8J41"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SWDL209
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/26/SWDL209/SWDL209.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swdl209
+    price: { amount: 70400, currency: JPY, year: 2026 }
+    caseSize: 23.9
+    metals: [steel]
+    crystal: sapphire
+    movement: "4J41"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SACM150
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/23/SACM150/SACM150.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sacm150
+    price: { amount: 70400, currency: JPY, year: 2026 }
+    caseSize: 33.5
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: sapphire
+    movement: "8J41"
+    movementType: quartz
+    complications: []
+    dials: [{ color: gold }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SACM152
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/24/SACM152/SACM152.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sacm152
+    price: { amount: 77000, currency: JPY, year: 2026 }
+    caseSize: 33.5
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: sapphire
+    movement: "8J41"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SWDL160
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/25/SWDL160/SWDL160.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swdl160
+    price: { amount: 70400, currency: JPY, year: 2026 }
+    caseSize: 23.9
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: sapphire
+    movement: "4J41"
+    movementType: quartz
+    complications: []
+    dials: [{ color: gold }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SWDL162
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/25/SWDL162/SWDL162.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swdl162
+    price: { amount: 77000, currency: JPY, year: 2026 }
+    caseSize: 23.9
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: sapphire
+    movement: "4J41"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SACK015
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/22/SACK015/SACK015.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sack015
+    price: { amount: 84700, currency: JPY, year: 2026 }
+    caseSize: 33.2
+    metals: [steel]
+    crystal: sapphire
+    movement: "4J40"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWDL147
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/25/SWDL147/SWDL147.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swdl147
+    price: { amount: 84150, currency: JPY, year: 2026 }
+    caseSize: 25.7
+    metals: [steel]
+    crystal: sapphire
+    movement: "4J40"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SACL009
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/09/23/SACL009/SACL009.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/sacl009
+    price: { amount: 77000, currency: JPY, year: 2026 }
+    caseSize: 33.3
+    metals: [steel]
+    crystal: sapphire
+    movement: "8J41"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SWDL099
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/02/19/19/24/SWDL099/SWDL099.png
+      page: https://www.seikowatches.com/jp-ja/products/dolceandexceline/swdl099
+    price: { amount: 77000, currency: JPY, year: 2026 }
+    caseSize: 24.3
+    metals: [steel]
+    crystal: sapphire
+    movement: "4J41"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]

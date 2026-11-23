@@ -1,0 +1,153 @@
+name: "Essential Collection"
+line: seiko/lukia
+style: everyday
+website: https://www.seikowatches.com/jp-ja/products/lukia/essential-collection
+sources:
+  - https://www.seikowatches.com/jp-ja/products/lukia/essential-collection
+  - https://www.seikowatches.com/jp-ja/products/lukia/hec001j
+  - https://www.seikowatches.com/jp-ja/products/lukia/hee001j
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssvv090
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssvm060
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssvm062
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssvv081
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssvv082
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssvv084
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssvr139
+  - https://www.seikowatches.com/jp-ja/products/lukia/ssvr141
+references:
+  - ref: HEC001J
+    name: "Pair Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/18/21/16/HEC001J/HEC001J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/hec001j
+    price: { amount: 80300, currency: JPY, year: 2026 }
+    caseSize: 37
+    metals: [steel]
+    crystal: sapphire
+    movement: "7B62"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: HEE001J
+    name: "Pair Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/18/21/16/HEE001J/HEE001J.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/hee001j
+    price: { amount: 80300, currency: JPY, year: 2026 }
+    caseSize: 27.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B32"
+    movementType: quartz
+    complications: [date, perpetual-calendar]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSVV090
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/12/18/21/13/SSVV090/SSVV090.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssvv090
+    price: { amount: 79200, currency: JPY, year: 2026 }
+    caseSize: 27.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B35"
+    movementType: quartz
+    complications: [date, world-time, perpetual-calendar]
+    dials: [{ color: brown }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSVM060
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/08/20/21/14/SSVM060/SSVM060.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssvm060
+    price: { amount: 60500, currency: JPY, year: 2026 }
+    caseSize: 34.6
+    metals: [steel]
+    crystal: sapphire
+    movement: "4R38"
+    movementType: mechanical
+    winding: automatic
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSVM062
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2024/08/20/21/14/SSVM062/SSVM062.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssvm062
+    price: { amount: 60500, currency: JPY, year: 2026 }
+    caseSize: 34.6
+    metals: [steel]
+    caseColors: [{ color: rose-gold }]
+    crystal: sapphire
+    movement: "4R38"
+    movementType: mechanical
+    winding: automatic
+    complications: []
+    dials: [{ color: brown }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSVV081
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/04/04/11/44/SSVV081/SSVV081.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssvv081
+    price: { amount: 75900, currency: JPY, year: 2026 }
+    caseSize: 27.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B35"
+    movementType: quartz
+    complications: [date, world-time, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSVV082
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/04/04/11/44/SSVV082/SSVV082.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssvv082
+    price: { amount: 79200, currency: JPY, year: 2026 }
+    caseSize: 27.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B35"
+    movementType: quartz
+    complications: [date, world-time, perpetual-calendar]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSVV084
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2023/04/04/11/44/SSVV084/SSVV084.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssvv084
+    price: { amount: 79200, currency: JPY, year: 2026 }
+    caseSize: 27.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "1B35"
+    movementType: quartz
+    complications: [date, world-time, perpetual-calendar]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSVR139
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/08/25/11/41/SSVR139/SSVR139.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssvr139
+    price: { amount: 59400, currency: JPY, year: 2026 }
+    caseSize: 23.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "V117"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSVR141
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2022/08/25/11/41/SSVR141/SSVR141.png
+      page: https://www.seikowatches.com/jp-ja/products/lukia/ssvr141
+    price: { amount: 59400, currency: JPY, year: 2026 }
+    caseSize: 23.5
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: sapphire
+    movement: "V117"
+    movementType: quartz
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

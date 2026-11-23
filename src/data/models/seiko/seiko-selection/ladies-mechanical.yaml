@@ -1,0 +1,88 @@
+name: "Ladies' Mechanical"
+line: seiko/seiko-selection
+style: everyday
+website: https://www.seikowatches.com/jp-ja/products/seikoselection/ladies-mechanical
+sources:
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/ladies-mechanical
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfb007j
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfb008j
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfb009j
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/hfb010j
+  - https://www.seikowatches.com/jp-ja/products/seikoselection/ssde025
+references:
+  - ref: HFB007J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/24/21/13/HFB007J/HFB007J.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfb007j
+    price: { amount: 40700, currency: JPY, year: 2026 }
+    caseSize: 33.7
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "4R38"
+    movementType: mechanical
+    winding: automatic
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: HFB008J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/11/21/07/HFB008J/HFB008J.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfb008j
+    price: { amount: 40700, currency: JPY, year: 2026 }
+    caseSize: 33.7
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "4R38"
+    movementType: mechanical
+    winding: automatic
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: HFB009J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/03/24/21/13/HFB009J/HFB009J.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfb009j
+    price: { amount: 42900, currency: JPY, year: 2026 }
+    caseSize: 33.7
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "4R38"
+    movementType: mechanical
+    winding: automatic
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: HFB010J
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2026/04/01/21/07/HFB010J/HFB010J.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/hfb010j
+    price: { amount: 42900, currency: JPY, year: 2026 }
+    caseSize: 33.7
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "4R38"
+    movementType: mechanical
+    winding: automatic
+    complications: []
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet }]
+  - ref: SSDE025
+    name: "Spring 2026 Limited Edition"
+    officialPhoto:
+      src: https://www.seikowatches.com/jp-ja/-/media/Images/Product--Image/All/Seiko/2025/12/29/21/09/SSDE025/SSDE025.png
+      page: https://www.seikowatches.com/jp-ja/products/seikoselection/ssde025
+    price: { amount: 38500, currency: JPY, year: 2026 }
+    caseSize: 34.2
+    gender: women
+    metals: [steel]
+    crystal: mineral
+    movement: "4R38"
+    movementType: mechanical
+    winding: automatic
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
