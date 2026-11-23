@@ -5,6 +5,7 @@ import Base from '../../../../../layouts/Base.astro';
 import {
   describeBezel,
   describeMovement,
+  genderLabel,
   describeComplications,
   describeBracelet,
   describeDial,
@@ -25,13 +26,14 @@ export async function getStaticPaths() {
 }
 
 const { reference, model, line, brand } = Astro.props;
-const { ref, periods, price, caseSize, metals, caseColors, modelNumbers, bezel, crystal, complications, dials, bracelets } = reference;
+const { ref, periods, price, caseSize, gender, metals, caseColors, modelNumbers, bezel, crystal, complications, dials, bracelets } = reference;
 const discontinued = periods.at(-1)?.to !== undefined;
 // Each fact with whether it reads from a fixed vocabulary (`rose-gold`), which is capitalized for display.
 const facts: [string, string | undefined, boolean?][] = [
   ['On sale', formatPeriods(periods) || 'Not recorded'],
   ['List price', price && `${price.currency} ${price.amount.toLocaleString('en-US')} (${price.year})`],
   ['Case size', caseSize ? `${caseSize} mm` : undefined],
+  ['Gender', gender && genderLabel(gender)],
   ['Metals', metals.map(label).join(', '), true],
   ['Case colors', caseColors.map(describeDial).join(', '), true],
   ['Bezel', describeBezel(bezel), true],

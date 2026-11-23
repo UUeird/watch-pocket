@@ -96,6 +96,11 @@ export const sharedMovementType = (references: Reference[]) => {
   const [only] = types;
   return types.size === 1 ? only : undefined;
 };
+// How a reference's `gender` reads: "Men's", "Women's" or "Unisex".
+export const genderLabel = (gender: 'men' | 'women' | 'unisex') => ({ men: "Men's", women: "Women's", unisex: 'Unisex' })[gender];
+// The gender filter values a reference matches: a unisex reference shows under men's and women's as well.
+export const genderMatches = (gender: 'men' | 'women' | 'unisex' | undefined) =>
+  gender === 'unisex' ? ['unisex', 'men', 'women'] : gender ? [gender] : [];
 export const describeBracelet = (bracelet: Reference['bracelets'][number]) => bracelet.name ?? label(bracelet.type);
 
 // What tells a reference apart from the model's others (`siblings`, itself included): its own `name`, or else its dial,
