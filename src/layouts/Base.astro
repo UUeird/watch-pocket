@@ -18,11 +18,18 @@ const sections = [
   // The Docs stay off the published site (see astro.config.mjs), so they're only linked where they're built.
   ...(import.meta.env.SHOW_DOCS ? [{ path: '/docs/', name: 'Docs' }] : []),
 ];
-// The section a page belongs to is marked in the nav: the page itself, or "true" for a page within it.
+// The section a page belongs to is marked in the nav: the page itself, or "true" for a page within it. Lines, models and
+// references have their pages under their brand's (/brands/<brand>/<line>/<model>/<ref>/), so those belong to the
+// section for what they are, by depth, not to Brands.
+const here = Astro.url.pathname.replace(/\/?$/, '/');
+const underBrands = ['/brands/', '/lines/', '/models/', '/references/'];
+const depth = here.startsWith(href('/brands/')) ? here.slice(href('/brands/').length).split('/').filter(Boolean).length : 0;
+const section = depth > 0 ? underBrands[Math.min(depth, underBrands.length) - 1] : undefined;
 const current = (path: string) => {
-  const here = Astro.url.pathname.replace(/\/?$/, '/');
   const target = href(path);
-  return here === target ? 'page' : here.startsWith(target) ? 'true' : undefined;
+  if (here === target) return 'page';
+  if (section) return path === section ? 'true' : undefined;
+  return here.startsWith(target) ? 'true' : undefined;
 };
 ---
 
