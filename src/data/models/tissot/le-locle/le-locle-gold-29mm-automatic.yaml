@@ -16,6 +16,7 @@ references:
     bezel: { material: yellow-gold }
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -30,6 +31,7 @@ references:
     bezel: { material: yellow-gold }
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]

@@ -25,6 +25,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80.111"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -38,6 +39,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80.111"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -51,6 +53,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80.111"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -64,6 +67,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80.111"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
@@ -78,6 +82,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80.111"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
@@ -91,6 +96,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80.111"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -105,6 +111,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80.111"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Two-tone" }]
@@ -119,6 +126,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80.111"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Two-tone" }]
@@ -134,6 +142,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80.111"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Two-tone" }]
@@ -148,6 +157,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80.111"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Rose gold PVD" }]
@@ -162,6 +172,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80.111"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
@@ -177,6 +188,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80.111"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]

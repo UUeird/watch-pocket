@@ -19,6 +19,7 @@ references:
     crystal: sapphire
     movement: "F6N43"
     movementType: mechanical
+    winding: automatic
     complications: [date, power-reserve]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -33,6 +34,7 @@ references:
     crystal: sapphire
     movement: "F6N43"
     movementType: mechanical
+    winding: automatic
     complications: [date, power-reserve]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -47,6 +49,7 @@ references:
     crystal: sapphire
     movement: "F6N43"
     movementType: mechanical
+    winding: automatic
     complications: [date, power-reserve]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -61,6 +64,7 @@ references:
     crystal: sapphire
     movement: "F6N43"
     movementType: mechanical
+    winding: automatic
     complications: [date, power-reserve]
     dials: [{ color: gray }]
     bracelets: [{ type: bracelet }]
@@ -75,6 +79,7 @@ references:
     crystal: sapphire
     movement: "F6N43"
     movementType: mechanical
+    winding: automatic
     complications: [date, power-reserve]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]

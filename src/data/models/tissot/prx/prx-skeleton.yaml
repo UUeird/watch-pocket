@@ -15,6 +15,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: manual
     complications: []
     dials: [{ color: red, name: "Burgundy" }]
     bracelets: [{ type: rubber-strap }]

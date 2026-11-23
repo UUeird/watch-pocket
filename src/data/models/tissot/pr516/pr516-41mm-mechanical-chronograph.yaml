@@ -1,4 +1,4 @@
-name: "PR516 41mm Mechanical"
+name: "PR516 41mm Mechanical Chronograph"
 line: tissot/pr516
 style: chronograph
 theme: motor-racing
@@ -15,6 +15,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
-    complications: []
+    winding: manual
+    complications: [chronograph]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]

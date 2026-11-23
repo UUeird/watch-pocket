@@ -20,6 +20,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: gray, name: "Grey gradient" }]
     bracelets: [{ type: bracelet }]
@@ -35,6 +36,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue, name: "Blue gradient" }]
     bracelets: [{ type: rubber-strap }]
@@ -50,6 +52,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: orange }]
     bracelets: [{ type: rubber-strap }]
@@ -65,6 +68,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue, name: "Blue gradient" }]
     bracelets: [{ type: rubber-strap }]
@@ -81,6 +85,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: gray, name: "Grey gradient" }]
     bracelets: [{ type: rubber-strap }]

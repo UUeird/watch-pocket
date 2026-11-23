@@ -30,6 +30,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -45,6 +46,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -60,6 +62,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -73,6 +76,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -86,6 +90,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -99,6 +104,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -112,6 +118,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
@@ -127,6 +134,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: silver }]
   - ref: T006.407.16.043.00
@@ -139,6 +147,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
@@ -152,6 +161,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -166,6 +176,7 @@ references:
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -180,6 +191,7 @@ references:
     caseColors: [{ color: gold, name: "Yellow gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -196,6 +208,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -210,6 +223,7 @@ references:
     caseColors: [{ color: gold, name: "Yellow gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -224,6 +238,7 @@ references:
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -238,6 +253,7 @@ references:
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -251,6 +267,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]

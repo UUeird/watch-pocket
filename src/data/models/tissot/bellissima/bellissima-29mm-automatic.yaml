@@ -16,6 +16,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -30,6 +31,7 @@ references:
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -43,6 +45,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]

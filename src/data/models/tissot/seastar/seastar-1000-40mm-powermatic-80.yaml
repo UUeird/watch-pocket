@@ -19,6 +19,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -33,6 +34,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -47,6 +49,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
   - ref: T120.807.22.051.00
@@ -61,6 +64,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -76,6 +80,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]

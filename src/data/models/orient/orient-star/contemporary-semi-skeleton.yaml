@@ -16,6 +16,7 @@ references:
     crystal: sapphire
     movement: "F6R42"
     movementType: mechanical
+    winding: automatic
     complications: [power-reserve]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -30,6 +31,7 @@ references:
     crystal: sapphire
     movement: "F6R42"
     movementType: mechanical
+    winding: automatic
     complications: [power-reserve]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]

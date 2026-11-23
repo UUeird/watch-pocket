@@ -21,6 +21,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -35,6 +36,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -49,6 +51,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
@@ -64,6 +67,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -79,6 +83,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -93,6 +98,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
@@ -107,6 +113,7 @@ references:
     crystal: sapphire
     movement: "Powermatic 80"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: white, name: "Ivory" }]
     bracelets: [{ type: leather-strap }]

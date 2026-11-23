@@ -23,6 +23,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -36,6 +37,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -49,6 +51,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -62,6 +65,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
@@ -76,6 +80,7 @@ references:
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet }]
@@ -90,6 +95,7 @@ references:
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -104,6 +110,7 @@ references:
     caseColors: [{ color: gold, name: "Yellow gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -118,6 +125,7 @@ references:
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: white, name: "White mother-of-pearl" }]
     bracelets: [{ type: bracelet }]
@@ -132,6 +140,7 @@ references:
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]

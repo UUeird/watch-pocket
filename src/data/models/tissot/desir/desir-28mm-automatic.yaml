@@ -18,6 +18,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: white, name: "White mother-of-pearl" }]
     bracelets: [{ type: bracelet }]
@@ -32,6 +33,7 @@ references:
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: white, name: "White mother-of-pearl" }]
     bracelets: [{ type: bracelet }]
@@ -45,6 +47,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue, name: "Blue mother-of-pearl" }]
     bracelets: [{ type: leather-strap }]
@@ -59,6 +62,7 @@ references:
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: pink, name: "Pink mother-of-pearl" }]
     bracelets: [{ type: leather-strap }]
@@ -73,6 +77,7 @@ references:
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: white, name: "Mother-of-pearl" }]
     bracelets: [{ type: leather-strap }]

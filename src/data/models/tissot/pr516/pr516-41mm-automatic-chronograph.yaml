@@ -15,6 +15,7 @@ references:
     metals: [steel]
     crystal: sapphire
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
