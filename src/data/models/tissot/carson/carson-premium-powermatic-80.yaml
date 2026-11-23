@@ -1,0 +1,146 @@
+name: "Carson Premium Powermatic 80"
+line: tissot/carson
+style: dress
+sources:
+  - https://web.archive.org/web/20210723201435/https://www.tissotwatches.com/en-us/t1224071103100.html
+  - https://web.archive.org/web/20200803204524/https://www.tissotwatches.com/en-us/t1224071103300.html
+  - https://web.archive.org/web/20210729030127/https://www.tissotwatches.com/en-us/t1224071105100.html
+  - https://web.archive.org/web/20230107094028/https://www.tissotwatches.com/en-us/t1224071603100.html
+  - https://web.archive.org/web/20220618180210/https://www.tissotwatches.com/en-us/t1224071604300.html
+  - https://web.archive.org/web/20210802003435/https://www.tissotwatches.com/en-us/t1224071605100.html
+  - https://web.archive.org/web/20201127082406/https://www.tissotwatches.com/en-us/t1224072203100.html
+  - https://web.archive.org/web/20210802152240/https://www.tissotwatches.com/en-us/t1224072203101.html
+  - https://web.archive.org/web/20210618214454/https://www.tissotwatches.com/en-us/t1224072203300.html
+  - https://web.archive.org/web/20210802162722/https://www.tissotwatches.com/en-us/t1224073303100.html
+  - https://web.archive.org/web/20220128193642/https://www.tissotwatches.com/en-us/t1224073603100.html
+  - https://web.archive.org/web/20220118203515/https://www.tissotwatches.com/en-us/t1224073603300.html
+references:
+  - ref: T122.407.11.031.00
+    price: { amount: 650, currency: USD, year: 2021 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80.111"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T122.407.11.033.00
+    name: "Roman numerals"
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80.111"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T122.407.11.051.00
+    price: { amount: 650, currency: USD, year: 2021 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80.111"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T122.407.16.031.00
+    price: { amount: 595, currency: USD, year: 2023 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80.111"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T122.407.16.043.00
+    name: "Roman numerals"
+    price: { amount: 595, currency: USD, year: 2022 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80.111"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T122.407.16.051.00
+    price: { amount: 595, currency: USD, year: 2021 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80.111"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T122.407.22.031.00
+    price: { amount: 750, currency: USD, year: 2020 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Two-tone, yellow gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80.111"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Two-tone" }]
+  - ref: T122.407.22.031.01
+    price: { amount: 750, currency: USD, year: 2021 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Two-tone, rose gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80.111"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Two-tone" }]
+  - ref: T122.407.22.033.00
+    name: "Roman numerals"
+    price: { amount: 750, currency: USD, year: 2021 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Two-tone, rose gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80.111"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Two-tone" }]
+  - ref: T122.407.33.031.00
+    price: { amount: 775, currency: USD, year: 2021 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80.111"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Rose gold PVD" }]
+  - ref: T122.407.36.031.00
+    price: { amount: 695, currency: USD, year: 2022 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80.111"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T122.407.36.033.00
+    name: "Roman numerals"
+    price: { amount: 695, currency: USD, year: 2022 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80.111"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]

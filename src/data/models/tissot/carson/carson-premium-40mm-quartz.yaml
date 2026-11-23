@@ -1,0 +1,19 @@
+name: "Carson Premium 40mm Quartz"
+line: tissot/carson
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T1224231103300.html
+references:
+  - ref: T122.423.11.033.00
+    website: https://www.tissotwatches.com/en-us/T1224231103300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwd400a062/product-pictures/b86103e9-fa72-47f3-91ee-94c19a05b33e_T122-423-11-033-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1224231103300.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [moonphase]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
