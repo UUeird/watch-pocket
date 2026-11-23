@@ -12,6 +12,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T9322074103600.html
     price: { amount: 1800, currency: USD, year: 2026 }
     caseSize: 29
+    gender: women
     metals: [steel, yellow-gold]
     bezel: { material: yellow-gold }
     crystal: sapphire
@@ -27,6 +28,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T9322074604600.html
     price: { amount: 1800, currency: USD, year: 2026 }
     caseSize: 29
+    gender: women
     metals: [steel, yellow-gold]
     bezel: { material: yellow-gold }
     crystal: sapphire

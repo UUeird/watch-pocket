@@ -16,6 +16,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1418171704100.html
     price: { amount: 650, currency: USD, year: 2026 }
     caseSize: 38
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -29,6 +30,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1418171705100.html
     price: { amount: 650, currency: USD, year: 2026 }
     caseSize: 38
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -42,6 +44,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1418173705100.html
     price: { amount: 650, currency: USD, year: 2026 }
     caseSize: 38
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -55,6 +58,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1418173750100.html
     price: { amount: 675, currency: USD, year: 2026 }
     caseSize: 38
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -68,6 +72,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1418179711100.html
     price: { amount: 815, currency: USD, year: 2026 }
     caseSize: 38
+    gender: men
     metals: [steel]
     bezel: { material: ceramic }
     crystal: sapphire

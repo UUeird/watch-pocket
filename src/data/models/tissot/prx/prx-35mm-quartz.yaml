@@ -19,6 +19,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372101101100.html
     price: { amount: 450, currency: USD, year: 2026 }
     caseSize: 35
+    gender: unisex
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -32,6 +33,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372101103100.html
     price: { amount: 450, currency: USD, year: 2026 }
     caseSize: 35
+    gender: unisex
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -45,6 +47,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372101104100.html
     price: { amount: 450, currency: USD, year: 2026 }
     caseSize: 35
+    gender: unisex
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -58,6 +61,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372101108100.html
     price: { amount: 450, currency: USD, year: 2026 }
     caseSize: 35
+    gender: unisex
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -71,6 +75,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372101109100.html
     price: { amount: 450, currency: USD, year: 2026 }
     caseSize: 35
+    gender: unisex
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -84,6 +89,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372101111100.html
     price: { amount: 450, currency: USD, year: 2026 }
     caseSize: 35
+    gender: women
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -97,6 +103,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372101135100.html
     price: { amount: 450, currency: USD, year: 2026 }
     caseSize: 35
+    gender: unisex
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -110,6 +117,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372103302100.html
     price: { amount: 575, currency: USD, year: 2026 }
     caseSize: 35
+    gender: unisex
     metals: [steel]
     caseColors: [{ color: gold, name: "Yellow gold PVD" }]
     crystal: sapphire

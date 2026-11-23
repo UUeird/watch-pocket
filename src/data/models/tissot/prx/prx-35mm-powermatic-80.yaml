@@ -16,6 +16,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372071104100.html
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 35
+    gender: unisex
     metals: [steel]
     crystal: sapphire
     movement: "Powermatic 80"
@@ -31,6 +32,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372071105100.html
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 35
+    gender: unisex
     metals: [steel]
     crystal: sapphire
     movement: "Powermatic 80"
@@ -46,6 +48,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372071109100.html
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 35
+    gender: unisex
     metals: [steel]
     crystal: sapphire
     movement: "Powermatic 80"
@@ -61,6 +64,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372071111100.html
     price: { amount: 875, currency: USD, year: 2026 }
     caseSize: 35
+    gender: women
     metals: [steel]
     crystal: sapphire
     movement: "Powermatic 80"
@@ -76,6 +80,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372071135100.html
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 35
+    gender: unisex
     metals: [steel]
     crystal: sapphire
     movement: "Powermatic 80"
@@ -91,6 +96,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1372073302100.html
     price: { amount: 950, currency: USD, year: 2026 }
     caseSize: 35
+    gender: unisex
     metals: [steel]
     caseColors: [{ color: gold, name: "Yellow gold PVD" }]
     crystal: sapphire

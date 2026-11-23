@@ -18,6 +18,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1564101104100.html
     price: { amount: 400, currency: USD, year: 2026 }
     caseSize: 40
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -31,6 +32,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1564101109100.html
     price: { amount: 400, currency: USD, year: 2026 }
     caseSize: 40
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -44,6 +46,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1564101135100.html
     price: { amount: 400, currency: USD, year: 2026 }
     caseSize: 40
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -57,6 +60,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1564102203100.html
     price: { amount: 450, currency: USD, year: 2026 }
     caseSize: 40
+    gender: men
     metals: [steel]
     caseColors: [{ color: gold, name: "Yellow gold PVD" }]
     crystal: sapphire
@@ -71,6 +75,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1564102204100.html
     price: { amount: 450, currency: USD, year: 2026 }
     caseSize: 40
+    gender: men
     metals: [steel]
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
@@ -85,6 +90,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1564102229101.html
     price: { amount: 450, currency: USD, year: 2026 }
     caseSize: 40
+    gender: men
     metals: [steel]
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
@@ -99,6 +105,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1564103305100.html
     price: { amount: 515, currency: USD, year: 2026 }
     caseSize: 40
+    gender: men
     metals: [steel]
     caseColors: [{ color: gold, name: "Yellow gold PVD" }]
     crystal: sapphire
@@ -113,6 +120,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1564103337100.html
     price: { amount: 515, currency: USD, year: 2026 }
     caseSize: 40
+    gender: men
     metals: [steel]
     caseColors: [{ color: gold, name: "Yellow gold PVD" }]
     crystal: sapphire

@@ -17,6 +17,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1260101101300.html
     price: { amount: 515, currency: USD, year: 2026 }
     caseSize: 26
+    gender: women
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -30,6 +31,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1260101113300.html
     price: { amount: 550, currency: USD, year: 2026 }
     caseSize: 26
+    gender: women
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -43,6 +45,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1260101601300.html
     price: { amount: 450, currency: USD, year: 2026 }
     caseSize: 26
+    gender: women
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -56,6 +59,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1260101601301.html
     price: { amount: 450, currency: USD, year: 2026 }
     caseSize: 26
+    gender: women
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -69,6 +73,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1260101611302.html
     price: { amount: 495, currency: USD, year: 2026 }
     caseSize: 26
+    gender: women
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -82,6 +87,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1260102201301.html
     price: { amount: 575, currency: USD, year: 2026 }
     caseSize: 26
+    gender: women
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -95,6 +101,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1260103601300.html
     price: { amount: 515, currency: USD, year: 2026 }
     caseSize: 26
+    gender: women
     metals: [steel]
     crystal: sapphire
     movementType: quartz

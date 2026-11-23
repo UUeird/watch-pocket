@@ -12,6 +12,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1222101103300.html
     price: { amount: 450, currency: USD, year: 2026 }
     caseSize: 30
+    gender: women
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -25,6 +26,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1222102203300.html
     price: { amount: 550, currency: USD, year: 2026 }
     caseSize: 30
+    gender: women
     metals: [steel]
     caseColors: [{ color: gold, name: "Yellow gold PVD" }]
     crystal: sapphire

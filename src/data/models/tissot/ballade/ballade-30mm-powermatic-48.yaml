@@ -14,6 +14,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1562081103300.html
     price: { amount: 1100, currency: USD, year: 2026 }
     caseSize: 30
+    gender: women
     metals: [steel]
     crystal: sapphire
     movement: "Powermatic 48"
@@ -29,6 +30,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1562081135300.html
     price: { amount: 1100, currency: USD, year: 2026 }
     caseSize: 30
+    gender: women
     metals: [steel]
     crystal: sapphire
     movement: "Powermatic 48"
@@ -44,6 +46,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1562082203300.html
     price: { amount: 1225, currency: USD, year: 2026 }
     caseSize: 30
+    gender: women
     metals: [steel]
     caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
     crystal: sapphire
@@ -60,6 +63,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1562082203301.html
     price: { amount: 1225, currency: USD, year: 2026 }
     caseSize: 30
+    gender: women
     metals: [steel]
     caseColors: [{ color: gold, name: "Yellow gold PVD" }]
     crystal: sapphire

@@ -12,6 +12,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1374051737100.html
     price: { amount: 2075, currency: USD, year: 2026 }
     caseSize: 44
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: mechanical

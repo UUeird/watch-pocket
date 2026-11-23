@@ -12,6 +12,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1206071104100.html
     price: { amount: 1275, currency: USD, year: 2026 }
     caseSize: 46
+    gender: men
     metals: [steel]
     bezel: { material: ceramic }
     crystal: sapphire
@@ -28,6 +29,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1206071104101.html
     price: { amount: 1275, currency: USD, year: 2026 }
     caseSize: 46
+    gender: men
     metals: [steel]
     bezel: { material: ceramic }
     crystal: sapphire

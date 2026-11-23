@@ -15,6 +15,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1209071105100.html
     price: { amount: 1100, currency: USD, year: 2026 }
     caseSize: 44
+    gender: men
     metals: [steel]
     bezel: { material: ceramic }
     crystal: sapphire
@@ -31,6 +32,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1209071704100.html
     price: { amount: 1050, currency: USD, year: 2026 }
     caseSize: 44
+    gender: men
     metals: [steel]
     bezel: { material: ceramic }
     crystal: sapphire
@@ -47,6 +49,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1209071728100.html
     price: { amount: 1050, currency: USD, year: 2026 }
     caseSize: 44
+    gender: men
     metals: [steel]
     bezel: { material: ceramic }
     crystal: sapphire
@@ -63,6 +66,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1209073704100.html
     price: { amount: 1125, currency: USD, year: 2026 }
     caseSize: 44
+    gender: men
     metals: [steel]
     bezel: { material: ceramic }
     crystal: sapphire
@@ -79,6 +83,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1209073705100.html
     price: { amount: 1125, currency: USD, year: 2026 }
     caseSize: 44
+    gender: men
     metals: [steel]
     caseColors: [{ color: black, name: "Black PVD" }]
     bezel: { material: ceramic }

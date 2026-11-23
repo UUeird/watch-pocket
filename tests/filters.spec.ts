@@ -146,3 +146,28 @@ test.describe('Ownership groups filters', () => {
     await expect(cards(page).first()).toHaveAttribute('data-group', 'swatch-group');
   });
 });
+
+test.describe('Gender filter', () => {
+  const row = (page: Page, ref: string) => page.locator('#references tr:not([hidden])', { hasText: ref });
+
+  test("women's shows women's and unisex references, not men's", async ({ page }) => {
+    await page.goto('references/');
+    await filter(page, 'gender').selectOption('women');
+    await expect(row(page, 'T058.009.11.031.00')).toHaveCount(1); // Tissot Lovely Round: women's
+    await expect(row(page, 'T137.207.11.041.00')).toHaveCount(1); // Tissot PRX 35mm: unisex
+    await expect(row(page, 'T137.407.11.041.00')).toHaveCount(0); // Tissot PRX 40mm: men's
+  });
+
+  test('unisex shows only unisex references', async ({ page }) => {
+    await page.goto('references/');
+    await filter(page, 'gender').selectOption('unisex');
+    await expect(row(page, 'T137.207.11.041.00')).toHaveCount(1);
+    await expect(row(page, 'T058.009.11.031.00')).toHaveCount(0);
+    await expect(row(page, 'T137.407.11.041.00')).toHaveCount(0);
+  });
+
+  test('a model shows its references\' gender', async ({ page }) => {
+    await page.goto('brands/tissot/lovely/lovely-round/');
+    await expect(page.locator('table').first()).toContainText("Women's");
+  });
+});

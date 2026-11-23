@@ -14,6 +14,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T9314074103100.html
     price: { amount: 2395, currency: USD, year: 2026 }
     caseSize: 40
+    gender: men
     metals: [steel, yellow-gold]
     bezel: { material: yellow-gold }
     crystal: sapphire
@@ -30,6 +31,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T9314074103101.html
     price: { amount: 2395, currency: USD, year: 2026 }
     caseSize: 40
+    gender: men
     metals: [steel, yellow-gold]
     bezel: { material: yellow-gold }
     crystal: sapphire
@@ -46,6 +48,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T9314074104100.html
     price: { amount: 2395, currency: USD, year: 2026 }
     caseSize: 40
+    gender: men
     metals: [steel, yellow-gold]
     bezel: { material: yellow-gold }
     crystal: sapphire
@@ -62,6 +65,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T9314074129100.html
     price: { amount: 2395, currency: USD, year: 2026 }
     caseSize: 40
+    gender: men
     metals: [steel, yellow-gold]
     bezel: { material: yellow-gold }
     crystal: sapphire

@@ -11,6 +11,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1222231103300.html
     price: { amount: 495, currency: USD, year: 2026 }
     caseSize: 32
+    gender: women
     metals: [steel]
     crystal: sapphire
     movementType: quartz

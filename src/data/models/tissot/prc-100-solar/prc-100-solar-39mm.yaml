@@ -20,6 +20,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1514221103100.html
     price: { amount: 575, currency: USD, year: 2026 }
     caseSize: 39
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -33,6 +34,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1514221104100.html
     price: { amount: 575, currency: USD, year: 2026 }
     caseSize: 39
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -46,6 +48,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1514221109100.html
     price: { amount: 575, currency: USD, year: 2026 }
     caseSize: 39
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -59,6 +62,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1514221135100.html
     price: { amount: 575, currency: USD, year: 2026 }
     caseSize: 39
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -72,6 +76,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1514221603100.html
     price: { amount: 515, currency: USD, year: 2026 }
     caseSize: 39
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -85,6 +90,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1514221605100.html
     price: { amount: 515, currency: USD, year: 2026 }
     caseSize: 39
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -98,6 +104,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1514222203100.html
     price: { amount: 625, currency: USD, year: 2026 }
     caseSize: 39
+    gender: men
     metals: [steel]
     caseColors: [{ color: gold, name: "Yellow gold PVD" }]
     crystal: sapphire
@@ -112,6 +119,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1514223305100.html
     price: { amount: 625, currency: USD, year: 2026 }
     caseSize: 39
+    gender: men
     metals: [steel]
     caseColors: [{ color: black, name: "Black PVD" }]
     crystal: sapphire
@@ -126,6 +134,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1514223306100.html
     price: { amount: 625, currency: USD, year: 2026 }
     caseSize: 39
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
@@ -139,6 +148,7 @@ references:
       page: https://www.tissotwatches.com/en-us/T1514223605100.html
     price: { amount: 550, currency: USD, year: 2026 }
     caseSize: 39
+    gender: men
     metals: [steel]
     crystal: sapphire
     movementType: quartz
