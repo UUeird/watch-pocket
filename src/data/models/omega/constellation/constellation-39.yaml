@@ -1,0 +1,126 @@
+name: "Constellation 39mm"
+line: omega/constellation
+style: everyday
+website: https://www.omegawatches.com/en-us/watches/constellation/constellation/catalog
+sources:
+  - https://www.omegawatches.com/en-us/watches/constellation/constellation/catalog
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13110392002001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13110392006001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13120392002001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13120392002002
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13120392052001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13120392052002
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13125392052001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13125392052002
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13120392058001
+references:
+  - ref: 131.10.39.20.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13110392002001
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: 131.10.39.20.06.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13110392006001
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: 131.20.39.20.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13120392002001
+    price: { amount: 13000, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel, rose-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
+  - ref: 131.20.39.20.02.002
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13120392002002
+    price: { amount: 13000, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel, yellow-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Steel and yellow gold" }]
+  - ref: 131.20.39.20.52.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13120392052001
+    price: { amount: 15200, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel, rose-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
+  - ref: 131.20.39.20.52.002
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13120392052002
+    price: { amount: 15200, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel, yellow-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Steel and yellow gold" }]
+  - ref: 131.25.39.20.52.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13125392052001
+    price: { amount: 24700, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel, rose-gold]
+    bezel: { style: gem-set }
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
+  - ref: 131.25.39.20.52.002
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13125392052002
+    price: { amount: 24700, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel, yellow-gold]
+    bezel: { style: gem-set }
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Steel and yellow gold" }]
+  - ref: 131.20.39.20.58.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-39-mm-13120392058001
+    price: { amount: 15200, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel, yellow-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet, name: "Steel and yellow gold" }]

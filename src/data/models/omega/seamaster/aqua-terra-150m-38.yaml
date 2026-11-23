@@ -1,0 +1,326 @@
+name: "Aqua Terra 150M 38mm"
+line: omega/seamaster
+style: everyday
+website: https://www.omegawatches.com/en-us/watches/seamaster/aqua-terra-150m/catalog
+sources:
+  - https://www.omegawatches.com/en-us/watches/seamaster/aqua-terra-150m/catalog
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22010382001004
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22010382001005
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22010382003004
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22010382003003
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22032382003001
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22010382003005
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22020382002002
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22020382010002
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22020382009001
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22010382009001
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22010382010005
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22010382010004
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22010382010002
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22053382010001
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22010382013003
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22055382009001
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22050382010001
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22050382008001
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22050382003001
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22012382010001
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22010382010006
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22012382003001
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22010382003006
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22012382002001
+references:
+  - ref: 220.10.38.20.01.004
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22010382001004
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: 220.10.38.20.01.005
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22010382001005
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: 220.10.38.20.03.004
+    name: "Summer Blue"
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22010382003004
+    price: { amount: 7800, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: 220.10.38.20.03.003
+    name: "Shades"
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22010382003003
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue, name: "Atlantic blue" }]
+    bracelets: [{ type: bracelet }]
+  - ref: 220.32.38.20.03.001
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22032382003001
+    price: { amount: 7800, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black] }
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue, name: "Turquoise" }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: 220.10.38.20.03.005
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22010382003005
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue, name: "Turquoise" }]
+    bracelets: [{ type: bracelet }]
+  - ref: 220.20.38.20.02.002
+    name: "Shades"
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22020382002002
+    price: { amount: 15000, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel, yellow-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Steel and moonshine gold" }]
+  - ref: 220.20.38.20.10.002
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22020382010002
+    price: { amount: 15000, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel, yellow-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    bracelets: [{ type: bracelet, name: "Steel and moonshine gold" }]
+  - ref: 220.20.38.20.09.001
+    name: "Shades"
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22020382009001
+    price: { amount: 15000, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel, rose-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white, name: "Linen" }]
+    bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
+  - ref: 220.10.38.20.09.001
+    name: "Shades"
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22010382009001
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white, name: "Sandstone" }]
+    bracelets: [{ type: bracelet }]
+  - ref: 220.10.38.20.10.005
+    name: "Shades"
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22010382010005
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    bracelets: [{ type: bracelet }]
+  - ref: 220.10.38.20.10.004
+    name: "Shades"
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22010382010004
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    bracelets: [{ type: bracelet }]
+  - ref: 220.10.38.20.10.002
+    name: "Shades"
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22010382010002
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green, name: "Bay green" }]
+    bracelets: [{ type: bracelet }]
+  - ref: 220.53.38.20.10.001
+    name: "Shades"
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22053382010001
+    price: { amount: 22500, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [yellow-gold]
+    crystal: sapphire
+    movement: "8801"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green, name: "Bay green" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 220.10.38.20.13.003
+    name: "Shades"
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22010382013003
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: orange, name: "Terracotta" }]
+    bracelets: [{ type: bracelet }]
+  - ref: 220.55.38.20.09.001
+    name: "Shades"
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22055382009001
+    price: { amount: 48900, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [rose-gold]
+    bezel: { style: gem-set }
+    crystal: sapphire
+    movement: "8801"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: white, name: "Sandstone" }]
+    bracelets: [{ type: bracelet, name: "Sedna gold" }]
+  - ref: 220.50.38.20.10.001
+    name: "Shades"
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22050382010001
+    price: { amount: 42200, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [rose-gold]
+    crystal: sapphire
+    movement: "8801"
+    movementType: mechanical
+    complications: [date]
+    bracelets: [{ type: bracelet, name: "Sedna gold" }]
+  - ref: 220.50.38.20.08.001
+    name: "Shades"
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-shades-co-axial-master-chronometer-38-mm-22050382008001
+    price: { amount: 42200, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [yellow-gold]
+    crystal: sapphire
+    movement: "8801"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: yellow }]
+    bracelets: [{ type: bracelet, name: "Moonshine gold" }]
+  - ref: 220.50.38.20.03.001
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22050382003001
+    price: { amount: 42200, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [yellow-gold]
+    crystal: sapphire
+    movement: "8801"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet, name: "Moonshine gold" }]
+  - ref: 220.12.38.20.10.001
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22012382010001
+    price: { amount: 6800, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: 220.10.38.20.10.006
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22010382010006
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: 220.12.38.20.03.001
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22012382003001
+    price: { amount: 6800, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: 220.10.38.20.03.006
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22010382003006
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: 220.12.38.20.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-aqua-terra-150m-co-axial-master-chronometer-38-mm-22012382002001
+    price: { amount: 6800, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: rubber-strap }]
+

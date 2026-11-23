@@ -1,0 +1,34 @@
+name: "Planet Ocean 600M GMT Worldtimer"
+line: omega/seamaster
+style: travel
+website: https://www.omegawatches.com/en-us/watches/seamaster/planet-ocean/catalog
+sources:
+  - https://www.omegawatches.com/en-us/watches/seamaster/planet-ocean/catalog
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-gmt-worldtimer-45-5-mm-21592462201006
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-gmt-worldtimer-45-5-mm-21592462201007
+references:
+  - ref: 215.92.46.22.01.006
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-gmt-worldtimer-45-5-mm-21592462201006
+    price: { amount: 16700, currency: USD, year: 2026 }
+    caseSize: 45.5
+    metals: [ceramic]
+    bezel: { material: ceramic, colors: [black] }
+    crystal: sapphire
+    movement: "8938"
+    movementType: mechanical
+    complications: [date, gmt, world-time]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: 215.92.46.22.01.007
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-gmt-worldtimer-45-5-mm-21592462201007
+    price: { amount: 16700, currency: USD, year: 2026 }
+    caseSize: 45.5
+    metals: [ceramic]
+    bezel: { material: ceramic, colors: [black] }
+    crystal: sapphire
+    movement: "8938"
+    movementType: mechanical
+    complications: [date, gmt, world-time]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+

@@ -1,0 +1,74 @@
+name: "Constellation Small Seconds 34mm"
+line: omega/constellation
+style: everyday
+website: https://www.omegawatches.com/en-us/watches/constellation/constellation/catalog
+sources:
+  - https://www.omegawatches.com/en-us/watches/constellation/constellation/catalog
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-small-seconds-34-mm-13110342002001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-small-seconds-34-mm-13110342053001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-small-seconds-34-mm-13120342063001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-small-seconds-34-mm-13128342055001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-small-seconds-34-mm-13158342061001
+references:
+  - ref: 131.10.34.20.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-small-seconds-34-mm-13110342002001
+    price: { amount: 8000, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: 131.10.34.20.53.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-small-seconds-34-mm-13110342053001
+    price: { amount: 9400, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: 131.20.34.20.63.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-small-seconds-34-mm-13120342063001
+    price: { amount: 14600, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel, rose-gold]
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: brown }]
+    bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
+  - ref: 131.28.34.20.55.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-small-seconds-34-mm-13128342055001
+    price: { amount: 19100, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel, rose-gold]
+    bezel: { style: gem-set }
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 131.58.34.20.61.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-small-seconds-34-mm-13158342061001
+    price: { amount: 32200, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [rose-gold]
+    bezel: { style: gem-set }
+    crystal: sapphire
+    movement: "8803"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: red }]
+    bracelets: [{ type: leather-strap }]

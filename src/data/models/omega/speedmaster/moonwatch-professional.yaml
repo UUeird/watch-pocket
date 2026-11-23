@@ -3,6 +3,30 @@ line: omega/speedmaster
 style: chronograph
 theme: space
 sources:
+  - https://www.omegawatches.com/en-us/watches/speedmaster/moonwatch-professional/catalog
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425004001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425004001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425004002
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001004
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425001001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425001002
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31020425002001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31023425002001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31020425099001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31023425099001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425001001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425001001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31055425013001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425001002
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425010002
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425010001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425010001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425099002
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31062425099001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425002001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425002001
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31055425002001
   - https://en.wikipedia.org/wiki/Omega_Speedmaster
   - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001002
 references:
@@ -103,3 +127,264 @@ references:
     crystal: sapphire
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
+  - ref: 310.30.42.50.04.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425004001
+    price: { amount: 9100, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: aluminum, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: 310.32.42.50.04.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425004001
+    price: { amount: 8700, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: aluminum, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: white }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: 310.32.42.50.04.002
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425004002
+    price: { amount: 8700, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: aluminum, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 310.30.42.50.01.004
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001004
+    price: { amount: 10400, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: 310.20.42.50.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31020425002001
+    price: { amount: 21100, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel, yellow-gold]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Steel and moonshine gold" }]
+  - ref: 310.23.42.50.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31023425002001
+    price: { amount: 13100, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel, yellow-gold]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 310.20.42.50.99.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31020425099001
+    price: { amount: 21100, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel, rose-gold]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: pink }]
+    bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
+  - ref: 310.23.42.50.99.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31023425099001
+    price: { amount: 13100, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel, rose-gold]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: pink }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 310.60.42.50.01.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425001001
+    price: { amount: 50900, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [rose-gold]
+    bezel: { material: aluminum, style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: "Sedna gold" }]
+  - ref: 310.63.42.50.01.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425001001
+    price: { amount: 36100, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [rose-gold]
+    bezel: { material: aluminum, style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 310.55.42.50.13.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31055425013001
+    price: { amount: 57500, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [rose-gold]
+    bezel: { style: gem-set }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: brown }]
+    bracelets: [{ type: bracelet, name: "Sedna gold" }]
+  - ref: 310.60.42.50.01.002
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425001002
+    price: { amount: 49300, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [yellow-gold]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: "Moonshine gold" }]
+  - ref: 310.60.42.50.10.002
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425010002
+    price: { amount: 51600, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [yellow-gold]
+    bezel: { material: ceramic, colors: [green], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet, name: "Moonshine gold" }]
+  - ref: 310.60.42.50.10.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425010001
+    price: { amount: 50900, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [yellow-gold]
+    bezel: { material: ceramic, colors: [green], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet, name: "Moonshine gold" }]
+  - ref: 310.63.42.50.10.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425010001
+    price: { amount: 36100, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [yellow-gold]
+    bezel: { material: ceramic, colors: [green], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 310.60.42.50.99.002
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425099002
+    price: { amount: 53500, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [yellow-gold]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: yellow }]
+    bracelets: [{ type: bracelet, name: "Moonshine gold" }]
+  - ref: 310.62.42.50.99.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31062425099001
+    price: { amount: 38600, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [yellow-gold]
+    bezel: { material: ceramic, colors: [black], style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: yellow }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: 310.60.42.50.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425002001
+    price: { amount: 66300, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [white-gold]
+    bezel: { material: aluminum, style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Canopus gold" }]
+  - ref: 310.63.42.50.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425002001
+    price: { amount: 44400, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [white-gold]
+    bezel: { material: aluminum, style: tachymeter }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 310.55.42.50.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31055425002001
+    price: { amount: 71800, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [white-gold]
+    bezel: { style: gem-set }
+    crystal: sapphire
+    movement: "3861"
+    movementType: mechanical
+    winding: manual
+    complications: [chronograph]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Canopus gold" }]
+
