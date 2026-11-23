@@ -1,0 +1,62 @@
+name: "Casual Line"
+line: seiko/metronome-watch
+style: everyday
+theme: music
+website: https://music.sii.co.jp/en/mw
+sources:
+  - https://music.sii.co.jp/en/mw
+references:
+  - ref: SMW001B
+    name: "Black"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/%E9%9F%B3%E9%9F%BF/SMW001B.png
+      page: https://music.sii.co.jp/en/mw
+    caseSize: 36.5
+    metals: [steel]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SMW002B
+    name: "Pink"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/%E9%9F%B3%E9%9F%BF/SMW002B.png
+      page: https://music.sii.co.jp/en/mw
+    caseSize: 36.5
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: pink }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SMW003B
+    name: "Purple"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/%E9%9F%B3%E9%9F%BF/SMW003B.png
+      page: https://music.sii.co.jp/en/mw
+    caseSize: 36.5
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SMW004B
+    name: "Blue"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/%E9%9F%B3%E9%9F%BF/SMW004B.png
+      page: https://music.sii.co.jp/en/mw
+    caseSize: 36.5
+    metals: [steel]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]

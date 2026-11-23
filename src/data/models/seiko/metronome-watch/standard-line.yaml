@@ -1,0 +1,154 @@
+name: "Standard Line"
+line: seiko/metronome-watch
+style: everyday
+theme: music
+website: https://music.sii.co.jp/en/mw
+sources:
+  - https://music.sii.co.jp/en/mw
+  - https://seikomw-en.com/products/seiko-metronome-watch-smw001ed
+  - https://seikomw-en.com/products/seiko-metronome-watch-smw001ed-%E3%82%B3%E3%83%94%E3%83%BC
+  - https://seikomw-en.com/products/seiko-metronome-watch-smw004ed
+  - https://seikomw-en.com/products/seiko-metronome-watch-001
+references:
+  - ref: SMW001A
+    name: "Dark Brown"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/%E9%9F%B3%E9%9F%BF/SMW001A-1.png
+      page: https://music.sii.co.jp/en/mw
+    caseSize: 36.5
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SMW002A
+    name: "White"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/%E9%9F%B3%E9%9F%BF/SMW002A.png
+      page: https://music.sii.co.jp/en/mw
+    caseSize: 36.5
+    metals: [steel]
+    caseColors: [{ color: rose-gold }]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SMW003A
+    name: "Camel"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/%E9%9F%B3%E9%9F%BF/SMW003A.png
+      page: https://music.sii.co.jp/en/mw
+    caseSize: 36.5
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SMW004A
+    name: "Navy"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/%E9%9F%B3%E9%9F%BF/SMW004A-1.png
+      page: https://music.sii.co.jp/en/mw
+    caseSize: 36.5
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SMW005A
+    name: "Turquoise"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/%E9%9F%B3%E9%9F%BF/SMW005A-2.png
+      page: https://music.sii.co.jp/en/mw
+    caseSize: 36.5
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SMW006A
+    name: "Monotone"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/%E9%9F%B3%E9%9F%BF/SMW006A-1.png
+      page: https://music.sii.co.jp/en/mw
+    caseSize: 36.5
+    metals: [steel]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SMW001E
+    name: "Dark Brown"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/SMW001E_ss.png
+      page: https://music.sii.co.jp/en/mw
+    price: { amount: 240, currency: USD, year: 2026 }
+    caseSize: 36.5
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SMW003E
+    name: "Camel"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/SMW003E_ss.png
+      page: https://music.sii.co.jp/en/mw
+    price: { amount: 240, currency: USD, year: 2026 }
+    caseSize: 36.5
+    metals: [steel]
+    caseColors: [{ color: gold }]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SMW004E
+    name: "Navy"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/SMW004E_ss.png
+      page: https://music.sii.co.jp/en/mw
+    price: { amount: 240, currency: USD, year: 2026 }
+    caseSize: 36.5
+    metals: [steel]
+    caseColors: [{ color: black }]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: SMW006E
+    name: "Monotone"
+    officialPhoto:
+      src: https://music.sii.co.jp/hubfs/SMW006E_ss.png
+      page: https://music.sii.co.jp/en/mw
+    price: { amount: 240, currency: USD, year: 2026 }
+    caseSize: 36.5
+    metals: [steel]
+    crystal: mineral
+    movement: "PA50"
+    movementType: quartz
+    complications: []
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
