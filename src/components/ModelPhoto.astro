@@ -4,7 +4,8 @@
 // 1. our own copies, from Wikimedia Commons under a free license or from the brand's press kit, each credited. The
 //    first is the primary, shown large; the rest sit under it as thumbnails that swap in when picked. A model shows
 //    its own, then its references' (each labeled with its reference); a reference shows its own, or failing that the
-//    model's, saying so;
+//    model's, saying so. A reference's own product shot from its maker (`officialPhoto`) leads its gallery, ahead of
+//    our copies, so it looks like the references around it;
 // 2. otherwise the brand's own image from its page (see scripts/refresh-official-photos.mjs), loaded from their site
 //    and credited to them. If it fails to load, the figure removes itself and the link stands alone.
 import { Image, getImage } from 'astro:assets';
@@ -27,12 +28,17 @@ const website = reference ? (reference.website ?? (model.data.references.some((o
 const ofModel = model.data.photos.map((photo) => ({ ...photo, ref: undefined as string | undefined }));
 const ofReferences = model.data.references.flatMap(({ ref, photos }) => photos.map((photo) => ({ ...photo, ref })));
 const own = reference ? reference.photos.map((photo) => ({ ...photo, ref: undefined })) : [];
-// The maker's image of this reference, which comes before any photo of the model in general.
-const refOfficial = own.length === 0 ? reference?.officialPhoto : undefined;
-const photos = reference ? (own.length > 0 ? own : refOfficial ? [] : ofModel) : [...ofModel, ...ofReferences];
+// The maker's image of this reference, which leads: before our copies of it, and before any photo of the model.
+const refOfficial = reference?.officialPhoto;
+const photos = reference ? (own.length > 0 || refOfficial ? own : ofModel) : [...ofModel, ...ofReferences];
 // On a reference's page, photos of the model in general rather than of this reference.
 const general = reference !== undefined && own.length === 0 && !refOfficial && photos.length > 0;
 const official = refOfficial ?? (photos.length > 0 ? undefined : (officialPhotos as Record<string, { src: string; page: string }>)[model.id]);
+// Where the maker's image leads a gallery of our copies, it is its first photo and has a thumbnail of its own; the
+// figures and thumbnails of our copies are numbered after it.
+const leads = official !== undefined && photos.length > 0;
+const offset = leads ? 1 : 0;
+const count = photos.length + offset;
 const alt = `${brandName} ${name}${reference ? ` ${reference.ref}` : ''}`;
 const altOf = (ref: string | undefined) => (ref ? `${brandName} ${name} ${ref}` : alt);
 // A magnifier with a plus, the usual sign that a photo can be enlarged.
@@ -45,10 +51,21 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
 {
   (photos.length > 0 || official || website) && (
     <aside class="model-photo" data-gallery>
+      {official && (
+        <figure data-official-photo data-photo={leads ? 0 : undefined}>
+          <button type="button" class="zoom" data-zoom={official.src} data-alt={alt} aria-label={`Enlarge photo: ${alt}`}>
+            <img src={official.src} alt={leads ? `${alt}, photo 1 of ${count}` : alt} loading={leads ? undefined : 'lazy'} referrerpolicy="no-referrer" onerror="const figure = this.closest('figure'); figure.dataset.failed = ''; figure.dispatchEvent(new Event('photo-failed', { bubbles: true }))" />
+            <span class="zoom-icon" aria-hidden="true"><Fragment set:html={zoomIcon} /></span>
+          </button>
+          <figcaption>
+            Image © {brandName}, shown from <a href={official.page}>{sourceHost(official.page)}</a>
+          </figcaption>
+        </figure>
+      )}
       {photos.map(({ file, credit, ref }, index) => (
-        <figure data-photo={index} hidden={index > 0}>
+        <figure data-photo={index + offset} hidden={index + offset > 0}>
           <button type="button" class="zoom" data-zoom={enlarged[index].src} data-alt={altOf(ref)} aria-label={`Enlarge photo: ${altOf(ref)}`}>
-            <Image src={file} alt={photos.length > 1 ? `${altOf(ref)}, photo ${index + 1} of ${photos.length}` : altOf(ref)} widths={[360, 720]} sizes="(min-width: 720px) 360px, 100vw" />
+            <Image src={file} alt={count > 1 ? `${altOf(ref)}, photo ${index + offset + 1} of ${count}` : altOf(ref)} widths={[360, 720]} sizes="(min-width: 720px) 360px, 100vw" />
             <span class="zoom-icon" aria-hidden="true"><Fragment set:html={zoomIcon} /></span>
           </button>
           <figcaption>
@@ -59,25 +76,19 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
         </figure>
       ))}
       {general && <p class="general">Shows the {name} in general, not this reference in particular.</p>}
-      {photos.length > 1 && (
+      {count > 1 && (
         <div class="thumbs" role="group" aria-label="Photos">
+          {leads && (
+            <button type="button" data-show="0" data-official-thumb aria-pressed="true" aria-label="Show photo 1">
+              <img src={official.src} alt="" width="96" referrerpolicy="no-referrer" />
+            </button>
+          )}
           {photos.map(({ file }, index) => (
-            <button type="button" data-show={index} aria-pressed={index === 0 ? 'true' : 'false'} aria-label={`Show photo ${index + 1}`}>
+            <button type="button" data-show={index + offset} aria-pressed={index + offset === 0 ? 'true' : 'false'} aria-label={`Show photo ${index + offset + 1}`}>
               <Image src={file} alt="" width={96} />
             </button>
           ))}
         </div>
-      )}
-      {official && (
-        <figure data-official-photo>
-          <button type="button" class="zoom" data-zoom={official.src} data-alt={alt} aria-label={`Enlarge photo: ${alt}`}>
-            <img src={official.src} alt={alt} loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()" />
-            <span class="zoom-icon" aria-hidden="true"><Fragment set:html={zoomIcon} /></span>
-          </button>
-          <figcaption>
-            Image © {brandName}, shown from <a href={official.page}>{sourceHost(official.page)}</a>
-          </figcaption>
-        </figure>
       )}
       {
         website && (
@@ -90,7 +101,7 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
       <dialog class="lightbox" data-lightbox aria-label="Enlarged photo">
         <img alt="" referrerpolicy="no-referrer" />
         <p class="caption" data-caption aria-live="polite"></p>
-        {photos.length > 1 && (
+        {count > 1 && (
           <>
             <button type="button" class="nav prev" data-step="-1" aria-label="Previous photo">
               <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7" /></svg>
@@ -111,8 +122,8 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
 <script>
   for (const gallery of document.querySelectorAll<HTMLElement>('[data-gallery]')) {
     // Picking a thumbnail shows that photo, with its credit, in place of the one shown.
-    const buttons = [...gallery.querySelectorAll<HTMLButtonElement>('[data-show]')];
-    const figures = [...gallery.querySelectorAll<HTMLElement>('[data-photo]')];
+    let buttons = [...gallery.querySelectorAll<HTMLButtonElement>('[data-show]')];
+    let figures = [...gallery.querySelectorAll<HTMLElement>('[data-photo]')];
     const select = (index: number) => {
       for (const figure of figures) figure.hidden = figure.dataset.photo !== String(index);
       for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.show === String(index)));
@@ -126,8 +137,22 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
     const large = lightbox?.querySelector('img');
     const caption = lightbox?.querySelector<HTMLElement>('[data-caption]');
     if (!lightbox || !large || !caption) continue;
-    const zooms = [...gallery.querySelectorAll<HTMLButtonElement>('[data-zoom]')];
+    let zooms = [...gallery.querySelectorAll<HTMLButtonElement>('[data-zoom]')];
     let current = 0;
+    // If the maker's image fails to load, it goes, with its thumbnail; where it led our copies, the next one shows.
+    // One that failed before this script ran is marked, and dropped here.
+    const drop = (figure: HTMLElement) => {
+      const led = figure.dataset.photo === '0';
+      figure.remove();
+      gallery.querySelector('[data-official-thumb]')?.remove();
+      buttons = [...gallery.querySelectorAll<HTMLButtonElement>('[data-show]')];
+      figures = [...gallery.querySelectorAll<HTMLElement>('[data-photo]')];
+      zooms = [...gallery.querySelectorAll<HTMLButtonElement>('[data-zoom]')];
+      if (led && figures[0]) select(Number(figures[0].dataset.photo));
+      if (buttons.length < 2) gallery.querySelector('.thumbs')?.remove();
+    };
+    gallery.addEventListener('photo-failed', (event) => drop(event.target as HTMLElement));
+    for (const figure of gallery.querySelectorAll<HTMLElement>('figure[data-failed]')) drop(figure);
     const show = (index: number) => {
       current = (index + zooms.length) % zooms.length;
       const zoom = zooms[current];
@@ -135,11 +160,12 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
       large.alt = zoom.dataset.alt ?? '';
       const credit = zoom.closest('figure')?.querySelector('figcaption')?.innerHTML ?? '';
       caption.innerHTML = zooms.length > 1 ? `<span class="count">${current + 1} of ${zooms.length}</span> · ${credit}` : credit;
-      if (figures.length > 0) select(current);
+      const shown = zoom.closest<HTMLElement>('figure')?.dataset.photo;
+      if (shown !== undefined) select(Number(shown));
     };
-    zooms.forEach((zoom, index) =>
+    zooms.forEach((zoom) =>
       zoom.addEventListener('click', () => {
-        show(index);
+        show(zooms.indexOf(zoom));
         lightbox.showModal();
       }),
     );

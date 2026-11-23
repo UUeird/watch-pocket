@@ -33,11 +33,13 @@ export function modelPhotos(model: Model, brandName: string): TilePhoto[] {
   return shared ? [{ ...shared, alt: name }] : [];
 }
 
-// A reference's photos: its own, or the maker's image of it, or failing those its model's.
+// A reference's photos: the maker's product shot of it first, so it matches the references around it, then its own;
+// failing those, its model's.
 export function referencePhotos(model: Model, reference: Reference, brandName: string): TilePhoto[] {
   const name = `${brandName} ${model.data.name} ${reference.ref}`;
-  if (reference.photos.length > 0) return reference.photos.map(({ file, credit }) => ({ file, credit, alt: name }));
-  if (reference.officialPhoto) return [{ ...reference.officialPhoto, alt: name }];
+  const makers = reference.officialPhoto ? [{ ...reference.officialPhoto, alt: name }] : [];
+  const own = reference.photos.map(({ file, credit }) => ({ file, credit, alt: name }));
+  if (makers.length + own.length > 0) return [...makers, ...own];
   // Only photos of the model as a whole stand in, never another reference's, which may look quite different.
   const general = model.data.photos.map(({ file, credit }) => ({ file, credit, alt: name, general: true }));
   if (general.length > 0) return general;
