@@ -8,6 +8,9 @@ sources:
   - https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-gmt-worldtimer-45-5-mm-21592462201007
 references:
   - ref: 215.92.46.22.01.006
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-gmt-worldtimer-45-5-mm-21592462201006-ce762f.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-gmt-worldtimer-45-5-mm-21592462201006
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-gmt-worldtimer-45-5-mm-21592462201006
     price: { amount: 16700, currency: USD, year: 2026 }
     caseSize: 45.5
@@ -20,6 +23,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
   - ref: 215.92.46.22.01.007
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-gmt-worldtimer-45-5-mm-21592462201007-ba8d17.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-gmt-worldtimer-45-5-mm-21592462201007
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-gmt-worldtimer-45-5-mm-21592462201007
     price: { amount: 16700, currency: USD, year: 2026 }
     caseSize: 45.5

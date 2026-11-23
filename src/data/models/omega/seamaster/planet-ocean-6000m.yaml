@@ -15,6 +15,9 @@ sources:
   - https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21532462104001
 references:
   - ref: 215.30.46.21.03.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21530462103002-bbbb21.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21530462103002
     name: "Summer Blue"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21530462103002
     price: { amount: 14600, currency: USD, year: 2026 }
@@ -27,6 +30,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: 215.30.46.21.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21530462103001-734aa9.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21530462103001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21530462103001
     price: { amount: 14300, currency: USD, year: 2026 }
     caseSize: 45.5
@@ -39,6 +45,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: 215.32.46.21.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21532462103001-808367.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21532462103001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21532462103001
     price: { amount: 13900, currency: USD, year: 2026 }
     caseSize: 45.5
@@ -51,6 +60,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
   - ref: 215.92.46.21.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21592462101001-55bfc7.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21592462101001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21592462101001
     price: { amount: 15300, currency: USD, year: 2026 }
     caseSize: 45.5
@@ -63,6 +75,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: fabric-strap }]
   - ref: 215.30.46.21.06.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21530462106001-714e63.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21530462106001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21530462106001
     price: { amount: 14300, currency: USD, year: 2026 }
     caseSize: 45.5
@@ -75,6 +90,9 @@ references:
     dials: [{ color: gray }]
     bracelets: [{ type: bracelet }]
   - ref: 215.32.46.21.06.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21532462106001-febee4.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21532462106001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21532462106001
     price: { amount: 13900, currency: USD, year: 2026 }
     caseSize: 45.5
@@ -87,6 +105,9 @@ references:
     dials: [{ color: gray }]
     bracelets: [{ type: rubber-strap }]
   - ref: 215.30.46.21.04.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21530462104001-6fb924.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21530462104001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21530462104001
     price: { amount: 14300, currency: USD, year: 2026 }
     caseSize: 45.5
@@ -99,6 +120,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
   - ref: 215.32.46.21.04.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21532462104001-cd4242.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21532462104001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-6000m-co-axial-master-chronometer-45-5-mm-21532462104001
     price: { amount: 13900, currency: USD, year: 2026 }
     caseSize: 45.5

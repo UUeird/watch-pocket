@@ -28,9 +28,13 @@ sources:
   - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425002001
   - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31055425002001
   - https://en.wikipedia.org/wiki/Omega_Speedmaster
+  - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-chronograph-42-mm-31130423001005
   - https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001002
 references:
   - ref: 311.30.42.30.01.005
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-chronograph-42-mm-31130423001005-a20104.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-chronograph-42-mm-31130423001005
     photos:
       - file: ../../../photos/omega/speedmaster/moonwatch-professional.jpg
         credit:
@@ -80,6 +84,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: 310.30.42.50.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001001-3ccf4a.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001001
     periods: [{ from: 2021 }]
     caseSize: 42
     metals: [steel]
@@ -92,6 +99,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: 310.30.42.50.01.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001002-198df2.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001002
     periods: [{ from: 2021 }]
     caseSize: 42
     metals: [steel]
@@ -104,6 +114,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: 310.32.42.50.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425001001-df6aad.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425001001
     periods: [{ from: 2021 }]
     caseSize: 42
     metals: [steel]
@@ -116,6 +129,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: fabric-strap }]
   - ref: 310.32.42.50.01.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425001002-78e3aa.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425001002
     periods: [{ from: 2021 }]
     caseSize: 42
     metals: [steel]
@@ -128,6 +144,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
   - ref: 310.30.42.50.04.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425004001-5bcb6e.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425004001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425004001
     price: { amount: 9100, currency: USD, year: 2026 }
     caseSize: 42
@@ -141,6 +160,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
   - ref: 310.32.42.50.04.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425004001-391a55.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425004001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425004001
     price: { amount: 8700, currency: USD, year: 2026 }
     caseSize: 42
@@ -154,6 +176,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: rubber-strap }]
   - ref: 310.32.42.50.04.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425004002-1f4c45.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425004002
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31032425004002
     price: { amount: 8700, currency: USD, year: 2026 }
     caseSize: 42
@@ -167,6 +192,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]
   - ref: 310.30.42.50.01.004
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001004-1a8cb8.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001004
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31030425001004
     price: { amount: 10400, currency: USD, year: 2026 }
     caseSize: 42
@@ -180,6 +208,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: 310.20.42.50.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31020425002001-3c3ebb.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31020425002001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31020425002001
     price: { amount: 21100, currency: USD, year: 2026 }
     caseSize: 42
@@ -193,6 +224,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Steel and moonshine gold" }]
   - ref: 310.23.42.50.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31023425002001-87f9a8.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31023425002001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31023425002001
     price: { amount: 13100, currency: USD, year: 2026 }
     caseSize: 42
@@ -206,6 +240,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
   - ref: 310.20.42.50.99.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31020425099001-111cbf.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31020425099001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31020425099001
     price: { amount: 21100, currency: USD, year: 2026 }
     caseSize: 42
@@ -219,6 +256,9 @@ references:
     dials: [{ color: pink }]
     bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
   - ref: 310.23.42.50.99.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31023425099001-7b2f62.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31023425099001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31023425099001
     price: { amount: 13100, currency: USD, year: 2026 }
     caseSize: 42
@@ -232,6 +272,9 @@ references:
     dials: [{ color: pink }]
     bracelets: [{ type: leather-strap }]
   - ref: 310.60.42.50.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425001001-2a5cdb.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425001001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425001001
     price: { amount: 50900, currency: USD, year: 2026 }
     caseSize: 42
@@ -245,6 +288,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: "Sedna gold" }]
   - ref: 310.63.42.50.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425001001-f35276.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425001001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425001001
     price: { amount: 36100, currency: USD, year: 2026 }
     caseSize: 42
@@ -258,6 +304,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
   - ref: 310.55.42.50.13.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31055425013001-56a108.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31055425013001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31055425013001
     price: { amount: 57500, currency: USD, year: 2026 }
     caseSize: 42
@@ -271,6 +320,9 @@ references:
     dials: [{ color: brown }]
     bracelets: [{ type: bracelet, name: "Sedna gold" }]
   - ref: 310.60.42.50.01.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425001002-962548.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425001002
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425001002
     price: { amount: 49300, currency: USD, year: 2026 }
     caseSize: 42
@@ -284,6 +336,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: "Moonshine gold" }]
   - ref: 310.60.42.50.10.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425010002-92e1a9.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425010002
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425010002
     price: { amount: 51600, currency: USD, year: 2026 }
     caseSize: 42
@@ -297,6 +352,9 @@ references:
     dials: [{ color: green }]
     bracelets: [{ type: bracelet, name: "Moonshine gold" }]
   - ref: 310.60.42.50.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425010001-60da95.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425010001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425010001
     price: { amount: 50900, currency: USD, year: 2026 }
     caseSize: 42
@@ -310,6 +368,9 @@ references:
     dials: [{ color: green }]
     bracelets: [{ type: bracelet, name: "Moonshine gold" }]
   - ref: 310.63.42.50.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425010001-acc31d.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425010001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425010001
     price: { amount: 36100, currency: USD, year: 2026 }
     caseSize: 42
@@ -323,6 +384,9 @@ references:
     dials: [{ color: green }]
     bracelets: [{ type: leather-strap }]
   - ref: 310.60.42.50.99.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425099002-9cf9a8.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425099002
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425099002
     price: { amount: 53500, currency: USD, year: 2026 }
     caseSize: 42
@@ -336,6 +400,9 @@ references:
     dials: [{ color: yellow }]
     bracelets: [{ type: bracelet, name: "Moonshine gold" }]
   - ref: 310.62.42.50.99.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31062425099001-3cc210.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31062425099001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31062425099001
     price: { amount: 38600, currency: USD, year: 2026 }
     caseSize: 42
@@ -349,6 +416,9 @@ references:
     dials: [{ color: yellow }]
     bracelets: [{ type: rubber-strap }]
   - ref: 310.60.42.50.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425002001-f7e0f6.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425002001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31060425002001
     price: { amount: 66300, currency: USD, year: 2026 }
     caseSize: 42
@@ -362,6 +432,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Canopus gold" }]
   - ref: 310.63.42.50.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425002001-b41626.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425002001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31063425002001
     price: { amount: 44400, currency: USD, year: 2026 }
     caseSize: 42
@@ -375,6 +448,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
   - ref: 310.55.42.50.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31055425002001-1b8ffc.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31055425002001
     website: https://www.omegawatches.com/en-us/watch-omega-speedmaster-moonwatch-professional-co-axial-master-chronometer-chronograph-42-mm-31055425002001
     price: { amount: 71800, currency: USD, year: 2026 }
     caseSize: 42

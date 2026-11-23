@@ -14,6 +14,9 @@ sources:
   - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43413412103002
 references:
   - ref: 434.53.41.21.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43453412102001-5d5e70.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43453412102001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43453412102001
     price: { amount: 17100, currency: USD, year: 2026 }
     caseSize: 41
@@ -26,6 +29,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.53.41.21.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43453412110001-306343.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43453412110001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43453412110001
     price: { amount: 17100, currency: USD, year: 2026 }
     caseSize: 41
@@ -38,6 +44,9 @@ references:
     dials: [{ color: green }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.20.41.21.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43420412102001-3a85e0.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43420412102001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43420412102001
     price: { amount: 12200, currency: USD, year: 2026 }
     caseSize: 41
@@ -50,6 +59,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Steel and yellow gold" }]
   - ref: 434.23.41.21.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43423412102001-be990d.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43423412102001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43423412102001
     price: { amount: 10100, currency: USD, year: 2026 }
     caseSize: 41
@@ -62,6 +74,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.10.41.21.06.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43410412106001-86db9d.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43410412106001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43410412106001
     price: { amount: 6800, currency: USD, year: 2026 }
     caseSize: 41
@@ -74,6 +89,9 @@ references:
     dials: [{ color: gray }]
     bracelets: [{ type: bracelet }]
   - ref: 434.13.41.21.06.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43413412106001-a6e91b.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43413412106001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43413412106001
     price: { amount: 6400, currency: USD, year: 2026 }
     caseSize: 41
@@ -86,6 +104,9 @@ references:
     dials: [{ color: gray }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.10.41.21.03.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43410412103002-64fddf.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43410412103002
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43410412103002
     price: { amount: 6800, currency: USD, year: 2026 }
     caseSize: 41
@@ -98,6 +119,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: 434.13.41.21.03.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43413412103002-e4b89d.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43413412103002
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43413412103002
     price: { amount: 6400, currency: USD, year: 2026 }
     caseSize: 41

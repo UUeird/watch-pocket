@@ -53,6 +53,9 @@ sources:
   - https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001001
 references:
   - ref: 210.30.42.20.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001001-23ffb2.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001001
     periods: [{ from: 2018 }]
     caseSize: 42
     metals: [steel]
@@ -65,6 +68,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: 210.32.42.20.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422001001-bd73d9.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422001001
     periods: [{ from: 2018 }]
     caseSize: 42
     metals: [steel]
@@ -77,6 +83,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.30.42.20.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003001-5c4934.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003001
     periods: [{ from: 2018 }]
     caseSize: 42
     metals: [steel]
@@ -89,6 +98,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: 210.32.42.20.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422003001-1c0482.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422003001
     periods: [{ from: 2018 }]
     caseSize: 42
     metals: [steel]
@@ -101,6 +113,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.30.42.20.04.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422004001-899ba1.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422004001
     caseSize: 42
     metals: [steel]
     bezel: { material: ceramic, colors: [black], style: dive }
@@ -112,6 +127,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
   - ref: 210.30.42.20.03.004
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003004-68cc39.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003004
     name: "James Bond Edition"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003004
     price: { amount: 8600, currency: USD, year: 2026 }
@@ -125,6 +143,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: 210.30.42.20.01.023
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001023-72e2b8.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001023
     name: "Spectre Edition"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001023
     price: { amount: 8600, currency: USD, year: 2026 }
@@ -138,6 +159,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: 210.32.42.20.01.005
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422001005-2b286f.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422001005
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422001005
     price: { amount: 6900, currency: USD, year: 2026 }
     caseSize: 42
@@ -150,6 +174,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: fabric-strap }]
   - ref: 210.32.42.20.01.003
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422001003-df9d2f.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422001003
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422001003
     price: { amount: 6900, currency: USD, year: 2026 }
     caseSize: 42
@@ -162,6 +189,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.30.42.20.01.010
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001010-b82f49.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001010
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001010
     price: { amount: 7300, currency: USD, year: 2026 }
     caseSize: 42
@@ -174,6 +204,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: 210.30.42.20.01.018
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001018-5f6194.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001018
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001018
     price: { amount: 7300, currency: USD, year: 2026 }
     caseSize: 42
@@ -186,6 +219,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: 210.32.42.20.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422010001-a0ed87.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422010001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422010001
     price: { amount: 6300, currency: USD, year: 2026 }
     caseSize: 42
@@ -199,6 +235,9 @@ references:
     dials: [{ color: green }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.30.42.20.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422010001-e12e6f.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422010001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422010001
     price: { amount: 6700, currency: USD, year: 2026 }
     caseSize: 42
@@ -212,6 +251,9 @@ references:
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
   - ref: 210.30.42.20.03.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003002-413ac2.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003002
     name: "James Bond 60th anniversary"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003002
     price: { amount: 9400, currency: USD, year: 2026 }
@@ -224,6 +266,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: 210.32.42.20.03.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422003002-9eab87.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422003002
     name: "Summer Blue"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422003002
     price: { amount: 6700, currency: USD, year: 2026 }
@@ -238,6 +283,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.30.42.20.03.003
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003003-544926.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003003
     name: "Summer Blue"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003003
     price: { amount: 7100, currency: USD, year: 2026 }
@@ -252,6 +300,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: 210.32.42.20.06.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422006002-3a6b7f.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422006002
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422006002
     price: { amount: 6900, currency: USD, year: 2026 }
     caseSize: 42
@@ -264,6 +315,9 @@ references:
     dials: [{ color: gray }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.30.42.20.06.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422006002-67731f.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422006002
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422006002
     price: { amount: 7300, currency: USD, year: 2026 }
     caseSize: 42
@@ -276,6 +330,9 @@ references:
     dials: [{ color: gray }]
     bracelets: [{ type: bracelet }]
   - ref: 210.32.42.20.06.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422006001-2f96ba.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422006001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422006001
     price: { amount: 6300, currency: USD, year: 2026 }
     caseSize: 42
@@ -289,6 +346,9 @@ references:
     dials: [{ color: gray }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.30.42.20.06.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422006001-1782ba.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422006001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422006001
     price: { amount: 6700, currency: USD, year: 2026 }
     caseSize: 42
@@ -302,6 +362,9 @@ references:
     dials: [{ color: gray }]
     bracelets: [{ type: bracelet }]
   - ref: 210.32.42.20.04.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422004002-9b8151.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422004002
     name: "America's Cup"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422004002
     price: { amount: 6900, currency: USD, year: 2026 }
@@ -315,6 +378,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.30.42.20.04.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422004002-13cb21.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422004002
     name: "America's Cup"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422004002
     price: { amount: 7300, currency: USD, year: 2026 }
@@ -328,6 +394,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
   - ref: 210.32.42.20.04.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422004001-923c27.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422004001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21032422004001
     price: { amount: 6300, currency: USD, year: 2026 }
     caseSize: 42
@@ -341,6 +410,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: rubber-strap }]
   - ref: 522.21.42.20.04.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-52221422004001-c61b9b.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-52221422004001
     name: "Paris 2024"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-52221422004001
     price: { amount: 10300, currency: USD, year: 2026 }
@@ -354,6 +426,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
   - ref: 210.92.42.20.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21092422001001-fa8838.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21092422001001
     name: "007 Edition"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21092422001001
     price: { amount: 10000, currency: USD, year: 2026 }
@@ -366,6 +441,9 @@ references:
     complications: []
     bracelets: [{ type: fabric-strap }]
   - ref: 210.90.42.20.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21090422001001-ba176b.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21090422001001
     name: "007 Edition"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21090422001001
     price: { amount: 11300, currency: USD, year: 2026 }
@@ -378,6 +456,9 @@ references:
     complications: []
     bracelets: [{ type: bracelet }]
   - ref: 210.92.42.20.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21092422010001-4ade4c.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21092422010001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21092422010001
     price: { amount: 11500, currency: USD, year: 2026 }
     caseSize: 42
@@ -390,6 +471,9 @@ references:
     dials: [{ color: green }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.90.42.20.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21090422010001-33bc76.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21090422010001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21090422010001
     price: { amount: 12500, currency: USD, year: 2026 }
     caseSize: 42
@@ -402,6 +486,9 @@ references:
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
   - ref: 210.22.42.20.01.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422001002-5f990a.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422001002
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422001002
     price: { amount: 9600, currency: USD, year: 2026 }
     caseSize: 42
@@ -415,6 +502,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.20.42.20.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21020422001001-992659.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21020422001001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21020422001001
     price: { amount: 14700, currency: USD, year: 2026 }
     caseSize: 42
@@ -428,6 +518,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
   - ref: 210.22.42.20.03.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422003002-c1e612.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422003002
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422003002
     price: { amount: 9600, currency: USD, year: 2026 }
     caseSize: 42
@@ -441,6 +534,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.20.42.20.03.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21020422003002-96f9c8.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21020422003002
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21020422003002
     price: { amount: 14700, currency: USD, year: 2026 }
     caseSize: 42
@@ -454,6 +550,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
   - ref: 210.22.42.20.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422001001-6967e6.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422001001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422001001
     price: { amount: 9600, currency: USD, year: 2026 }
     caseSize: 42
@@ -467,6 +566,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.20.42.20.01.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21020422001002-63e913.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21020422001002
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21020422001002
     price: { amount: 14700, currency: USD, year: 2026 }
     caseSize: 42
@@ -480,6 +582,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: "Steel and yellow gold" }]
   - ref: 210.22.42.20.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422003001-b002b7.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422003001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21022422003001
     price: { amount: 9600, currency: USD, year: 2026 }
     caseSize: 42
@@ -493,6 +598,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.20.42.20.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21020422003001-b0f2bd.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21020422003001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21020422003001
     price: { amount: 14700, currency: USD, year: 2026 }
     caseSize: 42
@@ -506,6 +614,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet, name: "Steel and yellow gold" }]
   - ref: 210.62.42.20.01.002
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21062422001002-09d32f.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21062422001002
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21062422001002
     price: { amount: 35000, currency: USD, year: 2026 }
     caseSize: 42
@@ -518,6 +629,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.62.42.20.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21062422003001-242a9b.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21062422003001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21062422003001
     price: { amount: 35000, currency: USD, year: 2026 }
     caseSize: 42
@@ -530,6 +644,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.52.42.20.04.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21052422004001-902aaa.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21052422004001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21052422004001
     price: { amount: 35600, currency: USD, year: 2026 }
     caseSize: 42
@@ -541,6 +658,9 @@ references:
     dials: [{ color: white }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.92.42.20.01.003
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21092422001003-453b33.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21092422001003
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21092422001003
     price: { amount: 16600, currency: USD, year: 2026 }
     caseSize: 42
@@ -553,6 +673,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.90.42.20.01.003
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21090422001003-c0bfe1.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21090422001003
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21090422001003
     price: { amount: 33300, currency: USD, year: 2026 }
     caseSize: 42
@@ -565,6 +688,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: "Bronze gold" }]
   - ref: 210.62.42.20.01.003
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21062422001003-a55060.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21062422001003
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21062422001003
     price: { amount: 35000, currency: USD, year: 2026 }
     caseSize: 42
@@ -577,6 +703,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.62.42.20.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21062422010001-3e939d.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21062422010001
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21062422010001
     price: { amount: 35000, currency: USD, year: 2026 }
     caseSize: 42
@@ -589,6 +718,9 @@ references:
     dials: [{ color: green }]
     bracelets: [{ type: rubber-strap }]
   - ref: 210.83.42.20.03.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21083422003001-ce2f28.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21083422003001
     name: "James Bond Limited Edition Set"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21083422003001
     price: { amount: 89800, currency: USD, year: 2026 }
@@ -602,6 +734,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: leather-strap }]
   - ref: 210.30.42.20.03.005
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003005-18104a.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003005
     name: "James Bond Limited Edition Set"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422003005
     price: { amount: 89800, currency: USD, year: 2026 }
@@ -615,6 +750,9 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: 210.83.42.20.01.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21083422001001-a545d5.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21083422001001
     name: "Spectre Limited Edition Set"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21083422001001
     price: { amount: 89800, currency: USD, year: 2026 }
@@ -627,6 +765,9 @@ references:
     complications: []
     bracelets: [{ type: leather-strap }]
   - ref: 210.30.42.20.01.029
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001029-22b45a.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001029
     name: "Spectre Limited Edition Set"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21030422001029
     price: { amount: 89800, currency: USD, year: 2026 }
@@ -640,6 +781,9 @@ references:
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
   - ref: 210.55.42.20.99.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21055422099001-45e472.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21055422099001
     name: "James Bond 60th anniversary"
     website: https://www.omegawatches.com/en-us/watch-omega-seamaster-diver-300m-co-axial-master-chronometer-42-mm-21055422099001
     price: { amount: 188400, currency: USD, year: 2026 }

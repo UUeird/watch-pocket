@@ -10,6 +10,9 @@ sources:
   - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43423422210001
 references:
   - ref: 434.20.42.22.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43420422202001-d38864.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43420422202001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43420422202001
     price: { amount: 12500, currency: USD, year: 2026 }
     caseSize: 42
@@ -22,6 +25,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
   - ref: 434.23.42.22.02.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43423422202001-573702.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43423422202001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43423422202001
     price: { amount: 10300, currency: USD, year: 2026 }
     caseSize: 42
@@ -34,6 +40,9 @@ references:
     dials: [{ color: silver }]
     bracelets: [{ type: leather-strap }]
   - ref: 434.20.42.22.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43420422210001-0e91d6.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43420422210001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43420422210001
     price: { amount: 12500, currency: USD, year: 2026 }
     caseSize: 42
@@ -46,6 +55,9 @@ references:
     dials: [{ color: green }]
     bracelets: [{ type: bracelet, name: "Steel and yellow gold" }]
   - ref: 434.23.42.22.10.001
+    officialPhoto:
+      src: https://www.omegawatches.com/media/catalog/product/o/m/omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43423422210001-d5ab1b.png?w=1024
+      page: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43423422210001
     website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43423422210001
     price: { amount: 10300, currency: USD, year: 2026 }
     caseSize: 42
