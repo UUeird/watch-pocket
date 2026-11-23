@@ -1,0 +1,113 @@
+name: "PRC 100 Solar 34mm"
+line: tissot/prc-100-solar
+style: sport
+sources:
+  - https://www.tissotwatches.com/en-us/T1518221103100.html
+  - https://www.tissotwatches.com/en-us/T1518221104100.html
+  - https://www.tissotwatches.com/en-us/T1518221109100.html
+  - https://www.tissotwatches.com/en-us/T1518221135100.html
+  - https://www.tissotwatches.com/en-us/T1518222203100.html
+  - https://www.tissotwatches.com/en-us/T1518222211100.html
+  - https://www.tissotwatches.com/en-us/T1518223302100.html
+references:
+  - ref: T151.822.11.031.00
+    website: https://www.tissotwatches.com/en-us/T1518221103100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwa9abc8f2/product-pictures/81d2eccd-1102-4c79-9515-447b0baa4f70_T151-822-11-031-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1518221103100.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 34
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T151.822.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1518221104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw1b10aa32/product-pictures/b9a1689a-f8bb-4cae-9c90-431430901b68_T151-822-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1518221104100.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 34
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T151.822.11.091.00
+    website: https://www.tissotwatches.com/en-us/T1518221109100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw78ba08ea/product-pictures/24236574-8b54-4790-b9d4-c1c27f2721e2_T151-822-11-091-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1518221109100.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 34
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T151.822.11.351.00
+    website: https://www.tissotwatches.com/en-us/T1518221135100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwaf3967fd/product-pictures/9ffa1783-1644-43dc-91bd-523ed79e5981_T151-822-11-351-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1518221135100.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 34
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue, name: "Ice blue" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T151.822.22.031.00
+    website: https://www.tissotwatches.com/en-us/T1518222203100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw81a71cc2/product-pictures/6ac0a302-b2f3-4bf2-bf36-d1c99a51f853_T151-822-22-031-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1518222203100.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 34
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T151.822.22.111.00
+    website: https://www.tissotwatches.com/en-us/T1518222211100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw27d688cb/product-pictures/2f8023b6-7824-4588-80fc-07c2b29a55b5_T151-822-22-111-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1518222211100.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 34
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T151.822.33.021.00
+    website: https://www.tissotwatches.com/en-us/T1518223302100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw3d022f35/product-pictures/a9c2be8b-00f2-4c8c-82f5-b5b8472ec354_T151-822-33-021-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1518223302100.html
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 34
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]

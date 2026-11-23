@@ -1,0 +1,167 @@
+name: "Gentleman Gold bezel 40mm Powermatic 80"
+line: tissot/gentleman
+style: everyday
+sources:
+  - https://www.tissotwatches.com/en-us/T9274074103100.html
+  - https://www.tissotwatches.com/en-us/T9274074103101.html
+  - https://www.tissotwatches.com/en-us/T9274074604100.html
+  - https://www.tissotwatches.com/en-us/T9274074604101.html
+  - https://www.tissotwatches.com/en-us/T9274074605100.html
+  - https://www.tissotwatches.com/en-us/T9274074606101.html
+  - https://www.tissotwatches.com/en-us/T9274074626100.html
+  - https://www.tissotwatches.com/en-us/T9274074629100.html
+  - https://www.tissotwatches.com/en-us/T9274074629101.html
+references:
+  - ref: T927.407.41.031.00
+    website: https://www.tissotwatches.com/en-us/T9274074103100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb398fd36/product-pictures/372a66db-54b4-4a66-ad20-628758d5c4c9_T927-407-41-031-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T9274074103100.html
+    price: { amount: 2450, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T927.407.41.031.01
+    website: https://www.tissotwatches.com/en-us/T9274074103101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf107a70a/product-pictures/f2ff8fc9-96d1-4085-b81d-9fb29993c0ce_T927-407-41-031-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T9274074103101.html
+    price: { amount: 2450, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T927.407.46.041.00
+    website: https://www.tissotwatches.com/en-us/T9274074604100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw234d58d0/product-pictures/b73fdf5e-7205-41ee-a9db-f8293d64fbb6_T927-407-46-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T9274074604100.html
+    price: { amount: 2375, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T927.407.46.041.01
+    website: https://www.tissotwatches.com/en-us/T9274074604101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwc4bb0c3f/product-pictures/b8adc23f-f602-47b3-9531-58b4bb7a03fb_T927-407-46-041-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T9274074604101.html
+    price: { amount: 2375, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T927.407.46.051.00
+    website: https://www.tissotwatches.com/en-us/T9274074605100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw59eb1675/product-pictures/950a1834-aafa-4220-82fb-7d4379e7fbe9_T927-407-46-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T9274074605100.html
+    price: { amount: 2375, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T927.407.46.061.01
+    website: https://www.tissotwatches.com/en-us/T9274074606101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw5fb424f1/product-pictures/efe59e4d-ff58-4aa8-8b85-dc9c8a3440f9_T927-407-46-061-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T9274074606101.html
+    price: { amount: 2375, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: gray, name: "Anthracite" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T927.407.46.261.00
+    website: https://www.tissotwatches.com/en-us/T9274074626100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwee846902/product-pictures/4c61f8a5-8162-4f30-8d1e-95d0e2c39495_T927-407-46-261-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T9274074626100.html
+    price: { amount: 2375, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white, name: "Cream" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T927.407.46.291.00
+    website: https://www.tissotwatches.com/en-us/T9274074629100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw0206107d/product-pictures/e950313d-ad72-4280-9052-7fd2d535a9d6_T927-407-46-291-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T9274074629100.html
+    price: { amount: 2375, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: brown }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T927.407.46.291.01
+    website: https://www.tissotwatches.com/en-us/T9274074629101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwab670ec8/product-pictures/e2434031-bc8b-481b-a90d-e4c1564590f2_T927-407-46-291-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T9274074629101.html
+    price: { amount: 2375, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: brown }]
+    bracelets: [{ type: leather-strap }]

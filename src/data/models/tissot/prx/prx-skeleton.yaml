@@ -1,0 +1,22 @@
+name: "PRX Skeleton"
+line: tissot/prx
+style: everyday
+sources:
+  - https://www.tissotwatches.com/en-us/T1374051737100.html
+references:
+  - ref: T137.405.17.371.00
+    name: "Skeleton Damian Lillard Special Edition"
+    website: https://www.tissotwatches.com/en-us/T1374051737100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw600754ab/product-pictures/23b62427-6dde-4027-845c-0dc381949fec_T137-405-17-371-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374051737100.html
+    price: { amount: 2075, currency: USD, year: 2026 }
+    caseSize: 44
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    winding: manual
+    complications: []
+    dials: [{ color: red, name: "Burgundy" }]
+    bracelets: [{ type: rubber-strap }]

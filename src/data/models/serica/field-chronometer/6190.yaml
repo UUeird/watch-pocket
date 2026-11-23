@@ -23,6 +23,7 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black, name: "Black Enamel" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
@@ -38,6 +39,7 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: white, name: "Polar White" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
@@ -53,6 +55,7 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: gray, name: "Storm Grey" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
@@ -68,6 +71,7 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black, name: "Commando" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
@@ -84,6 +88,7 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black, name: "Denali" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
@@ -99,6 +104,7 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black, name: "California" }]
     bracelets: [{ type: bracelet, name: "Bonklip" }]
@@ -115,5 +121,6 @@ references:
     crystal: sapphire
     movement: "Soprod M100"
     movementType: mechanical
+    winding: automatic
     complications: []
     bracelets: [{ type: bracelet, name: "Bonklip" }]

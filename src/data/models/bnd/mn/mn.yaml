@@ -19,6 +19,7 @@ references:
     crystal: sapphire
     movement: "Seiko NH38A"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: green, name: "Khaki" }]
     bracelets: [{ type: rubber-strap }]
@@ -34,6 +35,7 @@ references:
     crystal: sapphire
     movement: "Seiko NH38A"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: rubber-strap }]
@@ -49,6 +51,7 @@ references:
     crystal: sapphire
     movement: "Seiko NH38A"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: gray }]
     bracelets: [{ type: rubber-strap }]

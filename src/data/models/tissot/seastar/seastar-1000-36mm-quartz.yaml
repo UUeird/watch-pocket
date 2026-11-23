@@ -1,0 +1,143 @@
+name: "Seastar 1000 36mm Quartz"
+line: tissot/seastar
+style: dive
+sources:
+  - https://www.tissotwatches.com/en-us/T1202101101100.html
+  - https://www.tissotwatches.com/en-us/T1202101104100.html
+  - https://www.tissotwatches.com/en-us/T1202101105100.html
+  - https://www.tissotwatches.com/en-us/T1202101109100.html
+  - https://www.tissotwatches.com/en-us/T1202101711600.html
+  - https://www.tissotwatches.com/en-us/T1202102105100.html
+  - https://www.tissotwatches.com/en-us/T1202102205100.html
+  - https://www.tissotwatches.com/en-us/T1202102205101.html
+  - https://www.tissotwatches.com/en-us/T1202102211100.html
+references:
+  - ref: T120.210.11.011.00
+    website: https://www.tissotwatches.com/en-us/T1202101101100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwbe9a3c7c/product-pictures/6f675766-9950-4831-8f8d-fe391099d13c_T120-210-11-011-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202101101100.html
+    price: { amount: 515, currency: USD, year: 2026 }
+    caseSize: 36
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.210.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1202101104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw1591242d/product-pictures/28c2842d-418c-4deb-878f-a8d5d1eb2280_T120-210-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202101104100.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 36
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.210.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1202101105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw35dcf5d0/product-pictures/397170d8-ced7-4ba2-9642-080f2621d650_T120-210-11-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202101105100.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 36
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.210.11.091.00
+    website: https://www.tissotwatches.com/en-us/T1202101109100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf6296f37/product-pictures/cdbcbe60-f35d-4b6d-936a-8f3698e0d465_T120-210-11-091-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202101109100.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 36
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue, name: "Turquoise" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.210.17.116.00
+    website: https://www.tissotwatches.com/en-us/T1202101711600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw117198fc/product-pictures/71800942-f95f-49e9-bdd7-c81504653d36_T120-210-17-116-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202101711600.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 36
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "Mother-of-pearl" }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T120.210.21.051.00
+    website: https://www.tissotwatches.com/en-us/T1202102105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw0e12cbac/product-pictures/d86b890e-c6c0-4db4-99dc-2588f58eb871_T120-210-21-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202102105100.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 36
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.210.22.051.00
+    website: https://www.tissotwatches.com/en-us/T1202102205100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw915d875d/product-pictures/5ceefb3c-e50b-43e1-8bf5-90b8b27ffc37_T120-210-22-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202102205100.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 36
+    gender: unisex
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.210.22.051.01
+    website: https://www.tissotwatches.com/en-us/T1202102205101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw1608d3f3/product-pictures/75b134ab-b45b-48b9-a185-8873d6c83d28_T120-210-22-051-01_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202102205101.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 36
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.210.22.111.00
+    website: https://www.tissotwatches.com/en-us/T1202102211100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb12bd358/product-pictures/acd457e5-cdc0-468c-8802-6318f180ce28_T120-210-22-111-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202102211100.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 36
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]

@@ -14,6 +14,7 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h76409140-khaki-aviation-pioneer-mechanical-chrono.html
     price: { amount: 2445, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual
   - ref: H76409530
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h76409530_lowresweb.png
@@ -24,6 +25,7 @@ references:
     crystal: sapphire
     movement: "H-51-Si"
     movementType: mechanical
+    winding: manual
     complications: [chronograph]
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -33,3 +35,4 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h76409540-khaki-aviation-pioneer-mechanical-chrono.html
     price: { amount: 2395, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual

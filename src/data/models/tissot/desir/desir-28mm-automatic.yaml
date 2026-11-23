@@ -1,0 +1,88 @@
+name: "Desir 28mm Automatic"
+line: tissot/desir
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T1522071111600.html
+  - https://www.tissotwatches.com/en-us/T1522072211100.html
+  - https://www.tissotwatches.com/en-us/T1522073613100.html
+  - https://www.tissotwatches.com/en-us/T1522073652100.html
+  - https://www.tissotwatches.com/en-us/T1522073653100.html
+references:
+  - ref: T152.207.11.116.00
+    website: https://www.tissotwatches.com/en-us/T1522071111600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw6b6fa9d6/product-pictures/a6aadb9e-06f9-4f4c-bdfa-5ba56fe055b9_T152-207-11-116-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1522071111600.html
+    price: { amount: 1025, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.207.22.111.00
+    website: https://www.tissotwatches.com/en-us/T1522072211100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw922052ab/product-pictures/2946f033-dd71-4fde-90a5-28a4e93540d0_T152-207-22-111-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1522072211100.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.207.36.131.00
+    website: https://www.tissotwatches.com/en-us/T1522073613100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw063133fc/product-pictures/ad127f5f-3d09-4b01-8498-6d0977c859a9_T152-207-36-131-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1522073613100.html
+    price: { amount: 895, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue, name: "Blue mother-of-pearl" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T152.207.36.521.00
+    website: https://www.tissotwatches.com/en-us/T1522073652100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw8b281bcb/product-pictures/14ce0657-26c8-4d21-886d-9bc744e30f90_T152-207-36-521-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1522073652100.html
+    price: { amount: 895, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: pink, name: "Pink mother-of-pearl" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T152.207.36.531.00
+    website: https://www.tissotwatches.com/en-us/T1522073653100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw219520e6/product-pictures/5f50803b-9e22-4d51-ae0b-82d551eefc73_T152-207-36-531-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1522073653100.html
+    price: { amount: 895, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white, name: "Mother-of-pearl" }]
+    bracelets: [{ type: leather-strap }]

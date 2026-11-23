@@ -1,0 +1,99 @@
+name: "Planet Ocean 600M"
+line: omega/seamaster
+style: dive
+website: https://www.omegawatches.com/en-us/watches/seamaster/planet-ocean/catalog
+sources:
+  - https://www.omegawatches.com/en-us/watches/seamaster/planet-ocean/catalog
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21730422101001
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21732422101001
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21730422101002
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21732422101002
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21730422101003
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21732422101003
+  - https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21732422101004
+references:
+  - ref: 217.30.42.21.01.001
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21730422101001
+    price: { amount: 9200, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: dive }
+    crystal: sapphire
+    movement: "8912"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: 217.32.42.21.01.001
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21732422101001
+    price: { amount: 8600, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black], style: dive }
+    crystal: sapphire
+    movement: "8912"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: 217.30.42.21.01.002
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21730422101002
+    price: { amount: 9200, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: ceramic, colors: [blue], style: dive }
+    crystal: sapphire
+    movement: "8912"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: 217.32.42.21.01.002
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21732422101002
+    price: { amount: 8600, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: ceramic, colors: [blue], style: dive }
+    crystal: sapphire
+    movement: "8912"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: 217.30.42.21.01.003
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21730422101003
+    price: { amount: 9500, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: ceramic, colors: [orange], style: dive }
+    crystal: sapphire
+    movement: "8912"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: 217.32.42.21.01.003
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21732422101003
+    price: { amount: 8900, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: ceramic, colors: [orange], style: dive }
+    crystal: sapphire
+    movement: "8912"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: 217.32.42.21.01.004
+    website: https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21732422101004
+    price: { amount: 8900, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    bezel: { material: ceramic, colors: [orange], style: dive }
+    crystal: sapphire
+    movement: "8912"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+

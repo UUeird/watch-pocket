@@ -1,0 +1,111 @@
+name: "Prestige Power Reserve 41mm"
+line: omega/de-ville
+style: dress
+website: https://www.omegawatches.com/en-us/watches/de-ville/prestige/catalog
+sources:
+  - https://www.omegawatches.com/en-us/watches/de-ville/prestige/catalog
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43453412102001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43453412110001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43420412102001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43423412102001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43410412106001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43413412106001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43410412103002
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43413412103002
+references:
+  - ref: 434.53.41.21.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43453412102001
+    price: { amount: 17100, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [rose-gold]
+    crystal: sapphire
+    movement: "8810"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, power-reserve]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.53.41.21.10.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43453412110001
+    price: { amount: 17100, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [yellow-gold]
+    crystal: sapphire
+    movement: "8810"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, power-reserve]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.20.41.21.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43420412102001
+    price: { amount: 12200, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel, yellow-gold]
+    crystal: sapphire
+    movement: "8810"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, power-reserve]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Steel and yellow gold" }]
+  - ref: 434.23.41.21.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43423412102001
+    price: { amount: 10100, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel, yellow-gold]
+    crystal: sapphire
+    movement: "8810"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, power-reserve]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.10.41.21.06.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43410412106001
+    price: { amount: 6800, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "8810"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, power-reserve]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: 434.13.41.21.06.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43413412106001
+    price: { amount: 6400, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "8810"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, power-reserve]
+    dials: [{ color: gray }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.10.41.21.03.002
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43410412103002
+    price: { amount: 6800, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "8810"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: 434.13.41.21.03.002
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-power-reserve-41-mm-43413412103002
+    price: { amount: 6400, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "8810"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]

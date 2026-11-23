@@ -16,6 +16,7 @@ references:
     crystal: sapphire
     movement: "STP 1-11"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }, { type: fabric-strap }]
@@ -30,6 +31,7 @@ references:
     crystal: sapphire
     movement: "STP 1-11"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }, { type: fabric-strap }]

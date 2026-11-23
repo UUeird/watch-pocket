@@ -14,6 +14,7 @@ references:
     metals: [steel]
     movement: "6654.4"
     movementType: mechanical
+    winding: automatic
     complications: [date, day, moonphase]
     dials: [{ color: white, name: "Opaline" }]
     bracelets: [{ type: leather-strap }]

@@ -16,6 +16,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black, name: Noir }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -29,6 +30,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: rose-gold, name: "Or Rose" }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -42,6 +44,7 @@ references:
     crystal: sapphire
     movement: "France Ébauches FE"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: silver, name: Argent }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]

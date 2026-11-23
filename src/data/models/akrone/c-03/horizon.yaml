@@ -17,6 +17,7 @@ references:
     crystal: sapphire
     movement: "Soprod P024"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "Horizon Black 39mm"
     website: https://akrone.fr/products/c-03-horizon-black-39mm
@@ -29,6 +30,7 @@ references:
     crystal: sapphire
     movement: "Soprod P024"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "Horizon Austral Gun"
     website: https://akrone.fr/products/c-03-horizon-austral-gun
@@ -41,4 +43,5 @@ references:
     crystal: sapphire
     movement: "Soprod P024"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }, { type: bracelet }]

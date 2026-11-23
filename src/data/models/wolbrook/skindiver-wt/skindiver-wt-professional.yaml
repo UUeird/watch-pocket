@@ -18,6 +18,7 @@ references:
     crystal: acrylic
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: fabric-strap }, { type: bracelet }]
   - ref: "SWP-001-X15"
@@ -31,6 +32,7 @@ references:
     crystal: acrylic
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
   - ref: "SWP-002"
     officialPhoto:
@@ -43,6 +45,7 @@ references:
     crystal: acrylic
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: fabric-strap }, { type: bracelet }]
   - ref: "SWP-003"
@@ -57,5 +60,6 @@ references:
     crystal: acrylic
     movement: "Miyota 8315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: fabric-strap }, { type: bracelet }]

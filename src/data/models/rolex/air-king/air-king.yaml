@@ -4,6 +4,7 @@ style: pilot
 theme: aviation
 website: https://www.rolex.com/watches/air-king/m126900-0001.html
 sources:
+  - https://en.wikipedia.org/wiki/Rolex_Air-King
   - https://wristcheck.com/us/discover/referencecheck/rolex-air-king-ref-126900
   - https://professionalwatches.com/the-2022-rolex-air-king/
 references:
@@ -22,6 +23,7 @@ references:
     crystal: sapphire
     movement: "3230"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]

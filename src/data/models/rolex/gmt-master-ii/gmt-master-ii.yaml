@@ -2,6 +2,7 @@ name: GMT-Master II
 line: rolex/gmt-master-ii
 style: travel
 sources:
+  - https://en.wikipedia.org/wiki/Rolex_GMT_Master_II
   - https://www.luxurybazaar.com/grey-market/rolex-16710/
   - https://beckertime.com/buy-used-rolex/gmt-master-ii
   - https://www.phillips.com/detail/rolex/172580
@@ -41,6 +42,7 @@ references:
     crystal: sapphire
     movement: "3185"
     movementType: mechanical
+    winding: automatic
     complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]
@@ -52,6 +54,7 @@ references:
     crystal: sapphire
     movement: "3186"
     movementType: mechanical
+    winding: automatic
     complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -69,6 +72,7 @@ references:
     crystal: sapphire
     movement: "3186"
     movementType: mechanical
+    winding: automatic
     complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -79,6 +83,7 @@ references:
     bezel: { material: ceramic, colors: [red, blue], style: gmt }
     movement: "3285"
     movementType: mechanical
+    winding: automatic
     complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]
@@ -89,6 +94,7 @@ references:
     bezel: { material: ceramic, colors: [blue, black], style: gmt }
     movement: "3285"
     movementType: mechanical
+    winding: automatic
     complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Jubilee }, { type: bracelet, name: Oyster }]

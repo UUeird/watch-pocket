@@ -15,6 +15,7 @@ references:
     bezel: { material: ceramic, colors: [blue], style: dive }
     movement: "1315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: fabric-strap }]

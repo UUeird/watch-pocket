@@ -1,0 +1,126 @@
+name: "Classic Dream 40mm Powermatic 80"
+line: tissot/classic-dream
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T1584071103100.html
+  - https://www.tissotwatches.com/en-us/T1584071105100.html
+  - https://www.tissotwatches.com/en-us/T1584071604100.html
+  - https://www.tissotwatches.com/en-us/T1584072203100.html
+  - https://www.tissotwatches.com/en-us/T1584072203101.html
+  - https://www.tissotwatches.com/en-us/T1584073603100.html
+  - https://www.tissotwatches.com/en-us/T1584073626100.html
+references:
+  - ref: T158.407.11.031.00
+    website: https://www.tissotwatches.com/en-us/T1584071103100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw82c27e19/product-pictures/647db785-64ce-473c-8c45-1d608c84b71e_T158-407-11-031-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1584071103100.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T158.407.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1584071105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw575d40c4/product-pictures/03fcc26f-3aff-4aef-bdef-df8c850de092_T158-407-11-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1584071105100.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T158.407.16.041.00
+    website: https://www.tissotwatches.com/en-us/T1584071604100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw866b0acf/product-pictures/905932ec-1d6b-4a79-a4ec-20676dc97c86_T158-407-16-041-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1584071604100.html
+    price: { amount: 515, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T158.407.22.031.00
+    website: https://www.tissotwatches.com/en-us/T1584072203100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw8773ac37/product-pictures/6327284e-bfbc-4924-897b-30d9d1ec4529_T158-407-22-031-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1584072203100.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T158.407.22.031.01
+    website: https://www.tissotwatches.com/en-us/T1584072203101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw7e6ddf65/product-pictures/ddb21ae5-af97-48db-9595-6529141708f2_T158-407-22-031-01_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1584072203101.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T158.407.36.031.00
+    website: https://www.tissotwatches.com/en-us/T1584073603100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw2af2da03/product-pictures/5a9f762e-69a9-4a82-807c-191f2ab5b439_T158-407-36-031-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1584073603100.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T158.407.36.261.00
+    website: https://www.tissotwatches.com/en-us/T1584073626100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw6ebb90ce/product-pictures/fbd4a299-4fab-4a3b-a47f-85ba4ed7af03_T158-407-36-261-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1584073626100.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 40
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white, name: "Ivory" }]
+    bracelets: [{ type: leather-strap }]

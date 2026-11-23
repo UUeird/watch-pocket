@@ -1,0 +1,176 @@
+name: "Desir 28mm Quartz"
+line: tissot/desir
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T1520101104600.html
+  - https://www.tissotwatches.com/en-us/T1520101111600.html
+  - https://www.tissotwatches.com/en-us/T1520101111800.html
+  - https://www.tissotwatches.com/en-us/T1520101603800.html
+  - https://www.tissotwatches.com/en-us/T1520101603801.html
+  - https://www.tissotwatches.com/en-us/T1520102211600.html
+  - https://www.tissotwatches.com/en-us/T1520102211601.html
+  - https://www.tissotwatches.com/en-us/T1520102211800.html
+  - https://www.tissotwatches.com/en-us/T1520102211801.html
+  - https://www.tissotwatches.com/en-us/T1520103311800.html
+  - https://www.tissotwatches.com/en-us/T1520103311801.html
+references:
+  - ref: T152.010.11.046.00
+    website: https://www.tissotwatches.com/en-us/T1520101104600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw6e9787b6/product-pictures/77b72214-36cd-4f81-bcd9-3f86a8c45126_T152-010-11-046-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1520101104600.html
+    price: { amount: 525, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.010.11.116.00
+    website: https://www.tissotwatches.com/en-us/T1520101111600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw292e30b1/product-pictures/b48ed00f-c886-4883-8a7e-aa0050e70b6a_T152-010-11-116-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1520101111600.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.010.11.118.00
+    website: https://www.tissotwatches.com/en-us/T1520101111800.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb07be2dc/product-pictures/d2164b8d-fa06-4746-a924-fabfe0707ff6_T152-010-11-118-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1520101111800.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "Mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.010.16.038.00
+    website: https://www.tissotwatches.com/en-us/T1520101603800.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw6759eea0/product-pictures/f0a7bed9-937b-4f3d-9cec-3b791bf832f2_T152-010-16-038-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1520101603800.html
+    price: { amount: 375, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T152.010.16.038.01
+    website: https://www.tissotwatches.com/en-us/T1520101603801.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw2e832a72/product-pictures/36b20532-76f2-4514-a50f-a49caa4a3013_T152-010-16-038-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1520101603801.html
+    price: { amount: 375, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T152.010.22.116.00
+    website: https://www.tissotwatches.com/en-us/T1520102211600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf71e750f/product-pictures/d772a9e2-d079-4262-a131-bdd3b8a48032_T152-010-22-116-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1520102211600.html
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.010.22.116.01
+    website: https://www.tissotwatches.com/en-us/T1520102211601.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwe55ba6f3/product-pictures/b1d21d34-2d90-47e1-ba1c-e6cd83244c15_T152-010-22-116-01_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1520102211601.html
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.010.22.118.00
+    website: https://www.tissotwatches.com/en-us/T1520102211800.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw615340bf/product-pictures/f3db3b64-93a2-4018-afe5-c7d365b0ad64_T152-010-22-118-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1520102211800.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "Mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.010.22.118.01
+    website: https://www.tissotwatches.com/en-us/T1520102211801.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw7fbff709/product-pictures/e775301c-514a-4576-8268-0c41ce2eba31_T152-010-22-118-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1520102211801.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "Mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.010.33.118.00
+    website: https://www.tissotwatches.com/en-us/T1520103311800.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwcd69b207/product-pictures/77bfda13-8ce4-43c2-a25b-841b0607c210_T152-010-33-118-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1520103311800.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "Mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.010.33.118.01
+    website: https://www.tissotwatches.com/en-us/T1520103311801.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw3d756424/product-pictures/d1acb830-75ca-4851-996c-5b3ccebf731f_T152-010-33-118-01_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1520103311801.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 28
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "Mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]

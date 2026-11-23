@@ -19,6 +19,7 @@ references:
     crystal: sapphire
     movement: "6R55"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -32,6 +33,7 @@ references:
     crystal: sapphire
     movement: "6R55"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -45,6 +47,7 @@ references:
     crystal: sapphire
     movement: "6R55"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -58,6 +61,7 @@ references:
     crystal: sapphire
     movement: "6R55"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]

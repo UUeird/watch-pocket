@@ -17,6 +17,7 @@ references:
     crystal: sapphire
     movement: "H-21"
     movementType: mechanical
+    winding: automatic
     complications: [date, day, chronograph]
   - ref: H71636330
     officialPhoto:
@@ -24,3 +25,4 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h71636330-khaki-field-day-date-auto-chrono-resident-evil-requiem-limited-edition.html
     price: { amount: 2175, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic

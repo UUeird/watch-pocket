@@ -17,6 +17,7 @@ references:
     crystal: sapphire
     movement: "H-10"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
   - ref: H78505332
@@ -25,6 +26,7 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h78505332-khaki-navy-belowzero-auto-limited-edition.html
     price: { amount: 2095, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H78535380
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h78535380.png
@@ -32,3 +34,4 @@ references:
     price: { amount: 1995, currency: USD, year: 2026 }
     metals: [titanium]
     movementType: mechanical
+    winding: automatic

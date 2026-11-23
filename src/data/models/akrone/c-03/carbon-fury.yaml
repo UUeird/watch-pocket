@@ -16,6 +16,7 @@ references:
     crystal: sapphire
     movement: "Soprod P024"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "Carbon Fury Jaune"
     officialPhoto:
@@ -27,6 +28,7 @@ references:
     crystal: sapphire
     movement: "Soprod P024"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "Carbon Fury Lume"
     officialPhoto:
@@ -38,4 +40,5 @@ references:
     crystal: sapphire
     movement: "Soprod P024"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }]

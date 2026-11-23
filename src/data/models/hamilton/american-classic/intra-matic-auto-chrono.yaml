@@ -17,12 +17,14 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h38416111-american-classic-intra-matic-auto-chrono.html
     price: { amount: 2645, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H38416541
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38416541.png
       page: https://www.hamiltonwatch.com/en-us/h38416541-intra-matic.html
     price: { amount: 2595, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H38416560
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38416560.png
@@ -30,12 +32,14 @@ references:
     price: { amount: 2595, currency: USD, year: 2026 }
     caseSize: 40
     movementType: mechanical
+    winding: automatic
   - ref: H38416711
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38416711.png
       page: https://www.hamiltonwatch.com/en-us/h38416711-intramatic-auto-chrono.html
     price: { amount: 2595, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H38446730
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38446730.png
@@ -47,6 +51,7 @@ references:
     crystal: sapphire
     movement: "H-31"
     movementType: mechanical
+    winding: automatic
     complications: [date, chronograph]
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -56,9 +61,11 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h38446731-american-classic-auto-chrono.html
     price: { amount: 2625, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H38446732
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h38446732.png
       page: https://www.hamiltonwatch.com/en-us/h38446732-american-classic-auto-chrono.html
     price: { amount: 2625, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic

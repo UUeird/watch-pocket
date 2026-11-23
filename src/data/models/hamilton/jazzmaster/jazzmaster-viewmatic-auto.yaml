@@ -17,6 +17,7 @@ references:
     crystal: sapphire
     movement: "H-10"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -26,9 +27,11 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h32515155-jazzmaster-day-date-auto.html
     price: { amount: 995, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H32515555
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/3/h32515555.png
       page: https://www.hamiltonwatch.com/en-us/h32515555-jazzmaster-day-date-auto.html
     price: { amount: 945, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic

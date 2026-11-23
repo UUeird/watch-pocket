@@ -1,0 +1,82 @@
+name: "Supersport Chrono 42mm Chronograph"
+line: tissot/supersport-chrono
+style: chronograph
+sources:
+  - https://www.tissotwatches.com/en-us/T1254171104100.html
+  - https://www.tissotwatches.com/en-us/T1254171135100.html
+  - https://www.tissotwatches.com/en-us/T1254171703100.html
+  - https://www.tissotwatches.com/en-us/T1254172705100.html
+  - https://www.tissotwatches.com/en-us/T1254173305100.html
+references:
+  - ref: T125.417.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1254171104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwec6c35a4/product-pictures/cc1213a5-a32e-4c91-a1d4-91dba4b8d99e_T125-417-11-041-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1254171104100.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T125.417.11.351.00
+    website: https://www.tissotwatches.com/en-us/T1254171135100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw2202400a/product-pictures/1d70dade-31c3-445a-bac5-9f2bb677fbd8_T125-417-11-351-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1254171135100.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue, name: "Ice blue" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T125.417.17.031.00
+    name: "NBA 2026"
+    website: https://www.tissotwatches.com/en-us/T1254171703100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb27aaf68/product-pictures/595e6141-1f04-4b20-bb08-b734d519efb0_T125-417-17-031-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1254171703100.html
+    price: { amount: 525, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: gray }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T125.417.27.051.00
+    website: https://www.tissotwatches.com/en-us/T1254172705100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw1ed2c58c/product-pictures/3d1619e0-2b58-40d0-910c-1fff51e4a313_T125-417-27-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1254172705100.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T125.417.33.051.00
+    website: https://www.tissotwatches.com/en-us/T1254173305100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw9f509df1/product-pictures/99f0c8ce-b00a-4de0-9742-70b1ff1ec2ed_T125-417-33-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1254173305100.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: black, name: "Black PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

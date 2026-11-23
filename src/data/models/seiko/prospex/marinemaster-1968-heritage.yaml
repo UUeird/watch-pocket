@@ -20,6 +20,7 @@ references:
     crystal: sapphire
     movement: "8L45"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -33,6 +34,7 @@ references:
     crystal: sapphire
     movement: "8L45"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -45,6 +47,7 @@ references:
     crystal: sapphire
     movement: "8L45"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]

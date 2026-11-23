@@ -18,6 +18,7 @@ references:
     crystal: sapphire
     movement: "H-10"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
@@ -27,15 +28,18 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h77825331-khaki-navy-frogman-auto.html
     price: { amount: 1395, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H77845330
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77845330_lowresweb.png
       page: https://www.hamiltonwatch.com/en-us/h77845330-khaki-navy-frogman-auto.html
     price: { amount: 1545, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H77855330
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77855330.png
       page: https://www.hamiltonwatch.com/en-us/h77855330-khaki-navy-frogman-auto.html
     price: { amount: 1545, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic

@@ -1,0 +1,53 @@
+name: "Classic Semi Skeleton"
+line: orient/orient-star
+style: dress
+sources:
+  - https://www.orientwatchusa.com/products/re-at0201g00b
+  - https://www.orientwatchusa.com/products/re-at0202e00b
+  - https://www.orientwatchusa.com/products/re-at0203l00b
+references:
+  - ref: RE-AT0201G00B
+    website: https://www.orientwatchusa.com/products/re-at0201g00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/products/classic-semi-skeleton-1420007.png
+      page: https://www.orientwatchusa.com/products/re-at0201g00b
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 40.4
+    metals: [steel]
+    crystal: mineral
+    movement: "F6R42"
+    movementType: mechanical
+    winding: automatic
+    complications: [power-reserve]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: leather-strap }]
+  - ref: RE-AT0202E00B
+    website: https://www.orientwatchusa.com/products/re-at0202e00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/products/classic-semi-skeleton-6442653.png
+      page: https://www.orientwatchusa.com/products/re-at0202e00b
+    price: { amount: 470, currency: USD, year: 2026 }
+    caseSize: 40.4
+    metals: [steel]
+    crystal: mineral
+    movement: "F6R42"
+    movementType: mechanical
+    winding: automatic
+    complications: [power-reserve]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]
+  - ref: RE-AT0203L00B
+    website: https://www.orientwatchusa.com/products/re-at0203l00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/products/classic-semi-skeleton-9409702.png
+      page: https://www.orientwatchusa.com/products/re-at0203l00b
+    price: { amount: 470, currency: USD, year: 2026 }
+    caseSize: 40.4
+    metals: [steel]
+    crystal: mineral
+    movement: "F6R42"
+    movementType: mechanical
+    winding: automatic
+    complications: [power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]

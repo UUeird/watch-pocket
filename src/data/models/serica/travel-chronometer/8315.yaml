@@ -19,6 +19,7 @@ references:
     crystal: sapphire
     movement: "Soprod C125"
     movementType: mechanical
+    winding: automatic
     complications: [gmt]
     dials: [{ color: black, name: "Black Enamel" }]
     bracelets: [{ type: bracelet, name: "Expedition" }]
@@ -35,6 +36,7 @@ references:
     crystal: sapphire
     movement: "Soprod C125"
     movementType: mechanical
+    winding: automatic
     complications: [gmt]
     dials: [{ color: brown, name: "Sand Red" }]
     bracelets: [{ type: bracelet, name: "Expedition" }]

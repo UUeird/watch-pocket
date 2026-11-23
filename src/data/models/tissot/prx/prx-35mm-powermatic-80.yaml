@@ -1,0 +1,108 @@
+name: "PRX 35mm Powermatic 80"
+line: tissot/prx
+style: everyday
+sources:
+  - https://www.tissotwatches.com/en-us/T1372071104100.html
+  - https://www.tissotwatches.com/en-us/T1372071105100.html
+  - https://www.tissotwatches.com/en-us/T1372071109100.html
+  - https://www.tissotwatches.com/en-us/T1372071111100.html
+  - https://www.tissotwatches.com/en-us/T1372071135100.html
+  - https://www.tissotwatches.com/en-us/T1372073302100.html
+references:
+  - ref: T137.207.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1372071104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw45f1dd0a/product-pictures/c40959ea-db66-4297-b91b-63cb686c1cf5_T137-207-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372071104100.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.207.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1372071105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw4dc33b3b/product-pictures/c84a100e-6e30-4244-aec6-44a8a1d1d333_T137-207-11-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372071105100.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.207.11.091.00
+    website: https://www.tissotwatches.com/en-us/T1372071109100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw7ed9e90f/product-pictures/a2c83d75-5920-46ae-9357-748382f43010_T137-207-11-091-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372071109100.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.207.11.111.00
+    website: https://www.tissotwatches.com/en-us/T1372071111100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw67990406/product-pictures/9b9f5b8c-99c2-428b-ae90-23e20ca59729_T137-207-11-111-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372071111100.html
+    price: { amount: 875, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.207.11.351.00
+    website: https://www.tissotwatches.com/en-us/T1372071135100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwdf3b3512/product-pictures/842ff1da-5eac-4e1d-9222-1f828ab4835b_T137-207-11-351-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372071135100.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue, name: "Ice blue" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.207.33.021.00
+    website: https://www.tissotwatches.com/en-us/T1372073302100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw01f8f4ef/product-pictures/c016ca2d-0369-4a45-969d-24c114b8d03d_T137-207-33-021-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372073302100.html
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: unisex
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]

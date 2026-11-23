@@ -22,6 +22,7 @@ references:
     crystal: mineral
     movement: "4R35"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -35,6 +36,7 @@ references:
     crystal: mineral
     movement: "4R35"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -48,6 +50,7 @@ references:
     crystal: mineral
     movement: "4R35"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -61,6 +64,7 @@ references:
     crystal: mineral
     movement: "4R35"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: yellow }]
     bracelets: [{ type: leather-strap }]
@@ -74,6 +78,7 @@ references:
     crystal: mineral
     movement: "4R34"
     movementType: mechanical
+    winding: automatic
     complications: [date, gmt]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]

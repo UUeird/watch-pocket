@@ -16,6 +16,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
   - ref: "GMT Vert"
@@ -29,5 +30,6 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]

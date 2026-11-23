@@ -1,0 +1,127 @@
+name: "PRX 35mm Quartz"
+line: tissot/prx
+style: everyday
+sources:
+  - https://www.tissotwatches.com/en-us/T1372101101100.html
+  - https://www.tissotwatches.com/en-us/T1372101103100.html
+  - https://www.tissotwatches.com/en-us/T1372101104100.html
+  - https://www.tissotwatches.com/en-us/T1372101108100.html
+  - https://www.tissotwatches.com/en-us/T1372101109100.html
+  - https://www.tissotwatches.com/en-us/T1372101111100.html
+  - https://www.tissotwatches.com/en-us/T1372101135100.html
+  - https://www.tissotwatches.com/en-us/T1372103302100.html
+references:
+  - ref: T137.210.11.011.00
+    name: "Lee Dong Wook Special Edition"
+    website: https://www.tissotwatches.com/en-us/T1372101101100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwc125f7a8/product-pictures/24cdac75-419f-4eb9-8c52-9d860bb208a2_T137-210-11-011-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372101101100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.210.11.031.00
+    website: https://www.tissotwatches.com/en-us/T1372101103100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw25729185/product-pictures/88373bf5-79c4-46b1-92c8-8d63251c61ca_T137-210-11-031-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372101103100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.210.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1372101104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw85cbf290/product-pictures/137cb52c-5d13-4d79-a9ce-53d32356fd77_T137-210-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372101104100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.210.11.081.00
+    website: https://www.tissotwatches.com/en-us/T1372101108100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwbe92c1c4/product-pictures/7d3461dd-2c02-44fe-8b56-1b2853b39637_T137-210-11-081-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372101108100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.210.11.091.00
+    website: https://www.tissotwatches.com/en-us/T1372101109100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw26dfdfe8/product-pictures/002e268c-3304-46b3-8be4-683bacb42d66_T137-210-11-091-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372101109100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: green, name: "Light green" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.210.11.111.00
+    website: https://www.tissotwatches.com/en-us/T1372101111100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw266f6655/product-pictures/21c9d8dc-848f-4d9b-b76a-9481961cbd96_T137-210-11-111-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372101111100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.210.11.351.00
+    website: https://www.tissotwatches.com/en-us/T1372101135100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwc3efd0d0/product-pictures/2ed82ca5-57f7-401b-92a1-489000bff875_T137-210-11-351-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372101135100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: unisex
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue, name: "Light blue" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.210.33.021.00
+    website: https://www.tissotwatches.com/en-us/T1372103302100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwc19af558/product-pictures/43e281e1-1b22-48b6-8abf-94d79ab81e7d_T137-210-33-021-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372103302100.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 35
+    gender: unisex
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]

@@ -14,6 +14,7 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h77506540-khaki-aviation-day-date-auto-chrono.html
     price: { amount: 2095, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H77616533
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77616533.png
@@ -24,6 +25,7 @@ references:
     crystal: sapphire
     movement: "H-21"
     movementType: mechanical
+    winding: automatic
     complications: [date, day, chronograph]
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -33,3 +35,4 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h77916920-khaki-x-wind-auto-chrono-45mm.html
     price: { amount: 2595, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic

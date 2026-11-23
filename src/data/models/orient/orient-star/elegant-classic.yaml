@@ -1,0 +1,21 @@
+name: "Elegant Classic"
+line: orient/orient-star
+style: dress
+sources:
+  - https://www.orientwatchusa.com/products/re-au0001s00b
+references:
+  - ref: RE-AU0001S00B
+    website: https://www.orientwatchusa.com/products/re-au0001s00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/products/elegant-classic-2200400.png
+      page: https://www.orientwatchusa.com/products/re-au0001s00b
+    price: { amount: 695, currency: USD, year: 2026 }
+    caseSize: 38.7
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6N43"
+    movementType: mechanical
+    winding: automatic
+    complications: [date, power-reserve]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]

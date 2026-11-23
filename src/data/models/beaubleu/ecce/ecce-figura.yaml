@@ -20,6 +20,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: white, name: Alba }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -34,6 +35,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: white, name: Lys }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -48,6 +50,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black, name: Onyx }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -62,6 +65,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: rose-gold, name: Sienna }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -76,6 +80,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: blue, name: Smalt }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
@@ -90,6 +95,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: silver, name: Vesperal }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]

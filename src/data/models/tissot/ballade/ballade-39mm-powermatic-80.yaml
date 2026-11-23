@@ -1,0 +1,91 @@
+name: "Ballade 39mm Powermatic 80"
+line: tissot/ballade
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T1564081103300.html
+  - https://www.tissotwatches.com/en-us/T1564081104300.html
+  - https://www.tissotwatches.com/en-us/T1564081109300.html
+  - https://www.tissotwatches.com/en-us/T1564081135300.html
+  - https://www.tissotwatches.com/en-us/T1564082203300.html
+references:
+  - ref: T156.408.11.033.00
+    website: https://www.tissotwatches.com/en-us/T1564081103300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwa3b0db1a/product-pictures/08a991c0-bd77-4aac-a83a-bdfdd6cf55c9_T156-408-11-033-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1564081103300.html
+    price: { amount: 1100, currency: USD, year: 2026 }
+    caseSize: 39
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T156.408.11.043.00
+    website: https://www.tissotwatches.com/en-us/T1564081104300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw2a129ac1/product-pictures/1a5a2687-1ee2-4e17-89a1-75998c9a01ac_T156-408-11-043-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1564081104300.html
+    price: { amount: 1100, currency: USD, year: 2026 }
+    caseSize: 39
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T156.408.11.093.00
+    website: https://www.tissotwatches.com/en-us/T1564081109300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw8d2f1501/product-pictures/48024672-e071-47de-960b-eb1a65ae1c29_T156-408-11-093-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1564081109300.html
+    price: { amount: 1100, currency: USD, year: 2026 }
+    caseSize: 39
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T156.408.11.353.00
+    website: https://www.tissotwatches.com/en-us/T1564081135300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw2ee20c0d/product-pictures/cc0ce47e-041c-4bdb-b9db-fc247d9041ae_T156-408-11-353-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1564081135300.html
+    price: { amount: 1100, currency: USD, year: 2026 }
+    caseSize: 39
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue, name: "Ice blue" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T156.408.22.033.00
+    website: https://www.tissotwatches.com/en-us/T1564082203300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwd9506a2e/product-pictures/b2a2e0a9-a1ad-4977-9d4d-67856c904a72_T156-408-22-033-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1564082203300.html
+    price: { amount: 1225, currency: USD, year: 2026 }
+    caseSize: 39
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]

@@ -1,0 +1,41 @@
+name: "Le Locle Gold 39.3mm Powermatic 80"
+line: tissot/le-locle
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T9324084103300.html
+  - https://www.tissotwatches.com/en-us/T9324084604300.html
+references:
+  - ref: T932.408.41.033.00
+    website: https://www.tissotwatches.com/en-us/T9324084103300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw759928e7/product-pictures/1226651d-39f8-41a6-97bc-39356500f7fc_T932-408-41-033-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T9324084103300.html
+    price: { amount: 2225, currency: USD, year: 2026 }
+    caseSize: 39.3
+    gender: men
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T932.408.46.043.00
+    website: https://www.tissotwatches.com/en-us/T9324084604300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw13cb13ae/product-pictures/8f6ca206-c41c-4b8e-906f-1ffa41611c22_T932-408-46-043-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T9324084604300.html
+    price: { amount: 2225, currency: USD, year: 2026 }
+    caseSize: 39.3
+    gender: men
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]

@@ -2,6 +2,7 @@ name: Sea-Dweller
 line: rolex/sea-dweller
 style: dive
 sources:
+  - https://en.wikipedia.org/wiki/Rolex_Submariner
   - https://www.betteridge.com/Rolex-Certified-Pre+Owned-Sea+Dweller-M126600/p/40612670
   - https://phillips.com/detail/rolex/180695
   - https://phillips.com/detail/rolex/224165
@@ -14,6 +15,7 @@ references:
     crystal: sapphire
     movement: "3235"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -25,5 +27,6 @@ references:
     crystal: sapphire
     movement: "3235"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: bracelet, name: Oyster }]

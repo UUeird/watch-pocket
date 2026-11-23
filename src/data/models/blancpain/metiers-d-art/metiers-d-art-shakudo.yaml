@@ -15,6 +15,7 @@ references:
     metals: [rose-gold]
     movement: "15B"
     movementType: mechanical
+    winding: manual
     complications: []
     bracelets: [{ type: leather-strap }]
   - ref: "6615 3615 55B"
@@ -26,5 +27,6 @@ references:
     metals: [rose-gold]
     movement: "15B"
     movementType: mechanical
+    winding: manual
     complications: []
     bracelets: [{ type: leather-strap }]

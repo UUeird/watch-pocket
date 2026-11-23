@@ -20,6 +20,7 @@ references:
     bezel: { style: dive }
     movement: "1150"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
@@ -33,6 +34,7 @@ references:
     bezel: { style: dive }
     movement: "1315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
@@ -46,6 +48,7 @@ references:
     bezel: { style: dive }
     movement: "1315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -59,6 +62,7 @@ references:
     bezel: { style: dive }
     movement: "1153"
     movementType: mechanical
+    winding: automatic
     dials: [{ color: pink, name: "Pink mother-of-pearl" }]
     bracelets: [{ type: fabric-strap }]
   - ref: "5007 1130 71S"
@@ -71,6 +75,7 @@ references:
     bezel: { style: dive }
     movement: "1150"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]
@@ -84,6 +89,7 @@ references:
     bezel: { style: dive }
     movement: "1315"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }]

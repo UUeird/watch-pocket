@@ -21,6 +21,7 @@ references:
     crystal: sapphire
     movement: "H-10-S"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]
@@ -30,24 +31,28 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h32405811-jazzmaster-viewmatic-skeleton-auto.html
     price: { amount: 1395, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H42535141
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/4/h42535141.png
       page: https://www.hamiltonwatch.com/en-us/h42535141-jazzmaster-skeleton-auto.html
     price: { amount: 1545, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H42535160
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/4/h42535160.png
       page: https://www.hamiltonwatch.com/en-us/h42535160-jazzmaster-skeleton-auto.html
     price: { amount: 1545, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H42535541
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/4/h42535541_1.png
       page: https://www.hamiltonwatch.com/en-us/h42535541-jazzmaster-skeleton-auto.html
     price: { amount: 1495, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H42535560
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/4/h42535560.png
@@ -58,6 +63,7 @@ references:
     crystal: sapphire
     movement: "H-10-S"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: green }]
     bracelets: [{ type: leather-strap }]
@@ -67,3 +73,4 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h42535810-jazzmaster-skeleton-auto.html
     price: { amount: 1495, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic

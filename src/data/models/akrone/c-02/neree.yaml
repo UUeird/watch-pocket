@@ -22,6 +22,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW200"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "Nérée Arctique"
     officialPhoto:
@@ -34,6 +35,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW200"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "Nérée Antarctique"
     officialPhoto:
@@ -46,6 +48,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW200"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "Nérée Pacifique"
     officialPhoto:
@@ -58,6 +61,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW200"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "Nérée Sunrise"
     officialPhoto:
@@ -70,6 +74,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW200"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "Nérée Sunset"
     officialPhoto:
@@ -82,6 +87,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW200"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "Nérée Passion"
     officialPhoto:
@@ -94,6 +100,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW200"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "Nérée Pastèque"
     officialPhoto:
@@ -106,4 +113,5 @@ references:
     crystal: sapphire
     movement: "Sellita SW200"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }, { type: bracelet }]

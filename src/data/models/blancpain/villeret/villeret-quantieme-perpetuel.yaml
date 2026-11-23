@@ -13,6 +13,7 @@ references:
     caseSize: 40.3
     metals: [rose-gold]
     movementType: mechanical
+    winding: automatic
     complications: [perpetual-calendar, moonphase]
     dials: [{ color: green }]
     bracelets: [{ type: leather-strap }]

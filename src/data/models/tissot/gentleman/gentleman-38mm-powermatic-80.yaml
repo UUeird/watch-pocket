@@ -1,0 +1,73 @@
+name: "Gentleman 38mm Powermatic 80"
+line: tissot/gentleman
+style: everyday
+sources:
+  - https://www.tissotwatches.com/en-us/T1658071103100.html
+  - https://www.tissotwatches.com/en-us/T1658071104100.html
+  - https://www.tissotwatches.com/en-us/T1658071105100.html
+  - https://www.tissotwatches.com/en-us/T1658071109100.html
+references:
+  - ref: T165.807.11.031.00
+    website: https://www.tissotwatches.com/en-us/T1658071103100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw9de64854/product-pictures/18fe6ae6-4a29-4dc0-8d65-cc1778fe42e7_T165-807-11-031-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1658071103100.html
+    price: { amount: 850, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T165.807.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1658071104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw6b1e0033/product-pictures/5a07a09b-2759-4c91-83e9-a4e7f1f3d233_T165-807-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1658071104100.html
+    price: { amount: 850, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T165.807.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1658071105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwcfa5d599/product-pictures/9ebd503f-b126-4746-b483-af5fcb826f22_T165-807-11-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1658071105100.html
+    price: { amount: 850, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T165.807.11.091.00
+    website: https://www.tissotwatches.com/en-us/T1658071109100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwc5be96fe/product-pictures/d0874d32-cd20-485d-a326-81c78afd70d1_T165-807-11-091-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1658071109100.html
+    price: { amount: 850, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]

@@ -1,0 +1,110 @@
+name: "Chrono L 42mm Chronograph"
+line: tissot/xl
+style: chronograph
+sources:
+  - https://www.tissotwatches.com/en-us/T1164171104200.html
+  - https://www.tissotwatches.com/en-us/T1164171105200.html
+  - https://www.tissotwatches.com/en-us/T1164171109200.html
+  - https://www.tissotwatches.com/en-us/T1164171604200.html
+  - https://www.tissotwatches.com/en-us/T1164171605200.html
+  - https://www.tissotwatches.com/en-us/T1164171605201.html
+  - https://www.tissotwatches.com/en-us/T1164171609200.html
+references:
+  - ref: T116.417.11.042.00
+    website: https://www.tissotwatches.com/en-us/T1164171104200.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw03d67f7e/product-pictures/4e28ae71-a3f0-4237-b877-784ee169b4a8_T116-417-11-042-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1164171104200.html
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T116.417.11.052.00
+    website: https://www.tissotwatches.com/en-us/T1164171105200.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwa27705a6/product-pictures/a40f6d67-8b9e-4e75-9d7d-b46b5db48aff_T116-417-11-052-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1164171105200.html
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T116.417.11.092.00
+    website: https://www.tissotwatches.com/en-us/T1164171109200.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw90d1770b/product-pictures/6bc05fc2-3547-4c5b-9450-ff58b6d677c5_T116-417-11-092-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1164171109200.html
+    price: { amount: 475, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T116.417.16.042.00
+    website: https://www.tissotwatches.com/en-us/T1164171604200.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw56034dbb/product-pictures/35cba0bf-7c25-4f7e-8f69-6ee659a1932e_T116-417-16-042-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1164171604200.html
+    price: { amount: 425, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T116.417.16.052.00
+    website: https://www.tissotwatches.com/en-us/T1164171605200.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw0896b42a/product-pictures/723eb4f6-33b5-4857-8499-60e96e8c87bb_T116-417-16-052-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1164171605200.html
+    price: { amount: 425, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T116.417.16.052.01
+    website: https://www.tissotwatches.com/en-us/T1164171605201.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw022d8bef/product-pictures/4dba831c-ce63-46d0-8981-1809261d68c1_T116-417-16-052-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1164171605201.html
+    price: { amount: 425, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T116.417.16.092.00
+    website: https://www.tissotwatches.com/en-us/T1164171609200.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw86a75b6f/product-pictures/02a8f924-ba2d-4512-a90d-1c279ac4f94c_T116-417-16-092-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1164171609200.html
+    price: { amount: 425, currency: USD, year: 2026 }
+    caseSize: 42
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]

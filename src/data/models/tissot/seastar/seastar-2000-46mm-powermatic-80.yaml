@@ -1,0 +1,41 @@
+name: "Seastar 2000 46mm Powermatic 80"
+line: tissot/seastar
+style: dive
+sources:
+  - https://www.tissotwatches.com/en-us/T1206071104100.html
+  - https://www.tissotwatches.com/en-us/T1206071104101.html
+references:
+  - ref: T120.607.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1206071104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwdbcd3da4/product-pictures/1efadd19-0423-46a3-9b72-11e00423105f_T120-607-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1206071104100.html
+    price: { amount: 1275, currency: USD, year: 2026 }
+    caseSize: 46
+    gender: men
+    metals: [steel]
+    bezel: { material: ceramic }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue, name: "Blue gradient" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.607.11.041.01
+    website: https://www.tissotwatches.com/en-us/T1206071104101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw6b483073/product-pictures/37d552f4-9360-47df-8868-569605729ee1_T120-607-11-041-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1206071104101.html
+    price: { amount: 1275, currency: USD, year: 2026 }
+    caseSize: 46
+    gender: men
+    metals: [steel]
+    bezel: { material: ceramic }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue, name: "Blue gradient" }]
+    bracelets: [{ type: bracelet }]

@@ -1,0 +1,241 @@
+name: "Constellation 41mm"
+line: omega/constellation
+style: everyday
+website: https://www.omegawatches.com/en-us/watches/constellation/constellation/catalog
+sources:
+  - https://www.omegawatches.com/en-us/watches/constellation/constellation/catalog
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412104001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412104001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412199001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13112412106001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412106001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412199003
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412103001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412199002
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412101001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412101001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412106001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412103001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412111001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412106002
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412110001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13163412101001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13150412199001
+references:
+  - ref: 131.30.41.21.04.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412104001
+    price: { amount: 8200, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    bezel: { material: ceramic, colors: [blue] }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: 131.33.41.21.04.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412104001
+    price: { amount: 8000, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    bezel: { material: ceramic, colors: [blue] }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 131.30.41.21.99.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412199001
+    price: { amount: 10900, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black] }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: 131.12.41.21.06.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13112412106001
+    price: { amount: 7200, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: gray, name: "Rhodium-grey" }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: 131.33.41.21.06.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412106001
+    price: { amount: 8000, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black] }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: gray }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 131.30.41.21.99.003
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412199003
+    price: { amount: 10500, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    bezel: { material: titanium }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: 131.33.41.21.03.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412103001
+    price: { amount: 8000, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    bezel: { material: ceramic, colors: [blue] }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 131.30.41.21.99.002
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412199002
+    price: { amount: 10900, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    bezel: { material: ceramic, colors: [green] }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: 131.30.41.21.01.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13130412101001
+    price: { amount: 8200, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black] }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: 131.33.41.21.01.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13133412101001
+    price: { amount: 8000, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    bezel: { material: ceramic, colors: [black] }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 131.23.41.21.06.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412106001
+    price: { amount: 11600, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel, rose-gold]
+    bezel: { material: ceramic, colors: [black] }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: gray, name: "Rhodium-grey" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 131.23.41.21.03.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412103001
+    price: { amount: 11600, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel, rose-gold]
+    bezel: { material: ceramic, colors: [blue] }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 131.23.41.21.11.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412111001
+    price: { amount: 11600, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel, rose-gold]
+    bezel: { material: ceramic, colors: [black] }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: red, name: "Burgundy-to-black gradient" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 131.23.41.21.06.002
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412106002
+    price: { amount: 11600, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel, yellow-gold]
+    bezel: { material: ceramic, colors: [brown] }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: gray, name: "Rhodium-grey" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 131.23.41.21.10.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13123412110001
+    price: { amount: 11600, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel, yellow-gold]
+    bezel: { material: ceramic, colors: [black] }
+    crystal: sapphire
+    movement: "8900"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green, name: "Green gradient" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 131.63.41.21.01.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13163412101001
+    price: { amount: 30100, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [yellow-gold]
+    bezel: { material: ceramic, colors: [black] }
+    crystal: sapphire
+    movement: "8901"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 131.50.41.21.99.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-co-axial-master-chronometer-41-mm-13150412199001
+    price: { amount: 50700, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [yellow-gold]
+    crystal: sapphire
+    movement: "8901"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: gray, name: "Meteorite" }]
+    bracelets: [{ type: bracelet, name: "Moonshine gold" }]

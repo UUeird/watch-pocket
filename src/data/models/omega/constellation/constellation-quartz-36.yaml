@@ -1,0 +1,31 @@
+name: "Constellation Quartz 36mm"
+line: omega/constellation
+style: everyday
+website: https://www.omegawatches.com/en-us/watches/constellation/constellation/catalog
+sources:
+  - https://www.omegawatches.com/en-us/watches/constellation/constellation/catalog
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-quartz-36-mm-13110366001001
+  - https://www.omegawatches.com/en-us/watch-omega-constellation-quartz-36-mm-13120366002002
+references:
+  - ref: 131.10.36.60.01.001
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-quartz-36-mm-13110366001001
+    price: { amount: 3300, currency: USD, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    crystal: sapphire
+    movement: "4564"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: 131.20.36.60.02.002
+    website: https://www.omegawatches.com/en-us/watch-omega-constellation-quartz-36-mm-13120366002002
+    price: { amount: 7400, currency: USD, year: 2026 }
+    caseSize: 36
+    metals: [steel, yellow-gold]
+    crystal: sapphire
+    movement: "4564"
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Steel and yellow gold" }]

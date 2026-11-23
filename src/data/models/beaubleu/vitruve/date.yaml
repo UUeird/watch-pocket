@@ -16,6 +16,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: bracelet }, { type: leather-strap }]
   - ref: "Date Noir"
@@ -29,6 +30,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet }, { type: leather-strap }]

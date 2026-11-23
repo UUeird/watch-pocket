@@ -50,6 +50,7 @@ references:
     crystal: sapphire
     movement: "H-50"
     movementType: mechanical
+    winding: manual
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]

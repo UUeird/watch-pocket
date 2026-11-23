@@ -18,6 +18,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
   - ref: "B01 Le Lumineux"
     website: https://beaubleu-paris.com/products/b01-le-lumineux
     officialPhoto:
@@ -29,6 +30,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     dials: [{ color: black }]
   - ref: "B01 Le Mystérieux"
     officialPhoto:
@@ -40,6 +42,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
   - ref: "B01 Le Survolté"
     officialPhoto:
       src: https://cdn.shopify.com/s/files/1/0844/2573/6468/files/beaubleu_B01_survolte.webp
@@ -50,3 +53,4 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic

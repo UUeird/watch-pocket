@@ -1,0 +1,53 @@
+name: "Modern Skeleton"
+line: orient/orient-star
+style: dress
+sources:
+  - https://www.orientwatchusa.com/products/re-av0003l00b
+  - https://www.orientwatchusa.com/products/re-av0004n00b
+  - https://www.orientwatchusa.com/products/re-av0005l00b
+references:
+  - ref: RE-AV0003L00B
+    website: https://www.orientwatchusa.com/products/re-av0003l00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/files/modern-skeleton-1307424.png
+      page: https://www.orientwatchusa.com/products/re-av0003l00b
+    price: { amount: 740, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6F44"
+    movementType: mechanical
+    winding: automatic
+    complications: [power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: RE-AV0004N00B
+    website: https://www.orientwatchusa.com/products/re-av0004n00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/files/modern-skeleton-2020192.png
+      page: https://www.orientwatchusa.com/products/re-av0004n00b
+    price: { amount: 740, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6F44"
+    movementType: mechanical
+    winding: automatic
+    complications: [power-reserve]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: RE-AV0005L00B
+    website: https://www.orientwatchusa.com/products/re-av0005l00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/products/modern-skeleton-8697926.png
+      page: https://www.orientwatchusa.com/products/re-av0005l00b
+    price: { amount: 720, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6F44"
+    movementType: mechanical
+    winding: automatic
+    complications: [power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]

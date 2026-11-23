@@ -19,6 +19,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9039"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: silver }]
     bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]
@@ -33,6 +34,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9039"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]
@@ -47,6 +49,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9039"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: silver }]
     bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]
@@ -61,6 +64,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9039"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: green }]
     bracelets: [{ type: fabric-strap }, { type: leather-strap }, { type: bracelet }]

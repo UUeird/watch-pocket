@@ -22,18 +22,21 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h70225110-khaki-field-expedition-auto.html
     price: { amount: 1245, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70225130
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70225130.png
       page: https://www.hamiltonwatch.com/en-us/h70225130-khaki-field-expedition-auto.html
     price: { amount: 1245, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70225910
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70225910.png
       page: https://www.hamiltonwatch.com/en-us/h70225910-khaki-field-expedition-auto.html
     price: { amount: 1125, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70225930
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70225930.png
@@ -44,6 +47,7 @@ references:
     crystal: sapphire
     movement: "H-10"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: fabric-strap }]
@@ -53,39 +57,46 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h70225931-khaki-field-expedition-auto.html
     price: { amount: 1125, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70315110
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70315110.png
       page: https://www.hamiltonwatch.com/en-us/h70315110-khaki-field-expedition-auto.html
     price: { amount: 1245, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70315130
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70315130.png
       page: https://www.hamiltonwatch.com/en-us/h70315130-khaki-field-expedition-auto.html
     price: { amount: 1245, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70315830
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70315830.png
       page: https://www.hamiltonwatch.com/en-us/h70315830-khaki-field-expedition-auto.html
     price: { amount: 1195, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70315910
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70315910.png
       page: https://www.hamiltonwatch.com/en-us/h70315910-khaki-field-expedition-auto.html
     price: { amount: 1125, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70315930
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70315930.png
       page: https://www.hamiltonwatch.com/en-us/h70315930-khaki-field-expedition-auto.html
     price: { amount: 1125, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70315931
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70315931.png
       page: https://www.hamiltonwatch.com/en-us/h70315931-khaki-field-expedition-auto.html
     price: { amount: 1125, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic

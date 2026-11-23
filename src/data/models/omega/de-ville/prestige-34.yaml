@@ -1,0 +1,113 @@
+name: "Prestige 34mm"
+line: omega/de-ville
+style: dress
+website: https://www.omegawatches.com/en-us/watches/de-ville/prestige/catalog
+sources:
+  - https://www.omegawatches.com/en-us/watches/de-ville/prestige/catalog
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43455342061001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43453342055001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43458342055002
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43453342055002
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43420342005001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43423342055001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43420342002001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43423342052001
+references:
+  - ref: 434.55.34.20.61.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43455342061001
+    price: { amount: 44400, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [rose-gold]
+    bezel: { style: gem-set }
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: red, name: "Burgundy" }]
+    bracelets: [{ type: bracelet, name: "Sedna gold" }]
+  - ref: 434.53.34.20.55.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43453342055001
+    price: { amount: 16100, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [rose-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.58.34.20.55.002
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43458342055002
+    price: { amount: 26300, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [yellow-gold]
+    bezel: { style: gem-set }
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.53.34.20.55.002
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43453342055002
+    price: { amount: 16100, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [yellow-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.20.34.20.05.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43420342005001
+    price: { amount: 10200, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel, rose-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
+  - ref: 434.23.34.20.55.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43423342055001
+    price: { amount: 9000, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel, rose-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.20.34.20.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43420342002001
+    price: { amount: 9800, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel, rose-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
+  - ref: 434.23.34.20.52.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-34-mm-43423342052001
+    price: { amount: 8600, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel, rose-gold]
+    crystal: sapphire
+    movement: "8800"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]

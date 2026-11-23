@@ -2,6 +2,7 @@ name: Day-Date 40
 line: rolex/day-date
 style: dress
 sources:
+  - https://en.wikipedia.org/wiki/Rolex_Day-Date
   - https://www.bobswatches.com/rolex-blog/editorial/rolex-228238-review.html
   - https://watchbase.com/rolex/day-date-40/228238-0007
   - https://www.genesisdiamonds.com/products/40mm-day-date-228235-2018
@@ -14,6 +15,7 @@ references:
     crystal: sapphire
     movement: "3255"
     movementType: mechanical
+    winding: automatic
     complications: [date, day]
     bracelets: [{ type: bracelet, name: President }]
   - ref: "228235"
@@ -24,5 +26,6 @@ references:
     crystal: sapphire
     movement: "3255"
     movementType: mechanical
+    winding: automatic
     complications: [date, day]
     bracelets: [{ type: bracelet, name: President }]

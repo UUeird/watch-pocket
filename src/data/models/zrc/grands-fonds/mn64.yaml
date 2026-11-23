@@ -25,6 +25,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW300-1"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: bracelet }]
   - ref: "GF42168"
     website: https://zrc1904.com/product/gf42168ph-edition-limitee/
@@ -38,6 +39,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW300-1"
     movementType: mechanical
+    winding: automatic
     bracelets: [{ type: rubber-strap }]
   - ref: "GF421613"
     officialPhoto:
@@ -50,6 +52,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW300-1"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
@@ -64,6 +67,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW300-1"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
@@ -78,6 +82,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW300-1"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
@@ -92,6 +97,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW300-1"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -107,6 +113,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW300-1"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]
@@ -122,6 +129,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW300-1"
     movementType: mechanical
+    winding: automatic
     complications: []
     bracelets: [{ type: rubber-strap }]
   - ref: "GF4221221113"
@@ -136,6 +144,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW300-1"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: bracelet }]
   - ref: "GF4226121118WR"
@@ -149,6 +158,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW300-1"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: blue }]
     bracelets: [{ type: rubber-strap }]

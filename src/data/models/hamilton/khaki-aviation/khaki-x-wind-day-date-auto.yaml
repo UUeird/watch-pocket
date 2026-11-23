@@ -20,6 +20,7 @@ references:
     crystal: sapphire
     movement: "H-30"
     movementType: mechanical
+    winding: automatic
     complications: [date, day]
     dials: [{ color: green }]
     bracelets: [{ type: leather-strap }]
@@ -29,21 +30,25 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h77755133-khaki-aviation-x-wind-day-date-auto.html
     price: { amount: 1425, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H77755533
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77755533.png
       page: https://www.hamiltonwatch.com/en-us/h77755533-khaki-aviation-x-wind-day-date-auto.html
     price: { amount: 1375, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H77765141
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77765141.png
       page: https://www.hamiltonwatch.com/en-us/h77765141-khaki-x-wind.html
     price: { amount: 1425, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H77765541
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h77765541.png
       page: https://www.hamiltonwatch.com/en-us/h77765541-khaki-x-wind.html
     price: { amount: 1375, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic

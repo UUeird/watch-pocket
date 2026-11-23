@@ -17,6 +17,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "SA38E-002"
@@ -30,6 +31,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]
   - ref: "SA38E-003"
@@ -43,5 +45,6 @@ references:
     crystal: sapphire
     movement: "Miyota 9015"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: rubber-strap }, { type: bracelet }]

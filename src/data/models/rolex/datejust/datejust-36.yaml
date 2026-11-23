@@ -8,6 +8,8 @@ photos:
       license: CC BY 2.0
       licenseUrl: https://creativecommons.org/licenses/by/2.0
       author: ajay_suresh
+sources:
+  - https://en.wikipedia.org/wiki/Rolex_Datejust
 references:
   - ref: "126234"
     caseSize: 36
@@ -15,6 +17,7 @@ references:
     bezel: { material: white-gold, style: fluted }
     movement: "3235"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }, { color: black }, { color: silver }, { color: white }, { color: gray, name: Slate }, { color: green, name: Mint green }]
     bracelets: [{ type: bracelet, name: Oyster }, { type: bracelet, name: Jubilee }]

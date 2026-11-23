@@ -3,6 +3,7 @@ line: rolex/cosmograph-daytona
 style: chronograph
 theme: motor-racing
 sources:
+  - https://en.wikipedia.org/wiki/Rolex_Cosmograph_Daytona
   - https://www.luxurybazaar.com/brands/rolex/ref-126500ln/
   - https://www.belmontwatches.com/products/rolex-daytona-126500ln
   - https://www.timeandwatches.com/p/history-of-rolex-cosmograph-daytona.html
@@ -20,6 +21,7 @@ references:
     crystal: acrylic
     movement: Valjoux 72
     movementType: mechanical
+    winding: manual
     complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "6263"
@@ -29,6 +31,7 @@ references:
     crystal: acrylic
     movement: Valjoux 727
     movementType: mechanical
+    winding: manual
     complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "16520"
@@ -45,6 +48,7 @@ references:
     crystal: sapphire
     movement: "4030"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -56,6 +60,7 @@ references:
     crystal: sapphire
     movement: "4130"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -74,6 +79,7 @@ references:
     crystal: sapphire
     movement: "4130"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -90,6 +96,7 @@ references:
     crystal: sapphire
     movement: "4130"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 116500LN
@@ -100,6 +107,7 @@ references:
     crystal: sapphire
     movement: "4130"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -118,6 +126,7 @@ references:
     crystal: sapphire
     movement: "4131"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     dials: [{ color: white }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -129,6 +138,7 @@ references:
     crystal: sapphire
     movement: "4131"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "126508"
@@ -139,6 +149,7 @@ references:
     crystal: sapphire
     movement: "4131"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: "126509"
@@ -149,6 +160,7 @@ references:
     crystal: sapphire
     movement: "4131"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     bracelets: [{ type: bracelet, name: Oyster }]
   - ref: 126515LN
@@ -159,6 +171,7 @@ references:
     crystal: sapphire
     movement: "4131"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     bracelets: [{ type: rubber-strap, name: Oysterflex }]
   - ref: 126518LN
@@ -169,5 +182,6 @@ references:
     crystal: sapphire
     movement: "4131"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     bracelets: [{ type: rubber-strap, name: Oysterflex }]

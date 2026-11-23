@@ -1,0 +1,20 @@
+name: "PR 100 41mm Chronograph"
+line: tissot/pr-100
+style: chronograph
+sources:
+  - https://www.tissotwatches.com/en-us/T1014172306100.html
+references:
+  - ref: T101.417.23.061.00
+    website: https://www.tissotwatches.com/en-us/T1014172306100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw29d24540/product-pictures/5d4cf7b8-91e0-42bc-8d59-7d270e794890_T101-417-23-061-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1014172306100.html
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 41
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: gray, name: "Anthracite" }]
+    bracelets: [{ type: bracelet }]

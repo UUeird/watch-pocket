@@ -22,6 +22,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW200-1"
     movementType: mechanical
+    winding: automatic
     complications: []
     bracelets: [{ type: bracelet }]
   - ref: "GF3811121118"
@@ -35,6 +36,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW200-1"
     movementType: mechanical
+    winding: automatic
     complications: []
     bracelets: [{ type: rubber-strap }]
   - ref: "GF3811231314"
@@ -49,6 +51,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW200-1"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     bracelets: [{ type: bracelet }]
   - ref: "GF3813121318"
@@ -63,6 +66,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW200-1"
     movementType: mechanical
+    winding: automatic
     complications: []
     bracelets: [{ type: rubber-strap }]
   - ref: "GF3813231114"
@@ -77,6 +81,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW200-1"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: brown }]
     bracelets: [{ type: bracelet }]
@@ -92,6 +97,7 @@ references:
     crystal: sapphire
     movement: "Sellita SW200-1"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: red }]
     bracelets: [{ type: rubber-strap }]

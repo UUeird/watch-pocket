@@ -1,0 +1,155 @@
+name: "Le Locle 29mm Automatic"
+line: tissot/le-locle
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T0062071103601.html
+  - https://www.tissotwatches.com/en-us/T0062071103800.html
+  - https://www.tissotwatches.com/en-us/T0062071109600.html
+  - https://www.tissotwatches.com/en-us/T0062071604600.html
+  - https://www.tissotwatches.com/en-us/T0062072203600.html
+  - https://www.tissotwatches.com/en-us/T0062072209600.html
+  - https://www.tissotwatches.com/en-us/T0062072209601.html
+  - https://www.tissotwatches.com/en-us/T0062072211600.html
+  - https://www.tissotwatches.com/en-us/T0062073309600.html
+references:
+  - ref: T006.207.11.036.01
+    name: "20th Anniversary"
+    website: https://www.tissotwatches.com/en-us/T0062071103601.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw9f11962b/product-pictures/84afef79-0388-47ce-8198-6d7ec82e02ec_T006-207-11-036-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0062071103601.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    caseSize: 29
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.207.11.038.00
+    website: https://www.tissotwatches.com/en-us/T0062071103800.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw21c6bcae/product-pictures/eb581e0a-a1a6-4d0c-a52d-7e2f0d5d0f88_T006-207-11-038-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0062071103800.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 29
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.207.11.096.00
+    website: https://www.tissotwatches.com/en-us/T0062071109600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwff0006f8/product-pictures/556737b9-7bb3-46cc-9f56-71cbd2f20129_T006-207-11-096-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T0062071109600.html
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 29
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.207.16.046.00
+    website: https://www.tissotwatches.com/en-us/T0062071604600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwee19113d/product-pictures/46ed37fc-171e-4330-bf4f-91ebbc1d7034_T006-207-16-046-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T0062071604600.html
+    price: { amount: 875, currency: USD, year: 2026 }
+    caseSize: 29
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T006.207.22.036.00
+    website: https://www.tissotwatches.com/en-us/T0062072203600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw91f11910/product-pictures/d82de2d3-2713-49b0-8305-600a922b6ea8_T006-207-22-036-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0062072203600.html
+    price: { amount: 975, currency: USD, year: 2026 }
+    caseSize: 29
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.207.22.096.00
+    website: https://www.tissotwatches.com/en-us/T0062072209600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw277090f9/product-pictures/08bb7582-8cc6-49db-b0f5-7f99f713add4_T006-207-22-096-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T0062072209600.html
+    price: { amount: 1025, currency: USD, year: 2026 }
+    caseSize: 29
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.207.22.096.01
+    website: https://www.tissotwatches.com/en-us/T0062072209601.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw734e3cd2/product-pictures/4859069b-3fd7-4095-8506-2d0974438375_T006-207-22-096-01_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T0062072209601.html
+    price: { amount: 1025, currency: USD, year: 2026 }
+    caseSize: 29
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.207.22.116.00
+    website: https://www.tissotwatches.com/en-us/T0062072211600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw5a13d365/product-pictures/2fa61c09-82e5-49cb-b379-35b31caa2a94_T006-207-22-116-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0062072211600.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    caseSize: 29
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.207.33.096.00
+    website: https://www.tissotwatches.com/en-us/T0062073309600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw78a200ef/product-pictures/71489254-8585-4193-8dac-6130dac2f0ca_T006-207-33-096-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T0062073309600.html
+    price: { amount: 1075, currency: USD, year: 2026 }
+    caseSize: 29
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]

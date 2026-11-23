@@ -35,12 +35,14 @@ references:
     price: { amount: 725, currency: USD, year: 2026 }
     caseSize: 36
     movementType: mechanical
+    winding: manual
   - ref: H69409930
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69409930.png
       page: https://www.hamiltonwatch.com/en-us/h69409930-khaki-field.html
     price: { amount: 745, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual
   - ref: H69439131
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439131.png
@@ -48,12 +50,14 @@ references:
     price: { amount: 745, currency: USD, year: 2026 }
     caseSize: 38
     movementType: mechanical
+    winding: manual
   - ref: H69439363
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439363_1.png
       page: https://www.hamiltonwatch.com/en-us/h69439363-khaki-field-mechanical.html
     price: { amount: 675, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual
   - ref: H69439411
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439411.png
@@ -61,24 +65,28 @@ references:
     price: { amount: 675, currency: USD, year: 2026 }
     caseSize: 38
     movementType: mechanical
+    winding: manual
   - ref: H69439511
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439511.png
       page: https://www.hamiltonwatch.com/en-us/h69439511-khaki-field.html
     price: { amount: 695, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual
   - ref: H69439531
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439531.png
       page: https://www.hamiltonwatch.com/en-us/h69439531-khaki-field.html
     price: { amount: 695, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual
   - ref: H69439910
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439910.png
       page: https://www.hamiltonwatch.com/en-us/h69439910-khaki-field-mechanical.html
     price: { amount: 675, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual
   - ref: H69439931
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439931.png
@@ -89,6 +97,7 @@ references:
     crystal: sapphire
     movement: "H-50"
     movementType: mechanical
+    winding: manual
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: fabric-strap }]
@@ -98,18 +107,21 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h69439933-khaki-field-mechanical.html
     price: { amount: 675, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual
   - ref: H69439940
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69439940.png
       page: https://www.hamiltonwatch.com/en-us/h69439940-khaki-field-mechanical.html
     price: { amount: 675, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual
   - ref: H69449961
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69449961.png
       page: https://www.hamiltonwatch.com/en-us/h69449961-khaki-field.html
     price: { amount: 745, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual
   - ref: H69469930
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69469930_soldier.png
@@ -117,6 +129,7 @@ references:
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 38
     movementType: mechanical
+    winding: manual
   - ref: H69529913
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69529913.png
@@ -124,6 +137,7 @@ references:
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 42
     movementType: mechanical
+    winding: manual
   - ref: H69529933
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/6/h69529933.png
@@ -131,12 +145,14 @@ references:
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 42
     movementType: mechanical
+    winding: manual
   - ref: H89399930
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h89399930.png
       page: https://www.hamiltonwatch.com/en-us/h89399930-khaki-field-mechanical-36mm-america-250-anniversary-us-edition.html
     price: { amount: 725, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: manual
   - ref: H89479970
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/8/h89479970.png
@@ -144,3 +160,4 @@ references:
     price: { amount: 745, currency: USD, year: 2026 }
     caseSize: 38
     movementType: mechanical
+    winding: manual

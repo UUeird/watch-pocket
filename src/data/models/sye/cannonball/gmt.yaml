@@ -16,6 +16,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9075"
     movementType: mechanical
+    winding: automatic
     complications: [date, gmt]
     dials: [{ color: gray, name: "Columbus" }]
     bracelets: [{ type: leather-strap }]
@@ -29,6 +30,7 @@ references:
     crystal: sapphire
     movement: "Miyota 9075"
     movementType: mechanical
+    winding: automatic
     complications: [date, gmt]
     dials: [{ color: blue, name: "Tulsa" }]
     bracelets: [{ type: leather-strap }]

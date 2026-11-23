@@ -15,6 +15,7 @@ photos:
       licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
       author: Si Griffiths
 sources:
+  - https://en.wikipedia.org/wiki/Rolex_Submariner
   - https://www.bobswatches.com/rolex-blog/watch-review/rolex-submariner-stainless-steel-16800.html
   - https://www.bobswatches.com/rolex/submariner/16613-ultimate-guide
   - https://watchbase.com/rolex/submariner/16613-black-superluminova
@@ -27,6 +28,7 @@ references:
     crystal: sapphire
     movement: "3035"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -37,6 +39,7 @@ references:
     bezel: { material: aluminum, colors: [black], style: dive }
     movement: "3135"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -54,6 +57,7 @@ references:
     bezel: { material: aluminum, style: dive }
     movement: "3135"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }, { color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -71,6 +75,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "3135"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -81,6 +86,7 @@ references:
     bezel: { material: ceramic, colors: [green], style: dive }
     movement: "3135"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -91,6 +97,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "3235"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -101,6 +108,7 @@ references:
     bezel: { material: ceramic, colors: [green], style: dive }
     movement: "3235"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -111,6 +119,7 @@ references:
     bezel: { material: ceramic, colors: [blue], style: dive }
     movement: "3235"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet, name: Oyster }]
@@ -121,6 +130,7 @@ references:
     bezel: { material: ceramic, colors: [black], style: dive }
     movement: "3235"
     movementType: mechanical
+    winding: automatic
     complications: [date]
     dials: [{ color: black }]
     bracelets: [{ type: bracelet, name: Oyster }]

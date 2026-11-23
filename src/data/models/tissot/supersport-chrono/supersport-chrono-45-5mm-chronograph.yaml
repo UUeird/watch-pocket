@@ -1,0 +1,175 @@
+name: "Supersport Chrono 45.5mm Chronograph"
+line: tissot/supersport-chrono
+style: chronograph
+sources:
+  - https://www.tissotwatches.com/en-us/T1256171104100.html
+  - https://www.tissotwatches.com/en-us/T1256171104101.html
+  - https://www.tissotwatches.com/en-us/T1256171105100.html
+  - https://www.tissotwatches.com/en-us/T1256171604100.html
+  - https://www.tissotwatches.com/en-us/T1256171705103.html
+  - https://www.tissotwatches.com/en-us/T1256173305100.html
+  - https://www.tissotwatches.com/en-us/T1256173305101.html
+  - https://www.tissotwatches.com/en-us/T1256173605101.html
+  - https://www.tissotwatches.com/en-us/T1256173608100.html
+  - https://www.tissotwatches.com/en-us/T1256173705101.html
+  - https://www.tissotwatches.com/en-us/T1256173706700.html
+references:
+  - ref: T125.617.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1256171104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw86ad04bd/product-pictures/d9e6720b-5eae-4f32-9b91-4380bc22d7ed_T125-617-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1256171104100.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 45.5
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T125.617.11.041.01
+    name: "New York Knicks NBA 2026 Championship Special Edition"
+    website: https://www.tissotwatches.com/en-us/T1256171104101.html
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 45.5
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T125.617.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1256171105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw7ab6621b/product-pictures/541218e5-cbdb-45b4-a869-ba1a7f01e048_T125-617-11-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1256171105100.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 45.5
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T125.617.16.041.00
+    website: https://www.tissotwatches.com/en-us/T1256171604100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw2f7cb857/product-pictures/1ab75cfe-7d38-4139-838e-9db1eb30ad1e_T125-617-16-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1256171604100.html
+    price: { amount: 515, currency: USD, year: 2026 }
+    caseSize: 45.5
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T125.617.17.051.03
+    website: https://www.tissotwatches.com/en-us/T1256171705103.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw59f5ba15/product-pictures/b9ac6016-3851-4f63-aa14-10379f295b7d_T125-617-17-051-03_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1256171705103.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 45.5
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }, { type: rubber-strap }, { type: fabric-strap }]
+  - ref: T125.617.33.051.00
+    website: https://www.tissotwatches.com/en-us/T1256173305100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw18e047f2/product-pictures/b4b208ff-bc93-417a-b64d-027866720af2_T125-617-33-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1256173305100.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 45.5
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T125.617.33.051.01
+    website: https://www.tissotwatches.com/en-us/T1256173305101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw3af22866/product-pictures/b6bc9607-77ae-4eb0-b78c-0ecd20f7d008_T125-617-33-051-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1256173305101.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 45.5
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T125.617.36.051.01
+    website: https://www.tissotwatches.com/en-us/T1256173605101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw1ee6ad0b/product-pictures/d9676ff5-3ec7-43bf-85d4-f06d78fe07eb_T125-617-36-051-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1256173605101.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 45.5
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T125.617.36.081.00
+    name: "Basketball Edition"
+    website: https://www.tissotwatches.com/en-us/T1256173608100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwa70b7655/product-pictures/285e5c54-9dfd-4078-b41a-13359ca57f6c_T125-617-36-081-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1256173608100.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 45.5
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: black, name: "Black PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: gray, name: "Grey gradient" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T125.617.37.051.01
+    website: https://www.tissotwatches.com/en-us/T1256173705101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw1615b2c4/product-pictures/adba3291-ed37-471c-ae30-4f87e5dd97fa_T125-617-37-051-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1256173705101.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 45.5
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }, { type: rubber-strap }, { type: fabric-strap }]
+  - ref: T125.617.37.067.00
+    name: "NBA Special Edition"
+    website: https://www.tissotwatches.com/en-us/T1256173706700.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw7ae57530/product-pictures/280924a1-358f-4f8b-ae0d-6124ebbf2cde_T125-617-37-067-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1256173706700.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 45.5
+    gender: men
+    metals: [steel]
+    caseColors: [{ color: black, name: "Black PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }, { type: rubber-strap }]

@@ -1,0 +1,129 @@
+name: "Prestige Small Seconds 41mm"
+line: omega/de-ville
+style: dress
+website: https://www.omegawatches.com/en-us/watches/de-ville/prestige/catalog
+sources:
+  - https://www.omegawatches.com/en-us/watches/de-ville/prestige/catalog
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43453412003001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43453412002001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43420412002001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43423412002001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412002001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412002001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412003001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412003001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412010001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412010001
+references:
+  - ref: 434.53.41.20.03.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43453412003001
+    price: { amount: 16500, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [rose-gold]
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.53.41.20.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43453412002001
+    price: { amount: 16500, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [yellow-gold]
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.20.41.20.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43420412002001
+    price: { amount: 11500, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel, rose-gold]
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
+  - ref: 434.23.41.20.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43423412002001
+    price: { amount: 9400, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel, rose-gold]
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.10.41.20.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412002001
+    price: { amount: 6200, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: 434.13.41.20.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412002001
+    price: { amount: 5800, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.10.41.20.03.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412003001
+    price: { amount: 6200, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: 434.13.41.20.03.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412003001
+    price: { amount: 5800, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.10.41.20.10.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43410412010001
+    price: { amount: 6200, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: 434.13.41.20.10.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-small-seconds-41-mm-43413412010001
+    price: { amount: 5800, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "8802"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]

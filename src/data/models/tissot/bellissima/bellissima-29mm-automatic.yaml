@@ -1,0 +1,54 @@
+name: "Bellissima 29mm Automatic"
+line: tissot/bellissima
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T1262071101300.html
+  - https://www.tissotwatches.com/en-us/T1262072201300.html
+  - https://www.tissotwatches.com/en-us/T1262073601300.html
+references:
+  - ref: T126.207.11.013.00
+    website: https://www.tissotwatches.com/en-us/T1262071101300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwe9e1109b/product-pictures/9947642e-f26d-47f0-abcf-f5f088a76bcf_T126-207-11-013-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1262071101300.html
+    price: { amount: 875, currency: USD, year: 2026 }
+    caseSize: 29
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: T126.207.22.013.00
+    website: https://www.tissotwatches.com/en-us/T1262072201300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwe7c30414/product-pictures/78cbc220-82c7-44db-9049-f3e95abca412_T126-207-22-013-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1262072201300.html
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 29
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: T126.207.36.013.00
+    website: https://www.tissotwatches.com/en-us/T1262073601300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw699f6ec8/product-pictures/c7bab4f2-7649-496a-9ecd-55aaa53c80f9_T126-207-36-013-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1262073601300.html
+    price: { amount: 875, currency: USD, year: 2026 }
+    caseSize: 29
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]

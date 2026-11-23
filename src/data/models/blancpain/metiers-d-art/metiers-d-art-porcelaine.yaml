@@ -14,6 +14,7 @@ references:
     metals: [rose-gold]
     movement: "15B"
     movementType: mechanical
+    winding: manual
     complications: []
     dials: [{ color: white, name: "Porcelain" }]
     bracelets: [{ type: leather-strap }]

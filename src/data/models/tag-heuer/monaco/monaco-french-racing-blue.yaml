@@ -11,5 +11,6 @@ references:
     caseSize: 39
     movement: "Calibre 11"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     dials: [{ color: blue }]

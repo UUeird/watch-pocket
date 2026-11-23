@@ -22,6 +22,7 @@ references:
     crystal: sapphire
     movement: "6R5H"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]
@@ -36,6 +37,7 @@ references:
     crystal: sapphire
     movement: "6R5H"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -49,6 +51,7 @@ references:
     crystal: sapphire
     movement: "6R54"
     movementType: mechanical
+    winding: automatic
     complications: [date, gmt]
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -62,6 +65,7 @@ references:
     crystal: sapphire
     movement: "6R5H"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]
@@ -75,6 +79,7 @@ references:
     crystal: sapphire
     movement: "6R51"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: leather-strap }]
@@ -88,6 +93,7 @@ references:
     crystal: sapphire
     movement: "6R5H"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -101,6 +107,7 @@ references:
     crystal: sapphire
     movement: "6R5H"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: white }]
     bracelets: [{ type: bracelet }]

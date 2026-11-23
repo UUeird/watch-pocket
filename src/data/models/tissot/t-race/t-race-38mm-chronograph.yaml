@@ -1,0 +1,82 @@
+name: "T-Race 38mm Chronograph"
+line: tissot/t-race
+style: chronograph
+theme: motor-racing
+sources:
+  - https://www.tissotwatches.com/en-us/T1418171704100.html
+  - https://www.tissotwatches.com/en-us/T1418171705100.html
+  - https://www.tissotwatches.com/en-us/T1418173705100.html
+  - https://www.tissotwatches.com/en-us/T1418173750100.html
+  - https://www.tissotwatches.com/en-us/T1418179711100.html
+references:
+  - ref: T141.817.17.041.00
+    website: https://www.tissotwatches.com/en-us/T1418171704100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw788d2001/product-pictures/b2749f4f-c5ae-4f92-80b6-74e60f6ae1ef_T141-817-17-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1418171704100.html
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T141.817.17.051.00
+    website: https://www.tissotwatches.com/en-us/T1418171705100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw86ee5c03/product-pictures/ca0fa48f-3e03-4ec6-8e09-a549b7ff617c_T141-817-17-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1418171705100.html
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T141.817.37.051.00
+    website: https://www.tissotwatches.com/en-us/T1418173705100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw3d16aa84/product-pictures/ae6617be-ad3a-43a2-bb8e-8bc3443e5a2c_T141-817-37-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1418173705100.html
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T141.817.37.501.00
+    website: https://www.tissotwatches.com/en-us/T1418173750100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwa9911202/product-pictures/acec9ec7-f3a7-42a4-a27f-d5bbaeca4f6e_T141-817-37-501-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1418173750100.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: pink, name: "Nude" }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T141.817.97.111.00
+    website: https://www.tissotwatches.com/en-us/T1418179711100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwd0f51881/product-pictures/68591985-bae6-4394-800a-a4656125023b_T141-817-97-111-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1418179711100.html
+    price: { amount: 815, currency: USD, year: 2026 }
+    caseSize: 38
+    gender: men
+    metals: [steel]
+    bezel: { material: ceramic }
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: rubber-strap }]

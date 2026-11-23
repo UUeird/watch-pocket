@@ -1,0 +1,59 @@
+name: "Prestige Date Hand 42mm"
+line: omega/de-ville
+style: dress
+website: https://www.omegawatches.com/en-us/watches/de-ville/prestige/catalog
+sources:
+  - https://www.omegawatches.com/en-us/watches/de-ville/prestige/catalog
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43420422202001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43423422202001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43420422210001
+  - https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43423422210001
+references:
+  - ref: 434.20.42.22.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43420422202001
+    price: { amount: 12500, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel, rose-gold]
+    crystal: sapphire
+    movement: "8936"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet, name: "Steel and sedna gold" }]
+  - ref: 434.23.42.22.02.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43423422202001
+    price: { amount: 10300, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel, rose-gold]
+    crystal: sapphire
+    movement: "8936"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: 434.20.42.22.10.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43420422210001
+    price: { amount: 12500, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel, yellow-gold]
+    crystal: sapphire
+    movement: "8936"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet, name: "Steel and yellow gold" }]
+  - ref: 434.23.42.22.10.001
+    website: https://www.omegawatches.com/en-us/watch-omega-de-ville-prestige-co-axial-master-chronometer-date-hand-42-mm-43423422210001
+    price: { amount: 10300, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel, yellow-gold]
+    crystal: sapphire
+    movement: "8936"
+    movementType: mechanical
+    winding: automatic
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: leather-strap }]

@@ -1,0 +1,20 @@
+name: "Carson Premium 32mm Quartz"
+line: tissot/carson
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T1222231103300.html
+references:
+  - ref: T122.223.11.033.00
+    website: https://www.tissotwatches.com/en-us/T1222231103300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw7711cf25/product-pictures/2edfe33a-9cdd-4f78-8b00-eff0117f4123_T122-223-11-033-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1222231103300.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 32
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [moonphase]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]

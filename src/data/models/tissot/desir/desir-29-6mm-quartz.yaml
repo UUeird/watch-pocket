@@ -1,0 +1,96 @@
+name: "Desir 29.6mm Quartz"
+line: tissot/desir
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T1522231103600.html
+  - https://www.tissotwatches.com/en-us/T1522231142600.html
+  - https://www.tissotwatches.com/en-us/T1522231149300.html
+  - https://www.tissotwatches.com/en-us/T1522231149600.html
+  - https://www.tissotwatches.com/en-us/T1522231154600.html
+  - https://www.tissotwatches.com/en-us/T1522232203600.html
+references:
+  - ref: T152.223.11.036.00
+    website: https://www.tissotwatches.com/en-us/T1522231103600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw9eb6653f/product-pictures/38ad96c2-936c-4760-9d1d-20e2f2fcedc8_T152-223-11-036-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1522231103600.html
+    price: { amount: 510, currency: USD, year: 2026 }
+    caseSize: 29.6
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [moonphase]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.223.11.426.00
+    website: https://www.tissotwatches.com/en-us/T1522231142600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf1c82129/product-pictures/f8d6c145-83b8-45e5-a3c7-7fc21062e6b1_T152-223-11-426-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1522231142600.html
+    price: { amount: 510, currency: USD, year: 2026 }
+    caseSize: 29.6
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [moonphase]
+    dials: [{ color: red }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.223.11.493.00
+    website: https://www.tissotwatches.com/en-us/T1522231149300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw4f272b58/product-pictures/0acfb414-f43f-4ff6-b5ee-a4c9abc4ce9d_T152-223-11-493-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1522231149300.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 29.6
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [moonphase]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.223.11.496.00
+    website: https://www.tissotwatches.com/en-us/T1522231149600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw08add161/product-pictures/69c7ae7c-a66e-4e97-b514-bb2738461695_T152-223-11-496-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1522231149600.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 29.6
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [moonphase]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.223.11.546.00
+    website: https://www.tissotwatches.com/en-us/T1522231154600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw5f61e106/product-pictures/a1ea4e1b-8dc4-4a0b-bf47-52b257e23f6d_T152-223-11-546-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1522231154600.html
+    price: { amount: 510, currency: USD, year: 2026 }
+    caseSize: 29.6
+    gender: women
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [moonphase]
+    dials: [{ color: white, name: "Beige" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T152.223.22.036.00
+    website: https://www.tissotwatches.com/en-us/T1522232203600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw6d541080/product-pictures/c7f04f52-6337-4b85-8547-5fb19c4737e4_T152-223-22-036-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1522232203600.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 29.6
+    gender: women
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [moonphase]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]

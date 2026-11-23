@@ -25,6 +25,7 @@ references:
     metals: [steel]
     movement: "Heuer 02"
     movementType: mechanical
+    winding: automatic
     complications: [chronograph]
     bracelets: [{ type: leather-strap }]
   - ref: "CBS2212.FC6535"

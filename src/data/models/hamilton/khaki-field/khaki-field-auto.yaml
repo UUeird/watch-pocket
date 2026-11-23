@@ -28,6 +28,7 @@ references:
       page: https://www.hamiltonwatch.com/en-us/h70455133-khaki-field-auto.html
     price: { amount: 845, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70455140
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70455140.png
@@ -35,6 +36,7 @@ references:
     price: { amount: 845, currency: USD, year: 2026 }
     caseSize: 38
     movementType: mechanical
+    winding: automatic
   - ref: H70455160
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70455160_1.png
@@ -42,6 +44,7 @@ references:
     price: { amount: 845, currency: USD, year: 2026 }
     caseSize: 38
     movementType: mechanical
+    winding: automatic
   - ref: H70455533
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70455533.png
@@ -52,6 +55,7 @@ references:
     crystal: sapphire
     movement: "H-10"
     movementType: mechanical
+    winding: automatic
     complications: []
     dials: [{ color: black }]
     bracelets: [{ type: leather-strap }]
@@ -62,18 +66,21 @@ references:
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 38
     movementType: mechanical
+    winding: automatic
   - ref: H70455553
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70455553.png
       page: https://www.hamiltonwatch.com/en-us/h70455553-khaki-field-auto.html
     price: { amount: 795, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70455733
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70455733_new.png
       page: https://www.hamiltonwatch.com/en-us/h70455733-khaki-field-auto.html
     price: { amount: 795, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70455940
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70455940.png
@@ -81,6 +88,7 @@ references:
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 38
     movementType: mechanical
+    winding: automatic
   - ref: H70455960
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70455960_1.png
@@ -88,6 +96,7 @@ references:
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 38
     movementType: mechanical
+    winding: automatic
   - ref: H70475930
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70475930.png
@@ -95,18 +104,21 @@ references:
     price: { amount: 975, currency: USD, year: 2026 }
     caseSize: 38
     movementType: mechanical
+    winding: automatic
   - ref: H70515137
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70515137_1.png
       page: https://www.hamiltonwatch.com/en-us/h70515137-khaki-field-auto.html
     price: { amount: 845, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70555533
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70555533_1.png
       page: https://www.hamiltonwatch.com/en-us/h70555533-khaki-field-auto.html
     price: { amount: 795, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
   - ref: H70605140
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70605140.png
@@ -114,6 +126,7 @@ references:
     price: { amount: 845, currency: USD, year: 2026 }
     caseSize: 42
     movementType: mechanical
+    winding: automatic
   - ref: H70605160
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70605160.png
@@ -121,6 +134,7 @@ references:
     price: { amount: 845, currency: USD, year: 2026 }
     caseSize: 42
     movementType: mechanical
+    winding: automatic
   - ref: H70605540
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70605540.png
@@ -128,6 +142,7 @@ references:
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 42
     movementType: mechanical
+    winding: automatic
   - ref: H70605560
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70605560.png
@@ -135,6 +150,7 @@ references:
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 42
     movementType: mechanical
+    winding: automatic
   - ref: H70605733
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70605733.png
@@ -142,9 +158,11 @@ references:
     price: { amount: 795, currency: USD, year: 2026 }
     caseSize: 42
     movementType: mechanical
+    winding: automatic
   - ref: H70675530
     officialPhoto:
       src: https://www.hamiltonwatch.com/media/catalog/product/cache/d24a34bded6d2df740ef66d66d2112c9/h/7/h70675530_soldier_1.png
       page: https://www.hamiltonwatch.com/en-us/h70675530-khaki-field-auto-odyssey-limited-edition.html
     price: { amount: 1495, currency: USD, year: 2026 }
     movementType: mechanical
+    winding: automatic
