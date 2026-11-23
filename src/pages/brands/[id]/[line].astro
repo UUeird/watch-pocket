@@ -20,7 +20,7 @@ interface Props {
 }
 
 const { line, brand, models } = Astro.props;
-const { name, periods, website } = line.data;
+const { name, description, periods, website } = line.data;
 const discontinued = periods.at(-1)?.to !== undefined;
 ---
 
@@ -28,6 +28,7 @@ const discontinued = periods.at(-1)?.to !== undefined;
   <Breadcrumb brand={brand} />
   <h1>{name}</h1>
   <p class="lede">Product line{periods.length > 0 && (discontinued ? ' · discontinued' : ' · current')}</p>
+  {description && <p class="description">{description}</p>}
 
   <dl class="facts">
     <dt>Brand</dt>
@@ -66,3 +67,10 @@ const discontinued = periods.at(-1)?.to !== undefined;
     )
   }
 </Base>
+
+<style>
+  .description {
+    max-width: 65ch;
+    margin: -8px 0 24px;
+  }
+</style>
