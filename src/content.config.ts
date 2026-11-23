@@ -268,15 +268,24 @@ const brands = defineCollection({
 // A product line (collection) sold under a brand's name, e.g. Rolex Submariner. Files live at lines/<brand>/<line>.yaml.
 const lines = defineCollection({
   loader: glob({ pattern: '*/*.yaml', base: './src/data/lines' }),
-  schema: z.object({
-    name: z.string(),
-    brand: reference('brands'),
-    // The maker's own page for this line, linked from the line's page.
-    website: z.url().optional(),
-    // The periods the line was on sale, so a retired and revived line has several.
-    // A last period with no `to` is still running; no periods means the dates are not recorded.
-    periods,
-  }),
+  schema: z
+    .object({
+      name: z.string(),
+      brand: reference('brands'),
+      // A sentence or two on what the line is, in our own words, shown under its name. Its facts are cited in `sources`.
+      description: z.string().trim().min(1).max(300, { message: 'Keep a line description to 300 characters.' }).optional(),
+      // The maker's own page for this line, linked from the line's page.
+      website: z.url().optional(),
+      // The periods the line was on sale, so a retired and revived line has several.
+      // A last period with no `to` is still running; no periods means the dates are not recorded.
+      periods,
+      // Where the description's facts were taken from.
+      sources,
+    })
+    .refine((line) => line.description === undefined || line.sources.length > 0, {
+      message: 'A line description needs at least one source.',
+      path: ['sources'],
+    }),
 });
 
 // Photos we may show, the first being the primary, each with a `credit` saying where it came from and on what terms.
