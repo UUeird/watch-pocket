@@ -368,6 +368,9 @@ const models = defineCollection({
             // Whether the movement is mechanical or quartz. Spring Drive counts as mechanical; solar, kinetic and GPS
             // quartz count as quartz. Left out for smartwatches. The brand's `makes` must agree (see src/lib/consistency.ts).
             movementType: z.enum(['mechanical', 'quartz']).optional(),
+            // How a mechanical movement is wound: by a rotor as it's worn (`automatic`, including those that can also be
+            // wound by hand) or only by its crown (`manual`). Spring Drive is automatic or manual like any other.
+            winding: z.enum(['automatic', 'manual']).optional(),
             // What the watch does beyond hours, minutes and seconds. `[]` means it tells the time only; leaving it
             // out means not recorded. `flyback` and `split-seconds` are kinds of chronograph, so list `chronograph`
             // with them. Left out for smartwatches, whose functions are software.
@@ -393,6 +396,10 @@ const models = defineCollection({
                 }),
               )
               .default([]),
+          })
+          .refine((reference) => reference.winding === undefined || reference.movementType === 'mechanical', {
+            message: 'Only a mechanical reference can have a `winding`; set `movementType: mechanical` too.',
+            path: ['winding'],
           }),
         )
         // Each reference gets a page at a URL built from `ref`, so two that slugify alike would collide.
