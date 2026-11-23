@@ -1,0 +1,92 @@
+name: "Seastar 1000 40mm Quartz"
+line: tissot/seastar
+style: dive
+sources:
+  - https://www.tissotwatches.com/en-us/T1204101104100.html
+  - https://www.tissotwatches.com/en-us/T1204101105100.html
+  - https://www.tissotwatches.com/en-us/T1204101109100.html
+  - https://www.tissotwatches.com/en-us/T1204102205100.html
+  - https://www.tissotwatches.com/en-us/T1204102205101.html
+  - https://www.tissotwatches.com/en-us/T1204103305100.html
+references:
+  - ref: T120.410.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1204101104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf85bb05a/product-pictures/ee73034b-3afd-41bb-808f-e3c995bf863a_T120-410-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204101104100.html
+    price: { amount: 515, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.410.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1204101105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw0969eaf3/product-pictures/0113c782-4d5d-4596-9f2c-3fec9b7bb34f_T120-410-11-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204101105100.html
+    price: { amount: 515, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.410.11.091.00
+    website: https://www.tissotwatches.com/en-us/T1204101109100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw0bc15821/product-pictures/8c92504c-0e5d-4497-afee-700a1c2775af_T120-410-11-091-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204101109100.html
+    price: { amount: 515, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue, name: "Turquoise" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.410.22.051.00
+    website: https://www.tissotwatches.com/en-us/T1204102205100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw36c27860/product-pictures/e929fb64-5697-4332-9232-c27a9e4c1ae7_T120-410-22-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204102205100.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.410.22.051.01
+    website: https://www.tissotwatches.com/en-us/T1204102205101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw6c45d270/product-pictures/0cc47c24-4a20-4479-a4c3-cc4c23ac51f9_T120-410-22-051-01_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204102205101.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.410.33.051.00
+    website: https://www.tissotwatches.com/en-us/T1204103305100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf51c151e/product-pictures/a85ddc5e-53ad-4d0f-9c85-4a43aec108fd_T120-410-33-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204103305100.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: black, name: "Black PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

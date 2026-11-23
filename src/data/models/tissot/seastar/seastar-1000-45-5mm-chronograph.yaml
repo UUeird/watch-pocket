@@ -1,0 +1,103 @@
+name: "Seastar 1000 45.5mm Chronograph"
+line: tissot/seastar
+style: dive
+sources:
+  - https://www.tissotwatches.com/en-us/T1204171104101.html
+  - https://www.tissotwatches.com/en-us/T1204171104103.html
+  - https://www.tissotwatches.com/en-us/T1204171105100.html
+  - https://www.tissotwatches.com/en-us/T1204171109101.html
+  - https://www.tissotwatches.com/en-us/T1204171704100.html
+  - https://www.tissotwatches.com/en-us/T1204171705103.html
+  - https://www.tissotwatches.com/en-us/T1204171708101.html
+references:
+  - ref: T120.417.11.041.01
+    website: https://www.tissotwatches.com/en-us/T1204171104101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf803dd5f/product-pictures/bb6e4cb6-cb1a-456a-89bb-a5c57566501d_T120-417-11-041-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204171104101.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    caseSize: 45.5
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue, name: "Blue gradient" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.417.11.041.03
+    website: https://www.tissotwatches.com/en-us/T1204171104103.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwfe0b0860/product-pictures/8a1f4f0d-d753-4e23-bfd8-8628312fed24_T120-417-11-041-03_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204171104103.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    caseSize: 45.5
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.417.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1204171105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwe13ff87d/product-pictures/bd22167b-1fb9-4fca-80de-5c715c11ab28_T120-417-11-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204171105100.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    caseSize: 45.5
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.417.11.091.01
+    website: https://www.tissotwatches.com/en-us/T1204171109101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwed27bf67/product-pictures/ad15a47e-042e-440a-9490-ef3d7e9f33d0_T120-417-11-091-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204171109101.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    caseSize: 45.5
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: green, name: "Green gradient" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.417.17.041.00
+    website: https://www.tissotwatches.com/en-us/T1204171704100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw4696d429/product-pictures/560259c8-0395-451b-9033-d8062e7f1950_T120-417-17-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204171704100.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 45.5
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue, name: "Blue gradient" }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T120.417.17.051.03
+    website: https://www.tissotwatches.com/en-us/T1204171705103.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw3ae688bc/product-pictures/f0d41e1d-1ec0-4396-b274-972a31890a97_T120-417-17-051-03_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204171705103.html
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 45.5
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }, { type: fabric-strap }]
+  - ref: T120.417.17.081.01
+    website: https://www.tissotwatches.com/en-us/T1204171708101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwe04bf146/product-pictures/b0fa0a01-f0b1-41c5-b34d-d8b1725ffabe_T120-417-17-081-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204171708101.html
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 45.5
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: gray }]
+    bracelets: [{ type: rubber-strap }, { type: fabric-strap }]

@@ -1,0 +1,90 @@
+name: "Seastar 1000 38mm Chronograph"
+line: tissot/seastar
+style: dive
+sources:
+  - https://www.tissotwatches.com/en-us/T1202171101100.html
+  - https://www.tissotwatches.com/en-us/T1202171106100.html
+  - https://www.tissotwatches.com/en-us/T1202171704100.html
+  - https://www.tissotwatches.com/en-us/T1202172206100.html
+  - https://www.tissotwatches.com/en-us/T1202173704100.html
+  - https://www.tissotwatches.com/en-us/T1202173706100.html
+references:
+  - ref: T120.217.11.011.00
+    website: https://www.tissotwatches.com/en-us/T1202171101100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwd02d4ab8/product-pictures/a04e75c5-5078-4a29-ba89-c1812cf37d9c_T120-217-11-011-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202171101100.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: gray, name: "Grey gradient" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.217.11.061.00
+    website: https://www.tissotwatches.com/en-us/T1202171106100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw7d0cc3be/product-pictures/ee79c60c-4bdb-400d-ae6f-edb89cbafdc9_T120-217-11-061-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202171106100.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: gray, name: "Grey gradient" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.217.17.041.00
+    website: https://www.tissotwatches.com/en-us/T1202171704100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwad684032/product-pictures/c5bbfbc6-fe8c-4327-bdd9-9262fdc83f8b_T120-217-17-041-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202171704100.html
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue, name: "Blue gradient" }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T120.217.22.061.00
+    website: https://www.tissotwatches.com/en-us/T1202172206100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwa50774ee/product-pictures/18928f12-46d9-4c9d-8f48-70579e4c658b_T120-217-22-061-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202172206100.html
+    price: { amount: 675, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: gray, name: "Grey gradient" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.217.37.041.00
+    website: https://www.tissotwatches.com/en-us/T1202173704100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwcabcce40/product-pictures/7cdff26a-84dc-4817-93e3-e557e752b9bc_T120-217-37-041-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202173704100.html
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue, name: "Turquoise" }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T120.217.37.061.00
+    website: https://www.tissotwatches.com/en-us/T1202173706100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb89bd4ff/product-pictures/32194017-2709-4f38-a89d-fb6af19b9392_T120-217-37-061-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1202173706100.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: gray, name: "Grey gradient" }]
+    bracelets: [{ type: rubber-strap }]

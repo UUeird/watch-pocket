@@ -1,4 +1,4 @@
-name: "PRX Powermatic 80 38mm"
+name: "PRX 38mm Powermatic 80"
 line: tissot/prx
 style: everyday
 sources:
@@ -7,6 +7,7 @@ sources:
   - https://www.tissotwatches.com/en-us/T1378079608100.html
 references:
   - ref: T137.807.44.041.00
+    name: "Titanium"
     website: https://www.tissotwatches.com/en-us/T1378074404100.html
     officialPhoto:
       src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw46721990/product-pictures/bfc139c5-3da5-4a57-849b-4711ef6b0f41_T137-807-44-041-00_Shadow.png
@@ -21,6 +22,7 @@ references:
     dials: [{ color: blue }]
     bracelets: [{ type: bracelet }]
   - ref: T137.807.44.061.00
+    name: "Titanium"
     website: https://www.tissotwatches.com/en-us/T1378074406100.html
     officialPhoto:
       src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb885da02/product-pictures/bb1339fa-d3fd-4572-a568-9ab0c2cbf248_T137-807-44-061-00_Shadow.png
@@ -35,7 +37,7 @@ references:
     dials: [{ color: gray, name: "Anthracite" }]
     bracelets: [{ type: bracelet }]
   - ref: T137.807.96.081.00
-    name: "Damascus steel"
+    name: "Damascus Steel"
     website: https://www.tissotwatches.com/en-us/T1378079608100.html
     officialPhoto:
       src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw43526617/product-pictures/2595b61a-d8db-414a-9356-51c9350e537b_T137-807-96-081-00_Shadow.png
@@ -47,5 +49,5 @@ references:
     movement: "Powermatic 80"
     movementType: mechanical
     complications: [date]
-    dials: [{ color: gray, name: "Grey" }]
+    dials: [{ color: gray }]
     bracelets: [{ type: leather-strap }]

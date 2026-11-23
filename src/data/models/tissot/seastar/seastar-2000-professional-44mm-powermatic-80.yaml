@@ -1,0 +1,86 @@
+name: "Seastar 2000 Professional 44mm Powermatic 80"
+line: tissot/seastar
+style: dive
+sources:
+  - https://www.tissotwatches.com/en-us/T1209071105100.html
+  - https://www.tissotwatches.com/en-us/T1209071704100.html
+  - https://www.tissotwatches.com/en-us/T1209071728100.html
+  - https://www.tissotwatches.com/en-us/T1209073704100.html
+  - https://www.tissotwatches.com/en-us/T1209073705100.html
+references:
+  - ref: T120.907.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1209071105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw91a85f23/product-pictures/8f0a4522-e693-4d01-a546-8bdb8756c154_T120-907-11-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1209071105100.html
+    price: { amount: 1100, currency: USD, year: 2026 }
+    caseSize: 44
+    metals: [steel]
+    bezel: { material: ceramic }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: gray, name: "Grey gradient" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.907.17.041.00
+    website: https://www.tissotwatches.com/en-us/T1209071704100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw4e84c07b/product-pictures/1f7ccc48-9bc6-42f1-9f83-161f28fa7e73_T120-907-17-041-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1209071704100.html
+    price: { amount: 1050, currency: USD, year: 2026 }
+    caseSize: 44
+    metals: [steel]
+    bezel: { material: ceramic }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue, name: "Blue gradient" }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T120.907.17.281.00
+    website: https://www.tissotwatches.com/en-us/T1209071728100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwad3844bc/product-pictures/423dfe96-ab91-4b34-9453-331bf1183c07_T120-907-17-281-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1209071728100.html
+    price: { amount: 1050, currency: USD, year: 2026 }
+    caseSize: 44
+    metals: [steel]
+    bezel: { material: ceramic }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: orange }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T120.907.37.041.00
+    website: https://www.tissotwatches.com/en-us/T1209073704100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw3657ccac/product-pictures/6454480d-b8db-44fd-875e-2801942e977c_T120-907-37-041-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1209073704100.html
+    price: { amount: 1125, currency: USD, year: 2026 }
+    caseSize: 44
+    metals: [steel]
+    bezel: { material: ceramic }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue, name: "Blue gradient" }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T120.907.37.051.00
+    website: https://www.tissotwatches.com/en-us/T1209073705100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw5e5b92b4/product-pictures/f45e4246-89c2-4b43-b0ba-b54c842dbebc_T120-907-37-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1209073705100.html
+    price: { amount: 1125, currency: USD, year: 2026 }
+    caseSize: 44
+    metals: [steel]
+    caseColors: [{ color: black, name: "Black PVD" }]
+    bezel: { material: ceramic }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: gray, name: "Grey gradient" }]
+    bracelets: [{ type: rubber-strap }]

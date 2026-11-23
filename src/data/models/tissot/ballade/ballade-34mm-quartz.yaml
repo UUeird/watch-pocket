@@ -1,0 +1,92 @@
+name: "Ballade 34mm Quartz"
+line: tissot/ballade
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T1562101104100.html
+  - https://www.tissotwatches.com/en-us/T1562101109100.html
+  - https://www.tissotwatches.com/en-us/T1562101135100.html
+  - https://www.tissotwatches.com/en-us/T1562102203100.html
+  - https://www.tissotwatches.com/en-us/T1562102203101.html
+  - https://www.tissotwatches.com/en-us/T1562102204100.html
+references:
+  - ref: T156.210.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1562101104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwaec1ca9b/product-pictures/8f9af372-582a-4e8b-9415-e793d0519aca_T156-210-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1562101104100.html
+    price: { amount: 400, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T156.210.11.091.00
+    website: https://www.tissotwatches.com/en-us/T1562101109100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw1ae1a33b/product-pictures/02a1ee46-e79e-4984-8208-630a7659631c_T156-210-11-091-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1562101109100.html
+    price: { amount: 400, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: green, name: "Light green" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T156.210.11.351.00
+    website: https://www.tissotwatches.com/en-us/T1562101135100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw4a188b34/product-pictures/15216a63-e3bf-4bf7-8bb8-2cfc6f24a0c5_T156-210-11-351-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1562101135100.html
+    price: { amount: 400, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue, name: "Light blue" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T156.210.22.031.00
+    website: https://www.tissotwatches.com/en-us/T1562102203100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb14059e2/product-pictures/f6a73c05-4940-4ef8-a8f5-17fc7aa931e5_T156-210-22-031-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1562102203100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T156.210.22.031.01
+    website: https://www.tissotwatches.com/en-us/T1562102203101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw94387cd7/product-pictures/914be6fc-cdbb-4a04-8be5-5e0688e38f1f_T156-210-22-031-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1562102203101.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T156.210.22.041.00
+    website: https://www.tissotwatches.com/en-us/T1562102204100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw170a2b41/product-pictures/aaa40682-fe2a-4545-ad28-5d47995e636e_T156-210-22-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1562102204100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 34
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]

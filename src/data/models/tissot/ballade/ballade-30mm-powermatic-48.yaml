@@ -1,0 +1,67 @@
+name: "Ballade 30mm Powermatic 48"
+line: tissot/ballade
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T1562081103300.html
+  - https://www.tissotwatches.com/en-us/T1562081135300.html
+  - https://www.tissotwatches.com/en-us/T1562082203300.html
+  - https://www.tissotwatches.com/en-us/T1562082203301.html
+references:
+  - ref: T156.208.11.033.00
+    website: https://www.tissotwatches.com/en-us/T1562081103300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw84bd9132/product-pictures/6fea78af-bce1-4f6a-9e31-7fc725d5eec5_T156-208-11-033-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1562081103300.html
+    price: { amount: 1100, currency: USD, year: 2026 }
+    caseSize: 30
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 48"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T156.208.11.353.00
+    website: https://www.tissotwatches.com/en-us/T1562081135300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw385b0e2f/product-pictures/7b0fac1a-994c-4aae-a048-7d6e39382a2c_T156-208-11-353-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1562081135300.html
+    price: { amount: 1100, currency: USD, year: 2026 }
+    caseSize: 30
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 48"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue, name: "Ice blue" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T156.208.22.033.00
+    website: https://www.tissotwatches.com/en-us/T1562082203300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw108ffbfe/product-pictures/5d78194a-233e-4a69-a9fb-140531d9cd93_T156-208-22-033-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1562082203300.html
+    price: { amount: 1225, currency: USD, year: 2026 }
+    caseSize: 30
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 48"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T156.208.22.033.01
+    website: https://www.tissotwatches.com/en-us/T1562082203301.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw0653cdb9/product-pictures/c2a4b67c-6c21-4c23-a839-b8ab0b2e1a5b_T156-208-22-033-01_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1562082203301.html
+    price: { amount: 1225, currency: USD, year: 2026 }
+    caseSize: 30
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 48"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]

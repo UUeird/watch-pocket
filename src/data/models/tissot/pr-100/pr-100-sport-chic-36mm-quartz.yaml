@@ -1,0 +1,48 @@
+name: "PR 100 Sport Chic 36mm Quartz"
+line: tissot/pr-100
+style: everyday
+sources:
+  - https://www.tissotwatches.com/en-us/T1019101111600.html
+  - https://www.tissotwatches.com/en-us/T1019101135100.html
+  - https://www.tissotwatches.com/en-us/T1019102211600.html
+references:
+  - ref: T101.910.11.116.00
+    website: https://www.tissotwatches.com/en-us/T1019101111600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dweb43dd76/product-pictures/5e825e36-2125-4506-bb06-e6a1814064f5_T101-910-11-116-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1019101111600.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T101.910.11.351.00
+    website: https://www.tissotwatches.com/en-us/T1019101135100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw08548b62/product-pictures/b2f50219-0d40-473b-8370-e88086d792bd_T101-910-11-351-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1019101135100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T101.910.22.116.00
+    website: https://www.tissotwatches.com/en-us/T1019102211600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw559cda04/product-pictures/e89aa50b-cede-4230-b1df-7d8ea8ec5866_T101-910-22-116-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1019102211600.html
+    price: { amount: 650, currency: USD, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]

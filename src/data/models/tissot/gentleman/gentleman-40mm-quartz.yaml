@@ -1,0 +1,61 @@
+name: "Gentleman 40mm Quartz"
+line: tissot/gentleman
+style: everyday
+sources:
+  - https://www.tissotwatches.com/en-us/T1274101104100.html
+  - https://www.tissotwatches.com/en-us/T1274101105100.html
+  - https://www.tissotwatches.com/en-us/T1274104404100.html
+  - https://www.tissotwatches.com/en-us/T1274104408100.html
+references:
+  - ref: T127.410.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1274101104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw8e91e5a1/product-pictures/d77ce645-e2ac-41d7-b4b9-5a360ed43ace_T127-410-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1274101104100.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T127.410.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1274101105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw4c0a1e32/product-pictures/7a007d05-fde5-4203-8564-248ff706b500_T127-410-11-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1274101105100.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T127.410.44.041.00
+    website: https://www.tissotwatches.com/en-us/T1274104404100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw5ebebe9c/product-pictures/f7c22bdc-cfd8-4a4a-b572-5f088a97d98b_T127-410-44-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1274104404100.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [titanium]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T127.410.44.081.00
+    website: https://www.tissotwatches.com/en-us/T1274104408100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwa47f554c/product-pictures/6feddf36-3ee5-4021-b14d-ddb8e779b3d7_T127-410-44-081-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1274104408100.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [titanium]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]

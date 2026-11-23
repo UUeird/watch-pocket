@@ -1,0 +1,103 @@
+name: "Bellissima 26mm Quartz"
+line: tissot/bellissima
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T1260101101300.html
+  - https://www.tissotwatches.com/en-us/T1260101113300.html
+  - https://www.tissotwatches.com/en-us/T1260101601300.html
+  - https://www.tissotwatches.com/en-us/T1260101601301.html
+  - https://www.tissotwatches.com/en-us/T1260101611302.html
+  - https://www.tissotwatches.com/en-us/T1260102201301.html
+  - https://www.tissotwatches.com/en-us/T1260103601300.html
+references:
+  - ref: T126.010.11.013.00
+    website: https://www.tissotwatches.com/en-us/T1260101101300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw7efb4a77/product-pictures/401d3548-9940-4f01-a476-4c60f73c5c53_T126-010-11-013-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1260101101300.html
+    price: { amount: 515, currency: USD, year: 2026 }
+    caseSize: 26
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: T126.010.11.133.00
+    website: https://www.tissotwatches.com/en-us/T1260101113300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwc3ed529d/product-pictures/56a81e27-6d96-4418-adce-5abd264a8cd5_T126-010-11-133-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1260101113300.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 26
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue, name: "Blue mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T126.010.16.013.00
+    website: https://www.tissotwatches.com/en-us/T1260101601300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw254c63d4/product-pictures/f128ba4f-4002-41f7-b182-f8a97abe71d2_T126-010-16-013-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1260101601300.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 26
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T126.010.16.013.01
+    website: https://www.tissotwatches.com/en-us/T1260101601301.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwd9042a24/product-pictures/e5bf105c-702c-44dc-8fae-50e7ed5a4c40_T126-010-16-013-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1260101601301.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 26
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T126.010.16.113.02
+    website: https://www.tissotwatches.com/en-us/T1260101611302.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw6e110711/product-pictures/720e2743-1b02-466d-9b66-b288dbc73461_T126-010-16-113-02_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1260101611302.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 26
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T126.010.22.013.01
+    website: https://www.tissotwatches.com/en-us/T1260102201301.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw4e190591/product-pictures/f545002e-03da-4249-aac6-cb7e9c3d9761_T126-010-22-013-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1260102201301.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 26
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: T126.010.36.013.00
+    website: https://www.tissotwatches.com/en-us/T1260103601300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwce3d350d/product-pictures/0e177695-07c5-48ee-bf6f-580577d4d9e6_T126-010-36-013-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1260103601300.html
+    price: { amount: 515, currency: USD, year: 2026 }
+    caseSize: 26
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]

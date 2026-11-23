@@ -1,0 +1,20 @@
+name: "PR516 41mm Mechanical"
+line: tissot/pr516
+style: chronograph
+theme: motor-racing
+sources:
+  - https://www.tissotwatches.com/en-us/T1494592105100.html
+references:
+  - ref: T149.459.21.051.00
+    website: https://www.tissotwatches.com/en-us/T1494592105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwefd34b4d/product-pictures/38944b11-584f-4312-8be8-389bafd20f84_T149-459-21-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1494592105100.html
+    price: { amount: 2100, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: []
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

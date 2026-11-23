@@ -1,0 +1,50 @@
+name: "Visodate 39mm Powermatic 80"
+line: tissot/visodate
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T1574071104100.html
+  - https://www.tissotwatches.com/en-us/T1574071105100.html
+  - https://www.tissotwatches.com/en-us/T1574071603100.html
+references:
+  - ref: T157.407.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1574071104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw4adf895b/product-pictures/390d467e-214f-480a-9be9-19eb8c1dd329_T157-407-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1574071104100.html
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T157.407.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1574071105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw002b9343/product-pictures/973ef680-fc39-4b95-b798-c022500895e1_T157-407-11-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1574071105100.html
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T157.407.16.031.00
+    website: https://www.tissotwatches.com/en-us/T1574071603100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw153df637/product-pictures/684f5860-b5ad-4217-a45f-1d6ad5b6ee8b_T157-407-16-031-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1574071603100.html
+    price: { amount: 850, currency: USD, year: 2026 }
+    caseSize: 39
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]

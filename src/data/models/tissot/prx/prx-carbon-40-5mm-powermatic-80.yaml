@@ -1,4 +1,4 @@
-name: "PRX Carbon"
+name: "PRX Carbon 40.5mm Powermatic 80"
 line: tissot/prx
 style: everyday
 sources:
@@ -16,5 +16,5 @@ references:
     movement: "Powermatic 80"
     movementType: mechanical
     complications: [date]
-    dials: [{ color: black, name: "Carbon" }]
+    dials: [{ color: black, name: "Black carbon" }]
     bracelets: [{ type: rubber-strap }]

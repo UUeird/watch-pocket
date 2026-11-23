@@ -1,0 +1,81 @@
+name: "Seastar 1000 40mm Powermatic 80"
+line: tissot/seastar
+style: dive
+sources:
+  - https://www.tissotwatches.com/en-us/T1208071105100.html
+  - https://www.tissotwatches.com/en-us/T1208071109100.html
+  - https://www.tissotwatches.com/en-us/T1208071705100.html
+  - https://www.tissotwatches.com/en-us/T1208072205100.html
+  - https://www.tissotwatches.com/en-us/T1208072205101.html
+references:
+  - ref: T120.807.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1208071105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf51e793a/product-pictures/cfece5b8-ea04-45a9-aeaf-6199b8c6e622_T120-807-11-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1208071105100.html
+    price: { amount: 875, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.807.11.091.00
+    website: https://www.tissotwatches.com/en-us/T1208071109100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwede95d9e/product-pictures/aab7efde-3a92-49ff-8937-e90a317512e9_T120-807-11-091-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1208071109100.html
+    price: { amount: 875, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.807.17.051.00
+    name: "Wilson WNBA"
+    website: https://www.tissotwatches.com/en-us/T1208071705100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwa16fb5c5/product-pictures/1dccd07a-4269-444c-a9bd-f4230d8ee34d_T120-807-17-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1208071705100.html
+    price: { amount: 875, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+  - ref: T120.807.22.051.00
+    website: https://www.tissotwatches.com/en-us/T1208072205100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw93f94ed8/product-pictures/0226d643-ce3e-4d47-83ba-444304b4f526_T120-807-22-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1208072205100.html
+    price: { amount: 895, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.807.22.051.01
+    website: https://www.tissotwatches.com/en-us/T1208072205101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwd9abba2e/product-pictures/93130aca-712d-4d99-a37a-21646344312d_T120-807-22-051-01_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1208072205101.html
+    price: { amount: 895, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

@@ -1,0 +1,20 @@
+name: "T-Race MotoGP 2026 45mm Automatic Chronograph"
+line: tissot/t-race
+style: chronograph
+theme: motor-racing
+sources:
+  - https://www.tissotwatches.com/en-us/T1414622705100.html
+references:
+  - ref: T141.462.27.051.00
+    website: https://www.tissotwatches.com/en-us/T1414622705100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwca93be2e/product-pictures/dba55532-a5c2-4766-90ec-be5d0c648114_T141-462-27-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1414622705100.html
+    price: { amount: 2375, currency: USD, year: 2026 }
+    caseSize: 45
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [chronograph]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]

@@ -1,0 +1,191 @@
+name: "PR 100 40mm Quartz"
+line: tissot/pr-100
+style: everyday
+sources:
+  - https://www.tissotwatches.com/en-us/T1504101104100.html
+  - https://www.tissotwatches.com/en-us/T1504101104102.html
+  - https://www.tissotwatches.com/en-us/T1504101105100.html
+  - https://www.tissotwatches.com/en-us/T1504101108100.html
+  - https://www.tissotwatches.com/en-us/T1504101109100.html
+  - https://www.tissotwatches.com/en-us/T1504101135100.html
+  - https://www.tissotwatches.com/en-us/T1504101601100.html
+  - https://www.tissotwatches.com/en-us/T1504101603100.html
+  - https://www.tissotwatches.com/en-us/T1504101605100.html
+  - https://www.tissotwatches.com/en-us/T1504101703700.html
+  - https://www.tissotwatches.com/en-us/T1504102201100.html
+  - https://www.tissotwatches.com/en-us/T1504103305100.html
+  - https://www.tissotwatches.com/en-us/T1504103639100.html
+references:
+  - ref: T150.410.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1504101104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwd35e390b/product-pictures/00d99291-1750-4f03-a01a-b6ca157a26c1_T150-410-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1504101104100.html
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T150.410.11.041.02
+    name: "Jungfraubahn"
+    website: https://www.tissotwatches.com/en-us/T1504101104102.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw1e70c0f5/product-pictures/cdaeacce-40a6-4c83-934c-015cad2c73ce_T150-410-11-041-02_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1504101104102.html
+    price: { amount: 395, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T150.410.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1504101105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb10f9fe5/product-pictures/6f447114-6f8e-41d5-b0fe-9a6ccd1db96b_T150-410-11-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1504101105100.html
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T150.410.11.081.00
+    website: https://www.tissotwatches.com/en-us/T1504101108100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwd4938030/product-pictures/94e87ad4-cf0f-454a-a624-5d168fd3217a_T150-410-11-081-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1504101108100.html
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: T150.410.11.091.00
+    website: https://www.tissotwatches.com/en-us/T1504101109100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb6df4fc1/product-pictures/c4cc9e85-deb9-4621-a788-cea3eeca271c_T150-410-11-091-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1504101109100.html
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T150.410.11.351.00
+    website: https://www.tissotwatches.com/en-us/T1504101135100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwef3c6e46/product-pictures/9c6bcfd2-9563-4b5c-aba1-45a73d54fa57_T150-410-11-351-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1504101135100.html
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue, name: "Ice blue" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T150.410.16.011.00
+    website: https://www.tissotwatches.com/en-us/T1504101601100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw3fed57e3/product-pictures/eb88b2ac-c2b9-4196-a45b-5563fb6cf965_T150-410-16-011-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1504101601100.html
+    price: { amount: 325, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T150.410.16.031.00
+    website: https://www.tissotwatches.com/en-us/T1504101603100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb6780115/product-pictures/8d34a165-2f4c-44e3-aca5-b57486a541b3_T150-410-16-031-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1504101603100.html
+    price: { amount: 325, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T150.410.16.051.00
+    website: https://www.tissotwatches.com/en-us/T1504101605100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwc61ae4c9/product-pictures/df0577cd-fb43-4cbb-926c-949b178d8cb4_T150-410-16-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1504101605100.html
+    price: { amount: 325, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T150.410.17.037.00
+    name: "Cycling"
+    website: https://www.tissotwatches.com/en-us/T1504101703700.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb9fe90df/product-pictures/1df31ed1-35dd-4ffd-9a20-e7c6008a56a5_T150-410-17-037-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1504101703700.html
+    price: { amount: 325, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: gray }]
+    bracelets: [{ type: leather-strap }, { type: fabric-strap }]
+  - ref: T150.410.22.011.00
+    website: https://www.tissotwatches.com/en-us/T1504102201100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw51c37e4c/product-pictures/2fea1107-8be7-405a-a410-99e2777eae6a_T150-410-22-011-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1504102201100.html
+    price: { amount: 425, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: T150.410.33.051.00
+    website: https://www.tissotwatches.com/en-us/T1504103305100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwa647f29a/product-pictures/34cb96ca-2beb-4559-b68d-14f01713fd89_T150-410-33-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1504103305100.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T150.410.36.391.00
+    website: https://www.tissotwatches.com/en-us/T1504103639100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwe09b5695/product-pictures/09664481-da17-4bda-aa1e-c4d040151f29_T150-410-36-391-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1504103639100.html
+    price: { amount: 375, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]

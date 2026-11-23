@@ -1,0 +1,48 @@
+name: "Seastar 1000 GMT 40mm Quartz"
+line: tissot/seastar
+style: dive
+sources:
+  - https://www.tissotwatches.com/en-us/T1208521105100.html
+  - https://www.tissotwatches.com/en-us/T1208521705100.html
+  - https://www.tissotwatches.com/en-us/T1208522205100.html
+references:
+  - ref: T120.852.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1208521105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwfc9cfa03/product-pictures/e9a87264-d93a-4423-9df5-ceee4726a0b5_T120-852-11-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1208521105100.html
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.852.17.051.00
+    website: https://www.tissotwatches.com/en-us/T1208521705100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw1695c04b/product-pictures/f666c11b-ad09-4f4a-a411-fe9e912bd26a_T120-852-17-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1208521705100.html
+    price: { amount: 550, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T120.852.22.051.00
+    website: https://www.tissotwatches.com/en-us/T1208522205100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf8433270/product-pictures/212f7c68-7add-4b70-96fd-f152d3dcc78f_T120-852-22-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1208522205100.html
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

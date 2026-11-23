@@ -1,0 +1,109 @@
+name: "Gentleman 40mm Powermatic 80"
+line: tissot/gentleman
+style: everyday
+sources:
+  - https://www.tissotwatches.com/en-us/T1274071103101.html
+  - https://www.tissotwatches.com/en-us/T1274071104100.html
+  - https://www.tissotwatches.com/en-us/T1274071104101.html
+  - https://www.tissotwatches.com/en-us/T1274071105100.html
+  - https://www.tissotwatches.com/en-us/T1274071108100.html
+  - https://www.tissotwatches.com/en-us/T1274071109101.html
+  - https://www.tissotwatches.com/en-us/T1274071135100.html
+references:
+  - ref: T127.407.11.031.01
+    name: "Open Heart"
+    website: https://www.tissotwatches.com/en-us/T1274071103101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb8e1101f/product-pictures/28a3c5b8-c5de-4b24-8cf1-bd63fd8713b1_T127-407-11-031-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1274071103101.html
+    price: { amount: 1025, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T127.407.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1274071104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw71cff7f4/product-pictures/778fa7b2-de38-441e-bb28-f179037ebb29_T127-407-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1274071104100.html
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T127.407.11.041.01
+    name: "Open Heart"
+    website: https://www.tissotwatches.com/en-us/T1274071104101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf9b2cb5f/product-pictures/d82c3b73-ffcb-4720-a219-ae68148eaadb_T127-407-11-041-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1274071104101.html
+    price: { amount: 1025, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: []
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T127.407.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1274071105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw0b3ab200/product-pictures/fbdb243e-3388-428d-b769-ed860477fd07_T127-407-11-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1274071105100.html
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T127.407.11.081.00
+    name: "Open Heart"
+    website: https://www.tissotwatches.com/en-us/T1274071108100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwa456fff6/product-pictures/04927593-28f8-4e66-b9a2-01323d4e5e6e_T127-407-11-081-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1274071108100.html
+    price: { amount: 1025, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: []
+    dials: [{ color: silver, name: "Rhodium" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T127.407.11.091.01
+    website: https://www.tissotwatches.com/en-us/T1274071109101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwa9208110/product-pictures/ac146204-15a2-4b18-82de-6031d0cc9cf1_T127-407-11-091-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1274071109101.html
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T127.407.11.351.00
+    website: https://www.tissotwatches.com/en-us/T1274071135100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb5020464/product-pictures/06d66844-789d-467d-9ca2-d7e8b781d0cf_T127-407-11-351-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1274071135100.html
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue, name: "Ice blue" }]
+    bracelets: [{ type: bracelet }]

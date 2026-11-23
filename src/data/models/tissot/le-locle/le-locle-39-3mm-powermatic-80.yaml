@@ -1,0 +1,256 @@
+name: "Le Locle 39.3mm Powermatic 80"
+line: tissot/le-locle
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T0064071103300.html
+  - https://www.tissotwatches.com/en-us/T0064071103302.html
+  - https://www.tissotwatches.com/en-us/T0064071103303.html
+  - https://www.tissotwatches.com/en-us/T0064071104300.html
+  - https://www.tissotwatches.com/en-us/T0064071105300.html
+  - https://www.tissotwatches.com/en-us/T0064071109300.html
+  - https://www.tissotwatches.com/en-us/T0064071603300.html
+  - https://www.tissotwatches.com/en-us/T0064071603301.html
+  - https://www.tissotwatches.com/en-us/T0064071604300.html
+  - https://www.tissotwatches.com/en-us/T0064071605300.html
+  - https://www.tissotwatches.com/en-us/T0064072203300.html
+  - https://www.tissotwatches.com/en-us/T0064072203301.html
+  - https://www.tissotwatches.com/en-us/T0064072203302.html
+  - https://www.tissotwatches.com/en-us/T0064072209300.html
+  - https://www.tissotwatches.com/en-us/T0064072209301.html
+  - https://www.tissotwatches.com/en-us/T0064073309300.html
+  - https://www.tissotwatches.com/en-us/T0064073603300.html
+references:
+  - ref: T006.407.11.033.00
+    website: https://www.tissotwatches.com/en-us/T0064071103300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw1af9d0f4/product-pictures/8c99426a-3edc-4e15-ae24-ef8e49f73757_T006-407-11-033-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064071103300.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.407.11.033.02
+    name: "Open Heart"
+    website: https://www.tissotwatches.com/en-us/T0064071103302.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw8500696c/product-pictures/e32b821b-97f5-4c48-8972-320332d9f5d2_T006-407-11-033-02_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064071103302.html
+    price: { amount: 995, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.407.11.033.03
+    name: "20th Anniversary"
+    website: https://www.tissotwatches.com/en-us/T0064071103303.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw9cd76665/product-pictures/081f190e-c331-497b-9d9d-3bcbdd48aee4_T006-407-11-033-03_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064071103303.html
+    price: { amount: 875, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.407.11.043.00
+    website: https://www.tissotwatches.com/en-us/T0064071104300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw343cc06a/product-pictures/7614a6b7-201d-4af1-ac0d-cc35d5cbfc50_T006-407-11-043-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064071104300.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.407.11.053.00
+    website: https://www.tissotwatches.com/en-us/T0064071105300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw62fe4508/product-pictures/709538f1-d0c0-4294-abd0-c689cbdf708f_T006-407-11-053-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064071105300.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.407.11.093.00
+    website: https://www.tissotwatches.com/en-us/T0064071109300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwd8f664ab/product-pictures/7309f600-12be-445c-a91a-b7d89fdcac1d_T006-407-11-093-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064071109300.html
+    price: { amount: 795, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.407.16.033.00
+    website: https://www.tissotwatches.com/en-us/T0064071603300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw5a850c8f/product-pictures/2c472ef0-ed0f-435d-b047-2aa567465433_T006-407-16-033-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064071603300.html
+    price: { amount: 715, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T006.407.16.033.01
+    name: "Open Heart"
+    website: https://www.tissotwatches.com/en-us/T0064071603301.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf7ea6df5/product-pictures/45f68220-5164-45bd-862a-20d5f845f9ab_T006-407-16-033-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064071603301.html
+    price: { amount: 895, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: silver }]
+  - ref: T006.407.16.043.00
+    website: https://www.tissotwatches.com/en-us/T0064071604300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw085723c5/product-pictures/73167f42-2e17-4af3-9b5a-de038b65ae6d_T006-407-16-043-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064071604300.html
+    price: { amount: 715, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T006.407.16.053.00
+    website: https://www.tissotwatches.com/en-us/T0064071605300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw024f09bf/product-pictures/4ba6f43d-779c-4569-b5b8-697d41c985cd_T006-407-16-053-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064071605300.html
+    price: { amount: 715, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T006.407.22.033.00
+    website: https://www.tissotwatches.com/en-us/T0064072203300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw1e0bdd7f/product-pictures/c75ae298-7d29-4e01-acf5-6d0ba13a70c5_T006-407-22-033-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064072203300.html
+    price: { amount: 895, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.407.22.033.01
+    website: https://www.tissotwatches.com/en-us/T0064072203301.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwbe4a6c43/product-pictures/972c923a-b4cc-4dc3-8aa0-de7062269777_T006-407-22-033-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064072203301.html
+    price: { amount: 895, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.407.22.033.02
+    name: "Open Heart"
+    website: https://www.tissotwatches.com/en-us/T0064072203302.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb44bc677/product-pictures/0338b61e-b1e3-4728-96e7-27548a90d31d_T006-407-22-033-02_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064072203302.html
+    price: { amount: 1050, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: []
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.407.22.093.00
+    website: https://www.tissotwatches.com/en-us/T0064072209300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw2e5f4e97/product-pictures/f7b3a93c-1db6-4f05-826e-22231c293826_T006-407-22-093-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064072209300.html
+    price: { amount: 895, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.407.22.093.01
+    website: https://www.tissotwatches.com/en-us/T0064072209301.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw5c562e31/product-pictures/a71de20d-0728-4439-9f38-5d47d1348875_T006-407-22-093-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064072209301.html
+    price: { amount: 895, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.407.33.093.00
+    website: https://www.tissotwatches.com/en-us/T0064073309300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw535fece7/product-pictures/03456470-0fbc-489f-b698-dc55007db7e6_T006-407-33-093-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064073309300.html
+    price: { amount: 925, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: T006.407.36.033.00
+    website: https://www.tissotwatches.com/en-us/T0064073603300.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw15c92646/product-pictures/d3dea663-dbd9-4a63-afef-1142baf8005c_T006-407-36-033-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T0064073603300.html
+    price: { amount: 815, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: leather-strap }]

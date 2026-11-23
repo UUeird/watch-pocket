@@ -1,0 +1,51 @@
+name: "T-Race 41mm Powermatic 80"
+line: tissot/t-race
+style: chronograph
+theme: motor-racing
+sources:
+  - https://www.tissotwatches.com/en-us/T1418071104100.html
+  - https://www.tissotwatches.com/en-us/T1418071705100.html
+  - https://www.tissotwatches.com/en-us/T1418073705100.html
+references:
+  - ref: T141.807.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1418071104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw5b4cf48f/product-pictures/7fd35c0c-2a95-4265-b0c0-b853b5d0b8f0_T141-807-11-041-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1418071104100.html
+    price: { amount: 875, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T141.807.17.051.00
+    website: https://www.tissotwatches.com/en-us/T1418071705100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw65ef90c3/product-pictures/8cfceda4-edc5-413c-a8a7-08c0fea0b436_T141-807-17-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1418071705100.html
+    price: { amount: 825, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]
+  - ref: T141.807.37.051.00
+    website: https://www.tissotwatches.com/en-us/T1418073705100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw98f830ee/product-pictures/10ee83a0-dc97-4c69-988a-c971602e4e8b_T141-807-37-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1418073705100.html
+    price: { amount: 895, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: rubber-strap }]

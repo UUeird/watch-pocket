@@ -1,0 +1,67 @@
+name: "Seastar 1000 43mm Powermatic 80"
+line: tissot/seastar
+style: dive
+sources:
+  - https://www.tissotwatches.com/en-us/T1204071104103.html
+  - https://www.tissotwatches.com/en-us/T1204071105100.html
+  - https://www.tissotwatches.com/en-us/T1204071109101.html
+  - https://www.tissotwatches.com/en-us/T1204071704100.html
+references:
+  - ref: T120.407.11.041.03
+    website: https://www.tissotwatches.com/en-us/T1204071104103.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw4069bb6e/product-pictures/f058c2a6-662d-4797-8a9a-dc7e1c174907_T120-407-11-041-03_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204071104103.html
+    price: { amount: 925, currency: USD, year: 2026 }
+    caseSize: 43
+    metals: [steel]
+    bezel: { material: ceramic }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.407.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1204071105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw113bcda2/product-pictures/6c496218-ef8f-4626-8f99-3e5c481d8c02_T120-407-11-051-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204071105100.html
+    price: { amount: 925, currency: USD, year: 2026 }
+    caseSize: 43
+    metals: [steel]
+    bezel: { material: ceramic }
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.407.11.091.01
+    website: https://www.tissotwatches.com/en-us/T1204071109101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw1776d39a/product-pictures/c74bc31a-b7ff-4146-ae50-543d3326bc91_T120-407-11-091-01_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204071109101.html
+    price: { amount: 925, currency: USD, year: 2026 }
+    caseSize: 43
+    metals: [steel]
+    bezel: { material: ceramic }
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green, name: "Green gradient" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T120.407.17.041.00
+    website: https://www.tissotwatches.com/en-us/T1204071704100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dweba5ba39/product-pictures/03ab9cd8-17bc-4a1e-9106-a7c437b30ac3_T120-407-17-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1204071704100.html
+    price: { amount: 875, currency: USD, year: 2026 }
+    caseSize: 43
+    metals: [steel]
+    bezel: { material: ceramic }
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue, name: "Blue gradient" }]
+    bracelets: [{ type: rubber-strap }]

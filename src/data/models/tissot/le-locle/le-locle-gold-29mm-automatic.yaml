@@ -1,0 +1,35 @@
+name: "Le Locle Gold 29mm Automatic"
+line: tissot/le-locle
+style: dress
+sources:
+  - https://www.tissotwatches.com/en-us/T9322074103600.html
+  - https://www.tissotwatches.com/en-us/T9322074604600.html
+references:
+  - ref: T932.207.41.036.00
+    website: https://www.tissotwatches.com/en-us/T9322074103600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw7cc8b649/product-pictures/83dcd089-5aca-47d0-9394-2bc36c0824d5_T932-207-41-036-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T9322074103600.html
+    price: { amount: 1800, currency: USD, year: 2026 }
+    caseSize: 29
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T932.207.46.046.00
+    website: https://www.tissotwatches.com/en-us/T9322074604600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw6680ed40/product-pictures/21873097-40aa-4e80-9606-ac553aee9743_T932-207-46-046-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T9322074604600.html
+    price: { amount: 1800, currency: USD, year: 2026 }
+    caseSize: 29
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]

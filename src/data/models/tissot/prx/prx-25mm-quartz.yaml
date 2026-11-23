@@ -1,0 +1,91 @@
+name: "PRX 25mm Quartz"
+line: tissot/prx
+style: everyday
+sources:
+  - https://www.tissotwatches.com/en-us/T1370101105600.html
+  - https://www.tissotwatches.com/en-us/T1370101111100.html
+  - https://www.tissotwatches.com/en-us/T1370101135100.html
+  - https://www.tissotwatches.com/en-us/T1370102111100.html
+  - https://www.tissotwatches.com/en-us/T1370103302100.html
+  - https://www.tissotwatches.com/en-us/T1370103350600.html
+references:
+  - ref: T137.010.11.056.00
+    website: https://www.tissotwatches.com/en-us/T1370101105600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb70fbe27/product-pictures/a4c037b8-d2a3-437d-a5a0-59c145c198ed_T137-010-11-056-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1370101105600.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 25
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.010.11.111.00
+    website: https://www.tissotwatches.com/en-us/T1370101111100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb2bf15dd/product-pictures/1db26820-5e45-432b-9589-efcee5753118_T137-010-11-111-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1370101111100.html
+    price: { amount: 395, currency: USD, year: 2026 }
+    caseSize: 25
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.010.11.351.00
+    website: https://www.tissotwatches.com/en-us/T1370101135100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwa1811358/product-pictures/cd5ea060-a074-4f11-adbc-088349474fa6_T137-010-11-351-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1370101135100.html
+    price: { amount: 350, currency: USD, year: 2026 }
+    caseSize: 25
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: blue, name: "Ice blue" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.010.21.111.00
+    website: https://www.tissotwatches.com/en-us/T1370102111100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwcaddf7a1/product-pictures/1ff19c55-7820-45e4-8261-e3fc044a2843_T137-010-21-111-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1370102111100.html
+    price: { amount: 400, currency: USD, year: 2026 }
+    caseSize: 25
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.010.33.021.00
+    website: https://www.tissotwatches.com/en-us/T1370103302100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw376ad25b/product-pictures/d584e79b-31e8-45c3-adc5-4496b5487676_T137-010-33-021-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1370103302100.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 25
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.010.33.506.00
+    website: https://www.tissotwatches.com/en-us/T1370103350600.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw55366f57/product-pictures/7f4206c5-6be3-47e2-9727-7d7031018498_T137-010-33-506-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1370103350600.html
+    price: { amount: 595, currency: USD, year: 2026 }
+    caseSize: 25
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [date]
+    dials: [{ color: pink, name: "Nude" }]
+    bracelets: [{ type: bracelet }]

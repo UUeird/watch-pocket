@@ -1,0 +1,97 @@
+name: "PR516 38mm Powermatic 80"
+line: tissot/pr516
+style: chronograph
+theme: motor-racing
+sources:
+  - https://www.tissotwatches.com/en-us/T1494071103100.html
+  - https://www.tissotwatches.com/en-us/T1494071104100.html
+  - https://www.tissotwatches.com/en-us/T1494071105100.html
+  - https://www.tissotwatches.com/en-us/T1494071604100.html
+  - https://www.tissotwatches.com/en-us/T1494071605100.html
+  - https://www.tissotwatches.com/en-us/T1494072201100.html
+references:
+  - ref: T149.407.11.031.00
+    website: https://www.tissotwatches.com/en-us/T1494071103100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw8ab28b4c/product-pictures/42088d81-7fba-4e76-be22-998839adb2b3_T149-407-11-031-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1494071103100.html
+    price: { amount: 825, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: T149.407.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1494071104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw45ebe3b8/product-pictures/47c8ddbb-ade1-4c74-8fae-0a92134200b9_T149-407-11-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1494071104100.html
+    price: { amount: 825, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue, name: "Blue gradient" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T149.407.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1494071105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw13e7fb3b/product-pictures/6d2829f3-ec56-4d51-9620-c779697f66f3_T149-407-11-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1494071105100.html
+    price: { amount: 825, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: T149.407.16.041.00
+    website: https://www.tissotwatches.com/en-us/T1494071604100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwef17c4a0/product-pictures/271e78e1-8950-4969-b754-bf619678202f_T149-407-16-041-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1494071604100.html
+    price: { amount: 750, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T149.407.16.051.00
+    website: https://www.tissotwatches.com/en-us/T1494071605100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwc6c657da/product-pictures/e3f0db39-3cca-4cfb-a3dc-1e429eccf12b_T149-407-16-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1494071605100.html
+    price: { amount: 750, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: leather-strap }]
+  - ref: T149.407.22.011.00
+    website: https://www.tissotwatches.com/en-us/T1494072201100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw34e6b903/product-pictures/405c8c51-2b86-458e-b492-017fbed7d8d0_T149-407-22-011-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1494072201100.html
+    price: { amount: 895, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]

@@ -1,10 +1,11 @@
-name: "PRX Powermatic 80 35mm"
+name: "PRX 35mm Powermatic 80"
 line: tissot/prx
 style: everyday
 sources:
   - https://www.tissotwatches.com/en-us/T1372071104100.html
   - https://www.tissotwatches.com/en-us/T1372071105100.html
   - https://www.tissotwatches.com/en-us/T1372071109100.html
+  - https://www.tissotwatches.com/en-us/T1372071111100.html
   - https://www.tissotwatches.com/en-us/T1372071135100.html
   - https://www.tissotwatches.com/en-us/T1372073302100.html
 references:
@@ -50,6 +51,20 @@ references:
     complications: [date]
     dials: [{ color: green }]
     bracelets: [{ type: bracelet }]
+  - ref: T137.207.11.111.00
+    website: https://www.tissotwatches.com/en-us/T1372071111100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw67990406/product-pictures/9b9f5b8c-99c2-428b-ae90-23e20ca59729_T137-207-11-111-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1372071111100.html
+    price: { amount: 875, currency: USD, year: 2026 }
+    caseSize: 35
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
   - ref: T137.207.11.351.00
     website: https://www.tissotwatches.com/en-us/T1372071135100.html
     officialPhoto:
@@ -78,4 +93,4 @@ references:
     movementType: mechanical
     complications: [date]
     dials: [{ color: champagne }]
-    bracelets: [{ type: bracelet, name: "Gold PVD" }]
+    bracelets: [{ type: bracelet }]

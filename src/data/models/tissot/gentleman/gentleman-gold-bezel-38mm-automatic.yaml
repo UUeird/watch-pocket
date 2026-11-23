@@ -1,0 +1,35 @@
+name: "Gentleman Gold Bezel 38mm Automatic"
+line: tissot/gentleman
+style: everyday
+sources:
+  - https://www.tissotwatches.com/en-us/T9348074104100.html
+  - https://www.tissotwatches.com/en-us/T9348074109100.html
+references:
+  - ref: T934.807.41.041.00
+    website: https://www.tissotwatches.com/en-us/T9348074104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb9cc94b4/product-pictures/711f2b0b-0e26-4bd5-a527-f66d6377119a_T934-807-41-041-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T9348074104100.html
+    price: { amount: 1950, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T934.807.41.091.00
+    website: https://www.tissotwatches.com/en-us/T9348074109100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwd1a8220d/product-pictures/d2952686-742f-4cda-8b34-bd5dea6e943c_T934-807-41-091-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T9348074109100.html
+    price: { amount: 1950, currency: USD, year: 2026 }
+    caseSize: 38
+    metals: [steel, yellow-gold]
+    bezel: { material: yellow-gold }
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]

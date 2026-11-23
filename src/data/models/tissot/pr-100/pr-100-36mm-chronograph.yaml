@@ -1,0 +1,48 @@
+name: "PR 100 36mm Chronograph"
+line: tissot/pr-100
+style: chronograph
+sources:
+  - https://www.tissotwatches.com/en-us/T1502171111100.html
+  - https://www.tissotwatches.com/en-us/T1502171113100.html
+  - https://www.tissotwatches.com/en-us/T1502172211100.html
+references:
+  - ref: T150.217.11.111.00
+    website: https://www.tissotwatches.com/en-us/T1502171111100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw6942e1a9/product-pictures/dd483b2a-1a26-4548-a9da-917295a9d913_T150-217-11-111-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1502171111100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T150.217.11.131.00
+    website: https://www.tissotwatches.com/en-us/T1502171113100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw0d613a46/product-pictures/660bfe97-9551-4fbf-994e-510f7a32883b_T150-217-11-131-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1502171113100.html
+    price: { amount: 450, currency: USD, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue, name: "Blue mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T150.217.22.111.00
+    website: https://www.tissotwatches.com/en-us/T1502172211100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwabd5c47b/product-pictures/1e9795fd-64ee-460b-9a9d-3667dd7a7b43_T150-217-22-111-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1502172211100.html
+    price: { amount: 495, currency: USD, year: 2026 }
+    caseSize: 36
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: white, name: "White mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
