@@ -93,15 +93,15 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
         {photos.length > 1 && (
           <>
             <button type="button" class="nav prev" data-step="-1" aria-label="Previous photo">
-              <span aria-hidden="true">‹</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7" /></svg>
             </button>
             <button type="button" class="nav next" data-step="1" aria-label="Next photo">
-              <span aria-hidden="true">›</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7" /></svg>
             </button>
           </>
         )}
         <button type="button" class="close" data-close aria-label="Close">
-          <span aria-hidden="true">×</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
         </button>
       </dialog>
     </aside>
@@ -296,9 +296,7 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
     justify-content: center;
     width: 40px;
     height: 40px;
-    padding: 0 0 3px;
-    font-size: 1.75rem;
-    line-height: 1;
+    padding: 0;
     color: #ffffff;
     background: rgba(0, 0, 0, 0.65);
     border: 0;
@@ -322,7 +320,6 @@ const enlarged = await Promise.all(photos.map(({ file }) => getImage({ src: file
   .close {
     top: 8px;
     right: 8px;
-    font-size: 1.5rem;
   }
 
   .nav:hover,
