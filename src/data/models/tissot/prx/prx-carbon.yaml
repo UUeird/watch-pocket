@@ -1,0 +1,20 @@
+name: "PRX Carbon"
+line: tissot/prx
+style: everyday
+sources:
+  - https://www.tissotwatches.com/en-us/T1379079720100.html
+references:
+  - ref: T137.907.97.201.00
+    website: https://www.tissotwatches.com/en-us/T1379079720100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw52eb2b13/product-pictures/ee3811c6-6d9e-44e1-889f-b0e6182bbc36_T137-907-97-201-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1379079720100.html
+    price: { amount: 1150, currency: USD, year: 2026 }
+    caseSize: 40.5
+    metals: [steel, carbon]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black, name: "Carbon" }]
+    bracelets: [{ type: rubber-strap }]

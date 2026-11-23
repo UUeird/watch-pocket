@@ -1,0 +1,35 @@
+name: "PRX Automatic Chronograph"
+line: tissot/prx
+style: chronograph
+sources:
+  - https://www.tissotwatches.com/en-us/T1374271104101.html
+  - https://www.tissotwatches.com/en-us/T1374271109100.html
+references:
+  - ref: T137.427.11.041.01
+    website: https://www.tissotwatches.com/en-us/T1374271104101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwf4ca1403/product-pictures/c930d457-0897-4b27-9e43-8c43d4a8c40a_T137-427-11-041-01_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374271104101.html
+    price: { amount: 2150, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "A05.H31"
+    movementType: mechanical
+    complications: [chronograph, date]
+    dials: [{ color: blue, name: "Blue gradient" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.427.11.091.00
+    website: https://www.tissotwatches.com/en-us/T1374271109100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw8e07310d/product-pictures/1ef9b8d4-d9af-4a09-9b89-c1a4a62da84e_T137-427-11-091-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374271109100.html
+    price: { amount: 2150, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "A05.H31"
+    movementType: mechanical
+    complications: [chronograph, date]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]

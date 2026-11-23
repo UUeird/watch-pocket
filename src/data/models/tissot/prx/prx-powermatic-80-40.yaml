@@ -1,0 +1,156 @@
+name: "PRX Powermatic 80 40mm"
+line: tissot/prx
+style: everyday
+sources:
+  - https://www.tissotwatches.com/en-us/T1374071104102.html
+  - https://www.tissotwatches.com/en-us/T1374071104103.html
+  - https://www.tissotwatches.com/en-us/T1374071105101.html
+  - https://www.tissotwatches.com/en-us/T1374071109101.html
+  - https://www.tissotwatches.com/en-us/T1374071111100.html
+  - https://www.tissotwatches.com/en-us/T1374071135100.html
+  - https://www.tissotwatches.com/en-us/T1374071135101.html
+  - https://www.tissotwatches.com/en-us/T1374073302100.html
+  - https://www.tissotwatches.com/en-us/T1374073304100.html
+  - https://www.tissotwatches.com/en-us/T1374073305100.html
+references:
+  - ref: T137.407.11.041.02
+    name: "UFO Robot Grendizer"
+    website: https://www.tissotwatches.com/en-us/T1374071104102.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwd80de5b8/product-pictures/1640b44b-7c54-4c7a-878d-747000e92c3f_T137-407-11-041-02_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374071104102.html
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.407.11.041.03
+    website: https://www.tissotwatches.com/en-us/T1374071104103.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw6b2b42bf/product-pictures/8916c275-7caa-4f1d-83ed-5cfda4b71cb3_T137-407-11-041-03_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374071104103.html
+    price: { amount: 850, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.407.11.051.01
+    website: https://www.tissotwatches.com/en-us/T1374071105101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwda152182/product-pictures/dfde7d22-afc8-42e1-b263-6087f1cd022d_T137-407-11-051-01_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374071105101.html
+    price: { amount: 850, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue, name: "Blue gradient" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.407.11.091.01
+    website: https://www.tissotwatches.com/en-us/T1374071109101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwb64df163/product-pictures/d102160b-bf40-4582-a545-910f29536ad9_T137-407-11-091-01_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374071109101.html
+    price: { amount: 850, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: green, name: "Light green" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.407.11.111.00
+    website: https://www.tissotwatches.com/en-us/T1374071111100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw17ff588e/product-pictures/72bcebe7-aeb8-400d-9a2d-2edc0981addf_T137-407-11-111-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374071111100.html
+    price: { amount: 850, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: white, name: "Mother-of-pearl" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.407.11.351.00
+    website: https://www.tissotwatches.com/en-us/T1374071135100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwe2f8f9e3/product-pictures/5f0c9cb0-604a-476e-8ba7-563133b91d5c_T137-407-11-351-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374071135100.html
+    price: { amount: 850, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue, name: "Ice blue" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.407.11.351.01
+    website: https://www.tissotwatches.com/en-us/T1374071135101.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw736f923e/product-pictures/bbfc1f13-179b-4be1-a653-d6c57366ada0_T137-407-11-351-01_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374071135101.html
+    price: { amount: 850, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue, name: "Ice blue gradient" }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.407.33.021.00
+    website: https://www.tissotwatches.com/en-us/T1374073302100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw1b7879b2/product-pictures/5729d09d-baed-40b3-8e7f-4643b9cd1a43_T137-407-33-021-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374073302100.html
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: bracelet, name: "Gold PVD" }]
+  - ref: T137.407.33.041.00
+    website: https://www.tissotwatches.com/en-us/T1374073304100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw890c700c/product-pictures/daab9283-862f-4732-abd0-fa955e11d7bd_T137-407-33-041-00_shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374073304100.html
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: rose-gold, name: "Rose gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet, name: "Rose gold PVD" }]
+  - ref: T137.407.33.051.00
+    name: "Damian Lillard Special Edition"
+    website: https://www.tissotwatches.com/en-us/T1374073305100.html
+    price: { amount: 950, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    caseColors: [{ color: gold, name: "Yellow gold PVD" }]
+    crystal: sapphire
+    movement: "Powermatic 80"
+    movementType: mechanical
+    complications: [date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet, name: "Gold PVD" }]

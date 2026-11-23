@@ -1,0 +1,47 @@
+name: "PRX Chronograph Quartz"
+line: tissot/prx
+style: chronograph
+sources:
+  - https://www.tissotwatches.com/en-us/T1374171103100.html
+  - https://www.tissotwatches.com/en-us/T1374171104100.html
+  - https://www.tissotwatches.com/en-us/T1374171105100.html
+references:
+  - ref: T137.417.11.031.00
+    website: https://www.tissotwatches.com/en-us/T1374171103100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw73bfb745/product-pictures/6cb56835-c3ce-46f6-97bb-9e7f13d15990_T137-417-11-031-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374171103100.html
+    price: { amount: 525, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: silver }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.417.11.041.00
+    website: https://www.tissotwatches.com/en-us/T1374171104100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw26efbd62/product-pictures/9b1ad177-f195-46bb-8cfe-e2b07afd5a3a_T137-417-11-041-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374171104100.html
+    price: { amount: 525, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: T137.417.11.051.00
+    website: https://www.tissotwatches.com/en-us/T1374171105100.html
+    officialPhoto:
+      src: https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dwa200582b/product-pictures/918e4e98-4605-4884-be28-a58f3b151483_T137-417-11-051-00_Shadow.png
+      page: https://www.tissotwatches.com/en-us/T1374171105100.html
+    price: { amount: 525, currency: USD, year: 2026 }
+    caseSize: 41
+    metals: [steel]
+    crystal: sapphire
+    movementType: quartz
+    complications: [chronograph, date]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]

@@ -1,0 +1,65 @@
+name: "Contemporary Date"
+line: orient/orient-star
+style: everyday
+sources:
+  - https://www.orientwatchusa.com/products/re-au0107e00b
+  - https://www.orientwatchusa.com/products/re-au0108g00b
+  - https://www.orientwatchusa.com/products/re-au0109l00b
+  - https://www.orientwatchusa.com/products/re-au0110n00b
+references:
+  - ref: RE-AU0107E00B
+    website: https://www.orientwatchusa.com/products/re-au0107e00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/files/contemporary-date-5869474.png
+      page: https://www.orientwatchusa.com/products/re-au0107e00b
+    price: { amount: 580, currency: USD, year: 2026 }
+    caseSize: 38.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6N43"
+    movementType: mechanical
+    complications: [date, power-reserve]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]
+  - ref: RE-AU0108G00B
+    website: https://www.orientwatchusa.com/products/re-au0108g00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/files/contemporary-date-2435809.png
+      page: https://www.orientwatchusa.com/products/re-au0108g00b
+    price: { amount: 580, currency: USD, year: 2026 }
+    caseSize: 38.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6N43"
+    movementType: mechanical
+    complications: [date, power-reserve]
+    dials: [{ color: orange }]
+    bracelets: [{ type: bracelet }]
+  - ref: RE-AU0109L00B
+    website: https://www.orientwatchusa.com/products/re-au0109l00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/files/contemporary-date-8198319.png
+      page: https://www.orientwatchusa.com/products/re-au0109l00b
+    price: { amount: 580, currency: USD, year: 2026 }
+    caseSize: 38.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6N43"
+    movementType: mechanical
+    complications: [date, power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: RE-AU0110N00B
+    website: https://www.orientwatchusa.com/products/re-au0110n00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/files/contemporary-date-6380128.png
+      page: https://www.orientwatchusa.com/products/re-au0110n00b
+    price: { amount: 580, currency: USD, year: 2026 }
+    caseSize: 38.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6N43"
+    movementType: mechanical
+    complications: [date, power-reserve]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]

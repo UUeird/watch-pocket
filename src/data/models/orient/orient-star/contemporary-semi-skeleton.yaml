@@ -1,0 +1,35 @@
+name: "Contemporary Semi Skeleton"
+line: orient/orient-star
+style: dress
+sources:
+  - https://www.orientwatchusa.com/products/re-at0001l00b
+  - https://www.orientwatchusa.com/products/re-at0002e00b
+references:
+  - ref: RE-AT0001L00B
+    website: https://www.orientwatchusa.com/products/re-at0001l00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/products/contemporary-semi-skeleton-2103157.png
+      page: https://www.orientwatchusa.com/products/re-at0001l00b
+    price: { amount: 570, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6R42"
+    movementType: mechanical
+    complications: [power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: RE-AT0002E00B
+    website: https://www.orientwatchusa.com/products/re-at0002e00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/products/contemporary-semi-skeleton-4405889.png
+      page: https://www.orientwatchusa.com/products/re-at0002e00b
+    price: { amount: 570, currency: USD, year: 2026 }
+    caseSize: 39.3
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6R42"
+    movementType: mechanical
+    complications: [power-reserve]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]

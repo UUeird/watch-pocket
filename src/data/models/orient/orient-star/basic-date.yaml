@@ -1,0 +1,80 @@
+name: "Basic Date"
+line: orient/orient-star
+style: everyday
+sources:
+  - https://www.orientwatchusa.com/products/re-au0401s00b
+  - https://www.orientwatchusa.com/products/re-au0402b00b
+  - https://www.orientwatchusa.com/products/re-au0403l00b
+  - https://www.orientwatchusa.com/products/re-au0404n00b
+  - https://www.orientwatchusa.com/products/re-au0405e00b
+references:
+  - ref: RE-AU0401S00B
+    website: https://www.orientwatchusa.com/products/re-au0401s00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/products/basic-date-3620320.png
+      page: https://www.orientwatchusa.com/products/re-au0401s00b
+    price: { amount: 605, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6N43"
+    movementType: mechanical
+    complications: [date, power-reserve]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]
+  - ref: RE-AU0402B00B
+    website: https://www.orientwatchusa.com/products/re-au0402b00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/products/basic-date-3065238.png
+      page: https://www.orientwatchusa.com/products/re-au0402b00b
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6N43"
+    movementType: mechanical
+    complications: [date, power-reserve]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: RE-AU0403L00B
+    website: https://www.orientwatchusa.com/products/re-au0403l00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/products/basic-date-2230497.png
+      page: https://www.orientwatchusa.com/products/re-au0403l00b
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6N43"
+    movementType: mechanical
+    complications: [date, power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: RE-AU0404N00B
+    website: https://www.orientwatchusa.com/products/re-au0404n00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/products/basic-date-3216940.png
+      page: https://www.orientwatchusa.com/products/re-au0404n00b
+    price: { amount: 575, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6N43"
+    movementType: mechanical
+    complications: [date, power-reserve]
+    dials: [{ color: gray }]
+    bracelets: [{ type: bracelet }]
+  - ref: RE-AU0405E00B
+    website: https://www.orientwatchusa.com/products/re-au0405e00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/files/basic-date-5271324.png
+      page: https://www.orientwatchusa.com/products/re-au0405e00b
+    price: { amount: 660, currency: USD, year: 2026 }
+    caseSize: 42
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6N43"
+    movementType: mechanical
+    complications: [date, power-reserve]
+    dials: [{ color: green }]
+    bracelets: [{ type: bracelet }]

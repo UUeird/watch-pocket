@@ -1,0 +1,50 @@
+name: "Contemporary Index"
+line: orient/orient-star
+style: everyday
+sources:
+  - https://www.orientwatchusa.com/products/re-au0004b00b
+  - https://www.orientwatchusa.com/products/re-au0005l00b
+  - https://www.orientwatchusa.com/products/re-au0006s00b
+references:
+  - ref: RE-AU0004B00B
+    website: https://www.orientwatchusa.com/products/re-au0004b00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/files/contemporary-index-2980020.png
+      page: https://www.orientwatchusa.com/products/re-au0004b00b
+    price: { amount: 560, currency: USD, year: 2026 }
+    caseSize: 38.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6N43"
+    movementType: mechanical
+    complications: [date, power-reserve]
+    dials: [{ color: black }]
+    bracelets: [{ type: bracelet }]
+  - ref: RE-AU0005L00B
+    website: https://www.orientwatchusa.com/products/re-au0005l00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/files/contemporary-index-1864597.png
+      page: https://www.orientwatchusa.com/products/re-au0005l00b
+    price: { amount: 560, currency: USD, year: 2026 }
+    caseSize: 38.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6N43"
+    movementType: mechanical
+    complications: [date, power-reserve]
+    dials: [{ color: blue }]
+    bracelets: [{ type: bracelet }]
+  - ref: RE-AU0006S00B
+    website: https://www.orientwatchusa.com/products/re-au0006s00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/files/contemporary-index-1814159.png
+      page: https://www.orientwatchusa.com/products/re-au0006s00b
+    price: { amount: 560, currency: USD, year: 2026 }
+    caseSize: 38.5
+    metals: [steel]
+    crystal: sapphire
+    movement: "F6N43"
+    movementType: mechanical
+    complications: [date, power-reserve]
+    dials: [{ color: white }]
+    bracelets: [{ type: bracelet }]

@@ -1,0 +1,35 @@
+name: "Classic Semi Skeleton Small Seconds"
+line: orient/orient-star
+style: dress
+sources:
+  - https://www.orientwatchusa.com/products/re-av0001s00b
+  - https://www.orientwatchusa.com/products/re-av0002s00b
+references:
+  - ref: RE-AV0001S00B
+    website: https://www.orientwatchusa.com/products/re-av0001s00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/products/classic-semi-skeleton-9271118.png
+      page: https://www.orientwatchusa.com/products/re-av0001s00b
+    price: { amount: 670, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: mineral
+    movement: "F6F42"
+    movementType: mechanical
+    complications: [power-reserve]
+    dials: [{ color: white }]
+    bracelets: [{ type: leather-strap }]
+  - ref: RE-AV0002S00B
+    website: https://www.orientwatchusa.com/products/re-av0002s00b
+    officialPhoto:
+      src: https://cdn.shopify.com/s/files/1/0026/4978/4385/products/classic-semi-skeleton-8149470.png
+      page: https://www.orientwatchusa.com/products/re-av0002s00b
+    price: { amount: 625, currency: USD, year: 2026 }
+    caseSize: 40
+    metals: [steel]
+    crystal: mineral
+    movement: "F6F42"
+    movementType: mechanical
+    complications: [power-reserve]
+    dials: [{ color: champagne }]
+    bracelets: [{ type: leather-strap }]
