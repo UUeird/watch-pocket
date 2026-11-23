@@ -83,6 +83,15 @@ export const describeModelNumber = ({ number, connectivity, regions }: Reference
   const detail = [connectivity === 'gps' ? 'GPS' : connectivity && 'GPS + Cellular', regions].filter(Boolean).join(', ');
   return detail ? `${number} (${detail})` : number;
 };
+// The movement as shown: its type, then the calibre where one is recorded ("Mechanical · 3235", or "Quartz").
+export const describeMovement = ({ movementType, movement }: Pick<Reference, 'movementType' | 'movement'>) =>
+  [movementType && movementType.charAt(0).toUpperCase() + movementType.slice(1), movement].filter(Boolean).join(' · ');
+// The movement type every reference of a model shares, if they all record the same one.
+export const sharedMovementType = (references: Reference[]) => {
+  const types = new Set(references.map((reference) => reference.movementType));
+  const [only] = types;
+  return types.size === 1 ? only : undefined;
+};
 export const describeBracelet = (bracelet: Reference['bracelets'][number]) => bracelet.name ?? label(bracelet.type);
 
 // What tells a reference apart from the model's others (`siblings`, itself included): its own `name`, or else its dial,
