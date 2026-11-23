@@ -5,7 +5,7 @@
 //   npm run check:external -- --host richardmille.com
 //   npm run check:external -- --report report.md
 //
-// Exits with an error when a link is gone (404, 410, or the site no longer exists), so a scheduled run can flag it.
+// Exits with an error when a link is gone (404, 410, the site no longer exists, or it now redirects to an unrelated site), so a scheduled run can flag it.
 // Sites that turn away scripts (403, 429, timeouts) are listed as unchecked, not broken.
 import { writeFileSync } from 'node:fs';
 import { eachPolitely, headersFor, loadAll, readOfficialPhotos, urlsIn } from './lib/data.mjs';
@@ -41,6 +41,24 @@ const samePage = (from, to) => {
   const path = (url) => decodeURIComponent(url.pathname).replace(/\/$/, '').toLowerCase();
   return host(a) === host(b) && (path(a) === path(b) || path(b).endsWith(path(a)));
 };
+// The site an address belongs to: its domain without subdomains, so en.zalando.de and zalando.de match.
+const site = (url) => {
+  const labels = new URL(url).hostname.split('.');
+  // Country domains with a second level, such as bucherer.co.uk.
+  const second = labels.length > 2 && labels.at(-1).length === 2 && /^(co|com|org|net|ac|gov)$/.test(labels.at(-2));
+  return labels.slice(second ? -3 : -2).join('.');
+};
+// Sites that really did move to another domain or owner. Any other redirect to a different site is treated as gone,
+// since it usually means the domain lapsed and someone else (often a gambling or spam site) now owns it.
+const knownMoves = new Map([
+  ['bucherer.co.uk', ['bucherer.com']],
+  ['elysee1960.com', ['elysee-watches.com']],
+  ['maison-davis.com', ['maisondavis.ch']],
+  ['prim-hodinky.cz', ['prim.cz']],
+  ['thewatchbox.com', ['the1916company.com']],
+  ['tourneau.com', ['bucherer.com']],
+]);
+const knownMove = (from, to) => knownMoves.get(site(from))?.includes(site(to)) ?? false;
 const isRoot = (url) => new URL(url).pathname.replace(/\/[a-z]{2}(-[a-z]{2})?\/?$/i, '/') === '/';
 
 async function check(url) {
@@ -66,6 +84,9 @@ async function check(url) {
     }
     if (response.status === 404 || response.status === 410) return { state: 'broken', detail: `${response.status}`, final: current };
     if (response.status >= 400) return { state: 'unchecked', detail: `${response.status}`, final: current };
+    if (site(current) !== site(url) && !knownMove(url, current)) {
+      return { state: 'broken', detail: `now goes to a different site: ${current}`, final: current };
+    }
     if (current !== url && !samePage(url, current)) {
       // Sent to a home page or a section's front, which is how most sites retire a product page.
       return { state: isRoot(current) ? 'broken' : 'moved', detail: `now ${current}`, final: current };
@@ -94,7 +115,7 @@ const section = (title, list, note) =>
       '\n\n';
 const report =
   `# External links\n\n${urls.length} checked: ${by('ok').length} fine, ${broken.length} gone, ${moved.length} moved, ${unchecked.length} couldn't be checked.\n\n` +
-  section('Gone', broken, 'Not found, or now sent to a home page. Replace or remove these.') +
+  section('Gone', broken, 'Not found, now sent to a home page, or now sent to a different site (often a lapsed domain). Replace or remove these.') +
   section('Moved', moved, 'Now redirect to another page. Check it is the same thing and update the address.') +
   section("Couldn't be checked", unchecked, 'The site refused a script, was slow or had an error. Usually fine; check by hand if one stays here.');
 
