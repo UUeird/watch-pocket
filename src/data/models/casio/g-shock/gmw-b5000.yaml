@@ -14,6 +14,9 @@ sources:
   - https://www.casio.com/intl/news/2023/0912-g-shock/
 references:
   - ref: "GMW-B5000PS"
+    officialPhoto:
+      src: https://gshock.casio.com/content/experience-fragments/casio/locales/intl/en/common/header/g-shock-brand/_jcr_content/root/responsivegrid/visual_header_copy_c/globalContainer/globalItem1/tab/item_1650423114672/content_panel_list/content_panel_202204201201354460/image.casiocoreimg.png/1718173262250/gmw-b5000ps-1.png
+      page: https://gshock.casio.com/intl/products/
     name: "Recrystallized"
     periods: [{ from: 2023 }]
     metals: [steel]

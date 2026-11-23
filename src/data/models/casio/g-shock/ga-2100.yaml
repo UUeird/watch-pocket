@@ -4,7 +4,16 @@ style: sport
 website: https://www.casio.com/intl/news/2023/1016-seasonalcollection/
 sources:
   - https://www.casio.com/intl/news/2023/1016-seasonalcollection/
+  - https://gshock.casio.com/content/dam/casio/global/watch/g_shock/catalog/ENG_GA-2100_catalog.pdf
 references:
+  - ref: "GA-2100-1A1"
+    officialPhoto:
+      src: https://gshock.casio.com/content/experience-fragments/casio/locales/intl/en/common/header/g-shock-brand/_jcr_content/root/responsivegrid/visual_header_copy_c/globalContainer/globalItem3/tab/nav_tab_item/content_panel_list/content_panel_202302281421325215/image.casiocoreimg.png/1755600448819/ga-2100-1a1.png
+      page: https://gshock.casio.com/intl/products/
+    caseColors: [{ color: black }]
+    movementType: quartz
+    complications: [date, world-time, chronograph, alarm]
+    dials: [{ color: black }]
   - ref: "GA-2100WS"
     name: "Seasonal Collection 2023"
     periods: [{ from: 2023 }]
