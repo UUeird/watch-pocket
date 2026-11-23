@@ -2,6 +2,13 @@ name: "Planet Ocean 600M"
 line: omega/seamaster
 style: dive
 website: https://www.omegawatches.com/en-us/watches/seamaster/planet-ocean/catalog
+photos:
+  - file: ../../../photos/omega/seamaster/planet-ocean-600m.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Omega_Seamaster_Planet_Ocean_Chronograph_2210.51.00.jpg
+      license: CC BY-SA 3.0
+      licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+      author: John Torcasio
 sources:
   - https://www.omegawatches.com/en-us/watches/seamaster/planet-ocean/catalog
   - https://www.omegawatches.com/en-us/watch-omega-seamaster-planet-ocean-600m-co-axial-master-chronometer-42-mm-21730422101001

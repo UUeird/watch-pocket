@@ -2,6 +2,12 @@ name: "Fifty Fathoms Automatique"
 line: blancpain/fifty-fathoms
 style: dive
 website: https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5007-36b40-o64b
+photos:
+  - file: ../../../photos/blancpain/fifty-fathoms/fifty-fathoms-automatique.jpg
+    credit:
+      source: https://commons.wikimedia.org/wiki/File:Blancpain.jpg
+      license: Public domain
+      author: Johnson Watch
 sources:
   - https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5007-36b40-o64b
   - https://www.blancpain.com/en/fifty-fathoms/fifty-fathoms-automatique-5010-12b40-o64b
