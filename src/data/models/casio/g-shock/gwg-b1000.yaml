@@ -6,11 +6,20 @@ sources:
   - https://www.casio.com/intl/news/2023/0928-gwg-b1000/
 references:
   - ref: "GWG-B1000-1A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0928-gwg-b1000/img02.jpg
+      page: https://www.casio.com/intl/news/2023/0928-gwg-b1000/
     periods: [{ from: 2023 }]
     movementType: quartz
   - ref: "GWG-B1000-1A4"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0928-gwg-b1000/img03.jpg
+      page: https://www.casio.com/intl/news/2023/0928-gwg-b1000/
     periods: [{ from: 2023 }]
     movementType: quartz
   - ref: "GWG-B1000-3A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0928-gwg-b1000/img04.jpg
+      page: https://www.casio.com/intl/news/2023/0928-gwg-b1000/
     periods: [{ from: 2023 }]
     movementType: quartz

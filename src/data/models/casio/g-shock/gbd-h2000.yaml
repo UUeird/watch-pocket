@@ -7,18 +7,30 @@ sources:
   - https://www.casio.com/intl/news/2023/0228-gbd-h2000/
 references:
   - ref: "GBD-H2000-1A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0228-gbd-h2000/img02.jpg
+      page: https://www.casio.com/intl/news/2023/0228-gbd-h2000/
     name: "Black and orange"
     periods: [{ from: 2023 }]
     movementType: quartz
   - ref: "GBD-H2000-1A9"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0228-gbd-h2000/img03.jpg
+      page: https://www.casio.com/intl/news/2023/0228-gbd-h2000/
     name: "Black and yellow"
     periods: [{ from: 2023 }]
     movementType: quartz
   - ref: "GBD-H2000-1B"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0228-gbd-h2000/img04.jpg
+      page: https://www.casio.com/intl/news/2023/0228-gbd-h2000/
     name: "All black"
     periods: [{ from: 2023 }]
     movementType: quartz
   - ref: "GBD-H2000-2"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0228-gbd-h2000/img05.jpg
+      page: https://www.casio.com/intl/news/2023/0228-gbd-h2000/
     name: "Blue and orange"
     periods: [{ from: 2023 }]
     movementType: quartz

@@ -6,6 +6,9 @@ sources:
   - https://www.casio.com/intl/news/2026/0909-gst-w1000/
 references:
   - ref: "GST-W1000D-1A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2026/0909-gst-w1000/img-02.jpg
+      page: https://www.casio.com/intl/news/2026/0909-gst-w1000/
     periods: [{ from: 2026 }]
     crystal: sapphire
     movementType: quartz
@@ -16,6 +19,9 @@ references:
     movementType: quartz
     dials: [{ color: blue }]
   - ref: "GST-W1000D-3A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2026/0909-gst-w1000/img-04.jpg
+      page: https://www.casio.com/intl/news/2026/0909-gst-w1000/
     periods: [{ from: 2026 }]
     crystal: sapphire
     movementType: quartz

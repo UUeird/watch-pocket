@@ -6,6 +6,9 @@ sources:
   - https://www.casio.com/intl/news/2023/0615-clearremix/
 references:
   - ref: "GMA-S114RX"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2023/0615-clearremix/img07.jpg
+      page: https://www.casio.com/intl/news/2023/0615-clearremix/
     name: "Clear Remix"
     periods: [{ from: 2023 }]
     movementType: quartz

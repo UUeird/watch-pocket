@@ -6,6 +6,9 @@ sources:
   - https://www.casio.com/intl/news/2024/0828-glx5600kb/
 references:
   - ref: "GLX-5600KB"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2024/0828-glx5600kb/img02.jpg
+      page: https://www.casio.com/intl/news/2024/0828-glx5600kb/
     name: "Kanoa Igarashi signature"
     periods: [{ from: 2024 }]
     caseColors: [{ color: black }]

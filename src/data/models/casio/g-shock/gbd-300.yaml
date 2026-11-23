@@ -7,16 +7,25 @@ sources:
   - https://www.casio.com/intl/news/2024/0617-gbd300/
 references:
   - ref: "GBD-300-1"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2024/0617-gbd300/img04.jpg
+      page: https://www.casio.com/intl/news/2024/0617-gbd300/
     periods: [{ from: 2024 }]
     movementType: quartz
     complications: [world-time]
     bracelets: [{ type: rubber-strap }]
   - ref: "GBD-300-7"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2024/0617-gbd300/img05.jpg
+      page: https://www.casio.com/intl/news/2024/0617-gbd300/
     periods: [{ from: 2024 }]
     movementType: quartz
     complications: [world-time]
     bracelets: [{ type: rubber-strap }]
   - ref: "GBD-300-9"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2024/0617-gbd300/img06.jpg
+      page: https://www.casio.com/intl/news/2024/0617-gbd300/
     periods: [{ from: 2024 }]
     movementType: quartz
     complications: [world-time]

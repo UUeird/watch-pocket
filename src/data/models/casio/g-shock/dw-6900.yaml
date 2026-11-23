@@ -6,14 +6,23 @@ sources:
   - https://www.casio.com/intl/news/2025/0129-dw6900tr/
 references:
   - ref: "DW-6900TR-1"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2025/0129-dw6900tr/img02.jpg
+      page: https://www.casio.com/intl/news/2025/0129-dw6900tr/
     name: "30th anniversary"
     periods: [{ from: 2025 }]
     movementType: quartz
   - ref: "DW-6900TR-4"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2025/0129-dw6900tr/img03.jpg
+      page: https://www.casio.com/intl/news/2025/0129-dw6900tr/
     name: "30th anniversary"
     periods: [{ from: 2025 }]
     movementType: quartz
   - ref: "DW-6900TR-9"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2025/0129-dw6900tr/img04.jpg
+      page: https://www.casio.com/intl/news/2025/0129-dw6900tr/
     name: "30th anniversary"
     periods: [{ from: 2025 }]
     movementType: quartz

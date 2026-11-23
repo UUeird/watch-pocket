@@ -8,6 +8,9 @@ sources:
   - https://www.prnewswire.com/news-releases/g-shock-shrinks-its-most-iconic-watch-to-ring-size-with-the-new-dwn5600-302625011.html
 references:
   - ref: "DWN-5600-1"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2025/1021-dwn-5600/img02.jpg
+      page: https://www.casio.com/intl/news/2025/1021-dwn-5600/
     name: "Black"
     periods: [{ from: 2025 }]
     price: { amount: 110, currency: USD, year: 2025 }
@@ -16,6 +19,9 @@ references:
     complications: [date, chronograph, gmt, alarm]
     caseColors: [{ color: black }]
   - ref: "DWN-5600-4"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2025/1021-dwn-5600/img03.jpg
+      page: https://www.casio.com/intl/news/2025/1021-dwn-5600/
     name: "Red"
     periods: [{ from: 2025 }]
     price: { amount: 110, currency: USD, year: 2025 }
@@ -24,6 +30,9 @@ references:
     complications: [date, chronograph, gmt, alarm]
     caseColors: [{ color: red }]
   - ref: "DWN-5600-9"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2025/1021-dwn-5600/img04.jpg
+      page: https://www.casio.com/intl/news/2025/1021-dwn-5600/
     name: "Yellow"
     periods: [{ from: 2025 }]
     price: { amount: 110, currency: USD, year: 2025 }

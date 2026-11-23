@@ -6,22 +6,34 @@ sources:
   - https://www.casio.com/intl/news/2026/1022-gac-2500gmc-2500/
 references:
   - ref: "GAC-2500-1A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2026/1022-gac-2500gmc-2500/img-06.jpg
+      page: https://www.casio.com/intl/news/2026/1022-gac-2500gmc-2500/
     periods: [{ from: 2026 }]
     movementType: quartz
     complications: [date, chronograph]
     dials: [{ color: black }]
     bracelets: [{ type: rubber-strap }]
   - ref: "GAC-2500-3A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2026/1022-gac-2500gmc-2500/img-07.jpg
+      page: https://www.casio.com/intl/news/2026/1022-gac-2500gmc-2500/
     periods: [{ from: 2026 }]
     movementType: quartz
     complications: [date, chronograph]
     dials: [{ color: green }]
   - ref: "GAC-2500-7A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2026/1022-gac-2500gmc-2500/img-08.jpg
+      page: https://www.casio.com/intl/news/2026/1022-gac-2500gmc-2500/
     periods: [{ from: 2026 }]
     movementType: quartz
     complications: [date, chronograph]
     dials: [{ color: white }]
   - ref: "GAC-2500-9A"
+    officialPhoto:
+      src: https://www.casio.com/content/dam/casio/global/corporate/pressroom/certification/release/2026/1022-gac-2500gmc-2500/img-09.jpg
+      page: https://www.casio.com/intl/news/2026/1022-gac-2500gmc-2500/
     periods: [{ from: 2026 }]
     movementType: quartz
     complications: [date, chronograph]
